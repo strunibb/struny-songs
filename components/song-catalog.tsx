@@ -91,6 +91,10 @@ export function SongCatalog({ songs, mode = "home" }: { songs: PublicSong[]; mod
     <>
       {mode === "home" ? (
         <section className="hero">
+          <span className="hero-palm hero-palm-left" aria-hidden="true" />
+          <span className="hero-palm hero-palm-right" aria-hidden="true" />
+          <span className="hero-sun" aria-hidden="true" />
+          <span className="hero-horizon" aria-hidden="true" />
           <div className="hero-glow glow-one" /><div className="hero-glow glow-two" />
           <div className="shell hero-inner">
             <div className="hero-copy"><p className="eyebrow"><i /> Библиотека гитарных разборов</p><h1>Играй песни, которые <em>действительно нравятся</em></h1><p>Готовые разборы песен на гитаре: подробное видео, удобный PDF и всё необходимое для изучения.</p></div>

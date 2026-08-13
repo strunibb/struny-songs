@@ -24,7 +24,7 @@ export default function Home() {
       </section>
       <section className="teacher-section">
         <div className="shell teacher-grid">
-          <div className="teacher-portrait"><div className="portrait-ring"><span>Н</span></div><div className="floating-note note-one">♪</div><div className="floating-note note-two">♫</div></div>
+          <div className="teacher-portrait"><div className="teacher-photo"><img src="/nikita-beach.jpeg" alt="Никита играет на гитаре на берегу моря" /></div><div className="floating-note note-one">♪</div><div className="floating-note note-two">♫</div></div>
           <div><p className="eyebrow"><i /> Автор разборов</p><h2>Привет, я Никита</h2><p>Преподаватель гитары и создатель школы «Струны будущего». Я подготовил уже сотни учеников и знаю, где чаще всего возникают трудности.</p><p>В разборах оставляю только то, что действительно помогает быстрее прийти к уверенной игре любимой песни.</p><div className="teacher-stats"><span><strong>1000+</strong><small>учеников</small></span><span><strong>6 лет</strong><small>преподавания</small></span><span><strong>40 мин</strong><small>средний разбор</small></span></div></div>
         </div>
       </section>
