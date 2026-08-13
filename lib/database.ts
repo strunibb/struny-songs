@@ -1,0 +1,313 @@
+import { seedSongs } from "./seed-songs";
+import type { AdminSong, PublicSong, SongLevel, SongStatus } from "./song-types";
+
+type Bindings = {
+  DB?: D1Database;
+  BUCKET?: R2Bucket;
+  ADMIN_PASSWORD?: string;
+  ADMIN_SESSION_SECRET?: string;
+};
+
+export type SongInput = {
+  slug: string;
+  artist: string;
+  title: string;
+  level: SongLevel;
+  price: number;
+  description: string;
+  features: string[];
+  keyName: string;
+  capo: string;
+  barre: boolean;
+  difficulty: number;
+  videoDuration: string;
+  pdfPages: number;
+  coverKey: string | null;
+  coverStyle: string;
+  previewVideoUrl: string;
+  privateVideoUrl: string;
+  pdfKey: string | null;
+  privatePdfUrl: string;
+  isNew: boolean;
+  isPopular: boolean;
+  popularity: number;
+  status: SongStatus;
+};
+
+type SongRow = {
+  id: number;
+  slug: string;
+  artist: string;
+  title: string;
+  level: string;
+  price: number;
+  description: string;
+  features: string;
+  key_name: string;
+  capo: string;
+  barre: number;
+  difficulty: number;
+  video_duration: string;
+  pdf_pages: number;
+  cover_key: string | null;
+  cover_style: string;
+  preview_video_url: string;
+  private_video_url: string;
+  pdf_key: string | null;
+  private_pdf_url: string;
+  is_new: number;
+  is_popular: number;
+  popularity: number;
+  status: string;
+  created_at: string;
+};
+
+export function getBindings(): Bindings {
+  return (globalThis as typeof globalThis & { __STRUNY_ENV__?: Bindings }).__STRUNY_ENV__ ?? {};
+}
+
+function getD1(): D1Database | null {
+  return getBindings().DB ?? null;
+}
+
+export function getBucket(): R2Bucket | null {
+  return getBindings().BUCKET ?? null;
+}
+
+let initialization: Promise<void> | null = null;
+
+export async function ensureDatabase(): Promise<boolean> {
+  const db = getD1();
+  if (!db) return false;
+  if (initialization) {
+    await initialization;
+    return true;
+  }
+
+  initialization = (async () => {
+    await db.batch([
+      db.prepare(`CREATE TABLE IF NOT EXISTS songs (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        slug TEXT NOT NULL UNIQUE,
+        artist TEXT NOT NULL,
+        title TEXT NOT NULL,
+        level TEXT NOT NULL,
+        price INTEGER NOT NULL DEFAULT 199,
+        description TEXT NOT NULL DEFAULT '',
+        features TEXT NOT NULL DEFAULT '[]',
+        key_name TEXT NOT NULL DEFAULT '',
+        capo TEXT NOT NULL DEFAULT '',
+        barre INTEGER NOT NULL DEFAULT 0,
+        difficulty INTEGER NOT NULL DEFAULT 1,
+        video_duration TEXT NOT NULL DEFAULT '',
+        pdf_pages INTEGER NOT NULL DEFAULT 0,
+        cover_key TEXT,
+        cover_style TEXT NOT NULL DEFAULT 'violet',
+        preview_video_url TEXT NOT NULL DEFAULT '',
+        private_video_url TEXT NOT NULL DEFAULT '',
+        pdf_key TEXT,
+        private_pdf_url TEXT NOT NULL DEFAULT '',
+        is_new INTEGER NOT NULL DEFAULT 0,
+        is_popular INTEGER NOT NULL DEFAULT 0,
+        popularity INTEGER NOT NULL DEFAULT 0,
+        status TEXT NOT NULL DEFAULT 'draft',
+        created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+      )`),
+      db.prepare("CREATE INDEX IF NOT EXISTS songs_status_idx ON songs(status)"),
+      db.prepare("CREATE INDEX IF NOT EXISTS songs_artist_title_idx ON songs(artist, title)"),
+      db.prepare("CREATE INDEX IF NOT EXISTS songs_created_at_idx ON songs(created_at DESC)"),
+    ]);
+
+    await db.batch(
+      seedSongs.map((song) =>
+        db.prepare(`INSERT OR IGNORE INTO songs (
+          slug, artist, title, level, price, description, features, key_name,
+          capo, barre, difficulty, video_duration, pdf_pages, cover_key,
+          cover_style, preview_video_url, private_video_url, pdf_key,
+          private_pdf_url, is_new, is_popular, popularity, status, created_at
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`)
+          .bind(
+            song.slug,
+            song.artist,
+            song.title,
+            song.level,
+            song.price,
+            song.description,
+            JSON.stringify(song.features),
+            song.keyName,
+            song.capo,
+            song.barre ? 1 : 0,
+            song.difficulty,
+            song.videoDuration,
+            song.pdfPages,
+            song.coverKey,
+            song.coverStyle,
+            song.previewVideoUrl,
+            song.privateVideoUrl,
+            song.pdfKey,
+            song.privatePdfUrl,
+            song.isNew ? 1 : 0,
+            song.isPopular ? 1 : 0,
+            song.popularity,
+            song.status,
+            song.createdAt,
+          ),
+      ),
+    );
+  })();
+
+  try {
+    await initialization;
+    return true;
+  } catch (error) {
+    initialization = null;
+    throw error;
+  }
+}
+
+function parseFeatures(value: string): string[] {
+  try {
+    const parsed = JSON.parse(value);
+    return Array.isArray(parsed) ? parsed.filter((item) => typeof item === "string") : [];
+  } catch {
+    return [];
+  }
+}
+
+function mapRow(row: SongRow): AdminSong {
+  return {
+    id: row.id,
+    slug: row.slug,
+    artist: row.artist,
+    title: row.title,
+    level: row.level as SongLevel,
+    price: row.price,
+    description: row.description,
+    features: parseFeatures(row.features),
+    keyName: row.key_name,
+    capo: row.capo,
+    barre: Boolean(row.barre),
+    difficulty: row.difficulty,
+    videoDuration: row.video_duration,
+    pdfPages: row.pdf_pages,
+    coverUrl: row.cover_key ? `/media/${encodeURIComponent(row.cover_key)}` : null,
+    coverKey: row.cover_key,
+    coverStyle: row.cover_style,
+    previewVideoUrl: row.preview_video_url,
+    privateVideoUrl: row.private_video_url,
+    pdfKey: row.pdf_key,
+    privatePdfUrl: row.private_pdf_url,
+    isNew: Boolean(row.is_new),
+    isPopular: Boolean(row.is_popular),
+    popularity: row.popularity,
+    status: row.status as SongStatus,
+    createdAt: row.created_at,
+  };
+}
+
+function publicSong(song: AdminSong): PublicSong {
+  const { privateVideoUrl: _video, privatePdfUrl: _pdf, pdfKey: _pdfKey, coverKey: _coverKey, status: _status, ...safe } = song;
+  return safe;
+}
+
+export async function listPublicSongs(): Promise<PublicSong[]> {
+  const db = getD1();
+  if (!db) return seedSongs.filter((song) => song.status === "published").map(publicSong);
+  await ensureDatabase();
+  const result = await db.prepare("SELECT * FROM songs WHERE status = 'published' ORDER BY datetime(created_at) DESC, id DESC").all<SongRow>();
+  return result.results.map(mapRow).map(publicSong);
+}
+
+export async function listAdminSongs(): Promise<AdminSong[]> {
+  const db = getD1();
+  if (!db) return seedSongs;
+  await ensureDatabase();
+  const result = await db.prepare("SELECT * FROM songs ORDER BY datetime(created_at) DESC, id DESC").all<SongRow>();
+  return result.results.map(mapRow);
+}
+
+export async function findPublicSong(slug: string): Promise<PublicSong | null> {
+  const db = getD1();
+  if (!db) {
+    const found = seedSongs.find((song) => song.slug === slug && song.status === "published");
+    return found ? publicSong(found) : null;
+  }
+  await ensureDatabase();
+  const row = await db.prepare("SELECT * FROM songs WHERE slug = ? AND status = 'published' LIMIT 1").bind(slug).first<SongRow>();
+  return row ? publicSong(mapRow(row)) : null;
+}
+
+export async function findAdminSong(id: number): Promise<AdminSong | null> {
+  const db = getD1();
+  if (!db) return seedSongs.find((song) => song.id === id) ?? null;
+  await ensureDatabase();
+  const row = await db.prepare("SELECT * FROM songs WHERE id = ? LIMIT 1").bind(id).first<SongRow>();
+  return row ? mapRow(row) : null;
+}
+
+export async function createSong(input: SongInput): Promise<AdminSong> {
+  const db = getD1();
+  if (!db) throw new Error("База данных пока недоступна.");
+  await ensureDatabase();
+  const row = await db.prepare(`INSERT INTO songs (
+    slug, artist, title, level, price, description, features, key_name, capo,
+    barre, difficulty, video_duration, pdf_pages, cover_key, cover_style,
+    preview_video_url, private_video_url, pdf_key, private_pdf_url, is_new,
+    is_popular, popularity, status
+  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  RETURNING *`).bind(...inputBindings(input)).first<SongRow>();
+  if (!row) throw new Error("Не удалось сохранить разбор.");
+  return mapRow(row);
+}
+
+export async function updateSong(id: number, input: SongInput): Promise<AdminSong> {
+  const db = getD1();
+  if (!db) throw new Error("База данных пока недоступна.");
+  await ensureDatabase();
+  const row = await db.prepare(`UPDATE songs SET
+    slug = ?, artist = ?, title = ?, level = ?, price = ?, description = ?,
+    features = ?, key_name = ?, capo = ?, barre = ?, difficulty = ?,
+    video_duration = ?, pdf_pages = ?, cover_key = ?, cover_style = ?,
+    preview_video_url = ?, private_video_url = ?, pdf_key = ?, private_pdf_url = ?,
+    is_new = ?, is_popular = ?, popularity = ?, status = ?, updated_at = CURRENT_TIMESTAMP
+    WHERE id = ? RETURNING *`).bind(...inputBindings(input), id).first<SongRow>();
+  if (!row) throw new Error("Разбор не найден.");
+  return mapRow(row);
+}
+
+function inputBindings(input: SongInput): unknown[] {
+  return [
+    input.slug,
+    input.artist,
+    input.title,
+    input.level,
+    input.price,
+    input.description,
+    JSON.stringify(input.features),
+    input.keyName,
+    input.capo,
+    input.barre ? 1 : 0,
+    input.difficulty,
+    input.videoDuration,
+    input.pdfPages,
+    input.coverKey,
+    input.coverStyle,
+    input.previewVideoUrl,
+    input.privateVideoUrl,
+    input.pdfKey,
+    input.privatePdfUrl,
+    input.isNew ? 1 : 0,
+    input.isPopular ? 1 : 0,
+    input.popularity,
+    input.status,
+  ];
+}
+
+export async function removeSong(id: number): Promise<AdminSong | null> {
+  const db = getD1();
+  if (!db) throw new Error("База данных пока недоступна.");
+  await ensureDatabase();
+  const row = await db.prepare("DELETE FROM songs WHERE id = ? RETURNING *").bind(id).first<SongRow>();
+  return row ? mapRow(row) : null;
+}

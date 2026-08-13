@@ -1,0 +1,31 @@
+import { sql } from "drizzle-orm";
+import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
+
+export const songs = sqliteTable("songs", {
+  id: integer("id").primaryKey({ autoIncrement: true }),
+  slug: text("slug").notNull().unique(),
+  artist: text("artist").notNull(),
+  title: text("title").notNull(),
+  level: text("level").notNull(),
+  price: integer("price").notNull().default(199),
+  description: text("description").notNull().default(""),
+  features: text("features").notNull().default("[]"),
+  keyName: text("key_name").notNull().default(""),
+  capo: text("capo").notNull().default(""),
+  barre: integer("barre", { mode: "boolean" }).notNull().default(false),
+  difficulty: integer("difficulty").notNull().default(1),
+  videoDuration: text("video_duration").notNull().default(""),
+  pdfPages: integer("pdf_pages").notNull().default(0),
+  coverKey: text("cover_key"),
+  coverStyle: text("cover_style").notNull().default("violet"),
+  previewVideoUrl: text("preview_video_url").notNull().default(""),
+  privateVideoUrl: text("private_video_url").notNull().default(""),
+  pdfKey: text("pdf_key"),
+  privatePdfUrl: text("private_pdf_url").notNull().default(""),
+  isNew: integer("is_new", { mode: "boolean" }).notNull().default(false),
+  isPopular: integer("is_popular", { mode: "boolean" }).notNull().default(false),
+  popularity: integer("popularity").notNull().default(0),
+  status: text("status").notNull().default("draft"),
+  createdAt: text("created_at").notNull().default(sql`CURRENT_TIMESTAMP`),
+  updatedAt: text("updated_at").notNull().default(sql`CURRENT_TIMESTAMP`),
+});
