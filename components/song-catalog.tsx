@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { INTERESTING_RHYTHM_SECTION, levelMeta, LEVELS, FEATURE_OPTIONS, type PublicSong, type SongLevel } from "@/lib/song-types";
+import { INTERESTING_RHYTHM_SECTION, levelMeta, LEVELS, FEATURE_OPTIONS, UNASSIGNED_LEVEL, type CatalogSongLevel, type PublicSong, type SongLevel } from "@/lib/song-types";
 import { SongCover } from "./song-cover";
 import { TelegramCta } from "./telegram-cta";
 
@@ -12,9 +12,10 @@ function normalize(value: string) {
   return value.toLocaleLowerCase("ru-RU").replace(/ё/g, "е").trim();
 }
 
-function LevelBadge({ level }: { level: SongLevel }) {
-  const meta = levelMeta[level];
-  return <span className={`level-badge level-${meta.color}`}><i>{meta.icon}</i>{level}</span>;
+function LevelBadge({ level }: { level: CatalogSongLevel }) {
+  const thematicOnly = level === UNASSIGNED_LEVEL;
+  const meta = thematicOnly ? { color: "purple", icon: "●" } : levelMeta[level];
+  return <span className={`level-badge level-${meta.color}`}><i>{meta.icon}</i>{thematicOnly ? "Интересный бой" : level}</span>;
 }
 
 function FeatureList({ features }: { features: string[] }) {
@@ -33,7 +34,7 @@ export function SongCard({ song, compact = false }: { song: PublicSong; compact?
         <div className="card-topline"><span className="artist-name">{song.artist}</span><LevelBadge level={song.level} /></div>
         <Link href={`/songs/${song.slug}`} className="card-title">{song.title}</Link>
         <FeatureList features={song.features} />
-        <div className="card-footer"><strong>{song.price} ₽</strong><TelegramCta artist={song.artist} title={song.title} price={song.price} compact /></div>
+        <div className="card-footer">{song.available ? <><strong>{song.price} ₽</strong><TelegramCta artist={song.artist} title={song.title} price={song.price} compact /></> : <span className="coming-soon">Разбор скоро появится</span>}</div>
       </div>
     </article>
   );

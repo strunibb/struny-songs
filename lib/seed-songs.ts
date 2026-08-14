@@ -90,7 +90,7 @@ export const seedSongs: AdminSong[] = [
     slug: "metallica-nothing-else-matters",
     artist: "Metallica",
     title: "Nothing Else Matters",
-    level: "Профи",
+    level: "Продвинутый",
     price: 349,
     description: "Подробно собираем вступление, перебор, аккордовую фактуру и выразительную подачу композиции.",
     features: ["Перебор", "Соло", "Табулатура"],

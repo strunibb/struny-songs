@@ -1,6 +1,6 @@
 import { readFile, writeFile } from "node:fs/promises";
 
-const [, , inputPath, exportName, outputPath] = process.argv;
+const [, , inputPath, exportName, outputPath, slugPrefix = "beginner"] = process.argv;
 
 if (!inputPath || !exportName || !outputPath) {
   throw new Error("Использование: node generate-song-group.mjs <список.md> <exportName> <output.ts>");
@@ -37,7 +37,7 @@ const unique = entries.filter(({ artist, title }) => {
   seen.add(key);
   return true;
 }).map(({ artist, title }) => {
-  const base = `beginner-${slugify(`${artist}-${title}`)}`;
+  const base = `${slugPrefix}-${slugify(`${artist}-${title}`)}`;
   let slug = base;
   let suffix = 2;
   while (usedSlugs.has(slug)) slug = `${base}-${suffix++}`;

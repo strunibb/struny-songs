@@ -1,8 +1,9 @@
 import { seedSongs } from "./seed-songs";
-import { LEVELS, UNASSIGNED_LEVEL, type AdminSong, type AdminSongLevel, type PublicSong, type SongLevel, type SongStatus } from "./song-types";
+import { LEVELS, UNASSIGNED_LEVEL, type AdminSong, type AdminSongLevel, type CatalogSongLevel, type PublicSong, type SongLevel, type SongStatus } from "./song-types";
 import { pendingSongLibrary } from "./song-library";
 import { beginnerSongs } from "./song-groups";
 import { interestingRhythmSongs } from "./interesting-rhythm-songs";
+import { advancedSongs } from "./advanced-songs";
 
 type Bindings = {
   DB?: D1Database;
@@ -178,7 +179,8 @@ export async function ensureDatabase(): Promise<boolean> {
       ),
     );
 
-    await db.prepare("UPDATE songs SET level = 'Профи' WHERE level = 'Хардкор'").run();
+    await db.prepare("UPDATE songs SET level = 'Продвинутый' WHERE level IN ('Хардкор', 'Профи')").run();
+    await db.prepare("UPDATE songs SET level = 'Зарубежный рок' WHERE slug = 'metallica-nothing-else-matters'").run();
 
     const libraryMigrationId = "song-library-2026-08-14";
     const libraryImported = await db.prepare("SELECT id FROM app_migrations WHERE id = ? LIMIT 1")
@@ -281,6 +283,47 @@ export async function ensureDatabase(): Promise<boolean> {
       }
       await db.prepare("INSERT OR IGNORE INTO app_migrations (id) VALUES (?)").bind(interestingRhythmMigrationId).run();
     }
+
+    const advancedMigrationId = "song-group-advanced-2026-08-15";
+    const advancedAssigned = await db.prepare("SELECT id FROM app_migrations WHERE id = ? LIMIT 1")
+      .bind(advancedMigrationId)
+      .first<{ id: string }>();
+
+    if (!advancedAssigned) {
+      const resolveAdvancedSongId = (song: { artist: string; title: string }, rows: SongIdentityRow[]): number | undefined => {
+        const exact = rows.find((row) => songIdentity(row.artist, row.title) === songIdentity(song.artist, song.title));
+        if (exact) return exact.id;
+        if (song.artist !== "Исполнитель не указан") return undefined;
+        const titleMatches = rows.filter((row) => normalizeSongPart(row.title) === normalizeSongPart(song.title));
+        return titleMatches.length === 1 ? titleMatches[0].id : undefined;
+      };
+
+      let rows = await db.prepare("SELECT id, artist, title FROM songs").all<SongIdentityRow>();
+      const missingSongs = advancedSongs.filter((song) => !resolveAdvancedSongId(song, rows.results));
+
+      const insertChunkSize = 50;
+      for (let index = 0; index < missingSongs.length; index += insertChunkSize) {
+        const chunk = missingSongs.slice(index, index + insertChunkSize);
+        await db.batch(chunk.map((song) => db.prepare(`INSERT OR IGNORE INTO songs (
+          slug, artist, title, level, price, status, is_new
+        ) VALUES (?, ?, ?, 'Продвинутый', 0, 'draft', 0)`)
+          .bind(song.slug, song.artist, song.title)));
+      }
+
+      rows = await db.prepare("SELECT id, artist, title FROM songs").all<SongIdentityRow>();
+      const advancedIds = [...new Set(advancedSongs
+        .map((song) => resolveAdvancedSongId(song, rows.results))
+        .filter((id): id is number => typeof id === "number"))];
+
+      const updateChunkSize = 75;
+      for (let index = 0; index < advancedIds.length; index += updateChunkSize) {
+        const chunk = advancedIds.slice(index, index + updateChunkSize);
+        await db.batch(chunk.map((id) => db.prepare(
+          "UPDATE songs SET level = 'Продвинутый', updated_at = CURRENT_TIMESTAMP WHERE id = ?",
+        ).bind(id)));
+      }
+      await db.prepare("INSERT OR IGNORE INTO app_migrations (id) VALUES (?)").bind(advancedMigrationId).run();
+    }
   })();
 
   try {
@@ -333,16 +376,20 @@ function mapRow(row: SongRow): AdminSong {
 }
 
 function publicSong(song: AdminSong): PublicSong {
-  if (!LEVELS.includes(song.level as SongLevel)) throw new Error("У опубликованной песни не выбран раздел.");
+  const hasDifficultyLevel = LEVELS.includes(song.level as SongLevel);
+  const hasThematicSection = song.level === UNASSIGNED_LEVEL && song.features.includes("Интересный бой");
+  if (!hasDifficultyLevel && !hasThematicSection) throw new Error("У песни не выбран раздел.");
   const { privateVideoUrl: _video, privatePdfUrl: _pdf, pdfKey: _pdfKey, coverKey: _coverKey, status: _status, level, ...safe } = song;
-  return { ...safe, level: level as SongLevel };
+  return { ...safe, level: level as CatalogSongLevel, available: song.status === "published" };
 }
 
 export async function listPublicSongs(): Promise<PublicSong[]> {
   const db = getD1();
   if (!db) return seedSongs.filter((song) => song.status === "published").map(publicSong);
   await ensureDatabase();
-  const result = await db.prepare("SELECT * FROM songs WHERE status = 'published' AND level != ? ORDER BY datetime(created_at) DESC, id DESC").bind(UNASSIGNED_LEVEL).all<SongRow>();
+  const result = await db.prepare(`SELECT * FROM songs
+    WHERE level != ? OR features LIKE '%"Интересный бой"%'
+    ORDER BY datetime(created_at) DESC, id DESC`).bind(UNASSIGNED_LEVEL).all<SongRow>();
   return result.results.map(mapRow).map(publicSong);
 }
 
@@ -361,7 +408,9 @@ export async function findPublicSong(slug: string): Promise<PublicSong | null> {
     return found ? publicSong(found) : null;
   }
   await ensureDatabase();
-  const row = await db.prepare("SELECT * FROM songs WHERE slug = ? AND status = 'published' AND level != ? LIMIT 1").bind(slug, UNASSIGNED_LEVEL).first<SongRow>();
+  const row = await db.prepare(`SELECT * FROM songs
+    WHERE slug = ? AND (level != ? OR features LIKE '%"Интересный бой"%')
+    LIMIT 1`).bind(slug, UNASSIGNED_LEVEL).first<SongRow>();
   return row ? publicSong(mapRow(row)) : null;
 }
 
