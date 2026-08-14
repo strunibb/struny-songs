@@ -80,16 +80,15 @@ function CartDrawer() {
 
   const total = songs.reduce((sum, song) => sum + song.price, 0);
   const message = `Здравствуйте! Хочу купить разборы на песни:\n${songs.map((song, index) => `${index + 1}. ${song.artist} — ${song.title} — ${optionLabel(song.option)} (${priceLabel(song.price)})`).join("\n")}\n\nИтого: ${priceLabel(total)}`;
-  function sendRequest() {
-    if (!songs.length) return;
+  const telegramUrl = `https://t.me/nikguitar?text=${encodeURIComponent(message)}`;
+  function copyRequest() {
     void navigator.clipboard?.writeText(message).then(() => setCopied(true)).catch(() => undefined);
-    window.open("https://t.me/nikguitar", "_blank", "noopener,noreferrer");
   }
 
   return <div className="cart-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) setOpen(false); }}>
     <aside className="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
       <div className="cart-head"><div><small>Заявка в Telegram</small><h2 id="cart-title">Корзина</h2></div><button type="button" onClick={() => setOpen(false)} aria-label="Закрыть корзину">×</button></div>
-      {songs.length ? <><div className="cart-list">{songs.map((song, index) => <div className="cart-row" key={song.id}><b>{String(index + 1).padStart(2, "0")}</b><span><strong>{song.title}</strong><small>{song.artist}</small><em>{optionLabel(song.option)} · {priceLabel(song.price)}</em></span><button type="button" onClick={() => removeSong(song.id)} aria-label={`Убрать ${song.artist} — ${song.title}`}>×</button></div>)}</div><div className="cart-total"><span>Итого</span><strong>{priceLabel(total)}</strong></div><div className="cart-actions"><button type="button" className="cart-clear" onClick={clear}>Очистить</button><button type="button" className="button button-primary" onClick={sendRequest}>{copied ? "Список скопирован ✓" : "Отправить заявку Никите"}</button></div><p>Список скопируется автоматически — останется вставить его в открывшийся чат.</p></> : <div className="cart-empty"><span>♪</span><h3>Пока пусто</h3><p>Выберите PDF или вариант с видео у одной или нескольких песен.</p><button type="button" className="button button-outline" onClick={() => setOpen(false)}>Вернуться к песням</button></div>}
+      {songs.length ? <><div className="cart-list">{songs.map((song, index) => <div className="cart-row" key={song.id}><b>{String(index + 1).padStart(2, "0")}</b><span><strong>{song.title}</strong><small>{song.artist}</small><em>{optionLabel(song.option)} · {priceLabel(song.price)}</em></span><button type="button" onClick={() => removeSong(song.id)} aria-label={`Убрать ${song.artist} — ${song.title}`}>×</button></div>)}</div><div className="cart-total"><span>Итого</span><strong>{priceLabel(total)}</strong></div><div className="cart-actions"><button type="button" className="cart-clear" onClick={clear}>Очистить</button><a className="button button-primary" href={telegramUrl} target="_blank" rel="noreferrer" onClick={copyRequest}>{copied ? "Заявка готова ✓" : "Отправить заявку Никите"}</a></div><p>Telegram откроется уже с готовым списком песен — останется только нажать «Отправить».</p></> : <div className="cart-empty"><span>♪</span><h3>Пока пусто</h3><p>Выберите PDF или вариант с видео у одной или нескольких песен.</p><button type="button" className="button button-outline" onClick={() => setOpen(false)}>Вернуться к песням</button></div>}
     </aside>
   </div>;
 }
