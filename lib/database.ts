@@ -1,5 +1,6 @@
 import { seedSongs } from "./seed-songs";
-import type { AdminSong, PublicSong, SongLevel, SongStatus } from "./song-types";
+import { LEVELS, UNASSIGNED_LEVEL, type AdminSong, type AdminSongLevel, type PublicSong, type SongLevel, type SongStatus } from "./song-types";
+import { pendingSongLibrary } from "./song-library";
 
 type Bindings = {
   DB?: D1Database;
@@ -12,7 +13,7 @@ export type SongInput = {
   slug: string;
   artist: string;
   title: string;
-  level: SongLevel;
+  level: AdminSongLevel;
   price: number;
   description: string;
   features: string[];
@@ -117,6 +118,10 @@ export async function ensureDatabase(): Promise<boolean> {
       db.prepare("CREATE INDEX IF NOT EXISTS songs_status_idx ON songs(status)"),
       db.prepare("CREATE INDEX IF NOT EXISTS songs_artist_title_idx ON songs(artist, title)"),
       db.prepare("CREATE INDEX IF NOT EXISTS songs_created_at_idx ON songs(created_at DESC)"),
+      db.prepare(`CREATE TABLE IF NOT EXISTS app_migrations (
+        id TEXT PRIMARY KEY,
+        applied_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+      )`),
     ]);
 
     await db.batch(
@@ -155,6 +160,29 @@ export async function ensureDatabase(): Promise<boolean> {
           ),
       ),
     );
+
+    await db.prepare("UPDATE songs SET level = 'Профи' WHERE level = 'Хардкор'").run();
+
+    const libraryMigrationId = "song-library-2026-08-14";
+    const libraryImported = await db.prepare("SELECT id FROM app_migrations WHERE id = ? LIMIT 1")
+      .bind(libraryMigrationId)
+      .first<{ id: string }>();
+
+    if (!libraryImported) {
+      const chunkSize = 50;
+      for (let index = 0; index < pendingSongLibrary.length; index += chunkSize) {
+        const chunk = pendingSongLibrary.slice(index, index + chunkSize);
+        await db.batch(chunk.map((song) => db.prepare(`INSERT OR IGNORE INTO songs (
+          slug, artist, title, level, price, status, is_new
+        ) SELECT ?, ?, ?, ?, 0, 'draft', 0
+        WHERE NOT EXISTS (
+          SELECT 1 FROM songs
+          WHERE lower(trim(artist)) = lower(trim(?))
+            AND lower(trim(title)) = lower(trim(?))
+        )`).bind(song.slug, song.artist, song.title, UNASSIGNED_LEVEL, song.artist, song.title)));
+      }
+      await db.prepare("INSERT OR IGNORE INTO app_migrations (id) VALUES (?)").bind(libraryMigrationId).run();
+    }
   })();
 
   try {
@@ -181,7 +209,7 @@ function mapRow(row: SongRow): AdminSong {
     slug: row.slug,
     artist: row.artist,
     title: row.title,
-    level: row.level as SongLevel,
+    level: row.level as AdminSongLevel,
     price: row.price,
     description: row.description,
     features: parseFeatures(row.features),
@@ -207,15 +235,16 @@ function mapRow(row: SongRow): AdminSong {
 }
 
 function publicSong(song: AdminSong): PublicSong {
-  const { privateVideoUrl: _video, privatePdfUrl: _pdf, pdfKey: _pdfKey, coverKey: _coverKey, status: _status, ...safe } = song;
-  return safe;
+  if (!LEVELS.includes(song.level as SongLevel)) throw new Error("У опубликованной песни не выбран раздел.");
+  const { privateVideoUrl: _video, privatePdfUrl: _pdf, pdfKey: _pdfKey, coverKey: _coverKey, status: _status, level, ...safe } = song;
+  return { ...safe, level: level as SongLevel };
 }
 
 export async function listPublicSongs(): Promise<PublicSong[]> {
   const db = getD1();
   if (!db) return seedSongs.filter((song) => song.status === "published").map(publicSong);
   await ensureDatabase();
-  const result = await db.prepare("SELECT * FROM songs WHERE status = 'published' ORDER BY datetime(created_at) DESC, id DESC").all<SongRow>();
+  const result = await db.prepare("SELECT * FROM songs WHERE status = 'published' AND level != ? ORDER BY datetime(created_at) DESC, id DESC").bind(UNASSIGNED_LEVEL).all<SongRow>();
   return result.results.map(mapRow).map(publicSong);
 }
 
@@ -234,7 +263,7 @@ export async function findPublicSong(slug: string): Promise<PublicSong | null> {
     return found ? publicSong(found) : null;
   }
   await ensureDatabase();
-  const row = await db.prepare("SELECT * FROM songs WHERE slug = ? AND status = 'published' LIMIT 1").bind(slug).first<SongRow>();
+  const row = await db.prepare("SELECT * FROM songs WHERE slug = ? AND status = 'published' AND level != ? LIMIT 1").bind(slug, UNASSIGNED_LEVEL).first<SongRow>();
   return row ? publicSong(mapRow(row)) : null;
 }
 

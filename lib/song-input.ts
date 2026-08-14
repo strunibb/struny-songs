@@ -1,4 +1,4 @@
-import { FEATURE_OPTIONS, LEVELS, type AdminSong, type SongLevel } from "./song-types";
+import { ADMIN_LEVELS, FEATURE_OPTIONS, UNASSIGNED_LEVEL, type AdminSong, type AdminSongLevel } from "./song-types";
 import type { SongInput } from "./database";
 
 const transliteration: Record<string, string> = {
@@ -28,7 +28,9 @@ export function parseSongForm(form: FormData, existing?: AdminSong | null): Song
   if (!artist || !title) throw new Error("Укажите исполнителя и название песни.");
 
   const rawLevel = text(form, "level");
-  const level: SongLevel = LEVELS.includes(rawLevel as SongLevel) ? (rawLevel as SongLevel) : "Начинающий";
+  const level: AdminSongLevel = ADMIN_LEVELS.includes(rawLevel as AdminSongLevel) ? (rawLevel as AdminSongLevel) : UNASSIGNED_LEVEL;
+  const status = text(form, "status") === "published" ? "published" : "draft";
+  if (status === "published" && level === UNASSIGNED_LEVEL) throw new Error("Сначала выберите раздел для песни.");
   const features = form.getAll("features").filter((item): item is string => typeof item === "string" && FEATURE_OPTIONS.includes(item as never));
 
   return {
@@ -54,7 +56,7 @@ export function parseSongForm(form: FormData, existing?: AdminSong | null): Song
     isNew: text(form, "isNew") === "true",
     isPopular: text(form, "isPopular") === "true",
     popularity: Math.min(100, Math.max(0, Math.round(numberValue(form, "popularity", 0)))),
-    status: text(form, "status") === "published" ? "published" : "draft",
+    status,
   };
 }
 

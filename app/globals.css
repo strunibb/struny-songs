@@ -133,7 +133,7 @@ button { color: inherit; }
 .artist-name { margin: 0; color: #9a8fa0; font-size: 9px; font-weight: 850; letter-spacing: .15em; text-transform: uppercase; }
 .level-badge { width: fit-content; padding: 5px 8px; display: inline-flex; align-items: center; gap: 5px; border: 1px solid currentColor; border-radius: 8px; font-size: 8px; font-weight: 850; letter-spacing: .03em; opacity: .8; }
 .level-badge i { font-size: 8px; font-style: normal; }
-.level-green { color: var(--green); background: rgba(77,191,135,.07); }.level-yellow { color: var(--yellow); background: rgba(222,184,66,.07); }.level-red { color: var(--red); background: rgba(236,90,99,.07); }.level-purple { color: var(--purple-light); background: rgba(164,95,255,.08); }
+.level-green { color: var(--green); background: rgba(77,191,135,.07); }.level-yellow { color: var(--yellow); background: rgba(222,184,66,.07); }.level-red { color: var(--red); background: rgba(236,90,99,.07); }.level-purple { color: var(--purple-light); background: rgba(164,95,255,.08); }.level-blue { color: #67c7e8; background: rgba(103,199,232,.08); }
 .card-title { margin: 9px 0 13px; display: block; font-size: 21px; line-height: 1.15; letter-spacing: -.035em; font-weight: 800; }
 .feature-list { min-height: 48px; display: flex; align-content: flex-start; flex-wrap: wrap; gap: 5px 11px; color: #847b89; font-size: 9px; }
 .feature-list span { white-space: nowrap; }
