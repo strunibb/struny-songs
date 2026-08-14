@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { levelMeta, LEVELS, FEATURE_OPTIONS, type PublicSong, type SongLevel } from "@/lib/song-types";
+import { INTERESTING_RHYTHM_SECTION, levelMeta, LEVELS, FEATURE_OPTIONS, type PublicSong, type SongLevel } from "@/lib/song-types";
 import { SongCover } from "./song-cover";
 import { TelegramCta } from "./telegram-cta";
 
@@ -53,7 +53,7 @@ function EmptyState({ query }: { query: string }) {
 export function SongCatalog({ songs, mode = "home" }: { songs: PublicSong[]; mode?: "home" | "full" }) {
   const [catalog, setCatalog] = useState(songs);
   const [query, setQuery] = useState("");
-  const [level, setLevel] = useState<"Все" | SongLevel>("Все");
+  const [level, setLevel] = useState<"Все" | SongLevel | typeof INTERESTING_RHYTHM_SECTION>("Все");
   const [feature, setFeature] = useState<string>("Все");
   const [sort, setSort] = useState<SortMode>("new");
   const [filtersOpen, setFiltersOpen] = useState(false);
@@ -71,7 +71,9 @@ export function SongCatalog({ songs, mode = "home" }: { songs: PublicSong[]; mod
   const matches = useMemo(() => {
     const filtered = catalog.filter((song) => {
       const searchable = normalize(`${song.artist} ${song.title}`);
-      return (!normalizedQuery || searchable.includes(normalizedQuery)) && (level === "Все" || song.level === level) && (feature === "Все" || song.features.includes(feature));
+      const matchesSection = level === "Все"
+        || (level === INTERESTING_RHYTHM_SECTION ? song.features.includes("Интересный бой") : song.level === level);
+      return (!normalizedQuery || searchable.includes(normalizedQuery)) && matchesSection && (feature === "Все" || song.features.includes(feature));
     });
     return [...filtered].sort((a, b) => {
       if (sort === "popular") return b.popularity - a.popularity;
@@ -105,14 +107,14 @@ export function SongCatalog({ songs, mode = "home" }: { songs: PublicSong[]; mod
               {suggestions.length ? <div className="suggestions">{suggestions.map((song) => <Link key={song.id} href={`/songs/${song.slug}`}><span><small>{song.artist}</small><strong>{song.title}</strong></span><LevelBadge level={song.level} /></Link>)}</div> : null}
             </div>
             <p className="search-example">Например: <button onClick={() => setQuery("Кино — Пачка сигарет")}>Кино — Пачка сигарет</button></p>
-            <div className="level-tabs" aria-label="Фильтр по уровню">{(["Все", ...LEVELS] as const).map((item) => <button key={item} className={level === item ? "active" : ""} onClick={() => setLevel(item)}>{item !== "Все" ? <i className={`dot-${levelMeta[item].color}`} /> : null}{item}</button>)}</div>
+            <div className="level-tabs" aria-label="Фильтр по разделу">{(["Все", ...LEVELS, INTERESTING_RHYTHM_SECTION] as const).map((item) => <button key={item} className={level === item ? "active" : ""} onClick={() => setLevel(item)}>{item !== "Все" && item !== INTERESTING_RHYTHM_SECTION ? <i className={`dot-${levelMeta[item].color}`} /> : item === INTERESTING_RHYTHM_SECTION ? <i className="dot-rhythm" /> : null}{item}</button>)}</div>
           </div>
         </section>
       ) : (
         <section className="catalog-hero"><div className="shell"><p className="eyebrow"><i /> Постоянно пополняется</p><h1>Все разборы</h1><p>Найдите песню по названию или исполнителю, выберите уровень и нужные материалы.</p><div className="search-wrap catalog-search"><span className="search-icon">⌕</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Найти песню или исполнителя" aria-label="Найти песню или исполнителя" />{query ? <button className="search-clear" onClick={() => setQuery("")}>×</button> : null}</div></div></section>
       )}
 
-      {mode === "full" ? <section className="catalog-controls"><div className="shell"><div className="controls-line"><div className="level-tabs compact-tabs">{(["Все", ...LEVELS] as const).map((item) => <button key={item} className={level === item ? "active" : ""} onClick={() => setLevel(item)}>{item}</button>)}</div><button className="filter-toggle" onClick={() => setFiltersOpen((value) => !value)}>Фильтры <span>{filtersOpen ? "−" : "+"}</span></button><select value={sort} onChange={(event) => setSort(event.target.value as SortMode)} aria-label="Сортировка"><option value="new">Сначала новые</option><option value="popular">Популярные</option><option value="title">По названию</option><option value="easy">Сначала проще</option><option value="hard">Сначала сложнее</option></select></div><div className={filtersOpen ? "type-filters open" : "type-filters"}><span>Тип:</span>{["Все", ...FEATURE_OPTIONS].map((item) => <button className={feature === item ? "active" : ""} key={item} onClick={() => setFeature(item)}>{item}</button>)}</div></div></section> : null}
+      {mode === "full" ? <section className="catalog-controls"><div className="shell"><div className="controls-line"><div className="level-tabs compact-tabs">{(["Все", ...LEVELS, INTERESTING_RHYTHM_SECTION] as const).map((item) => <button key={item} className={level === item ? "active" : ""} onClick={() => setLevel(item)}>{item}</button>)}</div><button className="filter-toggle" onClick={() => setFiltersOpen((value) => !value)}>Фильтры <span>{filtersOpen ? "−" : "+"}</span></button><select value={sort} onChange={(event) => setSort(event.target.value as SortMode)} aria-label="Сортировка"><option value="new">Сначала новые</option><option value="popular">Популярные</option><option value="title">По названию</option><option value="easy">Сначала проще</option><option value="hard">Сначала сложнее</option></select></div><div className={filtersOpen ? "type-filters open" : "type-filters"}><span>Тип:</span>{["Все", ...FEATURE_OPTIONS].map((item) => <button className={feature === item ? "active" : ""} key={item} onClick={() => setFeature(item)}>{item}</button>)}</div></div></section> : null}
 
       {activeSearch || mode === "full" ? (
         <section className="section catalog-results"><div className="shell"><div className="section-heading"><div><span className="section-index">{String(matches.length).padStart(2, "0")}</span><h2>{activeSearch ? "Результаты поиска" : "Вся библиотека"}</h2></div><p>{matches.length} {matches.length === 1 ? "разбор" : matches.length < 5 ? "разбора" : "разборов"}</p></div>{matches.length ? <div className="song-grid">{matches.map((song) => <SongCard key={song.id} song={song} compact={mode === "full"} />)}</div> : <EmptyState query={query} />}</div></section>

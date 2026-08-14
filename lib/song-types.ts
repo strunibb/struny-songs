@@ -1,5 +1,6 @@
 export const LEVELS = ["Начинающий", "Любитель", "Профи", "Фингерстайл", "Зарубежный рок"] as const;
 export const UNASSIGNED_LEVEL = "Без категории" as const;
+export const INTERESTING_RHYTHM_SECTION = "Песни с интересным боем" as const;
 export const ADMIN_LEVELS = [UNASSIGNED_LEVEL, ...LEVELS] as const;
 export const FEATURE_OPTIONS = [
   "Аккорды",
@@ -9,6 +10,7 @@ export const FEATURE_OPTIONS = [
   "Соло",
   "Фингерстайл",
   "Табулатура",
+  "Интересный бой",
 ] as const;
 
 export type SongLevel = (typeof LEVELS)[number];

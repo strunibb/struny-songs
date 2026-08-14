@@ -2,6 +2,7 @@ import { seedSongs } from "./seed-songs";
 import { LEVELS, UNASSIGNED_LEVEL, type AdminSong, type AdminSongLevel, type PublicSong, type SongLevel, type SongStatus } from "./song-types";
 import { pendingSongLibrary } from "./song-library";
 import { beginnerSongs } from "./song-groups";
+import { interestingRhythmSongs } from "./interesting-rhythm-songs";
 
 type Bindings = {
   DB?: D1Database;
@@ -65,6 +66,7 @@ type SongRow = {
 };
 
 type SongIdentityRow = Pick<SongRow, "id" | "artist" | "title">;
+type SongFeatureRow = Pick<SongRow, "id" | "artist" | "title" | "features">;
 
 function normalizeSongPart(value: string): string {
   return value.normalize("NFKC")
@@ -232,6 +234,52 @@ export async function ensureDatabase(): Promise<boolean> {
         ).bind(id)));
       }
       await db.prepare("INSERT OR IGNORE INTO app_migrations (id) VALUES (?)").bind(beginnerMigrationId).run();
+    }
+
+    const interestingRhythmMigrationId = "song-group-interesting-rhythm-2026-08-15";
+    const interestingRhythmAssigned = await db.prepare("SELECT id FROM app_migrations WHERE id = ? LIMIT 1")
+      .bind(interestingRhythmMigrationId)
+      .first<{ id: string }>();
+
+    if (!interestingRhythmAssigned) {
+      const resolveGroupSongId = (song: { artist: string; title: string }, rows: SongFeatureRow[]): number | undefined => {
+        const exact = rows.find((row) => songIdentity(row.artist, row.title) === songIdentity(song.artist, song.title));
+        if (exact) return exact.id;
+        if (song.artist !== "Исполнитель не указан") return undefined;
+        const titleMatches = rows.filter((row) => normalizeSongPart(row.title) === normalizeSongPart(song.title));
+        return titleMatches.length === 1 ? titleMatches[0].id : undefined;
+      };
+
+      let rows = await db.prepare("SELECT id, artist, title, features FROM songs").all<SongFeatureRow>();
+      const missingSongs = interestingRhythmSongs.filter((song) => !resolveGroupSongId(song, rows.results));
+
+      const insertChunkSize = 50;
+      for (let index = 0; index < missingSongs.length; index += insertChunkSize) {
+        const chunk = missingSongs.slice(index, index + insertChunkSize);
+        await db.batch(chunk.map((song) => db.prepare(`INSERT OR IGNORE INTO songs (
+          slug, artist, title, level, price, status, is_new, features
+        ) VALUES (?, ?, ?, ?, 0, 'draft', 0, ?)`)
+          .bind(song.slug, song.artist, song.title, UNASSIGNED_LEVEL, JSON.stringify(["Интересный бой"]))));
+      }
+
+      rows = await db.prepare("SELECT id, artist, title, features FROM songs").all<SongFeatureRow>();
+      const rowsById = new Map(rows.results.map((row) => [row.id, row]));
+      const groupIds = [...new Set(interestingRhythmSongs
+        .map((song) => resolveGroupSongId(song, rows.results))
+        .filter((id): id is number => typeof id === "number"))];
+      const rowsToUpdate = groupIds
+        .map((id) => rowsById.get(id))
+        .filter((row): row is SongFeatureRow => Boolean(row))
+        .filter((row) => !parseFeatures(row.features).includes("Интересный бой"));
+
+      const updateChunkSize = 75;
+      for (let index = 0; index < rowsToUpdate.length; index += updateChunkSize) {
+        const chunk = rowsToUpdate.slice(index, index + updateChunkSize);
+        await db.batch(chunk.map((row) => db.prepare(
+          "UPDATE songs SET features = ?, updated_at = CURRENT_TIMESTAMP WHERE id = ?",
+        ).bind(JSON.stringify([...parseFeatures(row.features), "Интересный бой"]), row.id)));
+      }
+      await db.prepare("INSERT OR IGNORE INTO app_migrations (id) VALUES (?)").bind(interestingRhythmMigrationId).run();
     }
   })();
 
