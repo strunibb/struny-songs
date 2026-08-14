@@ -1,6 +1,7 @@
 import { seedSongs } from "./seed-songs";
 import { LEVELS, UNASSIGNED_LEVEL, type AdminSong, type AdminSongLevel, type PublicSong, type SongLevel, type SongStatus } from "./song-types";
 import { pendingSongLibrary } from "./song-library";
+import { beginnerSongs } from "./song-groups";
 
 type Bindings = {
   DB?: D1Database;
@@ -62,6 +63,20 @@ type SongRow = {
   status: string;
   created_at: string;
 };
+
+type SongIdentityRow = Pick<SongRow, "id" | "artist" | "title">;
+
+function normalizeSongPart(value: string): string {
+  return value.normalize("NFKC")
+    .toLocaleLowerCase("ru")
+    .replace(/[’‘`]/g, "'")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function songIdentity(artist: string, title: string): string {
+  return `${normalizeSongPart(artist)}\u0000${normalizeSongPart(title)}`;
+}
 
 export function getBindings(): Bindings {
   return (globalThis as typeof globalThis & { __STRUNY_ENV__?: Bindings }).__STRUNY_ENV__ ?? {};
@@ -182,6 +197,41 @@ export async function ensureDatabase(): Promise<boolean> {
         )`).bind(song.slug, song.artist, song.title, UNASSIGNED_LEVEL, song.artist, song.title)));
       }
       await db.prepare("INSERT OR IGNORE INTO app_migrations (id) VALUES (?)").bind(libraryMigrationId).run();
+    }
+
+    const beginnerMigrationId = "song-group-beginner-2026-08-14";
+    const beginnerAssigned = await db.prepare("SELECT id FROM app_migrations WHERE id = ? LIMIT 1")
+      .bind(beginnerMigrationId)
+      .first<{ id: string }>();
+
+    if (!beginnerAssigned) {
+      let rows = await db.prepare("SELECT id, artist, title FROM songs").all<SongIdentityRow>();
+      let idsBySong = new Map(rows.results.map((song) => [songIdentity(song.artist, song.title), song.id]));
+      const missingSongs = beginnerSongs.filter((song) => !idsBySong.has(songIdentity(song.artist, song.title)));
+
+      const insertChunkSize = 50;
+      for (let index = 0; index < missingSongs.length; index += insertChunkSize) {
+        const chunk = missingSongs.slice(index, index + insertChunkSize);
+        await db.batch(chunk.map((song) => db.prepare(`INSERT OR IGNORE INTO songs (
+          slug, artist, title, level, price, status, is_new
+        ) VALUES (?, ?, ?, 'Начинающий', 0, 'draft', 0)`)
+          .bind(song.slug, song.artist, song.title)));
+      }
+
+      rows = await db.prepare("SELECT id, artist, title FROM songs").all<SongIdentityRow>();
+      idsBySong = new Map(rows.results.map((song) => [songIdentity(song.artist, song.title), song.id]));
+      const beginnerIds = [...new Set(beginnerSongs
+        .map((song) => idsBySong.get(songIdentity(song.artist, song.title)))
+        .filter((id): id is number => typeof id === "number"))];
+
+      const chunkSize = 75;
+      for (let index = 0; index < beginnerIds.length; index += chunkSize) {
+        const chunk = beginnerIds.slice(index, index + chunkSize);
+        await db.batch(chunk.map((id) => db.prepare(
+          "UPDATE songs SET level = 'Начинающий', updated_at = CURRENT_TIMESTAMP WHERE id = ?",
+        ).bind(id)));
+      }
+      await db.prepare("INSERT OR IGNORE INTO app_migrations (id) VALUES (?)").bind(beginnerMigrationId).run();
     }
   })();
 
