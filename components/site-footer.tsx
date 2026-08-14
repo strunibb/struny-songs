@@ -10,7 +10,7 @@ export function SiteFooter() {
         </div>
         <div className="footer-links">
           <strong>Библиотека</strong>
-          <Link href="/songs">Все разборы</Link>
+          <Link href="/#catalog">Все песни</Link>
           <Link href="/#new">Новинки</Link>
           <Link href="/#popular">Популярное</Link>
         </div>

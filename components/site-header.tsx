@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { CartTrigger } from "./cart-provider";
 
 const telegram = "https://t.me/nikguitar";
 
@@ -18,10 +19,11 @@ export function SiteHeader() {
           <span /><span />
         </button>
         <nav className={open ? "main-nav open" : "main-nav"} aria-label="Главное меню">
-          <Link href="/songs" onClick={() => setOpen(false)}>Разборы</Link>
+          <Link href="/#catalog" onClick={() => setOpen(false)}>Каталог</Link>
           <Link href="/#new" onClick={() => setOpen(false)}>Новинки</Link>
           <Link href="/#popular" onClick={() => setOpen(false)}>Популярное</Link>
           <a className="nav-cta" href={telegram} target="_blank" rel="noreferrer">Предложить песню</a>
+          <CartTrigger />
         </nav>
       </div>
     </header>

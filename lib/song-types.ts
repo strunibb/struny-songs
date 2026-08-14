@@ -1,4 +1,4 @@
-export const LEVELS = ["Начинающий", "Любитель", "Продвинутый", "Фингерстайл", "Зарубежный рок"] as const;
+export const LEVELS = ["Начинающий", "Любитель", "Продвинутый", "Профи", "Фингерстайл", "Зарубежный рок"] as const;
 export const UNASSIGNED_LEVEL = "Без категории" as const;
 export const INTERESTING_RHYTHM_SECTION = "Песни с интересным боем" as const;
 export const ADMIN_LEVELS = [UNASSIGNED_LEVEL, ...LEVELS] as const;
@@ -25,6 +25,8 @@ export type PublicSong = {
   title: string;
   level: CatalogSongLevel;
   price: number;
+  pdfPrice: number;
+  videoPrice: number;
   description: string;
   features: string[];
   keyName: string;
@@ -43,7 +45,7 @@ export type PublicSong = {
   available: boolean;
 };
 
-export type AdminSong = Omit<PublicSong, "level" | "available"> & {
+export type AdminSong = Omit<PublicSong, "level" | "available" | "pdfPrice" | "videoPrice"> & {
   level: AdminSongLevel;
   privateVideoUrl: string;
   privatePdfUrl: string;
@@ -56,6 +58,7 @@ export const levelMeta: Record<SongLevel, { color: string; icon: string; order: 
   "Начинающий": { color: "green", icon: "●", order: 1 },
   "Любитель": { color: "yellow", icon: "●", order: 2 },
   "Продвинутый": { color: "red", icon: "●", order: 3 },
-  "Фингерстайл": { color: "purple", icon: "●", order: 4 },
-  "Зарубежный рок": { color: "blue", icon: "●", order: 5 },
+  "Профи": { color: "hot", icon: "●", order: 4 },
+  "Фингерстайл": { color: "purple", icon: "●", order: 5 },
+  "Зарубежный рок": { color: "blue", icon: "●", order: 6 },
 };

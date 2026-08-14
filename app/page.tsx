@@ -14,7 +14,7 @@ export default function Home() {
       <SongCatalog songs={songs} />
       <section className="section value-section">
         <div className="shell value-grid">
-          <div className="value-intro"><p className="eyebrow"><i /> Всё в одном месте</p><h2>Не просто аккорды.<br /><em>Полный путь до песни.</em></h2><p>Каждый материал собран так, чтобы вы не искали объяснения по разным видео и уверенно сыграли композицию целиком.</p><Link href="/songs" className="button button-outline">Открыть весь каталог</Link></div>
+          <div className="value-intro"><p className="eyebrow"><i /> Всё в одном месте</p><h2><em>Полный путь до песни.</em></h2><p>Каждый материал собран так, чтобы вы не искали объяснения по разным видео и уверенно сыграли композицию целиком.</p><Link href="/#catalog" className="button button-outline">Открыть каталог</Link></div>
           <div className="value-cards">
             <article><span>▶</span><div><strong>Подробное видео</strong><p>Спокойно и по шагам: постановка рук, техника и сборка песни.</p></div></article>
             <article><span>▤</span><div><strong>Удобный PDF</strong><p>Аккорды, табулатуры и структура всегда остаются под рукой.</p></div></article>

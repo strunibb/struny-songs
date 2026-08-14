@@ -179,8 +179,17 @@ export async function ensureDatabase(): Promise<boolean> {
       ),
     );
 
-    await db.prepare("UPDATE songs SET level = 'Продвинутый' WHERE level IN ('Хардкор', 'Профи')").run();
+    await db.prepare("UPDATE songs SET level = 'Продвинутый' WHERE level = 'Хардкор'").run();
     await db.prepare("UPDATE songs SET level = 'Зарубежный рок' WHERE slug = 'metallica-nothing-else-matters'").run();
+    await db.prepare(`UPDATE songs SET difficulty = CASE
+      WHEN level = 'Начинающий' THEN 1
+      WHEN level = 'Любитель' THEN 2
+      WHEN level = 'Продвинутый' THEN 3
+      WHEN level = 'Профи' THEN 4
+      WHEN difficulty > 4 THEN 4
+      WHEN difficulty < 1 THEN 1
+      ELSE difficulty END`).run();
+    await db.prepare("UPDATE songs SET key_name = 'Оригинал' WHERE key_name NOT IN ('Упрощённая', 'Оригинал') OR key_name = ''").run();
 
     const libraryMigrationId = "song-library-2026-08-14";
     const libraryImported = await db.prepare("SELECT id FROM app_migrations WHERE id = ? LIMIT 1")
@@ -380,7 +389,20 @@ function publicSong(song: AdminSong): PublicSong {
   const hasThematicSection = song.level === UNASSIGNED_LEVEL && song.features.includes("Интересный бой");
   if (!hasDifficultyLevel && !hasThematicSection) throw new Error("У песни не выбран раздел.");
   const { privateVideoUrl: _video, privatePdfUrl: _pdf, pdfKey: _pdfKey, coverKey: _coverKey, status: _status, level, ...safe } = song;
-  return { ...safe, level: level as CatalogSongLevel, available: song.status === "published" };
+  const normalizedLevel = level as CatalogSongLevel;
+  const hash = [...song.slug].reduce((total, character) => ((total * 31) + character.charCodeAt(0)) >>> 0, 0);
+  const prices = normalizedLevel === "Начинающий"
+    ? { pdfPrice: hash % 2 === 0 ? 0 : 59, videoPrice: 118 }
+    : normalizedLevel === "Любитель"
+      ? { pdfPrice: 79, videoPrice: 158 }
+      : normalizedLevel === "Продвинутый"
+        ? { pdfPrice: 99, videoPrice: 198 }
+        : normalizedLevel === "Профи" || normalizedLevel === "Фингерстайл"
+          ? { pdfPrice: 129, videoPrice: 258 }
+          : normalizedLevel === "Зарубежный рок"
+            ? { pdfPrice: 99, videoPrice: 198 }
+            : { pdfPrice: 59, videoPrice: 118 };
+  return { ...safe, level: normalizedLevel, available: song.status === "published", ...prices };
 }
 
 export async function listPublicSongs(): Promise<PublicSong[]> {

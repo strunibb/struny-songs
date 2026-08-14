@@ -173,4 +173,18 @@ export const seedSongs: AdminSong[] = [
 
 export const publicSeedSongs: PublicSong[] = seedSongs
   .filter((song) => song.status === "published")
-  .map(({ privateVideoUrl: _video, privatePdfUrl: _pdf, pdfKey: _pdfKey, coverKey: _coverKey, status: _status, ...song }) => song);
+  .map(({ privateVideoUrl: _video, privatePdfUrl: _pdf, pdfKey: _pdfKey, coverKey: _coverKey, status: _status, ...song }) => {
+    const hash = [...song.slug].reduce((total, character) => ((total * 31) + character.charCodeAt(0)) >>> 0, 0);
+    const prices = song.level === "Начинающий"
+      ? { pdfPrice: hash % 2 === 0 ? 0 : 59, videoPrice: 118 }
+      : song.level === "Любитель"
+        ? { pdfPrice: 79, videoPrice: 158 }
+        : song.level === "Продвинутый"
+          ? { pdfPrice: 99, videoPrice: 198 }
+          : song.level === "Профи" || song.level === "Фингерстайл"
+            ? { pdfPrice: 129, videoPrice: 258 }
+            : song.level === "Зарубежный рок"
+              ? { pdfPrice: 99, videoPrice: 198 }
+              : { pdfPrice: 59, videoPrice: 118 };
+    return { ...song, ...prices, available: true } as PublicSong;
+  });
