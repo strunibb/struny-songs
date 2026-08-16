@@ -4,6 +4,7 @@ import { pendingSongLibrary } from "./song-library";
 import { beginnerSongs } from "./song-groups";
 import { interestingRhythmSongs } from "./interesting-rhythm-songs";
 import { advancedSongs } from "./advanced-songs";
+import { fingerstyleSongs } from "./fingerstyle-songs";
 
 type Bindings = {
   DB?: D1Database;
@@ -332,6 +333,47 @@ export async function ensureDatabase(): Promise<boolean> {
         ).bind(id)));
       }
       await db.prepare("INSERT OR IGNORE INTO app_migrations (id) VALUES (?)").bind(advancedMigrationId).run();
+    }
+
+    const fingerstyleMigrationId = "song-group-fingerstyle-2026-08-16";
+    const fingerstyleAssigned = await db.prepare("SELECT id FROM app_migrations WHERE id = ? LIMIT 1")
+      .bind(fingerstyleMigrationId)
+      .first<{ id: string }>();
+
+    if (!fingerstyleAssigned) {
+      let rows = await db.prepare("SELECT id, artist, title, features FROM songs").all<SongFeatureRow>();
+      let idsBySong = new Map(rows.results.map((song) => [songIdentity(song.artist, song.title), song.id]));
+      const missingSongs = fingerstyleSongs.filter((song) => !idsBySong.has(songIdentity(song.artist, song.title)));
+
+      const insertChunkSize = 50;
+      for (let index = 0; index < missingSongs.length; index += insertChunkSize) {
+        const chunk = missingSongs.slice(index, index + insertChunkSize);
+        await db.batch(chunk.map((song) => db.prepare(`INSERT OR IGNORE INTO songs (
+          slug, artist, title, level, price, status, is_new, difficulty, features
+        ) VALUES (?, ?, ?, 'Фингерстайл', 0, 'draft', 0, 4, ?)`)
+          .bind(song.slug, song.artist, song.title, JSON.stringify(["Фингерстайл", "Табулатура"]))));
+      }
+
+      rows = await db.prepare("SELECT id, artist, title, features FROM songs").all<SongFeatureRow>();
+      idsBySong = new Map(rows.results.map((song) => [songIdentity(song.artist, song.title), song.id]));
+      const rowsById = new Map(rows.results.map((row) => [row.id, row]));
+      const fingerstyleIds = [...new Set(fingerstyleSongs
+        .map((song) => idsBySong.get(songIdentity(song.artist, song.title)))
+        .filter((id): id is number => typeof id === "number"))];
+
+      const updateChunkSize = 75;
+      for (let index = 0; index < fingerstyleIds.length; index += updateChunkSize) {
+        const chunk = fingerstyleIds.slice(index, index + updateChunkSize);
+        await db.batch(chunk.map((id) => {
+          const row = rowsById.get(id);
+          const features = row ? parseFeatures(row.features) : [];
+          const nextFeatures = [...new Set([...features, "Фингерстайл", "Табулатура"])];
+          return db.prepare(`UPDATE songs
+            SET level = 'Фингерстайл', difficulty = 4, features = ?, updated_at = CURRENT_TIMESTAMP
+            WHERE id = ?`).bind(JSON.stringify(nextFeatures), id);
+        }));
+      }
+      await db.prepare("INSERT OR IGNORE INTO app_migrations (id) VALUES (?)").bind(fingerstyleMigrationId).run();
     }
   })();
 
