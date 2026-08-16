@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Каталог понятных PDF- и видеоразборов песен на гитаре от Никиты — преподавателя школы «Струны будущего».">
+  <meta name="theme-color" content="#071416">
+  <title>Струны будущего — разборы песен на гитаре</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Струны будущего — главная"><span>♪</span><strong>Струны</strong><em>будущего</em></a>
+      <nav aria-label="Главное меню">
+        <a href="#catalog">Каталог</a>
+        <a href="#about">О Никите</a>
+        <a href="https://t.me/nikguitar" target="_blank" rel="noreferrer">Предложить песню</a>
+      </nav>
+      <button class="cart-trigger" id="cart-trigger" type="button" aria-label="Открыть корзину"><span>Корзина</span><b id="cart-count">0</b></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="catalog">
+      <span class="palm palm-left" aria-hidden="true">🌴</span>
+      <span class="palm palm-right" aria-hidden="true">🌴</span>
+      <span class="sun" aria-hidden="true"></span>
+      <div class="shell hero-inner">
+        <p class="eyebrow"><i></i> Библиотека гитарных разборов</p>
+        <h1>Играй песни, которые <em>действительно нравятся</em></h1>
+        <p class="hero-lead">Выберите PDF с текстовым разбором или полный комплект с видео.</p>
+        <div class="search-wrap">
+          <span aria-hidden="true">⌕</span>
+          <input id="search" type="search" autocomplete="off" placeholder="Найти песню или исполнителя" aria-label="Найти песню или исполнителя">
+          <button id="search-clear" type="button" aria-label="Очистить поиск">×</button>
+        </div>
+        <div class="tabs" id="tabs" aria-label="Фильтр по разделу"></div>
+      </div>
+    </section>
+
+    <section class="catalog-section">
+      <div class="shell">
+        <div class="catalog-head">
+          <div><span id="result-index">00</span><h2 id="result-title">Вся библиотека</h2></div>
+          <div class="catalog-tools"><p><b id="result-count">0</b> песен</p><select id="sort" aria-label="Сортировка"><option value="title">По названию</option><option value="new">Сначала новые</option><option value="popular">Популярные</option><option value="easy">Сначала проще</option><option value="hard">Сначала сложнее</option></select></div>
+        </div>
+        <div class="song-grid" id="song-grid" aria-live="polite"></div>
+        <div class="load-more-wrap"><button class="button button-outline" id="load-more" type="button">Показать ещё <span></span></button></div>
+        <div class="empty-state" id="empty-state" hidden><span>♫</span><h2>Песня не найдена</h2><p>Напишите Никите — возможно, именно она станет следующим разбором.</p><a class="button button-primary" href="https://t.me/nikguitar" target="_blank" rel="noreferrer">Предложить песню</a></div>
+      </div>
+    </section>
+
+    <section class="value-section">
+      <div class="shell value-grid">
+        <div><p class="eyebrow"><i></i> Всё в одном месте</p><h2>Полный путь <em>до песни.</em></h2><p>Каждый материал собран так, чтобы вы не искали объяснения по разным видео и уверенно сыграли композицию целиком.</p></div>
+        <div class="value-cards"><article><span>▤</span><strong>Понятный PDF</strong><p>Аккорды, табулатуры, структура и текстовые подсказки.</p></article><article><span>▶</span><strong>Подробное видео</strong><p>Постановка рук, техника и сборка песни по шагам.</p></article><article><span>✓</span><strong>Удобная заявка</strong><p>Соберите несколько песен и отправьте список в Telegram.</p></article></div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="shell about-grid">
+        <div class="portrait"><img src="./assets/nikita-beach.jpeg" alt="Никита играет на гитаре на берегу моря"></div>
+        <div><p class="eyebrow"><i></i> Автор разборов</p><h2>Привет, я Никита</h2><p>Преподаватель гитары и создатель школы «Струны будущего». В разборах оставляю только то, что действительно помогает быстрее прийти к уверенной игре любимой песни.</p><div class="stats"><span><strong>1000+</strong> учеников</span><span><strong>6 лет</strong> преподавания</span><span><strong>40 мин</strong> средний разбор</span></div></div>
+      </div>
+    </section>
+
+    <section class="request-section">
+      <div class="shell request-card"><div><p class="eyebrow"><i></i> Ваша песня может быть следующей</p><h2>Не нашли нужный разбор?</h2><p>Напишите название и исполнителя. Самые востребованные песни появляются в библиотеке первыми.</p></div><a class="button button-primary" href="https://t.me/nikguitar" target="_blank" rel="noreferrer">Написать Никите ↗</a></div>
+    </section>
+  </main>
+
+  <footer><div class="shell footer-inner"><div class="brand"><span>♪</span><strong>Струны</strong><em>будущего</em></div><p>Понятные разборы любимых песен на гитаре.</p><a href="https://strunib.ru" target="_blank" rel="noreferrer">Музыкальная школа ↗</a><small>© 2026 «Струны будущего»</small></div></footer>
+
+  <div class="backdrop" id="cart-backdrop" hidden>
+    <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <div class="drawer-head"><div><small>Заявка в Telegram</small><h2 id="cart-title">Корзина</h2></div><button id="cart-close" type="button" aria-label="Закрыть корзину">×</button></div>
+      <div id="cart-content"></div>
+    </aside>
+  </div>
+
+  <div class="backdrop modal-backdrop" id="song-backdrop" hidden>
+    <section class="song-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Закрыть карточку">×</button>
+      <div id="song-modal-content"></div>
+    </section>
+  </div>
+
+  <template id="card-template">
+    <article class="song-card">
+      <button class="cover-button" type="button"><div class="song-cover"><span class="new-label">NEW</span><div class="record" aria-hidden="true"><i></i></div><div class="cover-copy"><span></span><strong></strong></div></div></button>
+      <div class="card-body"><div class="card-section-line"></div><div class="feature-list"></div><div class="purchase-options"><button type="button" data-format="pdf"><span>PDF</span><strong></strong></button><button type="button" data-format="video"><span>PDF + видео</span><strong></strong></button></div></div>
+    </article>
+  </template>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
