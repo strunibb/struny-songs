@@ -98,6 +98,7 @@ button { color: inherit; }
 .level-tabs button:hover,.level-tabs button.active { color: white; border-color: var(--line); background: rgba(255,255,255,.045); }
 .level-tabs i { width: 6px; height: 6px; border-radius: 50%; }
 .level-tabs .dot-rhythm { background: linear-gradient(135deg, #ffb45e, #ff6f91); box-shadow: 0 0 10px rgba(255, 143, 111, .6); }
+.level-tabs .dot-electric { background: linear-gradient(135deg, #7ed7ff, #7766ff); box-shadow: 0 0 10px rgba(107, 137, 255, .65); }
 .dot-green { background: var(--green); }.dot-yellow { background: var(--yellow); }.dot-red { background: var(--red); }.dot-hot { background: #ff8b55; box-shadow: 0 0 10px rgba(255,139,85,.5); }.dot-purple { background: var(--purple-light); }.dot-blue { background: #67c7e8; }
 
 /* Section headings and cards */

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { INTERESTING_RHYTHM_SECTION, levelMeta, LEVELS, UNASSIGNED_LEVEL, type CatalogSongLevel, type PublicSong, type SongLevel } from "@/lib/song-types";
+import { ELECTRIC_GUITAR_SECTION, INTERESTING_RHYTHM_SECTION, levelMeta, LEVELS, UNASSIGNED_LEVEL, type PublicSong, type SongLevel } from "@/lib/song-types";
 import { PurchaseOptions } from "./cart-provider";
 import { SongCover } from "./song-cover";
 
@@ -12,14 +12,15 @@ const PAGE_SIZE = 48;
 function normalize(value: string) { return value.toLocaleLowerCase("ru-RU").replace(/ё/g, "е").trim(); }
 function priceLabel(price: number) { return price === 0 ? "PDF бесплатно" : `PDF от ${price} ₽`; }
 
-function LevelBadge({ level }: { level: CatalogSongLevel }) {
-  const thematicOnly = level === UNASSIGNED_LEVEL;
-  const meta = thematicOnly ? { color: "purple", icon: "●" } : levelMeta[level];
-  return <span className={`level-badge level-${meta.color}`}><i>{meta.icon}</i>{thematicOnly ? "Интересный бой" : level}</span>;
+function LevelBadge({ song }: { song: Pick<PublicSong, "level" | "features"> }) {
+  const thematicOnly = song.level === UNASSIGNED_LEVEL;
+  const electricOnly = thematicOnly && song.features.includes(ELECTRIC_GUITAR_SECTION);
+  const meta = thematicOnly ? { color: electricOnly ? "blue" : "purple", icon: "●" } : levelMeta[song.level];
+  return <span className={`level-badge level-${meta.color}`}><i>{meta.icon}</i>{thematicOnly ? (electricOnly ? ELECTRIC_GUITAR_SECTION : "Интересный бой") : song.level}</span>;
 }
 
 function FeatureList({ features }: { features: string[] }) {
-  const icons: Record<string, string> = { Аккорды: "♬", Бой: "↯", Перебор: "≋", Рифф: "ϟ", Соло: "◇", Фингерстайл: "✦", Табулатура: "▦" };
+  const icons: Record<string, string> = { Аккорды: "♬", Бой: "↯", Перебор: "≋", Рифф: "ϟ", Соло: "◇", Фингерстайл: "✦", Табулатура: "▦", Электрогитара: "⚡" };
   return <div className="feature-list">{features.slice(0, 4).map((feature) => <span key={feature}>{icons[feature] ?? "•"} {feature}</span>)}<span>▶ Видео</span><span>▤ PDF</span></div>;
 }
 
@@ -27,7 +28,7 @@ export function SongCard({ song, compact = false }: { song: PublicSong; compact?
   return <article className={compact ? "song-card compact" : "song-card"}>
     <Link href={`/songs/${song.slug}`} className="card-cover-link" aria-label={`Открыть разбор ${song.artist} — ${song.title}`}><SongCover song={song} />{song.isNew && song.available ? <span className="new-label">NEW</span> : null}</Link>
     <div className="card-body">
-      <div className="card-topline"><span className="artist-name">{song.artist}</span><LevelBadge level={song.level} /></div>
+      <div className="card-topline"><span className="artist-name">{song.artist}</span><LevelBadge song={song} /></div>
       <Link href={`/songs/${song.slug}`} className="card-title">{song.title}</Link>
       <FeatureList features={song.features} />
       <div className="card-footer"><PurchaseOptions song={song} compact /></div>
@@ -47,7 +48,7 @@ function EmptyState({ query }: { query: string }) {
 export function SongCatalog({ songs, mode = "home" }: { songs: PublicSong[]; mode?: "home" | "full" }) {
   const [catalog, setCatalog] = useState(songs);
   const [query, setQuery] = useState("");
-  const [level, setLevel] = useState<"Все" | SongLevel | typeof INTERESTING_RHYTHM_SECTION>("Все");
+  const [level, setLevel] = useState<"Все" | SongLevel | typeof INTERESTING_RHYTHM_SECTION | typeof ELECTRIC_GUITAR_SECTION>("Все");
   const [sort, setSort] = useState<SortMode>("new");
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const normalizedQuery = normalize(query);
@@ -63,7 +64,10 @@ export function SongCatalog({ songs, mode = "home" }: { songs: PublicSong[]; mod
   const matches = useMemo(() => {
     const filtered = catalog.filter((song) => {
       const searchable = normalize(`${song.artist} ${song.title}`);
-      const matchesSection = level === "Все" || (level === INTERESTING_RHYTHM_SECTION ? song.features.includes("Интересный бой") : song.level === level);
+      const matchesSection = level === "Все"
+        || (level === INTERESTING_RHYTHM_SECTION && song.features.includes("Интересный бой"))
+        || (level === ELECTRIC_GUITAR_SECTION && song.features.includes(ELECTRIC_GUITAR_SECTION))
+        || song.level === level;
       return (!normalizedQuery || searchable.includes(normalizedQuery)) && matchesSection;
     });
     return [...filtered].sort((a, b) => {
@@ -89,14 +93,14 @@ export function SongCatalog({ songs, mode = "home" }: { songs: PublicSong[]; mod
   return <>
     {mode === "home" ? <section className="hero" id="catalog"><span className="hero-palm hero-palm-left" aria-hidden="true" /><span className="hero-palm hero-palm-right" aria-hidden="true" /><span className="hero-sun" aria-hidden="true" /><span className="hero-horizon" aria-hidden="true" /><div className="hero-glow glow-one" /><div className="hero-glow glow-two" /><div className="shell hero-inner">
       <div className="hero-copy"><p className="eyebrow"><i /> Библиотека гитарных разборов</p><h1>Играй песни, которые <em>действительно нравятся</em></h1><p>Выберите PDF с текстовым разбором или полный комплект с видео.</p></div>
-      <div className="search-wrap"><span className="search-icon" aria-hidden="true">⌕</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Найти песню или исполнителя" aria-label="Найти песню или исполнителя" />{query ? <button className="search-clear" onClick={() => setQuery("")} aria-label="Очистить поиск">×</button> : <kbd>⌘ K</kbd>}{suggestions.length ? <div className="suggestions">{suggestions.map((song) => <Link key={song.id} href={`/songs/${song.slug}`}><span><small>{song.artist}</small><strong>{song.title}</strong></span><LevelBadge level={song.level} /></Link>)}</div> : null}</div>
+      <div className="search-wrap"><span className="search-icon" aria-hidden="true">⌕</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Найти песню или исполнителя" aria-label="Найти песню или исполнителя" />{query ? <button className="search-clear" onClick={() => setQuery("")} aria-label="Очистить поиск">×</button> : <kbd>⌘ K</kbd>}{suggestions.length ? <div className="suggestions">{suggestions.map((song) => <Link key={song.id} href={`/songs/${song.slug}`}><span><small>{song.artist}</small><strong>{song.title}</strong></span><LevelBadge song={song} /></Link>)}</div> : null}</div>
       <p className="search-example">Например: <button onClick={() => setQuery("Кино — Пачка сигарет")}>Кино — Пачка сигарет</button></p>
-      <div className="level-tabs" aria-label="Фильтр по разделу">{(["Все", ...LEVELS, INTERESTING_RHYTHM_SECTION] as const).map((item) => <button key={item} className={level === item ? "active" : ""} onClick={() => setLevel(item)}>{item !== "Все" && item !== INTERESTING_RHYTHM_SECTION ? <i className={`dot-${levelMeta[item].color}`} /> : item === INTERESTING_RHYTHM_SECTION ? <i className="dot-rhythm" /> : null}{item}</button>)}</div>
-    </div></section> : <section className="catalog-hero" id="catalog"><div className="shell"><p className="eyebrow"><i /> Постоянно пополняется</p><h1>Все песни</h1><div className="search-wrap catalog-search"><span className="search-icon">⌕</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Найти песню или исполнителя" />{query ? <button className="search-clear" onClick={() => setQuery("")}>×</button> : null}</div><div className="level-tabs compact-tabs">{(["Все", ...LEVELS, INTERESTING_RHYTHM_SECTION] as const).map((item) => <button key={item} className={level === item ? "active" : ""} onClick={() => setLevel(item)}>{item}</button>)}</div></div></section>}
+      <div className="level-tabs" aria-label="Фильтр по разделу">{(["Все", ...LEVELS, ELECTRIC_GUITAR_SECTION, INTERESTING_RHYTHM_SECTION] as const).map((item) => <button key={item} className={level === item ? "active" : ""} onClick={() => setLevel(item)}>{item === ELECTRIC_GUITAR_SECTION ? <i className="dot-electric" /> : item === INTERESTING_RHYTHM_SECTION ? <i className="dot-rhythm" /> : item !== "Все" ? <i className={`dot-${levelMeta[item].color}`} /> : null}{item}</button>)}</div>
+    </div></section> : <section className="catalog-hero" id="catalog"><div className="shell"><p className="eyebrow"><i /> Постоянно пополняется</p><h1>Все песни</h1><div className="search-wrap catalog-search"><span className="search-icon">⌕</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Найти песню или исполнителя" />{query ? <button className="search-clear" onClick={() => setQuery("")}>×</button> : null}</div><div className="level-tabs compact-tabs">{(["Все", ...LEVELS, ELECTRIC_GUITAR_SECTION, INTERESTING_RHYTHM_SECTION] as const).map((item) => <button key={item} className={level === item ? "active" : ""} onClick={() => setLevel(item)}>{item}</button>)}</div></div></section>}
 
     {activeSearch || mode === "full" ? results : <>
       {newSongs.length ? <section className="section" id="new"><div className="shell"><div className="section-heading"><div><span className="section-index">01</span><h2>Новые разборы</h2></div><a href="#library">Смотреть все <span>↗</span></a></div><div className="song-grid">{newSongs.map((song) => <SongCard key={song.id} song={song} />)}</div></div></section> : null}
-      {popular.length ? <section className="section popular-section" id="popular"><div className="shell"><div className="section-heading light"><div><span className="section-index">02</span><h2>Сейчас выбирают</h2></div><p>Самые популярные материалы недели</p></div><div className="popular-list">{popular.map((song, index) => <Link href={`/songs/${song.slug}`} key={song.id} className="popular-row"><strong>{String(index + 1).padStart(2, "0")}</strong><div className={`mini-cover cover-${song.coverStyle}`}><span>{song.artist.slice(0, 1)}</span></div><div><small>{song.artist}</small><span>{song.title}</span></div><LevelBadge level={song.level} /><b>{priceLabel(song.pdfPrice)}</b><i>↗</i></Link>)}</div></div></section> : null}
+      {popular.length ? <section className="section popular-section" id="popular"><div className="shell"><div className="section-heading light"><div><span className="section-index">02</span><h2>Сейчас выбирают</h2></div><p>Самые популярные материалы недели</p></div><div className="popular-list">{popular.map((song, index) => <Link href={`/songs/${song.slug}`} key={song.id} className="popular-row"><strong>{String(index + 1).padStart(2, "0")}</strong><div className={`mini-cover cover-${song.coverStyle}`}><span>{song.artist.slice(0, 1)}</span></div><div><small>{song.artist}</small><span>{song.title}</span></div><LevelBadge song={song} /><b>{priceLabel(song.pdfPrice)}</b><i>↗</i></Link>)}</div></div></section> : null}
       {results}
     </>}
   </>;
