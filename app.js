@@ -4,10 +4,11 @@ const STORAGE_KEY = "struny-github-pages-cart-v1";
 const icons = { "Аккорды": "♬", "Бой": "↯", "Перебор": "≋", "Рифф": "ϟ", "Соло": "◇", "Фингерстайл": "✦", "Табулатура": "▦", "Интересный бой": "↯", "Электрогитара": "⚡" };
 const levelColors = { "Начинающий": "green", "Любитель": "yellow", "Продвинутый": "red", "Профи": "hot", "Фингерстайл": "purple", "Зарубежный рок": "blue", "Электрогитара": "blue", "Интересный бой": "purple" };
 
-const state = { songs: [], query: "", section: "Все", sort: "title", visible: PAGE_SIZE, cart: loadCart(), modalSong: null };
+const initialFilters = new URLSearchParams(window.location.search);
+const state = { songs: [], query: initialFilters.get("q") || "", section: SECTIONS.includes(initialFilters.get("section")) ? initialFilters.get("section") : "Все", sort: "title", visible: PAGE_SIZE, cart: loadCart(), modalSong: null };
 const els = {
   search: document.querySelector("#search"), searchClear: document.querySelector("#search-clear"), tabs: document.querySelector("#tabs"), sort: document.querySelector("#sort"),
-  grid: document.querySelector("#song-grid"), count: document.querySelector("#result-count"), index: document.querySelector("#result-index"), title: document.querySelector("#result-title"),
+  grid: document.querySelector("#song-grid"), count: document.querySelector("#result-count"), title: document.querySelector("#result-title"),
   loadMore: document.querySelector("#load-more"), empty: document.querySelector("#empty-state"), template: document.querySelector("#card-template"),
   cartTrigger: document.querySelector("#cart-trigger"), cartCount: document.querySelector("#cart-count"), cartBackdrop: document.querySelector("#cart-backdrop"), cartClose: document.querySelector("#cart-close"), cartContent: document.querySelector("#cart-content"),
   songBackdrop: document.querySelector("#song-backdrop"), modalClose: document.querySelector("#modal-close"), modalContent: document.querySelector("#song-modal-content"),
@@ -29,13 +30,40 @@ function loadCart() {
     return Array.isArray(parsed) ? parsed.filter((item) => item && Number.isFinite(item.id) && ["pdf", "video"].includes(item.format)) : [];
   } catch { return []; }
 }
-function saveCart() { localStorage.setItem(STORAGE_KEY, JSON.stringify(state.cart)); renderCartCount(); }
+function saveCart() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state.cart)); }
+  catch { /* Корзина продолжает работать в текущей вкладке при запрете хранилища. */ }
+  renderCartCount();
+}
+function reconcileCart() {
+  const songsById = new Map(state.songs.map((song) => [song.id, song]));
+  const currentItems = new Map();
+  for (const item of state.cart) {
+    const song = songsById.get(item.id);
+    if (!song) continue;
+    currentItems.set(song.id, {
+      id: song.id, slug: song.slug, artist: song.artist, title: song.title,
+      format: item.format, price: item.format === "pdf" ? song.pdfPrice : song.videoPrice,
+    });
+  }
+  state.cart = [...currentItems.values()];
+  saveCart();
+}
+function syncFilters() {
+  const url = new URL(window.location.href);
+  if (state.query) url.searchParams.set("q", state.query);
+  else url.searchParams.delete("q");
+  if (state.section !== "Все") url.searchParams.set("section", state.section);
+  else url.searchParams.delete("section");
+  window.history.replaceState(null, "", url);
+}
 function selectedFormat(id) { return state.cart.find((item) => item.id === id)?.format || null; }
 
 function renderTabs() {
   els.tabs.replaceChildren(...SECTIONS.map((section) => {
     const button = document.createElement("button");
     button.type = "button"; button.textContent = section; button.dataset.section = section;
+    button.setAttribute("aria-pressed", String(state.section === section));
     button.className = state.section === section ? "active" : "";
     button.addEventListener("click", () => { state.section = section; state.visible = PAGE_SIZE; renderTabs(); renderCatalog(); });
     return button;
@@ -45,7 +73,8 @@ function renderTabs() {
 function filteredSongs() {
   const query = normalize(state.query);
   const result = state.songs.filter((song) => {
-    const matchesText = !query || normalize(`${song.artist} ${song.title}`).includes(query);
+    const searchableText = normalize(`${song.artist} ${song.title}`);
+    const matchesText = !query || query.split(" ").every((word) => searchableText.includes(word));
     const matchesSection = state.section === "Все" || song.sections.includes(state.section);
     return matchesText && matchesSection;
   });
@@ -54,7 +83,8 @@ function filteredSongs() {
     if (state.sort === "easy") return a.difficulty - b.difficulty || a.artist.localeCompare(b.artist, "ru");
     if (state.sort === "hard") return b.difficulty - a.difficulty || a.artist.localeCompare(b.artist, "ru");
     if (state.sort === "new") return new Date(b.createdAt) - new Date(a.createdAt) || b.id - a.id;
-    return a.artist.localeCompare(b.artist, "ru") || a.title.localeCompare(b.title, "ru");
+    if (state.sort === "artist") return a.artist.localeCompare(b.artist, "ru") || a.title.localeCompare(b.title, "ru");
+    return a.title.localeCompare(b.title, "ru") || a.artist.localeCompare(b.artist, "ru");
   });
 }
 
@@ -101,7 +131,7 @@ function renderCatalog() {
   const visible = songs.slice(0, state.visible);
   els.grid.replaceChildren(...visible.map(createCard));
   els.count.textContent = songs.length;
-  els.index.textContent = String(songs.length).padStart(2, "0");
+  syncFilters();
   els.title.textContent = state.query || state.section !== "Все" ? "Результаты поиска" : "Вся библиотека";
   els.empty.hidden = songs.length !== 0;
   els.grid.hidden = songs.length === 0;
@@ -118,13 +148,21 @@ function toggleCart(song, format) {
     const item = { id: song.id, slug: song.slug, artist: song.artist, title: song.title, format, price };
     state.cart = [...state.cart.filter((entry) => entry.id !== song.id), item];
   }
+  const fromModal = els.songBackdrop.contains(document.activeElement);
   saveCart(); renderCatalog(); renderModal(); if (!els.cartBackdrop.hidden) renderCart();
+  document.querySelector("#cart-feedback").textContent = current === format
+    ? `${song.title} убрана из корзины`
+    : `${song.title}, ${formatLabel(format)}, добавлено в корзину`;
+  const selectedButton = fromModal
+    ? els.modalContent.querySelector(`[data-modal-format="${format}"]`)
+    : els.grid.querySelector(`[data-id="${song.id}"] [data-format="${format}"]`);
+  selectedButton?.focus({ preventScroll: true });
 }
 function renderCartCount() { els.cartCount.textContent = state.cart.length; els.cartTrigger.setAttribute("aria-label", `Открыть корзину, выбрано песен: ${state.cart.length}`); }
 function formatLabel(format) { return format === "pdf" ? "PDF с текстовым разбором" : "PDF + видеоразбор"; }
 function cartMessage() {
   const total = state.cart.reduce((sum, item) => sum + item.price, 0);
-  return `Здравствуйте! Хочу купить разборы на песни:\n${state.cart.map((item, index) => `${index + 1}. ${item.artist} — ${item.title} — ${formatLabel(item.format)} (${money(item.price)})`).join("\n")}\n\nИтого: ${money(total)}`;
+  return `Здравствуйте, Никита! Хочу получить разборы песен:\n${state.cart.map((item, index) => `${index + 1}. ${item.artist} — ${item.title} — ${formatLabel(item.format)} (${money(item.price)})`).join("\n")}\n\nИтого: ${money(total)}`;
 }
 function renderCart() {
   if (!state.cart.length) {
@@ -132,15 +170,19 @@ function renderCart() {
     els.cartContent.querySelector("#empty-close").addEventListener("click", closeCart); return;
   }
   const total = state.cart.reduce((sum, item) => sum + item.price, 0);
-  els.cartContent.innerHTML = `<div class="cart-list">${state.cart.map((item, index) => `<div class="cart-row"><b>${String(index + 1).padStart(2, "0")}</b><span><strong>${escapeHtml(item.title)}</strong><small>${escapeHtml(item.artist)}</small><em>${escapeHtml(formatLabel(item.format))} · ${money(item.price)}</em></span><button type="button" data-remove="${item.id}" aria-label="Убрать ${escapeHtml(item.title)}">×</button></div>`).join("")}</div><div class="cart-total"><span>Итого</span><strong>${money(total)}</strong></div><div class="cart-actions"><button class="cart-clear" id="cart-clear" type="button">Очистить</button><a class="button button-primary" id="telegram-order" href="https://t.me/nikguitar?text=${encodeURIComponent(cartMessage())}" target="_blank" rel="noreferrer">Отправить заявку Никите</a></div><p class="cart-note">Telegram откроется с готовым списком. На всякий случай текст заявки также скопируется.</p>`;
+  els.cartContent.innerHTML = `<div class="cart-list">${state.cart.map((item, index) => `<div class="cart-row"><b>${String(index + 1).padStart(2, "0")}</b><span><strong>${escapeHtml(item.title)}</strong><small>${escapeHtml(item.artist)}</small><em>${escapeHtml(formatLabel(item.format))} · ${money(item.price)}</em></span><button type="button" data-remove="${item.id}" aria-label="Убрать ${escapeHtml(item.title)}">×</button></div>`).join("")}</div><div class="cart-total"><span>Итого</span><strong>${money(total)}</strong></div><div class="cart-actions"><button class="cart-clear" id="cart-clear" type="button">Очистить</button><a class="button button-primary" id="telegram-order" href="https://t.me/nikguitar?text=${encodeURIComponent(cartMessage())}" target="_blank" rel="noreferrer">Отправить заявку Никите</a></div><p class="cart-note">Откроется сообщение со списком песен. Отправьте его Никите, чтобы согласовать оплату и получение материалов.</p>`;
   els.cartContent.querySelectorAll("[data-remove]").forEach((button) => button.addEventListener("click", () => { state.cart = state.cart.filter((item) => item.id !== Number(button.dataset.remove)); saveCart(); renderCart(); renderCatalog(); renderModal(); }));
   els.cartContent.querySelector("#cart-clear").addEventListener("click", () => { state.cart = []; saveCart(); renderCart(); renderCatalog(); renderModal(); });
   els.cartContent.querySelector("#telegram-order").addEventListener("click", () => {
     if (navigator.clipboard?.writeText) navigator.clipboard.writeText(cartMessage()).catch(() => undefined);
   });
 }
-function openCart() { renderCart(); els.cartBackdrop.hidden = false; document.body.classList.add("no-scroll"); }
-function closeCart() { els.cartBackdrop.hidden = true; document.body.classList.remove("no-scroll"); }
+function openCart() {
+  if (!els.songBackdrop.hidden) closeSong();
+  renderCart(); els.cartBackdrop.hidden = false;
+  document.body.classList.add("no-scroll"); els.cartClose.focus();
+}
+function closeCart() { els.cartBackdrop.hidden = true; document.body.classList.remove("no-scroll"); els.cartTrigger.focus(); }
 
 function renderModal() {
   const song = state.modalSong;
@@ -148,10 +190,26 @@ function renderModal() {
   const selected = selectedFormat(song.id);
   const dots = "●".repeat(Math.max(1, Math.min(4, song.difficulty)));
   els.modalContent.innerHTML = `<div class="modal-grid"><div class="song-cover modal-cover cover-${song.coverStyle}"><div class="record" aria-hidden="true"><i></i></div><div class="cover-copy"><span>${escapeHtml(song.artist)}</span><strong id="modal-title">${escapeHtml(song.title)}</strong></div></div><div class="modal-copy">${badge(song)}<p>${escapeHtml(song.description)}</p><div class="facts"><span><small>Сложность</small><strong>${dots} · ${difficultyLabel(song.difficulty)}</strong></span><span><small>Тональность</small><strong>${escapeHtml(song.keyName || "Оригинал")}</strong></span><span><small>Баррэ</small><strong>${song.barre ? "Есть" : "Нет"}</strong></span></div><div class="modal-features">${[...new Set(song.features)].map((feature) => `<span>${icons[feature] || "•"} ${escapeHtml(feature)}</span>`).join("")}</div><div class="purchase-options"><button type="button" data-modal-format="pdf" class="${selected === "pdf" ? "added" : ""}"><span>PDF с текстовым разбором</span><strong>${money(song.pdfPrice)}</strong></button><button type="button" data-modal-format="video" class="${selected === "video" ? "added" : ""}"><span>PDF + видеоразбор</span><strong>${money(song.videoPrice)}</strong></button></div></div></div>`;
-  els.modalContent.querySelectorAll("[data-modal-format]").forEach((button) => button.addEventListener("click", () => toggleCart(song, button.dataset.modalFormat)));
+  els.modalContent.querySelectorAll("[data-modal-format]").forEach((button) => {
+    button.setAttribute("aria-pressed", String(selected === button.dataset.modalFormat));
+    button.addEventListener("click", () => toggleCart(song, button.dataset.modalFormat));
+  });
+  if (selected) {
+    const cartButton = document.createElement("button");
+    cartButton.type = "button";
+    cartButton.className = "button button-primary modal-cart";
+    cartButton.textContent = "Перейти в корзину";
+    cartButton.addEventListener("click", openCart);
+    els.modalContent.querySelector(".modal-copy").append(cartButton);
+  }
 }
-function openSong(id) { state.modalSong = state.songs.find((song) => song.id === id); renderModal(); els.songBackdrop.hidden = false; document.body.classList.add("no-scroll"); }
-function closeSong() { state.modalSong = null; els.songBackdrop.hidden = true; document.body.classList.remove("no-scroll"); }
+function openSong(id) { state.modalSong = state.songs.find((song) => song.id === id); renderModal(); els.songBackdrop.hidden = false; document.body.classList.add("no-scroll"); els.modalClose.focus(); }
+function closeSong() {
+  const songId = state.modalSong?.id;
+  state.modalSong = null; els.songBackdrop.hidden = true;
+  document.body.classList.remove("no-scroll");
+  (els.grid.querySelector(`[data-id="${songId}"] .cover-button`) || els.search).focus({ preventScroll: true });
+}
 
 els.search.addEventListener("input", () => { state.query = els.search.value; state.visible = PAGE_SIZE; els.search.parentElement.classList.toggle("has-value", Boolean(state.query)); renderCatalog(); });
 els.searchClear.addEventListener("click", () => { els.search.value = ""; state.query = ""; state.visible = PAGE_SIZE; els.search.parentElement.classList.remove("has-value"); els.search.focus(); renderCatalog(); });
@@ -162,7 +220,25 @@ els.cartBackdrop.addEventListener("click", (event) => { if (event.target === els
 els.songBackdrop.addEventListener("click", (event) => { if (event.target === els.songBackdrop) closeSong(); });
 document.addEventListener("keydown", (event) => { if (event.key === "Escape") { if (!els.songBackdrop.hidden) closeSong(); else if (!els.cartBackdrop.hidden) closeCart(); } if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") { event.preventDefault(); els.search.focus(); } });
 
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Tab") return;
+  const overlay = !els.songBackdrop.hidden ? els.songBackdrop : !els.cartBackdrop.hidden ? els.cartBackdrop : null;
+  if (!overlay) return;
+  const controls = [...overlay.querySelectorAll('button, a[href], input, select, [tabindex="0"]')]
+    .filter((element) => !element.disabled && element.getClientRects().length);
+  const first = controls[0];
+  const last = controls[controls.length - 1];
+  if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+  if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+});
+els.search.value = state.query;
+els.search.parentElement.classList.toggle("has-value", Boolean(state.query));
 fetch("./songs.json")
   .then((response) => { if (!response.ok) throw new Error("Не удалось загрузить каталог"); return response.json(); })
-  .then((payload) => { state.songs = Array.isArray(payload.songs) ? payload.songs : []; renderTabs(); renderCartCount(); renderCatalog(); })
-  .catch(() => { els.grid.innerHTML = "<p>Не удалось загрузить каталог. Обновите страницу.</p>"; });
+  .then((payload) => { state.songs = Array.isArray(payload.songs) ? payload.songs : []; reconcileCart(); renderTabs(); renderCatalog(); els.grid.setAttribute("aria-busy", "false"); })
+  .catch(() => {
+    els.grid.setAttribute("aria-busy", "false");
+    els.loadMore.parentElement.hidden = true;
+    els.grid.innerHTML = '<p role="alert">Не удалось загрузить каталог. <button type="button" class="button button-outline" id="retry-load">Повторить</button></p>';
+    document.querySelector("#retry-load").addEventListener("click", () => window.location.reload());
+  });

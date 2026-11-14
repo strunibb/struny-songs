@@ -7,15 +7,17 @@
   <meta name="theme-color" content="#071416">
   <title>Струны будущего — разборы песен на гитаре</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css?v=compact-20261029">
+  <link rel="stylesheet" href="./styles.css?v=school-20261114">
 </head>
 <body>
+  <a class="skip-link" href="#search">Перейти к поиску песен</a>
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="brand" href="#top" aria-label="Струны будущего — главная"><span>♪</span><strong>Струны</strong><em>будущего</em></a>
+      <a class="brand" href="https://strunibb.github.io/struny-school/" aria-label="Струны будущего — школа"><span>♪</span><strong>Струны</strong><em>будущего</em></a>
       <nav aria-label="Главное меню">
-        <a href="#catalog">Каталог</a>
-        <a href="#about">О Никите</a>
+        <a href="https://strunibb.github.io/struny-school/">Школа</a>
+        <a href="https://strunibb.github.io/struny-school/#course">Курс гитары</a>
+        <a href="#catalog" aria-current="page">Каталог</a>
         <a href="https://t.me/nikguitar" target="_blank" rel="noreferrer">Предложить песню</a>
       </nav>
       <button class="cart-trigger" id="cart-trigger" type="button" aria-label="Открыть корзину"><span>Корзина</span><b id="cart-count">0</b></button>
@@ -29,8 +31,8 @@
       <span class="sun" aria-hidden="true"></span>
       <div class="shell hero-inner">
         <p class="eyebrow"><i></i> Библиотека гитарных разборов</p>
-        <h1>Играй песни, которые <em>действительно нравятся</em></h1>
-        <p class="hero-lead">Выберите PDF с текстовым разбором или полный комплект с видео.</p>
+        <h1>Разборы любимых <em>песен на гитаре</em></h1>
+        <p class="hero-lead">Найдите песню, выберите PDF или вариант с видео и отправьте заявку Никите.</p>
         <div class="search-wrap">
           <span aria-hidden="true">⌕</span>
           <input id="search" type="search" autocomplete="off" placeholder="Найти песню или исполнителя" aria-label="Найти песню или исполнителя">
@@ -43,10 +45,11 @@
     <section class="catalog-section">
       <div class="shell">
         <div class="catalog-head">
-          <div><span id="result-index">00</span><h2 id="result-title">Вся библиотека</h2></div>
-          <div class="catalog-tools"><p><b id="result-count">0</b> песен</p><select id="sort" aria-label="Сортировка"><option value="title">По названию</option><option value="new">Сначала новые</option><option value="popular">Популярные</option><option value="easy">Сначала проще</option><option value="hard">Сначала сложнее</option></select></div>
+          <div><h2 id="result-title">Вся библиотека</h2></div>
+          <div class="catalog-tools"><p><b id="result-count">0</b> песен</p><select id="sort" aria-label="Сортировка"><option value="title">По названию</option><option value="artist">По исполнителю</option><option value="new">Сначала новые</option><option value="popular">Популярные</option><option value="easy">Сначала проще</option><option value="hard">Сначала сложнее</option></select></div>
         </div>
-        <div class="song-grid" id="song-grid" aria-live="polite"></div>
+        <p id="cart-feedback" class="sr-only" role="status" aria-live="polite"></p>
+        <div class="song-grid" id="song-grid" aria-busy="true"><p>Загружаем песни…</p></div>
         <div class="load-more-wrap"><button class="button button-outline" id="load-more" type="button">Показать ещё <span></span></button></div>
         <div class="empty-state" id="empty-state" hidden><span>♫</span><h2>Песня не найдена</h2><p>Напишите Никите — возможно, именно она станет следующим разбором.</p><a class="button button-primary" href="https://t.me/nikguitar" target="_blank" rel="noreferrer">Предложить песню</a></div>
       </div>
@@ -54,7 +57,7 @@
 
     <section class="value-section">
       <div class="shell value-grid">
-        <div><p class="eyebrow"><i></i> Всё в одном месте</p><h2>Полный путь <em>до песни.</em></h2><p>Каждый материал собран так, чтобы вы не искали объяснения по разным видео и уверенно сыграли композицию целиком.</p></div>
+        <div><p class="eyebrow"><i></i> Всё в одном месте</p><h2>Полный путь <em>до песни.</em></h2><p>Выберите подходящий уровень и формат. Стоимость указана у каждой песни, выбранные материалы сохраняются в корзине.</p></div>
         <div class="value-cards"><article><span>▤</span><strong>Понятный PDF</strong><p>Аккорды, табулатуры, структура и текстовые подсказки.</p></article><article><span>▶</span><strong>Подробное видео</strong><p>Постановка рук, техника и сборка песни по шагам.</p></article><article><span>✓</span><strong>Удобная заявка</strong><p>Соберите несколько песен и отправьте список в Telegram.</p></article></div>
       </div>
     </section>
@@ -62,16 +65,16 @@
     <section class="about-section" id="about">
       <div class="shell about-grid">
         <div class="portrait"><img src="./assets/nikita-beach.jpeg" alt="Никита играет на гитаре на берегу моря"></div>
-        <div><p class="eyebrow"><i></i> Автор разборов</p><h2>Привет, я Никита</h2><p>Преподаватель гитары и создатель школы «Струны будущего». В разборах оставляю только то, что действительно помогает быстрее прийти к уверенной игре любимой песни.</p><div class="stats"><span><strong>1000+</strong> учеников</span><span><strong>6 лет</strong> преподавания</span><span><strong>40 мин</strong> средний разбор</span></div></div>
+        <div><p class="eyebrow"><i></i> Автор разборов</p><h2>Привет, я Никита</h2><p>Преподаватель гитары и создатель школы «Струны будущего». В разборах оставляю только то, что действительно помогает быстрее прийти к уверенной игре любимой песни.</p><a class="button button-outline" href="https://strunibb.github.io/struny-school/">Обучение в школе ↗</a></div>
       </div>
     </section>
 
     <section class="request-section">
-      <div class="shell request-card"><div><p class="eyebrow"><i></i> Ваша песня может быть следующей</p><h2>Не нашли нужный разбор?</h2><p>Напишите название и исполнителя. Самые востребованные песни появляются в библиотеке первыми.</p></div><a class="button button-primary" href="https://t.me/nikguitar" target="_blank" rel="noreferrer">Написать Никите ↗</a></div>
+      <div class="shell request-card"><div><p class="eyebrow"><i></i> Ваша песня может быть следующей</p><h2>Не нашли нужный разбор?</h2><p>Напишите название и исполнителя. Никита подскажет, есть ли готовый материал, и обсудит ваш запрос.</p></div><a class="button button-primary" href="https://t.me/nikguitar" target="_blank" rel="noreferrer">Написать Никите ↗</a></div>
     </section>
   </main>
 
-  <footer><div class="shell footer-inner"><div class="brand"><span>♪</span><strong>Струны</strong><em>будущего</em></div><p>Понятные разборы любимых песен на гитаре.</p><a href="https://strunib.ru" target="_blank" rel="noreferrer">Музыкальная школа ↗</a><small>© 2026 «Струны будущего»</small></div></footer>
+  <footer><div class="shell footer-inner"><div class="brand"><span>♪</span><strong>Струны</strong><em>будущего</em></div><p>Понятные разборы любимых песен на гитаре.</p><a href="https://strunibb.github.io/struny-school/">Музыкальная школа ↗</a><small>© 2026 «Струны будущего»</small></div></footer>
 
   <div class="backdrop" id="cart-backdrop" hidden>
     <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
@@ -94,6 +97,6 @@
     </article>
   </template>
 
-  <script src="./app.js" defer></script>
+  <script src="./app.js?v=school-20261114" defer></script>
 </body>
 </html>
