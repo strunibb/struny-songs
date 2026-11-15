@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6fb">
+  <meta name="description" content="Контент-панель каталога «Струны будущего».">
+  <title>Управление разборами | Струны будущего</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css?v=20261115-1">
+  <script src="./app.js?v=20261115-1" defer></script>
+</head>
+<body>
+<a class="skip" href="#songs">К списку песен</a>
+<div class="workspace">
+  <aside class="sidebar">
+    <a class="wordmark" href="../"><span class="brand-icon">♪</span><span>Струны <b>будущего</b><small>Контент-студия</small></span></a>
+    <nav aria-label="Разделы">
+      <a class="nav-selected" href="#songs"><span>▤</span> Разборы песен</a>
+      <a href="../" target="_blank" rel="noopener noreferrer"><span>↗</span> Открыть каталог</a>
+      <a href="https://github.com/strunibb/struny-songs/issues?q=is%3Aissue+%22Struny+CMS%22" target="_blank" rel="noopener noreferrer"><span>◷</span> История изменений</a>
+    </nav>
+    <div class="side-note"><strong>Публикация через GitHub</strong><p>Секретные ключи не хранятся на этом сайте. Сохранение подтверждается в GitHub под аккаунтом владельца.</p><a href="https://github.com/login" target="_blank" rel="noopener noreferrer">Войти в GitHub ↗</a></div>
+  </aside>
+
+  <main class="main" id="songs">
+    <header class="top"><div class="crumb">Школа / Контент / <b>Разборы</b></div><a class="top-link" href="../" target="_blank" rel="noopener noreferrer">Посмотреть сайт <span>↗</span></a></header>
+    <section class="intro"><div><p class="overline">КАТАЛОГ ПЕСЕН · УПРАВЛЕНИЕ</p><h1>Все разборы <span>♫</span></h1><p>Редактируй материалы в одном месте. Обновления будут опубликованы в каталоге после подтверждения в GitHub.</p></div><button class="btn btn-primary" id="add" type="button"><span aria-hidden="true">＋</span> Добавить разбор</button></section>
+    <section class="metrics" aria-label="Статистика каталога">
+      <article><span>Всего песен</span><b id="stat-all">…</b><small>В библиотеке</small></article>
+      <article><span>Бесплатные</span><b id="stat-free">…</b><small>PDF за 0 ₽</small></article>
+      <article><span>Новинки</span><b id="stat-new">…</b><small>С меткой NEW</small></article>
+      <article><span>Обложки</span><b id="stat-covers">…</b><small>Добавлено изображений</small></article>
+    </section>
+    <section class="library-panel">
+      <div class="panel-heading"><div><h2>Библиотека</h2><p>Управление карточками, форматами и ценами</p></div><button class="btn btn-light" id="refresh" type="button">↻ Обновить</button></div>
+      <div class="controls"><label class="search-control"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Название или исполнитель…" autocomplete="off" aria-label="Поиск разборов"></label><select id="filter" aria-label="Фильтр"><option value="all">Все песни</option><option value="free">Бесплатные PDF</option><option value="new">Новинки</option></select></div>
+      <div class="table-scroll"><table><thead><tr><th>Разбор</th><th>Раздел</th><th>PDF</th><th>PDF + видео</th><th>Статус</th><th><span class="sr-only">Действия</span></th></tr></thead><tbody id="rows"><tr><td colspan="6">Загружаем библиотеку…</td></tr></tbody></table></div>
+      <div class="panel-bottom"><span id="count">Загрузка…</span><button type="button" id="more" class="btn btn-light" hidden>Показать ещё</button></div>
+    </section>
+    <p class="security-footer">🔒 Изменять публичный каталог может только GitHub-пользователь <strong>strunibb</strong>. Ни пароли, ни токены в браузере не запрашиваются.</p>
+  </main>
+</div>
+<div class="overlay" id="overlay" hidden>
+  <div class="overlay-shade" id="shade"></div>
+  <section class="editor" role="dialog" aria-modal="true" aria-labelledby="editor-title">
+    <div class="editor-head"><div><span class="overline">РЕДАКТОР КАРТОЧКИ</span><h2 id="editor-title">Добавить разбор</h2></div><button class="close" id="close" type="button" aria-label="Закрыть">×</button></div>
+    <form id="song-form">
+      <div class="editor-scroll">
+        <div class="hint">После заполнения откроется GitHub для подтверждения публикации. Это не прямое сохранение на сайте.</div>
+        <div class="field-grid">
+          <label class="field"><span>Исполнитель *</span><input id="artist" required maxlength="125" placeholder="Например, Кино"></label>
+          <label class="field"><span>Название песни *</span><input id="title" required maxlength="160" placeholder="Например, Пачка сигарет"></label>
+          <label class="field"><span>Раздел *</span><select id="level" required><option>Начинающий</option><option>Продвинутый</option><option>Профи</option><option>Фингерстайл</option><option>Зарубежный рок</option></select></label>
+          <label class="field"><span>Сложность</span><select id="difficulty"><option value="1">1 · Просто</option><option value="2">2 · Умеренно</option><option value="3">3 · Сложнее</option><option value="4">4 · Профессионально</option></select></label>
+          <label class="field"><span>PDF, ₽</span><input id="pdfPrice" required type="number" min="0" max="100000" step="1" value="59"><small>0 ₽ означает бесплатный PDF</small></label>
+          <label class="field"><span>PDF + видео, ₽</span><input id="videoPrice" required type="number" min="0" max="100000" step="1" value="118"></label>
+          <label class="field"><span>Тональность</span><input id="keyName" maxlength="55" value="Оригинал"></label>
+          <label class="field"><span>Ссылка на обложку</span><input id="coverUrl" type="url" maxlength="900" placeholder="https://…"><small>Только публичный HTTPS-адрес</small></label>
+        </div>
+        <label class="field full"><span>Описание</span><textarea id="description" rows="3" maxlength="600" placeholder="Что получит ученик и какая техника разбирается"></textarea></label>
+        <div class="switch-row"><label><input id="isNew" type="checkbox" checked><span class="switch-label"><b>Новинка</b><small>Показывать метку NEW и в разделе «Новинки»</small></span></label><label><input id="barre" type="checkbox"><span class="switch-label"><b>Баррэ</b><small>В песне используются баррэ</small></span></label></div>
+        <fieldset class="features"><legend>Что входит в разбор</legend><div id="features" class="feature-options"></div></fieldset>
+        <div class="hint hint-warning"><b>Не добавляй сюда приватные ссылки на платные видео, PDF или данные учеников.</b> Содержимое каталога и запрос на публикацию будут публичными.</div>
+      </div>
+      <div class="editor-actions"><button type="button" id="delete" class="btn btn-danger" hidden>Удалить</button><button type="submit" class="btn btn-primary" id="publish">Подтвердить в GitHub ↗</button></div>
+    </form>
+  </section>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
