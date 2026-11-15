@@ -98,18 +98,34 @@ function featureMarkup(features, limit = 4) {
   return [...shown.map((feature) => `<span>${icons[feature] || "•"} ${escapeHtml(feature)}</span>`), "<span>▶ Видео</span>", "<span>▤ PDF</span>"].join("");
 }
 
+function coverImageUrl(song) {
+  const url = typeof song.coverUrl === "string" ? song.coverUrl.trim() : "";
+  return (url.startsWith("https://") || url.startsWith("http://") || url.startsWith("./") || url.startsWith("/")) ? url : "";
+}
+
 function createCard(song) {
   const node = els.template.content.firstElementChild.cloneNode(true);
   node.dataset.id = song.id;
   const cover = node.querySelector(".song-cover");
-  cover.classList.add(`cover-${song.coverStyle}`);
-  node.querySelector(".cover-copy span").textContent = song.artist;
-  node.querySelector(".cover-copy strong").textContent = song.title;
-  const newLabel = node.querySelector(".new-label");
-  if (!song.isNew) newLabel.remove();
+  cover.classList.add("cover-" + song.coverStyle);
+  const coverUrl = coverImageUrl(song);
+  if (coverUrl) {
+    const image = document.createElement("img");
+    image.src = coverUrl;
+    image.alt = "";
+    image.loading = "lazy";
+    image.decoding = "async";
+    cover.prepend(image);
+    cover.classList.add("has-image");
+  }
+  if (!song.isNew) node.querySelector(".new-label").remove();
+  const showSong = () => openSong(song.id);
+  node.querySelector(".card-title").textContent = song.title;
+  node.querySelector(".card-title").addEventListener("click", showSong);
+  node.querySelector(".card-artist").textContent = song.artist;
   const coverButton = node.querySelector(".cover-button");
-  coverButton.setAttribute("aria-label", `Подробнее: ${song.artist} — ${song.title}`);
-  coverButton.addEventListener("click", () => openSong(song.id));
+  coverButton.setAttribute("aria-label", "Подробнее: " + song.artist + " — " + song.title);
+  coverButton.addEventListener("click", showSong);
   node.querySelector(".card-section-line").innerHTML = badge(song);
   node.querySelector(".feature-list").innerHTML = featureMarkup(song.features);
   const selected = selectedFormat(song.id);
@@ -189,7 +205,44 @@ function renderModal() {
   if (!song) return;
   const selected = selectedFormat(song.id);
   const dots = "●".repeat(Math.max(1, Math.min(4, song.difficulty)));
-  els.modalContent.innerHTML = `<div class="modal-grid"><div class="song-cover modal-cover cover-${song.coverStyle}"><div class="record" aria-hidden="true"><i></i></div><div class="cover-copy"><span>${escapeHtml(song.artist)}</span><strong id="modal-title">${escapeHtml(song.title)}</strong></div></div><div class="modal-copy">${badge(song)}<p>${escapeHtml(song.description)}</p><div class="facts"><span><small>Сложность</small><strong>${dots} · ${difficultyLabel(song.difficulty)}</strong></span><span><small>Тональность</small><strong>${escapeHtml(song.keyName || "Оригинал")}</strong></span><span><small>Баррэ</small><strong>${song.barre ? "Есть" : "Нет"}</strong></span></div><div class="modal-features">${[...new Set(song.features)].map((feature) => `<span>${icons[feature] || "•"} ${escapeHtml(feature)}</span>`).join("")}</div><div class="purchase-options"><button type="button" data-modal-format="pdf" class="${selected === "pdf" ? "added" : ""}"><span>PDF с текстовым разбором</span><strong>${money(song.pdfPrice)}</strong></button><button type="button" data-modal-format="video" class="${selected === "video" ? "added" : ""}"><span>PDF + видеоразбор</span><strong>${money(song.videoPrice)}</strong></button></div></div></div>`;
+  const coverUrl = coverImageUrl(song);
+  const coverImage = coverUrl ? '<img src="' + escapeHtml(coverUrl) + '" alt="" loading="eager" decoding="async">' : "";
+  const features = [...new Set(song.features)];
+  els.modalContent.innerHTML = `
+    <div class="modal-content">
+      <div class="modal-identity">
+        <div class="song-cover modal-cover cover-${escapeHtml(song.coverStyle)}${coverUrl ? " has-image" : ""}">
+          ${coverImage}
+          <div class="record" aria-hidden="true"><i></i></div>
+          <div class="cover-copy"><span>${escapeHtml(song.artist)}</span><strong>${escapeHtml(song.title)}</strong></div>
+        </div>
+        <div class="modal-heading">
+          ${badge(song)}
+          <p class="modal-artist">${escapeHtml(song.artist)}</p>
+          <h2 id="modal-title">${escapeHtml(song.title)}</h2>
+          <p class="modal-description">${escapeHtml(song.description)}</p>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <div class="modal-details">
+          <h3>О песне</h3>
+          <div class="facts">
+            <span><small>Сложность</small><strong>${dots} · ${difficultyLabel(song.difficulty)}</strong></span>
+            <span><small>Тональность</small><strong>${escapeHtml(song.keyName || "Оригинал")}</strong></span>
+            <span><small>Баррэ</small><strong>${song.barre ? "Есть" : "Нет"}</strong></span>
+          </div>
+          ${features.length ? '<div class="modal-features">' + features.map((feature) => '<span>' + (icons[feature] || "•") + ' ' + escapeHtml(feature) + '</span>').join("") + '</div>' : ""}
+        </div>
+        <div class="modal-buy">
+          <h3>Выберите формат</h3>
+          <p>Добавим выбранный материал в корзину</p>
+          <div class="purchase-options">
+            <button type="button" data-modal-format="pdf" class="${selected === "pdf" ? "added" : ""}"><span>PDF-разбор</span><strong>${money(song.pdfPrice)}</strong></button>
+            <button type="button" data-modal-format="video" class="${selected === "video" ? "added" : ""}"><span>PDF + видеоразбор</span><strong>${money(song.videoPrice)}</strong></button>
+          </div>
+        </div>
+      </div>
+    </div>`;
   els.modalContent.querySelectorAll("[data-modal-format]").forEach((button) => {
     button.setAttribute("aria-pressed", String(selected === button.dataset.modalFormat));
     button.addEventListener("click", () => toggleCart(song, button.dataset.modalFormat));
@@ -200,7 +253,7 @@ function renderModal() {
     cartButton.className = "button button-primary modal-cart";
     cartButton.textContent = "Перейти в корзину";
     cartButton.addEventListener("click", openCart);
-    els.modalContent.querySelector(".modal-copy").append(cartButton);
+    els.modalContent.querySelector(".modal-buy").append(cartButton);
   }
 }
 function openSong(id) { state.modalSong = state.songs.find((song) => song.id === id); renderModal(); els.songBackdrop.hidden = false; document.body.classList.add("no-scroll"); els.modalClose.focus(); }

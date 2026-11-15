@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Каталог понятных PDF- и видеоразборов песен на гитаре от Никиты — преподавателя школы «Струны будущего».">
-  <meta name="theme-color" content="#071416">
+  <meta name="theme-color" content="#faf8f4">
   <title>Струны будущего — разборы песен на гитаре</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css?v=school-20261114">
+  <link rel="stylesheet" href="./catalog-redesign.css?v=20261115-1">
 </head>
 <body>
   <a class="skip-link" href="#search">Перейти к поиску песен</a>
@@ -92,11 +93,17 @@
 
   <template id="card-template">
     <article class="song-card">
-      <button class="cover-button" type="button"><div class="song-cover"><span class="new-label">NEW</span><div class="record" aria-hidden="true"><i></i></div><div class="cover-copy"><span></span><strong></strong></div></div></button>
-      <div class="card-body"><div class="card-section-line"></div><div class="feature-list"></div><div class="purchase-options"><button type="button" data-format="pdf"><span>PDF</span><strong></strong></button><button type="button" data-format="video"><span>PDF + видео</span><strong></strong></button></div></div>
+      <div class="card-header">
+        <button class="cover-button" type="button" aria-label="Подробнее о песне"><div class="song-cover"><span class="new-label">NEW</span><div class="record" aria-hidden="true"><i></i></div></div></button>
+        <div class="card-info"><div class="card-section-line"></div><button class="card-title" type="button"></button><p class="card-artist"></p></div>
+      </div>
+      <div class="card-body">
+        <div class="feature-list"></div>
+        <div class="purchase-options"><button type="button" data-format="pdf"><span>PDF</span><strong></strong></button><button type="button" data-format="video"><span>PDF + видео</span><strong></strong></button></div>
+      </div>
     </article>
   </template>
 
-  <script src="./app.js?v=school-20261114" defer></script>
+  <script src="./app.js?v=catalog-20261115-1" defer></script>
 </body>
 </html>
