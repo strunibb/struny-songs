@@ -8,6 +8,7 @@ const MARKER = "STRUNY_CMS_V1\n";
 const LEVELS = ["Начинающий","Продвинутый","Профи","Фингерстайл","Зарубежный рок","Любитель"];
 const FEATURES = ["Аккорды","Бой","Перебор","Рифф","Соло","Фингерстайл","Табулатура","Интересный бой","Электрогитара"];
 const COVER_STYLES = ["ocean","forest","violet","ember","silver","sunset"];
+const FIXED_PRICES = {"Начинающий":25,"Продвинутый":50,"Профи":100};
 
 function assert(condition, message) { if (!condition) throw Error(message); }
 function str(x, name, max = 220, required = false) {
@@ -46,9 +47,17 @@ function payload(body) {
   p.title=str(p.title,"Название",160,true);
   p.description=str(p.description??"","Описание",600);
   p.keyName=str(p.keyName??"Оригинал","Тональность",55);
+  p.albumName=str(p.albumName??"","Альбом",160);
   assert(LEVELS.includes(p.level),"Неизвестная категория");
   p.pdfPrice=int(p.pdfPrice,"Стоимость PDF",0,100000);
   p.videoPrice=int(p.videoPrice,"Стоимость PDF + видео",0,100000);
+  p.isFree=p.isFree===true || (p.isFree===undefined && p.pdfPrice===0 && p.videoPrice===0);
+  assert(typeof p.isFree==="boolean","Неверная бесплатная категория");
+  if(p.isFree){p.pdfPrice=0;p.videoPrice=0;}
+  else if(Object.hasOwn(FIXED_PRICES,p.level)){
+    p.pdfPrice=FIXED_PRICES[p.level];
+    p.videoPrice=FIXED_PRICES[p.level];
+  }
   p.difficulty=int(p.difficulty,"Сложность",1,4);
   assert(typeof p.barre==="boolean" && typeof p.isNew==="boolean","Неверный формат переключателя");
   assert(Array.isArray(p.features) && p.features.length<=FEATURES.length && p.features.every(x=>FEATURES.includes(x)),"Некорректные особенности");
@@ -79,6 +88,7 @@ if(p.operation==="delete") {
     slug:previous?.slug||("song-"+id+"-"+slug(p.artist+"-"+p.title)),
     artist:p.artist,title:p.title,
     level:p.level,sections:[p.level],
+    isFree:p.isFree,albumName:p.albumName,
     description:p.description||"Разбор композиции для самостоятельной практики.",
     features:p.features,keyName:p.keyName||"Оригинал",
     barre:p.barre,difficulty:p.difficulty,
