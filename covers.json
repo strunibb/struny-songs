@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-15T19:51:00.812Z",
+  "updatedAt": "2026-11-15T19:53:29.058Z",
   "covers": {
     "1": {
       "url": "https://coverartarchive.org/release/e2ddc9e6-4540-4ace-8e16-c8129b749202/38255140400-500.jpg",
@@ -161,6 +161,218 @@
       "artist": "Алёна Швец",
       "title": "Весеннее обострение",
       "origin": "musicbrainz-exact"
+    },
+    "31": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/b3/a0/d8/b3a0d8ee-a934-2e19-1389-901edeaf0ed2/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B2%D0%B8%D0%BD%D0%BE-%D0%B8-%D1%81%D0%B8%D0%B3%D0%B0%D1%80%D0%B5%D1%82%D1%8B/1502408938?i=1502408943&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Вино и сигареты",
+      "album": "Вино и сигареты - Single",
+      "origin": "apple-exact"
+    },
+    "32": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/22/b5/ac/22b5ac1c-9aff-c013-7686-df839faec146/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B2%D1%80%D0%B5%D0%B4%D0%B8%D0%BD%D0%B0/1680926824?i=1680926825&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Вредина",
+      "album": "ВРЕДИНА - Single",
+      "origin": "apple-exact"
+    },
+    "33": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bc/31/13/bc311360-97da-7a16-7a6c-cd1f8e657360/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B4%D0%B8%D0%B0%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D1%8B/1846550784?i=1846550789&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Диафильмы",
+      "album": "ХРИЗАЛИДАРИЙ",
+      "origin": "apple-exact"
+    },
+    "35": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/30/35/67/3035673f-fbe9-ee02-7144-729f062cd1c8/cover.png/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%BA%D0%B0%D0%BF%D1%83%D1%87%D0%B8%D0%BD%D0%BE/1780921056?i=1780921057&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Капучино",
+      "album": "капучино - Single",
+      "origin": "apple-exact"
+    },
+    "36": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/bb/c5/b0/bbc5b060-d18d-3a92-6dba-91070a3a9867/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%BA%D1%83%D0%B4%D1%80%D1%8F%D0%B2%D1%8B%D0%B5/1445172944?i=1445173088&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Кудрявые",
+      "album": "Похороните меня за социум",
+      "origin": "apple-exact"
+    },
+    "37": {
+      "url": "https://coverartarchive.org/release/a65d5232-394b-4058-9968-5c54910dc2f4/26928356496-500.jpg",
+      "source": "https://musicbrainz.org/release-group/d1b752ba-dfc2-4f23-8f52-d7aea00ff6b3",
+      "artist": "Алёна Швец",
+      "title": "Мемы",
+      "origin": "musicbrainz-exact"
+    },
+    "38": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/1d/14/8f/1d148f9b-7c1f-b646-fea5-811a9e377d98/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%BC%D0%BE%D1%8E-%D0%BF%D0%B5%D1%80%D0%B2%D1%83%D1%8E-%D0%BB%D1%8E%D0%B1%D0%BE%D0%B2%D1%8C-%D0%B7%D0%B2%D0%B0%D0%BB%D0%B8-%D0%BD%D0%B5%D0%BD%D0%B0%D0%B2%D0%B8%D1%81%D1%82%D1%8C/1446751786?i=1446751804&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Мою первую любовь звали ненависть",
+      "album": "Когда зацветёт сирень",
+      "origin": "apple-exact"
+    },
+    "39": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/bb/c5/b0/bbc5b060-d18d-3a92-6dba-91070a3a9867/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%BD%D0%B5%D0%BB%D1%8E%D0%B1%D0%BE%D0%B2%D1%8C/1445172944?i=1445173073&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Нелюбовь",
+      "album": "Похороните меня за социум",
+      "origin": "apple-exact"
+    },
+    "41": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/c5/d5/7b/c5d57b76-f80b-06de-f8c2-72c85d77dcff/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%BF%D0%BE%D1%80%D1%82%D0%B2%D0%B5%D0%B9%D0%BD/1453700346?i=1453700355&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Портвейн",
+      "album": "Портвейн - Single",
+      "origin": "apple-exact"
+    },
+    "42": {
+      "url": "https://coverartarchive.org/release/7129d329-2af1-4360-92bc-e13731ddf15b/39318609145-500.jpg",
+      "source": "https://musicbrainz.org/release-group/7279dd19-96af-40e2-9e67-795c4e62ee3a",
+      "artist": "Алёна Швец",
+      "title": "Розами",
+      "origin": "musicbrainz-exact"
+    },
+    "43": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/90/c6/03/90c60333-bbfa-3907-8d49-8b481c8fbc72/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D1%81%D0%BA%D0%B5%D0%B9%D1%82%D0%B5%D1%80/1695198082?i=1695198100&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Скейтер",
+      "album": "КОРОЛЕВА ОТСТОЯ",
+      "origin": "apple-exact"
+    },
+    "44": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bc/31/13/bc311360-97da-7a16-7a6c-cd1f8e657360/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D1%81%D0%BA%D0%BE%D1%80%D0%BF%D0%B8%D0%BE%D0%BD/1846550784?i=1846550793&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Скорпион",
+      "album": "ХРИЗАЛИДАРИЙ",
+      "origin": "apple-exact"
+    },
+    "45": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/bb/c5/b0/bbc5b060-d18d-3a92-6dba-91070a3a9867/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D1%81%D0%BE%D0%BF%D0%B5%D1%80%D0%BD%D0%B8%D1%86%D0%B0/1445172944?i=1445173252&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Соперница",
+      "album": "Похороните меня за социум",
+      "origin": "apple-exact"
+    },
+    "46": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bc/31/13/bc311360-97da-7a16-7a6c-cd1f8e657360/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D1%82%D0%B2%D0%BE%D0%B9-%D0%B1%D1%80%D0%B8%D0%BB%D0%BB%D0%B8%D0%B0%D0%BD%D1%82%D0%BE%D0%B2%D1%8B%D0%B9-%D1%81%D0%BC%D0%B5%D1%85/1846550784?i=1846550788&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Твой бриллиантовый смех",
+      "album": "ХРИЗАЛИДАРИЙ",
+      "origin": "apple-exact"
+    },
+    "47": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/bb/c5/b0/bbc5b060-d18d-3a92-6dba-91070a3a9867/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D1%82%D0%B2%D0%BE%D1%8F-%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B0/1445172944?i=1445173242&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Твоя школьница",
+      "album": "Похороните меня за социум",
+      "origin": "apple-exact"
+    },
+    "48": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/22/b5/ac/22b5ac1c-9aff-c013-7686-df839faec146/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D1%83%D0%B4%D0%B0%D0%BB%D1%8E/1680926824?i=1680926826&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Удалю",
+      "album": "ВРЕДИНА - Single",
+      "origin": "apple-exact"
+    },
+    "49": {
+      "url": "https://coverartarchive.org/release/6069c36e-095d-4244-a7ff-8769827b23bd/43448246062-500.jpg",
+      "source": "https://musicbrainz.org/release-group/215434b9-4664-4c69-81ed-6e34f0d12f6d",
+      "artist": "Алёна Швец",
+      "title": "Чёрная кошка",
+      "origin": "musicbrainz-exact"
+    },
+    "50": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/cd/4c/52/cd4c52b9-0978-d104-1bcc-182975b1f42b/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D1%87%D0%B8%D1%82%D0%B0%D0%B9-%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8-%D1%80%D1%83%D0%B3%D0%B0%D0%B9%D1%81%D1%8F-%D0%BC%D0%B0%D1%82%D0%BE%D0%BC/1446442445?i=1446442578&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Читай книги, ругайся матом",
+      "album": "Вписка на балконе - EP",
+      "origin": "apple-exact"
+    },
+    "51": {
+      "url": "https://coverartarchive.org/release/02b65df4-e698-489a-98b0-6c2e5497c523/45239822694-500.jpg",
+      "source": "https://musicbrainz.org/release-group/585968ae-d53a-4532-86c1-a56c56945ce3",
+      "artist": "Алёна Швец",
+      "title": "Шампанское",
+      "origin": "musicbrainz-exact"
+    },
+    "52": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ce/ef/aa/ceefaaea-0029-1c24-1f0a-ca91d78c8a18/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D1%81%D0%BE%D0%BB%D0%BD%D1%8B%D1%88%D0%BA%D0%BE/1812520257?i=1812520258&uo=4",
+      "artist": "Алёна Швец & Саша Мусор",
+      "title": "Солнышко",
+      "album": "Солнышко - Single",
+      "origin": "apple-exact"
+    },
+    "53": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/6d/19/cf6d196e-bb92-0995-2776-0e8912e11274/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%BD%D0%B5%D0%B1%D0%BE-%D1%81%D0%BB%D0%B0%D0%B2%D1%8F%D0%BD/1604622493?i=1604622500&uo=4",
+      "artist": "Алиса",
+      "title": "Небо славян",
+      "album": "Сейчас позднее, чем ты думаешь",
+      "origin": "apple-exact"
+    },
+    "54": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music19/v4/d3/0a/e0/d30ae0d5-1059-1467-94c8-e4e51a97c775/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0%D0%B9%D1%81%D0%B1%D0%B5%D1%80%D0%B3/1141801301?i=1141801457&uo=4",
+      "artist": "Алла Пугачёва",
+      "title": "Айсберг",
+      "album": "Коллекция. По острым иглам яркого огня",
+      "origin": "apple-exact"
+    },
+    "55": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1b/97/a6/1b97a60a-5728-1bed-d36c-c84efae79ce1/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%BA%D1%83%D0%B4%D0%B0-%D1%83%D1%85%D0%BE%D0%B4%D0%B8%D1%82-%D0%B4%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%BE/1140424500?i=1140424714&uo=4",
+      "artist": "Алла Пугачёва",
+      "title": "Куда уходит детство",
+      "album": "Зеркало души",
+      "origin": "apple-exact"
+    },
+    "56": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/c7/ca/b8/c7cab862-4db5-4876-c131-8fa65f12e7e9/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%BE%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D0%BE-%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%BF%D0%B0%D0%B4/1141844173?i=1141844199&uo=4",
+      "artist": "Алла Пугачёва",
+      "title": "Осторожно, листопад",
+      "album": "Речной трамвайчик",
+      "origin": "apple-exact"
+    },
+    "58": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/3d/5c/a4/3d5ca4f0-a39e-149c-3472-f43c7932dd4d/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B2%D0%B5%D1%81%D0%BD%D0%B0/1657201528?i=1657202486&uo=4",
+      "artist": "Алсу",
+      "title": "Весна",
+      "album": "Алсу",
+      "origin": "apple-exact"
+    },
+    "59": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ce/18/21/ce1821dc-9647-6226-e97a-ec4a53f868b7/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B2%D1%81%D0%B5-%D1%80%D0%B0%D0%B2%D0%BD%D0%BE/1657200710?i=1657200724&uo=4",
+      "artist": "Алсу",
+      "title": "Всё равно",
+      "album": "19",
+      "origin": "apple-exact"
+    },
+    "60": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/3d/5c/a4/3d5ca4f0-a39e-149c-3472-f43c7932dd4d/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B8%D0%BD%D0%BE%D0%B3%D0%B4%D0%B0/1657201528?i=1657202488&uo=4",
+      "artist": "Алсу",
+      "title": "Иногда",
+      "album": "Алсу",
+      "origin": "apple-exact"
     },
     "253": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/14/ea/a3/14eaa33a-f55c-64ba-da02-666f14338363/cover.jpg/3000x3000bb.jpg",
