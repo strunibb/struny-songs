@@ -221,6 +221,7 @@ function renderModal() {
           <p class="modal-artist">${escapeHtml(song.artist)}</p>
           <h2 id="modal-title">${escapeHtml(song.title)}</h2>
           <p class="modal-description">${escapeHtml(song.description)}</p>
+          ${coverUrl && song.coverSource ? `<a class="cover-credit" href="${escapeHtml(song.coverSource)}" target="_blank" rel="noopener noreferrer">Источник обложки ↗</a>` : ""}
         </div>
       </div>
       <div class="modal-bottom">
@@ -286,9 +287,18 @@ document.addEventListener("keydown", (event) => {
 });
 els.search.value = state.query;
 els.search.parentElement.classList.toggle("has-value", Boolean(state.query));
-fetch("./songs.json")
-  .then((response) => { if (!response.ok) throw new Error("Не удалось загрузить каталог"); return response.json(); })
-  .then((payload) => { state.songs = Array.isArray(payload.songs) ? payload.songs : []; reconcileCart(); renderTabs(); renderCatalog(); els.grid.setAttribute("aria-busy", "false"); })
+Promise.all([
+  fetch("./songs.json").then((response) => { if (!response.ok) throw new Error("Не удалось загрузить каталог"); return response.json(); }),
+  fetch("./covers.json").then((response) => response.ok ? response.json() : { covers: {} }).catch(() => ({ covers: {} }))
+])
+  .then(([payload, art]) => {
+    const covers = art && typeof art.covers === "object" && art.covers ? art.covers : {};
+    state.songs = (Array.isArray(payload.songs) ? payload.songs : []).map((song) => {
+      const cover = covers[String(song.id)];
+      return cover && cover.url ? { ...song, coverUrl: cover.url, coverSource: cover.source || "" } : song;
+    });
+    reconcileCart(); renderTabs(); renderCatalog(); els.grid.setAttribute("aria-busy", "false");
+  })
   .catch(() => {
     els.grid.setAttribute("aria-busy", "false");
     els.loadMore.parentElement.hidden = true;

@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-15",
+  "covers": {
+    "253": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/14/ea/a3/14eaa33a-f55c-64ba-da02-666f14338363/cover.jpg/3000x3000bb.jpg",
+      "source": "https://www.shazam.com/song/1130493547/%D0%B1%D0%B0%D1%82%D0%B0%D1%80%D0%B5%D0%B9%D0%BA%D0%B0",
+      "artist": "Жуки",
+      "title": "Батарейка",
+      "origin": "curated"
+    },
+    "420": {
+      "url": "https://geo-media.beatsource.com/image_size/1400x1400/4/8/a/48a1ce3a-dde4-4a2a-ac6e-ba1cb189e914.jpg",
+      "source": "https://www.beatsource.com/release/trudnyy-vozrast/305401",
+      "artist": "МакSим",
+      "title": "Знаешь ли ты",
+      "origin": "curated"
+    },
+    "851": {
+      "url": "https://static.asfaltshop.pl/uploads2/photos/big_webp/2020/11/24/20201124034114_R-8498825-1514512241-4281.jpeg.webp",
+      "source": "https://asfaltshop.pl/product/19295-michael-jackson-thriller-lp",
+      "artist": "Michael Jackson",
+      "title": "Billie Jean",
+      "origin": "curated"
+    },
+    "951": {
+      "url": "https://41774b73df.clvaw-cdnwnd.com/7b7954dd08c9766ea512b526a5b1cb65/200004409-6be6f6be71/71QSga7NSQL._UF894%2C1000_QL80_.jpeg?ph=41774b73df",
+      "source": "https://www.thegrooveclub.es/l/15-mejores-canciones-tom-odell/",
+      "artist": "Tom Odell",
+      "title": "Another Love",
+      "origin": "curated"
+    }
+  }
+}
