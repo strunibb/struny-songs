@@ -146,9 +146,10 @@ function submitIssue(payload,displayName) {
   const title="[Struny CMS] "+op+": "+displayName;
   const link=ISSUE_URL+"?title="+encodeURIComponent(title)+"&body="+encodeURIComponent(body);
   if(link.length>10000){notify("Слишком длинный запрос. Сократи описание.");return;}
-  const popup=window.open(link,"_blank","noopener,noreferrer");
-  if(popup===null)notify("Разреши открытие новой вкладки для GitHub.");
-  else notify("На GitHub нажми «Submit new issue». Только после этого изменение будет опубликовано.");
+  const linkNode=document.createElement("a");
+  linkNode.href=link;linkNode.target="_blank";linkNode.rel="noopener noreferrer";
+  document.body.append(linkNode);linkNode.click();linkNode.remove();
+  notify("На открывшейся странице GitHub нажми «Submit new issue». После этого начнётся публикация.");
 }
 function removeSong(song) {
   if(!window.confirm("Подготовить удаление песни «"+song.artist+" — "+song.title+"»? Далее потребуется подтверждение в GitHub."))return;
