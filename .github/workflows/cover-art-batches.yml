@@ -43,6 +43,11 @@ jobs:
           }
           const base = read("covers.json", {version:1,covers:{}});
           const batch = read("/tmp/struny-covers.json", {version:1,covers:{}});
+          const scan = read("/tmp/struny-cover-status.json", {summary:{scannedThisRun:0}}).summary?.scannedThisRun || 0;
+          if (!scan) {
+            console.log("No songs to check on this run; nothing to publish");
+            process.exit(0);
+          }
           base.covers = {...(batch.covers||{}), ...(base.covers||{})};
           base.updatedAt = new Date().toISOString();
           writeFileSync("covers.json", JSON.stringify(base,null,2)+"\n");
