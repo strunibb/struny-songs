@@ -51,6 +51,7 @@ function payload(body) {
   assert(LEVELS.includes(p.level),"Неизвестная категория");
   p.pdfPrice=int(p.pdfPrice,"Стоимость PDF",0,100000);
   p.videoPrice=int(p.videoPrice,"Стоимость PDF + видео",0,100000);
+  p.videoAvailable=p.videoAvailable!==false;
   p.isFree=p.isFree===true || (p.isFree===undefined && p.pdfPrice===0 && p.videoPrice===0);
   assert(typeof p.isFree==="boolean","Неверная бесплатная категория");
   if(p.isFree){p.pdfPrice=0;p.videoPrice=0;}
@@ -90,7 +91,7 @@ if(p.operation==="delete") {
     level:p.level,
     sections:[...new Set([p.level,...(previous?.sections||[]).filter(section=>
       section!==previous?.level && section!==p.level && LEVELS.includes(section))])],
-    isFree:p.isFree,albumName:p.albumName,
+    isFree:p.isFree,albumName:p.albumName,videoAvailable:p.videoAvailable,
     description:p.description||"Разбор композиции для самостоятельной практики.",
     features:p.features,keyName:p.keyName||"Оригинал",
     barre:p.barre,difficulty:p.difficulty,
