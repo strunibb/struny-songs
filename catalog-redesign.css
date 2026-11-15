@@ -105,3 +105,61 @@
   .song-grid .song-cover { width: 168px; height: 168px; }
   .song-grid .song-card { min-height: 320px; }
 }
+
+
+/* Крупные, читаемые разделы каталога после объединения категорий. */
+.tabs {
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tabs button {
+  min-height: 48px;
+  padding: 10px 19px;
+  border: 1px solid #d9c5e6;
+  border-radius: 13px;
+  color: #503a60;
+  background: #fff;
+  font-size: 15px;
+  font-weight: 850;
+  line-height: 1.2;
+  letter-spacing: -.015em;
+  text-align: center;
+  white-space: normal;
+}
+.tabs button:hover,
+.tabs button.active,
+.tabs button[aria-pressed="true"] {
+  border-color: #7534a6;
+  color: #fff;
+  background: #7534a6;
+  box-shadow: 0 4px 14px rgba(117, 52, 166, .14);
+}
+.tabs button:focus-visible {
+  outline: 3px solid #7534a6;
+  outline-offset: 3px;
+}
+@media (max-width: 640px) {
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-inline: 0;
+    padding: 0;
+    overflow: visible;
+  }
+  .tabs button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 49px;
+    padding: 9px 10px;
+    font-size: 14px;
+    font-weight: 800;
+  }
+}
+@media (max-width: 350px) {
+  .tabs button { font-size: 13px; padding-inline: 6px; }
+}

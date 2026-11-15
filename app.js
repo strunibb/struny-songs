@@ -1,11 +1,13 @@
-const SECTIONS = ["Все", "Начинающий", "Продвинутый", "Профи", "Фингерстайл", "Зарубежный рок", "Электрогитара", "Песни с интересным боем"];
+const SECTIONS = ["Все", "Начинающий", "Продвинутый", "Профи", "Фингерстайл", "Зарубежный рок"];
 const PAGE_SIZE = 48;
 const STORAGE_KEY = "struny-github-pages-cart-v1";
 const icons = { "Аккорды": "♬", "Бой": "↯", "Перебор": "≋", "Рифф": "ϟ", "Соло": "◇", "Фингерстайл": "✦", "Табулатура": "▦", "Интересный бой": "↯", "Электрогитара": "⚡" };
 const levelColors = { "Начинающий": "green", "Любитель": "yellow", "Продвинутый": "red", "Профи": "hot", "Фингерстайл": "purple", "Зарубежный рок": "blue", "Электрогитара": "blue", "Интересный бой": "purple" };
 
 const initialFilters = new URLSearchParams(window.location.search);
-const state = { songs: [], query: initialFilters.get("q") || "", section: SECTIONS.includes(initialFilters.get("section")) ? initialFilters.get("section") : "Все", sort: "title", visible: PAGE_SIZE, cart: loadCart(), modalSong: null };
+const legacySections = { "Электрогитара": "Зарубежный рок", "Песни с интересным боем": "Продвинутый" };
+const urlSection = legacySections[initialFilters.get("section")] || initialFilters.get("section");
+const state = { songs: [], query: initialFilters.get("q") || "", section: SECTIONS.includes(urlSection) ? urlSection : "Все", sort: "title", visible: PAGE_SIZE, cart: loadCart(), modalSong: null };
 const els = {
   search: document.querySelector("#search"), searchClear: document.querySelector("#search-clear"), tabs: document.querySelector("#tabs"), sort: document.querySelector("#sort"),
   grid: document.querySelector("#song-grid"), count: document.querySelector("#result-count"), title: document.querySelector("#result-title"),
@@ -19,8 +21,8 @@ function money(value) { return value === 0 ? "Бесплатно" : `${value} �
 function escapeHtml(value) { return String(value ?? "").replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[char])); }
 function labelFor(song) {
   if (song.level !== "Без категории") return song.level;
-  if (song.sections.includes("Электрогитара")) return "Электрогитара";
-  return "Интересный бой";
+  if (song.sections.includes("Зарубежный рок")) return "Зарубежный рок";
+  return "Продвинутый";
 }
 function difficultyLabel(value) { return ["Начинающий", "Любитель", "Продвинутый", "Профи"][Math.max(1, Math.min(4, value)) - 1]; }
 
