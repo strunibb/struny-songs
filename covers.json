@@ -1,7 +1,167 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-15",
+  "updatedAt": "2026-11-15T19:51:00.812Z",
   "covers": {
+    "1": {
+      "url": "https://coverartarchive.org/release/e2ddc9e6-4540-4ace-8e16-c8129b749202/38255140400-500.jpg",
+      "source": "https://musicbrainz.org/release-group/54ee9215-3047-4799-b9eb-13a37510b1d2",
+      "artist": "25/17",
+      "title": "Жду чуда",
+      "origin": "musicbrainz-exact"
+    },
+    "2": {
+      "url": "https://coverartarchive.org/release/94a7bf53-fbcc-4fd9-ab46-83ab489b643f/1978486233.jpg",
+      "source": "https://musicbrainz.org/release-group/c1ff9d9d-e42c-4a43-aa8f-19f23efdd575",
+      "artist": "25/17",
+      "title": "Никто не сможет меня остановить",
+      "origin": "musicbrainz-exact"
+    },
+    "3": {
+      "url": "https://coverartarchive.org/release/94a7bf53-fbcc-4fd9-ab46-83ab489b643f/1978486233.jpg",
+      "source": "https://musicbrainz.org/release-group/c1ff9d9d-e42c-4a43-aa8f-19f23efdd575",
+      "artist": "25/17",
+      "title": "Я никогда не видел моря",
+      "origin": "musicbrainz-exact"
+    },
+    "5": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/4f/fe/6f4ffe88-f18a-51e7-81e3-a1068a89c249/4823034779232.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/us/album/%D0%B7%D0%B8%D0%BC%D0%B0/1748566745?i=1748569317&uo=4",
+      "artist": "5’nizza",
+      "title": "Зима",
+      "album": "Пятница",
+      "origin": "apple-exact"
+    },
+    "7": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/4f/fe/6f4ffe88-f18a-51e7-81e3-a1068a89c249/4823034779232.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/us/album/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%B0/1748566745?i=1748567781&uo=4",
+      "artist": "5’nizza",
+      "title": "Стрела",
+      "album": "Пятница",
+      "origin": "apple-exact"
+    },
+    "8": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/4f/fe/6f4ffe88-f18a-51e7-81e3-a1068a89c249/4823034779232.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/us/album/%D1%82%D1%8B-%D0%BA%D0%B8%D0%B4%D0%B0%D0%BB/1748566745?i=1748567506&uo=4",
+      "artist": "5’nizza",
+      "title": "Ты кидал",
+      "album": "Пятница",
+      "origin": "apple-exact"
+    },
+    "10": {
+      "url": "https://coverartarchive.org/release/437e658b-ec4a-4eb4-b601-f3dcc6693b49/44935875743-500.jpg",
+      "source": "https://musicbrainz.org/release-group/d8b0d2bc-5482-4b09-b434-5e0c15dbf49c",
+      "artist": "7Б",
+      "title": "Молодые ветра",
+      "origin": "musicbrainz-exact"
+    },
+    "12": {
+      "url": "https://coverartarchive.org/release/af3ed074-f7b2-49ba-b7de-985336a10cca/28431604035-500.jpg",
+      "source": "https://musicbrainz.org/release-group/047fad7f-c7db-4cb9-95e6-e3e5fbed60cb",
+      "artist": "7Б",
+      "title": "Осень",
+      "origin": "musicbrainz-exact"
+    },
+    "13": {
+      "url": "https://coverartarchive.org/release/16e03f6f-9f9e-4edd-bbdf-ee3210dfd980/12708312146.png",
+      "source": "https://musicbrainz.org/release-group/f1974a72-a737-374b-85a7-4f1c70b7e89a",
+      "artist": "7Б",
+      "title": "Последний герой",
+      "origin": "musicbrainz-exact"
+    },
+    "14": {
+      "url": "https://coverartarchive.org/release/33389d68-01ae-4d9f-93ae-bc82604a1605/15012256755.jpg",
+      "source": "https://musicbrainz.org/release-group/8c6aee44-8f38-3c83-a363-a7e4aafdf7eb",
+      "artist": "Агата Кристи",
+      "title": "Как на войне",
+      "origin": "musicbrainz-exact"
+    },
+    "15": {
+      "url": "https://coverartarchive.org/release/33389d68-01ae-4d9f-93ae-bc82604a1605/15012256755.jpg",
+      "source": "https://musicbrainz.org/release-group/8c6aee44-8f38-3c83-a363-a7e4aafdf7eb",
+      "artist": "Агата Кристи",
+      "title": "Сказочная тайга",
+      "origin": "musicbrainz-exact"
+    },
+    "17": {
+      "url": "https://coverartarchive.org/release/9c173115-8130-416e-b63f-7be7712245e6/34066631964-500.jpg",
+      "source": "https://musicbrainz.org/release-group/12fa80db-4539-3741-b604-3b769e889fa3",
+      "artist": "Аквариум",
+      "title": "25 к 10",
+      "origin": "musicbrainz-exact"
+    },
+    "18": {
+      "url": "https://coverartarchive.org/release/c44c7a4c-8241-4297-9e4b-600942aa665d/30866419317-500.jpg",
+      "source": "https://musicbrainz.org/release-group/87ce0132-7b29-41db-a965-c495fc523989",
+      "artist": "Аквариум",
+      "title": "Город золотой",
+      "origin": "musicbrainz-exact"
+    },
+    "20": {
+      "url": "https://coverartarchive.org/release/df84951e-a153-4de9-b83d-cbfe5cb1b06c/36131799615-500.jpg",
+      "source": "https://musicbrainz.org/release-group/9e0e1df9-9a34-342c-aa84-85bf2d27ffd1",
+      "artist": "Аквариум",
+      "title": "Поезд в огне",
+      "origin": "musicbrainz-exact"
+    },
+    "21": {
+      "url": "https://coverartarchive.org/release/359026ed-d501-4777-ae75-e9b5f579de8d/30859193960-500.jpg",
+      "source": "https://musicbrainz.org/release-group/a9d53c0b-22d1-34a7-8807-0f332f0d6f04",
+      "artist": "Аквариум",
+      "title": "Рок-н-ролл мёртв",
+      "origin": "musicbrainz-exact"
+    },
+    "22": {
+      "url": "https://coverartarchive.org/release/c3611761-451f-42a6-bea7-04306daa7319/28558122068-500.jpg",
+      "source": "https://musicbrainz.org/release-group/c1e6d7ca-db03-4bee-bae3-8cff49aace12",
+      "artist": "Аквариум",
+      "title": "Стаканы",
+      "origin": "musicbrainz-exact"
+    },
+    "24": {
+      "url": "https://coverartarchive.org/release/d30a4f32-46db-4aa9-b6bb-1668476ca673/44113772633-500.jpg",
+      "source": "https://musicbrainz.org/release-group/cc879c61-1e8c-4962-824d-507398739463",
+      "artist": "Александр Розенбаум",
+      "title": "Ау",
+      "origin": "musicbrainz-exact"
+    },
+    "26": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bc/31/13/bc311360-97da-7a16-7a6c-cd1f8e657360/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/us/album/%D0%B0%D0%BB%D0%BB%D0%B5%D1%80%D0%B3%D0%B8%D1%8F/1846550784?i=1846550791&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Аллергия",
+      "album": "ХРИЗАЛИДАРИЙ",
+      "origin": "apple-exact"
+    },
+    "27": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bc/31/13/bc311360-97da-7a16-7a6c-cd1f8e657360/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/us/album/%D0%B1%D0%B0%D0%B1%D0%BE%D1%87%D0%BA%D0%B0/1846550784?i=1846550785&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Бабочка",
+      "album": "ХРИЗАЛИДАРИЙ",
+      "origin": "apple-exact"
+    },
+    "28": {
+      "url": "https://coverartarchive.org/release/a65d5232-394b-4058-9968-5c54910dc2f4/26928356496-500.jpg",
+      "source": "https://musicbrainz.org/release-group/d1b752ba-dfc2-4f23-8f52-d7aea00ff6b3",
+      "artist": "Алёна Швец",
+      "title": "В кабинете у директора",
+      "origin": "musicbrainz-exact"
+    },
+    "29": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e3/9e/e2/e39ee266-c038-e8ec-6a59-ddb45899f7c3/3617224137305.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/us/album/%D0%B2%D0%B5%D0%B4%D1%8C%D0%BC-%D1%83-%D0%BD%D0%B0%D1%81-%D1%81%D0%B6%D0%B8%D0%B3%D0%B0%D1%8E%D1%82/1833569312?i=1833569322&uo=4",
+      "artist": "Алёна Швец",
+      "title": "Ведьм у нас сжигают",
+      "album": "Проволока из одуванчиков",
+      "origin": "apple-exact"
+    },
+    "30": {
+      "url": "https://coverartarchive.org/release/6069c36e-095d-4244-a7ff-8769827b23bd/43448246062-500.jpg",
+      "source": "https://musicbrainz.org/release-group/215434b9-4664-4c69-81ed-6e34f0d12f6d",
+      "artist": "Алёна Швец",
+      "title": "Весеннее обострение",
+      "origin": "musicbrainz-exact"
+    },
     "253": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/14/ea/a3/14eaa33a-f55c-64ba-da02-666f14338363/cover.jpg/3000x3000bb.jpg",
       "source": "https://www.shazam.com/song/1130493547/%D0%B1%D0%B0%D1%82%D0%B0%D1%80%D0%B5%D0%B9%D0%BA%D0%B0",
