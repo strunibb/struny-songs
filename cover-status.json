@@ -76,8 +76,8 @@
       "found": true
     },
     "16": {
-      "signature": "аквариум 2 12 85 06",
-      "at": "2026-11-15T19:48:11.845Z",
+      "signature": "v2-apple-ru-us|аквариум 2 12 85 06",
+      "at": "2026-11-15T20:17:31.890Z",
       "found": false
     },
     "17": {
@@ -299,12 +299,157 @@
       "signature": "алсу иногда",
       "at": "2026-11-15T19:53:28.750Z",
       "found": true
+    },
+    "103": {
+      "signature": "v2-apple-ru-us|блестящие а я все летала",
+      "at": "2026-11-15T20:19:41.148Z",
+      "found": true
+    },
+    "127": {
+      "signature": "v2-apple-ru-us|бьянка а че че",
+      "at": "2026-11-15T20:19:37.880Z",
+      "found": true
+    },
+    "130": {
+      "signature": "v2-apple-ru-us|валентин стрыкало 92",
+      "at": "2026-11-15T20:18:56.635Z",
+      "found": true
+    },
+    "150": {
+      "signature": "v2-apple-ru-us|ваня дмитриенко 36 6",
+      "at": "2026-11-15T20:17:55.571Z",
+      "found": true
+    },
+    "239": {
+      "signature": "v2-apple-ru-us|жанна фриске а на море белыи песок",
+      "at": "2026-11-15T20:19:27.471Z",
+      "found": true
+    },
+    "269": {
+      "signature": "v2-apple-ru-us|земфира ариведерчи",
+      "at": "2026-11-15T20:22:06.653Z",
+      "found": true
+    },
+    "302": {
+      "signature": "v2-apple-ru-us|кино алюминиевые огурцы",
+      "at": "2026-11-15T20:21:49.582Z",
+      "found": true
+    },
+    "303": {
+      "signature": "v2-apple-ru-us|кино апрель",
+      "at": "2026-11-15T20:21:59.975Z",
+      "found": true
+    },
+    "393": {
+      "signature": "v2-apple-ru-us|любэ а зори здесь тихие",
+      "at": "2026-11-15T20:19:03.950Z",
+      "found": false
+    },
+    "394": {
+      "signature": "v2-apple-ru-us|любэ а река течет",
+      "at": "2026-11-15T20:19:34.601Z",
+      "found": false
+    },
+    "407": {
+      "signature": "v2-apple-ru-us|макс корж 2 типа людеи",
+      "at": "2026-11-15T20:16:36.296Z",
+      "found": true
+    },
+    "455": {
+      "signature": "v2-apple-ru-us|михаил шуфутинскии 3 сентября",
+      "at": "2026-11-15T20:17:52.016Z",
+      "found": false
+    },
+    "460": {
+      "signature": "v2-apple-ru-us|мот абсолютно все",
+      "at": "2026-11-15T20:19:48.382Z",
+      "found": false
+    },
+    "461": {
+      "signature": "v2-apple-ru-us|мот август это ты",
+      "at": "2026-11-15T20:21:32.289Z",
+      "found": true
+    },
+    "533": {
+      "signature": "v2-apple-ru-us|прикольные песни а муха тоже вертолет",
+      "at": "2026-11-15T20:19:27.190Z",
+      "found": false
+    },
+    "539": {
+      "signature": "v2-apple-ru-us|руки вверх 18 мне уже",
+      "at": "2026-11-15T20:16:32.831Z",
+      "found": true
+    },
+    "540": {
+      "signature": "v2-apple-ru-us|руки вверх аи яи яи девчонка",
+      "at": "2026-11-15T20:21:39.463Z",
+      "found": false
+    },
+    "541": {
+      "signature": "v2-apple-ru-us|руки вверх алешка",
+      "at": "2026-11-15T20:21:42.514Z",
+      "found": true
+    },
+    "549": {
+      "signature": "v2-apple-ru-us|свидание 08 12 1980",
+      "at": "2026-11-15T20:15:25.364Z",
+      "found": true
+    },
+    "557": {
+      "signature": "v2-apple-ru-us|сектор газа 30 лет",
+      "at": "2026-11-15T20:17:52.542Z",
+      "found": true
+    },
+    "572": {
+      "signature": "v2-apple-ru-us|сергеи трофимов алешка",
+      "at": "2026-11-15T20:21:45.884Z",
+      "found": true
+    },
+    "643": {
+      "signature": "v2-apple-ru-us|чаиф аргентина ямаика 5 0",
+      "at": "2026-11-15T20:22:03.081Z",
+      "found": true
+    },
+    "646": {
+      "signature": "v2-apple-ru-us|чиж 18 берез",
+      "at": "2026-11-15T20:16:32.468Z",
+      "found": true
+    },
+    "657": {
+      "signature": "v2-apple-ru-us|я про рок ангел хранитель",
+      "at": "2026-11-15T20:21:56.411Z",
+      "found": true
+    },
+    "765": {
+      "signature": "v2-apple-ru-us|hammali and navai а если это любовь",
+      "at": "2026-11-15T20:18:57.032Z",
+      "found": true
+    },
+    "865": {
+      "signature": "v2-apple-ru-us|mot and dose 10 баллов",
+      "at": "2026-11-15T20:15:32.550Z",
+      "found": false
+    },
+    "897": {
+      "signature": "v2-apple-ru-us|rauf and faik 5 минут",
+      "at": "2026-11-15T20:17:59.298Z",
+      "found": true
+    },
+    "917": {
+      "signature": "v2-apple-ru-us|sirotkin август",
+      "at": "2026-11-15T20:21:31.889Z",
+      "found": false
+    },
+    "961": {
+      "signature": "v2-apple-ru-us|xolidayboy америка",
+      "at": "2026-11-15T20:21:52.696Z",
+      "found": true
     }
   },
-  "updatedAt": "2026-11-15T19:53:29.058Z",
+  "updatedAt": "2026-11-15T20:22:32.152Z",
   "summary": {
     "total": 987,
-    "covers": 55,
-    "withoutVerifiedCover": 932
+    "covers": 76,
+    "withoutVerifiedCover": 911
   }
 }

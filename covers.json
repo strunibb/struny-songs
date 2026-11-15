@@ -1,13 +1,14 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-15T20:13:18.615Z",
+  "updatedAt": "2026-11-15T20:22:32.152Z",
   "covers": {
     "1": {
       "url": "https://coverartarchive.org/release/e2ddc9e6-4540-4ace-8e16-c8129b749202/38255140400-500.jpg",
       "source": "https://musicbrainz.org/release-group/54ee9215-3047-4799-b9eb-13a37510b1d2",
       "artist": "25/17",
       "title": "Жду чуда",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "На волне"
     },
     "2": {
       "url": "https://coverartarchive.org/release/94a7bf53-fbcc-4fd9-ab46-83ab489b643f/1978486233.jpg",
@@ -52,14 +53,16 @@
       "source": "https://musicbrainz.org/release-group/d8b0d2bc-5482-4b09-b434-5e0c15dbf49c",
       "artist": "7Б",
       "title": "Молодые ветра",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Двойной удар 6"
     },
     "12": {
       "url": "https://coverartarchive.org/release/af3ed074-f7b2-49ba-b7de-985336a10cca/28431604035-500.jpg",
       "source": "https://musicbrainz.org/release-group/047fad7f-c7db-4cb9-95e6-e3e5fbed60cb",
       "artist": "7Б",
       "title": "Осень",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Союз 29"
     },
     "13": {
       "url": "https://coverartarchive.org/release/16e03f6f-9f9e-4edd-bbdf-ee3210dfd980/12708312146.png",
@@ -73,21 +76,24 @@
       "source": "https://musicbrainz.org/release-group/8c6aee44-8f38-3c83-a363-a7e4aafdf7eb",
       "artist": "Агата Кристи",
       "title": "Как на войне",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "10 лет жизни"
     },
     "15": {
       "url": "https://coverartarchive.org/release/33389d68-01ae-4d9f-93ae-bc82604a1605/15012256755.jpg",
       "source": "https://musicbrainz.org/release-group/8c6aee44-8f38-3c83-a363-a7e4aafdf7eb",
       "artist": "Агата Кристи",
       "title": "Сказочная тайга",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "10 лет жизни"
     },
     "17": {
       "url": "https://coverartarchive.org/release/9c173115-8130-416e-b63f-7be7712245e6/34066631964-500.jpg",
       "source": "https://musicbrainz.org/release-group/12fa80db-4539-3741-b604-3b769e889fa3",
       "artist": "Аквариум",
       "title": "25 к 10",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Аквариум на Таганке"
     },
     "18": {
       "url": "https://coverartarchive.org/release/c44c7a4c-8241-4297-9e4b-600942aa665d/30866419317-500.jpg",
@@ -101,21 +107,24 @@
       "source": "https://musicbrainz.org/release-group/9e0e1df9-9a34-342c-aa84-85bf2d27ffd1",
       "artist": "Аквариум",
       "title": "Поезд в огне",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Равноденствие"
     },
     "21": {
       "url": "https://coverartarchive.org/release/359026ed-d501-4777-ae75-e9b5f579de8d/30859193960-500.jpg",
       "source": "https://musicbrainz.org/release-group/a9d53c0b-22d1-34a7-8807-0f332f0d6f04",
       "artist": "Аквариум",
       "title": "Рок-н-ролл мёртв",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Аквариум-25"
     },
     "22": {
       "url": "https://coverartarchive.org/release/c3611761-451f-42a6-bea7-04306daa7319/28558122068-500.jpg",
       "source": "https://musicbrainz.org/release-group/c1e6d7ca-db03-4bee-bae3-8cff49aace12",
       "artist": "Аквариум",
       "title": "Стаканы",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Лучшее"
     },
     "24": {
       "url": "https://coverartarchive.org/release/d30a4f32-46db-4aa9-b6bb-1668476ca673/44113772633-500.jpg",
@@ -145,7 +154,8 @@
       "source": "https://musicbrainz.org/release-group/d1b752ba-dfc2-4f23-8f52-d7aea00ff6b3",
       "artist": "Алёна Швец",
       "title": "В кабинете у директора",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "КОРОЛЕВА ОТСТОЯ"
     },
     "29": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e3/9e/e2/e39ee266-c038-e8ec-6a59-ddb45899f7c3/3617224137305.jpg/600x600bb.jpg",
@@ -160,7 +170,8 @@
       "source": "https://musicbrainz.org/release-group/215434b9-4664-4c69-81ed-6e34f0d12f6d",
       "artist": "Алёна Швец",
       "title": "Весеннее обострение",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "ХРИЗАЛИДАРИЙ"
     },
     "31": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/b3/a0/d8/b3a0d8ee-a934-2e19-1389-901edeaf0ed2/cover.jpg/600x600bb.jpg",
@@ -207,7 +218,8 @@
       "source": "https://musicbrainz.org/release-group/d1b752ba-dfc2-4f23-8f52-d7aea00ff6b3",
       "artist": "Алёна Швец",
       "title": "Мемы",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "КОРОЛЕВА ОТСТОЯ"
     },
     "38": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/1d/14/8f/1d148f9b-7c1f-b646-fea5-811a9e377d98/cover.jpg/600x600bb.jpg",
@@ -293,7 +305,8 @@
       "source": "https://musicbrainz.org/release-group/215434b9-4664-4c69-81ed-6e34f0d12f6d",
       "artist": "Алёна Швец",
       "title": "Чёрная кошка",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "ХРИЗАЛИДАРИЙ"
     },
     "50": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/cd/4c/52/cd4c52b9-0978-d104-1bcc-182975b1f42b/cover.jpg/600x600bb.jpg",
@@ -374,12 +387,84 @@
       "album": "Алсу",
       "origin": "apple-exact"
     },
+    "103": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9a/29/ea/9a29eac4-f177-3851-af64-6dff0802e20f/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0-%D1%8F-%D0%B2%D1%81%D1%91-%D0%BB%D0%B5%D1%82%D0%B0%D0%BB%D0%B0/1216625308?i=1216625687&uo=4",
+      "artist": "Блестящие",
+      "title": "А я всё летала",
+      "album": "За четыре моря",
+      "origin": "apple-exact"
+    },
+    "127": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/26/43/86/264386a4-0a6c-8a10-0a9d-c6b479ef25c5/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0-%D1%87%D1%91-%D1%87%D1%91/1374155925?i=1374155945&uo=4",
+      "artist": "Бьянка",
+      "title": "А чё чё",
+      "album": "Наше поколение (Версия 2018)",
+      "origin": "apple-exact"
+    },
+    "130": {
+      "url": "https://coverartarchive.org/release/26b92c6c-a2b4-48eb-9541-feaca7560eef/22480352986-500.jpg",
+      "source": "https://musicbrainz.org/release-group/1cce8171-b924-40c6-91a6-2473fc443d06",
+      "artist": "Валентин Стрыкало",
+      "title": "92",
+      "origin": "musicbrainz-exact",
+      "album": "Развлечение"
+    },
+    "150": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8b/6f/8e/8b6f8e5c-f6e3-a7e0-d7ff-de3133b72828/0.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/36-6/1773491667?i=1773491668&uo=4",
+      "artist": "Ваня Дмитриенко",
+      "title": "36.6",
+      "album": "36,6 - Single",
+      "origin": "apple-exact"
+    },
+    "239": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/79/0b/ba/790bbaa7-2a79-c620-2537-30772a7fa06b/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0-%D0%BD%D0%B0-%D0%BC%D0%BE%D1%80%D0%B5-%D0%B1%D0%B5%D0%BB%D1%8B%D0%B9-%D0%BF%D0%B5%D1%81%D0%BE%D0%BA/1349267702?i=1349268218&uo=4",
+      "artist": "Жанна Фриске",
+      "title": "А на море белый песок",
+      "album": "А на море белый песок - Single",
+      "origin": "apple-exact"
+    },
     "253": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/14/ea/a3/14eaa33a-f55c-64ba-da02-666f14338363/cover.jpg/3000x3000bb.jpg",
       "source": "https://www.shazam.com/song/1130493547/%D0%B1%D0%B0%D1%82%D0%B0%D1%80%D0%B5%D0%B9%D0%BA%D0%B0",
       "artist": "Жуки",
       "title": "Батарейка",
       "origin": "curated"
+    },
+    "269": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ed/00/af/ed00aff7-c709-dc39-1ff6-9af1ba59d636/3610154398969.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D1%80%D1%87%D0%B8/1589963307?i=1589963473&uo=4",
+      "artist": "Земфира",
+      "title": "Ариведерчи",
+      "album": "земфира",
+      "origin": "apple-exact"
+    },
+    "302": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/76/19/61/761961fd-a2db-b899-5216-67087ca03e5b/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0%D0%BB%D1%8E%D0%BC%D0%B8%D0%BD%D0%B8%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BE%D0%B3%D1%83%D1%80%D1%86%D1%8B/1393041713?i=1393042023&uo=4",
+      "artist": "Кино",
+      "title": "Алюминиевые огурцы",
+      "album": "Лето (Песня для Цоя)",
+      "origin": "apple-exact"
+    },
+    "303": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/c7/99/1e/c7991ed1-bee2-8c46-2e66-81d0b8e7eeb2/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8C/1375628135?i=1375629302&uo=4",
+      "artist": "Кино",
+      "title": "Апрель",
+      "album": "Легенда",
+      "origin": "apple-exact"
+    },
+    "407": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/22/53/95/225395ed-d331-b5f8-855d-1ea24523aa75/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/2-%D1%82%D0%B8%D0%BF%D0%B0-%D0%BB%D1%8E%D0%B4%D0%B5%D0%B9/1477062501?i=1477062504&uo=4",
+      "artist": "Макс Корж",
+      "title": "2 типа людей",
+      "album": "2 типа людей - Single",
+      "origin": "apple-exact"
     },
     "420": {
       "url": "https://geo-media.beatsource.com/image_size/1400x1400/4/8/a/48a1ce3a-dde4-4a2a-ac6e-ba1cb189e914.jpg",
@@ -388,6 +473,69 @@
       "title": "Знаешь ли ты",
       "origin": "curated"
     },
+    "461": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/cc/05/3d/cc053dc3-87c4-2a08-17ae-3dea24c85c9f/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0%D0%B2%D0%B3%D1%83%D1%81%D1%82-%D1%8D%D1%82%D0%BE-%D1%82%D1%8B/1580563969?i=1580564177&uo=4",
+      "artist": "Мот",
+      "title": "Август — это ты",
+      "album": "Август - это ты - Single",
+      "origin": "apple-exact"
+    },
+    "539": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b0/fc/da/b0fcda38-38bf-147a-9578-78198bfa1964/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/18-%D0%BC%D0%BD%D0%B5-%D1%83%D0%B6%D0%B5/1397019979?i=1397019982&uo=4",
+      "artist": "Руки Вверх!",
+      "title": "18 мне уже",
+      "album": "Не бойся, я с тобой!",
+      "origin": "apple-exact"
+    },
+    "541": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a0/05/94/a005944e-6c4a-7c5d-026d-0d3192c5acb2/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0%D0%BB%D1%91%D1%88%D0%BA%D0%B0/1396534518?i=1396534532&uo=4",
+      "artist": "Руки Вверх!",
+      "title": "Алёшка",
+      "album": "Маленькие девочки",
+      "origin": "apple-exact"
+    },
+    "549": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/47/9c/d7/479cd7ea-1b87-c225-4d37-7f29cde5df3d/0.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/08-12-1980/1760826999?i=1760827002&uo=4",
+      "artist": "Свидание",
+      "title": "08.12.1980",
+      "album": "№2",
+      "origin": "apple-exact"
+    },
+    "557": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/17/b1/ac/17b1accc-4556-6312-cfdf-2718d0a695c4/825646520367.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/30-%D0%BB%D0%B5%D1%82/583073697?i=583073818&uo=4",
+      "artist": "Сектор Газа",
+      "title": "30 лет",
+      "album": "30 Лет - Single",
+      "origin": "apple-exact"
+    },
+    "572": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/c0/ca/cb/c0cacb22-0bf9-7c4e-7b4a-d2ec0d9117d8/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0%D0%BB%D1%91%D1%88%D0%BA%D0%B0/595860808?i=595861116&uo=4",
+      "artist": "Сергей Трофимов",
+      "title": "Алёшка",
+      "album": "Ветер в голове",
+      "origin": "apple-exact"
+    },
+    "643": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c3/00/c2/c300c2c9-4b2f-80b4-f81b-b1e6d810430e/0.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0%D1%80%D0%B3%D0%B5%D0%BD%D1%82%D0%B8%D0%BD%D0%B0-%D1%8F%D0%BC%D0%B0%D0%B9%D0%BA%D0%B0-5-0/1678487092?i=1678487099&uo=4",
+      "artist": "Чайф",
+      "title": "Аргентина — Ямайка 5-0",
+      "album": "Шекогали",
+      "origin": "apple-exact"
+    },
+    "646": {
+      "url": "https://coverartarchive.org/release/c87e1b9a-9b5d-4c97-8c6c-565a5d7445fe/33374373007-500.jpg",
+      "source": "https://musicbrainz.org/release-group/ae19d4d9-72c6-30f0-af4b-bbfd41e1a619",
+      "artist": "Чиж",
+      "title": "18 берёз",
+      "origin": "musicbrainz-exact"
+    },
     "654": {
       "url": "https://soundtext.ru/wp-content/uploads/2023/11/m1000x1000-2025-09-13t012912.165.jpeg",
       "source": "https://soundtext.ru/endshpil-10/",
@@ -395,12 +543,36 @@
       "title": "10",
       "origin": "curated"
     },
+    "657": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a9/95/f3/a995f3c7-5617-dd5b-205e-f7c480ae745f/0.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C/1831964985?i=1831964987&uo=4",
+      "artist": "Я про рок",
+      "title": "Ангел-хранитель",
+      "album": "ангел-хранитель - Single",
+      "origin": "apple-exact"
+    },
+    "765": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/e3/39/c1e3392b-0e18-0cd8-fb32-a46eca939501/3616406665995.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0-%D0%B5%D1%81%D0%BB%D0%B8-%D1%8D%D1%82%D0%BE-%D0%BB%D1%8E%D0%B1%D0%BE%D0%B2%D1%8C/1570265934?i=1570265938&uo=4",
+      "artist": "HammAli & Navai",
+      "title": "А если это любовь",
+      "album": "А если это любовь? - Single",
+      "origin": "apple-exact"
+    },
     "851": {
       "url": "https://static.asfaltshop.pl/uploads2/photos/big_webp/2020/11/24/20201124034114_R-8498825-1514512241-4281.jpeg.webp",
       "source": "https://asfaltshop.pl/product/19295-michael-jackson-thriller-lp",
       "artist": "Michael Jackson",
       "title": "Billie Jean",
       "origin": "curated"
+    },
+    "897": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/55/fa/32/55fa323a-707b-9243-871a-4e0952c3ec20/3615937885049.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/5-%D0%BC%D0%B8%D0%BD%D1%83%D1%82/1570734094?i=1570734646&uo=4",
+      "artist": "Rauf & Faik",
+      "title": "5 минут",
+      "album": "Я люблю тебя",
+      "origin": "apple-exact"
     },
     "944": {
       "url": "https://www.sweetnuthinrecords.com/data/sweetnuthin/product/20190228_da1fd7.JPG",
@@ -416,6 +588,14 @@
       "artist": "Tom Odell",
       "title": "Another Love",
       "origin": "curated"
+    },
+    "961": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/49/4b/9b/494b9b2c-0040-94b4-bd6a-75cbd7e0baf0/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0/1827892200?i=1827892295&uo=4",
+      "artist": "XOLIDAYBOY",
+      "title": "Америка",
+      "album": "ДЛЯ ТЕБЯ",
+      "origin": "apple-exact"
     }
   }
 }
