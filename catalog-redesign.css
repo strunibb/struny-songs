@@ -220,3 +220,8 @@
   .album-bundle-buttons{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){.album-card{transition:none}.album-card:hover{transform:none}}
+
+
+/* Show paid order floor before the customer opens the basket */
+.pricing-caption{margin:15px auto 0;max-width:900px;color:#695b72;font-size:12px;font-weight:650;line-height:1.5;text-align:center}
+@media(max-width:640px){.pricing-caption{font-size:11px;text-align:left;margin-top:14px}}
