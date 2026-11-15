@@ -8,7 +8,7 @@
   <title>Управление разборами | Струны будущего</title>
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./style.css?v=20261115-1">
-  <script src="./app.js?v=20261115-1" defer></script>
+  <script src="./app.js?v=20261115-2" defer></script>
 </head>
 <body>
 <a class="skip" href="#songs">К списку песен</a>
@@ -51,7 +51,7 @@
         <div class="field-grid">
           <label class="field"><span>Исполнитель *</span><input id="artist" required maxlength="125" placeholder="Например, Кино"></label>
           <label class="field"><span>Название песни *</span><input id="title" required maxlength="160" placeholder="Например, Пачка сигарет"></label>
-          <label class="field"><span>Раздел *</span><select id="level" required><option>Начинающий</option><option>Продвинутый</option><option>Профи</option><option>Фингерстайл</option><option>Зарубежный рок</option></select></label>
+          <label class="field"><span>Раздел *</span><select id="level" required><option>Начинающий</option><option>Продвинутый</option><option>Профи</option><option>Фингерстайл</option><option>Зарубежный рок</option><option value="Любитель">Любитель (архивная категория)</option></select></label>
           <label class="field"><span>Сложность</span><select id="difficulty"><option value="1">1 · Просто</option><option value="2">2 · Умеренно</option><option value="3">3 · Сложнее</option><option value="4">4 · Профессионально</option></select></label>
           <label class="field"><span>PDF, ₽</span><input id="pdfPrice" required type="number" min="0" max="100000" step="1" value="59"><small>0 ₽ означает бесплатный PDF</small></label>
           <label class="field"><span>PDF + видео, ₽</span><input id="videoPrice" required type="number" min="0" max="100000" step="1" value="118"></label>
