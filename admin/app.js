@@ -100,7 +100,7 @@ function openEditor(song) {
   const editing=!!song;
   $("editor-title").textContent=editing?"Изменить разбор":"Добавить разбор";
   setInput("artist",song?.artist||"");setInput("title",song?.title||"");
-  setInput("level",song?.level==="Любитель"?"Начинающий":song?.level||"Начинающий");
+  setInput("level",song?.level||"Начинающий");
   setInput("difficulty",song?.difficulty||1);
   setInput("pdfPrice",song?.pdfPrice??59);setInput("videoPrice",song?.videoPrice??118);
   setInput("keyName",song?.keyName||"Оригинал");
