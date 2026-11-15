@@ -163,3 +163,60 @@
 @media (max-width: 350px) {
   .tabs button { font-size: 13px; padding-inline: 6px; }
 }
+
+
+/* Verified music albums: separate browsing and whole-album selection */
+.album-grid{align-items:start}
+.album-card{min-width:0;border:1px solid #e5d9eb;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 8px 28px rgba(45,25,58,.045);transition:transform .18s ease,box-shadow .18s ease}
+.album-card:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(45,25,58,.1)}
+.album-open{width:100%;padding:14px;border:0;background:transparent;display:block;text-align:left;color:#2c2038;cursor:pointer}
+.album-art{width:100%;max-width:230px;aspect-ratio:1;margin:0 auto;display:grid;place-items:center;overflow:hidden;border-radius:12px;background:linear-gradient(125deg,#224c58,#26142e);color:#fff;font-size:58px}
+.album-art img,.album-dialog-cover img{width:100%;height:100%;object-fit:cover}
+.album-copy{margin:13px 2px 0;min-height:84px}
+.album-copy h3{margin:5px 0 8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:17px;letter-spacing:-.025em;line-height:1.25;color:#271b35}
+.album-artist{margin:0;color:#785c8b;font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:.04em}
+.album-count{margin:0;color:#817487;font-size:11px}
+.album-prices{padding:12px 16px;border-top:1px solid #eee7f2;display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:11px}
+.album-prices>span:first-child{font-weight:850;color:#382246}
+.album-prices>span:last-child{font-weight:800;color:#7534a6}
+.album-dialog{padding:27px}
+.album-dialog-head{display:grid;grid-template-columns:152px minmax(0,1fr);align-items:center;gap:22px;padding-right:35px}
+.album-dialog-cover{width:152px;height:152px;border-radius:13px;overflow:hidden;display:grid;place-items:center;background:linear-gradient(130deg,#195c52,#1e142f);color:#fff;font-size:50px}
+.album-dialog-head .eyebrow{margin:0 0 10px;color:#785c8b}
+.album-dialog-head h2{margin:0;font-size:clamp(25px,3.6vw,37px);line-height:1.08;letter-spacing:-.05em;overflow-wrap:anywhere}
+.album-subtitle{margin:12px 0 0;color:#7c6e84;font-size:12px;line-height:1.6}
+.album-track-group{margin-top:25px;padding-top:20px;border-top:1px solid #efe6f3}
+.album-track-group h3,.album-bundle h3{margin:0 0 14px;font-size:16px;letter-spacing:-.02em}
+.album-track{display:grid;grid-template-columns:28px minmax(0,1fr) auto;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #f1ebf5}
+.album-track-number{color:#aaa0ae;font-size:11px;font-weight:850}
+.album-track-meta{min-width:0}
+.album-track-meta strong{display:block;color:#2b2037;font-size:12px;line-height:1.4;overflow-wrap:anywhere}
+.album-track-meta small{display:block;margin-top:4px;color:#867a91;font-size:10px}
+.album-track-actions{display:flex;gap:6px}
+.album-track-action{min-height:34px;padding:6px 10px;border:1px solid #e3d4ec;border-radius:9px;color:#624778;background:#faf7fc;font-size:10px;font-weight:800}
+.album-track-action:hover,.album-track-action.selected{background:#f0e4f9;border-color:#7534a6;color:#5d208d}
+.album-bundle{margin-top:20px;padding:20px;border:1px solid #e5d6eb;border-radius:15px;background:#faf7fc}
+.album-bundle h3{margin-bottom:6px}
+.album-bundle p{margin:0;color:#7f7187;font-size:11px;line-height:1.6}
+.album-bundle-buttons{margin-top:13px;display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.album-bundle-buttons .button{padding:7px 12px;min-height:45px;font-size:11px}
+.album-checkout{width:100%;margin-top:9px}
+.cart-minimum{margin:6px 0 14px;padding:12px 13px;border:1px solid #ecd19d;border-radius:10px;background:#fff8e9;color:#765121;font-size:11px;font-weight:650;line-height:1.5}
+#telegram-order[disabled]{opacity:.7;cursor:not-allowed;filter:grayscale(.35)}
+@media(max-width:860px){.album-dialog-head{grid-template-columns:110px minmax(0,1fr)}.album-dialog-cover{width:110px;height:110px}}
+@media(max-width:560px){
+  .album-card{border-radius:14px}
+  .album-open{padding:12px}
+  .album-art{width:100%;max-width:none}
+  .album-copy{min-height:0;margin-top:10px}
+  .album-dialog{padding:17px}
+  .album-dialog-head{grid-template-columns:82px minmax(0,1fr);gap:12px;padding-right:24px}
+  .album-dialog-cover{width:82px;height:82px}
+  .album-dialog-head h2{font-size:23px}
+  .album-subtitle{font-size:11px;margin-top:7px}
+  .album-track{grid-template-columns:18px minmax(0,1fr);gap:8px}
+  .album-track-actions{grid-column:2;justify-content:flex-start}
+  .album-bundle{padding:13px}
+  .album-bundle-buttons{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){.album-card{transition:none}.album-card:hover{transform:none}}
