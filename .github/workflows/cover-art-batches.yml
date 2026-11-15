@@ -28,6 +28,8 @@ jobs:
         env:
           COVER_LOOKUP_LIMIT: "30"
         run: node scripts/resolve-cover-art.mjs
+      - name: Complete verified MusicBrainz album metadata
+        run: node scripts/enrich-albums.mjs
       - name: Publish completed batch
         shell: bash
         run: |
@@ -43,12 +45,12 @@ jobs:
           }
           const base = read("covers.json", {version:1,covers:{}});
           const batch = read("/tmp/struny-covers.json", {version:1,covers:{}});
-          const scan = read("/tmp/struny-cover-status.json", {summary:{scannedThisRun:0}}).summary?.scannedThisRun || 0;
-          if (!scan) {
-            console.log("No songs to check on this run; nothing to publish");
-            process.exit(0);
+          const merged = {...(base.covers||{})};
+          for (const [id,entry] of Object.entries(batch.covers||{})) {
+            if (!merged[id]) merged[id]=entry;
+            else if (entry.album && !merged[id].album) merged[id] = {...merged[id],album:entry.album};
           }
-          base.covers = {...(batch.covers||{}), ...(base.covers||{})};
+          base.covers = merged;
           base.updatedAt = new Date().toISOString();
           writeFileSync("covers.json", JSON.stringify(base,null,2)+"\n");
           const prev = read("cover-status.json", {attempts:{}});
