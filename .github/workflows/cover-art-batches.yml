@@ -1,0 +1,62 @@
+name: Обложки песен — загрузка партиями
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/cover-art-batches.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "*/10 * * * *"
+permissions:
+  contents: write
+concurrency:
+  group: struny-cover-art-batches
+  cancel-in-progress: false
+jobs:
+  batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Get repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Fetch published song catalog
+        run: git fetch origin gh-pages
+      - name: Match next 30 tracks with album covers
+        env:
+          COVER_LOOKUP_LIMIT: "30"
+        run: node scripts/resolve-cover-art.mjs
+      - name: Publish completed batch
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin gh-pages
+          git checkout -B gh-pages origin/gh-pages
+          node --input-type=module <<'NODE'
+          import { readFileSync, writeFileSync } from "node:fs";
+          function read(path, fallback) {
+            try { return JSON.parse(readFileSync(path, "utf8")); }
+            catch { return fallback; }
+          }
+          const base = read("covers.json", {version:1,covers:{}});
+          const batch = read("/tmp/struny-covers.json", {version:1,covers:{}});
+          base.covers = {...(batch.covers||{}), ...(base.covers||{})};
+          base.updatedAt = new Date().toISOString();
+          writeFileSync("covers.json", JSON.stringify(base,null,2)+"\n");
+          const prev = read("cover-status.json", {attempts:{}});
+          const newStatus = read("/tmp/struny-cover-status.json", {attempts:{}});
+          prev.attempts = {...(prev.attempts||{}), ...(newStatus.attempts||{})};
+          prev.updatedAt = base.updatedAt;
+          const songs = read("songs.json",{songs:[]}).songs||[];
+          prev.summary = {total:songs.length,covers:Object.keys(base.covers).length,withoutVerifiedCover:songs.length-Object.keys(base.covers).length};
+          writeFileSync("cover-status.json",JSON.stringify(prev,null,2)+"\n");
+          console.log("PUBLISHING:",prev.summary);
+          NODE
+          git add covers.json cover-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish next batch of verified album covers"
+            git push origin gh-pages
+          fi
