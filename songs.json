@@ -45,7 +45,8 @@
       "sections": [
         "Начинающий"
       ],
-      "isFree": true
+      "isFree": true,
+      "albumName": ""
     },
     {
       "id": 3,
