@@ -1,0 +1,40 @@
+name: Проверка оригинальных обложек
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/resolve-covers.yml"
+      - "scripts/resolve-cover-art.mjs"
+  workflow_dispatch:
+  schedule:
+    - cron: "23 3 * * 0"
+permissions:
+  contents: write
+concurrency:
+  group: struny-verified-cover-art
+  cancel-in-progress: false
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - run: git fetch origin gh-pages
+      - name: Find and verify original cover art
+        run: node scripts/resolve-cover-art.mjs
+      - name: Publish cover manifest to GitHub Pages
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout gh-pages
+          cp /tmp/struny-covers.json covers.json
+          cp /tmp/struny-cover-status.json cover-status.json
+          git add covers.json cover-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update verified original album artwork"
+            git push origin gh-pages
+          fi
