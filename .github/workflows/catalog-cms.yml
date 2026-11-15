@@ -1,0 +1,69 @@
+name: Струны будущего — публикация из CRM
+on:
+  issues:
+    types: [opened]
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: struny-cms-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: >-
+      github.event.issue.user.id == 198247340 &&
+      startsWith(github.event.issue.title, '[Struny CMS]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Получить код и свежий каталог
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - run: git fetch origin gh-pages
+      - name: Проверить авторизацию и данные
+        run: node scripts/apply-cms-issue.mjs
+      - name: Опубликовать изменения
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin gh-pages
+          git checkout -B gh-pages origin/gh-pages
+          cp /tmp/struny-cms-songs.json songs.json
+          node --input-type=module <<'NODE'
+          import {readFileSync,writeFileSync} from "node:fs";
+          const patch=JSON.parse(readFileSync("/tmp/struny-cms-patch.json","utf8"));
+          const manifest=JSON.parse(readFileSync("covers.json","utf8"));
+          manifest.covers ||= {};
+          const id=String(patch.id);
+          if(patch.operation==="delete")delete manifest.covers[id];
+          else if(patch.coverUrl)manifest.covers[id]={
+            url:patch.coverUrl,artist:patch.artist,title:patch.title,origin:"admin",source:""
+          };
+          manifest.updatedAt=new Date().toISOString();
+          writeFileSync("covers.json",JSON.stringify(manifest,null,2)+"\n");
+          NODE
+          git add songs.json covers.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Catalog CRM: publish song updates"
+            git push origin gh-pages
+          fi
+      - name: Подтвердить публикацию в журнале CRM
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "✅ Изменения отправлены в опубликованный каталог. Обновите сайт после развёртывания GitHub Pages."
+          gh issue close "$ISSUE_NUMBER" --reason completed
+      - name: Сообщить об ошибке без раскрытия секретов
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "❌ Не удалось опубликовать изменение. Журнал: $RUN_URL"
