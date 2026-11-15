@@ -117,6 +117,7 @@ function createCard(song) {
     image.decoding = "async";
     cover.prepend(image);
     cover.classList.add("has-image");
+    image.addEventListener("error", () => { image.remove(); cover.classList.remove("has-image"); });
   }
   if (!song.isNew) node.querySelector(".new-label").remove();
   const showSong = () => openSong(song.id);
@@ -244,6 +245,11 @@ function renderModal() {
         </div>
       </div>
     </div>`;
+  const modalImage = els.modalContent.querySelector(".modal-cover img");
+  modalImage?.addEventListener("error", () => {
+    modalImage.remove();
+    els.modalContent.querySelector(".modal-cover")?.classList.remove("has-image");
+  });
   els.modalContent.querySelectorAll("[data-modal-format]").forEach((button) => {
     button.setAttribute("aria-pressed", String(selected === button.dataset.modalFormat));
     button.addEventListener("click", () => toggleCart(song, button.dataset.modalFormat));

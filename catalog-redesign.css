@@ -71,3 +71,37 @@
 @media(max-width:860px){.song-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.modal-bottom{grid-template-columns:1fr;gap:16px}.modal-buy .purchase-options{grid-template-columns:repeat(2,minmax(0,1fr))}.modal-buy .purchase-options button{align-items:flex-start;flex-direction:column}}
 @media(max-width:560px){.hero{padding:32px 0 24px}.hero h1{font-size:clamp(32px,9vw,43px)}.hero-lead{margin:12px auto 19px}.catalog-section{padding:28px 0 65px}.catalog-head{margin-bottom:17px}.catalog-head h2{font-size:27px}.song-grid{grid-template-columns:1fr;gap:11px}.card-header{min-height:95px;padding:11px 11px 7px;gap:12px}.song-grid .cover-button,.song-grid .song-cover{width:72px;height:72px}.song-grid .cover-button{flex-basis:72px}.song-grid .card-body{padding:0 11px 10px}.song-grid .purchase-options button{min-height:45px}.modal-backdrop{padding:9px;align-items:center}.song-modal{max-height:calc(100dvh - 18px);border-radius:16px}.modal-close{top:10px;right:10px;width:34px;height:34px}.modal-content{padding:16px}.modal-identity{grid-template-columns:78px minmax(0,1fr);gap:13px;padding-right:30px;align-items:start}.modal-cover{width:78px;height:78px;padding:7px;border-radius:10px}.modal-cover .cover-copy span{font-size:7px}.modal-cover .cover-copy strong{font-size:12px}.modal-heading .level-badge{margin-bottom:5px;font-size:9px}.modal-heading h2{font-size:clamp(21px,6vw,27px)}.modal-artist{font-size:10px}.modal-description{margin-top:7px}.modal-bottom{margin-top:15px;padding-top:15px}.modal-details .facts{grid-template-columns:repeat(3,minmax(0,1fr))}.modal-details .facts span{padding:9px 7px}.modal-buy{padding:13px}.modal-buy .purchase-options{grid-template-columns:1fr}.modal-buy .purchase-options button{flex-direction:row;align-items:center}}
 @media(prefers-reduced-motion:reduce){.song-grid .song-card{transition:none}.song-grid .song-card:hover{transform:none}}
+
+
+/* Обложка как в музыкальном каталоге: крупное фото, но четыре песни в ряд. */
+@media (min-width: 861px) {
+  .song-grid .song-card { min-height: 352px; }
+  .song-grid .card-header {
+    display: flex; flex-direction: column; align-items: center; gap: 0;
+    min-height: 0; padding: 14px 12px 8px;
+  }
+  .song-grid .cover-button {
+    width: 100%; height: 200px; flex: none; display: flex;
+    align-items: center; justify-content: center; border-radius: 12px;
+  }
+  .song-grid .song-cover {
+    width: 200px; height: 200px; min-height: 0; aspect-ratio: 1;
+    padding: 0; border-radius: 12px;
+  }
+  .song-grid .card-info { width: 100%; min-width: 0; flex: 0 0 auto; padding-top: 9px; text-align: center; }
+  .song-grid .card-section-line { margin-bottom: 5px; justify-content: center; }
+  .song-grid .card-title {
+    max-width: 100%; min-height: 36px; font-size: 14px;
+    line-height: 1.26; text-align: center; font-weight: 800;
+  }
+  .song-grid .card-artist { margin: 4px 0 0; font-size: 11px; }
+  .song-grid .card-body { padding: 0 12px 12px; }
+  .song-grid .feature-list { justify-content: center; font-size: 9px; }
+  .song-grid .purchase-options { margin-top: 7px; padding-top: 8px; }
+  .song-grid .purchase-options button { min-height: 43px; }
+}
+@media (min-width: 861px) and (max-width: 1130px) {
+  .song-grid .cover-button { height: 168px; }
+  .song-grid .song-cover { width: 168px; height: 168px; }
+  .song-grid .song-card { min-height: 320px; }
+}
