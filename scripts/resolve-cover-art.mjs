@@ -87,9 +87,12 @@ const store=()=>{
 };
 const ttl=28*24*3600*1000;
 let checked=0,found=0;
-for(const song of catalog.songs) {
+// Scan songs in the order visitors actually see them (sort: title).
+const prioritizedSongs = [...catalog.songs].sort((a,b) =>
+  a.title.localeCompare(b.title, "ru") || a.artist.localeCompare(b.artist, "ru"));
+for(const song of prioritizedSongs) {
   const id=String(song.id);if(covers.covers[id]?.url)continue;
-  const sig=norm(song.artist+"|"+song.title);
+  const sig="v2-apple-ru-us|"+norm(song.artist+"|"+song.title);
   const before=status.attempts[id];
   if(before?.signature===sig&&Date.now()-Date.parse(before.at)<ttl)continue;
   if(checked>=Number(process.env.COVER_LOOKUP_LIMIT||catalog.songs.length))break;
