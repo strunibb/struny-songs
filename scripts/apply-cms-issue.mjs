@@ -87,7 +87,9 @@ if(p.operation==="delete") {
     id,
     slug:previous?.slug||("song-"+id+"-"+slug(p.artist+"-"+p.title)),
     artist:p.artist,title:p.title,
-    level:p.level,sections:[p.level],
+    level:p.level,
+    sections:[...new Set([p.level,...(previous?.sections||[]).filter(section=>
+      section!==previous?.level && section!==p.level && LEVELS.includes(section))])],
     isFree:p.isFree,albumName:p.albumName,
     description:p.description||"Разбор композиции для самостоятельной практики.",
     features:p.features,keyName:p.keyName||"Оригинал",
@@ -96,7 +98,7 @@ if(p.operation==="delete") {
     isNew:p.isNew,isPopular:previous?.isPopular||false,
     popularity:previous?.popularity||0,
     createdAt:previous?.createdAt||now,
-    pdfPrice:p.pdfPrice,videoPrice:p.videoPrice
+    price:p.pdfPrice,pdfPrice:p.pdfPrice,videoPrice:p.videoPrice
   };
   if(p.operation==="edit")db.songs[at]=song;else db.songs.push(song);
 }
