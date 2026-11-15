@@ -1,4 +1,4 @@
-const SECTIONS = ["Все", "Новинки", "Бесплатные", "Начинающий", "Продвинутый", "Профи", "Фингерстайл", "Зарубежный рок"];
+const SECTIONS = ["Все", "Новинки", "Бесплатные", "Начинающий", "Продвинутый", "Профи", "Фингерстайл", "Зарубежный рок", "Песни по альбомам"];
 const PAGE_SIZE = 48;
 const STORAGE_KEY = "struny-github-pages-cart-v1";
 const icons = { "Аккорды": "♬", "Бой": "↯", "Перебор": "≋", "Рифф": "ϟ", "Соло": "◇", "Фингерстайл": "✦", "Табулатура": "▦", "Интересный бой": "↯", "Электрогитара": "⚡" };
@@ -7,7 +7,7 @@ const levelColors = { "Начинающий": "green", "Любитель": "yell
 const initialFilters = new URLSearchParams(window.location.search);
 const legacySections = { "Электрогитара": "Зарубежный рок", "Песни с интересным боем": "Продвинутый" };
 const urlSection = legacySections[initialFilters.get("section")] || initialFilters.get("section");
-const state = { songs: [], query: initialFilters.get("q") || "", section: SECTIONS.includes(urlSection) ? urlSection : "Все", sort: "title", visible: PAGE_SIZE, cart: loadCart(), modalSong: null };
+const state = { songs: [], query: initialFilters.get("q") || "", section: SECTIONS.includes(urlSection) ? urlSection : "Все", sort: "title", visible: PAGE_SIZE, cart: loadCart(), modalSong: null, modalAlbum: null, albums: [] };
 const els = {
   search: document.querySelector("#search"), searchClear: document.querySelector("#search-clear"), tabs: document.querySelector("#tabs"), sort: document.querySelector("#sort"),
   grid: document.querySelector("#song-grid"), count: document.querySelector("#result-count"), title: document.querySelector("#result-title"),
@@ -153,6 +153,9 @@ function createCard(song) {
 }
 
 function renderCatalog() {
+  if (state.section === "Песни по альбомам") { renderAlbumCatalog(); syncFilters(); return; }
+  els.grid.classList.remove("album-grid");
+  document.querySelector("#result-unit").textContent = "песен";
   const songs = filteredSongs();
   const visible = songs.slice(0, state.visible);
   els.grid.replaceChildren(...visible.map(createCard));
@@ -180,7 +183,9 @@ function toggleCart(song, format) {
     ? `${song.title} убрана из корзины`
     : `${song.title}, ${formatLabel(format)}, добавлено в корзину`;
   const selectedButton = fromModal
-    ? els.modalContent.querySelector(`[data-modal-format="${format}"]`)
+    ? (state.modalAlbum
+      ? els.modalContent.querySelector(`[data-album-song="${song.id}"][data-format="${format}"]`)
+      : els.modalContent.querySelector(`[data-modal-format="${format}"]`))
     : els.grid.querySelector(`[data-id="${song.id}"] [data-format="${format}"]`);
   selectedButton?.focus({ preventScroll: true });
 }
@@ -192,15 +197,38 @@ function cartMessage() {
 }
 function renderCart() {
   if (!state.cart.length) {
-    els.cartContent.innerHTML = `<div class="cart-empty"><span>♪</span><h3>Пока пусто</h3><p>Выберите PDF или вариант с видео у одной или нескольких песен.</p><button class="button button-outline" id="empty-close" type="button">Вернуться к песням</button></div>`;
-    els.cartContent.querySelector("#empty-close").addEventListener("click", closeCart); return;
+    els.cartContent.innerHTML = '<div class="cart-empty"><span>♪</span><h3>Пока пусто</h3><p>Выберите PDF или вариант с видео у одной или нескольких песен.</p><button class="button button-outline" id="empty-close" type="button">Вернуться к песням</button></div>';
+    els.cartContent.querySelector("#empty-close").addEventListener("click", closeCart);
+    return;
   }
-  const total = state.cart.reduce((sum, item) => sum + item.price, 0);
-  els.cartContent.innerHTML = `<div class="cart-list">${state.cart.map((item, index) => `<div class="cart-row"><b>${String(index + 1).padStart(2, "0")}</b><span><strong>${escapeHtml(item.title)}</strong><small>${escapeHtml(item.artist)}</small><em>${escapeHtml(formatLabel(item.format))} · ${money(item.price)}</em></span><button type="button" data-remove="${item.id}" aria-label="Убрать ${escapeHtml(item.title)}">×</button></div>`).join("")}</div><div class="cart-total"><span>Итого</span><strong>${money(total)}</strong></div><div class="cart-actions"><button class="cart-clear" id="cart-clear" type="button">Очистить</button><a class="button button-primary" id="telegram-order" href="https://t.me/nikguitar?text=${encodeURIComponent(cartMessage())}" target="_blank" rel="noreferrer">Отправить заявку Никите</a></div><p class="cart-note">Откроется сообщение со списком песен. Отправьте его Никите, чтобы согласовать оплату и получение материалов.</p>`;
-  els.cartContent.querySelectorAll("[data-remove]").forEach((button) => button.addEventListener("click", () => { state.cart = state.cart.filter((item) => item.id !== Number(button.dataset.remove)); saveCart(); renderCart(); renderCatalog(); renderModal(); }));
-  els.cartContent.querySelector("#cart-clear").addEventListener("click", () => { state.cart = []; saveCart(); renderCart(); renderCatalog(); renderModal(); });
-  els.cartContent.querySelector("#telegram-order").addEventListener("click", () => {
-    if (navigator.clipboard?.writeText) navigator.clipboard.writeText(cartMessage()).catch(() => undefined);
+  const total = state.cart.reduce((sum,item) => sum + item.price,0);
+  const hasPaidItems = state.cart.some(item=>item.price>0);
+  const minimumMet = !hasPaidItems || total>=100;
+  const remaining=Math.max(0,100-total);
+  const controls = minimumMet
+    ? '<a class="button button-primary" id="telegram-order" href="https://t.me/nikguitar?text='+encodeURIComponent(cartMessage())+'" target="_blank" rel="noreferrer">Отправить заявку Никите</a>'
+    : '<button class="button button-primary" id="telegram-order" type="button" disabled aria-disabled="true">До заказа ещё '+money(remaining)+'</button>';
+  const hint = minimumMet
+    ? (hasPaidItems ? 'Минимальный платный заказ 100 ₽. Откроется сообщение для согласования оплаты и получения материалов.' :
+      'Все выбранные материалы бесплатны. Отправьте заявку, чтобы получить PDF и видео.')
+    : 'Минимальная сумма платного заказа 100 ₽. Добавьте ещё песен на '+money(remaining)+'. Бесплатные материалы не увеличивают сумму.';
+  els.cartContent.innerHTML =
+    '<div class="cart-list">'+state.cart.map((item,index)=>
+      '<div class="cart-row"><b>'+String(index+1).padStart(2,"0")+'</b><span><strong>'+escapeHtml(item.title)+'</strong><small>'+escapeHtml(item.artist)+'</small><em>'+escapeHtml(formatLabel(item.format))+' · '+money(item.price)+'</em></span><button type="button" data-remove="'+item.id+'" aria-label="Убрать '+escapeHtml(item.title)+'">×</button></div>'
+    ).join("")+'</div>'+
+    '<div class="cart-total"><span>Итого</span><strong>'+money(total)+'</strong></div>'+
+    (minimumMet?'':'<p class="cart-minimum" role="status">До минимального заказа не хватает <b>'+money(remaining)+'</b></p>')+
+    '<div class="cart-actions"><button class="cart-clear" id="cart-clear" type="button">Очистить</button>'+controls+'</div>'+
+    '<p class="cart-note">'+hint+'</p>';
+  els.cartContent.querySelectorAll("[data-remove]").forEach(button=>button.addEventListener("click",()=>{
+    state.cart=state.cart.filter(item=>item.id!==Number(button.dataset.remove));
+    saveCart();renderCart();renderCatalog();renderModal();
+  }));
+  els.cartContent.querySelector("#cart-clear").addEventListener("click",()=>{
+    state.cart=[];saveCart();renderCart();renderCatalog();renderModal();
+  });
+  if(minimumMet)els.cartContent.querySelector("#telegram-order").addEventListener("click",()=>{
+    if(navigator.clipboard?.writeText)navigator.clipboard.writeText(cartMessage()).catch(()=>undefined);
   });
 }
 function openCart() {
@@ -211,6 +239,7 @@ function openCart() {
 function closeCart() { els.cartBackdrop.hidden = true; document.body.classList.remove("no-scroll"); els.cartTrigger.focus(); }
 
 function renderModal() {
+  if (state.modalAlbum) { renderAlbumModal(); return; }
   const song = state.modalSong;
   if (!song) return;
   const selected = selectedFormat(song.id);
@@ -272,12 +301,13 @@ function renderModal() {
     els.modalContent.querySelector(".modal-buy").append(cartButton);
   }
 }
-function openSong(id) { state.modalSong = state.songs.find((song) => song.id === id); renderModal(); els.songBackdrop.hidden = false; document.body.classList.add("no-scroll"); els.modalClose.focus(); }
+function openSong(id) { state.modalAlbum = null; state.modalSong = state.songs.find((song) => song.id === id); renderModal(); els.songBackdrop.hidden = false; document.body.classList.add("no-scroll"); els.modalClose.focus(); }
 function closeSong() {
   const songId = state.modalSong?.id;
-  state.modalSong = null; els.songBackdrop.hidden = true;
+  const albumKey = state.modalAlbum?.key;
+  state.modalSong = null; state.modalAlbum = null; els.songBackdrop.hidden = true;
   document.body.classList.remove("no-scroll");
-  (els.grid.querySelector(`[data-id="${songId}"] .cover-button`) || els.search).focus({ preventScroll: true });
+  (albumKey ? els.grid.querySelectorAll(".album-open") && [...els.grid.querySelectorAll(".album-open")].find(b => b.dataset.album===albumKey) : els.grid.querySelector(`[data-id="${songId}"] .cover-button`))?.focus({preventScroll:true});
 }
 
 els.search.addEventListener("input", () => { state.query = els.search.value; state.visible = PAGE_SIZE; els.search.parentElement.classList.toggle("has-value", Boolean(state.query)); renderCatalog(); });
@@ -310,8 +340,12 @@ Promise.all([
     const covers = art && typeof art.covers === "object" && art.covers ? art.covers : {};
     state.songs = (Array.isArray(payload.songs) ? payload.songs : []).map((song) => {
       const cover = covers[String(song.id)];
-      return cover && cover.url ? { ...song, coverUrl: cover.url, coverSource: cover.source || "" } : song;
+      return { ...song,
+        coverUrl: cover?.url || song.coverUrl || "",
+        coverSource: cover?.source || "",
+        coverAlbum: cover?.album || "" };
     });
+    state.albums = makeAlbumGroups(state.songs);
     reconcileCart(); renderTabs(); renderCatalog(); els.grid.setAttribute("aria-busy", "false");
   })
   .catch(() => {
