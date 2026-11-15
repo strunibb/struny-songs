@@ -34,10 +34,15 @@ async function get(url,provider) {
   return null;
 }
 async function apple(song) {
-  const endpoint = "https://itunes.apple.com/search?term="+encodeURIComponent(song.artist+" "+song.title)+"&media=music&entity=song&limit=25&country=us";
-  const data=await get(endpoint,"apple");
-  const valid=(data?.results||[]).filter(x=>x.kind==="song"&&x.artworkUrl100&&matches(song,x.artistName,x.trackName)
-    &&!/(karaoke|tribute to|as made famous|instrumental version|re-recorded)/i.test(String(x.collectionName||"")+" "+String(x.trackName||"")));
+  const countryList = /[а-яё]/i.test(song.artist + " " + song.title) ? ["ru","us"] : ["us","ru"];
+  let valid = [];
+  for(const country of countryList){
+    const endpoint = "https://itunes.apple.com/search?term="+encodeURIComponent(song.artist+" "+song.title)+"&media=music&entity=song&limit=25&country="+country;
+    const data=await get(endpoint,"apple");
+    valid=(data?.results||[]).filter(x=>x.kind==="song"&&x.artworkUrl100&&matches(song,x.artistName,x.trackName)
+      &&!/(karaoke|tribute to|as made famous|instrumental version|re-recorded)/i.test(String(x.collectionName||"")+" "+String(x.trackName||"")));
+    if(valid.length) break;
+  }
   valid.sort((a,b)=>{
     const d=Number(norm(b.trackName)===norm(song.title))-Number(norm(a.trackName)===norm(song.title));
     if(d)return d;
