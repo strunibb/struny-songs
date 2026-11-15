@@ -4,6 +4,7 @@ const REPO = "strunibb/struny-songs";
 const ISSUE_URL = "https://github.com/" + REPO + "/issues/new";
 const FEATURES = ["Аккорды","Бой","Перебор","Рифф","Соло","Фингерстайл","Табулатура","Интересный бой","Электрогитара"];
 const PAGE_SIZE = 80;
+const TIER_PRICES = {"Начинающий":25,"Продвинутый":50,"Профи":100};
 const $ = id => document.getElementById(id);
 const state = { songs:[],covers:{},query:"",filter:"all",limit:PAGE_SIZE,current:null,returnFocus:null };
 const normalize = value => String(value||"").normalize("NFKC").toLocaleLowerCase("ru-RU").replace(/ё/g,"е").trim();
@@ -95,6 +96,19 @@ async function loadSongs() {
   finally{$("refresh").disabled=false;}
 }
 function setInput(id,value) {$(id).value=value===undefined||value===null?"":String(value);}
+function syncPrices() {
+  const level=$("level").value;
+  const isFree=$("isFree").checked;
+  const fixed=TIER_PRICES[level];
+  const locked=isFree || fixed!==undefined;
+  $("pdfPrice").disabled=locked;
+  $("videoPrice").disabled=locked;
+  if(isFree){$("pdfPrice").value="0";$("videoPrice").value="0";}
+  else if(fixed!==undefined){$("pdfPrice").value=String(fixed);$("videoPrice").value=String(fixed);}
+  $("priceHelp").textContent=isFree?"PDF и видео полностью бесплатны":
+    fixed!==undefined?"Фиксированная цена "+fixed+" ₽ для обоих форматов":
+    "Для этой категории сохраняются индивидуальные цены";
+}
 function openEditor(song) {
   state.current=song||null;state.returnFocus=document.activeElement;
   const editing=!!song;
@@ -102,11 +116,14 @@ function openEditor(song) {
   setInput("artist",song?.artist||"");setInput("title",song?.title||"");
   setInput("level",song?.level||"Начинающий");
   setInput("difficulty",song?.difficulty||1);
-  setInput("pdfPrice",song?.pdfPrice??59);setInput("videoPrice",song?.videoPrice??118);
+  setInput("pdfPrice",song?.pdfPrice??25);setInput("videoPrice",song?.videoPrice??25);
   setInput("keyName",song?.keyName||"Оригинал");
+  setInput("albumName",song?.albumName|| (song ? state.covers[String(song.id)]?.album || "" : ""));
   setInput("coverUrl",song ? (state.covers[String(song.id)]?.url||"") : "");
   setInput("description",song?.description||"");
   $("barre").checked=!!song?.barre;
+  $("isFree").checked=editing ? !!(song.isFree || (song.pdfPrice===0 && song.videoPrice===0)) : false;
+  syncPrices();
   $("isNew").checked=editing?!!song.isNew:true;
   for(const checkbox of document.querySelectorAll('input[name="feature"]')) {
     checkbox.checked=!!song?.features?.includes(checkbox.value);
@@ -133,6 +150,7 @@ function makePayload(operation,song) {
     version:1,operation,id:song?.id,
     artist:$("artist").value.trim(),title:$("title").value.trim(),
     description:$("description").value.trim(),keyName:$("keyName").value.trim()||"Оригинал",
+    albumName:$("albumName").value.trim(),isFree:$("isFree").checked,
     level:$("level").value,pdfPrice:Number($("pdfPrice").value),videoPrice:Number($("videoPrice").value),
     difficulty:Number($("difficulty").value),barre:$("barre").checked,isNew:$("isNew").checked,
     features:[...document.querySelectorAll('input[name="feature"]:checked')].map(x=>x.value),
@@ -155,6 +173,8 @@ function removeSong(song) {
   if(!window.confirm("Подготовить удаление песни «"+song.artist+" — "+song.title+"»? Далее потребуется подтверждение в GitHub."))return;
   submitIssue(makePayload("delete",song),song.artist+" — "+song.title);
 }
+$("level").addEventListener("change",syncPrices);
+$("isFree").addEventListener("change",syncPrices);
 $("add").addEventListener("click",()=>openEditor(null));
 $("close").addEventListener("click",closeEditor);
 $("shade").addEventListener("click",closeEditor);

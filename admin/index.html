@@ -7,8 +7,8 @@
   <meta name="description" content="Контент-панель каталога «Струны будущего».">
   <title>Управление разборами | Струны будущего</title>
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css?v=20261115-1">
-  <script src="./app.js?v=20261115-2" defer></script>
+  <link rel="stylesheet" href="./style.css?v=20261115-album-1">
+  <script src="./app.js?v=20261115-album-1" defer></script>
 </head>
 <body>
 <a class="skip" href="#songs">К списку песен</a>
@@ -17,6 +17,7 @@
     <a class="wordmark" href="../"><span class="brand-icon">♪</span><span>Струны <b>будущего</b><small>Контент-студия</small></span></a>
     <nav aria-label="Разделы">
       <a class="nav-selected" href="#songs"><span>▤</span> Разборы песен</a>
+      <a href="../?section=%D0%9F%D0%B5%D1%81%D0%BD%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%BC%D0%B0%D0%BC" target="_blank" rel="noopener noreferrer"><span>▦</span> Альбомы ↗</a>
       <a href="../" target="_blank" rel="noopener noreferrer"><span>↗</span> Открыть каталог</a>
       <a href="https://github.com/strunibb/struny-songs/issues?q=is%3Aissue+%22Struny+CMS%22" target="_blank" rel="noopener noreferrer"><span>◷</span> История изменений</a>
     </nav>
@@ -53,13 +54,18 @@
           <label class="field"><span>Название песни *</span><input id="title" required maxlength="160" placeholder="Например, Пачка сигарет"></label>
           <label class="field"><span>Раздел *</span><select id="level" required><option>Начинающий</option><option>Продвинутый</option><option>Профи</option><option>Фингерстайл</option><option>Зарубежный рок</option><option value="Любитель">Любитель (архивная категория)</option></select></label>
           <label class="field"><span>Сложность</span><select id="difficulty"><option value="1">1 · Просто</option><option value="2">2 · Умеренно</option><option value="3">3 · Сложнее</option><option value="4">4 · Профессионально</option></select></label>
-          <label class="field"><span>PDF, ₽</span><input id="pdfPrice" required type="number" min="0" max="100000" step="1" value="59"><small>0 ₽ означает бесплатный PDF</small></label>
-          <label class="field"><span>PDF + видео, ₽</span><input id="videoPrice" required type="number" min="0" max="100000" step="1" value="118"></label>
+          <label class="field"><span>PDF, ₽</span><input id="pdfPrice" required type="number" min="0" max="100000" step="1" value="25"><small>Автоматически по категории</small></label>
+          <label class="field"><span>PDF + видео, ₽</span><input id="videoPrice" required type="number" min="0" max="100000" step="1" value="25"><small id="priceHelp">Начинающий: 25 ₽ за формат</small></label>
           <label class="field"><span>Тональность</span><input id="keyName" maxlength="55" value="Оригинал"></label>
+          <label class="field"><span>Название альбома</span><input id="albumName" maxlength="160" placeholder="Например, Группа крови"><small>Укажи одинаковое название для песен одного альбома</small></label>
           <label class="field"><span>Ссылка на обложку</span><input id="coverUrl" type="url" maxlength="900" placeholder="https://…"><small>Только публичный HTTPS-адрес</small></label>
         </div>
         <label class="field full"><span>Описание</span><textarea id="description" rows="3" maxlength="600" placeholder="Что получит ученик и какая техника разбирается"></textarea></label>
-        <div class="switch-row"><label><input id="isNew" type="checkbox" checked><span class="switch-label"><b>Новинка</b><small>Показывать метку NEW и в разделе «Новинки»</small></span></label><label><input id="barre" type="checkbox"><span class="switch-label"><b>Баррэ</b><small>В песне используются баррэ</small></span></label></div>
+        <div class="switch-row">
+          <label><input id="isNew" type="checkbox" checked><span class="switch-label"><b>Новинка</b><small>Отображать в разделе «Новинки»</small></span></label>
+          <label><input id="barre" type="checkbox"><span class="switch-label"><b>Баррэ</b><small>В композиции используются баррэ</small></span></label>
+          <label><input id="isFree" type="checkbox"><span class="switch-label"><b>Полностью бесплатно</b><small>PDF и видео по 0 ₽, без минимального заказа</small></span></label>
+        </div>
         <fieldset class="features"><legend>Что входит в разбор</legend><div id="features" class="feature-options"></div></fieldset>
         <div class="hint hint-warning"><b>Не добавляй сюда приватные ссылки на платные видео, PDF или данные учеников.</b> Содержимое каталога и запрос на публикацию будут публичными.</div>
       </div>
