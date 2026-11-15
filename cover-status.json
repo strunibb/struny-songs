@@ -300,6 +300,11 @@
       "at": "2026-11-15T19:53:28.750Z",
       "found": true
     },
+    "69": {
+      "signature": "v2-apple-ru-us|ария беспечныи ангел",
+      "at": "2026-11-15T23:35:14.187Z",
+      "found": true
+    },
     "103": {
       "signature": "v2-apple-ru-us|блестящие а я все летала",
       "at": "2026-11-15T20:19:41.148Z",
@@ -315,9 +320,24 @@
       "at": "2026-11-15T20:18:56.635Z",
       "found": true
     },
+    "131": {
+      "signature": "v2-apple-ru-us|валентин стрыкало бесполезно",
+      "at": "2026-11-15T23:35:17.397Z",
+      "found": true
+    },
     "150": {
       "signature": "v2-apple-ru-us|ваня дмитриенко 36 6",
       "at": "2026-11-15T20:17:55.571Z",
+      "found": true
+    },
+    "167": {
+      "signature": "v2-apple-ru-us|виктор салтыков белая ночь",
+      "at": "2026-11-15T23:34:42.250Z",
+      "found": true
+    },
+    "190": {
+      "signature": "v2-apple-ru-us|даите танк бесы",
+      "at": "2026-11-15T23:35:24.276Z",
       "found": true
     },
     "239": {
@@ -330,6 +350,26 @@
       "at": "2026-11-15T20:22:06.653Z",
       "found": true
     },
+    "270": {
+      "signature": "v2-apple-ru-us|земфира бесконечность",
+      "at": "2026-11-15T23:35:12.140Z",
+      "found": true
+    },
+    "280": {
+      "signature": "v2-apple-ru-us|исполнитель не указан бездельник",
+      "at": "2026-11-15T23:34:10.638Z",
+      "found": false
+    },
+    "281": {
+      "signature": "v2-apple-ru-us|исполнитель не указан бездельник 2",
+      "at": "2026-11-15T23:34:17.323Z",
+      "found": false
+    },
+    "282": {
+      "signature": "v2-apple-ru-us|исполнитель не указан боже какои пустяк",
+      "at": "2026-11-15T23:35:38.529Z",
+      "found": false
+    },
     "302": {
       "signature": "v2-apple-ru-us|кино алюминиевые огурцы",
       "at": "2026-11-15T20:21:49.582Z",
@@ -338,6 +378,16 @@
     "303": {
       "signature": "v2-apple-ru-us|кино апрель",
       "at": "2026-11-15T20:21:59.975Z",
+      "found": true
+    },
+    "304": {
+      "signature": "v2-apple-ru-us|кино атаман",
+      "at": "2026-11-15T23:33:28.950Z",
+      "found": true
+    },
+    "375": {
+      "signature": "v2-apple-ru-us|ласковыи маи белые розы",
+      "at": "2026-11-15T23:34:42.572Z",
       "found": true
     },
     "393": {
@@ -349,6 +399,16 @@
       "signature": "v2-apple-ru-us|любэ а река течет",
       "at": "2026-11-15T20:19:34.601Z",
       "found": false
+    },
+    "395": {
+      "signature": "v2-apple-ru-us|любэ березы",
+      "at": "2026-11-15T23:35:06.920Z",
+      "found": true
+    },
+    "406": {
+      "signature": "v2-apple-ru-us|ляпис трубецкои ау",
+      "at": "2026-11-15T23:33:32.475Z",
+      "found": true
     },
     "407": {
       "signature": "v2-apple-ru-us|макс корж 2 типа людеи",
@@ -369,6 +429,21 @@
       "signature": "v2-apple-ru-us|мот август это ты",
       "at": "2026-11-15T20:21:32.289Z",
       "found": true
+    },
+    "480": {
+      "signature": "v2-apple-ru-us|нервы батареи",
+      "at": "2026-11-15T23:33:57.004Z",
+      "found": true
+    },
+    "504": {
+      "signature": "v2-apple-ru-us|нюша больно",
+      "at": "2026-11-15T23:37:04.653Z",
+      "found": true
+    },
+    "529": {
+      "signature": "v2-apple-ru-us|пошлая молли банда крис",
+      "at": "2026-11-15T23:33:39.841Z",
+      "found": false
     },
     "533": {
       "signature": "v2-apple-ru-us|прикольные песни а муха тоже вертолет",
@@ -405,6 +480,11 @@
       "at": "2026-11-15T20:21:45.884Z",
       "found": true
     },
+    "599": {
+      "signature": "v2-apple-ru-us|стас михаилов без тебя",
+      "at": "2026-11-15T23:34:03.592Z",
+      "found": true
+    },
     "643": {
       "signature": "v2-apple-ru-us|чаиф аргентина ямаика 5 0",
       "at": "2026-11-15T20:22:03.081Z",
@@ -420,15 +500,35 @@
       "at": "2026-11-15T20:21:56.411Z",
       "found": true
     },
+    "706": {
+      "signature": "v2-apple-ru-us|dabro билет",
+      "at": "2026-11-15T23:35:27.876Z",
+      "found": true
+    },
+    "727": {
+      "signature": "v2-apple-ru-us|dead blonde бесприданница",
+      "at": "2026-11-15T23:35:20.846Z",
+      "found": true
+    },
     "765": {
       "signature": "v2-apple-ru-us|hammali and navai а если это любовь",
       "at": "2026-11-15T20:18:57.032Z",
+      "found": true
+    },
+    "806": {
+      "signature": "v2-apple-ru-us|ksb muzic баратрум",
+      "at": "2026-11-15T23:33:54.595Z",
       "found": true
     },
     "865": {
       "signature": "v2-apple-ru-us|mot and dose 10 баллов",
       "at": "2026-11-15T20:15:32.550Z",
       "found": false
+    },
+    "867": {
+      "signature": "v2-apple-ru-us|navai больше чем ближе",
+      "at": "2026-11-15T23:37:04.861Z",
+      "found": true
     },
     "897": {
       "signature": "v2-apple-ru-us|rauf and faik 5 минут",
@@ -440,16 +540,66 @@
       "at": "2026-11-15T20:21:31.889Z",
       "found": false
     },
+    "920": {
+      "signature": "v2-apple-ru-us|slava skripka бобр",
+      "at": "2026-11-15T23:35:31.117Z",
+      "found": true
+    },
     "961": {
       "signature": "v2-apple-ru-us|xolidayboy америка",
       "at": "2026-11-15T20:21:52.696Z",
       "found": true
+    },
+    "990": {
+      "signature": "v2-apple-ru-us|песни у костра алые паруса",
+      "at": "2026-11-15T23:33:25.579Z",
+      "found": false
+    },
+    "1009": {
+      "signature": "v2-apple-ru-us|неигрушки 100 днеи до приказа",
+      "at": "2026-11-15T23:32:19.050Z",
+      "found": true
+    },
+    "1015": {
+      "signature": "v2-apple-ru-us|даите танк абориген",
+      "at": "2026-11-15T23:33:18.632Z",
+      "found": true
+    },
+    "1022": {
+      "signature": "v2-apple-ru-us|адалят шукюров бокал вином мои полон",
+      "at": "2026-11-15T23:35:45.259Z",
+      "found": false
+    },
+    "1023": {
+      "signature": "v2-apple-ru-us|арсен шахунц а я каифую",
+      "at": "2026-11-15T23:32:22.392Z",
+      "found": true
+    },
+    "1055": {
+      "signature": "v2-apple-ru-us|би 2 без любви не греет солнце",
+      "at": "2026-11-15T23:34:00.032Z",
+      "found": true
+    },
+    "1097": {
+      "signature": "v2-apple-ru-us|даите танк абонент",
+      "at": "2026-11-15T23:33:18.379Z",
+      "found": false
+    },
+    "1109": {
+      "signature": "v2-apple-ru-us|мартин больно",
+      "at": "2026-11-15T23:36:08.503Z",
+      "found": false
+    },
+    "1122": {
+      "signature": "v2-apple-ru-us|пошлая молли банда крыс",
+      "at": "2026-11-15T23:33:48.007Z",
+      "found": true
     }
   },
-  "updatedAt": "2026-11-15T20:22:32.152Z",
+  "updatedAt": "2026-11-15T23:37:25.001Z",
   "summary": {
-    "total": 987,
-    "covers": 76,
-    "withoutVerifiedCover": 911
+    "total": 1124,
+    "covers": 98,
+    "withoutVerifiedCover": 1026
   }
 }

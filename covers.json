@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-15T20:22:32.152Z",
+  "updatedAt": "2026-11-15T23:37:25.001Z",
   "covers": {
     "1": {
       "url": "https://coverartarchive.org/release/e2ddc9e6-4540-4ace-8e16-c8129b749202/38255140400-500.jpg",
@@ -15,14 +15,16 @@
       "source": "https://musicbrainz.org/release-group/c1ff9d9d-e42c-4a43-aa8f-19f23efdd575",
       "artist": "25/17",
       "title": "Никто не сможет меня остановить",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Только для своих"
     },
     "3": {
       "url": "https://coverartarchive.org/release/94a7bf53-fbcc-4fd9-ab46-83ab489b643f/1978486233.jpg",
       "source": "https://musicbrainz.org/release-group/c1ff9d9d-e42c-4a43-aa8f-19f23efdd575",
       "artist": "25/17",
       "title": "Я никогда не видел моря",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Только для своих"
     },
     "5": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/4f/fe/6f4ffe88-f18a-51e7-81e3-a1068a89c249/4823034779232.jpg/600x600bb.jpg",
@@ -69,7 +71,8 @@
       "source": "https://musicbrainz.org/release-group/f1974a72-a737-374b-85a7-4f1c70b7e89a",
       "artist": "7Б",
       "title": "Последний герой",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Молодые ветра"
     },
     "14": {
       "url": "https://coverartarchive.org/release/33389d68-01ae-4d9f-93ae-bc82604a1605/15012256755.jpg",
@@ -100,7 +103,8 @@
       "source": "https://musicbrainz.org/release-group/87ce0132-7b29-41db-a965-c495fc523989",
       "artist": "Аквариум",
       "title": "Город золотой",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Grand Collection - Часть 2"
     },
     "20": {
       "url": "https://coverartarchive.org/release/df84951e-a153-4de9-b83d-cbfe5cb1b06c/36131799615-500.jpg",
@@ -131,7 +135,8 @@
       "source": "https://musicbrainz.org/release-group/cc879c61-1e8c-4962-824d-507398739463",
       "artist": "Александр Розенбаум",
       "title": "Ау",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "The Best (Deluxe Version)"
     },
     "26": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bc/31/13/bc311360-97da-7a16-7a6c-cd1f8e657360/cover.jpg/600x600bb.jpg",
@@ -387,6 +392,14 @@
       "album": "Алсу",
       "origin": "apple-exact"
     },
+    "69": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c5/24/cd/c524cda3-86dc-d16b-a926-810677c926f0/3614591364983.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%BD%D1%8B%D0%B9-%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB/1441666245?i=1441666274&uo=4",
+      "artist": "Ария",
+      "title": "Беспечный ангел",
+      "album": "Легенды русского рока: Ария",
+      "origin": "apple-exact"
+    },
     "103": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9a/29/ea/9a29eac4-f177-3851-af64-6dff0802e20f/cover.jpg/600x600bb.jpg",
       "source": "https://music.apple.com/ru/album/%D0%B0-%D1%8F-%D0%B2%D1%81%D1%91-%D0%BB%D0%B5%D1%82%D0%B0%D0%BB%D0%B0/1216625308?i=1216625687&uo=4",
@@ -411,12 +424,36 @@
       "origin": "musicbrainz-exact",
       "album": "Развлечение"
     },
+    "131": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b4/6a/3a/b46a3a51-10a2-b3b1-dedc-1db6c493f4af/190394971915.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B1%D0%B5%D1%81%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE/1166583036?i=1166583415&uo=4",
+      "artist": "Валентин Стрыкало",
+      "title": "Бесполезно",
+      "album": "Развлечение",
+      "origin": "apple-exact"
+    },
     "150": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8b/6f/8e/8b6f8e5c-f6e3-a7e0-d7ff-de3133b72828/0.jpg/600x600bb.jpg",
       "source": "https://music.apple.com/ru/album/36-6/1773491667?i=1773491668&uo=4",
       "artist": "Ваня Дмитриенко",
       "title": "36.6",
       "album": "36,6 - Single",
+      "origin": "apple-exact"
+    },
+    "167": {
+      "url": "https://coverartarchive.org/release/24510af3-d86a-4102-afd7-6f0be026c1ff/24724337297-500.jpg",
+      "source": "https://musicbrainz.org/release-group/64ad5a4d-8767-4b0b-b5b1-3e75a032f70f",
+      "artist": "Виктор Салтыков",
+      "title": "Белая ночь",
+      "origin": "musicbrainz-exact",
+      "album": "Звёзды дорожного радио"
+    },
+    "190": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/94/96/19949668-612f-55b2-59a2-29bd2e9d2911/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B1%D0%B5%D1%81%D1%8B/1534563459?i=1534563477&uo=4",
+      "artist": "Дайте танк (!)",
+      "title": "Бесы",
+      "album": "См. рис. 1",
       "origin": "apple-exact"
     },
     "239": {
@@ -442,6 +479,14 @@
       "album": "земфира",
       "origin": "apple-exact"
     },
+    "270": {
+      "url": "https://coverartarchive.org/release/6a19accf-3928-4447-8363-5be06d806d66/17633493291.jpg",
+      "source": "https://musicbrainz.org/release-group/c245ac07-b4be-3889-9708-68743cf97a43",
+      "artist": "Земфира",
+      "title": "Бесконечность",
+      "origin": "musicbrainz-exact",
+      "album": "Live"
+    },
     "302": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/76/19/61/761961fd-a2db-b899-5216-67087ca03e5b/cover.jpg/600x600bb.jpg",
       "source": "https://music.apple.com/ru/album/%D0%B0%D0%BB%D1%8E%D0%BC%D0%B8%D0%BD%D0%B8%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BE%D0%B3%D1%83%D1%80%D1%86%D1%8B/1393041713?i=1393042023&uo=4",
@@ -456,6 +501,37 @@
       "artist": "Кино",
       "title": "Апрель",
       "album": "Легенда",
+      "origin": "apple-exact"
+    },
+    "304": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/df/66/43/df664308-b833-d8f3-4b99-2756f9a9dbef/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0%D1%82%D0%B0%D0%BC%D0%B0%D0%BD/1445437751?i=1445437752&uo=4",
+      "artist": "Кино",
+      "title": "Атаман",
+      "album": "Атаман - Single",
+      "origin": "apple-exact"
+    },
+    "375": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d0/6e/4b/d06e4b41-7e7c-0603-3e3a-147752d70799/7cc8aebd-baa3-49ea-abf2-ea134fdffb65.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B1%D0%B5%D0%BB%D1%8B%D0%B5-%D1%80%D0%BE%D0%B7%D1%8B/1683689889?i=1683689891&uo=4",
+      "artist": "Ласковый Май",
+      "title": "Белые розы",
+      "album": "Седая ночь - Single",
+      "origin": "apple-exact"
+    },
+    "395": {
+      "url": "https://coverartarchive.org/release/332862c1-1e6c-4cf3-ad82-0d90f63ab1a4/29664333347-500.jpg",
+      "source": "https://musicbrainz.org/release-group/5ffbcbf6-8019-4bf6-81a1-c43eb1971de8",
+      "artist": "Любэ",
+      "title": "Берёзы",
+      "origin": "musicbrainz-exact"
+    },
+    "406": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d6/18/31/d6183181-f465-7df6-a9fe-3257ecc9eacc/mzm.uixskihu.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0%D1%83/1053390705?i=1053390706&uo=4",
+      "artist": "Ляпис Трубецкой",
+      "title": "Ау",
+      "album": "Ты кинула",
       "origin": "apple-exact"
     },
     "407": {
@@ -480,6 +556,22 @@
       "title": "Август — это ты",
       "album": "Август - это ты - Single",
       "origin": "apple-exact"
+    },
+    "480": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/0f/f0/af/0ff0af17-4063-8838-ec80-704a95ba1210/0.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B1%D0%B0%D1%82%D0%B0%D1%80%D0%B5%D0%B8/1671985272?i=1671986116&uo=4",
+      "artist": "Нервы",
+      "title": "Батареи",
+      "album": "Всё Что Вокруг",
+      "origin": "apple-exact"
+    },
+    "504": {
+      "url": "https://coverartarchive.org/release/a2ba87a9-5443-486a-88a3-0348233d05ce/29858670940-500.jpg",
+      "source": "https://musicbrainz.org/release-group/5f61966d-61ab-4d14-a357-fe2bf53a4ef0",
+      "artist": "Нюша",
+      "title": "Больно",
+      "origin": "musicbrainz-exact",
+      "album": "Выбирать чудо"
     },
     "539": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b0/fc/da/b0fcda38-38bf-147a-9578-78198bfa1964/cover.jpg/600x600bb.jpg",
@@ -521,6 +613,14 @@
       "album": "Ветер в голове",
       "origin": "apple-exact"
     },
+    "599": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/23/d8/5c/23d85cb7-5487-1eb0-a075-beb106f1d1d7/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B1%D0%B5%D0%B7-%D1%82%D0%B5%D0%B1%D1%8F/605767532?i=605767893&uo=4",
+      "artist": "Стас Михайлов",
+      "title": "Без тебя",
+      "album": "Позывные На Любовь",
+      "origin": "apple-exact"
+    },
     "643": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c3/00/c2/c300c2c9-4b2f-80b4-f81b-b1e6d810430e/0.jpg/600x600bb.jpg",
       "source": "https://music.apple.com/ru/album/%D0%B0%D1%80%D0%B3%D0%B5%D0%BD%D1%82%D0%B8%D0%BD%D0%B0-%D1%8F%D0%BC%D0%B0%D0%B9%D0%BA%D0%B0-5-0/1678487092?i=1678487099&uo=4",
@@ -534,7 +634,8 @@
       "source": "https://musicbrainz.org/release-group/ae19d4d9-72c6-30f0-af4b-bbfd41e1a619",
       "artist": "Чиж",
       "title": "18 берёз",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Гайдном буду!"
     },
     "654": {
       "url": "https://soundtext.ru/wp-content/uploads/2023/11/m1000x1000-2025-09-13t012912.165.jpeg",
@@ -551,6 +652,22 @@
       "album": "ангел-хранитель - Single",
       "origin": "apple-exact"
     },
+    "706": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/54/38/3f/54383fe1-7ebe-d693-4bbe-3b767454844c/cover.png/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B1%D0%B8%D0%BB%D0%B5%D1%82/1753976132?i=1753976134&uo=4",
+      "artist": "Dabro",
+      "title": "Билет",
+      "album": "Билет - Single",
+      "origin": "apple-exact"
+    },
+    "727": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/25/8f/a6/258fa6fd-4d75-8770-4980-284e1344fdcd/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B1%D0%B5%D1%81%D0%BF%D1%80%D0%B8%D0%B4%D0%B0%D0%BD%D0%BD%D0%B8%D1%86%D0%B0/1573269521?i=1573269531&uo=4",
+      "artist": "Dead Blonde",
+      "title": "Бесприданница",
+      "album": "Княжна из хрущёвки",
+      "origin": "apple-exact"
+    },
     "765": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c1/e3/39/c1e3392b-0e18-0cd8-fb32-a46eca939501/3616406665995.jpg/600x600bb.jpg",
       "source": "https://music.apple.com/ru/album/%D0%B0-%D0%B5%D1%81%D0%BB%D0%B8-%D1%8D%D1%82%D0%BE-%D0%BB%D1%8E%D0%B1%D0%BE%D0%B2%D1%8C/1570265934?i=1570265938&uo=4",
@@ -559,6 +676,14 @@
       "album": "А если это любовь? - Single",
       "origin": "apple-exact"
     },
+    "806": {
+      "url": "https://coverartarchive.org/release/b7ff0c64-5d8a-4bc1-9b6b-df34999174d4/41649107311-500.jpg",
+      "source": "https://musicbrainz.org/release-group/a0b62e05-5508-4a60-9c72-7a480ee0eed8",
+      "artist": "KSB muzic",
+      "title": "Баратрум",
+      "origin": "musicbrainz-exact",
+      "album": "Ксб музик 2"
+    },
     "851": {
       "url": "https://static.asfaltshop.pl/uploads2/photos/big_webp/2020/11/24/20201124034114_R-8498825-1514512241-4281.jpeg.webp",
       "source": "https://asfaltshop.pl/product/19295-michael-jackson-thriller-lp",
@@ -566,12 +691,28 @@
       "title": "Billie Jean",
       "origin": "curated"
     },
+    "867": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1b/8e/f0/1b8ef021-ed08-ec66-d02f-82ef019f8c4d/0.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5-%D1%87%D0%B5%D0%BC-%D0%B1%D0%BB%D0%B8%D0%B6%D0%B5/6812711528?i=6812711530&uo=4",
+      "artist": "Navai",
+      "title": "Больше, чем ближе",
+      "album": "Фриковая драма",
+      "origin": "apple-exact"
+    },
     "897": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/55/fa/32/55fa323a-707b-9243-871a-4e0952c3ec20/3615937885049.jpg/600x600bb.jpg",
       "source": "https://music.apple.com/ru/album/5-%D0%BC%D0%B8%D0%BD%D1%83%D1%82/1570734094?i=1570734646&uo=4",
       "artist": "Rauf & Faik",
       "title": "5 минут",
       "album": "Я люблю тебя",
+      "origin": "apple-exact"
+    },
+    "920": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/85/2d/ea/852dea02-5620-0c56-ad7f-c6c0e00a0038/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B1%D0%BE%D0%B1%D1%80/1763683885?i=1763683891&uo=4",
+      "artist": "SLAVA SKRIPKA",
+      "title": "Бобр",
+      "album": "Бобр - Single",
       "origin": "apple-exact"
     },
     "944": {
@@ -596,6 +737,45 @@
       "title": "Америка",
       "album": "ДЛЯ ТЕБЯ",
       "origin": "apple-exact"
+    },
+    "1009": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/24/6c/50/246c502e-74cd-949c-bec5-e075dc922f27/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/100-%D0%B4%D0%BD%D0%B5%D0%B9-%D0%B4%D0%BE-%D0%BF%D1%80%D0%B8%D0%BA%D0%B0%D0%B7%D0%B0/1453829657?i=1453829662&uo=4",
+      "artist": "Неигрушки",
+      "title": "100 дней до приказа",
+      "album": "100 дней до приказа",
+      "origin": "apple-exact"
+    },
+    "1015": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/72/e1/dd/72e1dd73-c4d6-0c41-9f00-c774be2afd7b/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0%D0%B1%D0%BE%D1%80%D0%B8%D0%B3%D0%B5%D0%BD/1885896830?i=1885897369&uo=4",
+      "artist": "Дайте танк (!)",
+      "title": "Абориген",
+      "album": "Радио Пепел",
+      "origin": "apple-exact"
+    },
+    "1023": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/63/01/a2/6301a219-9fe3-02e7-cc26-9f2d7dcd3958/0.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B0-%D1%8F-%D0%BA%D0%B0%D0%B9%D1%84%D1%83%D1%8E/1827775444?i=1827775445&uo=4",
+      "artist": "Арсен Шахунц",
+      "title": "А я кайфую",
+      "album": "А я кайфую - Single",
+      "origin": "apple-exact"
+    },
+    "1055": {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8b/1b/d9/8b1bd97c-aaf6-3fee-4621-41aded8b5a2c/cover.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/ru/album/%D0%B1%D0%B5%D0%B7-%D0%BB%D1%8E%D0%B1%D0%B2%D0%B8-%D0%BD%D0%B5-%D0%B3%D1%80%D0%B5%D0%B5%D1%82-%D1%81%D0%BE%D0%BB%D0%BD%D1%86%D0%B5/1882940451?i=1882940452&uo=4",
+      "artist": "Би-2",
+      "title": "Без любви не греет солнце",
+      "album": "Путешествие вокруг Солнца",
+      "origin": "apple-exact"
+    },
+    "1122": {
+      "url": "https://coverartarchive.org/release/08a34fa9-f796-4084-8e99-5bcb86bb59c1/44020656579-500.jpg",
+      "source": "https://musicbrainz.org/release-group/c630e049-3c10-4870-a06f-068e2c4fbb33",
+      "artist": "Пошлая Молли",
+      "title": "Банда крыс",
+      "origin": "musicbrainz-exact"
     }
   }
 }
