@@ -1,4 +1,4 @@
-const SECTIONS = ["Все", "Начинающий", "Продвинутый", "Профи", "Фингерстайл", "Зарубежный рок"];
+const SECTIONS = ["Все", "Новинки", "Бесплатные", "Начинающий", "Продвинутый", "Профи", "Фингерстайл", "Зарубежный рок"];
 const PAGE_SIZE = 48;
 const STORAGE_KEY = "struny-github-pages-cart-v1";
 const icons = { "Аккорды": "♬", "Бой": "↯", "Перебор": "≋", "Рифф": "ϟ", "Соло": "◇", "Фингерстайл": "✦", "Табулатура": "▦", "Интересный бой": "↯", "Электрогитара": "⚡" };
@@ -67,7 +67,11 @@ function renderTabs() {
     button.type = "button"; button.textContent = section; button.dataset.section = section;
     button.setAttribute("aria-pressed", String(state.section === section));
     button.className = state.section === section ? "active" : "";
-    button.addEventListener("click", () => { state.section = section; state.visible = PAGE_SIZE; renderTabs(); renderCatalog(); });
+    button.addEventListener("click", () => {
+      state.section = section; state.visible = PAGE_SIZE;
+      if (section === "Новинки") { state.sort = "new"; els.sort.value = "new"; }
+      renderTabs(); renderCatalog();
+    });
     return button;
   }));
 }
@@ -77,7 +81,10 @@ function filteredSongs() {
   const result = state.songs.filter((song) => {
     const searchableText = normalize(`${song.artist} ${song.title}`);
     const matchesText = !query || query.split(" ").every((word) => searchableText.includes(word));
-    const matchesSection = state.section === "Все" || song.sections.includes(state.section);
+    const matchesSection = state.section === "Все"
+      || (state.section === "Бесплатные" && Number(song.pdfPrice) === 0)
+      || (state.section === "Новинки" && Boolean(song.isNew))
+      || song.sections.includes(state.section);
     return matchesText && matchesSection;
   });
   return result.sort((a, b) => {
