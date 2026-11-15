@@ -225,3 +225,8 @@
 /* Show paid order floor before the customer opens the basket */
 .pricing-caption{margin:15px auto 0;max-width:900px;color:#695b72;font-size:12px;font-weight:650;line-height:1.5;text-align:center}
 @media(max-width:640px){.pricing-caption{font-size:11px;text-align:left;margin-top:14px}}
+
+/* Unverified videos from screenshot imports must never become orderable */
+.purchase-options button:disabled,.album-track-action:disabled,.album-bundle .button:disabled{
+  cursor:not-allowed;opacity:.64;filter:grayscale(.15);background:#f5f2f7;color:#8c8094;border-color:#e5deea;box-shadow:none
+}

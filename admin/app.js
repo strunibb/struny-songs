@@ -122,6 +122,7 @@ function openEditor(song) {
   setInput("coverUrl",song ? (state.covers[String(song.id)]?.url||"") : "");
   setInput("description",song?.description||"");
   $("barre").checked=!!song?.barre;
+  $("videoAvailable").checked=editing ? song.videoAvailable!==false : false;
   $("isFree").checked=editing ? !!(song.isFree || (song.pdfPrice===0 && song.videoPrice===0)) : false;
   syncPrices();
   $("isNew").checked=editing?!!song.isNew:true;
@@ -151,6 +152,7 @@ function makePayload(operation,song) {
     artist:$("artist").value.trim(),title:$("title").value.trim(),
     description:$("description").value.trim(),keyName:$("keyName").value.trim()||"Оригинал",
     albumName:$("albumName").value.trim(),isFree:$("isFree").checked,
+    videoAvailable:$("videoAvailable").checked,
     level:$("level").value,pdfPrice:Number($("pdfPrice").value),videoPrice:Number($("videoPrice").value),
     difficulty:Number($("difficulty").value),barre:$("barre").checked,isNew:$("isNew").checked,
     features:[...document.querySelectorAll('input[name="feature"]:checked')].map(x=>x.value),

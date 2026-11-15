@@ -29,3 +29,6 @@ td{padding:11px 16px;border-top:1px solid #f0ebf2;font-size:12px;vertical-align:
 @media(min-width:641px){.switch-row{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .field input:disabled{background:#f2ecf7;color:#665576;cursor:not-allowed}
 .field small{line-height:1.45}
+
+/* Controls are allowed to wrap when video and free toggles are visible. */
+@media(min-width:641px){.switch-row{grid-template-columns:repeat(2,minmax(0,1fr))}}

@@ -42,7 +42,7 @@ function reconcileCart() {
   const currentItems = new Map();
   for (const item of state.cart) {
     const song = songsById.get(item.id);
-    if (!song) continue;
+    if (!song || (item.format === "video" && song.videoAvailable === false)) continue;
     currentItems.set(song.id, {
       id: song.id, slug: song.slug, artist: song.artist, title: song.title,
       format: item.format, price: item.format === "pdf" ? song.pdfPrice : song.videoPrice,
@@ -102,9 +102,13 @@ function badge(song) {
   return `<span class="level-badge level-${levelColors[label] || "purple"}">${escapeHtml(label)}</span>`;
 }
 
-function featureMarkup(features, limit = 4) {
+function featureMarkup(features, limit = 4, videoAvailable = true) {
   const shown = [...new Set(features)].slice(0, limit);
-  return [...shown.map((feature) => `<span>${icons[feature] || "•"} ${escapeHtml(feature)}</span>`), "<span>▶ Видео</span>", "<span>▤ PDF</span>"].join("");
+  return [
+    ...shown.map((feature) => `<span>${icons[feature] || "•"} ${escapeHtml(feature)}</span>`),
+    ...(videoAvailable ? ["<span>▶ Видео</span>"] : []),
+    "<span>▤ PDF</span>"
+  ].join("");
 }
 
 function coverImageUrl(song) {
@@ -137,18 +141,23 @@ function createCard(song) {
   coverButton.setAttribute("aria-label", "Подробнее: " + song.artist + " — " + song.title);
   coverButton.addEventListener("click", showSong);
   node.querySelector(".card-section-line").innerHTML = badge(song);
-  node.querySelector(".feature-list").innerHTML = featureMarkup(song.features);
+  node.querySelector(".feature-list").innerHTML = featureMarkup(song.features, 4, song.videoAvailable !== false);
   const selected = selectedFormat(song.id);
   const pdf = node.querySelector('[data-format="pdf"]');
   const video = node.querySelector('[data-format="video"]');
   pdf.querySelector("strong").textContent = money(song.pdfPrice);
-  video.querySelector("strong").textContent = money(song.videoPrice);
+  if (song.videoAvailable === false) {
+    video.disabled = true;
+    video.querySelector("span").textContent = "Видео уточняется";
+    video.querySelector("strong").textContent = "Недоступно";
+    video.setAttribute("title", "Наличие видеоразбора не подтверждено");
+  } else video.querySelector("strong").textContent = money(song.videoPrice);
   pdf.classList.toggle("added", selected === "pdf");
   video.classList.toggle("added", selected === "video");
   pdf.setAttribute("aria-pressed", String(selected === "pdf"));
   video.setAttribute("aria-pressed", String(selected === "video"));
   pdf.addEventListener("click", () => toggleCart(song, "pdf"));
-  video.addEventListener("click", () => toggleCart(song, "video"));
+  if (song.videoAvailable !== false) video.addEventListener("click", () => toggleCart(song, "video"));
   return node;
 }
 
@@ -170,6 +179,7 @@ function renderCatalog() {
 }
 
 function toggleCart(song, format) {
+  if (format === "video" && song.videoAvailable === false) return;
   const current = selectedFormat(song.id);
   if (current === format) state.cart = state.cart.filter((item) => item.id !== song.id);
   else {
@@ -269,7 +279,7 @@ function renderModal() {
           <div class="facts">
             <span><small>Сложность</small><strong>${dots} · ${difficultyLabel(song.difficulty)}</strong></span>
             <span><small>Тональность</small><strong>${escapeHtml(song.keyName || "Оригинал")}</strong></span>
-            <span><small>Баррэ</small><strong>${song.barre ? "Есть" : "Нет"}</strong></span>
+            <span><small>Баррэ</small><strong>${song.barre === null ? "Не указано" : song.barre ? "Есть" : "Нет"}</strong></span>
           </div>
           ${features.length ? '<div class="modal-features">' + features.map((feature) => '<span>' + (icons[feature] || "•") + ' ' + escapeHtml(feature) + '</span>').join("") + '</div>' : ""}
         </div>
@@ -278,7 +288,7 @@ function renderModal() {
           <p>Добавим выбранный материал в корзину</p>
           <div class="purchase-options">
             <button type="button" data-modal-format="pdf" class="${selected === "pdf" ? "added" : ""}"><span>PDF-разбор</span><strong>${money(song.pdfPrice)}</strong></button>
-            <button type="button" data-modal-format="video" class="${selected === "video" ? "added" : ""}"><span>PDF + видеоразбор</span><strong>${money(song.videoPrice)}</strong></button>
+            <button type="button" data-modal-format="video" class="${selected === "video" ? "added" : ""}" ${song.videoAvailable === false ? 'disabled title="Видеоразбор не подтверждён"' : ""}><span>${song.videoAvailable === false ? "Видео уточняется" : "PDF + видеоразбор"}</span><strong>${song.videoAvailable === false ? "Недоступно" : money(song.videoPrice)}</strong></button>
           </div>
         </div>
       </div>

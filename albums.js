@@ -79,6 +79,7 @@ function renderAlbumCatalog() {
 }
 
 function addAlbumToCart(album,format) {
+  if (format === "video" && album.songs.some(song => song.videoAvailable === false)) return;
   const selected=new Map(state.cart.map(item=>[item.id,item]));
   for(const song of album.songs) {
     selected.set(song.id,{id:song.id,slug:song.slug,artist:song.artist,title:song.title,
@@ -117,7 +118,8 @@ function renderAlbumModal() {
     for(const format of ["pdf","video"]) {
       const button=document.createElement("button");
       button.type="button";button.dataset.albumSong=String(song.id);button.dataset.format=format;
-      button.textContent=format==="pdf"?"PDF":"PDF + видео";
+      button.textContent=format==="pdf"?"PDF":song.videoAvailable===false?"Видео недоступно":"PDF + видео";
+      button.disabled=format==="video" && song.videoAvailable===false;
       button.className="album-track-action"+(selectedFormat(song.id)===format?" selected":"");
       button.setAttribute("aria-pressed",String(selectedFormat(song.id)===format));
       button.addEventListener("click",()=>toggleCart(song,format));
@@ -134,8 +136,10 @@ function renderAlbumModal() {
   for(const format of ["pdf","video"]) {
     const button=document.createElement("button");button.type="button";button.dataset.albumAdd=format;
     button.className="button "+(format==="video"?"button-primary":"button-outline");
-    button.textContent=(format==="pdf"?"Все PDF":"Все PDF + видео")+" · "+money(albumPrice(album,format));
-    button.addEventListener("click",()=>addAlbumToCart(album,format));
+    const unavailable=format==="video" && album.songs.some(song=>song.videoAvailable===false);
+    button.disabled=unavailable;
+    button.textContent=unavailable ? "Видео ко всем песням пока недоступно" : (format==="pdf"?"Все PDF":"Все PDF + видео")+" · "+money(albumPrice(album,format));
+    if(!unavailable)button.addEventListener("click",()=>addAlbumToCart(album,format));
     buttons.append(button);
   }
   controls.append(buttons);
