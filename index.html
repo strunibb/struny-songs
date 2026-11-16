@@ -8,7 +8,7 @@
   <title>Струны будущего — разборы песен на гитаре</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css?v=school-20261114">
-  <link rel="stylesheet" href="./catalog-redesign.css?v=20261115-import-2">
+  <link rel="stylesheet" href="./catalog-redesign.css?v=20261116-releases-1">
   <style>.cover-credit{display:inline-block;margin-top:8px;color:#7534a6;font-size:11px;font-weight:700;text-decoration:underline;text-underline-offset:3px}.song-cover.has-image img{background:#eee}</style>
 </head>
 <body>
@@ -50,7 +50,7 @@
       <div class="shell">
         <div class="catalog-head">
           <div><h2 id="result-title">Вся библиотека</h2></div>
-          <div class="catalog-tools"><p><b id="result-count">0</b> <span id="result-unit">песен</span></p><select id="sort" aria-label="Сортировка"><option value="title">По названию</option><option value="artist">По исполнителю</option><option value="new">Сначала новые</option><option value="popular">Популярные</option><option value="easy">Сначала проще</option><option value="hard">Сначала сложнее</option></select></div>
+          <div class="catalog-tools"><p><b id="result-count">0</b> <span id="result-unit">песен</span></p><label class="release-filter-label" for="release-period">Когда вышла песня</label><select id="release-period" aria-label="Фильтр по дате выхода песни"><option value="all">Все релизы</option><option value="week">За 7 дней</option><option value="month">За 30 дней</option><option value="year">С начала года</option><option value="published">Новые разборы</option></select><select id="sort" aria-label="Сортировка"><option value="title">По названию</option><option value="artist">По исполнителю</option><option value="fresh">Сначала актуальные</option><option value="release">По дате релиза</option><option value="new">По дате разбора</option><option value="popular">Популярные</option><option value="easy">Сначала проще</option><option value="hard">Сначала сложнее</option></select></div>
         </div>
         <p id="cart-feedback" class="sr-only" role="status" aria-live="polite"></p>
         <div class="song-grid" id="song-grid" aria-busy="true"><p>Загружаем песни…</p></div>
@@ -107,7 +107,8 @@
     </article>
   </template>
 
+  <script src="./release.js?v=releases-20261116-1" defer></script>
   <script src="./albums.js?v=catalog-screenshots-20261115-2" defer></script>
-  <script src="./app.js?v=catalog-screenshots-20261115-2" defer></script>
+  <script src="./app.js?v=releases-20261116-1" defer></script>
 </body>
 </html>

@@ -230,3 +230,26 @@
 .purchase-options button:disabled,.album-track-action:disabled,.album-bundle .button:disabled{
   cursor:not-allowed;opacity:.64;filter:grayscale(.15);background:#f5f2f7;color:#8c8094;border-color:#e5deea;box-shadow:none
 }
+
+
+/* Music release filtering. No calendar years are printed in the customer UI. */
+.catalog-tools{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:10px}
+.release-filter-label{color:#695c73;font-size:11px;font-weight:750;white-space:nowrap}
+.catalog-tools #release-period,.catalog-tools #sort{
+  min-width:150px;height:41px;padding:0 34px 0 12px;border:1px solid #e0d5e7;
+  border-radius:11px;background:#fff;color:#45314f;font-size:12px;line-height:1.25;
+}
+.catalog-tools #release-period:focus-visible,.catalog-tools #sort:focus-visible{outline:3px solid #bd97d5;outline-offset:2px}
+.song-grid .new-label{max-width:70px;padding:5px 6px;line-height:1.18;font-size:8px;letter-spacing:0;text-align:center;white-space:normal;background:#8144ac;color:#fff}
+.song-grid .new-label.release-fresh{background:#d5f17a;color:#27360c;box-shadow:0 1px 4px rgba(20,35,10,.14)}
+.song-release-tag{display:inline-flex;align-items:center;padding:5px 8px;margin:0 0 8px 7px;
+  border-radius:7px;background:#e4f4bb;color:#354d12;font-size:10px;font-weight:850}
+@media(max-width:900px){
+  .catalog-head{align-items:flex-start;flex-wrap:wrap}
+  .catalog-tools{justify-content:flex-start;width:100%}
+}
+@media(max-width:560px){
+  .release-filter-label{width:100%}
+  .catalog-tools #release-period,.catalog-tools #sort{flex:1 1 140px;min-width:0;font-size:11px}
+  .song-grid .new-label{max-width:76px}
+}
