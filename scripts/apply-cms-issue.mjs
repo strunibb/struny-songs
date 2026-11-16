@@ -48,6 +48,16 @@ function payload(body) {
   p.description=str(p.description??"","Описание",600);
   p.keyName=str(p.keyName??"Оригинал","Тональность",55);
   p.albumName=str(p.albumName??"","Альбом",160);
+  // Полная дата вводится только владельцем; автоматические оценки хранятся отдельно.
+  p.releaseDate = p.releaseDate === undefined ? null : str(p.releaseDate,"Дата релиза",10);
+  if(p.releaseDate){
+    assert(/^\d{4}-\d{2}-\d{2}$/.test(p.releaseDate),"Дата релиза: ожидается ГГГГ-ММ-ДД");
+    const dt=new Date(p.releaseDate+"T00:00:00Z");
+    assert(Number.isFinite(dt.getTime()) && dt.toISOString().slice(0,10)===p.releaseDate,
+      "Дата релиза: неверная календарная дата");
+    assert(p.releaseDate<=new Date().toISOString().slice(0,10),
+      "Дата релиза: нельзя указывать будущую дату как состоявшийся релиз");
+  }
   assert(LEVELS.includes(p.level),"Неизвестная категория");
   p.pdfPrice=int(p.pdfPrice,"Стоимость PDF",0,100000);
   p.videoPrice=int(p.videoPrice,"Стоимость PDF + видео",0,100000);
@@ -92,6 +102,7 @@ if(p.operation==="delete") {
     sections:[...new Set([p.level,...(previous?.sections||[]).filter(section=>
       section!==previous?.level && section!==p.level && LEVELS.includes(section))])],
     isFree:p.isFree,albumName:p.albumName,videoAvailable:p.videoAvailable,
+    releaseDate:p.releaseDate===null ? (previous?.releaseDate||"") : p.releaseDate,
     description:p.description||"Разбор композиции для самостоятельной практики.",
     features:p.features,keyName:p.keyName||"Оригинал",
     barre:p.barre,difficulty:p.difficulty,
