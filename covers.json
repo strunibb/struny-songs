@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T00:51:25.661Z",
+  "updatedAt": "2026-11-16T03:06:32.633Z",
   "covers": {
     "1": {
       "url": "https://coverartarchive.org/release/e2ddc9e6-4540-4ace-8e16-c8129b749202/38255140400-500.jpg",
@@ -108,7 +108,8 @@
       "source": "https://musicbrainz.org/release-group/87ce0132-7b29-41db-a965-c495fc523989",
       "artist": "Аквариум",
       "title": "Город золотой",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Grand Collection - Часть 2"
     },
     "20": {
       "url": "https://coverartarchive.org/release/df84951e-a153-4de9-b83d-cbfe5cb1b06c/36131799615-500.jpg",
@@ -139,7 +140,8 @@
       "source": "https://musicbrainz.org/release-group/cc879c61-1e8c-4962-824d-507398739463",
       "artist": "Александр Розенбаум",
       "title": "Ау",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "The Best (Deluxe Version)"
     },
     "26": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bc/31/13/bc311360-97da-7a16-7a6c-cd1f8e657360/cover.jpg/600x600bb.jpg",
@@ -258,7 +260,8 @@
       "source": "https://musicbrainz.org/release-group/7279dd19-96af-40e2-9e67-795c4e62ee3a",
       "artist": "Алёна Швец",
       "title": "Розами",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "МЫЛЬНЫЕ ПУЗЫРИ"
     },
     "43": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/90/c6/03/90c60333-bbfa-3907-8d49-8b481c8fbc72/cover.jpg/600x600bb.jpg",
@@ -559,7 +562,8 @@
       "source": "https://musicbrainz.org/release-group/3056506f-237c-4f5f-ba8c-5130edb3bc4b",
       "artist": "Баста",
       "title": "Моя игра",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Баста 1"
     },
     "87": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/42/27/7a/42277ae9-43e3-5091-b48b-d371c1f010ea/cover.jpg/600x600bb.jpg",
@@ -637,7 +641,8 @@
       "source": "https://musicbrainz.org/release-group/2daab5d6-6e53-47ae-807f-b9e48028a675",
       "artist": "Би-2",
       "title": "Мой рок-н-ролл",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "#16плюсTour @ Stadium Live"
     },
     "100": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/09/9f/bb/099fbb12-3a95-fc08-ea6d-5f73641b32e8/193483690865.jpg/600x600bb.jpg",
@@ -852,14 +857,16 @@
       "source": "https://musicbrainz.org/release-group/6f258bd5-7dbb-4057-8091-cc6cf09dae2d",
       "artist": "Валентин Стрыкало",
       "title": "Всё решено",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Смирись и расслабься!"
     },
     "134": {
       "url": "https://coverartarchive.org/release/0a91eab7-f566-4dd2-93b9-8b69a3f0f891/41978780364-500.jpg",
       "source": "https://musicbrainz.org/release-group/6f258bd5-7dbb-4057-8091-cc6cf09dae2d",
       "artist": "Валентин Стрыкало",
       "title": "Дешёвые драмы",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Смирись и расслабься!"
     },
     "135": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/18/08/7c/18087c3e-2899-70ba-f3fc-4cfba1924985/191061114437.jpg/600x600bb.jpg",
@@ -874,7 +881,8 @@
       "source": "https://musicbrainz.org/release-group/6f258bd5-7dbb-4057-8091-cc6cf09dae2d",
       "artist": "Валентин Стрыкало",
       "title": "Кайен",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Смирись и расслабься!"
     },
     "137": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/18/08/7c/18087c3e-2899-70ba-f3fc-4cfba1924985/191061114437.jpg/600x600bb.jpg",
@@ -897,7 +905,8 @@
       "source": "https://musicbrainz.org/release-group/6f258bd5-7dbb-4057-8091-cc6cf09dae2d",
       "artist": "Валентин Стрыкало",
       "title": "Наше лето",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Смирись и расслабься!"
     },
     "141": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/18/08/7c/18087c3e-2899-70ba-f3fc-4cfba1924985/191061114437.jpg/600x600bb.jpg",
@@ -912,14 +921,16 @@
       "source": "https://musicbrainz.org/release-group/6f258bd5-7dbb-4057-8091-cc6cf09dae2d",
       "artist": "Валентин Стрыкало",
       "title": "Песня для девочек",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Смирись и расслабься!"
     },
     "143": {
       "url": "https://coverartarchive.org/release/851a4907-9550-48fb-91d8-fc4fe90ba835/28384836420-500.jpg",
       "source": "https://musicbrainz.org/release-group/2799ac74-7d21-46ae-9fbb-eb8606619aad",
       "artist": "Валентин Стрыкало",
       "title": "Рустем",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Союз 50"
     },
     "146": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/18/08/7c/18087c3e-2899-70ba-f3fc-4cfba1924985/191061114437.jpg/600x600bb.jpg",
@@ -942,14 +953,16 @@
       "source": "https://musicbrainz.org/release-group/6f258bd5-7dbb-4057-8091-cc6cf09dae2d",
       "artist": "Валентин Стрыкало",
       "title": "Фанк",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Смирись и расслабься!"
     },
     "149": {
       "url": "https://coverartarchive.org/release/7888ae9f-3381-41bd-a036-249ccaa36c14/17623640360.jpg",
       "source": "https://musicbrainz.org/release-group/52bdbacc-e4fb-4750-a998-22b1bdebc684",
       "artist": "Валентина Толкунова",
       "title": "Кабы не было зимы",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Лучшее"
     },
     "150": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8b/6f/8e/8b6f8e5c-f6e3-a7e0-d7ff-de3133b72828/0.jpg/600x600bb.jpg",
@@ -1060,7 +1073,8 @@
       "source": "https://musicbrainz.org/release-group/8aa2e11c-956c-4f3b-9ad8-617500ab0ad3",
       "artist": "Виктор Цой",
       "title": "Каждую ночь",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "CD2. Сейшен на Петроградской"
     },
     "169": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a6/01/76/a60176cd-47ea-12b8-16c0-73ea87bb05db/cover.jpg/600x600bb.jpg",
@@ -1338,7 +1352,8 @@
       "source": "https://musicbrainz.org/release-group/292a69b1-2f20-4717-81d7-20cdba9ae7f2",
       "artist": "Джизус",
       "title": "Человек, который изменил всё",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "47: Revolution and World"
     },
     "213": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cb/7a/58/cb7a5846-5a00-a060-e883-351bc757b058/cover.jpg/600x600bb.jpg",
@@ -1393,7 +1408,8 @@
       "source": "https://musicbrainz.org/release-group/9ac45a53-770a-3fdc-b635-2ccaf705a2b0",
       "artist": "Дискотека Авария",
       "title": "Малинки",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Песня про тебя и меня"
     },
     "220": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/81/24/6e/81246e82-b4a9-57cc-4f92-d9fb33507fad/cover.jpg/600x600bb.jpg",
@@ -1655,7 +1671,8 @@
       "source": "https://musicbrainz.org/release-group/c245ac07-b4be-3889-9708-68743cf97a43",
       "artist": "Земфира",
       "title": "Бесконечность",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Live"
     },
     "271": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/97/7f/3a/977f3aa4-9e7b-e5a9-d6b2-c5dfa530ee30/3610154402468.jpg/600x600bb.jpg",
@@ -1765,7 +1782,8 @@
       "source": "https://musicbrainz.org/release-group/53978a86-1e87-4f33-b33c-ae619152983e",
       "artist": "Каста",
       "title": "Ревность",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Live"
     },
     "302": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/76/19/61/761961fd-a2db-b899-5216-67087ca03e5b/cover.jpg/600x600bb.jpg",
@@ -2052,7 +2070,8 @@
       "source": "https://musicbrainz.org/release-group/2fe258d7-798e-3fc2-905a-a4861bc0b4ea",
       "artist": "Король и Шут",
       "title": "Ели мясо мужики",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Король и шут"
     },
     "344": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/23/ad/1f/23ad1fa6-b7e1-f60f-3afc-3f45ec24205f/cover.jpg/600x600bb.jpg",
@@ -2330,7 +2349,8 @@
       "source": "https://musicbrainz.org/release-group/2dae0135-d775-4015-8578-587a77f87364",
       "artist": "Ленинград",
       "title": "Экспонат",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Лучшие песни"
     },
     "383": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3d/1d/da/3d1ddac0-0ff2-3b51-334c-a992c1f51ec9/cover.jpg/600x600bb.jpg",
@@ -2368,7 +2388,8 @@
       "source": "https://musicbrainz.org/release-group/e83436ba-130b-44de-b03b-7f6152ad4895",
       "artist": "ЛСП",
       "title": "Монетка",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Tragic City"
     },
     "389": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f8/25/08/f825086c-943a-4289-fbcc-f2a03e4424ec/3616408723242.jpg/600x600bb.jpg",
@@ -2383,7 +2404,8 @@
       "source": "https://musicbrainz.org/release-group/e83436ba-130b-44de-b03b-7f6152ad4895",
       "artist": "ЛСП",
       "title": "Тело",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Tragic City"
     },
     "391": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2e/63/0f/2e630f76-f669-dfdf-6979-f8b8a157ebd1/0.jpg/600x600bb.jpg",
@@ -2398,56 +2420,64 @@
       "source": "https://musicbrainz.org/release-group/5ffbcbf6-8019-4bf6-81a1-c43eb1971de8",
       "artist": "Любэ",
       "title": "Берёзы",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "В России, часть 1"
     },
     "397": {
       "url": "https://coverartarchive.org/release/0bc72ec3-723e-493e-8e92-048e73268f5d/28575927391-500.jpg",
       "source": "https://musicbrainz.org/release-group/8e0d8df0-82ec-44a1-b832-2bbb39f7ecb3",
       "artist": "Любэ",
       "title": "Комбат",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Из концертной программы `Песни о людях` 24.02.98"
     },
     "398": {
       "url": "https://coverartarchive.org/release/eede5a5c-03e8-4660-aaa8-28fd3ee01fab/28576341150-500.jpg",
       "source": "https://musicbrainz.org/release-group/150d364c-eee8-3869-8bf9-778c643dfbd3",
       "artist": "Любэ",
       "title": "Конь",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Юбилей. Лучшие песни"
     },
     "399": {
       "url": "https://coverartarchive.org/release/41e6626e-7e79-408a-a863-ff296ba6ef84/29664371246-500.jpg",
       "source": "https://musicbrainz.org/release-group/b41bfaca-8331-44ce-bc3e-a402c68a8692",
       "artist": "Любэ",
       "title": "От Волги до Енисея",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "В России, часть 2"
     },
     "400": {
       "url": "https://coverartarchive.org/release/41e6626e-7e79-408a-a863-ff296ba6ef84/29664371246-500.jpg",
       "source": "https://musicbrainz.org/release-group/b41bfaca-8331-44ce-bc3e-a402c68a8692",
       "artist": "Любэ",
       "title": "Позови меня тихо по имени",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "В России, часть 2"
     },
     "401": {
       "url": "https://coverartarchive.org/release/f4be38ac-d741-4735-ad82-801df49a56e0/21511183455-500.jpg",
       "source": "https://musicbrainz.org/release-group/e00cce33-7c0d-45bf-87de-21bcf977c045",
       "artist": "Любэ",
       "title": "Солдат",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Лучшие песни 1989-2015"
     },
     "402": {
       "url": "https://coverartarchive.org/release/41e6626e-7e79-408a-a863-ff296ba6ef84/29664371246-500.jpg",
       "source": "https://musicbrainz.org/release-group/b41bfaca-8331-44ce-bc3e-a402c68a8692",
       "artist": "Любэ",
       "title": "Там за туманами",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "В России, часть 2"
     },
     "403": {
       "url": "https://coverartarchive.org/release/eede5a5c-03e8-4660-aaa8-28fd3ee01fab/28576341150-500.jpg",
       "source": "https://musicbrainz.org/release-group/150d364c-eee8-3869-8bf9-778c643dfbd3",
       "artist": "Любэ",
       "title": "Ты неси меня, река",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Юбилей. Лучшие песни"
     },
     "404": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/fe/94/f6/fe94f6dd-2274-292f-d75d-0ab7b429e105/cover.jpg/600x600bb.jpg",
@@ -2534,7 +2564,8 @@
       "source": "https://musicbrainz.org/release-group/4dacd69d-ba0d-459f-8716-537b809b5a49",
       "artist": "Макс Корж",
       "title": "Пьяный дождь",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Малый повзрослел, Ч. 2"
     },
     "417": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/60/14/02/60140240-0fb2-443c-e6ec-f10994a01cc2/cover.jpg/600x600bb.jpg",
@@ -2604,7 +2635,8 @@
       "source": "https://musicbrainz.org/release-group/75bf0b05-b59c-40ee-bab1-430ed8261772",
       "artist": "Мари Краймбрери",
       "title": "Она тебе не идёт",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Переобулась"
     },
     "426": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/c6/f2/c7/c6f2c744-d210-f186-c68b-9e2e25136360/cover.jpg/600x600bb.jpg",
@@ -2971,7 +3003,8 @@
       "source": "https://musicbrainz.org/release-group/fc96582e-99bd-4771-8137-5a3bcd6e4c03",
       "artist": "Нервы",
       "title": "Зажигалки",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Слэм и депрессия 2019 (live at Adrenaline Stadium)"
     },
     "486": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/0f/f0/af/0ff0af17-4063-8838-ec80-704a95ba1210/0.jpg/600x600bb.jpg",
@@ -3074,7 +3107,8 @@
       "source": "https://musicbrainz.org/release-group/8f453399-38d3-3439-9eb1-275060d6f5c3",
       "artist": "Ногу Свело!",
       "title": "Наши юные смешные голоса",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "В темноте"
     },
     "504": {
       "url": "https://coverartarchive.org/release/a2ba87a9-5443-486a-88a3-0348233d05ce/29858670940-500.jpg",
@@ -3095,7 +3129,8 @@
       "source": "https://musicbrainz.org/release-group/3f6b9eec-7284-46c7-9fbf-8944831bafe7",
       "artist": "Нюша",
       "title": "Чудо",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Музыка. Ру 16"
     },
     "511": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d1/3d/2a/d13d2aa5-dfb9-08f5-0aea-417019ebb249/cover.jpg/600x600bb.jpg",
@@ -3140,7 +3175,8 @@
       "source": "https://musicbrainz.org/release-group/41a5bac8-a5eb-480e-ab15-0a82935035d7",
       "artist": "Пицца",
       "title": "Лифт",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "На всю планету Земля"
     },
     "521": {
       "url": "https://coverartarchive.org/release/5a718350-b4c3-4ab9-a80c-76799ba4a37f/7047207118.jpg",
@@ -3154,7 +3190,8 @@
       "source": "https://musicbrainz.org/release-group/54b6e33b-64b3-4713-8d09-235125fcf642",
       "artist": "Пицца",
       "title": "Романс",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Союз 60"
     },
     "526": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/21/9d/7f/219d7f26-9c10-55e4-b09c-ccf9412d0a0e/cover.jpg/600x600bb.jpg",
@@ -3193,14 +3230,16 @@
       "source": "https://musicbrainz.org/release-group/4799d0f8-9037-41be-98b5-798b4ad204c7",
       "artist": "Пошлая Молли",
       "title": "Любимая песня твоей сестры",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "8 способов как бросить дрочить"
     },
     "532": {
       "url": "https://coverartarchive.org/release/2c45dffa-f413-4bb3-ab5e-0ff5b08cc356/19332550539-500.jpg",
       "source": "https://musicbrainz.org/release-group/4799d0f8-9037-41be-98b5-798b4ad204c7",
       "artist": "Пошлая Молли",
       "title": "Супермаркет",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "8 способов как бросить дрочить"
     },
     "534": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/89/3b/c1/893bc141-be0a-310d-39ea-3245c113c4b5/195497920655.jpg/600x600bb.jpg",
@@ -3350,14 +3389,16 @@
       "source": "https://musicbrainz.org/release-group/fe9f4312-a6a0-3d8a-8e1a-18fa8f5f7883",
       "artist": "Сектор Газа",
       "title": "Бомж",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Гуляй, мужик!"
     },
     "559": {
       "url": "https://coverartarchive.org/release/de9bfb0f-d986-4f1c-88d1-cf4311484c61/12178977761-500.jpg",
       "source": "https://musicbrainz.org/release-group/4ec7ec43-96b6-4566-b330-2c2ca9c317ab",
       "artist": "Сектор Газа",
       "title": "Вальпургиева ночь",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Вой на луну: лучшее и неизданное"
     },
     "560": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/5e/e5/81/5ee5818d-f06e-9cdb-af5f-6c0c6fd135b1/825646520350.jpg/600x600bb.jpg",
@@ -3372,21 +3413,24 @@
       "source": "https://musicbrainz.org/release-group/4ec7ec43-96b6-4566-b330-2c2ca9c317ab",
       "artist": "Сектор Газа",
       "title": "Казачья",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Вой на луну: лучшее и неизданное"
     },
     "563": {
       "url": "https://coverartarchive.org/release/6bd05166-be5b-45c1-b9f6-242cbf2d2a53/44173390997-500.jpg",
       "source": "https://musicbrainz.org/release-group/120fdd20-d94f-4ac8-86ed-80aab5e07036",
       "artist": "Сектор Газа",
       "title": "Лирика",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Сборник лучших песен"
     },
     "564": {
       "url": "https://coverartarchive.org/release/6bd05166-be5b-45c1-b9f6-242cbf2d2a53/44173390997-500.jpg",
       "source": "https://musicbrainz.org/release-group/120fdd20-d94f-4ac8-86ed-80aab5e07036",
       "artist": "Сектор Газа",
       "title": "Ночь перед Рождеством",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Сборник лучших песен"
     },
     "566": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/7b/a4/bb/7ba4bb0c-43b7-7ddc-a74f-02b8ee7d1a77/825646520374.jpg/600x600bb.jpg",
@@ -3409,21 +3453,24 @@
       "source": "https://musicbrainz.org/release-group/fe9f4312-a6a0-3d8a-8e1a-18fa8f5f7883",
       "artist": "Сектор Газа",
       "title": "Частушки",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Гуляй, мужик!"
     },
     "569": {
       "url": "https://coverartarchive.org/release/6bd05166-be5b-45c1-b9f6-242cbf2d2a53/44173390997-500.jpg",
       "source": "https://musicbrainz.org/release-group/120fdd20-d94f-4ac8-86ed-80aab5e07036",
       "artist": "Сектор Газа",
       "title": "Ява",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Сборник лучших песен"
     },
     "570": {
       "url": "https://coverartarchive.org/release/de9bfb0f-d986-4f1c-88d1-cf4311484c61/12178977761-500.jpg",
       "source": "https://musicbrainz.org/release-group/4ec7ec43-96b6-4566-b330-2c2ca9c317ab",
       "artist": "Сектор Газа",
       "title": "Life",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Вой на луну: лучшее и неизданное"
     },
     "571": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c6/6c/fd/c66cfd38-42df-86c4-a01b-ca89e817deba/cover.jpg/600x600bb.jpg",
@@ -3526,7 +3573,8 @@
       "source": "https://musicbrainz.org/release-group/ab39b054-98b5-4e42-a38f-1d4ca45d89cc",
       "artist": "Скриптонит",
       "title": "Вечеринка",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Дом с нормальными явлениями"
     },
     "588": {
       "url": "https://coverartarchive.org/release/70f7c555-5bc0-4b15-acd9-6512fff82d82/29905772206-500.jpg",
@@ -3540,7 +3588,8 @@
       "source": "https://musicbrainz.org/release-group/ab39b054-98b5-4e42-a38f-1d4ca45d89cc",
       "artist": "Скриптонит",
       "title": "Танцуй сама",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Дом с нормальными явлениями"
     },
     "591": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a9/9c/d9/a99cd95e-1e3a-bace-44f6-75f143b36e39/cover.jpg/600x600bb.jpg",
@@ -3619,28 +3668,32 @@
       "source": "https://musicbrainz.org/release-group/2913d1ef-3eac-4f35-a3db-2d3293bdbad2",
       "artist": "Стрелки",
       "title": "Веточка",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "XXXL 9 танцевальный"
     },
     "601": {
       "url": "https://coverartarchive.org/release/774b4620-e353-450c-a143-dfb62b81b60b/45080623540-500.jpg",
       "source": "https://musicbrainz.org/release-group/b1b2fccb-a387-4d2a-9c34-a9b5cac1b9fd",
       "artist": "Стрелки",
       "title": "На вечеринке",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Gold"
     },
     "602": {
       "url": "https://coverartarchive.org/release/774b4620-e353-450c-a143-dfb62b81b60b/45080623540-500.jpg",
       "source": "https://musicbrainz.org/release-group/b1b2fccb-a387-4d2a-9c34-a9b5cac1b9fd",
       "artist": "Стрелки",
       "title": "Нет любви",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Gold"
     },
     "603": {
       "url": "https://coverartarchive.org/release/b24b9871-0a24-44a3-9d75-828b4cd2ad9b/35620727225-500.jpg",
       "source": "https://musicbrainz.org/release-group/3887c20e-b480-4bab-b2bc-3e274749c702",
       "artist": "Стрелки",
       "title": "Солнце за горой",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Солнечный бит 3"
     },
     "604": {
       "url": "https://coverartarchive.org/release/b5578166-091e-40df-b791-d8f4dfbf3fb2/28431904917-500.jpg",
@@ -3885,21 +3938,24 @@
       "source": "https://musicbrainz.org/release-group/ae19d4d9-72c6-30f0-af4b-bbfd41e1a619",
       "artist": "Чиж",
       "title": "18 берёз",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Гайдном буду!"
     },
     "647": {
       "url": "https://coverartarchive.org/release/c87e1b9a-9b5d-4c97-8c6c-565a5d7445fe/33374373007-500.jpg",
       "source": "https://musicbrainz.org/release-group/ae19d4d9-72c6-30f0-af4b-bbfd41e1a619",
       "artist": "Чиж",
       "title": "Менуэт",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Гайдном буду!"
     },
     "648": {
       "url": "https://coverartarchive.org/release/16ece144-6097-3b8e-bd6b-5830aa666f2c/7625271973.jpg",
       "source": "https://musicbrainz.org/release-group/e87dc571-6557-3362-97a5-ce9f84b948b2",
       "artist": "Чиж & Co",
       "title": "На поле танки грохотали",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Бомбардировщики"
     },
     "649": {
       "url": "https://coverartarchive.org/release/6a5f7356-dfbc-43a9-98b1-5f371b1696b8/28815197952-500.jpg",
@@ -4000,7 +4056,8 @@
       "source": "https://musicbrainz.org/release-group/a1851b11-5c14-497a-af7a-fa04c0946c78",
       "artist": "Alex G",
       "title": "Mary",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Trick"
     },
     "665": {
       "url": "https://coverartarchive.org/release/a0b353e2-f230-4cbe-b720-fa59901b8fe5/44508288263-500.jpg",
@@ -4166,7 +4223,8 @@
       "source": "https://musicbrainz.org/release-group/14fcdc7c-8b2c-481c-8f7e-9d53d31a5db1",
       "artist": "Billie Eilish",
       "title": "Lovely",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "HIT ME HARD AND SOFT: THE TOUR (LIVE)"
     },
     "687": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/600x600bb.jpg",
@@ -4636,7 +4694,8 @@
       "source": "https://musicbrainz.org/release-group/d3d8a813-d682-4db6-b6a4-8a28041ce5f3",
       "artist": "Guf",
       "title": "Письмо домой",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Сам и..."
     },
     "759": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/57/09/e8/5709e8b0-6c03-2884-b104-04791f05b26a/825646498833.jpg/600x600bb.jpg",
@@ -4930,7 +4989,8 @@
       "source": "https://musicbrainz.org/release-group/a0b62e05-5508-4a60-9c72-7a480ee0eed8",
       "artist": "KSB muzic",
       "title": "Баратрум",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Ксб музик 2"
     },
     "807": {
       "url": "https://coverartarchive.org/release/226f72a2-fdc0-430b-aa0b-3dd4c8ccc39b/41649129206-500.jpg",
@@ -5032,14 +5092,16 @@
       "source": "https://musicbrainz.org/release-group/c28e377e-b170-467b-b060-65d5d15a5c41",
       "artist": "Lizer",
       "title": "Между нами",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Не ангел"
     },
     "821": {
       "url": "https://coverartarchive.org/release/bf4f8aee-7247-414d-8113-ac624749e68e/22943458053-500.jpg",
       "source": "https://musicbrainz.org/release-group/c28e377e-b170-467b-b060-65d5d15a5c41",
       "artist": "Lizer",
       "title": "Не ангел",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Не ангел"
     },
     "822": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/c9/b0/2e/c9b02efc-9412-5d61-62ea-a9acae95cae1/cover.jpg/600x600bb.jpg",
@@ -5141,7 +5203,8 @@
       "source": "https://musicbrainz.org/release-group/f2a534fb-2658-46a5-b99c-c34f8a79d1d0",
       "artist": "Måneskin",
       "title": "I Wanna Be Your Slave",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Teatro d’ira, Vol. I"
     },
     "845": {
       "url": "https://coverartarchive.org/release/99e188d4-140e-4153-8483-daf09835c04e/29136022925-500.jpg",
@@ -5303,7 +5366,8 @@
       "source": "https://musicbrainz.org/release-group/81037b6b-048b-4ba2-b22e-afae67a22fe5",
       "artist": "Noize MC",
       "title": "Всё как у людей",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Без меня. Трибьют Егору Летову"
     },
     "876": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/2a/c1/2f/2ac12f90-4265-4705-1c9a-0b901650b8e1/0.jpg/600x600bb.jpg",
@@ -5334,7 +5398,8 @@
       "source": "https://musicbrainz.org/release-group/fe8b076d-f521-4de4-a7f3-8a2f3a3aa019",
       "artist": "Noize MC",
       "title": "Жвачка",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "С оркестром классно"
     },
     "881": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5c/73/6f/5c736ffd-27c9-59e0-1748-120c107aa139/0.jpg/600x600bb.jpg",
@@ -5834,14 +5899,16 @@
       "source": "https://musicbrainz.org/release-group/fad94d3c-2328-4f4d-a4d9-ba4798bd4b91",
       "artist": "Traditional",
       "title": "Silent Night",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Oh Christmas Glee"
     },
     "955": {
       "url": "https://coverartarchive.org/release/a9980c5f-197d-4730-8925-e6e3956f4046/17763263538.jpg",
       "source": "https://musicbrainz.org/release-group/fc62604c-1b02-461f-8e4f-1f7a64d8422f",
       "artist": "Traditional",
       "title": "The Wheels on the Bus",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Away We Go!"
     },
     "956": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/94/cd/e8/94cde81d-f583-ccb4-bcc8-108c29cef74c/075679905741.jpg/600x600bb.jpg",
@@ -6302,7 +6369,8 @@
       "source": "https://musicbrainz.org/release-group/7cfa82c6-10fc-4ed0-8f20-457056cc2ed2",
       "artist": "Тринадцать карат",
       "title": "Во снах",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "13 причин почему"
     },
     "1032": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/6a/7a/f6/6a7af6e9-8463-bbac-e1d2-bf31a9086615/cover.jpg/600x600bb.jpg",
@@ -6349,14 +6417,16 @@
       "source": "https://musicbrainz.org/release-group/7cfa82c6-10fc-4ed0-8f20-457056cc2ed2",
       "artist": "Тринадцать карат",
       "title": "Пока он тебя не бросит",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "13 причин почему"
     },
     "1043": {
       "url": "https://coverartarchive.org/release/2c45dffa-f413-4bb3-ab5e-0ff5b08cc356/19332550539-500.jpg",
       "source": "https://musicbrainz.org/release-group/4799d0f8-9037-41be-98b5-798b4ad204c7",
       "artist": "Пошлая Молли",
       "title": "Нон-стоп",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "8 способов как бросить дрочить"
     },
     "1045": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ef/f7/29/eff729d7-4133-57bf-a087-e6950f231fd0/cover.png/600x600bb.jpg",
@@ -6403,7 +6473,8 @@
       "source": "https://musicbrainz.org/release-group/6660adb8-4b17-409b-8f1c-6525ad762ec4",
       "artist": "Kate Bush",
       "title": "Running Up That Hill",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "I Love Music 1985–1989: Alive and Kicking"
     },
     "1054": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1a/c3/dc/1ac3dc86-3154-9b9b-f26b-d82ae4093d68/cover.jpg/600x600bb.jpg",
@@ -6601,7 +6672,8 @@
       "source": "https://musicbrainz.org/release-group/215434b9-4664-4c69-81ed-6e34f0d12f6d",
       "artist": "Алёна Швец",
       "title": "Иголки в белое платье",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "ХРИЗАЛИДАРИЙ"
     },
     "1089": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8b/1b/d9/8b1bd97c-aaf6-3fee-4621-41aded8b5a2c/cover.jpg/600x600bb.jpg",
@@ -6640,7 +6712,8 @@
       "source": "https://musicbrainz.org/release-group/6f258bd5-7dbb-4057-8091-cc6cf09dae2d",
       "artist": "Валентин Стрыкало",
       "title": "Серёжа",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Смирись и расслабься!"
     },
     "1096": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/31/6f/89316fbd-0574-96ff-4b39-452be4059fa1/0.jpg/600x600bb.jpg",
@@ -6750,7 +6823,8 @@
       "source": "https://musicbrainz.org/release-group/e83986c8-cefa-4ca7-8b57-ccc2fae20e44",
       "artist": "Папин Олимпос",
       "title": "Когда злишься",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Интоксикация"
     },
     "1114": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/00/75/a9/0075a9e3-7a79-6511-4281-3a24fe9a9738/0.jpg/600x600bb.jpg",
@@ -6773,7 +6847,8 @@
       "source": "https://musicbrainz.org/release-group/e83986c8-cefa-4ca7-8b57-ccc2fae20e44",
       "artist": "Папин Олимпос",
       "title": "Просто пусто",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Интоксикация"
     },
     "1117": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/00/75/a9/0075a9e3-7a79-6511-4281-3a24fe9a9738/0.jpg/600x600bb.jpg",
@@ -6796,7 +6871,8 @@
       "source": "https://musicbrainz.org/release-group/e83986c8-cefa-4ca7-8b57-ccc2fae20e44",
       "artist": "Папин Олимпос",
       "title": "Шнурки",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Интоксикация"
     },
     "1122": {
       "url": "https://coverartarchive.org/release/08a34fa9-f796-4084-8e99-5bcb86bb59c1/44020656579-500.jpg",
