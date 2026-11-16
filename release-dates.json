@@ -1,6 +1,386 @@
 {
   "version": 1,
-  "updatedAt": null,
-  "dates": {},
-  "attempts": {}
+  "updatedAt": "2026-11-16T16:45:39.275Z",
+  "dates": {
+    "1088": {
+      "date": "2025",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/b47fe00f-d57d-41bc-aacc-5072095437c0",
+      "artist": "Алёна Швец",
+      "title": "Иголки в белое платье",
+      "confidence": "musicbrainz-exact"
+    },
+    "1089": {
+      "date": "2026-03-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/1d39467e-b475-4931-8f99-746bded277ac",
+      "artist": "Би-2",
+      "title": "Не зли моих ангелов",
+      "confidence": "musicbrainz-exact"
+    },
+    "1090": {
+      "date": "2026-03-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/2de502cf-3ca8-4b7a-974c-67ae8e604d5f",
+      "artist": "Би-2",
+      "title": "Синдром отмены",
+      "confidence": "musicbrainz-exact"
+    },
+    "1092": {
+      "date": "2006-06-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/46c47b6b-3bf0-4706-94c6-248759048d52",
+      "artist": "Бумбокс",
+      "title": "Хоттабыч",
+      "confidence": "musicbrainz-exact"
+    },
+    "1094": {
+      "date": "2012-02",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/e8cdbd55-1131-43d7-b966-46772c17a68d",
+      "artist": "Валентин Стрыкало",
+      "title": "Серёжа",
+      "confidence": "musicbrainz-exact"
+    },
+    "1098": {
+      "date": "2026-03-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/713e39ab-e4f8-45d3-81c8-1730306d19f2",
+      "artist": "Дайте танк (!)",
+      "title": "Гараж",
+      "confidence": "musicbrainz-exact"
+    },
+    "1099": {
+      "date": "2026-03-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9764cc8e-f566-4c7a-bb04-8d6d405237ba",
+      "artist": "Дайте танк (!)",
+      "title": "Команда",
+      "confidence": "musicbrainz-exact"
+    },
+    "1101": {
+      "date": "2026-03-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/f10a4b28-136e-4f02-8787-8595c63710d3",
+      "artist": "Джизус",
+      "title": "В этом чёртовом городе",
+      "confidence": "musicbrainz-exact"
+    },
+    "1102": {
+      "date": "2026-03-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/aed760db-d4d8-4cd0-867c-1957e153086b",
+      "artist": "Джизус",
+      "title": "Звёзды на Невском",
+      "confidence": "musicbrainz-exact"
+    },
+    "1103": {
+      "date": "2026-03-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/17455bf0-7df8-4ce2-90aa-de2cb2d48ec9",
+      "artist": "Джизус",
+      "title": "На краю системы",
+      "confidence": "musicbrainz-exact"
+    },
+    "1104": {
+      "date": "2020-08-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a5309f42-b55c-49ff-8f01-b62ad1a7ee7e",
+      "artist": "Дора",
+      "title": "Втюрилась",
+      "confidence": "musicbrainz-exact"
+    },
+    "1105": {
+      "date": "2026-03-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/7ce63efa-3811-4da7-ac6b-30219f87dc38",
+      "artist": "Забей, Лерочка",
+      "title": "Помоги мне",
+      "confidence": "musicbrainz-exact"
+    },
+    "1108": {
+      "date": "2026-05-16",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/f50ce119-6ba2-4626-b147-91ca6a4cb7ad",
+      "artist": "Макс Корж",
+      "title": "Что ты несёшь",
+      "confidence": "musicbrainz-exact"
+    },
+    "1113": {
+      "date": "2026-04-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/6c70d4ab-cbd8-42a5-8b29-72fd8d005730",
+      "artist": "Папин Олимпос",
+      "title": "Когда злишься",
+      "confidence": "musicbrainz-exact"
+    },
+    "1114": {
+      "date": "2026-04-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/7b49f572-30c5-4dbd-8ba8-54c7f428a800",
+      "artist": "Папин Олимпос",
+      "title": "Милая",
+      "confidence": "musicbrainz-exact"
+    },
+    "1115": {
+      "date": "2026-04-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9bc879d0-b3ae-4ddb-9a6e-060ffc61b81c",
+      "artist": "Папин Олимпос",
+      "title": "Недосказанные слова",
+      "confidence": "musicbrainz-exact"
+    },
+    "1116": {
+      "date": "2026-04-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/319b8ae9-860f-469f-8f02-51c1ae52c785",
+      "artist": "Папин Олимпос",
+      "title": "Просто пусто",
+      "confidence": "musicbrainz-exact"
+    },
+    "1117": {
+      "date": "2026-04-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/57241a2a-4276-458f-ae17-e3ea97470be0",
+      "artist": "Папин Олимпос",
+      "title": "Скорая помощь",
+      "confidence": "musicbrainz-exact"
+    },
+    "1119": {
+      "date": "2026-04-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/17749615-689b-412c-a51f-6b60acbc81bc",
+      "artist": "Папин Олимпос",
+      "title": "Трещины на асфальте",
+      "confidence": "musicbrainz-exact"
+    },
+    "1120": {
+      "date": "2026-04-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/e298e40e-a48d-4aed-bb10-79a32d27e751",
+      "artist": "Папин Олимпос",
+      "title": "Шнурки",
+      "confidence": "musicbrainz-exact"
+    },
+    "1122": {
+      "date": "2024",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/3e419837-05f4-48f7-85f4-508de246a140",
+      "artist": "Пошлая Молли",
+      "title": "Банда крыс",
+      "confidence": "musicbrainz-exact"
+    },
+    "1123": {
+      "date": "2026-03-06",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/6f64acc2-c55e-437d-8ca6-bbc50f242325",
+      "artist": "Три дня дождя",
+      "title": "Чёртова весна",
+      "confidence": "musicbrainz-exact"
+    },
+    "1124": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/0a183d65-d840-4602-b7ca-8c3c4d3ebecf",
+      "artist": "Фабрика",
+      "title": "Про любовь",
+      "confidence": "musicbrainz-exact"
+    }
+  },
+  "attempts": {
+    "1086": {
+      "signature": "viki show|ои мама мама",
+      "checkedAt": "2026-11-16T16:45:09.619Z",
+      "found": false
+    },
+    "1087": {
+      "signature": "александр барыкин|я буду долго гнать велосипед",
+      "checkedAt": "2026-11-16T16:45:07.904Z",
+      "found": false
+    },
+    "1088": {
+      "signature": "алена швец|иголки в белое платье",
+      "checkedAt": "2026-11-16T16:44:59.306Z",
+      "found": true
+    },
+    "1089": {
+      "signature": "би 2|не зли моих ангелов",
+      "checkedAt": "2026-11-16T16:44:57.858Z",
+      "found": true
+    },
+    "1090": {
+      "signature": "би 2|синдром отмены",
+      "checkedAt": "2026-11-16T16:44:56.429Z",
+      "found": true
+    },
+    "1091": {
+      "signature": "бредишь|скепсис",
+      "checkedAt": "2026-11-16T16:44:47.929Z",
+      "found": false
+    },
+    "1092": {
+      "signature": "бумбокс|хоттабыч",
+      "checkedAt": "2026-11-16T16:44:39.243Z",
+      "found": true
+    },
+    "1093": {
+      "signature": "валентин стрыкало|с первого мая",
+      "checkedAt": "2026-11-16T16:44:37.782Z",
+      "found": false
+    },
+    "1094": {
+      "signature": "валентин стрыкало|сережа",
+      "checkedAt": "2026-11-16T16:44:29.190Z",
+      "found": true
+    },
+    "1095": {
+      "signature": "ваня дмитриенко|лето",
+      "checkedAt": "2026-11-16T16:44:27.777Z",
+      "found": false
+    },
+    "1096": {
+      "signature": "ваня дмитриенко|почерк",
+      "checkedAt": "2026-11-16T16:44:19.170Z",
+      "found": false
+    },
+    "1097": {
+      "signature": "даите танк|абонент",
+      "checkedAt": "2026-11-16T16:44:17.736Z",
+      "found": false
+    },
+    "1098": {
+      "signature": "даите танк|гараж",
+      "checkedAt": "2026-11-16T16:44:09.171Z",
+      "found": true
+    },
+    "1099": {
+      "signature": "даите танк|команда",
+      "checkedAt": "2026-11-16T16:44:07.699Z",
+      "found": true
+    },
+    "1100": {
+      "signature": "даите танк|неон",
+      "checkedAt": "2026-11-16T16:43:59.071Z",
+      "found": false
+    },
+    "1101": {
+      "signature": "джизус|в этом чертовом городе",
+      "checkedAt": "2026-11-16T16:43:57.676Z",
+      "found": true
+    },
+    "1102": {
+      "signature": "джизус|звезды на невском",
+      "checkedAt": "2026-11-16T16:43:49.058Z",
+      "found": true
+    },
+    "1103": {
+      "signature": "джизус|на краю системы",
+      "checkedAt": "2026-11-16T16:43:47.629Z",
+      "found": true
+    },
+    "1104": {
+      "signature": "дора|втюрилась",
+      "checkedAt": "2026-11-16T16:43:46.120Z",
+      "found": true
+    },
+    "1105": {
+      "signature": "забеи лерочка|помоги мне",
+      "checkedAt": "2026-11-16T16:43:44.950Z",
+      "found": true
+    },
+    "1107": {
+      "signature": "клава кока|как я люблю тебя",
+      "checkedAt": "2026-11-16T16:43:15.104Z",
+      "found": false
+    },
+    "1108": {
+      "signature": "макс корж|что ты несешь",
+      "checkedAt": "2026-11-16T16:43:13.654Z",
+      "found": true
+    },
+    "1109": {
+      "signature": "мартин|больно",
+      "checkedAt": "2026-11-16T16:43:05.066Z",
+      "found": false
+    },
+    "1110": {
+      "signature": "мартин|чао",
+      "checkedAt": "2026-11-16T16:43:03.613Z",
+      "found": false
+    },
+    "1111": {
+      "signature": "маша мирова|глубже",
+      "checkedAt": "2026-11-16T16:42:55.062Z",
+      "found": false
+    },
+    "1112": {
+      "signature": "нервы|суши мои вены",
+      "checkedAt": "2026-11-16T16:42:53.595Z",
+      "found": false
+    },
+    "1113": {
+      "signature": "папин олимпос|когда злишься",
+      "checkedAt": "2026-11-16T16:42:44.979Z",
+      "found": true
+    },
+    "1114": {
+      "signature": "папин олимпос|милая",
+      "checkedAt": "2026-11-16T16:42:43.533Z",
+      "found": true
+    },
+    "1115": {
+      "signature": "папин олимпос|недосказанные слова",
+      "checkedAt": "2026-11-16T16:42:34.947Z",
+      "found": true
+    },
+    "1116": {
+      "signature": "папин олимпос|просто пусто",
+      "checkedAt": "2026-11-16T16:42:33.483Z",
+      "found": true
+    },
+    "1117": {
+      "signature": "папин олимпос|скорая помощь",
+      "checkedAt": "2026-11-16T16:42:24.924Z",
+      "found": true
+    },
+    "1118": {
+      "signature": "папин олимпос|тараканы бега",
+      "checkedAt": "2026-11-16T16:42:16.298Z",
+      "found": false
+    },
+    "1119": {
+      "signature": "папин олимпос|трещины на асфальте",
+      "checkedAt": "2026-11-16T16:42:14.854Z",
+      "found": true
+    },
+    "1120": {
+      "signature": "папин олимпос|шнурки",
+      "checkedAt": "2026-11-16T16:42:06.269Z",
+      "found": true
+    },
+    "1121": {
+      "signature": "песни из кино|старыи клен",
+      "checkedAt": "2026-11-16T16:42:04.828Z",
+      "found": false
+    },
+    "1122": {
+      "signature": "пошлая молли|банда крыс",
+      "checkedAt": "2026-11-16T16:41:56.244Z",
+      "found": true
+    },
+    "1123": {
+      "signature": "три дня дождя|чертова весна",
+      "checkedAt": "2026-11-16T16:41:55.046Z",
+      "found": true
+    },
+    "1124": {
+      "signature": "фабрика|про любовь",
+      "checkedAt": "2026-11-16T16:41:32.955Z",
+      "found": true
+    }
+  },
+  "summary": {
+    "catalogSize": 1124,
+    "verifiedDates": 23
+  }
 }
