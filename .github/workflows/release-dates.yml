@@ -1,0 +1,93 @@
+name: Проверка дат музыкальных релизов
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/release-dates.yml"
+      - "scripts/resolve-release-dates.mjs"
+  workflow_dispatch:
+  schedule:
+    - cron: "17,47 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: struny-release-dates
+  cancel-in-progress: false
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Код и проверенные музыкальные источники
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Получить опубликованный каталог
+        run: git fetch origin gh-pages
+      - name: Найти первые известные даты выхода записей
+        env:
+          RELEASE_LOOKUP_LIMIT: "40"
+        run: node scripts/resolve-release-dates.mjs
+      - name: Объединить даты с действующим сайтом без перезаписи чужих изменений
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4; do
+            git fetch origin gh-pages
+            git checkout -B gh-pages origin/gh-pages
+            node --input-type=module <<'NODE'
+          import {readFileSync,writeFileSync} from "node:fs";
+          const read=(file,fallback)=>{
+            try{return JSON.parse(readFileSync(file,"utf8"));}
+            catch{return fallback;}
+          };
+          const live=read("release-dates.json",{version:1,dates:{},attempts:{}});
+          const scanned=read("/tmp/struny-release-dates.json",{version:1,dates:{},attempts:{}});
+          const songs=read("songs.json",{songs:[]}).songs||[];
+          const ids=new Map(songs.map(song=>[String(song.id),song]));
+          live.version=1;live.dates ||= {};live.attempts ||= {};
+          let changed=0;
+          for(const [id,record] of Object.entries(scanned.dates||{})){
+            const song=ids.get(id);
+            if(!song||song.releaseDate||record.artist!==song.artist||record.title!==song.title)continue;
+            if(!live.dates[id]||live.dates[id].artist!==song.artist||live.dates[id].title!==song.title){
+              live.dates[id]=record;changed++;
+            }
+          }
+          for(const [id,attempt] of Object.entries(scanned.attempts||{})){
+            if(!ids.has(id))continue;
+            if(!live.attempts[id]||live.attempts[id].checkedAt<attempt.checkedAt){
+              live.attempts[id]=attempt;changed++;
+            }
+          }
+          for(const key of ["dates","attempts"])for(const id of Object.keys(live[key])){
+            if(!ids.has(id)){delete live[key][id];changed++;}
+          }
+          if(changed){
+            live.updatedAt=new Date().toISOString();
+            live.summary={catalogSize:songs.length,verifiedDates:Object.keys(live.dates).length};
+            writeFileSync("release-dates.json",JSON.stringify(live,null,2)+"\n");
+          }
+          console.log("Dates merged",changed,"verified",Object.keys(live.dates).length);
+          NODE
+            if git diff --quiet -- release-dates.json; then
+              echo "No fresh release metadata to publish"
+              exit 0
+            fi
+            git add release-dates.json
+            git commit -m "Verify original song release dates from MusicBrainz"
+            if git push origin gh-pages; then
+              echo "Published verified dates"
+              exit 0
+            fi
+            echo "Catalog updated concurrently; retrying safely"
+            sleep 5
+          done
+          echo "Could not publish after safe retries" >&2
+          exit 1
