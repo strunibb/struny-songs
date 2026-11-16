@@ -7,8 +7,8 @@
   <meta name="description" content="Контент-панель каталога «Струны будущего».">
   <title>Управление разборами | Струны будущего</title>
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css?v=20261115-import-2">
-  <script src="./app.js?v=20261115-import-2" defer></script>
+  <link rel="stylesheet" href="./style.css?v=20261116-release-1">
+  <script src="./app.js?v=20261116-release-1" defer></script>
 </head>
 <body>
 <a class="skip" href="#songs">К списку песен</a>
@@ -58,6 +58,7 @@
           <label class="field"><span>PDF + видео, ₽</span><input id="videoPrice" required type="number" min="0" max="100000" step="1" value="25"><small id="priceHelp">Начинающий: 25 ₽ за формат</small></label>
           <label class="field"><span>Тональность</span><input id="keyName" maxlength="55" value="Оригинал"></label>
           <label class="field"><span>Название альбома</span><input id="albumName" maxlength="160" placeholder="Например, Группа крови"><small>Укажи одинаковое название для песен одного альбома</small></label>
+          <label class="field"><span>Дата выхода песни</span><input id="releaseDate" type="date" max="2099-12-31" autocomplete="off"><small id="releaseHelp">Только подтверждённый музыкальный релиз. Не дата добавления разбора.</small></label>
           <label class="field"><span>Ссылка на обложку</span><input id="coverUrl" type="url" maxlength="900" placeholder="https://…"><small>Только публичный HTTPS-адрес</small></label>
         </div>
         <label class="field full"><span>Описание</span><textarea id="description" rows="3" maxlength="600" placeholder="Что получит ученик и какая техника разбирается"></textarea></label>

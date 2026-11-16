@@ -6,7 +6,7 @@ const FEATURES = ["Аккорды","Бой","Перебор","Рифф","Сол�
 const PAGE_SIZE = 80;
 const TIER_PRICES = {"Начинающий":25,"Продвинутый":50,"Профи":100};
 const $ = id => document.getElementById(id);
-const state = { songs:[],covers:{},query:"",filter:"all",limit:PAGE_SIZE,current:null,returnFocus:null };
+const state = { songs:[],covers:{},releases:{},query:"",filter:"all",limit:PAGE_SIZE,current:null,returnFocus:null };
 const normalize = value => String(value||"").normalize("NFKC").toLocaleLowerCase("ru-RU").replace(/ё/g,"е").trim();
 const price = value => Number(value)===0 ? "Бесплатно" : String(value)+" ₽";
 const element = (name, className, value) => {
@@ -83,14 +83,16 @@ async function loadSongs() {
   $("refresh").disabled=true;
   try {
     const stamp=String(Date.now());
-    const [songResponse,coverResponse]=await Promise.all([
+    const [songResponse,coverResponse,releaseResponse]=await Promise.all([
       fetch("../songs.json?fresh="+stamp,{cache:"no-store"}),
-      fetch("../covers.json?fresh="+stamp,{cache:"no-store"})
+      fetch("../covers.json?fresh="+stamp,{cache:"no-store"}),
+      fetch("../release-dates.json?fresh="+stamp,{cache:"no-store"}).catch(()=>null)
     ]);
     if(!songResponse.ok)throw Error("HTTP "+songResponse.status);
     const db=await songResponse.json();
     state.songs=Array.isArray(db.songs)?db.songs:[];
     state.covers=coverResponse.ok ? (await coverResponse.json()).covers||{} : {};
+    state.releases=releaseResponse?.ok ? (await releaseResponse.json()).dates||{} : {};
     render();
   }catch(e){notify("Не удалось получить каталог. Обнови страницу или проверь соединение.");$("rows").replaceChildren(element("tr"));$("count").textContent="Ошибка загрузки";}
   finally{$("refresh").disabled=false;}
@@ -119,6 +121,12 @@ function openEditor(song) {
   setInput("pdfPrice",song?.pdfPrice??25);setInput("videoPrice",song?.videoPrice??25);
   setInput("keyName",song?.keyName||"Оригинал");
   setInput("albumName",song?.albumName|| (song ? state.covers[String(song.id)]?.album || "" : ""));
+  const release = song ? state.releases[String(song.id)] : null;
+  const date = song?.releaseDate || (release?.artist===song?.artist && release?.title===song?.title ? release.date : "") || "";
+  setInput("releaseDate", /^\d{4}-\d{2}-\d{2}$/.test(date) ? date : "");
+  $("releaseHelp").textContent = date && !/^\d{4}-\d{2}-\d{2}$/.test(date)
+    ? "Указан только год или месяц. Для точного фильтра недели/месяца нужна полная дата."
+    : "Дата музыкального релиза, а не дата добавления разбора. Если неизвестна, оставь пустым.";
   setInput("coverUrl",song ? (state.covers[String(song.id)]?.url||"") : "");
   setInput("description",song?.description||"");
   $("barre").checked=!!song?.barre;
@@ -151,7 +159,7 @@ function makePayload(operation,song) {
     version:1,operation,id:song?.id,
     artist:$("artist").value.trim(),title:$("title").value.trim(),
     description:$("description").value.trim(),keyName:$("keyName").value.trim()||"Оригинал",
-    albumName:$("albumName").value.trim(),isFree:$("isFree").checked,
+    albumName:$("albumName").value.trim(),releaseDate:$("releaseDate").value.trim(),isFree:$("isFree").checked,
     videoAvailable:$("videoAvailable").checked,
     level:$("level").value,pdfPrice:Number($("pdfPrice").value),videoPrice:Number($("videoPrice").value),
     difficulty:Number($("difficulty").value),barre:$("barre").checked,isNew:$("isNew").checked,

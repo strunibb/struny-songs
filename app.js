@@ -372,7 +372,7 @@ Promise.all([
       const cover = covers[String(song.id)];
       const releaseRecord = musicReleases?.dates?.[String(song.id)];
       return { ...song,
-        releaseDate: song.releaseDate || releaseRecord?.date || "",
+        releaseDate: song.releaseDate || releaseDateForIndex(song,releaseRecord),
         coverUrl: cover?.url || song.coverUrl || "",
         coverSource: cover?.source || "",
         coverAlbum: cover?.album || "" };

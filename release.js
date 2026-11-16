@@ -4,6 +4,13 @@
  */
 const RELEASE_PERIODS = ["all", "week", "month", "year", "published"];
 
+function releaseDateForIndex(song, record) {
+  if (!record || typeof record.date !== "string") return "";
+  const canon=value=>String(value||"").normalize("NFKC").toLocaleLowerCase("ru-RU").replace(/ё/g,"е").trim();
+  return canon(record.artist)===canon(song.artist) && canon(record.title)===canon(song.title)
+    ? record.date : "";
+}
+
 function releaseInfo(song) {
   const raw = String(song?.releaseDate || "").trim();
   const match = /^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?$/.exec(raw);
