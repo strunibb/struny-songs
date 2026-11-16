@@ -1,4 +1,9 @@
 /* Album discovery and purchasing. Executed after app.js as a classic deferred script. */
+function elementReleaseBadge(label){
+  const tag=document.createElement("span");tag.className="album-track-fresh";
+  tag.textContent=label;
+  return tag;
+}
 function albumSlug(artist, title) {
   return normalize(artist) + "||" + normalize(title);
 }
@@ -63,8 +68,15 @@ function makeAlbumCard(album) {
 
 function renderAlbumCatalog() {
   const query = normalize(state.query);
-  const groups=state.albums.filter(a => !query || query.split(" ").every(w =>
-    normalize(a.artist+" "+a.title+" "+a.songs.map(s=>s.title).join(" ")).includes(w)));
+  const groups=state.albums.filter(a =>
+    (!query || query.split(" ").every(w =>
+      normalize(a.artist+" "+a.title+" "+a.songs.map(s=>s.title).join(" ")).includes(w))) &&
+    (state.releasePeriod==="all" || a.songs.some(song=>releasePeriodMatches(song,state.releasePeriod)))
+  ).sort((a,b)=>{
+    if(state.sort==="release")return Math.max(...b.songs.map(releaseOrderValue))-Math.max(...a.songs.map(releaseOrderValue));
+    if(state.sort==="fresh")return Math.max(...b.songs.map(freshnessScore))-Math.max(...a.songs.map(freshnessScore));
+    return 0;
+  });
   const visible=groups.slice(0,state.visible);
   els.grid.classList.add("album-grid");
   els.grid.replaceChildren(...visible.map(makeAlbumCard));
@@ -114,6 +126,8 @@ function renderAlbumModal() {
     const songTitle=document.createElement("strong");songTitle.textContent=song.title;
     const info=document.createElement("small");info.textContent=money(song.pdfPrice)+" PDF · "+money(song.videoPrice)+" PDF + видео";
     meta.append(songTitle,info);
+    const freshLabel=releaseLabel(song);
+    if(freshLabel)meta.append(elementReleaseBadge(freshLabel));
     const actions=document.createElement("div");actions.className="album-track-actions";
     for(const format of ["pdf","video"]) {
       const button=document.createElement("button");

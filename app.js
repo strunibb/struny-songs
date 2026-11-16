@@ -364,7 +364,7 @@ els.search.parentElement.classList.toggle("has-value", Boolean(state.query));
 Promise.all([
   fetch("./songs.json").then((response) => { if (!response.ok) throw new Error("Не удалось загрузить каталог"); return response.json(); }),
   fetch("./covers.json").then((response) => response.ok ? response.json() : { covers: {} }).catch(() => ({ covers: {} })),
-  fetch("./release-dates.json").then((response) => response.ok ? response.json() : { dates: {} }).catch(() => ({ dates: {} }))
+  fetch("./release-dates.json",{cache:"no-store"}).then((response) => response.ok ? response.json() : { dates: {} }).catch(() => ({ dates: {} }))
 ])
   .then(([payload, art, musicReleases]) => {
     const covers = art && typeof art.covers === "object" && art.covers ? art.covers : {};
