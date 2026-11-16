@@ -7,7 +7,7 @@ const levelColors = { "Начинающий": "green", "Любитель": "yell
 const initialFilters = new URLSearchParams(window.location.search);
 const legacySections = { "Электрогитара": "Зарубежный рок", "Песни с интересным боем": "Продвинутый" };
 const urlSection = legacySections[initialFilters.get("section")] || initialFilters.get("section");
-const state = { songs: [], query: initialFilters.get("q") || "", section: SECTIONS.includes(urlSection) ? urlSection : "Все", sort: "title", visible: PAGE_SIZE, cart: loadCart(), modalSong: null, modalAlbum: null, albums: [] };
+const state = { songs: [], query: initialFilters.get("q") || "", section: SECTIONS.includes(urlSection) ? urlSection : "Все", sort: "title", releasePeriod: RELEASE_PERIODS.includes(initialFilters.get("release")) ? initialFilters.get("release") : "all", visible: PAGE_SIZE, cart: loadCart(), modalSong: null, modalAlbum: null, albums: [] };
 const els = {
   search: document.querySelector("#search"), searchClear: document.querySelector("#search-clear"), tabs: document.querySelector("#tabs"), sort: document.querySelector("#sort"),
   grid: document.querySelector("#song-grid"), count: document.querySelector("#result-count"), title: document.querySelector("#result-title"),
@@ -57,6 +57,8 @@ function syncFilters() {
   else url.searchParams.delete("q");
   if (state.section !== "Все") url.searchParams.set("section", state.section);
   else url.searchParams.delete("section");
+  if (state.releasePeriod !== "all") url.searchParams.set("release", state.releasePeriod);
+  else url.searchParams.delete("release");
   window.history.replaceState(null, "", url);
 }
 function selectedFormat(id) { return state.cart.find((item) => item.id === id)?.format || null; }
@@ -69,7 +71,7 @@ function renderTabs() {
     button.className = state.section === section ? "active" : "";
     button.addEventListener("click", () => {
       state.section = section; state.visible = PAGE_SIZE;
-      if (section === "Новинки") { state.sort = "new"; els.sort.value = "new"; }
+      if (section === "Новинки") { state.sort = "fresh"; els.sort.value = "fresh"; }
       renderTabs(); renderCatalog();
     });
     return button;
@@ -83,11 +85,13 @@ function filteredSongs() {
     const matchesText = !query || query.split(" ").every((word) => searchableText.includes(word));
     const matchesSection = state.section === "Все"
       || (state.section === "Бесплатные" && Number(song.pdfPrice) === 0)
-      || (state.section === "Новинки" && Boolean(song.isNew))
+      || (state.section === "Новинки" && (Boolean(song.isNew) || releaseRecency(song) !== null))
       || song.sections.includes(state.section);
-    return matchesText && matchesSection;
+    return matchesText && matchesSection && releasePeriodMatches(song, state.releasePeriod);
   });
   return result.sort((a, b) => {
+    if (state.sort === "fresh") return compareFreshness(a,b);
+    if (state.sort === "release") return releaseOrderValue(b)-releaseOrderValue(a) || a.title.localeCompare(b.title,"ru");
     if (state.sort === "popular") return b.popularity - a.popularity || a.artist.localeCompare(b.artist, "ru");
     if (state.sort === "easy") return a.difficulty - b.difficulty || a.artist.localeCompare(b.artist, "ru");
     if (state.sort === "hard") return b.difficulty - a.difficulty || a.artist.localeCompare(b.artist, "ru");
@@ -132,7 +136,13 @@ function createCard(song) {
     cover.classList.add("has-image");
     image.addEventListener("error", () => { image.remove(); cover.classList.remove("has-image"); });
   }
-  if (!song.isNew) node.querySelector(".new-label").remove();
+  const releaseBadge = releaseLabel(song);
+  const badgeNode=node.querySelector(".new-label");
+  if (!releaseBadge) badgeNode.remove();
+  else {
+    badgeNode.textContent=releaseBadge;
+    badgeNode.classList.toggle("release-fresh", releaseRecency(song)!==null);
+  }
   const showSong = () => openSong(song.id);
   node.querySelector(".card-title").textContent = song.title;
   node.querySelector(".card-title").addEventListener("click", showSong);
@@ -253,6 +263,7 @@ function renderModal() {
   const song = state.modalSong;
   if (!song) return;
   const selected = selectedFormat(song.id);
+  const releaseTag = releaseLabel(song);
   const dots = "●".repeat(Math.max(1, Math.min(4, song.difficulty)));
   const coverUrl = coverImageUrl(song);
   const coverImage = coverUrl ? '<img src="' + escapeHtml(coverUrl) + '" alt="" loading="eager" decoding="async">' : "";
@@ -267,6 +278,7 @@ function renderModal() {
         </div>
         <div class="modal-heading">
           ${badge(song)}
+          ${releaseTag ? '<span class="song-release-tag">'+escapeHtml(releaseTag)+'</span>' : ''}
           <p class="modal-artist">${escapeHtml(song.artist)}</p>
           <h2 id="modal-title">${escapeHtml(song.title)}</h2>
           <p class="modal-description">${escapeHtml(song.description)}</p>
@@ -323,6 +335,13 @@ function closeSong() {
 els.search.addEventListener("input", () => { state.query = els.search.value; state.visible = PAGE_SIZE; els.search.parentElement.classList.toggle("has-value", Boolean(state.query)); renderCatalog(); });
 els.searchClear.addEventListener("click", () => { els.search.value = ""; state.query = ""; state.visible = PAGE_SIZE; els.search.parentElement.classList.remove("has-value"); els.search.focus(); renderCatalog(); });
 els.sort.addEventListener("change", () => { state.sort = els.sort.value; state.visible = PAGE_SIZE; renderCatalog(); });
+const releaseSelect=document.querySelector("#release-period");
+releaseSelect.value=state.releasePeriod;
+releaseSelect.addEventListener("change", () => {
+  state.releasePeriod = RELEASE_PERIODS.includes(releaseSelect.value) ? releaseSelect.value : "all";
+  state.visible = PAGE_SIZE;
+  renderCatalog();
+});
 els.loadMore.addEventListener("click", () => { state.visible += PAGE_SIZE; renderCatalog(); });
 els.cartTrigger.addEventListener("click", openCart); els.cartClose.addEventListener("click", closeCart); els.modalClose.addEventListener("click", closeSong);
 els.cartBackdrop.addEventListener("click", (event) => { if (event.target === els.cartBackdrop) closeCart(); });
@@ -344,13 +363,16 @@ els.search.value = state.query;
 els.search.parentElement.classList.toggle("has-value", Boolean(state.query));
 Promise.all([
   fetch("./songs.json").then((response) => { if (!response.ok) throw new Error("Не удалось загрузить каталог"); return response.json(); }),
-  fetch("./covers.json").then((response) => response.ok ? response.json() : { covers: {} }).catch(() => ({ covers: {} }))
+  fetch("./covers.json").then((response) => response.ok ? response.json() : { covers: {} }).catch(() => ({ covers: {} })),
+  fetch("./release-dates.json").then((response) => response.ok ? response.json() : { dates: {} }).catch(() => ({ dates: {} }))
 ])
-  .then(([payload, art]) => {
+  .then(([payload, art, musicReleases]) => {
     const covers = art && typeof art.covers === "object" && art.covers ? art.covers : {};
     state.songs = (Array.isArray(payload.songs) ? payload.songs : []).map((song) => {
       const cover = covers[String(song.id)];
+      const releaseRecord = musicReleases?.dates?.[String(song.id)];
       return { ...song,
+        releaseDate: song.releaseDate || releaseRecord?.date || "",
         coverUrl: cover?.url || song.coverUrl || "",
         coverSource: cover?.source || "",
         coverAlbum: cover?.album || "" };
