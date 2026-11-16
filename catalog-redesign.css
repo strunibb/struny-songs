@@ -253,3 +253,8 @@
   .catalog-tools #release-period,.catalog-tools #sort{flex:1 1 140px;min-width:0;font-size:11px}
   .song-grid .new-label{max-width:76px}
 }
+
+
+/* Album-track status for recently released recordings, never prints the year. */
+.album-track-fresh{display:inline-block;margin-top:5px;padding:3px 7px;border:1px solid #d8e6ac;
+  border-radius:7px;background:#ebf7d4;color:#50672c;font-size:10px;font-weight:800}

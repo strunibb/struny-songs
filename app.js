@@ -182,6 +182,12 @@ function renderCatalog() {
   syncFilters();
   els.title.textContent = state.query || state.section !== "Все" ? "Результаты поиска" : "Вся библиотека";
   els.empty.hidden = songs.length !== 0;
+  if (!songs.length) {
+    els.empty.querySelector("h2").textContent = state.releasePeriod !== "all" ? "За этот период пока ничего не найдено" : "Песня не найдена";
+    els.empty.querySelector("p").textContent = state.releasePeriod !== "all"
+      ? "Показываем только песни с подтверждённой датой релиза. Попробуйте другой период."
+      : "Напишите Никите — возможно, именно она станет следующим разбором.";
+  }
   els.grid.hidden = songs.length === 0;
   const remaining = songs.length - visible.length;
   els.loadMore.parentElement.hidden = remaining <= 0;
