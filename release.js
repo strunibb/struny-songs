@@ -30,6 +30,7 @@ function releaseRecency(song, now = new Date()) {
   if (!info) return null;
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   if (info.year > today.getFullYear()) return null;
+  if (info.year===today.getFullYear() && info.month!==null && info.month>today.getMonth()+1) return null;
   if (info.date && info.date > today) return null;
   if (info.date) {
     const days = Math.round((today - info.date) / 86400000);
