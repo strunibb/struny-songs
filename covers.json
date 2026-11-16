@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T11:02:31.735Z",
+  "updatedAt": "2026-11-16T20:58:35.350Z",
   "covers": {
     "1": {
       "url": "https://coverartarchive.org/release/e2ddc9e6-4540-4ace-8e16-c8129b749202/38255140400-500.jpg",
@@ -5012,7 +5012,8 @@
       "source": "https://musicbrainz.org/release-group/c012b8c9-2de9-4e0b-bb19-e0907d00427e",
       "artist": "KSB muzic",
       "title": "Осень",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Ксб Музик"
     },
     "808": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/62/fd/14/62fd14aa-d202-a86a-d948-0a5550b35fc3/dj.rkzuiqye.jpg/600x600bb.jpg",
