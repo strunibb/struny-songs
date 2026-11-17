@@ -30,7 +30,8 @@ function previewArtistEquals(actual, expected) {
   /* Store credits sometimes append collaborators. Match the named principal artist,
      never a merely similar name or a karaoke/tribute artist. */
   const firstCredit = value => value.split(/\s+(?:feat|featuring|ft|with|and)\s+/i)[0].trim();
-  return firstCredit(a) === firstCredit(b);
+  /* The store may append collaborators to a known principal artist. */
+  return firstCredit(a) === b;
 }
 
 function previewTitleEquals(actual, expected) {
@@ -111,7 +112,7 @@ function previewJsonp(term,country) {
       try { delete window[callback]; } catch { window[callback] = undefined; }
       if (error) reject(error); else resolve(data);
     };
-    const timeout = setTimeout(() => stop(new Error("Timeout")), 9000);
+    const timeout = setTimeout(() => stop(new Error("Timeout")), 6000);
     window[callback] = data => stop(null,data);
     script.async = true;
     script.referrerPolicy = "no-referrer";
@@ -135,14 +136,19 @@ function previewLookup(song) {
     const search = String(song.artist || "") + " " + String(song.title || "");
     /* A second storefront helps tracks omitted from the US catalogue.
        Search only when a visitor clicks, rather than 1,100+ API calls on load. */
+    let hadSuccessfulLookup = false;
     for (const country of ["US","RU"]) {
       try {
         const result = await previewJsonp(search,country);
+        hadSuccessfulLookup = true;
         const url = previewFindExact(result,song);
         if (url) { previewState.cache.set(key,url); return url; }
-      } catch { /* Keep the verified YouTube fallback available. */ }
+      } catch {
+        /* Avoid a second long wait when the service is unreachable. */
+        if (country === "US") break;
+      }
     }
-    previewState.cache.set(key,"");
+    if (hadSuccessfulLookup) previewState.cache.set(key,"");
     return "";
   })();
   previewState.pending.set(key,task);
