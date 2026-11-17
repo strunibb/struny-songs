@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T20:58:35.350Z",
+  "updatedAt": "2026-11-17T03:35:55.804Z",
   "covers": {
     "1": {
       "url": "https://coverartarchive.org/release/e2ddc9e6-4540-4ace-8e16-c8129b749202/38255140400-500.jpg",
@@ -5710,7 +5710,8 @@
       "source": "https://musicbrainz.org/release-group/7d8051b3-4ba2-4e90-9c4a-f96e32da43c9",
       "artist": "T-Fest",
       "title": "Молодость",
-      "origin": "musicbrainz-exact"
+      "origin": "musicbrainz-exact",
+      "album": "Молодость 97'"
     },
     "926": {
       "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/16/75/b1/1675b1ab-3a9e-5645-08dd-7821cabe233d/cover.jpg/600x600bb.jpg",
