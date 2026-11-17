@@ -7,7 +7,7 @@ function previewNorm(value){
     .replace(/\s+/g," ").trim();
 }
 function previewRecord(song) {
-  if(!song)return null;
+  if(!song || song.previewDisabled===true)return null;
   const manual=typeof song.previewVideoId==="string" ? song.previewVideoId : "";
   if(YOUTUBE_ID.test(manual)){
     const start=Number.isInteger(song.previewStart)&&song.previewStart>=0&&song.previewStart<=3600 ? song.previewStart : 0;
