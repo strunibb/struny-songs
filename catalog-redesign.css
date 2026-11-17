@@ -258,3 +258,57 @@
 /* Album-track status for recently released recordings, never prints the year. */
 .album-track-fresh{display:inline-block;margin-top:5px;padding:3px 7px;border:1px solid #d8e6ac;
   border-radius:7px;background:#ebf7d4;color:#50672c;font-size:10px;font-weight:800}
+
+
+/* Song preview controls: discreet, clear and mobile-friendly. */
+.song-card .preview-button{
+  display:flex;width:100%;min-height:34px;align-items:center;justify-content:center;gap:8px;
+  border:1px solid #e9dfef;border-radius:9px;background:#faf8fc;color:#746580;
+  font-size:10px;font-weight:800;letter-spacing:.01em;cursor:pointer;
+  transition:background .15s ease,border-color .15s ease,transform .15s ease;
+}
+.song-card .preview-button:hover{background:#f2eaf8;border-color:#d2b5e3}
+.song-card .preview-button.preview-available{
+  background:#f2ebfa;color:#673397;border-color:#d7bde9
+}
+.song-card .preview-button.preview-available:hover{background:#e9dcf5}
+.song-card .preview-button:focus-visible,.modal-preview-action .preview-button:focus-visible,
+.album-track-actions .preview-button:focus-visible{outline:3px solid #995fc3;outline-offset:2px}
+.song-card .card-body{gap:9px}
+.modal-preview-action{margin:14px 0 0}
+.modal-preview-action .preview-button{min-height:40px;border:1px solid #d9c5e8;border-radius:10px;
+  background:#f8f2fc;color:#713f95;padding:9px 18px;font-size:12px;font-weight:800;cursor:pointer}
+.modal-preview-action .preview-button:hover{background:#eee3f5}
+.album-track-actions .preview-button{min-height:34px;border:1px solid #e6dbee;border-radius:9px;
+  background:#faf8fc;color:#765d89;padding:5px 9px;font-size:10px;cursor:pointer}
+.album-track-actions .preview-button.preview-available{color:#7535a7;border-color:#d5bce8}
+.preview-backdrop[hidden]{display:none!important}
+.preview-backdrop{position:fixed;inset:0;z-index:10000;display:flex;align-items:center;justify-content:center;
+  padding:20px;background:rgba(19,14,27,.78);backdrop-filter:blur(10px)}
+.preview-dialog{width:min(100%,730px);max-height:calc(100dvh - 32px);overflow:auto;
+  background:#fff;border:1px solid #e7d9ee;border-radius:20px;box-shadow:0 30px 100px rgba(0,0,0,.33)}
+.preview-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 23px}
+.preview-title-block{min-width:0}
+.preview-title-block small{font-size:10px;font-weight:850;letter-spacing:.12em;color:#976eae}
+.preview-title-block h2{margin:5px 0 4px;color:#35203d;font-size:22px;line-height:1.2;overflow-wrap:anywhere}
+.preview-title-block p{margin:0;font-size:12px;color:#806b8b}
+.preview-close{border:0;background:#f4edf7;border-radius:50%;width:40px;height:40px;min-width:40px;
+  display:grid;place-items:center;font-size:28px;color:#54345c;cursor:pointer}
+.preview-player{width:100%;min-height:270px;background:#15141a;aspect-ratio:16/9;display:grid;place-items:center}
+.preview-player iframe{display:block;width:100%;height:100%;border:0;min-height:270px}
+.preview-foot{display:flex;align-items:center;justify-content:space-between;gap:15px;
+  padding:15px 23px;color:#766b7e}
+.preview-foot p{font-size:11px;line-height:1.5;margin:0;max-width:440px}
+.preview-foot a{white-space:nowrap;font-size:11px;font-weight:850;color:#7441a2;text-decoration:none}
+.preview-foot a:hover{text-decoration:underline}
+@media(max-width:650px){
+  .preview-backdrop{padding:10px}
+  .preview-dialog{max-height:calc(100dvh - 20px);border-radius:15px}
+  .preview-head{padding:14px 15px}
+  .preview-title-block h2{font-size:18px}
+  .preview-player{min-height:220px;aspect-ratio:16/10}
+  .preview-player iframe{min-height:220px}
+  .preview-foot{padding:13px 15px;flex-wrap:wrap}
+  .album-track-actions{flex-wrap:wrap}
+}
+@media(prefers-reduced-motion:reduce){.song-card .preview-button{transition:none}}

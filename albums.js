@@ -139,6 +139,7 @@ function renderAlbumModal() {
       button.addEventListener("click",()=>toggleCart(song,format));
       actions.append(button);
     }
+    actions.append(previewButton(song,"album"));
     entry.append(num,meta,actions);group.append(entry);
   });
   root.append(group);

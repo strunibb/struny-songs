@@ -168,6 +168,7 @@ function createCard(song) {
   video.setAttribute("aria-pressed", String(selected === "video"));
   pdf.addEventListener("click", () => toggleCart(song, "pdf"));
   if (song.videoAvailable !== false) video.addEventListener("click", () => toggleCart(song, "video"));
+  previewDecorateCard(node,song);
   return node;
 }
 
@@ -328,6 +329,7 @@ function renderModal() {
     cartButton.addEventListener("click", openCart);
     els.modalContent.querySelector(".modal-buy").append(cartButton);
   }
+  previewDecorateModal(els.modalContent,song);
 }
 function openSong(id) { state.modalAlbum = null; state.modalSong = state.songs.find((song) => song.id === id); renderModal(); els.songBackdrop.hidden = false; document.body.classList.add("no-scroll"); els.modalClose.focus(); }
 function closeSong() {
