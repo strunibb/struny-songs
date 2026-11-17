@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T09:00:22.657Z",
+  "updatedAt": "2026-11-17",
   "tracks": {
     "681": {
       "artist": "Billie Eilish",
@@ -39,6 +39,14 @@
       "title": "Sorry",
       "videoId": "fRh_vgS2dFE",
       "start": 25,
+      "source": "official-artist-youtube",
+      "verifiedAt": "2026-11-17"
+    },
+    "1077": {
+      "artist": "Ed Sheeran",
+      "title": "Shivers",
+      "videoId": "Il0S8BoucSA",
+      "start": 42,
       "source": "official-artist-youtube",
       "verifiedAt": "2026-11-17"
     }
