@@ -1,0 +1,57 @@
+/* Compact inline musical listening panels, November 2026. */
+.song-card .preview-button,
+.modal-preview-action .preview-button,
+.album-track-actions .preview-button {
+  border-color:#d7bde9;
+  background:#f1e8f8;
+  color:#65318d;
+  transition:background .15s ease,border-color .15s ease;
+}
+.song-card .preview-button:hover,
+.modal-preview-action .preview-button:hover,
+.album-track-actions .preview-button:hover {background:#e9d9f3;border-color:#c79edf}
+.preview-button.is-open {background:#65318d!important;border-color:#65318d!important;color:#fff!important}
+.preview-button:disabled {opacity:.6;cursor:not-allowed}
+.song-preview-panel {
+  width:100%;
+  min-width:0;
+  padding:12px;
+  margin:1px 0 5px;
+  border:1px solid #e4d4ee;
+  border-radius:12px;
+  background:linear-gradient(160deg,#fff,#faf6fc);
+  box-shadow:0 5px 18px rgba(59,28,76,.055);
+  overflow:hidden;
+  animation:preview-appear .2s ease-out;
+}
+.song-preview-heading {display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:9px}
+.song-preview-heading span {font-size:9px;font-weight:850;color:#614079;letter-spacing:.075em}
+.song-preview-heading small {font-size:9px;font-weight:800;color:#85748f;letter-spacing:.05em}
+.song-preview-apple {display:block;width:100%;height:175px;min-height:175px;border:0;border-radius:9px;background:#fff}
+.song-preview-youtube {display:block;width:100%;aspect-ratio:16/9;min-height:155px;border:0;border-radius:9px;background:#19151f}
+.song-preview-footnote,.preview-inline-status,.preview-inline-unavailable {
+  color:#82738c;font-size:10px;line-height:1.55;
+}
+.song-preview-footnote {margin:9px 1px 0}
+.preview-inline-status {margin:4px 0;display:flex;align-items:center;gap:9px;min-height:42px}
+.preview-inline-status::before {content:"";display:inline-block;width:14px;height:14px;flex:0 0 14px;border:2px solid #ead7f5;border-top-color:#7d40aa;border-radius:50%;animation:preview-spin .9s linear infinite}
+.preview-inline-unavailable {margin:3px 0;color:#796982}
+.modal-preview-action .song-preview-panel {margin-top:10px}
+.album-track>.song-preview-panel {grid-column:1/-1;margin:3px 0 5px}
+.album-track .song-preview-apple {height:175px}
+.album-track .song-preview-youtube {max-height:280px}
+@keyframes preview-appear {from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+@keyframes preview-spin {to{transform:rotate(360deg)}}
+@media(max-width:560px) {
+  .song-card .preview-button {min-height:40px;font-size:11px}
+  .album-track>.song-preview-panel {grid-column:1/-1}
+  .album-track-actions .preview-button {width:100%;justify-content:center;min-height:39px}
+  .album-track-actions {flex-wrap:wrap}
+  .song-preview-panel {padding:10px;border-radius:10px}
+  .song-preview-apple {height:160px;min-height:160px}
+  .song-preview-youtube {min-height:140px}
+}
+@media(prefers-reduced-motion:reduce) {
+  .song-preview-panel {animation:none}
+  .preview-inline-status::before {animation:none}
+}
