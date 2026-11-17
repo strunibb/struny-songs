@@ -1,7 +1,199 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T08:33:42.516Z",
+  "updatedAt": "2026-11-17T17:57:59.935Z",
   "dates": {
+    "312": {
+      "date": "1989",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/d012e956-e5ca-4f31-84b2-9ed7d15436fb",
+      "artist": "Кино",
+      "title": "Звезда по имени Солнце",
+      "confidence": "musicbrainz-exact"
+    },
+    "322": {
+      "date": "1989",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/6700ef53-5801-4b51-ae55-77f9be2e7146",
+      "artist": "Кино",
+      "title": "Пачка сигарет",
+      "confidence": "musicbrainz-exact"
+    },
+    "347": {
+      "date": "1994",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/f8e1a712-736b-4d50-88b8-1ac37e04f697",
+      "artist": "Король и Шут",
+      "title": "Лесник",
+      "confidence": "musicbrainz-exact"
+    },
+    "971": {
+      "date": "2023-07-28",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/e1370b68-043d-4ae8-8107-defcd8e89f26",
+      "artist": "XOLIDAYBOY",
+      "title": "Океаны",
+      "confidence": "musicbrainz-exact"
+    },
+    "972": {
+      "date": "2024-02-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/0f8b9cf8-d33c-49ed-94ed-500ec0e3de09",
+      "artist": "XOLIDAYBOY",
+      "title": "Пожары",
+      "confidence": "musicbrainz-exact"
+    },
+    "975": {
+      "date": "2025-04-25",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/0e20eb44-e4ee-410e-be89-1746ba3b77aa",
+      "artist": "XOLIDAYBOY",
+      "title": "Love Again",
+      "confidence": "musicbrainz-exact"
+    },
+    "976": {
+      "date": "2025",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/fae15375-e5a7-4787-bfe3-bab4507f824e",
+      "artist": "XOLIDAYBOY",
+      "title": "PILOT",
+      "confidence": "musicbrainz-exact"
+    },
+    "977": {
+      "date": "2011-12-09",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/2db10369-4b44-46b4-825f-f09c91f6230e",
+      "artist": "Yiruma",
+      "title": "River Flows in You",
+      "confidence": "musicbrainz-exact"
+    },
+    "978": {
+      "date": "2019-09-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/ca8c487e-c4b1-4746-ab0b-e989475418e4",
+      "artist": "Zivert",
+      "title": "Beverly Hills",
+      "confidence": "musicbrainz-exact"
+    },
+    "982": {
+      "date": "2022",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/00d969cd-090e-4731-a8e1-b77515f97a2e",
+      "artist": "Zoloto",
+      "title": "Непроизошло",
+      "confidence": "musicbrainz-exact"
+    },
+    "983": {
+      "date": "2024-09-20",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/bca7cb7a-e91e-41b3-a039-45d87e95981c",
+      "artist": "Zoloto",
+      "title": "Осенний пожар",
+      "confidence": "musicbrainz-exact"
+    },
+    "984": {
+      "date": "2024-09-20",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/dc6ecb72-0d58-4235-bf92-6e9fc5f2145c",
+      "artist": "Zoloto",
+      "title": "Перевоплотиться",
+      "confidence": "musicbrainz-exact"
+    },
+    "985": {
+      "date": "2020-12-04",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/46fd4c46-6a93-4c72-88de-74b6837b7f0b",
+      "artist": "Zoloto",
+      "title": "Прикоснись ко мне",
+      "confidence": "musicbrainz-exact"
+    },
+    "986": {
+      "date": "2019-04-05",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/91e4c7fa-036a-4f83-93d5-2cba95b5e3bf",
+      "artist": "Zoloto",
+      "title": "Улицы ждали",
+      "confidence": "musicbrainz-exact"
+    },
+    "987": {
+      "date": "2019-04-05",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/97cfdb85-861b-4923-a076-ad964e0357e8",
+      "artist": "Zoloto",
+      "title": "PMML",
+      "confidence": "musicbrainz-exact"
+    },
+    "988": {
+      "date": "1997",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/749d7d7c-406f-426a-a7f5-9d00d52caebd",
+      "artist": "Натали",
+      "title": "Ветер с моря дул",
+      "confidence": "musicbrainz-exact"
+    },
+    "989": {
+      "date": "1995",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/0fa45e2c-0625-4cff-b94c-a04476465446",
+      "artist": "Нэнси",
+      "title": "Отель",
+      "confidence": "musicbrainz-exact"
+    },
+    "991": {
+      "date": "2018-10-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/13279b54-df13-449f-bf7d-ea1295d92d97",
+      "artist": "Автоспорт",
+      "title": "Я не буду спать",
+      "confidence": "musicbrainz-exact"
+    },
+    "994": {
+      "date": "2026-03-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9058bb81-d076-4888-b8b5-410c44ab5911",
+      "artist": "Дайте танк (!)",
+      "title": "Песня",
+      "confidence": "musicbrainz-exact"
+    },
+    "998": {
+      "date": "1995-09-12",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/cd0bfd67-4aff-41ef-b6b1-20544ca9fabf",
+      "artist": "Татьяна Овсиенко",
+      "title": "Школьная пора",
+      "confidence": "musicbrainz-exact"
+    },
+    "999": {
+      "date": "2015-08-21",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/7d3f2fe8-690a-4618-8cff-71a0a307cb42",
+      "artist": "Charlie Puth",
+      "title": "One Call Away",
+      "confidence": "musicbrainz-exact"
+    },
+    "1000": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/25421545-f4e6-43cc-a23b-31923b6ec702",
+      "artist": "Мумий Тролль",
+      "title": "Это по любви",
+      "confidence": "musicbrainz-exact"
+    },
+    "1002": {
+      "date": "2006-12-05",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/28f6a5c4-53c6-4de3-8009-0a76a104a8df",
+      "artist": "Король и Шут",
+      "title": "Ром",
+      "confidence": "musicbrainz-exact"
+    },
+    "1003": {
+      "date": "2004",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/88b02da7-35d6-4581-9fc8-eb9c6a529770",
+      "artist": "Вячеслав Бутусов",
+      "title": "Девушка по городу",
+      "confidence": "musicbrainz-exact"
+    },
     "1007": {
       "date": "1998-06-01",
       "precision": "day",
@@ -548,6 +740,201 @@
     }
   },
   "attempts": {
+    "312": {
+      "signature": "кино|звезда по имени солнце",
+      "checkedAt": "2026-11-17T17:55:31.778Z",
+      "found": true
+    },
+    "322": {
+      "signature": "кино|пачка сигарет",
+      "checkedAt": "2026-11-17T17:55:23.129Z",
+      "found": true
+    },
+    "347": {
+      "signature": "король и шут|лесник",
+      "checkedAt": "2026-11-17T17:55:33.187Z",
+      "found": true
+    },
+    "970": {
+      "signature": "xolidayboy|мы не будем спать",
+      "checkedAt": "2026-11-17T17:57:59.540Z",
+      "found": false
+    },
+    "971": {
+      "signature": "xolidayboy|океаны",
+      "checkedAt": "2026-11-17T17:57:58.033Z",
+      "found": true
+    },
+    "972": {
+      "signature": "xolidayboy|пожары",
+      "checkedAt": "2026-11-17T17:57:49.426Z",
+      "found": true
+    },
+    "973": {
+      "signature": "xolidayboy|твои романс",
+      "checkedAt": "2026-11-17T17:57:48.021Z",
+      "found": false
+    },
+    "974": {
+      "signature": "xolidayboy|ты не хотела",
+      "checkedAt": "2026-11-17T17:57:39.365Z",
+      "found": false
+    },
+    "975": {
+      "signature": "xolidayboy|love again",
+      "checkedAt": "2026-11-17T17:57:37.920Z",
+      "found": true
+    },
+    "976": {
+      "signature": "xolidayboy|pilot",
+      "checkedAt": "2026-11-17T17:57:29.303Z",
+      "found": true
+    },
+    "977": {
+      "signature": "yiruma|river flows in you",
+      "checkedAt": "2026-11-17T17:57:27.871Z",
+      "found": true
+    },
+    "978": {
+      "signature": "zivert|beverly hills",
+      "checkedAt": "2026-11-17T17:57:19.228Z",
+      "found": true
+    },
+    "980": {
+      "signature": "zoloto|грустно на афтепати",
+      "checkedAt": "2026-11-17T17:56:27.537Z",
+      "found": false
+    },
+    "981": {
+      "signature": "zoloto|дома",
+      "checkedAt": "2026-11-17T17:56:26.385Z",
+      "found": false
+    },
+    "982": {
+      "signature": "zoloto|непроизошло",
+      "checkedAt": "2026-11-17T17:56:03.408Z",
+      "found": true
+    },
+    "983": {
+      "signature": "zoloto|осеннии пожар",
+      "checkedAt": "2026-11-17T17:56:01.903Z",
+      "found": true
+    },
+    "984": {
+      "signature": "zoloto|перевоплотиться",
+      "checkedAt": "2026-11-17T17:55:53.322Z",
+      "found": true
+    },
+    "985": {
+      "signature": "zoloto|прикоснись ко мне",
+      "checkedAt": "2026-11-17T17:55:51.833Z",
+      "found": true
+    },
+    "986": {
+      "signature": "zoloto|улицы ждали",
+      "checkedAt": "2026-11-17T17:55:43.214Z",
+      "found": true
+    },
+    "987": {
+      "signature": "zoloto|pmml",
+      "checkedAt": "2026-11-17T17:55:41.765Z",
+      "found": true
+    },
+    "988": {
+      "signature": "натали|ветер с моря дул",
+      "checkedAt": "2026-11-17T17:55:21.697Z",
+      "found": true
+    },
+    "989": {
+      "signature": "нэнси|отель",
+      "checkedAt": "2026-11-17T17:55:13.057Z",
+      "found": true
+    },
+    "990": {
+      "signature": "песни у костра|алые паруса",
+      "checkedAt": "2026-11-17T17:55:04.445Z",
+      "found": false
+    },
+    "991": {
+      "signature": "автоспорт|я не буду спать",
+      "checkedAt": "2026-11-17T17:55:02.997Z",
+      "found": true
+    },
+    "992": {
+      "signature": "пицца|сны",
+      "checkedAt": "2026-11-17T17:55:01.537Z",
+      "found": false
+    },
+    "993": {
+      "signature": "hammali|мои дом там где ты",
+      "checkedAt": "2026-11-17T17:55:00.423Z",
+      "found": false
+    },
+    "994": {
+      "signature": "даите танк|песня",
+      "checkedAt": "2026-11-17T17:54:37.345Z",
+      "found": true
+    },
+    "995": {
+      "signature": "тима белорусских|последнии герои",
+      "checkedAt": "2026-11-17T17:54:36.201Z",
+      "found": false
+    },
+    "996": {
+      "signature": "мари краимбрери|даваи не ждать",
+      "checkedAt": "2026-11-17T17:54:13.144Z",
+      "found": false
+    },
+    "997": {
+      "signature": "ирина отиева|последняя поэма",
+      "checkedAt": "2026-11-17T17:54:11.682Z",
+      "found": false
+    },
+    "998": {
+      "signature": "татьяна овсиенко|школьная пора",
+      "checkedAt": "2026-11-17T17:54:03.080Z",
+      "found": true
+    },
+    "999": {
+      "signature": "charlie puth|one call away",
+      "checkedAt": "2026-11-17T17:54:01.894Z",
+      "found": true
+    },
+    "1000": {
+      "signature": "мумии тролль|это по любви",
+      "checkedAt": "2026-11-17T17:53:53.061Z",
+      "found": true
+    },
+    "1001": {
+      "signature": "dabro|на счастье",
+      "checkedAt": "2026-11-17T17:53:51.563Z",
+      "found": false
+    },
+    "1002": {
+      "signature": "король и шут|ром",
+      "checkedAt": "2026-11-17T17:53:42.974Z",
+      "found": true
+    },
+    "1003": {
+      "signature": "вячеслав бутусов|девушка по городу",
+      "checkedAt": "2026-11-17T17:53:34.448Z",
+      "found": true
+    },
+    "1004": {
+      "signature": "влади|сочиняи мечты feat уля wow band",
+      "checkedAt": "2026-11-17T17:53:32.910Z",
+      "found": false
+    },
+    "1005": {
+      "signature": "лсп gone fludd|кино",
+      "checkedAt": "2026-11-17T17:53:31.768Z",
+      "found": false
+    },
+    "1006": {
+      "signature": "дора|лонлилав",
+      "checkedAt": "2026-11-17T17:53:30.307Z",
+      "found": false
+    },
     "1007": {
       "signature": "демо|даваите петь",
       "checkedAt": "2026-11-17T08:33:42.179Z",
@@ -1141,6 +1528,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 68
+    "verifiedDates": 92
   }
 }
