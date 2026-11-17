@@ -1,0 +1,97 @@
+name: Проверка музыкальных фрагментов YouTube
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/song-previews.yml"
+      - "scripts/resolve-song-previews.mjs"
+  workflow_dispatch:
+  schedule:
+    - cron: "42 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: struny-song-previews
+  cancel-in-progress: false
+
+jobs:
+  preview-sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Скачать репозиторий
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Получить действующий каталог с GitHub Pages
+        run: git fetch origin gh-pages
+      - name: Найти проверенные официальные записи
+        env:
+          PREVIEW_LOOKUP_LIMIT: "30"
+        run: node scripts/resolve-song-previews.mjs
+      - name: Безопасно объединить результаты с актуальной версией сайта
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4; do
+            git fetch origin gh-pages
+            git checkout -B gh-pages origin/gh-pages
+            node --input-type=module <<'NODE'
+          import {readFileSync,writeFileSync} from "node:fs";
+          const read=(file,fallback)=>{
+            try{return JSON.parse(readFileSync(file,"utf8"));}
+            catch{return fallback;}
+          };
+          const live=read("previews.json",{version:1,tracks:{},attempts:{}});
+          const updated=read("/tmp/struny-previews.json",{version:1,tracks:{},attempts:{}});
+          const songs=read("songs.json",{songs:[]}).songs||[];
+          const catalog=new Map(songs.map(song=>[String(song.id),song]));
+          live.version=1;live.tracks||={};live.attempts||={};
+          let changes=0;
+          for(const [id,video] of Object.entries(updated.tracks||{})){
+            const song=catalog.get(id);
+            if(!song||song.previewDisabled===true||song.previewVideoId)continue;
+            if(video.artist!==song.artist||video.title!==song.title)continue;
+            if(!/^[A-Za-z0-9_-]{11}$/.test(video.videoId||""))continue;
+            if(!live.tracks[id]){
+              live.tracks[id]=video;changes++;
+            }
+          }
+          for(const [id,attempt] of Object.entries(updated.attempts||{})){
+            if(!catalog.has(id))continue;
+            if(!live.attempts[id]||live.attempts[id].checkedAt<attempt.checkedAt){
+              live.attempts[id]=attempt;changes++;
+            }
+          }
+          for(const key of ["tracks","attempts"]){
+            for(const id of Object.keys(live[key])) {
+              if(!catalog.has(id)){delete live[key][id];changes++;}
+            }
+          }
+          if(changes){
+            live.updatedAt=new Date().toISOString();
+            live.summary={catalogSize:songs.length,verifiedVideos:Object.keys(live.tracks).length};
+            writeFileSync("previews.json",JSON.stringify(live,null,2)+"\n");
+          }
+          console.log("Merged",changes,"total verified",Object.keys(live.tracks).length);
+          NODE
+            if git diff --quiet -- previews.json; then
+              echo "Nothing new to publish"
+              exit 0
+            fi
+            git add previews.json
+            git commit -m "Index verified source videos for song excerpts"
+            if git push origin gh-pages; then
+              echo "Published official YouTube source links"
+              exit 0
+            fi
+            echo "Live page changed concurrently; retrying"
+            sleep 5
+          done
+          echo "Could not safely publish the latest batch" >&2
+          exit 1
