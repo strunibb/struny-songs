@@ -10,6 +10,14 @@
       "source": "official-artist-youtube",
       "verifiedAt": "2026-11-17"
     },
+    "686": {
+      "artist": "Billie Eilish",
+      "title": "Lovely",
+      "videoId": "V1Pl8CzNzCw",
+      "start": 55,
+      "source": "official-artist-youtube",
+      "verifiedAt": "2026-11-17"
+    },
     "736": {
       "artist": "Ed Sheeran",
       "title": "Perfect",
@@ -23,6 +31,14 @@
       "title": "Shape of You",
       "videoId": "JGwWNGJdvx8",
       "start": 35,
+      "source": "official-artist-youtube",
+      "verifiedAt": "2026-11-17"
+    },
+    "1029": {
+      "artist": "Justin Bieber",
+      "title": "Sorry",
+      "videoId": "fRh_vgS2dFE",
+      "start": 25,
       "source": "official-artist-youtube",
       "verifiedAt": "2026-11-17"
     }
