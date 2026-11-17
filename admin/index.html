@@ -7,8 +7,8 @@
   <meta name="description" content="Контент-панель каталога «Струны будущего».">
   <title>Управление разборами | Струны будущего</title>
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css?v=20261116-release-1">
-  <script src="./app.js?v=20261116-release-1" defer></script>
+  <link rel="stylesheet" href="./style.css?v=20261117-previews-1">
+  <script src="./app.js?v=20261117-previews-1" defer></script>
 </head>
 <body>
 <a class="skip" href="#songs">К списку песен</a>
@@ -59,6 +59,8 @@
           <label class="field"><span>Тональность</span><input id="keyName" maxlength="55" value="Оригинал"></label>
           <label class="field"><span>Название альбома</span><input id="albumName" maxlength="160" placeholder="Например, Группа крови"><small>Укажи одинаковое название для песен одного альбома</small></label>
           <label class="field"><span>Дата выхода песни</span><input id="releaseDate" type="date" max="2099-12-31" autocomplete="off"><small id="releaseHelp">Только подтверждённый музыкальный релиз. Не дата добавления разбора.</small></label>
+          <label class="field"><span>Оригинальная запись на YouTube</span><input id="previewYouTubeUrl" type="url" maxlength="350" placeholder="https://www.youtube.com/watch?v=..."><small id="previewSourceInfo">Не ссылка на платный разбор. Только публичная официальная запись песни.</small></label>
+          <label class="field"><span>Начало фрагмента, секунд</span><input id="previewStart" type="number" min="0" max="3600" step="1" value="0"><small>Плеер покажет 30 секунд с выбранной отметки.</small></label>
           <label class="field"><span>Ссылка на обложку</span><input id="coverUrl" type="url" maxlength="900" placeholder="https://…"><small>Только публичный HTTPS-адрес</small></label>
         </div>
         <label class="field full"><span>Описание</span><textarea id="description" rows="3" maxlength="600" placeholder="Что получит ученик и какая техника разбирается"></textarea></label>
@@ -66,6 +68,7 @@
           <label><input id="isNew" type="checkbox" checked><span class="switch-label"><b>Новинка</b><small>Отображать в разделе «Новинки»</small></span></label>
           <label><input id="barre" type="checkbox"><span class="switch-label"><b>Баррэ</b><small>В композиции используются баррэ</small></span></label>
           <label><input id="videoAvailable" type="checkbox"><span class="switch-label"><b>Видео подтверждено</b><small>Покупатель сможет выбрать PDF + видео</small></span></label>
+          <label><input id="previewDisabled" type="checkbox"><span class="switch-label"><b>Не показывать прослушивание</b><small>Отключает автоматическую ссылку для этой песни</small></span></label>
           <label><input id="isFree" type="checkbox"><span class="switch-label"><b>Полностью бесплатно</b><small>PDF и видео по 0 ₽, без минимального заказа</small></span></label>
         </div>
         <fieldset class="features"><legend>Что входит в разбор</legend><div id="features" class="feature-options"></div></fieldset>

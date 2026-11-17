@@ -6,7 +6,7 @@ const FEATURES = ["Аккорды","Бой","Перебор","Рифф","Сол�
 const PAGE_SIZE = 80;
 const TIER_PRICES = {"Начинающий":25,"Продвинутый":50,"Профи":100};
 const $ = id => document.getElementById(id);
-const state = { songs:[],covers:{},releases:{},query:"",filter:"all",limit:PAGE_SIZE,current:null,returnFocus:null };
+const state = { songs:[],covers:{},releases:{},previews:{},query:"",filter:"all",limit:PAGE_SIZE,current:null,returnFocus:null };
 const normalize = value => String(value||"").normalize("NFKC").toLocaleLowerCase("ru-RU").replace(/ё/g,"е").trim();
 const price = value => Number(value)===0 ? "Бесплатно" : String(value)+" ₽";
 const element = (name, className, value) => {
@@ -83,16 +83,18 @@ async function loadSongs() {
   $("refresh").disabled=true;
   try {
     const stamp=String(Date.now());
-    const [songResponse,coverResponse,releaseResponse]=await Promise.all([
+    const [songResponse,coverResponse,releaseResponse,previewResponse]=await Promise.all([
       fetch("../songs.json?fresh="+stamp,{cache:"no-store"}),
       fetch("../covers.json?fresh="+stamp,{cache:"no-store"}),
-      fetch("../release-dates.json?fresh="+stamp,{cache:"no-store"}).catch(()=>null)
+      fetch("../release-dates.json?fresh="+stamp,{cache:"no-store"}).catch(()=>null),
+      fetch("../previews.json?fresh="+stamp,{cache:"no-store"}).catch(()=>null)
     ]);
     if(!songResponse.ok)throw Error("HTTP "+songResponse.status);
     const db=await songResponse.json();
     state.songs=Array.isArray(db.songs)?db.songs:[];
     state.covers=coverResponse.ok ? (await coverResponse.json()).covers||{} : {};
     state.releases=releaseResponse?.ok ? (await releaseResponse.json()).dates||{} : {};
+    state.previews=previewResponse?.ok ? (await previewResponse.json()).tracks||{} : {};
     render();
   }catch(e){notify("Не удалось получить каталог. Обнови страницу или проверь соединение.");$("rows").replaceChildren(element("tr"));$("count").textContent="Ошибка загрузки";}
   finally{$("refresh").disabled=false;}
@@ -128,6 +130,13 @@ function openEditor(song) {
     ? "Указан только год или месяц. Для точного фильтра недели/месяца нужна полная дата."
     : "Дата музыкального релиза, а не дата добавления разбора. Если неизвестна, оставь пустым.";
   setInput("coverUrl",song ? (state.covers[String(song.id)]?.url||"") : "");
+  setInput("previewYouTubeUrl",song?.previewVideoId ? "https://www.youtube.com/watch?v="+song.previewVideoId : "");
+  setInput("previewStart",song?.previewStart ?? 0);
+  $("previewDisabled").checked=Boolean(song?.previewDisabled);
+  const indexed=state.previews[String(song?.id)];
+  $("previewSourceInfo").textContent = indexed && indexed.artist===song?.artist && indexed.title===song?.title
+    ? "Автоматически найденная запись: https://www.youtube.com/watch?v="+indexed.videoId+". Можно переопределить ссылкой."
+    : "Публичная официальная запись песни. Автопоиск работает отдельно.";
   setInput("description",song?.description||"");
   $("barre").checked=!!song?.barre;
   $("videoAvailable").checked=editing ? song.videoAvailable!==false : false;
@@ -149,6 +158,17 @@ function closeEditor() {
 function makePayload(operation,song) {
   if(operation==="delete")return {version:1,operation:"delete",id:song.id};
   const coverUrl=$("coverUrl").value.trim();
+  const previewUrl=$("previewYouTubeUrl").value.trim();
+  if(previewUrl) {
+    try {
+      const url=new URL(previewUrl);
+      const host=url.hostname.toLowerCase();
+      const videoId=host==="youtu.be" ? url.pathname.slice(1)
+        : ["youtube.com","www.youtube.com","music.youtube.com"].includes(host) && url.pathname==="/watch"
+          ? url.searchParams.get("v") : "";
+      if(url.protocol!=="https:"||url.username||url.password||!/^[a-zA-Z0-9_-]{11}$/.test(videoId||""))throw Error();
+    }catch {notify("Укажи обычную HTTPS-ссылку YouTube на видео.");$("previewYouTubeUrl").focus();return null;}
+  }
   if(coverUrl) {
     try {
       const url=new URL(coverUrl);
@@ -160,6 +180,8 @@ function makePayload(operation,song) {
     artist:$("artist").value.trim(),title:$("title").value.trim(),
     description:$("description").value.trim(),keyName:$("keyName").value.trim()||"Оригинал",
     albumName:$("albumName").value.trim(),releaseDate:$("releaseDate").value.trim(),isFree:$("isFree").checked,
+    previewYouTubeUrl:$("previewYouTubeUrl").value.trim(),previewStart:Number($("previewStart").value),
+    previewDisabled:$("previewDisabled").checked,
     videoAvailable:$("videoAvailable").checked,
     level:$("level").value,pdfPrice:Number($("pdfPrice").value),videoPrice:Number($("videoPrice").value),
     difficulty:Number($("difficulty").value),barre:$("barre").checked,isNew:$("isNew").checked,
