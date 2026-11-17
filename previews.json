@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17",
+  "updatedAt": "2026-11-17T09:01:40.175Z",
   "tracks": {
     "681": {
       "artist": "Billie Eilish",
@@ -34,6 +34,14 @@
       "source": "official-artist-youtube",
       "verifiedAt": "2026-11-17"
     },
+    "776": {
+      "artist": "Imagine Dragons",
+      "title": "Believer",
+      "videoId": "7wtfhZwyrcc",
+      "start": 25,
+      "source": "official-artist-youtube",
+      "verifiedAt": "2026-11-17"
+    },
     "1029": {
       "artist": "Justin Bieber",
       "title": "Sorry",
@@ -42,11 +50,27 @@
       "source": "official-artist-youtube",
       "verifiedAt": "2026-11-17"
     },
+    "1061": {
+      "artist": "Ed Sheeran",
+      "title": "Galway Girl",
+      "videoId": "87gWaABqGYs",
+      "start": 36,
+      "source": "official-artist-youtube",
+      "verifiedAt": "2026-11-17"
+    },
     "1077": {
       "artist": "Ed Sheeran",
       "title": "Shivers",
       "videoId": "Il0S8BoucSA",
       "start": 42,
+      "source": "official-artist-youtube",
+      "verifiedAt": "2026-11-17"
+    },
+    "1078": {
+      "artist": "Ed Sheeran",
+      "title": "Thinking Out Loud",
+      "videoId": "lp-EO5I60KA",
+      "start": 47,
       "source": "official-artist-youtube",
       "verifiedAt": "2026-11-17"
     }
@@ -180,6 +204,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedVideos": 5
+    "verifiedVideos": 9
   }
 }
