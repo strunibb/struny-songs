@@ -1,7 +1,175 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T00:33:51.628Z",
+  "updatedAt": "2026-11-17T08:33:42.516Z",
   "dates": {
+    "1007": {
+      "date": "1998-06-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/bf7da99f-d952-4290-b773-b137c0e494a0",
+      "artist": "Демо",
+      "title": "Давайте петь",
+      "confidence": "musicbrainz-exact"
+    },
+    "1009": {
+      "date": "1999-01-02",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/e02a8b96-8a7e-4825-880e-7f043fc702e7",
+      "artist": "Неигрушки",
+      "title": "100 дней до приказа",
+      "confidence": "musicbrainz-exact"
+    },
+    "1011": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/fd79e331-e185-4253-98e4-d0dd234a5576",
+      "artist": "Руки Вверх!",
+      "title": "Назови его как меня",
+      "confidence": "musicbrainz-exact"
+    },
+    "1015": {
+      "date": "2026-03-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/869fa03b-cdc1-4a31-a31e-526765e16a8a",
+      "artist": "Дайте танк (!)",
+      "title": "Абориген",
+      "confidence": "musicbrainz-exact"
+    },
+    "1016": {
+      "date": "2012",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/83a01cd9-6609-4366-8e91-edfe5f4c3f07",
+      "artist": "Михаил Круг",
+      "title": "Приходите в мой дом",
+      "confidence": "musicbrainz-exact"
+    },
+    "1017": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/bdea2977-79a0-4652-9d61-d36369669f85",
+      "artist": "Михаил Круг",
+      "title": "Роза",
+      "confidence": "musicbrainz-exact"
+    },
+    "1021": {
+      "date": "2025-07-11",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/6be45a90-ae92-42ac-bc56-925e4454ba60",
+      "artist": "Justin Bieber",
+      "title": "Daisies",
+      "confidence": "musicbrainz-exact"
+    },
+    "1027": {
+      "date": "2019-03-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/853e1775-727f-4b7f-b91d-09be9bb55ef8",
+      "artist": "Billie Eilish",
+      "title": "I Love You",
+      "confidence": "musicbrainz-exact"
+    },
+    "1028": {
+      "date": "2011-10-17",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/2ec351ee-7a05-492a-8382-3ad3d6f320d6",
+      "artist": "Justin Bieber",
+      "title": "Mistletoe",
+      "confidence": "musicbrainz-exact"
+    },
+    "1029": {
+      "date": "2015-10-23",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5a3637a0-aa83-402c-b56e-e1f7304df316",
+      "artist": "Justin Bieber",
+      "title": "Sorry",
+      "confidence": "musicbrainz-exact"
+    },
+    "1030": {
+      "date": "1995",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/a06d01f2-417f-42f6-bb9d-3bbb2e1bb2d8",
+      "artist": "Андрей Губин",
+      "title": "Лиза",
+      "confidence": "musicbrainz-exact"
+    },
+    "1031": {
+      "date": "2022-09-02",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/fc461fd7-5fd3-4f68-918f-97418d8e3768",
+      "artist": "Тринадцать карат",
+      "title": "Во снах",
+      "confidence": "musicbrainz-exact"
+    },
+    "1032": {
+      "date": "2018-11-08",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/bd2f2706-9a7d-433e-ae74-e5fabe56f1a0",
+      "artist": "Дайте танк (!)",
+      "title": "Мы",
+      "confidence": "musicbrainz-exact"
+    },
+    "1035": {
+      "date": "2006-12-05",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/4454215a-e3d7-4248-a207-b9fea46cfc27",
+      "artist": "Король и Шут",
+      "title": "Отражение",
+      "confidence": "musicbrainz-exact"
+    },
+    "1036": {
+      "date": "2023",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/c7e4e6f9-cfbe-4ac8-99e9-4a0c00151e18",
+      "artist": "Лампабикт",
+      "title": "Покой",
+      "confidence": "musicbrainz-exact"
+    },
+    "1037": {
+      "date": "1998",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/887b0be1-0732-43a0-a15d-c26cfca6a09a",
+      "artist": "Ляпис Трубецкой",
+      "title": "В платье белом",
+      "confidence": "musicbrainz-exact"
+    },
+    "1039": {
+      "date": "2024-05-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/17301b3e-cdc1-4a30-9fb7-835e079fdbbf",
+      "artist": "Монеточка",
+      "title": "Селфхарм",
+      "confidence": "musicbrainz-exact"
+    },
+    "1041": {
+      "date": "2022-09-02",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/6e08696f-1971-4ab6-a045-a5282efe8912",
+      "artist": "Тринадцать карат",
+      "title": "Пока он тебя не бросит",
+      "confidence": "musicbrainz-exact"
+    },
+    "1043": {
+      "date": "2017-02-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/4e0ab772-e7fb-4832-8348-82d2a0393e96",
+      "artist": "Пошлая Молли",
+      "title": "Нон-стоп",
+      "confidence": "musicbrainz-exact"
+    },
+    "1045": {
+      "date": "2024-10-11",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/e70a6f71-0578-4639-b1dd-a5619af3c727",
+      "artist": "Lida",
+      "title": "Фото со звездой",
+      "confidence": "musicbrainz-exact"
+    },
+    "1046": {
+      "date": "2026-03-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/495af059-1506-4eb9-a35b-dbda6ce37e07",
+      "artist": "Бонд с кнопкой",
+      "title": "Маяки 2.0",
+      "confidence": "musicbrainz-exact"
+    },
     "1047": {
       "date": "1994",
       "precision": "year",
@@ -380,6 +548,206 @@
     }
   },
   "attempts": {
+    "1007": {
+      "signature": "демо|даваите петь",
+      "checkedAt": "2026-11-17T08:33:42.179Z",
+      "found": true
+    },
+    "1008": {
+      "signature": "людмила гурченко|петербург ленинград",
+      "checkedAt": "2026-11-17T08:33:40.709Z",
+      "found": false
+    },
+    "1009": {
+      "signature": "неигрушки|100 днеи до приказа",
+      "checkedAt": "2026-11-17T08:33:39.417Z",
+      "found": true
+    },
+    "1010": {
+      "signature": "рондо|я постелю тебе под ноги небо",
+      "checkedAt": "2026-11-17T08:33:37.807Z",
+      "found": false
+    },
+    "1011": {
+      "signature": "руки вверх|назови его как меня",
+      "checkedAt": "2026-11-17T08:33:36.364Z",
+      "found": true
+    },
+    "1012": {
+      "signature": "бьянка|на лавочке",
+      "checkedAt": "2026-11-17T08:33:27.927Z",
+      "found": false
+    },
+    "1013": {
+      "signature": "lizer|нарисована",
+      "checkedAt": "2026-11-17T08:33:26.322Z",
+      "found": false
+    },
+    "1014": {
+      "signature": "zoloto|грустно на афтерпати",
+      "checkedAt": "2026-11-17T08:33:17.755Z",
+      "found": false
+    },
+    "1015": {
+      "signature": "даите танк|абориген",
+      "checkedAt": "2026-11-17T08:33:16.340Z",
+      "found": true
+    },
+    "1016": {
+      "signature": "михаил круг|приходите в мои дом",
+      "checkedAt": "2026-11-17T08:33:07.711Z",
+      "found": true
+    },
+    "1017": {
+      "signature": "михаил круг|роза",
+      "checkedAt": "2026-11-17T08:33:06.256Z",
+      "found": true
+    },
+    "1018": {
+      "signature": "мот|шаз feat by индия xcho",
+      "checkedAt": "2026-11-17T08:32:57.658Z",
+      "found": false
+    },
+    "1019": {
+      "signature": "даите танк|завтрак",
+      "checkedAt": "2026-11-17T08:32:56.211Z",
+      "found": false
+    },
+    "1020": {
+      "signature": "ed sheeran|i don t care feat justin bieber",
+      "checkedAt": "2026-11-17T08:32:47.631Z",
+      "found": false
+    },
+    "1021": {
+      "signature": "justin bieber|daisies",
+      "checkedAt": "2026-11-17T08:32:46.245Z",
+      "found": true
+    },
+    "1022": {
+      "signature": "адалят шукюров|бокал вином мои полон",
+      "checkedAt": "2026-11-17T08:32:37.591Z",
+      "found": false
+    },
+    "1023": {
+      "signature": "арсен шахунц|а я каифую",
+      "checkedAt": "2026-11-17T08:32:36.164Z",
+      "found": false
+    },
+    "1024": {
+      "signature": "народные песни|оися ты оися",
+      "checkedAt": "2026-11-17T08:32:27.547Z",
+      "found": false
+    },
+    "1025": {
+      "signature": "исполнитель не указан|песенка крокодила гены",
+      "checkedAt": "2026-11-17T08:32:18.977Z",
+      "found": false
+    },
+    "1026": {
+      "signature": "исполнитель не указан|я парнишка седои",
+      "checkedAt": "2026-11-17T08:32:17.550Z",
+      "found": false
+    },
+    "1027": {
+      "signature": "billie eilish|i love you",
+      "checkedAt": "2026-11-17T08:32:16.268Z",
+      "found": true
+    },
+    "1028": {
+      "signature": "justin bieber|mistletoe",
+      "checkedAt": "2026-11-17T08:32:07.651Z",
+      "found": true
+    },
+    "1029": {
+      "signature": "justin bieber|sorry",
+      "checkedAt": "2026-11-17T08:31:59.081Z",
+      "found": true
+    },
+    "1030": {
+      "signature": "андреи губин|лиза",
+      "checkedAt": "2026-11-17T08:31:57.504Z",
+      "found": true
+    },
+    "1031": {
+      "signature": "тринадцать карат|во снах",
+      "checkedAt": "2026-11-17T08:31:48.904Z",
+      "found": true
+    },
+    "1032": {
+      "signature": "даите танк|мы",
+      "checkedAt": "2026-11-17T08:31:47.388Z",
+      "found": true
+    },
+    "1033": {
+      "signature": "женя трофимов|все они о тебе feat комната культуры",
+      "checkedAt": "2026-11-17T08:31:38.807Z",
+      "found": false
+    },
+    "1034": {
+      "signature": "кар мэн|bad russian boys",
+      "checkedAt": "2026-11-17T08:31:37.366Z",
+      "found": false
+    },
+    "1035": {
+      "signature": "король и шут|отражение",
+      "checkedAt": "2026-11-17T08:31:28.776Z",
+      "found": true
+    },
+    "1036": {
+      "signature": "лампабикт|покои",
+      "checkedAt": "2026-11-17T08:31:27.347Z",
+      "found": true
+    },
+    "1037": {
+      "signature": "ляпис трубецкои|в платье белом",
+      "checkedAt": "2026-11-17T08:31:18.756Z",
+      "found": true
+    },
+    "1038": {
+      "signature": "марьяна локель|у нее лучше",
+      "checkedAt": "2026-11-17T08:31:17.283Z",
+      "found": false
+    },
+    "1039": {
+      "signature": "монеточка|селфхарм",
+      "checkedAt": "2026-11-17T08:31:08.698Z",
+      "found": true
+    },
+    "1040": {
+      "signature": "папин олимпос|сегодня не поиду гулять",
+      "checkedAt": "2026-11-17T08:31:07.245Z",
+      "found": false
+    },
+    "1041": {
+      "signature": "тринадцать карат|пока он тебя не бросит",
+      "checkedAt": "2026-11-17T08:30:58.656Z",
+      "found": true
+    },
+    "1042": {
+      "signature": "тринадцать карат|последнии лепесток",
+      "checkedAt": "2026-11-17T08:30:57.196Z",
+      "found": false
+    },
+    "1043": {
+      "signature": "пошлая молли|нон стоп",
+      "checkedAt": "2026-11-17T08:30:55.773Z",
+      "found": true
+    },
+    "1044": {
+      "signature": "исполнитель не указан|генералы песчаных карьеров",
+      "checkedAt": "2026-11-17T08:30:54.599Z",
+      "found": false
+    },
+    "1045": {
+      "signature": "lida|фото со звездои",
+      "checkedAt": "2026-11-17T08:30:31.618Z",
+      "found": true
+    },
+    "1046": {
+      "signature": "бонд с кнопкои|маяки 2 0",
+      "checkedAt": "2026-11-17T08:30:30.883Z",
+      "found": true
+    },
     "1047": {
       "signature": "михаил круг|девочка паи",
       "checkedAt": "2026-11-17T00:33:51.264Z",
@@ -773,6 +1141,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 47
+    "verifiedDates": 68
   }
 }
