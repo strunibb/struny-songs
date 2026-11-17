@@ -74,6 +74,29 @@ function payload(body) {
   assert(Array.isArray(p.features) && p.features.length<=FEATURES.length && p.features.every(x=>FEATURES.includes(x)),"Некорректные особенности");
   p.features=[...new Set(p.features)];
   p.coverUrl=url(p.coverUrl);
+  p.previewYouTubeUrl=str(p.previewYouTubeUrl??"","Оригинальная запись",350);
+  p.previewStart=int(p.previewStart??0,"Начало фрагмента",0,3600);
+  p.previewDisabled=p.previewDisabled===true;
+  p.previewVideoId="";
+  if(p.previewYouTubeUrl) {
+    let video;
+    try {
+      const link=new URL(p.previewYouTubeUrl);
+      assert(link.protocol==="https:" && !link.username && !link.password,"Только HTTPS YouTube");
+      const hostname=link.hostname.toLowerCase();
+      if(hostname==="youtu.be") {
+        const parts=link.pathname.split("/").filter(Boolean);
+        assert(parts.length===1,"Ссылка должна вести на одно видео");
+        video=parts[0];
+      } else {
+        assert(["youtube.com","www.youtube.com","music.youtube.com"].includes(hostname),"Разрешён только YouTube");
+        assert(link.pathname==="/watch","Нужна обычная ссылка на YouTube-видео");
+        video=link.searchParams.get("v");
+      }
+      assert(/^[a-zA-Z0-9_-]{11}$/.test(video||""),"Некорректный ID YouTube");
+    } catch(e) { throw Error("Оригинальная запись: "+String(e.message||e)); }
+    p.previewVideoId=video;
+  }
   return p;
 }
 const event=JSON.parse(readFileSync(process.env.GITHUB_EVENT_PATH,"utf8"));
@@ -102,6 +125,7 @@ if(p.operation==="delete") {
     sections:[...new Set([p.level,...(previous?.sections||[]).filter(section=>
       section!==previous?.level && section!==p.level && LEVELS.includes(section))])],
     isFree:p.isFree,albumName:p.albumName,videoAvailable:p.videoAvailable,
+    previewVideoId:p.previewVideoId,previewStart:p.previewStart,previewDisabled:p.previewDisabled,
     releaseDate:p.releaseDate===null ? (previous?.releaseDate||"") : p.releaseDate,
     description:p.description||"Разбор композиции для самостоятельной практики.",
     features:p.features,keyName:p.keyName||"Оригинал",
