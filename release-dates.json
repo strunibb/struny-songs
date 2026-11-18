@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T17:38:07.331Z",
+  "updatedAt": "2026-11-18T23:39:24.317Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -24,6 +24,198 @@
       "source": "https://musicbrainz.org/recording/f8e1a712-736b-4d50-88b8-1ac37e04f697",
       "artist": "Король и Шут",
       "title": "Лесник",
+      "confidence": "musicbrainz-exact"
+    },
+    "809": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/b287f96f-d886-4e0f-befc-a2edc1ada9f1",
+      "artist": "Led Zeppelin",
+      "title": "Stairway to Heaven",
+      "confidence": "musicbrainz-exact"
+    },
+    "810": {
+      "date": "2010-05-31",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/970582e7-6dd1-49c7-883f-4cdc2abad5b2",
+      "artist": "Lilly Wood & The Prick",
+      "title": "Prayer in C",
+      "confidence": "musicbrainz-exact"
+    },
+    "811": {
+      "date": "2003-05-28",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/dd1a0591-6e51-4b44-9ed0-54da032017fa",
+      "artist": "Limp Bizkit",
+      "title": "Behind Blue Eyes",
+      "confidence": "musicbrainz-exact"
+    },
+    "812": {
+      "date": "2000",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/9e25d403-606c-4637-b0ee-75497a50b5d0",
+      "artist": "Linkin Park",
+      "title": "Crawling",
+      "confidence": "musicbrainz-exact"
+    },
+    "813": {
+      "date": "2003-06-09",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/49346bfd-45fa-4cbf-905a-9ed98ab5be3f",
+      "artist": "Linkin Park",
+      "title": "Faint",
+      "confidence": "musicbrainz-exact"
+    },
+    "814": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/05bb0501-3362-4c02-9967-cd4b7083f2f8",
+      "artist": "Linkin Park",
+      "title": "In the End",
+      "confidence": "musicbrainz-exact"
+    },
+    "815": {
+      "date": "2003-11-18",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5a628057-04f8-4ac0-bc93-5f55b6d3a0f1",
+      "artist": "Linkin Park",
+      "title": "Numb",
+      "confidence": "musicbrainz-exact"
+    },
+    "816": {
+      "date": "2020-10-15",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3d24d5d6-3627-40ca-a1be-52f5925ff638",
+      "artist": "Lizer",
+      "title": "Быстро повзрослел",
+      "confidence": "musicbrainz-exact"
+    },
+    "817": {
+      "date": "2020-10-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/14dd0781-fbb7-45e5-8539-742920372b83",
+      "artist": "Lizer",
+      "title": "В жизни так бывает",
+      "confidence": "musicbrainz-exact"
+    },
+    "818": {
+      "date": "2018-12-21",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/e503ce48-e73d-4161-a2aa-fc6964b9ea6c",
+      "artist": "Lizer",
+      "title": "Корабли",
+      "confidence": "musicbrainz-exact"
+    },
+    "819": {
+      "date": "2019-04-19",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/44afb2ca-6ec2-4af9-a2d0-f5910cf6ba7d",
+      "artist": "Lizer",
+      "title": "Между нами",
+      "confidence": "musicbrainz-exact"
+    },
+    "821": {
+      "date": "2019-04-19",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/35ef707d-857f-4995-ba2a-89e0011843f0",
+      "artist": "Lizer",
+      "title": "Не ангел",
+      "confidence": "musicbrainz-exact"
+    },
+    "822": {
+      "date": "2018-07-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/7d38904f-9457-4d0c-8751-f87d4fc7dd3b",
+      "artist": "Lizer",
+      "title": "Пачка сигарет",
+      "confidence": "musicbrainz-exact"
+    },
+    "823": {
+      "date": "2016-12-23",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/4a81f6aa-db0b-4398-ada6-f2769b2136b7",
+      "artist": "Lx24",
+      "title": "Уголёк",
+      "confidence": "musicbrainz-exact"
+    },
+    "824": {
+      "date": "1977",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/581c36e9-5bdb-42cc-ac2e-d63d5ccc2b1c",
+      "artist": "Lynyrd Skynyrd",
+      "title": "Sweet Home Alabama",
+      "confidence": "musicbrainz-exact"
+    },
+    "828": {
+      "date": "2020-03-30",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/94869db6-7435-426d-b909-838f40566557",
+      "artist": "MACAN",
+      "title": "Кино",
+      "confidence": "musicbrainz-exact"
+    },
+    "829": {
+      "date": "2023-10-06",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/6469d82a-5777-493b-b3fc-f9f182bec731",
+      "artist": "MACAN",
+      "title": "Май",
+      "confidence": "musicbrainz-exact"
+    },
+    "832": {
+      "date": "2024-07-19",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/0010a29e-ef55-4cf7-abd8-f4d36d3e136e",
+      "artist": "MACAN",
+      "title": "Первая буква имени",
+      "confidence": "musicbrainz-exact"
+    },
+    "835": {
+      "date": "2020-05-25",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/451387f5-ff18-4f66-a1be-dda25fb1ec50",
+      "artist": "MACAN",
+      "title": "Се Ля Ви",
+      "confidence": "musicbrainz-exact"
+    },
+    "839": {
+      "date": "2025-09-12",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/dd024c88-6066-47c3-bcdc-c2a21dff7014",
+      "artist": "madk1d",
+      "title": "Дырки в штанах",
+      "confidence": "musicbrainz-exact"
+    },
+    "842": {
+      "date": "2021",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/828a6485-b98a-427f-a7a4-32fbaa18c357",
+      "artist": "Maneskin",
+      "title": "I Wanna Be Your Slave",
+      "confidence": "musicbrainz-exact"
+    },
+    "843": {
+      "date": "2017-12-08",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/e06b192f-88cd-407a-8efc-125efe3d6c9d",
+      "artist": "Måneskin",
+      "title": "Beggin'",
+      "confidence": "musicbrainz-exact"
+    },
+    "844": {
+      "date": "2021",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/77e26854-b605-4cd9-87b5-b7b3ae2ee859",
+      "artist": "Måneskin",
+      "title": "I Wanna Be Your Slave",
+      "confidence": "musicbrainz-exact"
+    },
+    "845": {
+      "date": "2021",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/2331d933-34d2-4af4-bb4f-f635c2637fc0",
+      "artist": "Måneskin",
+      "title": "Zitti e buoni",
       "confidence": "musicbrainz-exact"
     },
     "850": {
@@ -152,6 +344,14 @@
       "source": "https://musicbrainz.org/recording/90e95569-8c2c-4f95-a004-fd09b9018bd0",
       "artist": "Noize MC",
       "title": "Всё как у людей",
+      "confidence": "musicbrainz-exact"
+    },
+    "876": {
+      "date": "2012",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/b8f1e7f9-1b9d-46f4-b289-656ce3bbf5a3",
+      "artist": "Noize MC",
+      "title": "Вселенная бесконечна",
       "confidence": "musicbrainz-exact"
     },
     "877": {
@@ -1491,6 +1691,196 @@
       "checkedAt": "2026-11-17T17:55:33.187Z",
       "found": true
     },
+    "809": {
+      "signature": "led zeppelin|stairway to heaven",
+      "checkedAt": "2026-11-18T23:39:23.948Z",
+      "found": true
+    },
+    "810": {
+      "signature": "lilly wood the prick|prayer in c",
+      "checkedAt": "2026-11-18T23:39:22.556Z",
+      "found": true
+    },
+    "811": {
+      "signature": "limp bizkit|behind blue eyes",
+      "checkedAt": "2026-11-18T23:39:14.073Z",
+      "found": true
+    },
+    "812": {
+      "signature": "linkin park|crawling",
+      "checkedAt": "2026-11-18T23:39:12.446Z",
+      "found": true
+    },
+    "813": {
+      "signature": "linkin park|faint",
+      "checkedAt": "2026-11-18T23:39:04.019Z",
+      "found": true
+    },
+    "814": {
+      "signature": "linkin park|in the end",
+      "checkedAt": "2026-11-18T23:39:02.425Z",
+      "found": true
+    },
+    "815": {
+      "signature": "linkin park|numb",
+      "checkedAt": "2026-11-18T23:38:53.891Z",
+      "found": true
+    },
+    "816": {
+      "signature": "lizer|быстро повзрослел",
+      "checkedAt": "2026-11-18T23:38:52.354Z",
+      "found": true
+    },
+    "817": {
+      "signature": "lizer|в жизни так бывает",
+      "checkedAt": "2026-11-18T23:38:43.776Z",
+      "found": true
+    },
+    "818": {
+      "signature": "lizer|корабли",
+      "checkedAt": "2026-11-18T23:38:42.510Z",
+      "found": true
+    },
+    "819": {
+      "signature": "lizer|между нами",
+      "checkedAt": "2026-11-18T23:38:33.746Z",
+      "found": true
+    },
+    "820": {
+      "signature": "lizer|мелочи feat highself",
+      "checkedAt": "2026-11-18T23:38:32.324Z",
+      "found": false
+    },
+    "821": {
+      "signature": "lizer|не ангел",
+      "checkedAt": "2026-11-18T23:38:30.869Z",
+      "found": true
+    },
+    "822": {
+      "signature": "lizer|пачка сигарет",
+      "checkedAt": "2026-11-18T23:38:29.378Z",
+      "found": true
+    },
+    "823": {
+      "signature": "lx24|уголек",
+      "checkedAt": "2026-11-18T23:38:27.927Z",
+      "found": true
+    },
+    "824": {
+      "signature": "lynyrd skynyrd|sweet home alabama",
+      "checkedAt": "2026-11-18T23:38:19.429Z",
+      "found": true
+    },
+    "825": {
+      "signature": "macan|веселящии газ",
+      "checkedAt": "2026-11-18T23:38:17.933Z",
+      "found": false
+    },
+    "826": {
+      "signature": "macan|за всех",
+      "checkedAt": "2026-11-18T23:38:09.308Z",
+      "found": false
+    },
+    "827": {
+      "signature": "macan|здравствуи feat три дня дождя",
+      "checkedAt": "2026-11-18T23:38:07.853Z",
+      "found": false
+    },
+    "828": {
+      "signature": "macan|кино",
+      "checkedAt": "2026-11-18T23:38:06.495Z",
+      "found": true
+    },
+    "829": {
+      "signature": "macan|маи",
+      "checkedAt": "2026-11-18T23:37:57.833Z",
+      "found": true
+    },
+    "830": {
+      "signature": "macan|маиами 2",
+      "checkedAt": "2026-11-18T23:37:56.389Z",
+      "found": false
+    },
+    "831": {
+      "signature": "macan|останься образом",
+      "checkedAt": "2026-11-18T23:37:47.782Z",
+      "found": false
+    },
+    "832": {
+      "signature": "macan|первая буква имени",
+      "checkedAt": "2026-11-18T23:37:46.343Z",
+      "found": true
+    },
+    "833": {
+      "signature": "macan|плачь но не звони",
+      "checkedAt": "2026-11-18T23:37:37.747Z",
+      "found": false
+    },
+    "834": {
+      "signature": "macan|пьяное голосовое",
+      "checkedAt": "2026-11-18T23:37:36.304Z",
+      "found": false
+    },
+    "835": {
+      "signature": "macan|се ля ви",
+      "checkedAt": "2026-11-18T23:37:34.847Z",
+      "found": true
+    },
+    "836": {
+      "signature": "macan|я пытался любить тебя",
+      "checkedAt": "2026-11-18T23:37:33.393Z",
+      "found": false
+    },
+    "837": {
+      "signature": "macan|ivl scirena",
+      "checkedAt": "2026-11-18T23:37:31.941Z",
+      "found": false
+    },
+    "838": {
+      "signature": "macan баста|пусть бог будет рядом",
+      "checkedAt": "2026-11-18T23:37:23.370Z",
+      "found": false
+    },
+    "839": {
+      "signature": "madk1d|дырки в штанах",
+      "checkedAt": "2026-11-18T23:37:21.925Z",
+      "found": true
+    },
+    "840": {
+      "signature": "madk1d|распять",
+      "checkedAt": "2026-11-18T23:37:20.742Z",
+      "found": false
+    },
+    "842": {
+      "signature": "maneskin|i wanna be your slave",
+      "checkedAt": "2026-11-18T23:36:29.657Z",
+      "found": true
+    },
+    "843": {
+      "signature": "maneskin|beggin",
+      "checkedAt": "2026-11-18T23:36:28.276Z",
+      "found": true
+    },
+    "844": {
+      "signature": "maneskin|i wanna be your slave",
+      "checkedAt": "2026-11-18T23:36:26.768Z",
+      "found": true
+    },
+    "845": {
+      "signature": "maneskin|zitti e buoni",
+      "checkedAt": "2026-11-18T23:36:25.313Z",
+      "found": true
+    },
+    "846": {
+      "signature": "mary gu|два выстрела feat mayot",
+      "checkedAt": "2026-11-18T23:36:23.846Z",
+      "found": false
+    },
+    "847": {
+      "signature": "mary gu|спасибо",
+      "checkedAt": "2026-11-18T23:36:22.723Z",
+      "found": false
+    },
     "848": {
       "signature": "mayot|море",
       "checkedAt": "2026-11-18T17:38:06.971Z",
@@ -1619,6 +2009,11 @@
     "875": {
       "signature": "noize mc|все как у людеи",
       "checkedAt": "2026-11-18T17:36:19.412Z",
+      "found": true
+    },
+    "876": {
+      "signature": "noize mc|вселенная бесконечна",
+      "checkedAt": "2026-11-18T23:36:00.212Z",
       "found": true
     },
     "877": {
@@ -2859,6 +3254,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 184
+    "verifiedDates": 209
   }
 }
