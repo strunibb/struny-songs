@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T18:47:51.101Z",
+  "updatedAt": "2026-11-18T01:53:02.891Z",
   "tracks": {
     "681": {
       "artist": "Billie Eilish",
@@ -58,6 +58,24 @@
       "source": "official-artist-youtube",
       "verifiedAt": "2026-11-17"
     },
+    "1072": {
+      "artist": "Benson Boone",
+      "title": "Beautiful Things",
+      "videoId": "Oa_RSwwpPaA",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/0c76cae1-60b6-4020-befa-9bab4ccb1a83",
+      "verifiedAt": "2026-11-18T01:51:55.990Z"
+    },
+    "1073": {
+      "artist": "Charlie Puth",
+      "title": "Attention",
+      "videoId": "qHPQSNzKaHk",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/0387ab04-b1f3-4ce3-b7d2-ec2c25cdafd5",
+      "verifiedAt": "2026-11-18T01:51:51.487Z"
+    },
     "1077": {
       "artist": "Ed Sheeran",
       "title": "Shivers",
@@ -99,6 +117,131 @@
     "870": {
       "signature": "nirvana|come as you are",
       "checkedAt": "2026-11-17T08:59:28.281Z",
+      "found": false
+    },
+    "1052": {
+      "signature": "kate bush|running up that hill",
+      "checkedAt": "2026-11-18T01:53:02.497Z",
+      "found": false
+    },
+    "1053": {
+      "signature": "madk1d|династия",
+      "checkedAt": "2026-11-18T01:52:58.026Z",
+      "found": false
+    },
+    "1054": {
+      "signature": "toxi дора|знак",
+      "checkedAt": "2026-11-18T01:52:56.524Z",
+      "found": false
+    },
+    "1055": {
+      "signature": "би 2|без любви не греет солнце",
+      "checkedAt": "2026-11-18T01:52:52.000Z",
+      "found": false
+    },
+    "1056": {
+      "signature": "ваня дмитриенко мальбэк сюзанна|отражение",
+      "checkedAt": "2026-11-18T01:52:49.019Z",
+      "found": false
+    },
+    "1057": {
+      "signature": "потомучто|цветок",
+      "checkedAt": "2026-11-18T01:52:44.435Z",
+      "found": false
+    },
+    "1058": {
+      "signature": "егор крид|карма feat artik asti",
+      "checkedAt": "2026-11-18T01:52:41.356Z",
+      "found": false
+    },
+    "1059": {
+      "signature": "михаил круг|фраер",
+      "checkedAt": "2026-11-18T01:52:39.856Z",
+      "found": false
+    },
+    "1060": {
+      "signature": "исполнитель не указан|на тихорецкую",
+      "checkedAt": "2026-11-18T01:52:35.351Z",
+      "found": false
+    },
+    "1062": {
+      "signature": "бонд с кнопкои|да 2 0",
+      "checkedAt": "2026-11-18T01:52:34.005Z",
+      "found": false
+    },
+    "1063": {
+      "signature": "джизус|последняя звезда",
+      "checkedAt": "2026-11-18T01:52:30.983Z",
+      "found": false
+    },
+    "1064": {
+      "signature": "нервы|лаэла",
+      "checkedAt": "2026-11-18T01:52:27.970Z",
+      "found": false
+    },
+    "1065": {
+      "signature": "каста|ды ды дым",
+      "checkedAt": "2026-11-18T01:52:24.975Z",
+      "found": false
+    },
+    "1066": {
+      "signature": "алена швец|плохая девочка",
+      "checkedAt": "2026-11-18T01:52:20.464Z",
+      "found": false
+    },
+    "1067": {
+      "signature": "даите танк|окна",
+      "checkedAt": "2026-11-18T01:52:17.510Z",
+      "found": false
+    },
+    "1068": {
+      "signature": "женя трофимов|нравится",
+      "checkedAt": "2026-11-18T01:52:05.084Z",
+      "found": false
+    },
+    "1069": {
+      "signature": "9mice егор крид темныи принц madk1d|jealous",
+      "checkedAt": "2026-11-18T01:52:03.537Z",
+      "found": false
+    },
+    "1070": {
+      "signature": "akmal|ты больше чем любовь",
+      "checkedAt": "2026-11-18T01:51:58.865Z",
+      "found": false
+    },
+    "1071": {
+      "signature": "anna asti дима билан|эпилог",
+      "checkedAt": "2026-11-18T01:51:57.385Z",
+      "found": false
+    },
+    "1072": {
+      "signature": "benson boone|beautiful things",
+      "checkedAt": "2026-11-18T01:51:55.990Z",
+      "found": true
+    },
+    "1073": {
+      "signature": "charlie puth|attention",
+      "checkedAt": "2026-11-18T01:51:51.487Z",
+      "found": true
+    },
+    "1074": {
+      "signature": "charlie puth|how long",
+      "checkedAt": "2026-11-18T01:51:46.884Z",
+      "found": false
+    },
+    "1075": {
+      "signature": "dose|не спросят",
+      "checkedAt": "2026-11-18T01:51:42.601Z",
+      "found": false
+    },
+    "1076": {
+      "signature": "ed sheeran|photograph",
+      "checkedAt": "2026-11-18T01:51:42.147Z",
+      "found": false
+    },
+    "1079": {
+      "signature": "елка|не брошу на полпути",
+      "checkedAt": "2026-11-18T01:51:36.874Z",
       "found": false
     },
     "1080": {
@@ -329,6 +472,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedVideos": 9
+    "verifiedVideos": 11
   }
 }
