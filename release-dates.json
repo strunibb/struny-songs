@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T17:57:59.935Z",
+  "updatedAt": "2026-11-18T00:58:46.640Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -24,6 +24,254 @@
       "source": "https://musicbrainz.org/recording/f8e1a712-736b-4d50-88b8-1ac37e04f697",
       "artist": "Король и Шут",
       "title": "Лесник",
+      "confidence": "musicbrainz-exact"
+    },
+    "931": {
+      "date": "1995",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/cf5d2eb1-fba9-4b24-9b6d-c3bc8b9a151a",
+      "artist": "The Beatles",
+      "title": "Back in the USSR",
+      "confidence": "musicbrainz-exact"
+    },
+    "932": {
+      "date": "1988",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/ff5a8e8f-3696-48e9-a210-42de4fc5522a",
+      "artist": "The Beatles",
+      "title": "Can’t Buy Me Love",
+      "confidence": "musicbrainz-exact"
+    },
+    "933": {
+      "date": "1990",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/cf3e7301-7b95-40e6-a067-a580f89e8e98",
+      "artist": "The Beatles",
+      "title": "Do You Want to Know a Secret",
+      "confidence": "musicbrainz-exact"
+    },
+    "934": {
+      "date": "1965-12-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/283b8e7f-3570-4d20-97b7-5e8a762bc661",
+      "artist": "The Beatles",
+      "title": "Girl",
+      "confidence": "musicbrainz-exact"
+    },
+    "935": {
+      "date": "1979-05",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/d259453c-67c7-4346-9ff7-ba4080d98a5f",
+      "artist": "The Beatles",
+      "title": "Here Comes the Sun",
+      "confidence": "musicbrainz-exact"
+    },
+    "936": {
+      "date": "1968",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/3077470e-636e-4c85-85dd-45441f5e78bc",
+      "artist": "The Beatles",
+      "title": "I Will",
+      "confidence": "musicbrainz-exact"
+    },
+    "937": {
+      "date": "1985",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/c4a1c9c2-8425-4307-92a0-98b2174ded48",
+      "artist": "The Beatles",
+      "title": "I’m Happy Just to Dance with You",
+      "confidence": "musicbrainz-exact"
+    },
+    "938": {
+      "date": "1980-11-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/bfcfab30-a125-450e-989c-7f97e53edabd",
+      "artist": "The Beatles",
+      "title": "Let It Be",
+      "confidence": "musicbrainz-exact"
+    },
+    "939": {
+      "date": "1982-01",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/0997cbfc-c6a3-4bb4-8d36-bf2d9307bb87",
+      "artist": "The Beatles",
+      "title": "Ob-La-Di, Ob-La-Da",
+      "confidence": "musicbrainz-exact"
+    },
+    "940": {
+      "date": "1973",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/a5742857-d31f-4471-8728-19b6dfd4574a",
+      "artist": "The Beatles",
+      "title": "Twist and Shout",
+      "confidence": "musicbrainz-exact"
+    },
+    "941": {
+      "date": "1992",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/a609fd42-d2fa-4bff-b12e-aadcf30c3fc0",
+      "artist": "The Beatles",
+      "title": "While My Guitar Gently Weeps",
+      "confidence": "musicbrainz-exact"
+    },
+    "942": {
+      "date": "1978",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/7bf6f290-f0dd-4579-abd4-8faa5942199a",
+      "artist": "The Beatles",
+      "title": "Yesterday",
+      "confidence": "musicbrainz-exact"
+    },
+    "943": {
+      "date": "1984-07-11",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/f06024e7-e595-4fe3-88b3-ea9060dcdb3e",
+      "artist": "The Police",
+      "title": "Every Breath You Take",
+      "confidence": "musicbrainz-exact"
+    },
+    "944": {
+      "date": "1988",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/6062c2ac-677b-4a2b-a0aa-5f993cab8aa6",
+      "artist": "The Rolling Stones",
+      "title": "(I Can't Get No) Satisfaction",
+      "confidence": "musicbrainz-exact"
+    },
+    "945": {
+      "date": "1992",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/b997acc4-7e99-49e3-8fbc-186f451d0ef2",
+      "artist": "The Rolling Stones",
+      "title": "Angie",
+      "confidence": "musicbrainz-exact"
+    },
+    "946": {
+      "date": "1973",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/c4f90aec-8925-4008-b6ae-f601d808c478",
+      "artist": "The Rolling Stones",
+      "title": "Paint It Black",
+      "confidence": "musicbrainz-exact"
+    },
+    "947": {
+      "date": "2019-11-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9ce40394-cfc8-43fe-aa14-a36f61680cd3",
+      "artist": "The Weeknd",
+      "title": "Blinding Lights",
+      "confidence": "musicbrainz-exact"
+    },
+    "948": {
+      "date": "2003-07-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/06dfedf3-7b60-41e0-9e4b-886e94ea2f5d",
+      "artist": "The White Stripes",
+      "title": "Seven Nation Army",
+      "confidence": "musicbrainz-exact"
+    },
+    "949": {
+      "date": "2026-05-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/0c5bad36-ed59-422d-86bf-703512d9053b",
+      "artist": "Thomas Mraz",
+      "title": "Тетрис",
+      "confidence": "musicbrainz-exact"
+    },
+    "950": {
+      "date": "2003-05-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5b8d4f09-68ce-4db1-8dd9-54f191734149",
+      "artist": "Three Days Grace",
+      "title": "I Hate Everything About You",
+      "confidence": "musicbrainz-exact"
+    },
+    "951": {
+      "date": "2013-11-25",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9242540a-d637-4276-930e-098171fbb3d0",
+      "artist": "Tom Odell",
+      "title": "Another Love",
+      "confidence": "musicbrainz-exact"
+    },
+    "953": {
+      "date": "1995",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4202faf3-eeec-4bcc-beb0-6c045cc04dee",
+      "artist": "Traditional",
+      "title": "Happy Birthday to You",
+      "confidence": "musicbrainz-exact"
+    },
+    "954": {
+      "date": "1999-01-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c2dba4ea-7c74-4684-a447-60768a684674",
+      "artist": "Traditional",
+      "title": "Silent Night",
+      "confidence": "musicbrainz-exact"
+    },
+    "955": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/8670c140-843c-400f-ad98-7ba72e7d78d3",
+      "artist": "Traditional",
+      "title": "The Wheels on the Bus",
+      "confidence": "musicbrainz-exact"
+    },
+    "956": {
+      "date": "2016",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/3075e6ce-241b-4eaf-ad63-173962e543a6",
+      "artist": "Twenty One Pilots",
+      "title": "Heathens",
+      "confidence": "musicbrainz-exact"
+    },
+    "958": {
+      "date": "1984-12-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b7c17cf1-15cb-446b-9194-6bcdd5e9041a",
+      "artist": "Wham!",
+      "title": "Last Christmas",
+      "confidence": "musicbrainz-exact"
+    },
+    "961": {
+      "date": "2025",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/88856551-c326-446b-97b5-0aa3ad3375f2",
+      "artist": "XOLIDAYBOY",
+      "title": "Америка",
+      "confidence": "musicbrainz-exact"
+    },
+    "962": {
+      "date": "2025",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/e3079ae2-ea33-43b0-b794-df28e7900770",
+      "artist": "XOLIDAYBOY",
+      "title": "Грустная и красивая",
+      "confidence": "musicbrainz-exact"
+    },
+    "964": {
+      "date": "2025",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/3574ecdd-75a2-422a-b2d0-c817924ba25a",
+      "artist": "XOLIDAYBOY",
+      "title": "Корабли",
+      "confidence": "musicbrainz-exact"
+    },
+    "967": {
+      "date": "2025",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/f5168322-f92c-46d0-818d-b67db766f63b",
+      "artist": "XOLIDAYBOY",
+      "title": "Между строчек",
+      "confidence": "musicbrainz-exact"
+    },
+    "969": {
+      "date": "2022-10-07",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a4520b62-5431-4cfe-8323-d529f0026b68",
+      "artist": "XOLIDAYBOY",
+      "title": "Моя хулиганка",
       "confidence": "musicbrainz-exact"
     },
     "971": {
@@ -72,6 +320,14 @@
       "source": "https://musicbrainz.org/recording/ca8c487e-c4b1-4746-ab0b-e989475418e4",
       "artist": "Zivert",
       "title": "Beverly Hills",
+      "confidence": "musicbrainz-exact"
+    },
+    "979": {
+      "date": "2024-09-20",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/88539df2-6bb6-4e2a-954d-79d3a709ef01",
+      "artist": "Zoloto",
+      "title": "Вот-вот апрель",
       "confidence": "musicbrainz-exact"
     },
     "982": {
@@ -755,6 +1011,201 @@
       "checkedAt": "2026-11-17T17:55:33.187Z",
       "found": true
     },
+    "931": {
+      "signature": "the beatles|back in the ussr",
+      "checkedAt": "2026-11-18T00:58:46.339Z",
+      "found": true
+    },
+    "932": {
+      "signature": "the beatles|can t buy me love",
+      "checkedAt": "2026-11-18T00:58:44.773Z",
+      "found": true
+    },
+    "933": {
+      "signature": "the beatles|do you want to know a secret",
+      "checkedAt": "2026-11-18T00:58:43.330Z",
+      "found": true
+    },
+    "934": {
+      "signature": "the beatles|girl",
+      "checkedAt": "2026-11-18T00:58:41.884Z",
+      "found": true
+    },
+    "935": {
+      "signature": "the beatles|here comes the sun",
+      "checkedAt": "2026-11-18T00:58:33.365Z",
+      "found": true
+    },
+    "936": {
+      "signature": "the beatles|i will",
+      "checkedAt": "2026-11-18T00:58:31.869Z",
+      "found": true
+    },
+    "937": {
+      "signature": "the beatles|i m happy just to dance with you",
+      "checkedAt": "2026-11-18T00:58:23.312Z",
+      "found": true
+    },
+    "938": {
+      "signature": "the beatles|let it be",
+      "checkedAt": "2026-11-18T00:58:21.969Z",
+      "found": true
+    },
+    "939": {
+      "signature": "the beatles|ob la di ob la da",
+      "checkedAt": "2026-11-18T00:58:14.550Z",
+      "found": true
+    },
+    "940": {
+      "signature": "the beatles|twist and shout",
+      "checkedAt": "2026-11-18T00:58:09.727Z",
+      "found": true
+    },
+    "941": {
+      "signature": "the beatles|while my guitar gently weeps",
+      "checkedAt": "2026-11-18T00:58:03.530Z",
+      "found": true
+    },
+    "942": {
+      "signature": "the beatles|yesterday",
+      "checkedAt": "2026-11-18T00:58:03.301Z",
+      "found": true
+    },
+    "943": {
+      "signature": "the police|every breath you take",
+      "checkedAt": "2026-11-18T00:57:58.176Z",
+      "found": true
+    },
+    "944": {
+      "signature": "the rolling stones|i can t get no satisfaction",
+      "checkedAt": "2026-11-18T00:57:51.743Z",
+      "found": true
+    },
+    "945": {
+      "signature": "the rolling stones|angie",
+      "checkedAt": "2026-11-18T00:57:51.568Z",
+      "found": true
+    },
+    "946": {
+      "signature": "the rolling stones|paint it black",
+      "checkedAt": "2026-11-18T00:57:44.855Z",
+      "found": true
+    },
+    "947": {
+      "signature": "the weeknd|blinding lights",
+      "checkedAt": "2026-11-18T00:57:43.543Z",
+      "found": true
+    },
+    "948": {
+      "signature": "the white stripes|seven nation army",
+      "checkedAt": "2026-11-18T00:57:43.240Z",
+      "found": true
+    },
+    "949": {
+      "signature": "thomas mraz|тетрис",
+      "checkedAt": "2026-11-18T00:57:38.229Z",
+      "found": true
+    },
+    "950": {
+      "signature": "three days grace|i hate everything about you",
+      "checkedAt": "2026-11-18T00:57:32.389Z",
+      "found": true
+    },
+    "951": {
+      "signature": "tom odell|another love",
+      "checkedAt": "2026-11-18T00:57:30.808Z",
+      "found": true
+    },
+    "952": {
+      "signature": "toxi|nobody feat big baby tape aarne",
+      "checkedAt": "2026-11-18T00:57:29.511Z",
+      "found": false
+    },
+    "953": {
+      "signature": "traditional|happy birthday to you",
+      "checkedAt": "2026-11-18T00:57:27.902Z",
+      "found": true
+    },
+    "954": {
+      "signature": "traditional|silent night",
+      "checkedAt": "2026-11-18T00:57:26.601Z",
+      "found": true
+    },
+    "955": {
+      "signature": "traditional|the wheels on the bus",
+      "checkedAt": "2026-11-18T00:57:25.029Z",
+      "found": true
+    },
+    "956": {
+      "signature": "twenty one pilots|heathens",
+      "checkedAt": "2026-11-18T00:57:23.562Z",
+      "found": true
+    },
+    "957": {
+      "signature": "viki show|улыбнись",
+      "checkedAt": "2026-11-18T00:57:22.121Z",
+      "found": false
+    },
+    "958": {
+      "signature": "wham|last christmas",
+      "checkedAt": "2026-11-18T00:57:21.101Z",
+      "found": true
+    },
+    "959": {
+      "signature": "wiz khalifa feat charlie puth|see you again",
+      "checkedAt": "2026-11-18T00:57:19.324Z",
+      "found": false
+    },
+    "960": {
+      "signature": "xcho|ты и я",
+      "checkedAt": "2026-11-18T00:57:19.041Z",
+      "found": false
+    },
+    "961": {
+      "signature": "xolidayboy|америка",
+      "checkedAt": "2026-11-18T00:57:07.018Z",
+      "found": true
+    },
+    "962": {
+      "signature": "xolidayboy|грустная и красивая",
+      "checkedAt": "2026-11-18T00:57:05.507Z",
+      "found": true
+    },
+    "963": {
+      "signature": "xolidayboy|кино",
+      "checkedAt": "2026-11-18T00:57:04.047Z",
+      "found": false
+    },
+    "964": {
+      "signature": "xolidayboy|корабли",
+      "checkedAt": "2026-11-18T00:57:03.906Z",
+      "found": true
+    },
+    "965": {
+      "signature": "xolidayboy|люмены",
+      "checkedAt": "2026-11-18T00:56:59.727Z",
+      "found": false
+    },
+    "966": {
+      "signature": "xolidayboy|мания",
+      "checkedAt": "2026-11-18T00:56:36.812Z",
+      "found": false
+    },
+    "967": {
+      "signature": "xolidayboy|между строчек",
+      "checkedAt": "2026-11-18T00:56:35.509Z",
+      "found": true
+    },
+    "968": {
+      "signature": "xolidayboy|мотыльки",
+      "checkedAt": "2026-11-18T00:56:26.793Z",
+      "found": false
+    },
+    "969": {
+      "signature": "xolidayboy|моя хулиганка",
+      "checkedAt": "2026-11-18T00:56:25.349Z",
+      "found": true
+    },
     "970": {
       "signature": "xolidayboy|мы не будем спать",
       "checkedAt": "2026-11-17T17:57:59.540Z",
@@ -798,6 +1249,11 @@
     "978": {
       "signature": "zivert|beverly hills",
       "checkedAt": "2026-11-17T17:57:19.228Z",
+      "found": true
+    },
+    "979": {
+      "signature": "zoloto|вот вот апрель",
+      "checkedAt": "2026-11-18T00:56:24.912Z",
       "found": true
     },
     "980": {
@@ -1528,6 +1984,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 92
+    "verifiedDates": 124
   }
 }
