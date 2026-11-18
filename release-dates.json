@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T08:35:37.655Z",
+  "updatedAt": "2026-11-18T17:38:07.331Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -24,6 +24,222 @@
       "source": "https://musicbrainz.org/recording/f8e1a712-736b-4d50-88b8-1ac37e04f697",
       "artist": "Король и Шут",
       "title": "Лесник",
+      "confidence": "musicbrainz-exact"
+    },
+    "850": {
+      "date": "1988",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/fc3cdb31-6dda-47d6-bc56-1e0ec1ffa501",
+      "artist": "Michael Jackson",
+      "title": "Beat It",
+      "confidence": "musicbrainz-exact"
+    },
+    "851": {
+      "date": "1983",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/8bbc4f8b-e2e2-4264-9459-d4a0245ca871",
+      "artist": "Michael Jackson",
+      "title": "Billie Jean",
+      "confidence": "musicbrainz-exact"
+    },
+    "853": {
+      "date": "2015-01-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/96b1f826-22d7-4e83-9e64-73ed4ee9e673",
+      "artist": "Miyagi",
+      "title": "По уши в тебя влюблён",
+      "confidence": "musicbrainz-exact"
+    },
+    "856": {
+      "date": "2018-07-20",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/02e9aa6d-f099-4db0-8ed0-a1ee23a0b900",
+      "artist": "Miyagi & Эндшпиль",
+      "title": "Фея",
+      "confidence": "musicbrainz-exact"
+    },
+    "859": {
+      "date": "2025-02-14",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b53cb95b-66ee-4feb-b704-9ea4be80df8d",
+      "artist": "Morgenshtern",
+      "title": "Дом (Лондон, Прага, Ницца)",
+      "confidence": "musicbrainz-exact"
+    },
+    "861": {
+      "date": "2025-02-14",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/12fb34ba-8e92-44d4-86d7-2e03b66824c4",
+      "artist": "Morgenshtern",
+      "title": "Повод",
+      "confidence": "musicbrainz-exact"
+    },
+    "862": {
+      "date": "2024-03-08",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/518eb172-5c93-46f7-9e71-3c6a2bc2b94c",
+      "artist": "Morgenshtern",
+      "title": "Последняя любовь",
+      "confidence": "musicbrainz-exact"
+    },
+    "863": {
+      "date": "2025-02-14",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/420cc76a-b566-4391-ad16-9754eec31029",
+      "artist": "Morgenshtern",
+      "title": "Пустой вокзал",
+      "confidence": "musicbrainz-exact"
+    },
+    "864": {
+      "date": "2026-03-06",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/fb05ff1f-3b9a-437e-958a-fa7e51149f76",
+      "artist": "Morgenshtern",
+      "title": "Цветок",
+      "confidence": "musicbrainz-exact"
+    },
+    "867": {
+      "date": "2026-09-18",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/2a4a44f8-0bb0-47fb-bb6d-4c9317b3adff",
+      "artist": "Navai",
+      "title": "Больше, чем ближе",
+      "confidence": "musicbrainz-exact"
+    },
+    "868": {
+      "date": "1994",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/d2b3965b-7d5a-410c-a316-e631d982ccb5",
+      "artist": "Nirvana",
+      "title": "About a Girl",
+      "confidence": "musicbrainz-exact"
+    },
+    "869": {
+      "date": "1994",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/24b87bc8-e953-4bf5-9a02-2cffe626a996",
+      "artist": "Nirvana",
+      "title": "All Apologies",
+      "confidence": "musicbrainz-exact"
+    },
+    "871": {
+      "date": "1994",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/916e2a71-840e-49fd-83f0-e83a2e09173a",
+      "artist": "Nirvana",
+      "title": "Heart-Shaped Box",
+      "confidence": "musicbrainz-exact"
+    },
+    "872": {
+      "date": "1993",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/9b7e64f8-9edd-4efb-b908-ed9b3bfca8c8",
+      "artist": "Nirvana",
+      "title": "In Bloom",
+      "confidence": "musicbrainz-exact"
+    },
+    "874": {
+      "date": "1995",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4093fffb-059c-48fb-aff6-784f34b6648a",
+      "artist": "Nirvana",
+      "title": "Smells Like Teen Spirit",
+      "confidence": "musicbrainz-exact"
+    },
+    "875": {
+      "date": "2019-09-10",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/90e95569-8c2c-4f95-a004-fd09b9018bd0",
+      "artist": "Noize MC",
+      "title": "Всё как у людей",
+      "confidence": "musicbrainz-exact"
+    },
+    "877": {
+      "date": "2007-03-16",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/ea246f04-65b3-4be5-9e89-3ae71bbd85bd",
+      "artist": "Noize MC",
+      "title": "Выдыхай",
+      "confidence": "musicbrainz-exact"
+    },
+    "878": {
+      "date": "2016-12-16",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/1e389a46-a7bc-456c-bebb-c9f73d8af435",
+      "artist": "Noize MC",
+      "title": "Грабли",
+      "confidence": "musicbrainz-exact"
+    },
+    "879": {
+      "date": "2019-11-09",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/fc6233ad-9252-4db0-b24c-3811eba3fa09",
+      "artist": "Noize MC",
+      "title": "Жвачка",
+      "confidence": "musicbrainz-exact"
+    },
+    "881": {
+      "date": "2007-03-16",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/394b9185-ce92-45cf-a041-882aada50447",
+      "artist": "Noize MC",
+      "title": "Моё море",
+      "confidence": "musicbrainz-exact"
+    },
+    "882": {
+      "date": "2010-04-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/8c2d5530-df85-428d-b10c-21eef057e722",
+      "artist": "Noize MC",
+      "title": "Ругань из-за стены",
+      "confidence": "musicbrainz-exact"
+    },
+    "883": {
+      "date": "2024-10-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/e2a70c01-bb26-4c0c-b3b7-6f63b3a14dc3",
+      "artist": "Noize MC",
+      "title": "Светлая полоса",
+      "confidence": "musicbrainz-exact"
+    },
+    "884": {
+      "date": "2010-09-17",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3c0adec2-214f-461c-b6c0-afd61b97f1c5",
+      "artist": "Noize MC",
+      "title": "Устрой дестрой",
+      "confidence": "musicbrainz-exact"
+    },
+    "886": {
+      "date": "1984",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/985e5887-c53c-4bf4-a762-3ec9ff132665",
+      "artist": "Ozzy Osbourne",
+      "title": "Crazy Train",
+      "confidence": "musicbrainz-exact"
+    },
+    "887": {
+      "date": "2012-06-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/fc345ea0-1eff-48cf-8b59-6ab8f0990905",
+      "artist": "Passenger",
+      "title": "Let Her Go",
+      "confidence": "musicbrainz-exact"
+    },
+    "888": {
+      "date": "1980",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/c6acf074-9612-4bec-9ee6-dc2beb59d1a5",
+      "artist": "Pink Floyd",
+      "title": "Another Brick in the Wall",
+      "confidence": "musicbrainz-exact"
+    },
+    "889": {
+      "date": "1994",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/38702941-a79f-4d70-9cc3-23b272ba1dcf",
+      "artist": "Pink Floyd",
+      "title": "High Hopes",
       "confidence": "musicbrainz-exact"
     },
     "890": {
@@ -1275,6 +1491,201 @@
       "checkedAt": "2026-11-17T17:55:33.187Z",
       "found": true
     },
+    "848": {
+      "signature": "mayot|море",
+      "checkedAt": "2026-11-18T17:38:06.971Z",
+      "found": false
+    },
+    "850": {
+      "signature": "michael jackson|beat it",
+      "checkedAt": "2026-11-18T17:38:05.595Z",
+      "found": true
+    },
+    "851": {
+      "signature": "michael jackson|billie jean",
+      "checkedAt": "2026-11-18T17:37:56.910Z",
+      "found": true
+    },
+    "852": {
+      "signature": "miyagi|бонни",
+      "checkedAt": "2026-11-18T17:37:55.450Z",
+      "found": false
+    },
+    "853": {
+      "signature": "miyagi|по уши в тебя влюблен",
+      "checkedAt": "2026-11-18T17:37:54.006Z",
+      "found": true
+    },
+    "854": {
+      "signature": "miyagi эндшпиль|именно та",
+      "checkedAt": "2026-11-18T17:37:52.552Z",
+      "found": false
+    },
+    "855": {
+      "signature": "miyagi эндшпиль|люби меня feat симптом",
+      "checkedAt": "2026-11-18T17:37:43.925Z",
+      "found": false
+    },
+    "856": {
+      "signature": "miyagi эндшпиль|фея",
+      "checkedAt": "2026-11-18T17:37:42.478Z",
+      "found": true
+    },
+    "857": {
+      "signature": "miyagi эндшпиль|bounty",
+      "checkedAt": "2026-11-18T17:37:33.863Z",
+      "found": false
+    },
+    "858": {
+      "signature": "miyagi andy panda|fire man",
+      "checkedAt": "2026-11-18T17:37:32.411Z",
+      "found": false
+    },
+    "859": {
+      "signature": "morgenshtern|дом лондон прага ницца",
+      "checkedAt": "2026-11-18T17:37:31.002Z",
+      "found": true
+    },
+    "860": {
+      "signature": "morgenshtern|мне пох feat клава кока",
+      "checkedAt": "2026-11-18T17:37:29.521Z",
+      "found": false
+    },
+    "861": {
+      "signature": "morgenshtern|повод",
+      "checkedAt": "2026-11-18T17:37:20.889Z",
+      "found": true
+    },
+    "862": {
+      "signature": "morgenshtern|последняя любовь",
+      "checkedAt": "2026-11-18T17:37:19.439Z",
+      "found": true
+    },
+    "863": {
+      "signature": "morgenshtern|пустои вокзал",
+      "checkedAt": "2026-11-18T17:37:10.831Z",
+      "found": true
+    },
+    "864": {
+      "signature": "morgenshtern|цветок",
+      "checkedAt": "2026-11-18T17:37:09.440Z",
+      "found": true
+    },
+    "865": {
+      "signature": "mot dose|10 баллов",
+      "checkedAt": "2026-11-18T17:37:00.748Z",
+      "found": false
+    },
+    "866": {
+      "signature": "mot dose|не бруклин",
+      "checkedAt": "2026-11-18T17:36:59.414Z",
+      "found": false
+    },
+    "867": {
+      "signature": "navai|больше чем ближе",
+      "checkedAt": "2026-11-18T17:36:50.715Z",
+      "found": true
+    },
+    "868": {
+      "signature": "nirvana|about a girl",
+      "checkedAt": "2026-11-18T17:36:49.344Z",
+      "found": true
+    },
+    "869": {
+      "signature": "nirvana|all apologies",
+      "checkedAt": "2026-11-18T17:36:40.639Z",
+      "found": true
+    },
+    "871": {
+      "signature": "nirvana|heart shaped box",
+      "checkedAt": "2026-11-18T17:36:39.302Z",
+      "found": true
+    },
+    "872": {
+      "signature": "nirvana|in bloom",
+      "checkedAt": "2026-11-18T17:36:30.529Z",
+      "found": true
+    },
+    "873": {
+      "signature": "nirvana|rape me",
+      "checkedAt": "2026-11-18T17:36:29.133Z",
+      "found": false
+    },
+    "874": {
+      "signature": "nirvana|smells like teen spirit",
+      "checkedAt": "2026-11-18T17:36:20.474Z",
+      "found": true
+    },
+    "875": {
+      "signature": "noize mc|все как у людеи",
+      "checkedAt": "2026-11-18T17:36:19.412Z",
+      "found": true
+    },
+    "877": {
+      "signature": "noize mc|выдыхаи",
+      "checkedAt": "2026-11-18T17:35:34.773Z",
+      "found": true
+    },
+    "878": {
+      "signature": "noize mc|грабли",
+      "checkedAt": "2026-11-18T17:35:33.282Z",
+      "found": true
+    },
+    "879": {
+      "signature": "noize mc|жвачка",
+      "checkedAt": "2026-11-18T17:35:24.672Z",
+      "found": true
+    },
+    "880": {
+      "signature": "noize mc|зеленыи мои любимыи цвет",
+      "checkedAt": "2026-11-18T17:35:23.213Z",
+      "found": false
+    },
+    "881": {
+      "signature": "noize mc|мое море",
+      "checkedAt": "2026-11-18T17:35:14.736Z",
+      "found": true
+    },
+    "882": {
+      "signature": "noize mc|ругань из за стены",
+      "checkedAt": "2026-11-18T17:35:13.200Z",
+      "found": true
+    },
+    "883": {
+      "signature": "noize mc|светлая полоса",
+      "checkedAt": "2026-11-18T17:35:04.590Z",
+      "found": true
+    },
+    "884": {
+      "signature": "noize mc|устрои дестрои",
+      "checkedAt": "2026-11-18T17:35:03.108Z",
+      "found": true
+    },
+    "885": {
+      "signature": "og buda|гриша сироткин",
+      "checkedAt": "2026-11-18T17:34:54.489Z",
+      "found": false
+    },
+    "886": {
+      "signature": "ozzy osbourne|crazy train",
+      "checkedAt": "2026-11-18T17:34:45.900Z",
+      "found": true
+    },
+    "887": {
+      "signature": "passenger|let her go",
+      "checkedAt": "2026-11-18T17:34:44.465Z",
+      "found": true
+    },
+    "888": {
+      "signature": "pink floyd|another brick in the wall",
+      "checkedAt": "2026-11-18T17:34:35.863Z",
+      "found": true
+    },
+    "889": {
+      "signature": "pink floyd|high hopes",
+      "checkedAt": "2026-11-18T17:34:34.995Z",
+      "found": true
+    },
     "890": {
       "signature": "pink floyd|learning to fly",
       "checkedAt": "2026-11-18T08:35:37.202Z",
@@ -2448,6 +2859,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 157
+    "verifiedDates": 184
   }
 }
