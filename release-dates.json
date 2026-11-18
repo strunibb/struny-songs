@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T00:58:46.640Z",
+  "updatedAt": "2026-11-18T08:35:37.655Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -24,6 +24,270 @@
       "source": "https://musicbrainz.org/recording/f8e1a712-736b-4d50-88b8-1ac37e04f697",
       "artist": "Король и Шут",
       "title": "Лесник",
+      "confidence": "musicbrainz-exact"
+    },
+    "890": {
+      "date": "1988",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/799a4427-82e8-44bb-8017-cfabae0307e1",
+      "artist": "Pink Floyd",
+      "title": "Learning to Fly",
+      "confidence": "musicbrainz-exact"
+    },
+    "891": {
+      "date": "1992",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/d4252ecb-75bb-4555-951f-e6dce4bd8b39",
+      "artist": "Pink Floyd",
+      "title": "Wish You Were Here",
+      "confidence": "musicbrainz-exact"
+    },
+    "892": {
+      "date": "2004",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/ff8cfc50-9a42-491c-824c-56af86d23d65",
+      "artist": "Pixies",
+      "title": "Where Is My Mind?",
+      "confidence": "musicbrainz-exact"
+    },
+    "893": {
+      "date": "1993-06-04",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/64e2be17-cd45-4208-ad27-6405802f3466",
+      "artist": "Radiohead",
+      "title": "Creep",
+      "confidence": "musicbrainz-exact"
+    },
+    "895": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4de7ed80-7350-44b9-8c28-91d4b2329c05",
+      "artist": "Rammstein",
+      "title": "Mutter",
+      "confidence": "musicbrainz-exact"
+    },
+    "896": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/376f8d20-c111-40ad-8e35-de6f7d36d59e",
+      "artist": "Rammstein",
+      "title": "Sonne",
+      "confidence": "musicbrainz-exact"
+    },
+    "897": {
+      "date": "2018-09-28",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/68f21604-b083-4042-bb93-cedbfefead08",
+      "artist": "Rauf & Faik",
+      "title": "5 минут",
+      "confidence": "musicbrainz-exact"
+    },
+    "898": {
+      "date": "2018-09-28",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/aaf6c8d7-5c86-4bf9-909b-7684ff5cda1f",
+      "artist": "Rauf & Faik",
+      "title": "Вечера",
+      "confidence": "musicbrainz-exact"
+    },
+    "899": {
+      "date": "2018-09-28",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/f7a1d78a-86dc-4ef4-a559-21dddebb11a2",
+      "artist": "Rauf & Faik",
+      "title": "Детство",
+      "confidence": "musicbrainz-exact"
+    },
+    "901": {
+      "date": "2019-12-06",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c95ac171-fb37-4f19-940e-21e5066caef0",
+      "artist": "Rauf & Faik",
+      "title": "Колыбельная",
+      "confidence": "musicbrainz-exact"
+    },
+    "902": {
+      "date": "2018-02-09",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/0342db26-e10d-42a1-92a3-22602ca91da8",
+      "artist": "Rauf & Faik",
+      "title": "Я люблю тебя",
+      "confidence": "musicbrainz-exact"
+    },
+    "903": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/15cd4345-6f1b-4cb2-a0fe-eedc445082ee",
+      "artist": "Red Hot Chili Peppers",
+      "title": "Californication",
+      "confidence": "musicbrainz-exact"
+    },
+    "904": {
+      "date": "2000-01",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/ebb06c53-9b20-4e0c-b0d8-4b4114921c57",
+      "artist": "Red Hot Chili Peppers",
+      "title": "Scar Tissue",
+      "confidence": "musicbrainz-exact"
+    },
+    "905": {
+      "date": "2006",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/6afb589a-6ede-43cc-9952-c54ccbad607c",
+      "artist": "Red Hot Chili Peppers",
+      "title": "Snow (Hey Oh)",
+      "confidence": "musicbrainz-exact"
+    },
+    "906": {
+      "date": "1996",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/f8d7ce01-5116-4d1d-9f5e-9de445f65318",
+      "artist": "Robert Miles",
+      "title": "Children",
+      "confidence": "musicbrainz-exact"
+    },
+    "908": {
+      "date": "2007",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/c4b7b4eb-f257-40fe-9605-b657313e384a",
+      "artist": "Scorpions",
+      "title": "Humanity",
+      "confidence": "musicbrainz-exact"
+    },
+    "909": {
+      "date": "1984",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/34dd926b-70ed-43a3-a20f-3bb2e48dfb44",
+      "artist": "Scorpions",
+      "title": "Still Loving You",
+      "confidence": "musicbrainz-exact"
+    },
+    "910": {
+      "date": "2022-02-25",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/181c2e9d-1d0f-4037-ae06-da5b86c79707",
+      "artist": "Scorpions",
+      "title": "When You Know Where You Come From",
+      "confidence": "musicbrainz-exact"
+    },
+    "911": {
+      "date": "2013",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/ee152149-d20e-4baf-8168-23f1ee5ec595",
+      "artist": "Serebro",
+      "title": "Мало тебя",
+      "confidence": "musicbrainz-exact"
+    },
+    "912": {
+      "date": "2017-05-10",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/ff9d2a46-599b-469b-b412-a0e942473511",
+      "artist": "Serebro",
+      "title": "Между нами любовь",
+      "confidence": "musicbrainz-exact"
+    },
+    "913": {
+      "date": "2015-05-21",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/69c8fdc3-e5ba-49dc-b6fc-f2b19c54b825",
+      "artist": "Serebro",
+      "title": "Перепутала",
+      "confidence": "musicbrainz-exact"
+    },
+    "914": {
+      "date": "2023-09-09",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/08445c8a-501a-4bb5-9d5c-7a128087a921",
+      "artist": "SHAMAN",
+      "title": "Я русский",
+      "confidence": "musicbrainz-exact"
+    },
+    "916": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/80a1d7cc-2dcb-4f2c-9c39-83c9ce6e3a39",
+      "artist": "Simple Plan",
+      "title": "I'm Just a Kid",
+      "confidence": "musicbrainz-exact"
+    },
+    "918": {
+      "date": "2018-06-15",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/d604c3bd-18b7-4996-b6cc-4318a53e114c",
+      "artist": "Sirotkin",
+      "title": "Выше домов",
+      "confidence": "musicbrainz-exact"
+    },
+    "920": {
+      "date": "2024-08-30",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/f40c63c2-ca57-4924-b3bd-4992810c3efa",
+      "artist": "SLAVA SKRIPKA",
+      "title": "Бобр",
+      "confidence": "musicbrainz-exact"
+    },
+    "921": {
+      "date": "2020-11-08",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/76a8b82d-b448-4c6d-a38d-4bfe786ba63b",
+      "artist": "Ssshhhiiittt!",
+      "title": "Засыпай",
+      "confidence": "musicbrainz-exact"
+    },
+    "922": {
+      "date": "2018-09-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/68f62ad4-c485-4609-8278-edcf6124237c",
+      "artist": "Ssshhhiiittt!",
+      "title": "Тебя нет",
+      "confidence": "musicbrainz-exact"
+    },
+    "924": {
+      "date": "2005-11-18",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/0aff4799-849f-4f83-84f4-22cabbba2378",
+      "artist": "System of a Down",
+      "title": "Lonely Day",
+      "confidence": "musicbrainz-exact"
+    },
+    "925": {
+      "date": "2017-10-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/24b91d9c-1eda-441c-ba99-e74193009db2",
+      "artist": "T-Fest",
+      "title": "Молодость",
+      "confidence": "musicbrainz-exact"
+    },
+    "926": {
+      "date": "2017-07-21",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/8a33f5d0-9a20-42dc-8c8a-c01c0a878990",
+      "artist": "T-Fest",
+      "title": "Улети",
+      "confidence": "musicbrainz-exact"
+    },
+    "928": {
+      "date": "1972",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/438a84af-a325-4556-9af4-a56c3e97bde3",
+      "artist": "The Animals",
+      "title": "House of the Rising Sun",
+      "confidence": "musicbrainz-exact"
+    },
+    "929": {
+      "date": "1978",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/fabbdfa8-b229-4f52-aa65-d503bd9d94ea",
+      "artist": "The Beatles",
+      "title": "All My Loving",
+      "confidence": "musicbrainz-exact"
+    },
+    "930": {
+      "date": "1987",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4be856c6-5b96-47a2-8eb9-c144764585eb",
+      "artist": "The Beatles",
+      "title": "And I Love Her",
       "confidence": "musicbrainz-exact"
     },
     "931": {
@@ -1011,6 +1275,206 @@
       "checkedAt": "2026-11-17T17:55:33.187Z",
       "found": true
     },
+    "890": {
+      "signature": "pink floyd|learning to fly",
+      "checkedAt": "2026-11-18T08:35:37.202Z",
+      "found": true
+    },
+    "891": {
+      "signature": "pink floyd|wish you were here",
+      "checkedAt": "2026-11-18T08:35:35.747Z",
+      "found": true
+    },
+    "892": {
+      "signature": "pixies|where is my mind",
+      "checkedAt": "2026-11-18T08:35:34.365Z",
+      "found": true
+    },
+    "893": {
+      "signature": "radiohead|creep",
+      "checkedAt": "2026-11-18T08:35:26.141Z",
+      "found": true
+    },
+    "894": {
+      "signature": "ramin djawadi|game of thrones main title",
+      "checkedAt": "2026-11-18T08:35:02.944Z",
+      "found": false
+    },
+    "895": {
+      "signature": "rammstein|mutter",
+      "checkedAt": "2026-11-18T08:35:01.657Z",
+      "found": true
+    },
+    "896": {
+      "signature": "rammstein|sonne",
+      "checkedAt": "2026-11-18T08:34:53.071Z",
+      "found": true
+    },
+    "897": {
+      "signature": "rauf faik|5 минут",
+      "checkedAt": "2026-11-18T08:34:51.453Z",
+      "found": true
+    },
+    "898": {
+      "signature": "rauf faik|вечера",
+      "checkedAt": "2026-11-18T08:34:50.012Z",
+      "found": true
+    },
+    "899": {
+      "signature": "rauf faik|детство",
+      "checkedAt": "2026-11-18T08:34:48.830Z",
+      "found": true
+    },
+    "900": {
+      "signature": "rauf faik|если тебе будет грустно",
+      "checkedAt": "2026-11-18T08:34:25.823Z",
+      "found": false
+    },
+    "901": {
+      "signature": "rauf faik|колыбельная",
+      "checkedAt": "2026-11-18T08:34:24.669Z",
+      "found": true
+    },
+    "902": {
+      "signature": "rauf faik|я люблю тебя",
+      "checkedAt": "2026-11-18T08:34:01.634Z",
+      "found": true
+    },
+    "903": {
+      "signature": "red hot chili peppers|californication",
+      "checkedAt": "2026-11-18T08:34:00.222Z",
+      "found": true
+    },
+    "904": {
+      "signature": "red hot chili peppers|scar tissue",
+      "checkedAt": "2026-11-18T08:33:51.603Z",
+      "found": true
+    },
+    "905": {
+      "signature": "red hot chili peppers|snow hey oh",
+      "checkedAt": "2026-11-18T08:33:50.422Z",
+      "found": true
+    },
+    "906": {
+      "signature": "robert miles|children",
+      "checkedAt": "2026-11-18T08:33:27.451Z",
+      "found": true
+    },
+    "907": {
+      "signature": "robin schulz feat francesco yates|sugar",
+      "checkedAt": "2026-11-18T08:33:26.166Z",
+      "found": false
+    },
+    "908": {
+      "signature": "scorpions|humanity",
+      "checkedAt": "2026-11-18T08:33:17.369Z",
+      "found": true
+    },
+    "909": {
+      "signature": "scorpions|still loving you",
+      "checkedAt": "2026-11-18T08:33:15.928Z",
+      "found": true
+    },
+    "910": {
+      "signature": "scorpions|when you know where you come from",
+      "checkedAt": "2026-11-18T08:33:07.331Z",
+      "found": true
+    },
+    "911": {
+      "signature": "serebro|мало тебя",
+      "checkedAt": "2026-11-18T08:33:05.871Z",
+      "found": true
+    },
+    "912": {
+      "signature": "serebro|между нами любовь",
+      "checkedAt": "2026-11-18T08:33:04.420Z",
+      "found": true
+    },
+    "913": {
+      "signature": "serebro|перепутала",
+      "checkedAt": "2026-11-18T08:32:55.821Z",
+      "found": true
+    },
+    "914": {
+      "signature": "shaman|я русскии",
+      "checkedAt": "2026-11-18T08:32:54.371Z",
+      "found": true
+    },
+    "915": {
+      "signature": "shawn mendes camila cabello|senorita",
+      "checkedAt": "2026-11-18T08:32:45.974Z",
+      "found": false
+    },
+    "916": {
+      "signature": "simple plan|i m just a kid",
+      "checkedAt": "2026-11-18T08:32:44.381Z",
+      "found": true
+    },
+    "917": {
+      "signature": "sirotkin|август",
+      "checkedAt": "2026-11-18T08:32:35.732Z",
+      "found": false
+    },
+    "918": {
+      "signature": "sirotkin|выше домов",
+      "checkedAt": "2026-11-18T08:32:34.289Z",
+      "found": true
+    },
+    "919": {
+      "signature": "slava marlow|я не могу тебя наити",
+      "checkedAt": "2026-11-18T08:32:25.688Z",
+      "found": false
+    },
+    "920": {
+      "signature": "slava skripka|бобр",
+      "checkedAt": "2026-11-18T08:32:24.243Z",
+      "found": true
+    },
+    "921": {
+      "signature": "ssshhhiiittt|засыпаи",
+      "checkedAt": "2026-11-18T08:32:15.647Z",
+      "found": true
+    },
+    "922": {
+      "signature": "ssshhhiiittt|тебя нет",
+      "checkedAt": "2026-11-18T08:32:07.051Z",
+      "found": true
+    },
+    "924": {
+      "signature": "system of a down|lonely day",
+      "checkedAt": "2026-11-18T08:32:05.633Z",
+      "found": true
+    },
+    "925": {
+      "signature": "t fest|молодость",
+      "checkedAt": "2026-11-18T08:32:04.151Z",
+      "found": true
+    },
+    "926": {
+      "signature": "t fest|улети",
+      "checkedAt": "2026-11-18T08:32:02.701Z",
+      "found": true
+    },
+    "927": {
+      "signature": "t fest|cayendo feat дора",
+      "checkedAt": "2026-11-18T08:32:01.246Z",
+      "found": false
+    },
+    "928": {
+      "signature": "the animals|house of the rising sun",
+      "checkedAt": "2026-11-18T08:31:59.828Z",
+      "found": true
+    },
+    "929": {
+      "signature": "the beatles|all my loving",
+      "checkedAt": "2026-11-18T08:31:58.379Z",
+      "found": true
+    },
+    "930": {
+      "signature": "the beatles|and i love her",
+      "checkedAt": "2026-11-18T08:31:57.515Z",
+      "found": true
+    },
     "931": {
       "signature": "the beatles|back in the ussr",
       "checkedAt": "2026-11-18T00:58:46.339Z",
@@ -1984,6 +2448,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 124
+    "verifiedDates": 157
   }
 }
