@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T01:53:02.891Z",
+  "updatedAt": "2026-11-18T10:43:29.727Z",
   "tracks": {
     "681": {
       "artist": "Billie Eilish",
@@ -42,6 +42,15 @@
       "source": "official-artist-youtube",
       "verifiedAt": "2026-11-17"
     },
+    "1027": {
+      "artist": "Billie Eilish",
+      "title": "I Love You",
+      "videoId": "9mevvDAm-HE",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/8e106bbb-9f78-4a92-a01d-b4bfb09e0295",
+      "verifiedAt": "2026-11-18T10:43:28.087Z"
+    },
     "1029": {
       "artist": "Justin Bieber",
       "title": "Sorry",
@@ -49,6 +58,15 @@
       "start": 25,
       "source": "official-artist-youtube",
       "verifiedAt": "2026-11-17"
+    },
+    "1051": {
+      "artist": "Монеточка",
+      "title": "Каждый раз",
+      "videoId": "qyrDASgwAI8",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/0064b185-efc3-4e58-8fcb-403f71964401",
+      "verifiedAt": "2026-11-18T10:42:15.758Z"
     },
     "1061": {
       "artist": "Ed Sheeran",
@@ -118,6 +136,131 @@
       "signature": "nirvana|come as you are",
       "checkedAt": "2026-11-17T08:59:28.281Z",
       "found": false
+    },
+    "1026": {
+      "signature": "исполнитель не указан|я парнишка седои",
+      "checkedAt": "2026-11-18T10:43:29.458Z",
+      "found": false
+    },
+    "1027": {
+      "signature": "billie eilish|i love you",
+      "checkedAt": "2026-11-18T10:43:28.087Z",
+      "found": true
+    },
+    "1028": {
+      "signature": "justin bieber|mistletoe",
+      "checkedAt": "2026-11-18T10:43:23.504Z",
+      "found": false
+    },
+    "1030": {
+      "signature": "андреи губин|лиза",
+      "checkedAt": "2026-11-18T10:43:19.102Z",
+      "found": false
+    },
+    "1031": {
+      "signature": "тринадцать карат|во снах",
+      "checkedAt": "2026-11-18T10:43:14.626Z",
+      "found": false
+    },
+    "1032": {
+      "signature": "даите танк|мы",
+      "checkedAt": "2026-11-18T10:43:11.573Z",
+      "found": false
+    },
+    "1033": {
+      "signature": "женя трофимов|все они о тебе feat комната культуры",
+      "checkedAt": "2026-11-18T10:43:05.362Z",
+      "found": false
+    },
+    "1034": {
+      "signature": "кар мэн|bad russian boys",
+      "checkedAt": "2026-11-18T10:43:03.853Z",
+      "found": false
+    },
+    "1035": {
+      "signature": "король и шут|отражение",
+      "checkedAt": "2026-11-18T10:43:02.356Z",
+      "found": false
+    },
+    "1036": {
+      "signature": "лампабикт|покои",
+      "checkedAt": "2026-11-18T10:42:57.846Z",
+      "found": false
+    },
+    "1037": {
+      "signature": "ляпис трубецкои|в платье белом",
+      "checkedAt": "2026-11-18T10:42:55.127Z",
+      "found": false
+    },
+    "1038": {
+      "signature": "марьяна локель|у нее лучше",
+      "checkedAt": "2026-11-18T10:42:50.370Z",
+      "found": false
+    },
+    "1039": {
+      "signature": "монеточка|селфхарм",
+      "checkedAt": "2026-11-18T10:42:49.044Z",
+      "found": false
+    },
+    "1040": {
+      "signature": "папин олимпос|сегодня не поиду гулять",
+      "checkedAt": "2026-11-18T10:42:45.854Z",
+      "found": false
+    },
+    "1041": {
+      "signature": "тринадцать карат|пока он тебя не бросит",
+      "checkedAt": "2026-11-18T10:42:44.533Z",
+      "found": false
+    },
+    "1042": {
+      "signature": "тринадцать карат|последнии лепесток",
+      "checkedAt": "2026-11-18T10:42:41.362Z",
+      "found": false
+    },
+    "1043": {
+      "signature": "пошлая молли|нон стоп",
+      "checkedAt": "2026-11-18T10:42:39.853Z",
+      "found": false
+    },
+    "1044": {
+      "signature": "исполнитель не указан|генералы песчаных карьеров",
+      "checkedAt": "2026-11-18T10:42:36.850Z",
+      "found": false
+    },
+    "1045": {
+      "signature": "lida|фото со звездои",
+      "checkedAt": "2026-11-18T10:42:35.346Z",
+      "found": false
+    },
+    "1046": {
+      "signature": "бонд с кнопкои|маяки 2 0",
+      "checkedAt": "2026-11-18T10:42:32.356Z",
+      "found": false
+    },
+    "1047": {
+      "signature": "михаил круг|девочка паи",
+      "checkedAt": "2026-11-18T10:42:29.394Z",
+      "found": false
+    },
+    "1048": {
+      "signature": "kentukki|замирает свет",
+      "checkedAt": "2026-11-18T10:42:24.861Z",
+      "found": false
+    },
+    "1049": {
+      "signature": "клава кока|я не отдам тебя никому",
+      "checkedAt": "2026-11-18T10:42:23.353Z",
+      "found": false
+    },
+    "1050": {
+      "signature": "монеточка|запорожец",
+      "checkedAt": "2026-11-18T10:42:21.880Z",
+      "found": false
+    },
+    "1051": {
+      "signature": "монеточка|каждыи раз",
+      "checkedAt": "2026-11-18T10:42:15.763Z",
+      "found": true
     },
     "1052": {
       "signature": "kate bush|running up that hill",
@@ -472,6 +615,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedVideos": 11
+    "verifiedVideos": 13
   }
 }
