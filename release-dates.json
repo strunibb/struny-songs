@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-19T04:33:49.355Z",
+  "updatedAt": "2026-11-19T13:57:56.466Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -24,6 +24,238 @@
       "source": "https://musicbrainz.org/recording/f8e1a712-736b-4d50-88b8-1ac37e04f697",
       "artist": "Король и Шут",
       "title": "Лесник",
+      "confidence": "musicbrainz-exact"
+    },
+    "730": {
+      "date": "1974-02-15",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/72d0df7b-86b6-4a13-91ba-338aa8885cff",
+      "artist": "Deep Purple",
+      "title": "Sail Away",
+      "confidence": "musicbrainz-exact"
+    },
+    "731": {
+      "date": "1974",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/62c19fcf-45a6-42f6-ac15-0001586d6b6a",
+      "artist": "Deep Purple",
+      "title": "Smoke on the Water",
+      "confidence": "musicbrainz-exact"
+    },
+    "732": {
+      "date": "1974-11",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/de792be9-bfe5-430b-ab61-965edacb0e07",
+      "artist": "Deep Purple",
+      "title": "Soldier of Fortune",
+      "confidence": "musicbrainz-exact"
+    },
+    "734": {
+      "date": "1992",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/77e0a6b1-89ee-42cb-8172-4c1d324986d0",
+      "artist": "Dream Theater",
+      "title": "Another Day",
+      "confidence": "musicbrainz-exact"
+    },
+    "735": {
+      "date": "2013-11-05",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/ea33cdb1-b489-4614-98f6-da067d3ed6f6",
+      "artist": "Ed Sheeran",
+      "title": "I See Fire",
+      "confidence": "musicbrainz-exact"
+    },
+    "736": {
+      "date": "2017-03-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b84dd2d1-2bf1-4fcc-aadc-6cc39c36ba35",
+      "artist": "Ed Sheeran",
+      "title": "Perfect",
+      "confidence": "musicbrainz-exact"
+    },
+    "737": {
+      "date": "2017-01-06",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/d7500dd6-b815-4299-88c6-3fbda358f1fc",
+      "artist": "Ed Sheeran",
+      "title": "Shape of You",
+      "confidence": "musicbrainz-exact"
+    },
+    "738": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/df05eccf-9d26-4ccd-ae94-1728fb00ff09",
+      "artist": "Eiffel 65",
+      "title": "Blue (Da Ba Dee)",
+      "confidence": "musicbrainz-exact"
+    },
+    "739": {
+      "date": "1990",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/d2cc206e-b2af-4da6-8814-745434fe2d89",
+      "artist": "Elvis Presley",
+      "title": "Can't Help Falling in Love",
+      "confidence": "musicbrainz-exact"
+    },
+    "740": {
+      "date": "2004-11-12",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/0f530514-9275-45f4-a5d5-0264374c1261",
+      "artist": "Eminem",
+      "title": "Mockingbird",
+      "confidence": "musicbrainz-exact"
+    },
+    "744": {
+      "date": "2020-09-08",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/7632ba0b-df7a-4e76-8257-10bcd1c96a5d",
+      "artist": "Feduk",
+      "title": "Краски",
+      "confidence": "musicbrainz-exact"
+    },
+    "745": {
+      "date": "2017-11-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/1b152308-9330-4ae8-b3d8-e6369da44966",
+      "artist": "Feduk",
+      "title": "Моряк",
+      "confidence": "musicbrainz-exact"
+    },
+    "748": {
+      "date": "2012",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/ce0458f1-d265-4885-b14e-4dc97c1126b2",
+      "artist": "Flo Rida",
+      "title": "Whistle",
+      "confidence": "musicbrainz-exact"
+    },
+    "749": {
+      "date": "1977",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/e10deb5a-4ee2-46ee-b7d4-16cc85573b4a",
+      "artist": "Frank Sinatra",
+      "title": "Fly Me to the Moon",
+      "confidence": "musicbrainz-exact"
+    },
+    "750": {
+      "date": "1984-07-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/7313c159-ee3b-4f16-b46c-81f7982b91db",
+      "artist": "George Michael",
+      "title": "Careless Whisper",
+      "confidence": "musicbrainz-exact"
+    },
+    "751": {
+      "date": "2017-12-15",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/bc146fc4-c9a3-43e8-8f28-df9262402c32",
+      "artist": "GONE.Fludd",
+      "title": "Сети",
+      "confidence": "musicbrainz-exact"
+    },
+    "752": {
+      "date": "2004",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/5997078f-9eb9-4be6-8982-19fb5826082e",
+      "artist": "Gorillaz",
+      "title": "Feel Good Inc.",
+      "confidence": "musicbrainz-exact"
+    },
+    "753": {
+      "date": "2004-08-10",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/d3bd52f1-3d84-445b-84f5-7899de8f9340",
+      "artist": "Green Day",
+      "title": "American Idiot",
+      "confidence": "musicbrainz-exact"
+    },
+    "754": {
+      "date": "2004-11",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/38f78d5b-2eaa-4e7c-afb0-e1d4aefce36c",
+      "artist": "Green Day",
+      "title": "Boulevard of Broken Dreams",
+      "confidence": "musicbrainz-exact"
+    },
+    "755": {
+      "date": "2020-02-07",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5dc7ca3a-e44a-4c7a-81d3-af2cab994d4b",
+      "artist": "Green Day",
+      "title": "Meet Me on the Roof",
+      "confidence": "musicbrainz-exact"
+    },
+    "756": {
+      "date": "2004-12-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3abdd443-8e8a-48a9-aff2-0ccc153086f4",
+      "artist": "Green Day",
+      "title": "Wake Me Up When September Ends",
+      "confidence": "musicbrainz-exact"
+    },
+    "757": {
+      "date": "2012",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/d90e3b73-34ed-4a7a-9b1c-9e976957581b",
+      "artist": "Guf",
+      "title": "Письмо домой",
+      "confidence": "musicbrainz-exact"
+    },
+    "759": {
+      "date": "2009-12-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/82a19f6c-a42f-429e-9986-1bdbd8161501",
+      "artist": "Guf",
+      "title": "Ice Baby",
+      "confidence": "musicbrainz-exact"
+    },
+    "760": {
+      "date": "2013-06-07",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3d4bb4c2-9cd4-41a1-aa14-d66e18b2d0af",
+      "artist": "Gustavo Santaolalla",
+      "title": "The Last of Us",
+      "confidence": "musicbrainz-exact"
+    },
+    "765": {
+      "date": "2020-06-23",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9fd8f6ca-207c-43e0-8fe0-c6f9235dc557",
+      "artist": "HammAli & Navai",
+      "title": "А если это любовь",
+      "confidence": "musicbrainz-exact"
+    },
+    "766": {
+      "date": "2021-05-17",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c95faa45-de9f-49a4-a398-c9d500db0cd8",
+      "artist": "HammAli & Navai",
+      "title": "Птичка",
+      "confidence": "musicbrainz-exact"
+    },
+    "767": {
+      "date": "2021-07-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/1c50a43e-7d27-4a19-b42f-368b94f93f4a",
+      "artist": "HammAli & Navai",
+      "title": "У окна",
+      "confidence": "musicbrainz-exact"
+    },
+    "768": {
+      "date": "2020-07-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c153aa20-ce2b-4aa0-af68-f6f62ad4bf9c",
+      "artist": "HENSY",
+      "title": "Замок на мостик",
+      "confidence": "musicbrainz-exact"
+    },
+    "769": {
+      "date": "2020-01-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a3fa7691-f2bc-46c6-b98b-8e3fca903501",
+      "artist": "HENSY",
+      "title": "Пить и курить",
       "confidence": "musicbrainz-exact"
     },
     "770": {
@@ -1899,6 +2131,206 @@
       "checkedAt": "2026-11-17T17:55:33.187Z",
       "found": true
     },
+    "730": {
+      "signature": "deep purple|sail away",
+      "checkedAt": "2026-11-19T13:57:56.111Z",
+      "found": true
+    },
+    "731": {
+      "signature": "deep purple|smoke on the water",
+      "checkedAt": "2026-11-19T13:57:47.492Z",
+      "found": true
+    },
+    "732": {
+      "signature": "deep purple|soldier of fortune",
+      "checkedAt": "2026-11-19T13:57:46.055Z",
+      "found": true
+    },
+    "733": {
+      "signature": "dose|ветер",
+      "checkedAt": "2026-11-19T13:57:37.549Z",
+      "found": false
+    },
+    "734": {
+      "signature": "dream theater|another day",
+      "checkedAt": "2026-11-19T13:57:28.909Z",
+      "found": true
+    },
+    "735": {
+      "signature": "ed sheeran|i see fire",
+      "checkedAt": "2026-11-19T13:57:27.450Z",
+      "found": true
+    },
+    "736": {
+      "signature": "ed sheeran|perfect",
+      "checkedAt": "2026-11-19T13:57:18.910Z",
+      "found": true
+    },
+    "737": {
+      "signature": "ed sheeran|shape of you",
+      "checkedAt": "2026-11-19T13:57:17.436Z",
+      "found": true
+    },
+    "738": {
+      "signature": "eiffel 65|blue da ba dee",
+      "checkedAt": "2026-11-19T13:57:15.992Z",
+      "found": true
+    },
+    "739": {
+      "signature": "elvis presley|can t help falling in love",
+      "checkedAt": "2026-11-19T13:57:07.300Z",
+      "found": true
+    },
+    "740": {
+      "signature": "eminem|mockingbird",
+      "checkedAt": "2026-11-19T13:57:06.001Z",
+      "found": true
+    },
+    "741": {
+      "signature": "eminem feat dido|stan",
+      "checkedAt": "2026-11-19T13:56:57.263Z",
+      "found": false
+    },
+    "742": {
+      "signature": "feduk|запрети мне носить аирмаксы",
+      "checkedAt": "2026-11-19T13:56:55.774Z",
+      "found": false
+    },
+    "743": {
+      "signature": "feduk|зонт",
+      "checkedAt": "2026-11-19T13:56:47.336Z",
+      "found": false
+    },
+    "744": {
+      "signature": "feduk|краски",
+      "checkedAt": "2026-11-19T13:56:45.752Z",
+      "found": true
+    },
+    "745": {
+      "signature": "feduk|моряк",
+      "checkedAt": "2026-11-19T13:56:37.250Z",
+      "found": true
+    },
+    "746": {
+      "signature": "feduk|ты feat dose",
+      "checkedAt": "2026-11-19T13:56:35.876Z",
+      "found": false
+    },
+    "747": {
+      "signature": "feduk|хлопья летят наверх",
+      "checkedAt": "2026-11-19T13:56:27.163Z",
+      "found": false
+    },
+    "748": {
+      "signature": "flo rida|whistle",
+      "checkedAt": "2026-11-19T13:56:19.878Z",
+      "found": true
+    },
+    "749": {
+      "signature": "frank sinatra|fly me to the moon",
+      "checkedAt": "2026-11-19T13:56:11.947Z",
+      "found": true
+    },
+    "750": {
+      "signature": "george michael|careless whisper",
+      "checkedAt": "2026-11-19T13:56:11.683Z",
+      "found": true
+    },
+    "751": {
+      "signature": "gone fludd|сети",
+      "checkedAt": "2026-11-19T13:55:59.162Z",
+      "found": true
+    },
+    "752": {
+      "signature": "gorillaz|feel good inc",
+      "checkedAt": "2026-11-19T13:55:57.759Z",
+      "found": true
+    },
+    "753": {
+      "signature": "green day|american idiot",
+      "checkedAt": "2026-11-19T13:55:49.356Z",
+      "found": true
+    },
+    "754": {
+      "signature": "green day|boulevard of broken dreams",
+      "checkedAt": "2026-11-19T13:55:47.718Z",
+      "found": true
+    },
+    "755": {
+      "signature": "green day|meet me on the roof",
+      "checkedAt": "2026-11-19T13:55:39.110Z",
+      "found": true
+    },
+    "756": {
+      "signature": "green day|wake me up when september ends",
+      "checkedAt": "2026-11-19T13:55:31.820Z",
+      "found": true
+    },
+    "757": {
+      "signature": "guf|письмо домои",
+      "checkedAt": "2026-11-19T13:55:27.232Z",
+      "found": true
+    },
+    "758": {
+      "signature": "guf|пустяк",
+      "checkedAt": "2026-11-19T13:55:27.062Z",
+      "found": false
+    },
+    "759": {
+      "signature": "guf|ice baby",
+      "checkedAt": "2026-11-19T13:55:09.446Z",
+      "found": true
+    },
+    "760": {
+      "signature": "gustavo santaolalla|the last of us",
+      "checkedAt": "2026-11-19T13:55:08.145Z",
+      "found": true
+    },
+    "761": {
+      "signature": "hammali|девочка воина feat navai",
+      "checkedAt": "2026-11-19T13:55:06.613Z",
+      "found": false
+    },
+    "762": {
+      "signature": "hammali|наверно ты меня не помнишь feat jony",
+      "checkedAt": "2026-11-19T13:55:05.076Z",
+      "found": false
+    },
+    "763": {
+      "signature": "hammali|прятки",
+      "checkedAt": "2026-11-19T13:55:03.625Z",
+      "found": false
+    },
+    "764": {
+      "signature": "hammali|пустите меня на танцпол",
+      "checkedAt": "2026-11-19T13:54:55.055Z",
+      "found": false
+    },
+    "765": {
+      "signature": "hammali navai|а если это любовь",
+      "checkedAt": "2026-11-19T13:54:53.621Z",
+      "found": true
+    },
+    "766": {
+      "signature": "hammali navai|птичка",
+      "checkedAt": "2026-11-19T13:54:45.029Z",
+      "found": true
+    },
+    "767": {
+      "signature": "hammali navai|у окна",
+      "checkedAt": "2026-11-19T13:54:43.704Z",
+      "found": true
+    },
+    "768": {
+      "signature": "hensy|замок на мостик",
+      "checkedAt": "2026-11-19T13:54:42.224Z",
+      "found": true
+    },
+    "769": {
+      "signature": "hensy|пить и курить",
+      "checkedAt": "2026-11-19T13:54:41.232Z",
+      "found": true
+    },
     "770": {
       "signature": "hensy|поболело и прошло",
       "checkedAt": "2026-11-19T04:33:48.911Z",
@@ -3662,6 +4094,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 235
+    "verifiedDates": 264
   }
 }
