@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T23:39:24.317Z",
+  "updatedAt": "2026-11-19T04:33:49.355Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -24,6 +24,214 @@
       "source": "https://musicbrainz.org/recording/f8e1a712-736b-4d50-88b8-1ac37e04f697",
       "artist": "Король и Шут",
       "title": "Лесник",
+      "confidence": "musicbrainz-exact"
+    },
+    "770": {
+      "date": "2020-05-26",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/cbcebbca-768d-4111-bd50-0f3cce41d355",
+      "artist": "HENSY",
+      "title": "Поболело и прошло",
+      "confidence": "musicbrainz-exact"
+    },
+    "772": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/2d41fbbe-1ed5-4da2-9409-18d88c30f2b6",
+      "artist": "Hi-Fi",
+      "title": "Чёрный ворон",
+      "confidence": "musicbrainz-exact"
+    },
+    "773": {
+      "date": "2025-09-26",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/87669130-e99e-4423-a964-493a0f1f77f3",
+      "artist": "HOLLYFLAME",
+      "title": "Нежность",
+      "confidence": "musicbrainz-exact"
+    },
+    "776": {
+      "date": "2017",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/21ce4345-753b-4cd6-acea-e7b31b7973df",
+      "artist": "Imagine Dragons",
+      "title": "Believer",
+      "confidence": "musicbrainz-exact"
+    },
+    "777": {
+      "date": "2022-03-11",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/00280126-4ae7-4eab-89ad-18556d9e3dde",
+      "artist": "Imagine Dragons",
+      "title": "Bones",
+      "confidence": "musicbrainz-exact"
+    },
+    "778": {
+      "date": "2012-02-14",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/87dede50-097f-4064-9a9b-bd4851363971",
+      "artist": "Imagine Dragons",
+      "title": "Demons",
+      "confidence": "musicbrainz-exact"
+    },
+    "779": {
+      "date": "2018",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/f52633ff-aeda-4720-a6ea-879e6fb701c6",
+      "artist": "Imagine Dragons",
+      "title": "Natural",
+      "confidence": "musicbrainz-exact"
+    },
+    "780": {
+      "date": "2012-02-14",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/bd61eda3-eb77-4634-ba66-4a084f7f8455",
+      "artist": "Imagine Dragons",
+      "title": "Radioactive",
+      "confidence": "musicbrainz-exact"
+    },
+    "781": {
+      "date": "2017",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/9aec15dd-3934-4e7f-8a43-ca4bfef7ead8",
+      "artist": "Imagine Dragons",
+      "title": "Thunder",
+      "confidence": "musicbrainz-exact"
+    },
+    "783": {
+      "date": "2012-01-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c82f2daf-d7ec-4ffe-9293-6ef5d60bbc0b",
+      "artist": "IOWA",
+      "title": "Простая песня",
+      "confidence": "musicbrainz-exact"
+    },
+    "784": {
+      "date": "2011",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/9e4aa457-2fc0-43ac-b8a4-5d9654145e8f",
+      "artist": "Irma",
+      "title": "I Know",
+      "confidence": "musicbrainz-exact"
+    },
+    "785": {
+      "date": "2016-09-09",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/364abea1-f6cd-42f3-a142-0818f17fc202",
+      "artist": "James Arthur",
+      "title": "Say You Won't Let Go",
+      "confidence": "musicbrainz-exact"
+    },
+    "786": {
+      "date": "1995",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/e45b3a84-2390-483b-90ae-1e63ddcc6d17",
+      "artist": "James Lord Pierpont",
+      "title": "Jingle Bells",
+      "confidence": "musicbrainz-exact"
+    },
+    "788": {
+      "date": "2024-03-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3ff0e250-6f1d-4485-a6e5-405c13962754",
+      "artist": "JAZZDAUREN",
+      "title": "Дарите женщинам цветы",
+      "confidence": "musicbrainz-exact"
+    },
+    "789": {
+      "date": "2003-09-02",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5d6d2945-096b-4eba-99fb-91b953058e7c",
+      "artist": "Jeff Buckley",
+      "title": "Hallelujah",
+      "confidence": "musicbrainz-exact"
+    },
+    "790": {
+      "date": "1995",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/62eecdfa-8749-44b4-ab7c-af8e8180cb77",
+      "artist": "Joan Osborne",
+      "title": "One of Us",
+      "confidence": "musicbrainz-exact"
+    },
+    "791": {
+      "date": "2001-10-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/864ca973-c97c-4a3e-9e86-c6e2d0345cb9",
+      "artist": "John Williams",
+      "title": "Hedwig's Theme",
+      "confidence": "musicbrainz-exact"
+    },
+    "795": {
+      "date": "2019-09-18",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/30e23a97-6abb-4565-9f2a-cefc81dd62a4",
+      "artist": "JONY",
+      "title": "Комета",
+      "confidence": "musicbrainz-exact"
+    },
+    "797": {
+      "date": "2020-08-21",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a5485096-1810-40d6-ac4a-1d2a2b47f881",
+      "artist": "JONY",
+      "title": "Мир сошёл с ума",
+      "confidence": "musicbrainz-exact"
+    },
+    "800": {
+      "date": "2022-04-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5b6179ef-777a-48ee-8d5e-761b0b40d623",
+      "artist": "JONY",
+      "title": "Титры",
+      "confidence": "musicbrainz-exact"
+    },
+    "802": {
+      "date": "2015-11-09",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/cc3f3c3d-aa63-4bad-9f4e-adfc1127d7fd",
+      "artist": "Justin Bieber",
+      "title": "Love Yourself",
+      "confidence": "musicbrainz-exact"
+    },
+    "803": {
+      "date": "2015-08-28",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/77af5f95-4c6f-4bb9-805a-85088a9c27fd",
+      "artist": "Justin Bieber",
+      "title": "What Do You Mean",
+      "confidence": "musicbrainz-exact"
+    },
+    "805": {
+      "date": "2006-07-19",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b0e3636a-4dad-4a9f-b5c6-e14e899bbe62",
+      "artist": "Klaus Badelt",
+      "title": "He's a Pirate",
+      "confidence": "musicbrainz-exact"
+    },
+    "806": {
+      "date": "2023-06-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3d1f394c-c12a-40ec-9317-f8add55c13db",
+      "artist": "KSB muzic",
+      "title": "Баратрум",
+      "confidence": "musicbrainz-exact"
+    },
+    "807": {
+      "date": "2023-04-21",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/f8936bbb-7af5-4dec-8098-bba079865211",
+      "artist": "KSB muzic",
+      "title": "Осень",
+      "confidence": "musicbrainz-exact"
+    },
+    "808": {
+      "date": "1979-04-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c36416a1-6e91-4abf-8fdd-795417fd380f",
+      "artist": "Led Zeppelin",
+      "title": "Immigrant Song",
       "confidence": "musicbrainz-exact"
     },
     "809": {
@@ -1691,6 +1899,201 @@
       "checkedAt": "2026-11-17T17:55:33.187Z",
       "found": true
     },
+    "770": {
+      "signature": "hensy|поболело и прошло",
+      "checkedAt": "2026-11-19T04:33:48.911Z",
+      "found": true
+    },
+    "771": {
+      "signature": "hensy клава кока|костер",
+      "checkedAt": "2026-11-19T04:33:47.457Z",
+      "found": false
+    },
+    "772": {
+      "signature": "hi fi|черныи ворон",
+      "checkedAt": "2026-11-19T04:33:38.869Z",
+      "found": true
+    },
+    "773": {
+      "signature": "hollyflame|нежность",
+      "checkedAt": "2026-11-19T04:33:37.407Z",
+      "found": true
+    },
+    "774": {
+      "signature": "hollyflame|тону",
+      "checkedAt": "2026-11-19T04:33:28.812Z",
+      "found": false
+    },
+    "775": {
+      "signature": "ikimono gakari|blue bird",
+      "checkedAt": "2026-11-19T04:33:27.367Z",
+      "found": false
+    },
+    "776": {
+      "signature": "imagine dragons|believer",
+      "checkedAt": "2026-11-19T04:33:19.101Z",
+      "found": true
+    },
+    "777": {
+      "signature": "imagine dragons|bones",
+      "checkedAt": "2026-11-19T04:33:17.349Z",
+      "found": true
+    },
+    "778": {
+      "signature": "imagine dragons|demons",
+      "checkedAt": "2026-11-19T04:33:08.925Z",
+      "found": true
+    },
+    "779": {
+      "signature": "imagine dragons|natural",
+      "checkedAt": "2026-11-19T04:33:07.444Z",
+      "found": true
+    },
+    "780": {
+      "signature": "imagine dragons|radioactive",
+      "checkedAt": "2026-11-19T04:32:58.884Z",
+      "found": true
+    },
+    "781": {
+      "signature": "imagine dragons|thunder",
+      "checkedAt": "2026-11-19T04:32:57.460Z",
+      "found": true
+    },
+    "782": {
+      "signature": "imagine dragons feat jid|enemy",
+      "checkedAt": "2026-11-19T04:32:56.076Z",
+      "found": false
+    },
+    "783": {
+      "signature": "iowa|простая песня",
+      "checkedAt": "2026-11-19T04:32:54.338Z",
+      "found": true
+    },
+    "784": {
+      "signature": "irma|i know",
+      "checkedAt": "2026-11-19T04:32:52.903Z",
+      "found": true
+    },
+    "785": {
+      "signature": "james arthur|say you won t let go",
+      "checkedAt": "2026-11-19T04:32:51.663Z",
+      "found": true
+    },
+    "786": {
+      "signature": "james lord pierpont|jingle bells",
+      "checkedAt": "2026-11-19T04:32:42.854Z",
+      "found": true
+    },
+    "787": {
+      "signature": "jazmin bean|princess castle",
+      "checkedAt": "2026-11-19T04:32:41.543Z",
+      "found": false
+    },
+    "788": {
+      "signature": "jazzdauren|дарите женщинам цветы",
+      "checkedAt": "2026-11-19T04:32:32.799Z",
+      "found": true
+    },
+    "789": {
+      "signature": "jeff buckley|hallelujah",
+      "checkedAt": "2026-11-19T04:32:31.548Z",
+      "found": true
+    },
+    "790": {
+      "signature": "joan osborne|one of us",
+      "checkedAt": "2026-11-19T04:32:22.774Z",
+      "found": true
+    },
+    "791": {
+      "signature": "john williams|hedwig s theme",
+      "checkedAt": "2026-11-19T04:32:21.322Z",
+      "found": true
+    },
+    "792": {
+      "signature": "jony|воздушныи сарафан",
+      "checkedAt": "2026-11-19T04:32:12.705Z",
+      "found": false
+    },
+    "793": {
+      "signature": "jony|как любовь твою понять feat anna asti",
+      "checkedAt": "2026-11-19T04:32:11.298Z",
+      "found": false
+    },
+    "794": {
+      "signature": "jony|камин",
+      "checkedAt": "2026-11-19T04:32:02.680Z",
+      "found": false
+    },
+    "795": {
+      "signature": "jony|комета",
+      "checkedAt": "2026-11-19T04:32:01.216Z",
+      "found": true
+    },
+    "796": {
+      "signature": "jony|красивая",
+      "checkedAt": "2026-11-19T04:31:52.617Z",
+      "found": false
+    },
+    "797": {
+      "signature": "jony|мир сошел с ума",
+      "checkedAt": "2026-11-19T04:31:51.178Z",
+      "found": true
+    },
+    "798": {
+      "signature": "jony|никак",
+      "checkedAt": "2026-11-19T04:31:42.589Z",
+      "found": false
+    },
+    "799": {
+      "signature": "jony|помню",
+      "checkedAt": "2026-11-19T04:31:41.130Z",
+      "found": false
+    },
+    "800": {
+      "signature": "jony|титры",
+      "checkedAt": "2026-11-19T04:31:32.557Z",
+      "found": true
+    },
+    "801": {
+      "signature": "jony feduk|лето",
+      "checkedAt": "2026-11-19T04:31:31.156Z",
+      "found": false
+    },
+    "802": {
+      "signature": "justin bieber|love yourself",
+      "checkedAt": "2026-11-19T04:31:22.852Z",
+      "found": true
+    },
+    "803": {
+      "signature": "justin bieber|what do you mean",
+      "checkedAt": "2026-11-19T04:31:21.251Z",
+      "found": true
+    },
+    "804": {
+      "signature": "kentukki|замигает свет",
+      "checkedAt": "2026-11-19T04:31:12.520Z",
+      "found": false
+    },
+    "805": {
+      "signature": "klaus badelt|he s a pirate",
+      "checkedAt": "2026-11-19T04:31:11.027Z",
+      "found": true
+    },
+    "806": {
+      "signature": "ksb muzic|баратрум",
+      "checkedAt": "2026-11-19T04:31:02.410Z",
+      "found": true
+    },
+    "807": {
+      "signature": "ksb muzic|осень",
+      "checkedAt": "2026-11-19T04:31:01.012Z",
+      "found": true
+    },
+    "808": {
+      "signature": "led zeppelin|immigrant song",
+      "checkedAt": "2026-11-19T04:30:52.484Z",
+      "found": true
+    },
     "809": {
       "signature": "led zeppelin|stairway to heaven",
       "checkedAt": "2026-11-18T23:39:23.948Z",
@@ -1849,6 +2252,11 @@
     "840": {
       "signature": "madk1d|распять",
       "checkedAt": "2026-11-18T23:37:20.742Z",
+      "found": false
+    },
+    "841": {
+      "signature": "madk1d|ты че обиделась feat темныи принц",
+      "checkedAt": "2026-11-19T04:30:44.289Z",
       "found": false
     },
     "842": {
@@ -3254,6 +3662,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 209
+    "verifiedDates": 235
   }
 }
