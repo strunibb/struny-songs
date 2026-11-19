@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-19T13:57:56.466Z",
+  "updatedAt": "2026-11-19T22:13:31.415Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -24,6 +24,206 @@
       "source": "https://musicbrainz.org/recording/f8e1a712-736b-4d50-88b8-1ac37e04f697",
       "artist": "Король и Шут",
       "title": "Лесник",
+      "confidence": "musicbrainz-exact"
+    },
+    "690": {
+      "date": "2015-11-19",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5cbc1f32-3bfd-48e9-953c-5ec847f86370",
+      "artist": "Billie Eilish",
+      "title": "Ocean Eyes",
+      "confidence": "musicbrainz-exact"
+    },
+    "691": {
+      "date": "2020-11-12",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/028eb5ad-3eba-4e8f-ac50-4cbc21c0c11e",
+      "artist": "Billie Eilish",
+      "title": "Therefore I Am",
+      "confidence": "musicbrainz-exact"
+    },
+    "692": {
+      "date": "2024-05-17",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/951e38c3-ce41-441f-b469-100acbb4d056",
+      "artist": "Billie Eilish",
+      "title": "WILDFLOWER",
+      "confidence": "musicbrainz-exact"
+    },
+    "693": {
+      "date": "1980-01-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/52b77f47-75a7-47c1-b5fe-395920cbe8b8",
+      "artist": "Black Sabbath",
+      "title": "Iron Man",
+      "confidence": "musicbrainz-exact"
+    },
+    "694": {
+      "date": "1998",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/5f4a735a-a53e-4bf4-92a3-833c44b4670d",
+      "artist": "Bon Jovi",
+      "title": "Wanted Dead or Alive",
+      "confidence": "musicbrainz-exact"
+    },
+    "695": {
+      "date": "2013-03-12",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/141defe4-864e-4455-8f1a-e6806c7b290f",
+      "artist": "Brad Breeck",
+      "title": "Gravity Falls Main Title Theme",
+      "confidence": "musicbrainz-exact"
+    },
+    "696": {
+      "date": "2012-10-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9dbd4c26-c4ad-4abe-ba3e-88bfe6750518",
+      "artist": "Bruno Mars",
+      "title": "Locked Out of Heaven",
+      "confidence": "musicbrainz-exact"
+    },
+    "697": {
+      "date": "2010-10-04",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a323da57-33ba-4dac-9ff9-48ef7bba6482",
+      "artist": "Bruno Mars",
+      "title": "Runaway Baby",
+      "confidence": "musicbrainz-exact"
+    },
+    "698": {
+      "date": "2010-03-11",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5abc721a-8214-4687-9ab8-0c3391cb1ecb",
+      "artist": "Bruno Mars",
+      "title": "Talking to the Moon",
+      "confidence": "musicbrainz-exact"
+    },
+    "699": {
+      "date": "2010-10-04",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/55b9fb00-4390-4549-a692-5993bc524e70",
+      "artist": "Bruno Mars",
+      "title": "The Lazy Song",
+      "confidence": "musicbrainz-exact"
+    },
+    "702": {
+      "date": "1996",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/0bd43a7b-6e91-448f-8deb-2a46d9a62c21",
+      "artist": "Celine Dion",
+      "title": "My Heart Will Go On",
+      "confidence": "musicbrainz-exact"
+    },
+    "704": {
+      "date": "1990-08-07",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/8daaabf0-198b-4cd0-a446-20d5264d66ca",
+      "artist": "Chris Isaak",
+      "title": "Wicked Game",
+      "confidence": "musicbrainz-exact"
+    },
+    "707": {
+      "date": "2018-02-16",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3b470965-174c-4ff3-82be-ccbce9e1b658",
+      "artist": "Dabro",
+      "title": "Влюбился",
+      "confidence": "musicbrainz-exact"
+    },
+    "708": {
+      "date": "2020-11-06",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/53a8c449-4ee8-45f7-aca7-af66eb7d52c1",
+      "artist": "Dabro",
+      "title": "Всё за одного",
+      "confidence": "musicbrainz-exact"
+    },
+    "709": {
+      "date": "2022-05-20",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5d8d3f11-ed3d-4777-9265-8a2ed8990c2e",
+      "artist": "Dabro",
+      "title": "Давай запоём",
+      "confidence": "musicbrainz-exact"
+    },
+    "713": {
+      "date": "2022-08-19",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/572a3307-4adc-4bbf-9f86-7cb0397d0289",
+      "artist": "Dabro",
+      "title": "Мне не страшно",
+      "confidence": "musicbrainz-exact"
+    },
+    "715": {
+      "date": "2020-11-06",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/2ac0825b-281a-4e51-a180-ac5731e8607e",
+      "artist": "Dabro",
+      "title": "На крыше",
+      "confidence": "musicbrainz-exact"
+    },
+    "716": {
+      "date": "2021",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/1e2b07a2-a91e-41a3-be5e-cd57d957163b",
+      "artist": "Dabro",
+      "title": "На часах ноль ноль",
+      "confidence": "musicbrainz-exact"
+    },
+    "717": {
+      "date": "2023-02-17",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/fcc8dfc9-d182-488b-844f-c93026dc444f",
+      "artist": "Dabro",
+      "title": "Надо повторить",
+      "confidence": "musicbrainz-exact"
+    },
+    "718": {
+      "date": "2020-11-06",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/78d7a009-dcbd-484d-97b9-96542132a196",
+      "artist": "Dabro",
+      "title": "Она не такая",
+      "confidence": "musicbrainz-exact"
+    },
+    "724": {
+      "date": "2020-05-15",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/2a61868f-cc75-4707-bd08-f52a9185c95e",
+      "artist": "Dabro",
+      "title": "Юность",
+      "confidence": "musicbrainz-exact"
+    },
+    "725": {
+      "date": "2019-06-14",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/e18cca69-85b0-4d3b-8f13-1abef877060a",
+      "artist": "Dabro",
+      "title": "Я по частицам",
+      "confidence": "musicbrainz-exact"
+    },
+    "727": {
+      "date": "2021-04-30",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b9d64ac8-22a2-44c9-a2d4-61f9c78f7b7b",
+      "artist": "Dead Blonde",
+      "title": "Бесприданница",
+      "confidence": "musicbrainz-exact"
+    },
+    "728": {
+      "date": "2026-05-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/fcc9a41c-985e-42b5-803d-ce7524797454",
+      "artist": "Dead Blonde",
+      "title": "Казино",
+      "confidence": "musicbrainz-exact"
+    },
+    "729": {
+      "date": "2020-04-30",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/2f5654b6-8f10-42a9-b5fa-f1b3c38a9d95",
+      "artist": "Dead Blonde",
+      "title": "Мальчик на девятке",
       "confidence": "musicbrainz-exact"
     },
     "730": {
@@ -2131,6 +2331,196 @@
       "checkedAt": "2026-11-17T17:55:33.187Z",
       "found": true
     },
+    "690": {
+      "signature": "billie eilish|ocean eyes",
+      "checkedAt": "2026-11-19T22:13:31.074Z",
+      "found": true
+    },
+    "691": {
+      "signature": "billie eilish|therefore i am",
+      "checkedAt": "2026-11-19T22:13:29.592Z",
+      "found": true
+    },
+    "692": {
+      "signature": "billie eilish|wildflower",
+      "checkedAt": "2026-11-19T22:13:28.142Z",
+      "found": true
+    },
+    "693": {
+      "signature": "black sabbath|iron man",
+      "checkedAt": "2026-11-19T22:13:26.535Z",
+      "found": true
+    },
+    "694": {
+      "signature": "bon jovi|wanted dead or alive",
+      "checkedAt": "2026-11-19T22:13:17.885Z",
+      "found": true
+    },
+    "695": {
+      "signature": "brad breeck|gravity falls main title theme",
+      "checkedAt": "2026-11-19T22:13:16.408Z",
+      "found": true
+    },
+    "696": {
+      "signature": "bruno mars|locked out of heaven",
+      "checkedAt": "2026-11-19T22:13:08.006Z",
+      "found": true
+    },
+    "697": {
+      "signature": "bruno mars|runaway baby",
+      "checkedAt": "2026-11-19T22:13:06.707Z",
+      "found": true
+    },
+    "698": {
+      "signature": "bruno mars|talking to the moon",
+      "checkedAt": "2026-11-19T22:12:43.726Z",
+      "found": true
+    },
+    "699": {
+      "signature": "bruno mars|the lazy song",
+      "checkedAt": "2026-11-19T22:12:42.642Z",
+      "found": true
+    },
+    "701": {
+      "signature": "camila cabello feat young thug|havana",
+      "checkedAt": "2026-11-19T22:11:57.828Z",
+      "found": false
+    },
+    "702": {
+      "signature": "celine dion|my heart will go on",
+      "checkedAt": "2026-11-19T22:11:56.859Z",
+      "found": true
+    },
+    "703": {
+      "signature": "charlie puth feat selena gomez|we don t talk anymore",
+      "checkedAt": "2026-11-19T22:11:47.912Z",
+      "found": false
+    },
+    "704": {
+      "signature": "chris isaak|wicked game",
+      "checkedAt": "2026-11-19T22:11:46.286Z",
+      "found": true
+    },
+    "705": {
+      "signature": "comedoz|ямаика",
+      "checkedAt": "2026-11-19T22:11:37.615Z",
+      "found": false
+    },
+    "706": {
+      "signature": "dabro|билет",
+      "checkedAt": "2026-11-19T22:11:36.168Z",
+      "found": false
+    },
+    "707": {
+      "signature": "dabro|влюбился",
+      "checkedAt": "2026-11-19T22:11:34.721Z",
+      "found": true
+    },
+    "708": {
+      "signature": "dabro|все за одного",
+      "checkedAt": "2026-11-19T22:11:33.283Z",
+      "found": true
+    },
+    "709": {
+      "signature": "dabro|даваи запоем",
+      "checkedAt": "2026-11-19T22:11:31.820Z",
+      "found": true
+    },
+    "710": {
+      "signature": "dabro|даваи навсегда",
+      "checkedAt": "2026-11-19T22:11:30.362Z",
+      "found": false
+    },
+    "711": {
+      "signature": "dabro|дальше больше",
+      "checkedAt": "2026-11-19T22:11:21.763Z",
+      "found": false
+    },
+    "712": {
+      "signature": "dabro|два крыла",
+      "checkedAt": "2026-11-19T22:11:20.286Z",
+      "found": false
+    },
+    "713": {
+      "signature": "dabro|мне не страшно",
+      "checkedAt": "2026-11-19T22:11:11.691Z",
+      "found": true
+    },
+    "714": {
+      "signature": "dabro|море привет",
+      "checkedAt": "2026-11-19T22:11:10.224Z",
+      "found": false
+    },
+    "715": {
+      "signature": "dabro|на крыше",
+      "checkedAt": "2026-11-19T22:11:01.608Z",
+      "found": true
+    },
+    "716": {
+      "signature": "dabro|на часах ноль ноль",
+      "checkedAt": "2026-11-19T22:11:00.185Z",
+      "found": true
+    },
+    "717": {
+      "signature": "dabro|надо повторить",
+      "checkedAt": "2026-11-19T22:10:51.538Z",
+      "found": true
+    },
+    "718": {
+      "signature": "dabro|она не такая",
+      "checkedAt": "2026-11-19T22:10:50.082Z",
+      "found": true
+    },
+    "719": {
+      "signature": "dabro|полюбил тебя",
+      "checkedAt": "2026-11-19T22:10:41.452Z",
+      "found": false
+    },
+    "720": {
+      "signature": "dabro|поцелуи",
+      "checkedAt": "2026-11-19T22:10:39.988Z",
+      "found": false
+    },
+    "721": {
+      "signature": "dabro|солнце и луна",
+      "checkedAt": "2026-11-19T22:10:31.370Z",
+      "found": false
+    },
+    "723": {
+      "signature": "dabro|услышит весь раион",
+      "checkedAt": "2026-11-19T22:09:39.550Z",
+      "found": false
+    },
+    "724": {
+      "signature": "dabro|юность",
+      "checkedAt": "2026-11-19T22:09:38.388Z",
+      "found": true
+    },
+    "725": {
+      "signature": "dabro|я по частицам",
+      "checkedAt": "2026-11-19T22:09:29.471Z",
+      "found": true
+    },
+    "726": {
+      "signature": "daft punk feat pharrell williams|get lucky",
+      "checkedAt": "2026-11-19T22:09:28.254Z",
+      "found": false
+    },
+    "727": {
+      "signature": "dead blonde|бесприданница",
+      "checkedAt": "2026-11-19T22:09:19.401Z",
+      "found": true
+    },
+    "728": {
+      "signature": "dead blonde|казино",
+      "checkedAt": "2026-11-19T22:09:17.948Z",
+      "found": true
+    },
+    "729": {
+      "signature": "dead blonde|мальчик на девятке",
+      "checkedAt": "2026-11-19T22:09:09.286Z",
+      "found": true
+    },
     "730": {
       "signature": "deep purple|sail away",
       "checkedAt": "2026-11-19T13:57:56.111Z",
@@ -4094,6 +4484,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 264
+    "verifiedDates": 289
   }
 }
