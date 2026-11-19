@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-19T09:30:59.327Z",
+  "updatedAt": "2026-11-19T18:45:10.395Z",
   "tracks": {
     "681": {
       "artist": "Billie Eilish",
@@ -41,6 +41,15 @@
       "start": 25,
       "source": "official-artist-youtube",
       "verifiedAt": "2026-11-17"
+    },
+    "947": {
+      "artist": "The Weeknd",
+      "title": "Blinding Lights",
+      "videoId": "4NRXx6U8ABQ",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/5bdbfe86-4ad5-4c19-8d29-ee5f30ba628b",
+      "verifiedAt": "2026-11-19T18:40:51.709Z"
     },
     "1027": {
       "artist": "Billie Eilish",
@@ -140,6 +149,131 @@
     "923": {
       "signature": "sting|shape of my heart",
       "checkedAt": "2026-11-19T01:29:18.984Z",
+      "found": false
+    },
+    "927": {
+      "signature": "t fest|cayendo feat дора",
+      "checkedAt": "2026-11-19T18:45:09.991Z",
+      "found": false
+    },
+    "928": {
+      "signature": "the animals|house of the rising sun",
+      "checkedAt": "2026-11-19T18:44:50.306Z",
+      "found": false
+    },
+    "929": {
+      "signature": "the beatles|all my loving",
+      "checkedAt": "2026-11-19T18:44:39.512Z",
+      "found": false
+    },
+    "930": {
+      "signature": "the beatles|and i love her",
+      "checkedAt": "2026-11-19T18:44:28.874Z",
+      "found": false
+    },
+    "931": {
+      "signature": "the beatles|back in the ussr",
+      "checkedAt": "2026-11-19T18:44:22.522Z",
+      "found": false
+    },
+    "932": {
+      "signature": "the beatles|can t buy me love",
+      "checkedAt": "2026-11-19T18:44:14.830Z",
+      "found": false
+    },
+    "933": {
+      "signature": "the beatles|do you want to know a secret",
+      "checkedAt": "2026-11-19T18:44:00.744Z",
+      "found": false
+    },
+    "934": {
+      "signature": "the beatles|girl",
+      "checkedAt": "2026-11-19T18:43:17.584Z",
+      "found": false
+    },
+    "935": {
+      "signature": "the beatles|here comes the sun",
+      "checkedAt": "2026-11-19T18:42:57.789Z",
+      "found": false
+    },
+    "936": {
+      "signature": "the beatles|i will",
+      "checkedAt": "2026-11-19T18:42:43.954Z",
+      "found": false
+    },
+    "937": {
+      "signature": "the beatles|i m happy just to dance with you",
+      "checkedAt": "2026-11-19T18:42:37.613Z",
+      "found": false
+    },
+    "938": {
+      "signature": "the beatles|let it be",
+      "checkedAt": "2026-11-19T18:42:17.954Z",
+      "found": false
+    },
+    "939": {
+      "signature": "the beatles|ob la di ob la da",
+      "checkedAt": "2026-11-19T18:42:11.466Z",
+      "found": false
+    },
+    "940": {
+      "signature": "the beatles|twist and shout",
+      "checkedAt": "2026-11-19T18:41:51.772Z",
+      "found": false
+    },
+    "941": {
+      "signature": "the beatles|while my guitar gently weeps",
+      "checkedAt": "2026-11-19T18:41:44.008Z",
+      "found": false
+    },
+    "942": {
+      "signature": "the beatles|yesterday",
+      "checkedAt": "2026-11-19T18:41:36.377Z",
+      "found": false
+    },
+    "943": {
+      "signature": "the police|every breath you take",
+      "checkedAt": "2026-11-19T18:41:25.534Z",
+      "found": false
+    },
+    "944": {
+      "signature": "the rolling stones|i can t get no satisfaction",
+      "checkedAt": "2026-11-19T18:41:17.907Z",
+      "found": false
+    },
+    "945": {
+      "signature": "the rolling stones|angie",
+      "checkedAt": "2026-11-19T18:41:10.201Z",
+      "found": false
+    },
+    "946": {
+      "signature": "the rolling stones|paint it black",
+      "checkedAt": "2026-11-19T18:41:02.706Z",
+      "found": false
+    },
+    "947": {
+      "signature": "the weeknd|blinding lights",
+      "checkedAt": "2026-11-19T18:40:51.709Z",
+      "found": true
+    },
+    "948": {
+      "signature": "the white stripes|seven nation army",
+      "checkedAt": "2026-11-19T18:40:44.044Z",
+      "found": false
+    },
+    "949": {
+      "signature": "thomas mraz|тетрис",
+      "checkedAt": "2026-11-19T18:40:36.389Z",
+      "found": false
+    },
+    "950": {
+      "signature": "three days grace|i hate everything about you",
+      "checkedAt": "2026-11-19T18:40:31.542Z",
+      "found": false
+    },
+    "951": {
+      "signature": "tom odell|another love",
+      "checkedAt": "2026-11-19T18:40:11.729Z",
       "found": false
     },
     "952": {
@@ -990,6 +1124,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedVideos": 13
+    "verifiedVideos": 14
   }
 }
