@@ -76,7 +76,7 @@ export function SubscriptionPlans() {
             >
               <span className={styles.tabNumber}>{count}</span>
               <span className={styles.tabDetails}>
-                <strong>{count} песни в месяц</strong>
+                <strong>{count === 4 ? "4 песни в месяц" : "8 песен в месяц"}</strong>
                 <small>{count === 4 ? "1 песня в неделю" : "2 песни в неделю"}</small>
               </span>
               {count === 8 && <span className={styles.tabBonus}>Выгоднее</span>}
@@ -122,7 +122,7 @@ export function SubscriptionPlans() {
                 </div>
 
                 <ul className={styles.features}>
-                  <li>{songCount} песни из раздела «{plan.level}»</li>
+                  <li>{songCount} {songCount === 4 ? "песни" : "песен"} из раздела «{plan.level}»</li>
                   <li>PDF можно скачать и сохранить</li>
                   <li>{isVideo ? "Видео доступны для просмотра на сайте" : "Без видеоразборов"}</li>
                   <li>Новый выбор песен каждый оплаченный месяц</li>
@@ -133,7 +133,7 @@ export function SubscriptionPlans() {
                   href={telegramLink(plan, songCount)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`Оформить подписку: ${songCount} песни, ${plan.level}, ${isVideo ? "PDF и видео" : "PDF"}, ${formatPrice(plan.price)} рублей в месяц`}
+                  aria-label={`Оформить подписку: ${songCount} ${songCount === 4 ? "песни" : "песен"}, ${plan.level}, ${isVideo ? "PDF и видео" : "PDF"}, ${formatPrice(plan.price)} рублей в месяц`}
                 >
                   Выбрать тариф <span aria-hidden="true">↗</span>
                 </a>
