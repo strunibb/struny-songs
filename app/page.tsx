@@ -2,6 +2,7 @@ import Link from "next/link";
 import { SongCatalog } from "@/components/song-catalog";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { SubscriptionPlans } from "@/components/subscription-plans";
 import { publicSeedSongs } from "@/lib/seed-songs";
 
 export const dynamic = "force-dynamic";
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <main>
       <SiteHeader />
+      <SubscriptionPlans />
       <SongCatalog songs={songs} />
       <section className="section value-section">
         <div className="shell value-grid">
