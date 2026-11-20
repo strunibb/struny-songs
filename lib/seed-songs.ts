@@ -175,11 +175,11 @@ export const publicSeedSongs: PublicSong[] = seedSongs
   .filter((song) => song.status === "published")
   .map(({ privateVideoUrl: _video, privatePdfUrl: _pdf, pdfKey: _pdfKey, coverKey: _coverKey, status: _status, ...song }) => {
     const prices = song.level === "Начинающий"
-      ? { pdfPrice: 49, videoPrice: 118 }
+      ? { pdfPrice: 49, videoPrice: 149 }
       : song.level === "Любитель"
         ? { pdfPrice: 79, videoPrice: 158 }
         : song.level === "Продвинутый"
-          ? { pdfPrice: 99, videoPrice: 198 }
+          ? { pdfPrice: 99, videoPrice: 249 }
           : song.level === "Профи" || song.level === "Фингерстайл"
             ? { pdfPrice: 129, videoPrice: 258 }
             : song.level === "Зарубежный рок"
