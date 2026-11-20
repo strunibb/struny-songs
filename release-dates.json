@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-20T11:38:43.954Z",
+  "updatedAt": "2026-11-20T19:20:00.253Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -24,6 +24,206 @@
       "source": "https://musicbrainz.org/recording/f8e1a712-736b-4d50-88b8-1ac37e04f697",
       "artist": "Король и Шут",
       "title": "Лесник",
+      "confidence": "musicbrainz-exact"
+    },
+    "575": {
+      "date": "2009",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/dfb69d1b-0e73-4008-9d42-9ca664d5d726",
+      "artist": "Сергей Трофимов",
+      "title": "Голуби",
+      "confidence": "musicbrainz-exact"
+    },
+    "576": {
+      "date": "2007",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4969a746-b995-41db-9e7e-824040472d33",
+      "artist": "Сергей Трофимов",
+      "title": "Город Сочи",
+      "confidence": "musicbrainz-exact"
+    },
+    "581": {
+      "date": "2009",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/1a402f04-a606-4a99-8bba-16c404eb299c",
+      "artist": "Сергей Трофимов",
+      "title": "Снегири",
+      "confidence": "musicbrainz-exact"
+    },
+    "582": {
+      "date": "2009",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/8699c76f-804a-4370-a983-721b310203b9",
+      "artist": "Сергей Трофимов",
+      "title": "Я скучаю по тебе",
+      "confidence": "musicbrainz-exact"
+    },
+    "585": {
+      "date": "2015-11-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/1bfa93a8-a28d-494f-b92a-07d9ed9f7d79",
+      "artist": "Скриптонит",
+      "title": "Вечеринка",
+      "confidence": "musicbrainz-exact"
+    },
+    "588": {
+      "date": "2017-12-16",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a7595e73-4e95-4dfd-89f0-68ece76c8773",
+      "artist": "Скриптонит",
+      "title": "Положение",
+      "confidence": "musicbrainz-exact"
+    },
+    "589": {
+      "date": "2015-11-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/63d651c7-c264-4529-899e-5c6bfea084be",
+      "artist": "Скриптонит",
+      "title": "Танцуй сама",
+      "confidence": "musicbrainz-exact"
+    },
+    "591": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/f8f1cd02-ff34-4eb3-91df-89d7412c5cd0",
+      "artist": "Смысловые Галлюцинации",
+      "title": "Зачем топтать мою любовь",
+      "confidence": "musicbrainz-exact"
+    },
+    "592": {
+      "date": "1998",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/32f55aff-3bf1-4f2d-8d03-ec0e7fdb82a3",
+      "artist": "Сплин",
+      "title": "Выхода нет",
+      "confidence": "musicbrainz-exact"
+    },
+    "594": {
+      "date": "2000",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/8ca20309-54c0-4921-9973-209e2e901e88",
+      "artist": "Сплин",
+      "title": "Линия жизни",
+      "confidence": "musicbrainz-exact"
+    },
+    "595": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/3e2b8fda-675c-49c7-89fb-5d446d9d34cf",
+      "artist": "Сплин",
+      "title": "Моё сердце",
+      "confidence": "musicbrainz-exact"
+    },
+    "596": {
+      "date": "1997-11",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/ea5e6d22-bf94-46ad-b247-b9caf5feb026",
+      "artist": "Сплин",
+      "title": "Орбит без сахара",
+      "confidence": "musicbrainz-exact"
+    },
+    "597": {
+      "date": "2004-11-17",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/16ee2ede-6956-4876-8334-60c27b09377d",
+      "artist": "Сплин",
+      "title": "Романс",
+      "confidence": "musicbrainz-exact"
+    },
+    "598": {
+      "date": "2014-09-25",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/596f32bf-4a6d-4dcb-a94b-8bbb9276ad7f",
+      "artist": "Сплин",
+      "title": "Танцуй",
+      "confidence": "musicbrainz-exact"
+    },
+    "599": {
+      "date": "2004",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/8530c67d-506c-4cef-af19-904ba76f3f55",
+      "artist": "Стас Михайлов",
+      "title": "Без тебя",
+      "confidence": "musicbrainz-exact"
+    },
+    "600": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/f7a8882b-a179-4552-aa88-2c68011b746a",
+      "artist": "Стрелки",
+      "title": "Веточка",
+      "confidence": "musicbrainz-exact"
+    },
+    "601": {
+      "date": "1998",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/a20515a1-4a95-4940-a35e-8e1b9393a62d",
+      "artist": "Стрелки",
+      "title": "На вечеринке",
+      "confidence": "musicbrainz-exact"
+    },
+    "602": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/b3bd1af9-2f43-4c0e-9435-8edc704b0f9c",
+      "artist": "Стрелки",
+      "title": "Нет любви",
+      "confidence": "musicbrainz-exact"
+    },
+    "603": {
+      "date": "2000",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/8d08b6bc-a327-4528-97ef-dcd3706be4c1",
+      "artist": "Стрелки",
+      "title": "Солнце за горой",
+      "confidence": "musicbrainz-exact"
+    },
+    "604": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/1a8387aa-b49b-4a73-ae6b-24e72249ca0f",
+      "artist": "Стрелки",
+      "title": "Ты бросил меня",
+      "confidence": "musicbrainz-exact"
+    },
+    "605": {
+      "date": "1999-09-09",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3fa574be-1a2c-48e9-a56c-5bc8e2a324f1",
+      "artist": "Танцы Минус",
+      "title": "Город",
+      "confidence": "musicbrainz-exact"
+    },
+    "607": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/17fdcf53-4cb2-49de-8386-9e9cf95e5868",
+      "artist": "Танцы Минус",
+      "title": "Половинка",
+      "confidence": "musicbrainz-exact"
+    },
+    "608": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/a922c2e0-6c8f-4100-a8d1-fbab6d3d5492",
+      "artist": "Танцы Минус",
+      "title": "Ю",
+      "confidence": "musicbrainz-exact"
+    },
+    "609": {
+      "date": "1997",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/dfecfcaa-edea-4f4b-bd4e-b54b838b38ad",
+      "artist": "Татьяна Буланова",
+      "title": "Мой ненаглядный",
+      "confidence": "musicbrainz-exact"
+    },
+    "611": {
+      "date": "1996",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/8ebf976c-dee8-4477-b4d8-d699201a565d",
+      "artist": "Татьяна Буланова",
+      "title": "Ясный мой свет",
       "confidence": "musicbrainz-exact"
     },
     "612": {
@@ -2731,6 +2931,201 @@
       "checkedAt": "2026-11-17T17:55:33.187Z",
       "found": true
     },
+    "573": {
+      "signature": "сергеи трофимов|ветер в голове",
+      "checkedAt": "2026-11-20T19:19:59.902Z",
+      "found": false
+    },
+    "574": {
+      "signature": "сергеи трофимов|ветерок",
+      "checkedAt": "2026-11-20T19:19:58.456Z",
+      "found": false
+    },
+    "575": {
+      "signature": "сергеи трофимов|голуби",
+      "checkedAt": "2026-11-20T19:19:49.878Z",
+      "found": true
+    },
+    "576": {
+      "signature": "сергеи трофимов|город сочи",
+      "checkedAt": "2026-11-20T19:19:48.427Z",
+      "found": true
+    },
+    "577": {
+      "signature": "сергеи трофимов|дальнобоиная",
+      "checkedAt": "2026-11-20T19:19:39.932Z",
+      "found": false
+    },
+    "578": {
+      "signature": "сергеи трофимов|иномарка",
+      "checkedAt": "2026-11-20T19:19:38.381Z",
+      "found": false
+    },
+    "579": {
+      "signature": "сергеи трофимов|московская песня",
+      "checkedAt": "2026-11-20T19:19:29.810Z",
+      "found": false
+    },
+    "580": {
+      "signature": "сергеи трофимов|родина",
+      "checkedAt": "2026-11-20T19:19:28.392Z",
+      "found": false
+    },
+    "581": {
+      "signature": "сергеи трофимов|снегири",
+      "checkedAt": "2026-11-20T19:19:19.817Z",
+      "found": true
+    },
+    "582": {
+      "signature": "сергеи трофимов|я скучаю по тебе",
+      "checkedAt": "2026-11-20T19:19:18.333Z",
+      "found": true
+    },
+    "583": {
+      "signature": "сергеи шнуров|мобильник тема из фильма бумер",
+      "checkedAt": "2026-11-20T19:19:09.751Z",
+      "found": false
+    },
+    "584": {
+      "signature": "серов|ты меня любишь",
+      "checkedAt": "2026-11-20T19:19:08.306Z",
+      "found": false
+    },
+    "585": {
+      "signature": "скриптонит|вечеринка",
+      "checkedAt": "2026-11-20T19:18:59.756Z",
+      "found": true
+    },
+    "586": {
+      "signature": "скриптонит|где твоя любовь",
+      "checkedAt": "2026-11-20T19:18:58.364Z",
+      "found": false
+    },
+    "587": {
+      "signature": "скриптонит|не забираи меня с пати",
+      "checkedAt": "2026-11-20T19:18:49.696Z",
+      "found": false
+    },
+    "588": {
+      "signature": "скриптонит|положение",
+      "checkedAt": "2026-11-20T19:18:48.385Z",
+      "found": true
+    },
+    "589": {
+      "signature": "скриптонит|танцуи сама",
+      "checkedAt": "2026-11-20T19:18:39.668Z",
+      "found": true
+    },
+    "590": {
+      "signature": "скриптонит|я знаю какая ты",
+      "checkedAt": "2026-11-20T19:18:38.225Z",
+      "found": false
+    },
+    "591": {
+      "signature": "смысловые галлюцинации|зачем топтать мою любовь",
+      "checkedAt": "2026-11-20T19:18:29.649Z",
+      "found": true
+    },
+    "592": {
+      "signature": "сплин|выхода нет",
+      "checkedAt": "2026-11-20T19:18:28.243Z",
+      "found": true
+    },
+    "593": {
+      "signature": "сплин|двое не спят",
+      "checkedAt": "2026-11-20T19:18:19.603Z",
+      "found": false
+    },
+    "594": {
+      "signature": "сплин|линия жизни",
+      "checkedAt": "2026-11-20T19:18:18.278Z",
+      "found": true
+    },
+    "595": {
+      "signature": "сплин|мое сердце",
+      "checkedAt": "2026-11-20T19:18:09.582Z",
+      "found": true
+    },
+    "596": {
+      "signature": "сплин|орбит без сахара",
+      "checkedAt": "2026-11-20T19:18:08.207Z",
+      "found": true
+    },
+    "597": {
+      "signature": "сплин|романс",
+      "checkedAt": "2026-11-20T19:18:06.944Z",
+      "found": true
+    },
+    "598": {
+      "signature": "сплин|танцуи",
+      "checkedAt": "2026-11-20T19:17:58.154Z",
+      "found": true
+    },
+    "599": {
+      "signature": "стас михаилов|без тебя",
+      "checkedAt": "2026-11-20T19:17:56.830Z",
+      "found": true
+    },
+    "600": {
+      "signature": "стрелки|веточка",
+      "checkedAt": "2026-11-20T19:17:48.181Z",
+      "found": true
+    },
+    "601": {
+      "signature": "стрелки|на вечеринке",
+      "checkedAt": "2026-11-20T19:17:46.719Z",
+      "found": true
+    },
+    "602": {
+      "signature": "стрелки|нет любви",
+      "checkedAt": "2026-11-20T19:17:38.102Z",
+      "found": true
+    },
+    "603": {
+      "signature": "стрелки|солнце за горои",
+      "checkedAt": "2026-11-20T19:17:37.100Z",
+      "found": true
+    },
+    "604": {
+      "signature": "стрелки|ты бросил меня",
+      "checkedAt": "2026-11-20T19:17:14.029Z",
+      "found": true
+    },
+    "605": {
+      "signature": "танцы минус|город",
+      "checkedAt": "2026-11-20T19:17:12.678Z",
+      "found": true
+    },
+    "606": {
+      "signature": "танцы минус|город сказка",
+      "checkedAt": "2026-11-20T19:16:49.676Z",
+      "found": false
+    },
+    "607": {
+      "signature": "танцы минус|половинка",
+      "checkedAt": "2026-11-20T19:16:48.227Z",
+      "found": true
+    },
+    "608": {
+      "signature": "танцы минус|ю",
+      "checkedAt": "2026-11-20T19:16:39.669Z",
+      "found": true
+    },
+    "609": {
+      "signature": "татьяна буланова|мои ненаглядныи",
+      "checkedAt": "2026-11-20T19:16:38.333Z",
+      "found": true
+    },
+    "610": {
+      "signature": "татьяна буланова|один день",
+      "checkedAt": "2026-11-20T19:16:29.598Z",
+      "found": false
+    },
+    "611": {
+      "signature": "татьяна буланова|ясныи мои свет",
+      "checkedAt": "2026-11-20T19:16:28.321Z",
+      "found": true
+    },
     "612": {
       "signature": "татьяна куртукова|матушка",
       "checkedAt": "2026-11-20T11:38:43.692Z",
@@ -2775,6 +3170,11 @@
       "signature": "тима ищет свет|волна",
       "checkedAt": "2026-11-20T11:38:03.941Z",
       "found": true
+    },
+    "621": {
+      "signature": "тима ищет свет|новыи день",
+      "checkedAt": "2026-11-20T19:16:19.819Z",
+      "found": false
     },
     "622": {
       "signature": "тима ищет свет|потанцуи со мнои",
@@ -5279,6 +5679,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 339
+    "verifiedDates": 364
   }
 }
