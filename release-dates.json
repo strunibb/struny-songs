@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-19T22:13:31.415Z",
+  "updatedAt": "2026-11-20T03:15:12.114Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -24,6 +24,246 @@
       "source": "https://musicbrainz.org/recording/f8e1a712-736b-4d50-88b8-1ac37e04f697",
       "artist": "Король и Шут",
       "title": "Лесник",
+      "confidence": "musicbrainz-exact"
+    },
+    "654": {
+      "date": "2025-06-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/2f28afb7-6505-417c-8bc8-5ed9439e5386",
+      "artist": "Эндшпиль",
+      "title": "10",
+      "confidence": "musicbrainz-exact"
+    },
+    "655": {
+      "date": "1987",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/b9dd884b-50de-4e7e-97e1-f740742f623f",
+      "artist": "Юлий Ким",
+      "title": "Губы окаянные",
+      "confidence": "musicbrainz-exact"
+    },
+    "656": {
+      "date": "2004",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/67e0d50a-623f-4615-84d0-da64bdb677f4",
+      "artist": "Юта",
+      "title": "Жили-были",
+      "confidence": "musicbrainz-exact"
+    },
+    "657": {
+      "date": "2025-08-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/83231719-c6c4-4fbd-9396-4c50c2381ec6",
+      "artist": "Я про рок",
+      "title": "Ангел-хранитель",
+      "confidence": "musicbrainz-exact"
+    },
+    "658": {
+      "date": "2025-09-19",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3d905a26-8463-427d-827b-63666f0a1663",
+      "artist": "Я про рок",
+      "title": "Рожон",
+      "confidence": "musicbrainz-exact"
+    },
+    "659": {
+      "date": "1980",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/8ae11a2d-06b9-4a80-bc6d-eac07a4912b3",
+      "artist": "AC/DC",
+      "title": "Back in Black",
+      "confidence": "musicbrainz-exact"
+    },
+    "660": {
+      "date": "1981",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/c0ea8d09-a9ad-40e4-bae6-ae0f6a21c6fd",
+      "artist": "AC/DC",
+      "title": "Highway to Hell",
+      "confidence": "musicbrainz-exact"
+    },
+    "661": {
+      "date": "2005-11-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/d480a418-345b-40c6-ac55-438e3e88563f",
+      "artist": "Adele",
+      "title": "Hello",
+      "confidence": "musicbrainz-exact"
+    },
+    "662": {
+      "date": "2010-10-21",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/671e9ba3-4022-4140-bc09-3d242f2e7a7d",
+      "artist": "Adele",
+      "title": "Someone Like You",
+      "confidence": "musicbrainz-exact"
+    },
+    "664": {
+      "date": "2012-11-05",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/30d95aa4-50af-4de7-8cc9-a9b7a3da4bce",
+      "artist": "Alex G",
+      "title": "Mary",
+      "confidence": "musicbrainz-exact"
+    },
+    "665": {
+      "date": "2018",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/415587e8-440c-4226-bcba-24c25ad5f3c1",
+      "artist": "Alex G",
+      "title": "Pretend",
+      "confidence": "musicbrainz-exact"
+    },
+    "666": {
+      "date": "2012-11-05",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/62f3900e-a74f-4001-b7e8-fdac1b26c744",
+      "artist": "Alex G",
+      "title": "Sarah",
+      "confidence": "musicbrainz-exact"
+    },
+    "667": {
+      "date": "2024-02-16",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/20dd91c9-dc05-4f13-927f-90cffde6e75c",
+      "artist": "ALMARY",
+      "title": "До скорых встреч",
+      "confidence": "musicbrainz-exact"
+    },
+    "669": {
+      "date": "2022-06-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/591928dc-f114-409d-b24e-9d44d26570d6",
+      "artist": "ANNA ASTI",
+      "title": "По барам",
+      "confidence": "musicbrainz-exact"
+    },
+    "670": {
+      "date": "2022-06-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/13b79ce6-b889-4ca7-8c03-41df5744caa5",
+      "artist": "ANNA ASTI",
+      "title": "Повело",
+      "confidence": "musicbrainz-exact"
+    },
+    "671": {
+      "date": "2023-07-14",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/04b0ff67-0489-4cfc-9561-077b48f255b1",
+      "artist": "ANNA ASTI",
+      "title": "Царица",
+      "confidence": "musicbrainz-exact"
+    },
+    "672": {
+      "date": "2013",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/47bc1682-b135-4bb6-80ef-4384d37dfe48",
+      "artist": "Arctic Monkeys",
+      "title": "Do I Wanna Know?",
+      "confidence": "musicbrainz-exact"
+    },
+    "675": {
+      "date": "2024-09-20",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/f47eb018-82f2-4d7a-b57f-fa406c388294",
+      "artist": "bearwolf",
+      "title": "Валькирия",
+      "confidence": "musicbrainz-exact"
+    },
+    "676": {
+      "date": "2024-08-02",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/d09fe866-c2f3-4536-ba98-0cc7c58c0f96",
+      "artist": "bearwolf",
+      "title": "Один в поле воин",
+      "confidence": "musicbrainz-exact"
+    },
+    "677": {
+      "date": "2024-05-17",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/47469ee3-4fcd-4803-9b6a-ca5ec76860f0",
+      "artist": "bearwolf",
+      "title": "GODZILLA",
+      "confidence": "musicbrainz-exact"
+    },
+    "680": {
+      "date": "2008-11-12",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/899a043d-67bc-420c-85ea-6fee705baeb3",
+      "artist": "Beyoncé",
+      "title": "Halo",
+      "confidence": "musicbrainz-exact"
+    },
+    "681": {
+      "date": "2019-03-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/20aeeea6-a86a-469f-b274-d81e3d9f6c6c",
+      "artist": "Billie Eilish",
+      "title": "Bad Guy",
+      "confidence": "musicbrainz-exact"
+    },
+    "682": {
+      "date": "2017-02-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5f943be1-99d2-401f-8814-bebe048d1e3c",
+      "artist": "Billie Eilish",
+      "title": "Bellyache",
+      "confidence": "musicbrainz-exact"
+    },
+    "683": {
+      "date": "2024-05-17",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/bf2de419-31b8-4ee8-b2c7-de917ce8b5e4",
+      "artist": "Billie Eilish",
+      "title": "BIRDS OF A FEATHER",
+      "confidence": "musicbrainz-exact"
+    },
+    "684": {
+      "date": "2024-05-17",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/d4c48744-13b0-4382-8f35-68c5f8fb358d",
+      "artist": "Billie Eilish",
+      "title": "CHIHIRO",
+      "confidence": "musicbrainz-exact"
+    },
+    "685": {
+      "date": "2019-03-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c205a615-d1ee-468c-9fca-dda3cf8f9937",
+      "artist": "Billie Eilish",
+      "title": "Everything I Wanted",
+      "confidence": "musicbrainz-exact"
+    },
+    "686": {
+      "date": "2026-05-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a6e0a321-df59-4fa1-a0f0-d357a7e65021",
+      "artist": "Billie Eilish",
+      "title": "Lovely",
+      "confidence": "musicbrainz-exact"
+    },
+    "687": {
+      "date": "2024-05-17",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3bb2326d-a098-46c2-889a-16dec8870478",
+      "artist": "Billie Eilish",
+      "title": "LUNCH",
+      "confidence": "musicbrainz-exact"
+    },
+    "688": {
+      "date": "2019-03-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/02b7ff45-1525-444d-8c0f-cbdce3a856aa",
+      "artist": "Billie Eilish",
+      "title": "My Strange Addiction",
+      "confidence": "musicbrainz-exact"
+    },
+    "689": {
+      "date": "2021",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4308bda0-bb4f-4b85-a3fd-5568fa7b3577",
+      "artist": "Billie Eilish",
+      "title": "NDA",
       "confidence": "musicbrainz-exact"
     },
     "690": {
@@ -2331,6 +2571,196 @@
       "checkedAt": "2026-11-17T17:55:33.187Z",
       "found": true
     },
+    "652": {
+      "signature": "элджеи feduk|розовое вино",
+      "checkedAt": "2026-11-20T03:15:11.755Z",
+      "found": false
+    },
+    "653": {
+      "signature": "эльдар джарахов|это проидет feat pizza",
+      "checkedAt": "2026-11-20T03:15:03.162Z",
+      "found": false
+    },
+    "654": {
+      "signature": "эндшпиль|10",
+      "checkedAt": "2026-11-20T03:15:01.715Z",
+      "found": true
+    },
+    "655": {
+      "signature": "юлии ким|губы окаянные",
+      "checkedAt": "2026-11-20T03:14:53.145Z",
+      "found": true
+    },
+    "656": {
+      "signature": "юта|жили были",
+      "checkedAt": "2026-11-20T03:14:51.692Z",
+      "found": true
+    },
+    "657": {
+      "signature": "я про рок|ангел хранитель",
+      "checkedAt": "2026-11-20T03:14:43.106Z",
+      "found": true
+    },
+    "658": {
+      "signature": "я про рок|рожон",
+      "checkedAt": "2026-11-20T03:14:41.661Z",
+      "found": true
+    },
+    "659": {
+      "signature": "ac dc|back in black",
+      "checkedAt": "2026-11-20T03:14:33.109Z",
+      "found": true
+    },
+    "660": {
+      "signature": "ac dc|highway to hell",
+      "checkedAt": "2026-11-20T03:14:31.636Z",
+      "found": true
+    },
+    "661": {
+      "signature": "adele|hello",
+      "checkedAt": "2026-11-20T03:14:23.227Z",
+      "found": true
+    },
+    "662": {
+      "signature": "adele|someone like you",
+      "checkedAt": "2026-11-20T03:14:21.758Z",
+      "found": true
+    },
+    "663": {
+      "signature": "akmal|из за тебя",
+      "checkedAt": "2026-11-20T03:14:20.132Z",
+      "found": false
+    },
+    "664": {
+      "signature": "alex g|mary",
+      "checkedAt": "2026-11-20T03:14:11.563Z",
+      "found": true
+    },
+    "665": {
+      "signature": "alex g|pretend",
+      "checkedAt": "2026-11-20T03:14:03.048Z",
+      "found": true
+    },
+    "666": {
+      "signature": "alex g|sarah",
+      "checkedAt": "2026-11-20T03:14:01.522Z",
+      "found": true
+    },
+    "667": {
+      "signature": "almary|до скорых встреч",
+      "checkedAt": "2026-11-20T03:13:52.945Z",
+      "found": true
+    },
+    "668": {
+      "signature": "animal jazz|три полоски",
+      "checkedAt": "2026-11-20T03:13:51.480Z",
+      "found": false
+    },
+    "669": {
+      "signature": "anna asti|по барам",
+      "checkedAt": "2026-11-20T03:13:42.912Z",
+      "found": true
+    },
+    "670": {
+      "signature": "anna asti|повело",
+      "checkedAt": "2026-11-20T03:13:41.452Z",
+      "found": true
+    },
+    "671": {
+      "signature": "anna asti|царица",
+      "checkedAt": "2026-11-20T03:13:32.867Z",
+      "found": true
+    },
+    "672": {
+      "signature": "arctic monkeys|do i wanna know",
+      "checkedAt": "2026-11-20T03:13:31.429Z",
+      "found": true
+    },
+    "673": {
+      "signature": "armich|eva",
+      "checkedAt": "2026-11-20T03:13:22.855Z",
+      "found": false
+    },
+    "674": {
+      "signature": "artik|грустныи дэнс",
+      "checkedAt": "2026-11-20T03:13:21.388Z",
+      "found": false
+    },
+    "675": {
+      "signature": "bearwolf|валькирия",
+      "checkedAt": "2026-11-20T03:13:12.871Z",
+      "found": true
+    },
+    "676": {
+      "signature": "bearwolf|один в поле воин",
+      "checkedAt": "2026-11-20T03:13:11.367Z",
+      "found": true
+    },
+    "677": {
+      "signature": "bearwolf|godzilla",
+      "checkedAt": "2026-11-20T03:13:09.937Z",
+      "found": true
+    },
+    "678": {
+      "signature": "beautiful boys|нежная любовь",
+      "checkedAt": "2026-11-20T03:13:01.320Z",
+      "found": false
+    },
+    "679": {
+      "signature": "beautiful boys|ты выбираешь чудеса",
+      "checkedAt": "2026-11-20T03:12:59.865Z",
+      "found": false
+    },
+    "680": {
+      "signature": "beyonce|halo",
+      "checkedAt": "2026-11-20T03:12:58.617Z",
+      "found": true
+    },
+    "681": {
+      "signature": "billie eilish|bad guy",
+      "checkedAt": "2026-11-20T03:12:50.167Z",
+      "found": true
+    },
+    "682": {
+      "signature": "billie eilish|bellyache",
+      "checkedAt": "2026-11-20T03:12:48.409Z",
+      "found": true
+    },
+    "683": {
+      "signature": "billie eilish|birds of a feather",
+      "checkedAt": "2026-11-20T03:12:40.132Z",
+      "found": true
+    },
+    "684": {
+      "signature": "billie eilish|chihiro",
+      "checkedAt": "2026-11-20T03:12:38.549Z",
+      "found": true
+    },
+    "685": {
+      "signature": "billie eilish|everything i wanted",
+      "checkedAt": "2026-11-20T03:12:30.010Z",
+      "found": true
+    },
+    "686": {
+      "signature": "billie eilish|lovely",
+      "checkedAt": "2026-11-20T03:12:28.496Z",
+      "found": true
+    },
+    "687": {
+      "signature": "billie eilish|lunch",
+      "checkedAt": "2026-11-20T03:12:19.906Z",
+      "found": true
+    },
+    "688": {
+      "signature": "billie eilish|my strange addiction",
+      "checkedAt": "2026-11-20T03:12:18.344Z",
+      "found": true
+    },
+    "689": {
+      "signature": "billie eilish|nda",
+      "checkedAt": "2026-11-20T03:12:09.889Z",
+      "found": true
+    },
     "690": {
       "signature": "billie eilish|ocean eyes",
       "checkedAt": "2026-11-19T22:13:31.074Z",
@@ -2380,6 +2810,11 @@
       "signature": "bruno mars|the lazy song",
       "checkedAt": "2026-11-19T22:12:42.642Z",
       "found": true
+    },
+    "700": {
+      "signature": "bruno mars anderson paak silk sonic|leave the door open",
+      "checkedAt": "2026-11-20T03:12:08.437Z",
+      "found": false
     },
     "701": {
       "signature": "camila cabello feat young thug|havana",
@@ -2484,6 +2919,11 @@
     "721": {
       "signature": "dabro|солнце и луна",
       "checkedAt": "2026-11-19T22:10:31.370Z",
+      "found": false
+    },
+    "722": {
+      "signature": "dabro|ты знаешь мама",
+      "checkedAt": "2026-11-20T03:11:59.673Z",
       "found": false
     },
     "723": {
@@ -4484,6 +4924,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 289
+    "verifiedDates": 319
   }
 }
