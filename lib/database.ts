@@ -474,9 +474,8 @@ function publicSong(song: AdminSong): PublicSong {
   if (!hasDifficultyLevel && !hasThematicSection) throw new Error("У песни не выбран раздел.");
   const { privateVideoUrl: _video, privatePdfUrl: _pdf, pdfKey: _pdfKey, coverKey: _coverKey, status: _status, level, ...safe } = song;
   const normalizedLevel = level as CatalogSongLevel;
-  const hash = [...song.slug].reduce((total, character) => ((total * 31) + character.charCodeAt(0)) >>> 0, 0);
   const prices = normalizedLevel === "Начинающий"
-    ? { pdfPrice: hash % 2 === 0 ? 0 : 59, videoPrice: 118 }
+    ? { pdfPrice: 49, videoPrice: 118 }
     : normalizedLevel === "Любитель"
       ? { pdfPrice: 79, videoPrice: 158 }
       : normalizedLevel === "Продвинутый"
