@@ -1,4 +1,4 @@
-const SECTIONS = ["Все", "Новинки", "Бесплатные", "Начинающий", "Продвинутый", "Профи", "Фингерстайл", "Зарубежный рок", "Песни по альбомам"];
+const SECTIONS = ["Все", "Начинающий", "Продвинутый"];
 const PAGE_SIZE = 48;
 const STORAGE_KEY = "struny-github-pages-cart-v1";
 const icons = { "Аккорды": "♬", "Бой": "↯", "Перебор": "≋", "Рифф": "ϟ", "Соло": "◇", "Фингерстайл": "✦", "Табулатура": "▦", "Интересный бой": "↯", "Электрогитара": "⚡" };
@@ -84,8 +84,6 @@ function filteredSongs() {
     const searchableText = normalize(`${song.artist} ${song.title}`);
     const matchesText = !query || query.split(" ").every((word) => searchableText.includes(word));
     const matchesSection = state.section === "Все"
-      || (state.section === "Бесплатные" && Number(song.pdfPrice) === 0)
-      || (state.section === "Новинки" && (Boolean(song.isNew) || releaseRecency(song) !== null))
       || song.sections.includes(state.section);
     return matchesText && matchesSection && releasePeriodMatches(song, state.releasePeriod);
   });
@@ -229,22 +227,13 @@ function renderCart() {
     return;
   }
   const total = state.cart.reduce((sum,item) => sum + item.price,0);
-  const hasPaidItems = state.cart.some(item=>item.price>0);
-  const minimumMet = !hasPaidItems || total>=100;
-  const remaining=Math.max(0,100-total);
-  const controls = minimumMet
-    ? '<a class="button button-primary" id="telegram-order" href="https://t.me/nikguitar?text='+encodeURIComponent(cartMessage())+'" target="_blank" rel="noreferrer">Отправить заявку Никите</a>'
-    : '<button class="button button-primary" id="telegram-order" type="button" disabled aria-disabled="true">До заказа ещё '+money(remaining)+'</button>';
-  const hint = minimumMet
-    ? (hasPaidItems ? 'Минимальный платный заказ 100 ₽. Откроется сообщение для согласования оплаты и получения материалов.' :
-      'Все выбранные материалы бесплатны. Отправьте заявку, чтобы получить PDF и видео.')
-    : 'Минимальная сумма платного заказа 100 ₽. Добавьте ещё песен на '+money(remaining)+'. Бесплатные материалы не увеличивают сумму.';
+  const controls = '<a class="button button-primary" id="telegram-order" href="https://t.me/nikguitar?text='+encodeURIComponent(cartMessage())+'" target="_blank" rel="noopener noreferrer">Отправить заявку Никите</a>';
+  const hint = "Заявка откроется в Telegram. После согласования оплаты вы получите выбранные материалы.";
   els.cartContent.innerHTML =
     '<div class="cart-list">'+state.cart.map((item,index)=>
       '<div class="cart-row"><b>'+String(index+1).padStart(2,"0")+'</b><span><strong>'+escapeHtml(item.title)+'</strong><small>'+escapeHtml(item.artist)+'</small><em>'+escapeHtml(formatLabel(item.format))+' · '+money(item.price)+'</em></span><button type="button" data-remove="'+item.id+'" aria-label="Убрать '+escapeHtml(item.title)+'">×</button></div>'
     ).join("")+'</div>'+
     '<div class="cart-total"><span>Итого</span><strong>'+money(total)+'</strong></div>'+
-    (minimumMet?'':'<p class="cart-minimum" role="status">До минимального заказа не хватает <b>'+money(remaining)+'</b></p>')+
     '<div class="cart-actions"><button class="cart-clear" id="cart-clear" type="button">Очистить</button>'+controls+'</div>'+
     '<p class="cart-note">'+hint+'</p>';
   els.cartContent.querySelectorAll("[data-remove]").forEach(button=>button.addEventListener("click",()=>{
@@ -254,7 +243,7 @@ function renderCart() {
   els.cartContent.querySelector("#cart-clear").addEventListener("click",()=>{
     state.cart=[];saveCart();renderCart();renderCatalog();renderModal();
   });
-  if(minimumMet)els.cartContent.querySelector("#telegram-order").addEventListener("click",()=>{
+  els.cartContent.querySelector("#telegram-order").addEventListener("click",()=>{
     if(navigator.clipboard?.writeText)navigator.clipboard.writeText(cartMessage()).catch(()=>undefined);
   });
 }
@@ -379,7 +368,12 @@ Promise.all([
     state.songs = (Array.isArray(payload.songs) ? payload.songs : []).map((song) => {
       const cover = covers[String(song.id)];
       const releaseRecord = musicReleases?.dates?.[String(song.id)];
+      const beginner = song.level === "Начинающий";
+      const advanced = song.level === "Продвинутый";
       return { ...song,
+        pdfPrice: beginner ? 49 : advanced ? 99 : song.pdfPrice,
+        videoPrice: beginner ? 149 : advanced ? 249 : song.videoPrice,
+        isFree: beginner || advanced ? false : Boolean(song.isFree),
         releaseDate: song.releaseDate || releaseDateForIndex(song,releaseRecord),
         coverUrl: cover?.url || song.coverUrl || "",
         coverSource: cover?.source || "",
