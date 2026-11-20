@@ -19,6 +19,7 @@ export function SiteHeader() {
           <span /><span />
         </button>
         <nav className={open ? "main-nav open" : "main-nav"} aria-label="Главное меню">
+          <Link href="/#subscriptions" onClick={() => setOpen(false)}>Подписка</Link>
           <Link href="/#catalog" onClick={() => setOpen(false)}>Каталог</Link>
           <Link href="/#new" onClick={() => setOpen(false)}>Новинки</Link>
           <Link href="/#popular" onClick={() => setOpen(false)}>Популярное</Link>
