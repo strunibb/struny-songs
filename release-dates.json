@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-20T03:15:12.114Z",
+  "updatedAt": "2026-11-20T11:38:43.954Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -24,6 +24,166 @@
       "source": "https://musicbrainz.org/recording/f8e1a712-736b-4d50-88b8-1ac37e04f697",
       "artist": "Король и Шут",
       "title": "Лесник",
+      "confidence": "musicbrainz-exact"
+    },
+    "612": {
+      "date": "2022-11-04",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/6919a0a1-3eae-4ed3-a086-39f024895676",
+      "artist": "Татьяна Куртукова",
+      "title": "Матушка",
+      "confidence": "musicbrainz-exact"
+    },
+    "613": {
+      "date": "2026-03-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/1ae21a02-5898-4ff3-854b-1f43c171fb82",
+      "artist": "Татьяна Куртукова",
+      "title": "Не спеши",
+      "confidence": "musicbrainz-exact"
+    },
+    "614": {
+      "date": "2024-09-10",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/8934f9c1-01a4-46db-b712-7f09b780ac80",
+      "artist": "Татьяна Куртукова",
+      "title": "Одного",
+      "confidence": "musicbrainz-exact"
+    },
+    "617": {
+      "date": "2025-06-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/0a44b0dd-f3e7-4c27-b16d-52e350a4bbfa",
+      "artist": "Тёмный принц",
+      "title": "Цветы",
+      "confidence": "musicbrainz-exact"
+    },
+    "619": {
+      "date": "2018-10-23",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/7d3d3316-b008-4823-b7cf-3bb0d6c07758",
+      "artist": "Тима Белорусских",
+      "title": "Незабудка",
+      "confidence": "musicbrainz-exact"
+    },
+    "620": {
+      "date": "2021-04-09",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a41b56c8-5489-4d05-8739-c6bdc6067546",
+      "artist": "Тима ищет свет",
+      "title": "Волна",
+      "confidence": "musicbrainz-exact"
+    },
+    "627": {
+      "date": "2020-02-21",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/46ebe017-263c-4680-a101-c398b6491b07",
+      "artist": "Три дня дождя",
+      "title": "Осень и алкоголь",
+      "confidence": "musicbrainz-exact"
+    },
+    "628": {
+      "date": "2022-04-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c6580eb0-041e-4dd2-b35f-f63a8ccd4946",
+      "artist": "Три дня дождя",
+      "title": "Отпускай",
+      "confidence": "musicbrainz-exact"
+    },
+    "629": {
+      "date": "2021-06-04",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/143243a6-3611-4212-9ac8-4e0eccfbbe9a",
+      "artist": "Три дня дождя",
+      "title": "Перезаряжай",
+      "confidence": "musicbrainz-exact"
+    },
+    "630": {
+      "date": "2026-04-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/095c7e55-8206-4ea2-b8fd-a9969da435ab",
+      "artist": "Три дня дождя",
+      "title": "Хороший мальчик",
+      "confidence": "musicbrainz-exact"
+    },
+    "633": {
+      "date": "2013-01-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/61f50d80-3597-4e82-997a-de5dfe811bb0",
+      "artist": "Фабрика",
+      "title": "Не родись красивой",
+      "confidence": "musicbrainz-exact"
+    },
+    "634": {
+      "date": "2017-10-23",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/639dc783-78da-451d-86a4-fa68a48b16d5",
+      "artist": "Фабрика",
+      "title": "Я тебя зацелую",
+      "confidence": "musicbrainz-exact"
+    },
+    "636": {
+      "date": "2005",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/71d987b5-a1ec-48f2-81cf-dc0eb581cae1",
+      "artist": "Фактор 2",
+      "title": "Красавица",
+      "confidence": "musicbrainz-exact"
+    },
+    "642": {
+      "date": "2020-11-17",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b1a3dfef-74d6-45c1-b1de-11f413581fe8",
+      "artist": "Хабиб",
+      "title": "Ягода малинка",
+      "confidence": "musicbrainz-exact"
+    },
+    "645": {
+      "date": "1992",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/b8e5e491-2062-42b4-ada0-0be571a23bd4",
+      "artist": "Чайф",
+      "title": "Никто не услышит (Ой-йо)",
+      "confidence": "musicbrainz-exact"
+    },
+    "646": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4b2c1bf7-6ea7-4d38-a167-cb4885e9771d",
+      "artist": "Чиж",
+      "title": "18 берёз",
+      "confidence": "musicbrainz-exact"
+    },
+    "647": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/cd60747d-d0d4-47a6-8876-9ff642ea3fd3",
+      "artist": "Чиж",
+      "title": "Менуэт",
+      "confidence": "musicbrainz-exact"
+    },
+    "648": {
+      "date": "1997",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4a7a1245-220b-456f-8787-8610f1a0951e",
+      "artist": "Чиж & Co",
+      "title": "На поле танки грохотали",
+      "confidence": "musicbrainz-exact"
+    },
+    "649": {
+      "date": "1996",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/8710c561-7985-4681-9483-94fb56f07efb",
+      "artist": "Чиж & Co",
+      "title": "Фантом",
+      "confidence": "musicbrainz-exact"
+    },
+    "651": {
+      "date": "2000",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4cee512c-29b7-4431-9c2d-a1bbf1ef6045",
+      "artist": "Шура",
+      "title": "Твори добро",
       "confidence": "musicbrainz-exact"
     },
     "654": {
@@ -2571,6 +2731,201 @@
       "checkedAt": "2026-11-17T17:55:33.187Z",
       "found": true
     },
+    "612": {
+      "signature": "татьяна куртукова|матушка",
+      "checkedAt": "2026-11-20T11:38:43.692Z",
+      "found": true
+    },
+    "613": {
+      "signature": "татьяна куртукова|не спеши",
+      "checkedAt": "2026-11-20T11:38:42.464Z",
+      "found": true
+    },
+    "614": {
+      "signature": "татьяна куртукова|одного",
+      "checkedAt": "2026-11-20T11:38:33.801Z",
+      "found": true
+    },
+    "615": {
+      "signature": "темныи принц|в клубе",
+      "checkedAt": "2026-11-20T11:38:32.230Z",
+      "found": false
+    },
+    "616": {
+      "signature": "темныи принц|пески времени feat слава кпсс",
+      "checkedAt": "2026-11-20T11:38:23.684Z",
+      "found": false
+    },
+    "617": {
+      "signature": "темныи принц|цветы",
+      "checkedAt": "2026-11-20T11:38:22.374Z",
+      "found": true
+    },
+    "618": {
+      "signature": "тестостерон|это не женщина",
+      "checkedAt": "2026-11-20T11:38:13.667Z",
+      "found": false
+    },
+    "619": {
+      "signature": "тима белорусских|незабудка",
+      "checkedAt": "2026-11-20T11:38:12.231Z",
+      "found": true
+    },
+    "620": {
+      "signature": "тима ищет свет|волна",
+      "checkedAt": "2026-11-20T11:38:03.941Z",
+      "found": true
+    },
+    "622": {
+      "signature": "тима ищет свет|потанцуи со мнои",
+      "checkedAt": "2026-11-20T11:37:19.704Z",
+      "found": false
+    },
+    "623": {
+      "signature": "тимур муцураев|милые зеленые глаза",
+      "checkedAt": "2026-11-20T11:37:18.254Z",
+      "found": false
+    },
+    "624": {
+      "signature": "тимур муцураев|твоя нежная походка",
+      "checkedAt": "2026-11-20T11:37:17.017Z",
+      "found": false
+    },
+    "625": {
+      "signature": "три дня дождя|контракт feat slem",
+      "checkedAt": "2026-11-20T11:37:15.563Z",
+      "found": false
+    },
+    "626": {
+      "signature": "три дня дождя|космос",
+      "checkedAt": "2026-11-20T11:37:06.806Z",
+      "found": false
+    },
+    "627": {
+      "signature": "три дня дождя|осень и алкоголь",
+      "checkedAt": "2026-11-20T11:37:05.362Z",
+      "found": true
+    },
+    "628": {
+      "signature": "три дня дождя|отпускаи",
+      "checkedAt": "2026-11-20T11:36:56.808Z",
+      "found": true
+    },
+    "629": {
+      "signature": "три дня дождя|перезаряжаи",
+      "checkedAt": "2026-11-20T11:36:55.419Z",
+      "found": true
+    },
+    "630": {
+      "signature": "три дня дождя|хорошии мальчик",
+      "checkedAt": "2026-11-20T11:36:46.807Z",
+      "found": true
+    },
+    "631": {
+      "signature": "тринадцать карат|в моеи голове",
+      "checkedAt": "2026-11-20T11:36:45.346Z",
+      "found": false
+    },
+    "632": {
+      "signature": "тринадцать карат|из за тебя",
+      "checkedAt": "2026-11-20T11:36:43.917Z",
+      "found": false
+    },
+    "633": {
+      "signature": "фабрика|не родись красивои",
+      "checkedAt": "2026-11-20T11:36:42.660Z",
+      "found": true
+    },
+    "634": {
+      "signature": "фабрика|я тебя зацелую",
+      "checkedAt": "2026-11-20T11:36:19.803Z",
+      "found": true
+    },
+    "635": {
+      "signature": "фактор 2|воина",
+      "checkedAt": "2026-11-20T11:36:18.636Z",
+      "found": false
+    },
+    "636": {
+      "signature": "фактор 2|красавица",
+      "checkedAt": "2026-11-20T11:35:55.680Z",
+      "found": true
+    },
+    "637": {
+      "signature": "фактор 2|марихуана 3000",
+      "checkedAt": "2026-11-20T11:35:54.558Z",
+      "found": false
+    },
+    "638": {
+      "signature": "фактор 2|одинокая звезда",
+      "checkedAt": "2026-11-20T11:35:31.586Z",
+      "found": false
+    },
+    "639": {
+      "signature": "фактор 2|шалава",
+      "checkedAt": "2026-11-20T11:35:30.240Z",
+      "found": false
+    },
+    "640": {
+      "signature": "фогель|мальчик",
+      "checkedAt": "2026-11-20T11:35:21.636Z",
+      "found": false
+    },
+    "641": {
+      "signature": "фогель|ты останешься",
+      "checkedAt": "2026-11-20T11:35:20.115Z",
+      "found": false
+    },
+    "642": {
+      "signature": "хабиб|ягода малинка",
+      "checkedAt": "2026-11-20T11:35:11.571Z",
+      "found": true
+    },
+    "643": {
+      "signature": "чаиф|аргентина ямаика 5 0",
+      "checkedAt": "2026-11-20T11:35:10.117Z",
+      "found": false
+    },
+    "644": {
+      "signature": "чаиф|бутылка кефира полбатона",
+      "checkedAt": "2026-11-20T11:35:01.564Z",
+      "found": false
+    },
+    "645": {
+      "signature": "чаиф|никто не услышит ои ио",
+      "checkedAt": "2026-11-20T11:35:00.175Z",
+      "found": true
+    },
+    "646": {
+      "signature": "чиж|18 берез",
+      "checkedAt": "2026-11-20T11:34:51.627Z",
+      "found": true
+    },
+    "647": {
+      "signature": "чиж|менуэт",
+      "checkedAt": "2026-11-20T11:34:50.159Z",
+      "found": true
+    },
+    "648": {
+      "signature": "чиж co|на поле танки грохотали",
+      "checkedAt": "2026-11-20T11:34:41.726Z",
+      "found": true
+    },
+    "649": {
+      "signature": "чиж co|фантом",
+      "checkedAt": "2026-11-20T11:34:40.196Z",
+      "found": true
+    },
+    "650": {
+      "signature": "шура|не верь слезам",
+      "checkedAt": "2026-11-20T11:34:31.600Z",
+      "found": false
+    },
+    "651": {
+      "signature": "шура|твори добро",
+      "checkedAt": "2026-11-20T11:34:23.518Z",
+      "found": true
+    },
     "652": {
       "signature": "элджеи feduk|розовое вино",
       "checkedAt": "2026-11-20T03:15:11.755Z",
@@ -4924,6 +5279,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 319
+    "verifiedDates": 339
   }
 }
