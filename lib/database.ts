@@ -475,11 +475,11 @@ function publicSong(song: AdminSong): PublicSong {
   const { privateVideoUrl: _video, privatePdfUrl: _pdf, pdfKey: _pdfKey, coverKey: _coverKey, status: _status, level, ...safe } = song;
   const normalizedLevel = level as CatalogSongLevel;
   const prices = normalizedLevel === "Начинающий"
-    ? { pdfPrice: 49, videoPrice: 118 }
+    ? { pdfPrice: 49, videoPrice: 149 }
     : normalizedLevel === "Любитель"
       ? { pdfPrice: 79, videoPrice: 158 }
       : normalizedLevel === "Продвинутый"
-        ? { pdfPrice: 99, videoPrice: 198 }
+        ? { pdfPrice: 99, videoPrice: 249 }
         : normalizedLevel === "Профи" || normalizedLevel === "Фингерстайл"
           ? { pdfPrice: 129, videoPrice: 258 }
           : normalizedLevel === "Зарубежный рок"
