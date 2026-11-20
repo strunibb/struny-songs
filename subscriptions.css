@@ -1,0 +1,48 @@
+/* Подписки: верхний блок действующего каталога GitHub Pages */
+.subscription-section {
+  position: relative;
+  padding: 72px 0 66px;
+  background: radial-gradient(ellipse at 5% 0%,#fffdfb 0,transparent 42%),linear-gradient(155deg,#f1e7f8 0%,#f8f5fc 60%,#efe4f7 100%);
+  border-bottom: 1px solid #dfcce9;
+  color: #30213d;
+}
+.subscription-header { max-width: 840px; margin: 0 auto 28px; text-align: center; }
+.subscription-header .eyebrow { color: #8558a4; justify-content: center; font-weight: 850; }
+.subscription-header h1 { margin: 8px 0 14px; color: #33213f; font-size: clamp(32px,4.8vw,57px); font-weight: 900; line-height: 1.07; letter-spacing: -.055em; }
+.subscription-header h1 em { color: #8441b2; font-style: normal; }
+.subscription-header > p:last-child { max-width: 630px; margin: 0 auto; color: #75627c; font-size: 15px; line-height: 1.6; }
+.subscription-switch { max-width: 650px; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; padding: 7px; margin: 0 auto 24px; border: 1px solid #dac6e8; border-radius: 23px; background: #e9dcf1; }
+.subscription-switch button { min-height: 75px; display: flex; align-items: center; justify-content: center; gap: 12px; padding: 12px; border: 1px solid transparent; border-radius: 17px; background: transparent; color: #5d456b; cursor: pointer; transition: background .18s ease,border-color .18s ease,box-shadow .18s ease; }
+.subscription-switch button[aria-selected=true] { color: #fff; background: linear-gradient(135deg,#8d4cb7,#6932a3); box-shadow: 0 10px 25px rgba(112,50,164,.24); }
+.subscription-switch .sub-number { font-size: 37px; font-weight: 950; letter-spacing: -.07em; }
+.subscription-switch .sub-switch-label { display: flex; flex-direction: column; text-align: left; gap: 4px; }
+.subscription-switch .sub-switch-label strong { font-size: 14px; line-height: 1.2; }
+.subscription-switch .sub-switch-label small { color: #846d91; font-size: 10px; font-weight: 650; }
+.subscription-switch button[aria-selected=true] small { color: #ead7fb; }
+.subscription-cards { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 15px; }
+.subscription-card { min-width: 0; padding: 24px 20px 20px; display: flex; flex-direction: column; border: 1px solid #e0d0ea; border-radius: 22px; background: #fff; box-shadow: 0 10px 30px rgba(73,41,91,.07); }
+.subscription-card.sub-video { border-color: #be9bd5; background: linear-gradient(155deg,#fff,#fbf6fe); }
+.sub-card-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px; }
+.sub-level { color: #4d355d; font-size: 12px; font-weight: 900; }
+.sub-type { padding: 5px 7px; border-radius: 7px; background: #eee6f4; color: #80529c; font-size: 9px; font-weight: 850; }
+.sub-card-title { margin: 25px 0 8px; min-height: 48px; color: #2d203a; font-size: 21px; line-height: 1.15; font-weight: 900; letter-spacing: -.035em; }
+.sub-card-description { min-height: 53px; margin: 0; color: #776b80; font-size: 11.5px; line-height: 1.55; }
+.sub-price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 7px; margin: 18px 0 11px; }
+.sub-price strong { color: #39214d; font-size: 34px; font-weight: 900; letter-spacing: -.055em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sub-price small { color: #8d7a94; font-size: 11px; }
+.sub-discount { display: flex; align-items: center; justify-content: space-between; gap: 5px; padding-bottom: 15px; border-bottom: 1px solid #eee5f3; color: #83748a; font-size: 10px; line-height: 1.5; }
+.sub-discount b { color: #27836f; font-size: 13px; white-space: nowrap; }
+.sub-features { flex: 1; display: flex; flex-direction: column; gap: 12px; margin: 19px 0 23px; padding: 0; list-style: none; }
+.sub-features li { position: relative; padding-left: 21px; color: #64586b; font-size: 11px; line-height: 1.45; }
+.sub-features li::before { content: "✓"; position: absolute; top: 0; left: 0; color: #359882; font-weight: 900; }
+.sub-cta { min-height: 45px; display: flex; align-items: center; justify-content: center; gap: 9px; border: 1px solid #7d3bad; border-radius: 12px; background: #7534a6; color: #fff; font-size: 12px; font-weight: 850; text-align: center; }
+.sub-cta:hover { background: #5c258f; }
+.sub-video .sub-cta { background: linear-gradient(110deg,#8c40b5,#aa5e9a); border-color: #9149b5; }
+.subscription-footer { margin-top: 23px; display: flex; align-items: start; justify-content: space-between; gap: 24px; }
+.subscription-footer p { max-width: 750px; margin: 0; color: #776a7e; font-size: 11px; line-height: 1.65; }
+.subscription-footer a { flex: 0 0 auto; color: #7738a7; font-size: 12px; font-weight: 850; }
+.subscription-footer a:hover { text-decoration: underline; }
+.subscription-section button:focus-visible,.subscription-section a:focus-visible { outline: 3px solid #a775c4; outline-offset: 3px; }
+@media (max-width: 1140px) { .subscription-cards { grid-template-columns: repeat(2,minmax(0,1fr)); } .subscription-card { min-height: 400px; padding: 24px; } .sub-card-title,.sub-card-description { min-height: 0; } }
+@media (max-width: 660px) { .subscription-section { padding: 48px 0 50px; } .subscription-header h1 { font-size: clamp(32px,8.5vw,44px); } .subscription-header > p:last-child { font-size: 13px; } .subscription-switch { padding: 5px; border-radius: 16px; gap: 4px; } .subscription-switch button { gap: 7px; padding: 10px 6px; min-height: 68px; border-radius: 12px; } .subscription-switch .sub-number { font-size: 29px; } .subscription-switch .sub-switch-label strong { font-size: 11px; } .subscription-switch .sub-switch-label small { font-size: 9px; } .subscription-cards { grid-template-columns: 1fr; gap: 12px; } .subscription-card { min-height: 0; padding: 21px; } .sub-card-title { margin-top: 15px; } .sub-card-description { min-height: 0; } .sub-features { gap: 9px; margin: 13px 0 18px; } .subscription-footer { flex-direction: column; gap: 10px; } }
+@media (prefers-reduced-motion: reduce) { .subscription-switch button { transition: none; } }
