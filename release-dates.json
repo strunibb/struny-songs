@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-20T19:20:00.253Z",
+  "updatedAt": "2026-11-21T00:54:06.128Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -24,6 +24,246 @@
       "source": "https://musicbrainz.org/recording/f8e1a712-736b-4d50-88b8-1ac37e04f697",
       "artist": "Король и Шут",
       "title": "Лесник",
+      "confidence": "musicbrainz-exact"
+    },
+    "534": {
+      "date": "2021-03-12",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/f0f5fb75-c28f-4c84-91e3-5c8b5e797360",
+      "artist": "Просто Лера",
+      "title": "Лютики",
+      "confidence": "musicbrainz-exact"
+    },
+    "539": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/be517228-0530-4c02-a321-d9935ec1b5d7",
+      "artist": "Руки Вверх!",
+      "title": "18 мне уже",
+      "confidence": "musicbrainz-exact"
+    },
+    "541": {
+      "date": "2000",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/1074527c-62d6-4e9a-bdd4-4edee626a1fd",
+      "artist": "Руки Вверх!",
+      "title": "Алёшка",
+      "confidence": "musicbrainz-exact"
+    },
+    "542": {
+      "date": "2016-11-07",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/e22a0a20-8354-4206-b114-77db662fcc8b",
+      "artist": "Руки Вверх!",
+      "title": "Когда мы были молодыми",
+      "confidence": "musicbrainz-exact"
+    },
+    "543": {
+      "date": "1998",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/061a88b6-0660-44a4-94fe-04256edc383b",
+      "artist": "Руки Вверх!",
+      "title": "Крошка моя",
+      "confidence": "musicbrainz-exact"
+    },
+    "544": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/ef07d137-4b29-4ee7-977c-4764b6e01cc6",
+      "artist": "Руки Вверх!",
+      "title": "Маленькие девочки",
+      "confidence": "musicbrainz-exact"
+    },
+    "545": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/2f4f928b-88ca-4514-aa1e-ef78db62b6d8",
+      "artist": "Руки Вверх!",
+      "title": "Он тебя целует",
+      "confidence": "musicbrainz-exact"
+    },
+    "546": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/34383d00-72d7-4701-b8e1-2be97914d5e5",
+      "artist": "Руки Вверх!",
+      "title": "Прости",
+      "confidence": "musicbrainz-exact"
+    },
+    "547": {
+      "date": "1997",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/13e531d4-fd16-4fc5-bb18-7c3f800c297f",
+      "artist": "Руки Вверх!",
+      "title": "Студент",
+      "confidence": "musicbrainz-exact"
+    },
+    "548": {
+      "date": "1998",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/3e504f1a-b562-4c61-b074-5cc7af4931fd",
+      "artist": "Руки Вверх!",
+      "title": "Чужие губы",
+      "confidence": "musicbrainz-exact"
+    },
+    "549": {
+      "date": "2016-12-08",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/762d39e4-414a-4979-a196-0de534b7d0ef",
+      "artist": "Свидание",
+      "title": "08.12.1980",
+      "confidence": "musicbrainz-exact"
+    },
+    "550": {
+      "date": "2015-02-09",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b78950a0-fa59-4759-9bb8-f2d652fe8eb3",
+      "artist": "Свидание",
+      "title": "Красива",
+      "confidence": "musicbrainz-exact"
+    },
+    "551": {
+      "date": "2016-07-15",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/217ec975-ea25-4c72-98c7-afee9180b305",
+      "artist": "Свидание",
+      "title": "Меняться телами",
+      "confidence": "musicbrainz-exact"
+    },
+    "552": {
+      "date": "2019-09-05",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b6e27c7f-fdbe-4121-a8d4-af072d28024d",
+      "artist": "Свидание",
+      "title": "О любви",
+      "confidence": "musicbrainz-exact"
+    },
+    "553": {
+      "date": "2018-06-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c94ca2ec-74ad-4579-9c5b-87d83eea005f",
+      "artist": "Свидание",
+      "title": "Помнишь",
+      "confidence": "musicbrainz-exact"
+    },
+    "554": {
+      "date": "2016-07-15",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/2fb6687e-732f-4ceb-9c8c-77a4bcb50dcf",
+      "artist": "Свидание",
+      "title": "Родинки",
+      "confidence": "musicbrainz-exact"
+    },
+    "555": {
+      "date": "2017-07-14",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c09d5f84-0179-4069-8f36-d5e769ede45b",
+      "artist": "Свидание",
+      "title": "Случайная любовь",
+      "confidence": "musicbrainz-exact"
+    },
+    "557": {
+      "date": "1996-03",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/0c6139b5-684b-4fee-9481-afa0afa0143c",
+      "artist": "Сектор Газа",
+      "title": "30 лет",
+      "confidence": "musicbrainz-exact"
+    },
+    "558": {
+      "date": "1992",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/2722cc8b-43a6-4f44-84f7-1a9c958449df",
+      "artist": "Сектор Газа",
+      "title": "Бомж",
+      "confidence": "musicbrainz-exact"
+    },
+    "559": {
+      "date": "1989-06",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/a883842d-037e-4eb9-b4bc-e834c6e978ab",
+      "artist": "Сектор Газа",
+      "title": "Вальпургиева ночь",
+      "confidence": "musicbrainz-exact"
+    },
+    "560": {
+      "date": "2000-10-19",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/2c8f01b6-274c-4811-addb-20e91282106a",
+      "artist": "Сектор Газа",
+      "title": "Демобилизация",
+      "confidence": "musicbrainz-exact"
+    },
+    "561": {
+      "date": "1994-06",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/27c07426-59ea-4819-ae18-c9851b66667b",
+      "artist": "Сектор Газа",
+      "title": "Казачья",
+      "confidence": "musicbrainz-exact"
+    },
+    "562": {
+      "date": "1989-06",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/55850c8e-2e79-4089-9928-82974dfaca5e",
+      "artist": "Сектор Газа",
+      "title": "Колхозный панк",
+      "confidence": "musicbrainz-exact"
+    },
+    "564": {
+      "date": "1991-02-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9f0d19ee-63d0-42a6-adab-b690eaa7a2f6",
+      "artist": "Сектор Газа",
+      "title": "Ночь перед Рождеством",
+      "confidence": "musicbrainz-exact"
+    },
+    "565": {
+      "date": "1996-03",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/4937a553-1e70-4fbb-b675-a480553383d0",
+      "artist": "Сектор Газа",
+      "title": "Свидание",
+      "confidence": "musicbrainz-exact"
+    },
+    "566": {
+      "date": "1996-03",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/9e5b2023-28dc-4f9f-ba53-e45dfb0b9b7b",
+      "artist": "Сектор Газа",
+      "title": "Твой звонок",
+      "confidence": "musicbrainz-exact"
+    },
+    "568": {
+      "date": "1992",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/b5458989-4fa9-45d8-bd62-c095eea33d3a",
+      "artist": "Сектор Газа",
+      "title": "Частушки",
+      "confidence": "musicbrainz-exact"
+    },
+    "569": {
+      "date": "1991-02-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/f6669977-9edd-49c2-a439-c38b60864b5d",
+      "artist": "Сектор Газа",
+      "title": "Ява",
+      "confidence": "musicbrainz-exact"
+    },
+    "570": {
+      "date": "1996-03",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/a8c90245-615a-441d-8970-d7eadff59eb4",
+      "artist": "Сектор Газа",
+      "title": "Life",
+      "confidence": "musicbrainz-exact"
+    },
+    "571": {
+      "date": "2015-04-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c629cebc-6a78-4b62-9026-081f9dfd01d0",
+      "artist": "Сергей Лазарев",
+      "title": "В самое сердце",
       "confidence": "musicbrainz-exact"
     },
     "575": {
@@ -2931,6 +3171,196 @@
       "checkedAt": "2026-11-17T17:55:33.187Z",
       "found": true
     },
+    "533": {
+      "signature": "прикольные песни|а муха тоже вертолет",
+      "checkedAt": "2026-11-21T00:54:05.728Z",
+      "found": false
+    },
+    "534": {
+      "signature": "просто лера|лютики",
+      "checkedAt": "2026-11-21T00:54:04.277Z",
+      "found": true
+    },
+    "535": {
+      "signature": "пятница|нева",
+      "checkedAt": "2026-11-21T00:53:55.939Z",
+      "found": false
+    },
+    "536": {
+      "signature": "пятница|я солдат",
+      "checkedAt": "2026-11-21T00:53:54.230Z",
+      "found": false
+    },
+    "537": {
+      "signature": "рожден ануси|знаешь душа моя рваная",
+      "checkedAt": "2026-11-21T00:53:45.634Z",
+      "found": false
+    },
+    "538": {
+      "signature": "рождество|ты знаешь так хочется жить",
+      "checkedAt": "2026-11-21T00:53:44.196Z",
+      "found": false
+    },
+    "539": {
+      "signature": "руки вверх|18 мне уже",
+      "checkedAt": "2026-11-21T00:53:35.609Z",
+      "found": true
+    },
+    "540": {
+      "signature": "руки вверх|аи яи яи девчонка",
+      "checkedAt": "2026-11-21T00:53:34.430Z",
+      "found": false
+    },
+    "541": {
+      "signature": "руки вверх|алешка",
+      "checkedAt": "2026-11-21T00:53:11.422Z",
+      "found": true
+    },
+    "542": {
+      "signature": "руки вверх|когда мы были молодыми",
+      "checkedAt": "2026-11-21T00:53:09.958Z",
+      "found": true
+    },
+    "543": {
+      "signature": "руки вверх|крошка моя",
+      "checkedAt": "2026-11-21T00:53:01.474Z",
+      "found": true
+    },
+    "544": {
+      "signature": "руки вверх|маленькие девочки",
+      "checkedAt": "2026-11-21T00:53:00.225Z",
+      "found": true
+    },
+    "545": {
+      "signature": "руки вверх|он тебя целует",
+      "checkedAt": "2026-11-21T00:52:51.344Z",
+      "found": true
+    },
+    "546": {
+      "signature": "руки вверх|прости",
+      "checkedAt": "2026-11-21T00:52:49.874Z",
+      "found": true
+    },
+    "547": {
+      "signature": "руки вверх|студент",
+      "checkedAt": "2026-11-21T00:52:41.291Z",
+      "found": true
+    },
+    "548": {
+      "signature": "руки вверх|чужие губы",
+      "checkedAt": "2026-11-21T00:52:41.104Z",
+      "found": true
+    },
+    "549": {
+      "signature": "свидание|08 12 1980",
+      "checkedAt": "2026-11-21T00:52:39.225Z",
+      "found": true
+    },
+    "550": {
+      "signature": "свидание|красива",
+      "checkedAt": "2026-11-21T00:52:35.964Z",
+      "found": true
+    },
+    "551": {
+      "signature": "свидание|меняться телами",
+      "checkedAt": "2026-11-21T00:52:27.278Z",
+      "found": true
+    },
+    "552": {
+      "signature": "свидание|о любви",
+      "checkedAt": "2026-11-21T00:52:27.106Z",
+      "found": true
+    },
+    "553": {
+      "signature": "свидание|помнишь",
+      "checkedAt": "2026-11-21T00:52:24.139Z",
+      "found": true
+    },
+    "554": {
+      "signature": "свидание|родинки",
+      "checkedAt": "2026-11-21T00:52:16.622Z",
+      "found": true
+    },
+    "555": {
+      "signature": "свидание|случаиная любовь",
+      "checkedAt": "2026-11-21T00:52:14.073Z",
+      "found": true
+    },
+    "556": {
+      "signature": "сдп ии группа|сыпь гармоника",
+      "checkedAt": "2026-11-21T00:52:06.353Z",
+      "found": false
+    },
+    "557": {
+      "signature": "сектор газа|30 лет",
+      "checkedAt": "2026-11-21T00:52:05.211Z",
+      "found": true
+    },
+    "558": {
+      "signature": "сектор газа|бомж",
+      "checkedAt": "2026-11-21T00:51:55.448Z",
+      "found": true
+    },
+    "559": {
+      "signature": "сектор газа|вальпургиева ночь",
+      "checkedAt": "2026-11-21T00:51:54.002Z",
+      "found": true
+    },
+    "560": {
+      "signature": "сектор газа|демобилизация",
+      "checkedAt": "2026-11-21T00:51:52.548Z",
+      "found": true
+    },
+    "561": {
+      "signature": "сектор газа|казачья",
+      "checkedAt": "2026-11-21T00:51:52.035Z",
+      "found": true
+    },
+    "562": {
+      "signature": "сектор газа|колхозныи панк",
+      "checkedAt": "2026-11-21T00:51:49.966Z",
+      "found": true
+    },
+    "564": {
+      "signature": "сектор газа|ночь перед рождеством",
+      "checkedAt": "2026-11-21T00:51:05.529Z",
+      "found": true
+    },
+    "565": {
+      "signature": "сектор газа|свидание",
+      "checkedAt": "2026-11-21T00:51:04.324Z",
+      "found": true
+    },
+    "566": {
+      "signature": "сектор газа|твои звонок",
+      "checkedAt": "2026-11-21T00:50:41.807Z",
+      "found": true
+    },
+    "568": {
+      "signature": "сектор газа|частушки",
+      "checkedAt": "2026-11-21T00:49:57.159Z",
+      "found": true
+    },
+    "569": {
+      "signature": "сектор газа|ява",
+      "checkedAt": "2026-11-21T00:49:56.186Z",
+      "found": true
+    },
+    "570": {
+      "signature": "сектор газа|life",
+      "checkedAt": "2026-11-21T00:49:47.135Z",
+      "found": true
+    },
+    "571": {
+      "signature": "сергеи лазарев|в самое сердце",
+      "checkedAt": "2026-11-21T00:49:46.104Z",
+      "found": true
+    },
+    "572": {
+      "signature": "сергеи трофимов|алешка",
+      "checkedAt": "2026-11-21T00:49:37.493Z",
+      "found": false
+    },
     "573": {
       "signature": "сергеи трофимов|ветер в голове",
       "checkedAt": "2026-11-20T19:19:59.902Z",
@@ -5679,6 +6109,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 364
+    "verifiedDates": 394
   }
 }
