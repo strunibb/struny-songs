@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-21T00:14:42.628Z",
+  "updatedAt": "2026-11-21T07:43:50.951Z",
   "tracks": {
     "681": {
       "artist": "Billie Eilish",
@@ -41,6 +41,24 @@
       "start": 25,
       "source": "official-artist-youtube",
       "verifiedAt": "2026-11-17"
+    },
+    "822": {
+      "artist": "Lizer",
+      "title": "Пачка сигарет",
+      "videoId": "c_tSDJD1Jf8",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/7d38904f-9457-4d0c-8751-f87d4fc7dd3b",
+      "verifiedAt": "2026-11-21T07:41:34.731Z"
+    },
+    "823": {
+      "artist": "Lx24",
+      "title": "Уголёк",
+      "videoId": "_5oHGnRtxn0",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/4a81f6aa-db0b-4398-ada6-f2769b2136b7",
+      "verifiedAt": "2026-11-21T07:41:31.822Z"
     },
     "913": {
       "artist": "Serebro",
@@ -144,6 +162,131 @@
       "signature": "король и шут|лесник",
       "checkedAt": "2026-11-17T08:59:19.279Z",
       "found": false
+    },
+    "799": {
+      "signature": "jony|помню",
+      "checkedAt": "2026-11-21T07:43:50.614Z",
+      "found": false
+    },
+    "800": {
+      "signature": "jony|титры",
+      "checkedAt": "2026-11-21T07:43:49.106Z",
+      "found": false
+    },
+    "801": {
+      "signature": "jony feduk|лето",
+      "checkedAt": "2026-11-21T07:43:42.994Z",
+      "found": false
+    },
+    "802": {
+      "signature": "justin bieber|love yourself",
+      "checkedAt": "2026-11-21T07:43:42.771Z",
+      "found": false
+    },
+    "803": {
+      "signature": "justin bieber|what do you mean",
+      "checkedAt": "2026-11-21T07:43:22.990Z",
+      "found": false
+    },
+    "804": {
+      "signature": "kentukki|замигает свет",
+      "checkedAt": "2026-11-21T07:43:15.401Z",
+      "found": false
+    },
+    "805": {
+      "signature": "klaus badelt|he s a pirate",
+      "checkedAt": "2026-11-21T07:43:10.676Z",
+      "found": false
+    },
+    "806": {
+      "signature": "ksb muzic|баратрум",
+      "checkedAt": "2026-11-21T07:43:03.212Z",
+      "found": false
+    },
+    "807": {
+      "signature": "ksb muzic|осень",
+      "checkedAt": "2026-11-21T07:43:00.169Z",
+      "found": false
+    },
+    "808": {
+      "signature": "led zeppelin|immigrant song",
+      "checkedAt": "2026-11-21T07:42:57.162Z",
+      "found": false
+    },
+    "809": {
+      "signature": "led zeppelin|stairway to heaven",
+      "checkedAt": "2026-11-21T07:42:52.660Z",
+      "found": false
+    },
+    "810": {
+      "signature": "lilly wood the prick|prayer in c",
+      "checkedAt": "2026-11-21T07:42:48.320Z",
+      "found": false
+    },
+    "811": {
+      "signature": "limp bizkit|behind blue eyes",
+      "checkedAt": "2026-11-21T07:42:43.521Z",
+      "found": false
+    },
+    "812": {
+      "signature": "linkin park|crawling",
+      "checkedAt": "2026-11-21T07:42:39.135Z",
+      "found": false
+    },
+    "813": {
+      "signature": "linkin park|faint",
+      "checkedAt": "2026-11-21T07:42:31.462Z",
+      "found": false
+    },
+    "814": {
+      "signature": "linkin park|in the end",
+      "checkedAt": "2026-11-21T07:42:20.657Z",
+      "found": false
+    },
+    "815": {
+      "signature": "linkin park|numb",
+      "checkedAt": "2026-11-21T07:42:13.212Z",
+      "found": false
+    },
+    "816": {
+      "signature": "lizer|быстро повзрослел",
+      "checkedAt": "2026-11-21T07:42:05.443Z",
+      "found": false
+    },
+    "817": {
+      "signature": "lizer|в жизни так бывает",
+      "checkedAt": "2026-11-21T07:41:57.879Z",
+      "found": false
+    },
+    "818": {
+      "signature": "lizer|корабли",
+      "checkedAt": "2026-11-21T07:41:54.564Z",
+      "found": false
+    },
+    "819": {
+      "signature": "lizer|между нами",
+      "checkedAt": "2026-11-21T07:41:51.849Z",
+      "found": false
+    },
+    "820": {
+      "signature": "lizer|мелочи feat highself",
+      "checkedAt": "2026-11-21T07:41:45.410Z",
+      "found": false
+    },
+    "821": {
+      "signature": "lizer|не ангел",
+      "checkedAt": "2026-11-21T07:41:40.752Z",
+      "found": false
+    },
+    "822": {
+      "signature": "lizer|пачка сигарет",
+      "checkedAt": "2026-11-21T07:41:34.731Z",
+      "found": true
+    },
+    "823": {
+      "signature": "lx24|уголек",
+      "checkedAt": "2026-11-21T07:41:31.890Z",
+      "found": true
     },
     "824": {
       "signature": "lynyrd skynyrd|sweet home alabama",
@@ -1633,6 +1776,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedVideos": 15
+    "verifiedVideos": 17
   }
 }
