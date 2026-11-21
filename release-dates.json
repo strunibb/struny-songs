@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-21T00:54:06.128Z",
+  "updatedAt": "2026-11-21T08:19:43.097Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -24,6 +24,198 @@
       "source": "https://musicbrainz.org/recording/f8e1a712-736b-4d50-88b8-1ac37e04f697",
       "artist": "Король и Шут",
       "title": "Лесник",
+      "confidence": "musicbrainz-exact"
+    },
+    "496": {
+      "date": "2012-05-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/6d661a90-3546-4019-a127-a663692a3da3",
+      "artist": "Нервы",
+      "title": "Слишком влюблён",
+      "confidence": "musicbrainz-exact"
+    },
+    "497": {
+      "date": "2017",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/90b68fba-ae77-47aa-91cf-26f717268782",
+      "artist": "Нервы",
+      "title": "Суицид моей веры",
+      "confidence": "musicbrainz-exact"
+    },
+    "498": {
+      "date": "2015-04-20",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/2da4edb2-b064-4625-b9eb-421257badc23",
+      "artist": "Нервы",
+      "title": "Счастье",
+      "confidence": "musicbrainz-exact"
+    },
+    "502": {
+      "date": "2000",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/84d9f8d5-4da6-4906-be37-2dd10166a38d",
+      "artist": "Николай Носков",
+      "title": "Это здорово",
+      "confidence": "musicbrainz-exact"
+    },
+    "503": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/abd0b4ab-e752-4d6a-bf85-87e9b0d669ac",
+      "artist": "Ногу Свело!",
+      "title": "Наши юные смешные голоса",
+      "confidence": "musicbrainz-exact"
+    },
+    "504": {
+      "date": "2010-11-11",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/89e84b72-8956-4f32-8bc9-61472aab37bb",
+      "artist": "Нюша",
+      "title": "Больно",
+      "confidence": "musicbrainz-exact"
+    },
+    "505": {
+      "date": "2010-11-11",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/8d3f578d-f777-41dd-9d21-56ba068c3710",
+      "artist": "Нюша",
+      "title": "Выше",
+      "confidence": "musicbrainz-exact"
+    },
+    "506": {
+      "date": "2014",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/149972e1-49de-4944-9b7a-963539195a7d",
+      "artist": "Нюша",
+      "title": "Цунами",
+      "confidence": "musicbrainz-exact"
+    },
+    "507": {
+      "date": "2010",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/00566fe0-7418-4fc1-bb0b-3095d82f0ae9",
+      "artist": "Нюша",
+      "title": "Чудо",
+      "confidence": "musicbrainz-exact"
+    },
+    "508": {
+      "date": "1993",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/244ff3e1-3528-4fa9-801b-f3094f6d8cee",
+      "artist": "Олег Газманов",
+      "title": "Офицеры",
+      "confidence": "musicbrainz-exact"
+    },
+    "511": {
+      "date": "2019-11-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/6a8d2bc2-b98f-49e0-a012-8f3a42a2ce87",
+      "artist": "Папин Олимпос",
+      "title": "Динозаврики",
+      "confidence": "musicbrainz-exact"
+    },
+    "514": {
+      "date": "2019-03-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/8bb054af-3dfa-4399-aec2-c0d1161e2178",
+      "artist": "Папин Олимпос",
+      "title": "Темно-оранжевый закат",
+      "confidence": "musicbrainz-exact"
+    },
+    "515": {
+      "date": "2019-11-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/42bc6a69-e053-42f2-a015-96017c4e494d",
+      "artist": "Папин Олимпос",
+      "title": "Школа",
+      "confidence": "musicbrainz-exact"
+    },
+    "516": {
+      "date": "2019-11-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/e0ebfd56-0ccf-4111-b2cb-3c192443012a",
+      "artist": "Папин Олимпос",
+      "title": "Я удалю тебя из друзей",
+      "confidence": "musicbrainz-exact"
+    },
+    "520": {
+      "date": "2014-10-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5613e8bd-6821-4eb5-9329-b424ff7043ce",
+      "artist": "Пицца",
+      "title": "Лифт",
+      "confidence": "musicbrainz-exact"
+    },
+    "521": {
+      "date": "2011-11-18",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/276d58a5-8abd-4b4a-90b5-2165dd6ccd81",
+      "artist": "Пицца",
+      "title": "Оружие",
+      "confidence": "musicbrainz-exact"
+    },
+    "522": {
+      "date": "2016-10-07",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/59e4a73f-e70f-4d31-bdf4-345975da972f",
+      "artist": "Пицца",
+      "title": "Романс",
+      "confidence": "musicbrainz-exact"
+    },
+    "523": {
+      "date": "2016-10-07",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5933780f-8b19-4327-b907-2609d715a757",
+      "artist": "Пицца",
+      "title": "Тише",
+      "confidence": "musicbrainz-exact"
+    },
+    "526": {
+      "date": "2016-10-14",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b6e152c4-b45b-4061-bbed-f2266091ce4a",
+      "artist": "Порнофильмы",
+      "title": "Прости, прощай, привет",
+      "confidence": "musicbrainz-exact"
+    },
+    "527": {
+      "date": "2020-01-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/cdc0da55-5fb1-4639-9158-2134d1c3a170",
+      "artist": "Порнофильмы",
+      "title": "Уроки любви",
+      "confidence": "musicbrainz-exact"
+    },
+    "528": {
+      "date": "2017-09-28",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/77416fd2-f030-4a92-ad38-d59fcc95fa40",
+      "artist": "Порнофильмы",
+      "title": "Я так соскучился",
+      "confidence": "musicbrainz-exact"
+    },
+    "530": {
+      "date": "2021-03-12",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b038f84e-6b61-459a-a334-fe85ed6c315f",
+      "artist": "Пошлая Молли",
+      "title": "Контракт",
+      "confidence": "musicbrainz-exact"
+    },
+    "531": {
+      "date": "2017-02-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a20ccbe0-6d6c-4428-9761-bfdc6c9bc3e4",
+      "artist": "Пошлая Молли",
+      "title": "Любимая песня твоей сестры",
+      "confidence": "musicbrainz-exact"
+    },
+    "532": {
+      "date": "2017-02-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/1223744c-bb29-4b6b-8e28-aa944938b6f6",
+      "artist": "Пошлая Молли",
+      "title": "Супермаркет",
       "confidence": "musicbrainz-exact"
     },
     "534": {
@@ -210,6 +402,14 @@
       "title": "Колхозный панк",
       "confidence": "musicbrainz-exact"
     },
+    "563": {
+      "date": "1993",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/cd6c5e96-98ed-431f-9e2f-2ba8d9578ef7",
+      "artist": "Сектор Газа",
+      "title": "Лирика",
+      "confidence": "musicbrainz-exact"
+    },
     "564": {
       "date": "1991-02-03",
       "precision": "day",
@@ -232,6 +432,14 @@
       "source": "https://musicbrainz.org/recording/9e5b2023-28dc-4f9f-ba53-e45dfb0b9b7b",
       "artist": "Сектор Газа",
       "title": "Твой звонок",
+      "confidence": "musicbrainz-exact"
+    },
+    "567": {
+      "date": "1996-03",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/0f8965c9-d28d-4e19-a9a1-98f02c073685",
+      "artist": "Сектор Газа",
+      "title": "Туман",
       "confidence": "musicbrainz-exact"
     },
     "568": {
@@ -3171,6 +3379,196 @@
       "checkedAt": "2026-11-17T17:55:33.187Z",
       "found": true
     },
+    "495": {
+      "signature": "нервы|сбежим",
+      "checkedAt": "2026-11-21T08:19:42.818Z",
+      "found": false
+    },
+    "496": {
+      "signature": "нервы|слишком влюблен",
+      "checkedAt": "2026-11-21T08:19:41.491Z",
+      "found": true
+    },
+    "497": {
+      "signature": "нервы|суицид моеи веры",
+      "checkedAt": "2026-11-21T08:19:32.806Z",
+      "found": true
+    },
+    "498": {
+      "signature": "нервы|счастье",
+      "checkedAt": "2026-11-21T08:19:24.241Z",
+      "found": true
+    },
+    "499": {
+      "signature": "нервы|ты бы офигела",
+      "checkedAt": "2026-11-21T08:19:22.787Z",
+      "found": false
+    },
+    "500": {
+      "signature": "нервы|я не хочу без тебя спать",
+      "checkedAt": "2026-11-21T08:19:21.410Z",
+      "found": false
+    },
+    "501": {
+      "signature": "ника жукова|плакса",
+      "checkedAt": "2026-11-21T08:19:20.301Z",
+      "found": false
+    },
+    "502": {
+      "signature": "николаи носков|это здорово",
+      "checkedAt": "2026-11-21T08:18:57.246Z",
+      "found": true
+    },
+    "503": {
+      "signature": "ногу свело|наши юные смешные голоса",
+      "checkedAt": "2026-11-21T08:18:56.182Z",
+      "found": true
+    },
+    "504": {
+      "signature": "нюша|больно",
+      "checkedAt": "2026-11-21T08:18:33.053Z",
+      "found": true
+    },
+    "505": {
+      "signature": "нюша|выше",
+      "checkedAt": "2026-11-21T08:18:31.605Z",
+      "found": true
+    },
+    "506": {
+      "signature": "нюша|цунами",
+      "checkedAt": "2026-11-21T08:18:30.335Z",
+      "found": true
+    },
+    "507": {
+      "signature": "нюша|чудо",
+      "checkedAt": "2026-11-21T08:18:28.705Z",
+      "found": true
+    },
+    "508": {
+      "signature": "олег газманов|офицеры",
+      "checkedAt": "2026-11-21T08:18:20.143Z",
+      "found": true
+    },
+    "509": {
+      "signature": "олег митяев|изгиб гитары желтои",
+      "checkedAt": "2026-11-21T08:18:18.673Z",
+      "found": false
+    },
+    "510": {
+      "signature": "папин олимпос|день когда мы все встретились с тобои",
+      "checkedAt": "2026-11-21T08:18:10.112Z",
+      "found": false
+    },
+    "511": {
+      "signature": "папин олимпос|динозаврики",
+      "checkedAt": "2026-11-21T08:18:08.652Z",
+      "found": true
+    },
+    "512": {
+      "signature": "папин олимпос|официантка",
+      "checkedAt": "2026-11-21T08:18:07.199Z",
+      "found": false
+    },
+    "513": {
+      "signature": "папин олимпос|снежинка",
+      "checkedAt": "2026-11-21T08:18:05.756Z",
+      "found": false
+    },
+    "514": {
+      "signature": "папин олимпос|темно оранжевыи закат",
+      "checkedAt": "2026-11-21T08:17:57.182Z",
+      "found": true
+    },
+    "515": {
+      "signature": "папин олимпос|школа",
+      "checkedAt": "2026-11-21T08:17:55.747Z",
+      "found": true
+    },
+    "516": {
+      "signature": "папин олимпос|я удалю тебя из друзеи",
+      "checkedAt": "2026-11-21T08:17:47.167Z",
+      "found": true
+    },
+    "517": {
+      "signature": "песни из кино и мультфильмов|девчата старыи клен",
+      "checkedAt": "2026-11-21T08:17:45.910Z",
+      "found": false
+    },
+    "518": {
+      "signature": "песни из кино и мультфильмов|пусть бегут неуклюже",
+      "checkedAt": "2026-11-21T08:17:37.135Z",
+      "found": false
+    },
+    "519": {
+      "signature": "песни из кино и мультфильмов|свадьба в малиновке пе",
+      "checkedAt": "2026-11-21T08:17:35.685Z",
+      "found": false
+    },
+    "520": {
+      "signature": "пицца|лифт",
+      "checkedAt": "2026-11-21T08:17:27.157Z",
+      "found": true
+    },
+    "521": {
+      "signature": "пицца|оружие",
+      "checkedAt": "2026-11-21T08:17:25.710Z",
+      "found": true
+    },
+    "522": {
+      "signature": "пицца|романс",
+      "checkedAt": "2026-11-21T08:17:17.107Z",
+      "found": true
+    },
+    "523": {
+      "signature": "пицца|тише",
+      "checkedAt": "2026-11-21T08:17:15.644Z",
+      "found": true
+    },
+    "524": {
+      "signature": "пицца|улыбка",
+      "checkedAt": "2026-11-21T08:17:07.068Z",
+      "found": false
+    },
+    "525": {
+      "signature": "пицца|фарами",
+      "checkedAt": "2026-11-21T08:17:05.925Z",
+      "found": false
+    },
+    "526": {
+      "signature": "порнофильмы|прости прощаи привет",
+      "checkedAt": "2026-11-21T08:16:57.051Z",
+      "found": true
+    },
+    "527": {
+      "signature": "порнофильмы|уроки любви",
+      "checkedAt": "2026-11-21T08:16:55.819Z",
+      "found": true
+    },
+    "528": {
+      "signature": "порнофильмы|я так соскучился",
+      "checkedAt": "2026-11-21T08:16:47.031Z",
+      "found": true
+    },
+    "529": {
+      "signature": "пошлая молли|банда крис",
+      "checkedAt": "2026-11-21T08:16:45.578Z",
+      "found": false
+    },
+    "530": {
+      "signature": "пошлая молли|контракт",
+      "checkedAt": "2026-11-21T08:16:37.072Z",
+      "found": true
+    },
+    "531": {
+      "signature": "пошлая молли|любимая песня твоеи сестры",
+      "checkedAt": "2026-11-21T08:16:35.561Z",
+      "found": true
+    },
+    "532": {
+      "signature": "пошлая молли|супермаркет",
+      "checkedAt": "2026-11-21T08:16:27.037Z",
+      "found": true
+    },
     "533": {
       "signature": "прикольные песни|а муха тоже вертолет",
       "checkedAt": "2026-11-21T00:54:05.728Z",
@@ -3321,6 +3719,11 @@
       "checkedAt": "2026-11-21T00:51:49.966Z",
       "found": true
     },
+    "563": {
+      "signature": "сектор газа|лирика",
+      "checkedAt": "2026-11-21T08:16:25.538Z",
+      "found": true
+    },
     "564": {
       "signature": "сектор газа|ночь перед рождеством",
       "checkedAt": "2026-11-21T00:51:05.529Z",
@@ -3334,6 +3737,11 @@
     "566": {
       "signature": "сектор газа|твои звонок",
       "checkedAt": "2026-11-21T00:50:41.807Z",
+      "found": true
+    },
+    "567": {
+      "signature": "сектор газа|туман",
+      "checkedAt": "2026-11-21T08:16:24.864Z",
       "found": true
     },
     "568": {
@@ -6109,6 +6517,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 394
+    "verifiedDates": 420
   }
 }
