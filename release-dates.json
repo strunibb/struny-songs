@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-21T16:16:53.895Z",
+  "updatedAt": "2026-11-21T21:47:41.557Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -26,12 +26,180 @@
       "title": "Лесник",
       "confidence": "musicbrainz-exact"
     },
+    "416": {
+      "date": "2017-10-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/06fb1a42-145b-4678-85cd-4fe40c49d200",
+      "artist": "Макс Корж",
+      "title": "Пьяный дождь",
+      "confidence": "musicbrainz-exact"
+    },
+    "418": {
+      "date": "2013-10-21",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/aedf2beb-76cf-4328-8da2-e20e57e9bbb8",
+      "artist": "Макс Корж",
+      "title": "Стань",
+      "confidence": "musicbrainz-exact"
+    },
+    "419": {
+      "date": "2013-10-21",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/fd39cde6-078b-41aa-bb65-02d68450dc37",
+      "artist": "Макс Корж",
+      "title": "Эндорфин",
+      "confidence": "musicbrainz-exact"
+    },
+    "420": {
+      "date": "2006-03-28",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/31810543-f6cb-44e4-b3ca-5bb3cfb70980",
+      "artist": "МакSим",
+      "title": "Знаешь ли ты",
+      "confidence": "musicbrainz-exact"
+    },
+    "421": {
+      "date": "2006-03-28",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/389b0a9e-c6e9-4023-9005-4d955d91a401",
+      "artist": "МакSим",
+      "title": "Отпускаю",
+      "confidence": "musicbrainz-exact"
+    },
+    "422": {
+      "date": "1993",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/e9626f54-9643-42e9-8fb7-ff777e193a06",
+      "artist": "Мальчишник",
+      "title": "Последний раз",
+      "confidence": "musicbrainz-exact"
+    },
+    "424": {
+      "date": "2024-07-19",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9d3415b9-c93e-4d28-a335-b2b1440d93ae",
+      "artist": "Мари Краймбрери",
+      "title": "Нравится жить",
+      "confidence": "musicbrainz-exact"
+    },
+    "425": {
+      "date": "2018-03-30",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/591ea627-4dae-4ef2-826c-43cd5a93fe84",
+      "artist": "Мари Краймбрери",
+      "title": "Она тебе не идёт",
+      "confidence": "musicbrainz-exact"
+    },
+    "426": {
+      "date": "2020-01-31",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/741b0fbb-5693-4f7f-9a59-9b86ab39c6fd",
+      "artist": "Мари Краймбрери",
+      "title": "Пряталась в ванной",
+      "confidence": "musicbrainz-exact"
+    },
+    "428": {
+      "date": "2018-09-07",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5e704d80-0599-4793-bf8d-3475fd0c2cef",
+      "artist": "Мари Краймбрери",
+      "title": "Amore",
+      "confidence": "musicbrainz-exact"
+    },
+    "439": {
+      "date": "1982",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/8d351e46-a599-4171-8a12-6c465db921eb",
+      "artist": "Машина времени",
+      "title": "За тех, кто в море",
+      "confidence": "musicbrainz-exact"
+    },
+    "440": {
+      "date": "1993",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/9acf8ec8-bed2-4274-8909-350ad41d2493",
+      "artist": "Машина времени",
+      "title": "Поворот",
+      "confidence": "musicbrainz-exact"
+    },
+    "441": {
+      "date": "2012-04-28",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/907b454c-6148-4e79-b424-aa16689221ca",
+      "artist": "Мельница",
+      "title": "Дороги",
+      "confidence": "musicbrainz-exact"
+    },
+    "442": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/d40d9bb4-91a3-44d6-a21b-b02492929017",
+      "artist": "Мельница",
+      "title": "Королевна",
+      "confidence": "musicbrainz-exact"
+    },
+    "447": {
+      "date": "1988",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/5d92f5a4-056f-4d6d-969f-be770aa5f796",
+      "artist": "Мираж",
+      "title": "Музыка нас связала",
+      "confidence": "musicbrainz-exact"
+    },
+    "449": {
+      "date": "1989",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/d8d27c39-bd31-4e77-bb33-6fb250c0adc4",
+      "artist": "Михаил Боярский",
+      "title": "Зеленоглазое такси",
+      "confidence": "musicbrainz-exact"
+    },
+    "450": {
+      "date": "1998",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/28b2336d-2e78-42eb-be02-989a44d00cf0",
+      "artist": "Михаил Круг",
+      "title": "Владимирский централ",
+      "confidence": "musicbrainz-exact"
+    },
+    "452": {
+      "date": "1994",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/b6720e95-3bcc-4c8d-b0ae-78374c0ebcc6",
+      "artist": "Михаил Круг",
+      "title": "Кольщик",
+      "confidence": "musicbrainz-exact"
+    },
+    "453": {
+      "date": "2012",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/e1726e83-3973-4c51-8605-f7bae97ae038",
+      "artist": "Михаил Круг",
+      "title": "Тебе, моя последняя любовь",
+      "confidence": "musicbrainz-exact"
+    },
+    "454": {
+      "date": "1996",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/581c1432-6e0b-49f9-a177-43c5ec54bf52",
+      "artist": "Михаил Круг",
+      "title": "Тишина",
+      "confidence": "musicbrainz-exact"
+    },
     "458": {
       "date": "2018-05-25",
       "precision": "day",
       "source": "https://musicbrainz.org/recording/40966146-c48f-4a72-82cb-a641448e307e",
       "artist": "Монеточка",
       "title": "Нимфоманка",
+      "confidence": "musicbrainz-exact"
+    },
+    "459": {
+      "date": "2020-10-02",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a31689ae-ca3a-4bc1-b64f-c737ecb616f2",
+      "artist": "Монеточка",
+      "title": "Папина любовница",
       "confidence": "musicbrainz-exact"
     },
     "461": {
@@ -3563,6 +3731,166 @@
       "checkedAt": "2026-11-17T17:55:33.187Z",
       "found": true
     },
+    "416": {
+      "signature": "макс корж|пьяныи дождь",
+      "checkedAt": "2026-11-21T21:47:41.209Z",
+      "found": true
+    },
+    "418": {
+      "signature": "макс корж|стань",
+      "checkedAt": "2026-11-21T21:46:49.407Z",
+      "found": true
+    },
+    "419": {
+      "signature": "макс корж|эндорфин",
+      "checkedAt": "2026-11-21T21:46:47.950Z",
+      "found": true
+    },
+    "420": {
+      "signature": "макsим|знаешь ли ты",
+      "checkedAt": "2026-11-21T21:46:39.352Z",
+      "found": true
+    },
+    "421": {
+      "signature": "макsим|отпускаю",
+      "checkedAt": "2026-11-21T21:46:37.890Z",
+      "found": true
+    },
+    "422": {
+      "signature": "мальчишник|последнии раз",
+      "checkedAt": "2026-11-21T21:46:29.346Z",
+      "found": true
+    },
+    "424": {
+      "signature": "мари краимбрери|нравится жить",
+      "checkedAt": "2026-11-21T21:45:37.395Z",
+      "found": true
+    },
+    "425": {
+      "signature": "мари краимбрери|она тебе не идет",
+      "checkedAt": "2026-11-21T21:45:35.952Z",
+      "found": true
+    },
+    "426": {
+      "signature": "мари краимбрери|пряталась в ваннои",
+      "checkedAt": "2026-11-21T21:45:27.354Z",
+      "found": true
+    },
+    "427": {
+      "signature": "мари краимбрери|пьяную",
+      "checkedAt": "2026-11-21T21:45:25.869Z",
+      "found": false
+    },
+    "428": {
+      "signature": "мари краимбрери|amore",
+      "checkedAt": "2026-11-21T21:45:17.248Z",
+      "found": true
+    },
+    "430": {
+      "signature": "мартин|жду тебя",
+      "checkedAt": "2026-11-21T21:44:25.393Z",
+      "found": false
+    },
+    "431": {
+      "signature": "мартин|позову звезды смотреть на тебя",
+      "checkedAt": "2026-11-21T21:44:24.489Z",
+      "found": false
+    },
+    "432": {
+      "signature": "мартин|полюби все мои слабости",
+      "checkedAt": "2026-11-21T21:44:01.147Z",
+      "found": false
+    },
+    "434": {
+      "signature": "мартин|целыи мир",
+      "checkedAt": "2026-11-21T21:43:09.279Z",
+      "found": false
+    },
+    "435": {
+      "signature": "мартин feduk|другие планы",
+      "checkedAt": "2026-11-21T21:43:08.169Z",
+      "found": false
+    },
+    "436": {
+      "signature": "марьяна локель|облака в 4к",
+      "checkedAt": "2026-11-21T21:42:45.029Z",
+      "found": false
+    },
+    "438": {
+      "signature": "маша мирова|на ножах",
+      "checkedAt": "2026-11-21T21:41:53.165Z",
+      "found": false
+    },
+    "439": {
+      "signature": "машина времени|за тех кто в море",
+      "checkedAt": "2026-11-21T21:41:51.730Z",
+      "found": true
+    },
+    "440": {
+      "signature": "машина времени|поворот",
+      "checkedAt": "2026-11-21T21:41:43.109Z",
+      "found": true
+    },
+    "441": {
+      "signature": "мельница|дороги",
+      "checkedAt": "2026-11-21T21:41:41.609Z",
+      "found": true
+    },
+    "442": {
+      "signature": "мельница|королевна",
+      "checkedAt": "2026-11-21T21:41:32.978Z",
+      "found": true
+    },
+    "444": {
+      "signature": "милана филимонова|хамелеон",
+      "checkedAt": "2026-11-21T21:40:41.075Z",
+      "found": false
+    },
+    "445": {
+      "signature": "минаева|шоколадка",
+      "checkedAt": "2026-11-21T21:40:39.688Z",
+      "found": false
+    },
+    "446": {
+      "signature": "минаева|эти цветы так кстати",
+      "checkedAt": "2026-11-21T21:40:31.075Z",
+      "found": false
+    },
+    "447": {
+      "signature": "мираж|музыка нас связала",
+      "checkedAt": "2026-11-21T21:40:29.595Z",
+      "found": true
+    },
+    "448": {
+      "signature": "мистер кредо|долина",
+      "checkedAt": "2026-11-21T21:40:20.923Z",
+      "found": false
+    },
+    "449": {
+      "signature": "михаил боярскии|зеленоглазое такси",
+      "checkedAt": "2026-11-21T21:40:19.523Z",
+      "found": true
+    },
+    "450": {
+      "signature": "михаил круг|владимирскии централ",
+      "checkedAt": "2026-11-21T21:40:10.928Z",
+      "found": true
+    },
+    "452": {
+      "signature": "михаил круг|кольщик",
+      "checkedAt": "2026-11-21T21:39:19.008Z",
+      "found": true
+    },
+    "453": {
+      "signature": "михаил круг|тебе моя последняя любовь",
+      "checkedAt": "2026-11-21T21:39:17.921Z",
+      "found": true
+    },
+    "454": {
+      "signature": "михаил круг|тишина",
+      "checkedAt": "2026-11-21T21:38:54.804Z",
+      "found": true
+    },
     "455": {
       "signature": "михаил шуфутинскии|3 сентября",
       "checkedAt": "2026-11-21T16:16:53.683Z",
@@ -3581,6 +3909,11 @@
     "458": {
       "signature": "монеточка|нимфоманка",
       "checkedAt": "2026-11-21T16:16:21.235Z",
+      "found": true
+    },
+    "459": {
+      "signature": "монеточка|папина любовница",
+      "checkedAt": "2026-11-21T21:38:46.680Z",
       "found": true
     },
     "460": {
@@ -6896,6 +7229,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 443
+    "verifiedDates": 464
   }
 }
