@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-21T08:19:43.097Z",
+  "updatedAt": "2026-11-21T16:16:53.895Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -24,6 +24,190 @@
       "source": "https://musicbrainz.org/recording/f8e1a712-736b-4d50-88b8-1ac37e04f697",
       "artist": "Король и Шут",
       "title": "Лесник",
+      "confidence": "musicbrainz-exact"
+    },
+    "458": {
+      "date": "2018-05-25",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/40966146-c48f-4a72-82cb-a641448e307e",
+      "artist": "Монеточка",
+      "title": "Нимфоманка",
+      "confidence": "musicbrainz-exact"
+    },
+    "461": {
+      "date": "2021-08-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/51ff332c-f196-4f86-9ae6-4a9434ecaf08",
+      "artist": "Мот",
+      "title": "Август — это ты",
+      "confidence": "musicbrainz-exact"
+    },
+    "462": {
+      "date": "2015-06-08",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/6792fccf-55c3-4c6c-bbf7-cdd3602c3bcd",
+      "artist": "Мот",
+      "title": "День и ночь",
+      "confidence": "musicbrainz-exact"
+    },
+    "463": {
+      "date": "2016-03-14",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b4ddf9f0-400b-4ef8-ba8c-636fee163286",
+      "artist": "Мот",
+      "title": "Капкан",
+      "confidence": "musicbrainz-exact"
+    },
+    "465": {
+      "date": "2023-08-25",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c848a177-5a82-41b4-898a-2ebf095a4244",
+      "artist": "Мот",
+      "title": "Случайности не случайны",
+      "confidence": "musicbrainz-exact"
+    },
+    "469": {
+      "date": "1997-04-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/81444956-9607-419b-a27e-8f3d36c56996",
+      "artist": "Мумий Тролль",
+      "title": "Девочка",
+      "confidence": "musicbrainz-exact"
+    },
+    "470": {
+      "date": "1997-04-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/252391bd-f288-46b8-81b8-7372779c5a9a",
+      "artist": "Мумий Тролль",
+      "title": "Забавы",
+      "confidence": "musicbrainz-exact"
+    },
+    "471": {
+      "date": "2004-02-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/f768ce33-ccdb-4292-a6a5-fcca68bbc94c",
+      "artist": "Мумий Тролль",
+      "title": "Медведица",
+      "confidence": "musicbrainz-exact"
+    },
+    "472": {
+      "date": "1997-04-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/0c5bd196-fa63-449e-80b4-978921f42fc0",
+      "artist": "Мумий Тролль",
+      "title": "Утекай",
+      "confidence": "musicbrainz-exact"
+    },
+    "473": {
+      "date": "1998",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/d6d0d354-d939-4a60-b159-4b6f01d8fb2e",
+      "artist": "Мурат Насыров",
+      "title": "Я это ты",
+      "confidence": "musicbrainz-exact"
+    },
+    "474": {
+      "date": "2000",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/6f912781-b6ed-4730-bac6-2ada975b41e4",
+      "artist": "Найк Борзов",
+      "title": "Верхом на звезде",
+      "confidence": "musicbrainz-exact"
+    },
+    "479": {
+      "date": "1988",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/3d09d09c-7ec8-4d61-945a-123ac84d6d10",
+      "artist": "Наутилус Помпилиус",
+      "title": "Я хочу быть с тобой",
+      "confidence": "musicbrainz-exact"
+    },
+    "480": {
+      "date": "2012-05-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/861c5578-8809-4602-aaf0-718ef47c1c85",
+      "artist": "Нервы",
+      "title": "Батареи",
+      "confidence": "musicbrainz-exact"
+    },
+    "481": {
+      "date": "2013-11-12",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/11a29308-cc2d-4e97-a6d0-9f50eb168742",
+      "artist": "Нервы",
+      "title": "Вороны",
+      "confidence": "musicbrainz-exact"
+    },
+    "483": {
+      "date": "2012-05-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/013702e0-d1ff-4df4-bd19-e657d6d370c4",
+      "artist": "Нервы",
+      "title": "Её имя",
+      "confidence": "musicbrainz-exact"
+    },
+    "484": {
+      "date": "2019-02-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/25940d18-c37f-4161-85a1-40303aaba4b7",
+      "artist": "Нервы",
+      "title": "Зажигалки",
+      "confidence": "musicbrainz-exact"
+    },
+    "486": {
+      "date": "2012-05-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9e686db2-2303-4241-bc6e-7d083462853e",
+      "artist": "Нервы",
+      "title": "Кофе мой друг",
+      "confidence": "musicbrainz-exact"
+    },
+    "487": {
+      "date": "2012-05-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/efa866a2-7c42-460d-972e-c223d2a48930",
+      "artist": "Нервы",
+      "title": "Курим",
+      "confidence": "musicbrainz-exact"
+    },
+    "489": {
+      "date": "2012-05-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/8d5c6735-17f5-457a-95bb-fad08f1b0385",
+      "artist": "Нервы",
+      "title": "Муза",
+      "confidence": "musicbrainz-exact"
+    },
+    "491": {
+      "date": "2012-05-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/cab8a0bf-fca5-43ff-a3a3-2ab438750087",
+      "artist": "Нервы",
+      "title": "Нервы",
+      "confidence": "musicbrainz-exact"
+    },
+    "492": {
+      "date": "2021-04-07",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/8fe4cac6-d740-4e65-a83f-1f96e81d90e7",
+      "artist": "Нервы",
+      "title": "Потери",
+      "confidence": "musicbrainz-exact"
+    },
+    "493": {
+      "date": "2016",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/97ab10b7-b7ea-416f-a817-a70087582229",
+      "artist": "Нервы",
+      "title": "Родной город",
+      "confidence": "musicbrainz-exact"
+    },
+    "494": {
+      "date": "2017",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/bba0ba97-7130-4b27-857a-4017f3c096e6",
+      "artist": "Нервы",
+      "title": "Самый дорогой человек",
       "confidence": "musicbrainz-exact"
     },
     "496": {
@@ -3379,6 +3563,201 @@
       "checkedAt": "2026-11-17T17:55:33.187Z",
       "found": true
     },
+    "455": {
+      "signature": "михаил шуфутинскии|3 сентября",
+      "checkedAt": "2026-11-21T16:16:53.683Z",
+      "found": false
+    },
+    "456": {
+      "signature": "миша хорев|каждую осень",
+      "checkedAt": "2026-11-21T16:16:45.337Z",
+      "found": false
+    },
+    "457": {
+      "signature": "многоточие|щемит в груди",
+      "checkedAt": "2026-11-21T16:16:22.483Z",
+      "found": false
+    },
+    "458": {
+      "signature": "монеточка|нимфоманка",
+      "checkedAt": "2026-11-21T16:16:21.235Z",
+      "found": true
+    },
+    "460": {
+      "signature": "мот|абсолютно все",
+      "checkedAt": "2026-11-21T16:15:15.647Z",
+      "found": false
+    },
+    "461": {
+      "signature": "мот|август это ты",
+      "checkedAt": "2026-11-21T16:15:15.483Z",
+      "found": true
+    },
+    "462": {
+      "signature": "мот|день и ночь",
+      "checkedAt": "2026-11-21T16:15:07.872Z",
+      "found": true
+    },
+    "463": {
+      "signature": "мот|капкан",
+      "checkedAt": "2026-11-21T16:15:00.512Z",
+      "found": true
+    },
+    "464": {
+      "signature": "мот|лилии",
+      "checkedAt": "2026-11-21T16:14:54.041Z",
+      "found": false
+    },
+    "465": {
+      "signature": "мот|случаиности не случаины",
+      "checkedAt": "2026-11-21T16:14:45.593Z",
+      "found": true
+    },
+    "466": {
+      "signature": "мот dose|не бруклин",
+      "checkedAt": "2026-11-21T16:14:43.979Z",
+      "found": false
+    },
+    "467": {
+      "signature": "моя мишель|курточка",
+      "checkedAt": "2026-11-21T16:14:42.775Z",
+      "found": false
+    },
+    "468": {
+      "signature": "моя мишель|пташка feat dose",
+      "checkedAt": "2026-11-21T16:14:42.394Z",
+      "found": false
+    },
+    "469": {
+      "signature": "мумии тролль|девочка",
+      "checkedAt": "2026-11-21T16:14:18.080Z",
+      "found": true
+    },
+    "470": {
+      "signature": "мумии тролль|забавы",
+      "checkedAt": "2026-11-21T16:14:12.007Z",
+      "found": true
+    },
+    "471": {
+      "signature": "мумии тролль|медведица",
+      "checkedAt": "2026-11-21T16:14:03.407Z",
+      "found": true
+    },
+    "472": {
+      "signature": "мумии тролль|утекаи",
+      "checkedAt": "2026-11-21T16:14:01.967Z",
+      "found": true
+    },
+    "473": {
+      "signature": "мурат насыров|я это ты",
+      "checkedAt": "2026-11-21T16:14:00.517Z",
+      "found": true
+    },
+    "474": {
+      "signature": "наик борзов|верхом на звезде",
+      "checkedAt": "2026-11-21T16:13:59.173Z",
+      "found": true
+    },
+    "475": {
+      "signature": "наутилус помпилиус|крылья",
+      "checkedAt": "2026-11-21T16:13:57.592Z",
+      "found": false
+    },
+    "476": {
+      "signature": "наутилус помпилиус|одинокая птица",
+      "checkedAt": "2026-11-21T16:13:56.398Z",
+      "found": false
+    },
+    "477": {
+      "signature": "наутилус помпилиус|прогулки по воде",
+      "checkedAt": "2026-11-21T16:13:33.484Z",
+      "found": false
+    },
+    "478": {
+      "signature": "наутилус помпилиус|скованные однои цепью",
+      "checkedAt": "2026-11-21T16:13:33.351Z",
+      "found": false
+    },
+    "479": {
+      "signature": "наутилус помпилиус|я хочу быть с тобои",
+      "checkedAt": "2026-11-21T16:13:28.831Z",
+      "found": true
+    },
+    "480": {
+      "signature": "нервы|батареи",
+      "checkedAt": "2026-11-21T16:13:23.078Z",
+      "found": true
+    },
+    "481": {
+      "signature": "нервы|вороны",
+      "checkedAt": "2026-11-21T16:13:22.941Z",
+      "found": true
+    },
+    "482": {
+      "signature": "нервы|да или нет ты идеальна",
+      "checkedAt": "2026-11-21T16:13:10.591Z",
+      "found": false
+    },
+    "483": {
+      "signature": "нервы|ее имя",
+      "checkedAt": "2026-11-21T16:13:09.201Z",
+      "found": true
+    },
+    "484": {
+      "signature": "нервы|зажигалки",
+      "checkedAt": "2026-11-21T16:13:00.496Z",
+      "found": true
+    },
+    "485": {
+      "signature": "нервы|как как надо",
+      "checkedAt": "2026-11-21T16:12:59.032Z",
+      "found": false
+    },
+    "486": {
+      "signature": "нервы|кофе мои друг",
+      "checkedAt": "2026-11-21T16:12:50.553Z",
+      "found": true
+    },
+    "487": {
+      "signature": "нервы|курим",
+      "checkedAt": "2026-11-21T16:12:50.351Z",
+      "found": true
+    },
+    "488": {
+      "signature": "нервы|лазла",
+      "checkedAt": "2026-11-21T16:12:47.619Z",
+      "found": false
+    },
+    "489": {
+      "signature": "нервы|муза",
+      "checkedAt": "2026-11-21T16:12:42.658Z",
+      "found": true
+    },
+    "490": {
+      "signature": "нервы|нафига тебе я",
+      "checkedAt": "2026-11-21T16:12:40.960Z",
+      "found": false
+    },
+    "491": {
+      "signature": "нервы|нервы",
+      "checkedAt": "2026-11-21T16:12:40.828Z",
+      "found": true
+    },
+    "492": {
+      "signature": "нервы|потери",
+      "checkedAt": "2026-11-21T16:12:28.575Z",
+      "found": true
+    },
+    "493": {
+      "signature": "нервы|роднои город",
+      "checkedAt": "2026-11-21T16:12:27.145Z",
+      "found": true
+    },
+    "494": {
+      "signature": "нервы|самыи дорогои человек",
+      "checkedAt": "2026-11-21T16:12:19.185Z",
+      "found": true
+    },
     "495": {
       "signature": "нервы|сбежим",
       "checkedAt": "2026-11-21T08:19:42.818Z",
@@ -6517,6 +6896,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 420
+    "verifiedDates": 443
   }
 }
