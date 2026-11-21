@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-21T15:41:39.826Z",
+  "updatedAt": "2026-11-21T21:11:47.485Z",
   "tracks": {
     "681": {
       "artist": "Billie Eilish",
@@ -33,6 +33,24 @@
       "start": 35,
       "source": "official-artist-youtube",
       "verifiedAt": "2026-11-17"
+    },
+    "751": {
+      "artist": "GONE.Fludd",
+      "title": "Сети",
+      "videoId": "LrVwQ6wjuEc",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/bc146fc4-c9a3-43e8-8f28-df9262402c32",
+      "verifiedAt": "2026-11-21T21:11:01.548Z"
+    },
+    "756": {
+      "artist": "Green Day",
+      "title": "Wake Me Up When September Ends",
+      "videoId": "ulRXvH8VOl8",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/a23f107f-36cd-4a4c-b8d5-6dd73b9148c7",
+      "verifiedAt": "2026-11-21T21:10:09.310Z"
     },
     "776": {
       "artist": "Imagine Dragons",
@@ -170,6 +188,131 @@
     "347": {
       "signature": "король и шут|лесник",
       "checkedAt": "2026-11-17T08:59:19.279Z",
+      "found": false
+    },
+    "748": {
+      "signature": "flo rida|whistle",
+      "checkedAt": "2026-11-21T21:11:47.108Z",
+      "found": false
+    },
+    "749": {
+      "signature": "frank sinatra|fly me to the moon",
+      "checkedAt": "2026-11-21T21:11:27.367Z",
+      "found": false
+    },
+    "750": {
+      "signature": "george michael|careless whisper",
+      "checkedAt": "2026-11-21T21:11:21.067Z",
+      "found": false
+    },
+    "751": {
+      "signature": "gone fludd|сети",
+      "checkedAt": "2026-11-21T21:11:01.548Z",
+      "found": true
+    },
+    "752": {
+      "signature": "gorillaz|feel good inc",
+      "checkedAt": "2026-11-21T21:10:55.052Z",
+      "found": false
+    },
+    "753": {
+      "signature": "green day|american idiot",
+      "checkedAt": "2026-11-21T21:10:35.440Z",
+      "found": false
+    },
+    "754": {
+      "signature": "green day|boulevard of broken dreams",
+      "checkedAt": "2026-11-21T21:10:27.689Z",
+      "found": false
+    },
+    "755": {
+      "signature": "green day|meet me on the roof",
+      "checkedAt": "2026-11-21T21:10:16.915Z",
+      "found": false
+    },
+    "756": {
+      "signature": "green day|wake me up when september ends",
+      "checkedAt": "2026-11-21T21:10:09.310Z",
+      "found": true
+    },
+    "757": {
+      "signature": "guf|письмо домои",
+      "checkedAt": "2026-11-21T21:10:01.665Z",
+      "found": false
+    },
+    "758": {
+      "signature": "guf|пустяк",
+      "checkedAt": "2026-11-21T21:09:56.878Z",
+      "found": false
+    },
+    "759": {
+      "signature": "guf|ice baby",
+      "checkedAt": "2026-11-21T21:09:37.150Z",
+      "found": false
+    },
+    "760": {
+      "signature": "gustavo santaolalla|the last of us",
+      "checkedAt": "2026-11-21T21:09:29.524Z",
+      "found": false
+    },
+    "761": {
+      "signature": "hammali|девочка воина feat navai",
+      "checkedAt": "2026-11-21T21:09:18.760Z",
+      "found": false
+    },
+    "762": {
+      "signature": "hammali|наверно ты меня не помнишь feat jony",
+      "checkedAt": "2026-11-21T21:09:18.597Z",
+      "found": false
+    },
+    "763": {
+      "signature": "hammali|прятки",
+      "checkedAt": "2026-11-21T21:08:58.865Z",
+      "found": false
+    },
+    "764": {
+      "signature": "hammali|пустите меня на танцпол",
+      "checkedAt": "2026-11-21T21:08:58.707Z",
+      "found": false
+    },
+    "765": {
+      "signature": "hammali navai|а если это любовь",
+      "checkedAt": "2026-11-21T21:08:38.975Z",
+      "found": false
+    },
+    "766": {
+      "signature": "hammali navai|птичка",
+      "checkedAt": "2026-11-21T21:08:32.963Z",
+      "found": false
+    },
+    "767": {
+      "signature": "hammali navai|у окна",
+      "checkedAt": "2026-11-21T21:08:26.709Z",
+      "found": false
+    },
+    "768": {
+      "signature": "hensy|замок на мостик",
+      "checkedAt": "2026-11-21T21:08:23.743Z",
+      "found": false
+    },
+    "769": {
+      "signature": "hensy|пить и курить",
+      "checkedAt": "2026-11-21T21:08:17.605Z",
+      "found": false
+    },
+    "770": {
+      "signature": "hensy|поболело и прошло",
+      "checkedAt": "2026-11-21T21:08:11.458Z",
+      "found": false
+    },
+    "771": {
+      "signature": "hensy клава кока|костер",
+      "checkedAt": "2026-11-21T21:08:05.332Z",
+      "found": false
+    },
+    "772": {
+      "signature": "hi fi|черныи ворон",
+      "checkedAt": "2026-11-21T21:08:00.679Z",
       "found": false
     },
     "773": {
@@ -1910,6 +2053,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedVideos": 18
+    "verifiedVideos": 20
   }
 }
