@@ -1,7 +1,95 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-22T17:15:54.389Z",
+  "updatedAt": "2026-11-22T22:38:08.168Z",
   "dates": {
+    "266": {
+      "date": "2004",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/cf06d4bd-b12a-4906-8515-8473116d735b",
+      "artist": "Звери",
+      "title": "Районы-кварталы",
+      "confidence": "musicbrainz-exact"
+    },
+    "267": {
+      "date": "2006",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4848ec46-391d-4cd1-aaf4-6c0441ac0a8f",
+      "artist": "Звери",
+      "title": "Танцуй",
+      "confidence": "musicbrainz-exact"
+    },
+    "270": {
+      "date": "2006-10-16",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/10f9016e-16c6-445c-a6dc-f4e4755cfe9d",
+      "artist": "Земфира",
+      "title": "Бесконечность",
+      "confidence": "musicbrainz-exact"
+    },
+    "272": {
+      "date": "2008",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/7fd2c6e9-9902-4887-870d-16a3fe4bf50a",
+      "artist": "Земфира",
+      "title": "Искала",
+      "confidence": "musicbrainz-exact"
+    },
+    "273": {
+      "date": "2008",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/9fe4537d-56b0-4436-82db-a06cfdf3195e",
+      "artist": "Земфира",
+      "title": "П.М.М.Л.",
+      "confidence": "musicbrainz-exact"
+    },
+    "274": {
+      "date": "1999-05-10",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b3c36bfb-1c25-4af6-99e6-b9c9734cdb5d",
+      "artist": "Земфира",
+      "title": "Ромашки",
+      "confidence": "musicbrainz-exact"
+    },
+    "276": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/12d52529-89f5-4026-afbf-d3dc8583a613",
+      "artist": "Иванушки International",
+      "title": "Небо",
+      "confidence": "musicbrainz-exact"
+    },
+    "293": {
+      "date": "2021-04-16",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c6153fac-a5a9-493a-a979-6f2f2e7b0647",
+      "artist": "Канги",
+      "title": "Вали",
+      "confidence": "musicbrainz-exact"
+    },
+    "294": {
+      "date": "2021-02-12",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/e1c9eef8-e43c-4918-b3db-cbbff913cc4b",
+      "artist": "Канги",
+      "title": "Возьми сердце моё",
+      "confidence": "musicbrainz-exact"
+    },
+    "295": {
+      "date": "2021-04-16",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/ad5bd0e1-6bd1-4952-9c58-3fa5a9161ca5",
+      "artist": "Канги",
+      "title": "Эйя",
+      "confidence": "musicbrainz-exact"
+    },
+    "300": {
+      "date": "2020-12-11",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/25ac2e2c-3938-47f2-96df-e00d2fe0563c",
+      "artist": "Каста",
+      "title": "Любой дурак",
+      "confidence": "musicbrainz-exact"
+    },
     "301": {
       "date": "2002-11",
       "precision": "month",
@@ -154,6 +242,14 @@
       "title": "Нам с тобой",
       "confidence": "musicbrainz-exact"
     },
+    "321": {
+      "date": "1989",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/10d0e657-c641-47a8-bc61-3e1b32b93ca1",
+      "artist": "Кино",
+      "title": "Невесёлая песня",
+      "confidence": "musicbrainz-exact"
+    },
     "322": {
       "date": "1989",
       "precision": "year",
@@ -192,6 +288,14 @@
       "source": "https://musicbrainz.org/recording/fbefbc63-6c01-43e4-a02b-2e2565e77257",
       "artist": "Кино",
       "title": "Сосны на морском берегу",
+      "confidence": "musicbrainz-exact"
+    },
+    "328": {
+      "date": "1996",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/1da5da90-64d8-480c-9ba4-40813e8d98cb",
+      "artist": "Кино",
+      "title": "Спокойная ночь",
       "confidence": "musicbrainz-exact"
     },
     "329": {
@@ -272,6 +376,14 @@
       "source": "https://musicbrainz.org/recording/93fb5436-739b-41f7-a83f-0e5ca777f286",
       "artist": "Король и Шут",
       "title": "Два друга и разбойники",
+      "confidence": "musicbrainz-exact"
+    },
+    "342": {
+      "date": "1997",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/fa241af1-9bf2-4364-8043-84c875d67f45",
+      "artist": "Король и Шут",
+      "title": "Дурак и молния",
       "confidence": "musicbrainz-exact"
     },
     "343": {
@@ -4460,6 +4572,146 @@
     }
   },
   "attempts": {
+    "266": {
+      "signature": "звери|раионы кварталы",
+      "checkedAt": "2026-11-22T22:38:07.902Z",
+      "found": true
+    },
+    "267": {
+      "signature": "звери|танцуи",
+      "checkedAt": "2026-11-22T22:38:06.862Z",
+      "found": true
+    },
+    "270": {
+      "signature": "земфира|бесконечность",
+      "checkedAt": "2026-11-22T22:36:39.928Z",
+      "found": true
+    },
+    "272": {
+      "signature": "земфира|искала",
+      "checkedAt": "2026-11-22T22:35:55.865Z",
+      "found": true
+    },
+    "273": {
+      "signature": "земфира|п м м л",
+      "checkedAt": "2026-11-22T22:35:54.919Z",
+      "found": true
+    },
+    "274": {
+      "signature": "земфира|ромашки",
+      "checkedAt": "2026-11-22T22:35:31.839Z",
+      "found": true
+    },
+    "276": {
+      "signature": "иванушки international|небо",
+      "checkedAt": "2026-11-22T22:34:48.013Z",
+      "found": true
+    },
+    "278": {
+      "signature": "ирония судьбы|со мною вот что происходит",
+      "checkedAt": "2026-11-22T22:34:03.659Z",
+      "found": false
+    },
+    "279": {
+      "signature": "ислам идигов|гитарист тебе не пара",
+      "checkedAt": "2026-11-22T22:34:02.417Z",
+      "found": false
+    },
+    "280": {
+      "signature": "исполнитель не указан|бездельник",
+      "checkedAt": "2026-11-22T22:33:39.693Z",
+      "found": false
+    },
+    "281": {
+      "signature": "исполнитель не указан|бездельник 2",
+      "checkedAt": "2026-11-22T22:33:31.587Z",
+      "found": false
+    },
+    "282": {
+      "signature": "исполнитель не указан|боже какои пустяк",
+      "checkedAt": "2026-11-22T22:33:08.312Z",
+      "found": false
+    },
+    "283": {
+      "signature": "исполнитель не указан|братская любовь",
+      "checkedAt": "2026-11-22T22:33:07.074Z",
+      "found": false
+    },
+    "285": {
+      "signature": "исполнитель не указан|ведьмаку заплатите",
+      "checkedAt": "2026-11-22T22:32:01.662Z",
+      "found": false
+    },
+    "287": {
+      "signature": "исполнитель не указан|крылатые качели",
+      "checkedAt": "2026-11-22T22:31:17.464Z",
+      "found": false
+    },
+    "288": {
+      "signature": "исполнитель не указан|мальчики не плачут",
+      "checkedAt": "2026-11-22T22:31:16.816Z",
+      "found": false
+    },
+    "289": {
+      "signature": "исполнитель не указан|можно я с тобои",
+      "checkedAt": "2026-11-22T22:30:53.347Z",
+      "found": false
+    },
+    "290": {
+      "signature": "исполнитель не указан|моя маленькая",
+      "checkedAt": "2026-11-22T22:30:52.119Z",
+      "found": false
+    },
+    "291": {
+      "signature": "исполнитель не указан|первое свидание",
+      "checkedAt": "2026-11-22T22:30:29.318Z",
+      "found": false
+    },
+    "292": {
+      "signature": "исполнитель не указан|это любовь",
+      "checkedAt": "2026-11-22T22:30:28.000Z",
+      "found": false
+    },
+    "293": {
+      "signature": "канги|вали",
+      "checkedAt": "2026-11-22T22:30:04.934Z",
+      "found": true
+    },
+    "294": {
+      "signature": "канги|возьми сердце мое",
+      "checkedAt": "2026-11-22T22:30:03.466Z",
+      "found": true
+    },
+    "295": {
+      "signature": "канги|эия",
+      "checkedAt": "2026-11-22T22:29:54.910Z",
+      "found": true
+    },
+    "296": {
+      "signature": "кар мэн|лондон гудбаи",
+      "checkedAt": "2026-11-22T22:29:53.613Z",
+      "found": false
+    },
+    "297": {
+      "signature": "каспер|их там нет",
+      "checkedAt": "2026-11-22T22:29:44.894Z",
+      "found": false
+    },
+    "298": {
+      "signature": "каспер|патрон",
+      "checkedAt": "2026-11-22T22:29:43.437Z",
+      "found": false
+    },
+    "299": {
+      "signature": "каста|ды ды дым хамиль и змеи",
+      "checkedAt": "2026-11-22T22:29:42.200Z",
+      "found": false
+    },
+    "300": {
+      "signature": "каста|любои дурак",
+      "checkedAt": "2026-11-22T22:29:19.705Z",
+      "found": true
+    },
     "301": {
       "signature": "каста|ревность",
       "checkedAt": "2026-11-22T17:15:54.087Z",
@@ -4555,6 +4807,11 @@
       "checkedAt": "2026-11-22T17:13:50.145Z",
       "found": true
     },
+    "321": {
+      "signature": "кино|невеселая песня",
+      "checkedAt": "2026-11-22T22:28:35.592Z",
+      "found": true
+    },
     "322": {
       "signature": "кино|пачка сигарет",
       "checkedAt": "2026-11-17T17:55:23.129Z",
@@ -4585,6 +4842,11 @@
       "checkedAt": "2026-11-22T17:12:24.600Z",
       "found": true
     },
+    "328": {
+      "signature": "кино|спокоиная ночь",
+      "checkedAt": "2026-11-22T22:28:34.380Z",
+      "found": true
+    },
     "329": {
       "signature": "кино|стук",
       "checkedAt": "2026-11-22T17:11:40.456Z",
@@ -4598,6 +4860,11 @@
     "331": {
       "signature": "клава кока|краш feat niletto",
       "checkedAt": "2026-11-22T17:11:16.514Z",
+      "found": false
+    },
+    "332": {
+      "signature": "клава кока|нокаут feat руки вверх",
+      "checkedAt": "2026-11-22T22:28:25.364Z",
       "found": false
     },
     "333": {
@@ -4643,6 +4910,11 @@
     "341": {
       "signature": "король и шут|два друга и разбоиники",
       "checkedAt": "2026-11-22T17:09:10.312Z",
+      "found": true
+    },
+    "342": {
+      "signature": "король и шут|дурак и молния",
+      "checkedAt": "2026-11-22T22:28:17.387Z",
       "found": true
     },
     "343": {
@@ -8543,6 +8815,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 557
+    "verifiedDates": 571
   }
 }
