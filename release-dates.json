@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-22T01:39:26.124Z",
+  "updatedAt": "2026-11-22T08:53:12.758Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -18,12 +18,284 @@
       "title": "Пачка сигарет",
       "confidence": "musicbrainz-exact"
     },
+    "343": {
+      "date": "1999-11-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b1387956-48c5-4f99-84ef-6032574cd82b",
+      "artist": "Король и Шут",
+      "title": "Ели мясо мужики",
+      "confidence": "musicbrainz-exact"
+    },
+    "344": {
+      "date": "1990",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4f177288-3332-4c7f-83d3-8b60e9df2a51",
+      "artist": "Король и Шут",
+      "title": "Забытые ботинки",
+      "confidence": "musicbrainz-exact"
+    },
+    "345": {
+      "date": "1990",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/ee2d4fbe-7017-49f6-ab72-c9bcb6006e6e",
+      "artist": "Король и Шут",
+      "title": "Камнем по голове",
+      "confidence": "musicbrainz-exact"
+    },
+    "346": {
+      "date": "1998",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/2b023f56-f09c-4167-a4b0-a49107a6cb5d",
+      "artist": "Король и Шут",
+      "title": "Кукла колдуна",
+      "confidence": "musicbrainz-exact"
+    },
     "347": {
       "date": "1994",
       "precision": "year",
       "source": "https://musicbrainz.org/recording/f8e1a712-736b-4d50-88b8-1ac37e04f697",
       "artist": "Король и Шут",
       "title": "Лесник",
+      "confidence": "musicbrainz-exact"
+    },
+    "348": {
+      "date": "2006-12-05",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/0486a3e3-d379-4ed2-bbbb-1b98bad117be",
+      "artist": "Король и Шут",
+      "title": "Марионетки",
+      "confidence": "musicbrainz-exact"
+    },
+    "349": {
+      "date": "2006-12-05",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b2fcbfc1-7f30-42a1-851a-d5b688fb7036",
+      "artist": "Король и Шут",
+      "title": "Маска",
+      "confidence": "musicbrainz-exact"
+    },
+    "350": {
+      "date": "2002-10-10",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3f6459e7-998c-416a-aae6-c5dc4391576d",
+      "artist": "Король и Шут",
+      "title": "Медведь",
+      "confidence": "musicbrainz-exact"
+    },
+    "351": {
+      "date": "2002-10-10",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/42f4eda7-bbc4-4fea-9ae5-c24c55ee003e",
+      "artist": "Король и Шут",
+      "title": "Мёртвый анархист",
+      "confidence": "musicbrainz-exact"
+    },
+    "353": {
+      "date": "2000",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/e4404165-be1c-45bb-984a-a3d424df8782",
+      "artist": "Король и Шут",
+      "title": "Помнят с горечью древляне",
+      "confidence": "musicbrainz-exact"
+    },
+    "354": {
+      "date": "2001-01-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/48a613ab-eeb9-431e-b990-23a7ed084b33",
+      "artist": "Король и Шут",
+      "title": "Проклятый старый дом",
+      "confidence": "musicbrainz-exact"
+    },
+    "355": {
+      "date": "1998",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/21e55c5f-4b51-46ee-a2c0-a7986d3b1301",
+      "artist": "Король и Шут",
+      "title": "Прыгну со скалы",
+      "confidence": "musicbrainz-exact"
+    },
+    "356": {
+      "date": "2004-11-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/8922680f-3f1c-46f5-83db-01e693a2e077",
+      "artist": "Король и Шут",
+      "title": "Северный Флот",
+      "confidence": "musicbrainz-exact"
+    },
+    "358": {
+      "date": "2010-10-11",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/8e935362-f931-42cc-9442-08642c37398f",
+      "artist": "Король и Шут",
+      "title": "Танец злобного гения",
+      "confidence": "musicbrainz-exact"
+    },
+    "359": {
+      "date": "1998",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/963c31a2-8e46-4f53-9181-a7ce77a2f2f1",
+      "artist": "Король и Шут",
+      "title": "Тяни",
+      "confidence": "musicbrainz-exact"
+    },
+    "360": {
+      "date": "2010-10-11",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/8283fff4-9d41-474f-8f6e-ee95dfc8342b",
+      "artist": "Король и Шут",
+      "title": "Фокусник",
+      "confidence": "musicbrainz-exact"
+    },
+    "364": {
+      "date": "2004-11",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/9cba60b5-d678-4d26-ab00-077fd7551864",
+      "artist": "Кукрыниксы",
+      "title": "Есенин",
+      "confidence": "musicbrainz-exact"
+    },
+    "365": {
+      "date": "2012",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/8854210c-5503-4408-a07e-78c7dd086aaf",
+      "artist": "Кукрыниксы",
+      "title": "Жизнь бывает разная",
+      "confidence": "musicbrainz-exact"
+    },
+    "366": {
+      "date": "2006-04-14",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/4b7eef52-7e71-4060-b346-038612887096",
+      "artist": "Кукрыниксы",
+      "title": "Звезда",
+      "confidence": "musicbrainz-exact"
+    },
+    "367": {
+      "date": "2016",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/f9479e18-35ce-49c3-916c-9659db704cb7",
+      "artist": "Кукрыниксы",
+      "title": "Надежда",
+      "confidence": "musicbrainz-exact"
+    },
+    "368": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/b7842340-c055-45ae-9f52-e4a659f095a4",
+      "artist": "Кукрыниксы",
+      "title": "Не беда",
+      "confidence": "musicbrainz-exact"
+    },
+    "369": {
+      "date": "2007-12",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/0ce8392a-11ae-4d15-8634-9f80f0f2ebd4",
+      "artist": "Кукрыниксы",
+      "title": "Никто",
+      "confidence": "musicbrainz-exact"
+    },
+    "370": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/78bf13c4-0389-4e61-8273-37467a33d412",
+      "artist": "Кукрыниксы",
+      "title": "По раскрашенной душе",
+      "confidence": "musicbrainz-exact"
+    },
+    "371": {
+      "date": "2016",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4434f089-209d-49f8-ac72-3cadddf32d7d",
+      "artist": "Кукрыниксы",
+      "title": "Последняя песня",
+      "confidence": "musicbrainz-exact"
+    },
+    "372": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/49cf00ae-6162-4924-80de-646e8a92ea24",
+      "artist": "Кукрыниксы",
+      "title": "Солдатская печаль",
+      "confidence": "musicbrainz-exact"
+    },
+    "373": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/3ae01428-336b-47f2-a416-275828affa67",
+      "artist": "Кукрыниксы",
+      "title": "Творец",
+      "confidence": "musicbrainz-exact"
+    },
+    "374": {
+      "date": "2022-05-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/2297d05a-e9f2-4420-a2a0-1856c871fd85",
+      "artist": "Лампабикт",
+      "title": "Крылья",
+      "confidence": "musicbrainz-exact"
+    },
+    "375": {
+      "date": "1989",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/54156d94-206e-4d29-8da3-5ad598d37a30",
+      "artist": "Ласковый Май",
+      "title": "Белые розы",
+      "confidence": "musicbrainz-exact"
+    },
+    "376": {
+      "date": "1990",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/5d55679d-f1ea-4c80-b292-7e92a1190748",
+      "artist": "Ласковый Май",
+      "title": "Глупые снежинки",
+      "confidence": "musicbrainz-exact"
+    },
+    "377": {
+      "date": "1996",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/f68b81ad-9cd8-4ae9-8ca1-1598a2e0d4d1",
+      "artist": "Ласковый Май",
+      "title": "Детство",
+      "confidence": "musicbrainz-exact"
+    },
+    "378": {
+      "date": "1995",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/5866c58e-ec2a-45e7-b73d-cfc399e9b02e",
+      "artist": "Ласковый Май",
+      "title": "Розовый вечер",
+      "confidence": "musicbrainz-exact"
+    },
+    "379": {
+      "date": "1989",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/2b84d9d7-7244-4076-a5b9-fcb1ee1a35e0",
+      "artist": "Ласковый Май",
+      "title": "Седая ночь",
+      "confidence": "musicbrainz-exact"
+    },
+    "380": {
+      "date": "2016",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/329e30fb-93f7-4808-b9f1-7a0c02c45395",
+      "artist": "Ленинград",
+      "title": "В Питере — пить",
+      "confidence": "musicbrainz-exact"
+    },
+    "381": {
+      "date": "2005",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/54e585eb-07e2-4a14-89b3-80b84065871a",
+      "artist": "Ленинград",
+      "title": "Свобода",
+      "confidence": "musicbrainz-exact"
+    },
+    "382": {
+      "date": "2016-01-14",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/1bbf5176-673d-49e3-996c-71f8a8e63c23",
+      "artist": "Ленинград",
+      "title": "Экспонат",
       "confidence": "musicbrainz-exact"
     },
     "383": {
@@ -80,6 +352,14 @@
       "source": "https://musicbrainz.org/recording/507c470b-4ad6-494d-8ead-056a10cf070d",
       "artist": "ЛСП",
       "title": "Шиншиллы",
+      "confidence": "musicbrainz-exact"
+    },
+    "395": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/dd77eed7-0ba7-46fb-9659-13cfc57627be",
+      "artist": "Любэ",
+      "title": "Берёзы",
       "confidence": "musicbrainz-exact"
     },
     "397": {
@@ -3934,9 +4214,204 @@
       "checkedAt": "2026-11-17T17:55:23.129Z",
       "found": true
     },
+    "343": {
+      "signature": "король и шут|ели мясо мужики",
+      "checkedAt": "2026-11-22T08:53:12.280Z",
+      "found": true
+    },
+    "344": {
+      "signature": "король и шут|забытые ботинки",
+      "checkedAt": "2026-11-22T08:53:10.777Z",
+      "found": true
+    },
+    "345": {
+      "signature": "король и шут|камнем по голове",
+      "checkedAt": "2026-11-22T08:53:02.206Z",
+      "found": true
+    },
+    "346": {
+      "signature": "король и шут|кукла колдуна",
+      "checkedAt": "2026-11-22T08:53:00.747Z",
+      "found": true
+    },
     "347": {
       "signature": "король и шут|лесник",
       "checkedAt": "2026-11-17T17:55:33.187Z",
+      "found": true
+    },
+    "348": {
+      "signature": "король и шут|марионетки",
+      "checkedAt": "2026-11-22T08:52:52.169Z",
+      "found": true
+    },
+    "349": {
+      "signature": "король и шут|маска",
+      "checkedAt": "2026-11-22T08:52:50.841Z",
+      "found": true
+    },
+    "350": {
+      "signature": "король и шут|медведь",
+      "checkedAt": "2026-11-22T08:52:42.225Z",
+      "found": true
+    },
+    "351": {
+      "signature": "король и шут|мертвыи анархист",
+      "checkedAt": "2026-11-22T08:52:40.858Z",
+      "found": true
+    },
+    "352": {
+      "signature": "король и шут|на краю",
+      "checkedAt": "2026-11-22T08:52:32.145Z",
+      "found": false
+    },
+    "353": {
+      "signature": "король и шут|помнят с горечью древляне",
+      "checkedAt": "2026-11-22T08:52:30.715Z",
+      "found": true
+    },
+    "354": {
+      "signature": "король и шут|проклятыи старыи дом",
+      "checkedAt": "2026-11-22T08:52:22.173Z",
+      "found": true
+    },
+    "355": {
+      "signature": "король и шут|прыгну со скалы",
+      "checkedAt": "2026-11-22T08:52:20.642Z",
+      "found": true
+    },
+    "356": {
+      "signature": "король и шут|северныи флот",
+      "checkedAt": "2026-11-22T08:52:12.052Z",
+      "found": true
+    },
+    "357": {
+      "signature": "король и шут|счастье",
+      "checkedAt": "2026-11-22T08:52:10.605Z",
+      "found": false
+    },
+    "358": {
+      "signature": "король и шут|танец злобного гения",
+      "checkedAt": "2026-11-22T08:52:09.146Z",
+      "found": true
+    },
+    "359": {
+      "signature": "король и шут|тяни",
+      "checkedAt": "2026-11-22T08:52:07.695Z",
+      "found": true
+    },
+    "360": {
+      "signature": "король и шут|фокусник",
+      "checkedAt": "2026-11-22T08:52:06.281Z",
+      "found": true
+    },
+    "361": {
+      "signature": "кравц|где прошла ты feat гио пика",
+      "checkedAt": "2026-11-22T08:52:04.782Z",
+      "found": false
+    },
+    "362": {
+      "signature": "кравц|обнуляи",
+      "checkedAt": "2026-11-22T08:51:56.195Z",
+      "found": false
+    },
+    "363": {
+      "signature": "кузя|шняга шняжная",
+      "checkedAt": "2026-11-22T08:51:54.894Z",
+      "found": false
+    },
+    "364": {
+      "signature": "кукрыниксы|есенин",
+      "checkedAt": "2026-11-22T08:51:46.181Z",
+      "found": true
+    },
+    "365": {
+      "signature": "кукрыниксы|жизнь бывает разная",
+      "checkedAt": "2026-11-22T08:51:44.933Z",
+      "found": true
+    },
+    "366": {
+      "signature": "кукрыниксы|звезда",
+      "checkedAt": "2026-11-22T08:51:36.160Z",
+      "found": true
+    },
+    "367": {
+      "signature": "кукрыниксы|надежда",
+      "checkedAt": "2026-11-22T08:51:34.704Z",
+      "found": true
+    },
+    "368": {
+      "signature": "кукрыниксы|не беда",
+      "checkedAt": "2026-11-22T08:51:26.142Z",
+      "found": true
+    },
+    "369": {
+      "signature": "кукрыниксы|никто",
+      "checkedAt": "2026-11-22T08:51:24.686Z",
+      "found": true
+    },
+    "370": {
+      "signature": "кукрыниксы|по раскрашеннои душе",
+      "checkedAt": "2026-11-22T08:51:16.108Z",
+      "found": true
+    },
+    "371": {
+      "signature": "кукрыниксы|последняя песня",
+      "checkedAt": "2026-11-22T08:51:14.655Z",
+      "found": true
+    },
+    "372": {
+      "signature": "кукрыниксы|солдатская печаль",
+      "checkedAt": "2026-11-22T08:51:06.197Z",
+      "found": true
+    },
+    "373": {
+      "signature": "кукрыниксы|творец",
+      "checkedAt": "2026-11-22T08:51:04.597Z",
+      "found": true
+    },
+    "374": {
+      "signature": "лампабикт|крылья",
+      "checkedAt": "2026-11-22T08:50:56.011Z",
+      "found": true
+    },
+    "375": {
+      "signature": "ласковыи маи|белые розы",
+      "checkedAt": "2026-11-22T08:50:54.556Z",
+      "found": true
+    },
+    "376": {
+      "signature": "ласковыи маи|глупые снежинки",
+      "checkedAt": "2026-11-22T08:50:45.970Z",
+      "found": true
+    },
+    "377": {
+      "signature": "ласковыи маи|детство",
+      "checkedAt": "2026-11-22T08:50:44.530Z",
+      "found": true
+    },
+    "378": {
+      "signature": "ласковыи маи|розовыи вечер",
+      "checkedAt": "2026-11-22T08:50:35.947Z",
+      "found": true
+    },
+    "379": {
+      "signature": "ласковыи маи|седая ночь",
+      "checkedAt": "2026-11-22T08:50:34.493Z",
+      "found": true
+    },
+    "380": {
+      "signature": "ленинград|в питере пить",
+      "checkedAt": "2026-11-22T08:50:25.912Z",
+      "found": true
+    },
+    "381": {
+      "signature": "ленинград|свобода",
+      "checkedAt": "2026-11-22T08:50:24.503Z",
+      "found": true
+    },
+    "382": {
+      "signature": "ленинград|экспонат",
+      "checkedAt": "2026-11-22T08:50:23.022Z",
       "found": true
     },
     "383": {
@@ -3998,6 +4473,11 @@
       "signature": "любэ|а река течет",
       "checkedAt": "2026-11-22T01:38:17.320Z",
       "found": false
+    },
+    "395": {
+      "signature": "любэ|березы",
+      "checkedAt": "2026-11-22T08:50:22.207Z",
+      "found": true
     },
     "396": {
       "signature": "любэ|есть только миг",
@@ -7632,6 +8112,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 490
+    "verifiedDates": 525
   }
 }
