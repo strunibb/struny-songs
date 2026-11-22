@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-22T01:37:14.960Z",
+  "updatedAt": "2026-11-22T08:51:22.450Z",
   "tracks": {
     "681": {
       "artist": "Billie Eilish",
@@ -17,6 +17,24 @@
       "start": 55,
       "source": "official-artist-youtube",
       "verifiedAt": "2026-11-17"
+    },
+    "698": {
+      "artist": "Bruno Mars",
+      "title": "Talking to the Moon",
+      "videoId": "fXw0jcYbqdo",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/051205ad-ef0c-4b08-89ef-1fe0a0425d08",
+      "verifiedAt": "2026-11-22T08:51:07.021Z"
+    },
+    "699": {
+      "artist": "Bruno Mars",
+      "title": "The Lazy Song",
+      "videoId": "fLexgOxsZu0",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/55b9fb00-4390-4549-a692-5993bc524e70",
+      "verifiedAt": "2026-11-22T08:50:55.958Z"
     },
     "736": {
       "artist": "Ed Sheeran",
@@ -188,6 +206,131 @@
     "347": {
       "signature": "король и шут|лесник",
       "checkedAt": "2026-11-17T08:59:19.279Z",
+      "found": false
+    },
+    "696": {
+      "signature": "bruno mars|locked out of heaven",
+      "checkedAt": "2026-11-22T08:51:22.083Z",
+      "found": false
+    },
+    "697": {
+      "signature": "bruno mars|runaway baby",
+      "checkedAt": "2026-11-22T08:51:14.589Z",
+      "found": false
+    },
+    "698": {
+      "signature": "bruno mars|talking to the moon",
+      "checkedAt": "2026-11-22T08:51:07.021Z",
+      "found": true
+    },
+    "699": {
+      "signature": "bruno mars|the lazy song",
+      "checkedAt": "2026-11-22T08:50:55.958Z",
+      "found": true
+    },
+    "700": {
+      "signature": "bruno mars anderson paak silk sonic|leave the door open",
+      "checkedAt": "2026-11-22T08:50:48.364Z",
+      "found": false
+    },
+    "701": {
+      "signature": "camila cabello feat young thug|havana",
+      "checkedAt": "2026-11-22T08:50:43.832Z",
+      "found": false
+    },
+    "702": {
+      "signature": "celine dion|my heart will go on",
+      "checkedAt": "2026-11-22T08:50:42.151Z",
+      "found": false
+    },
+    "703": {
+      "signature": "charlie puth feat selena gomez|we don t talk anymore",
+      "checkedAt": "2026-11-22T08:50:35.842Z",
+      "found": false
+    },
+    "704": {
+      "signature": "chris isaak|wicked game",
+      "checkedAt": "2026-11-22T08:50:16.254Z",
+      "found": false
+    },
+    "705": {
+      "signature": "comedoz|ямаика",
+      "checkedAt": "2026-11-22T08:50:09.774Z",
+      "found": false
+    },
+    "706": {
+      "signature": "dabro|билет",
+      "checkedAt": "2026-11-22T08:49:50.012Z",
+      "found": false
+    },
+    "707": {
+      "signature": "dabro|влюбился",
+      "checkedAt": "2026-11-22T08:49:48.514Z",
+      "found": false
+    },
+    "708": {
+      "signature": "dabro|все за одного",
+      "checkedAt": "2026-11-22T08:49:42.403Z",
+      "found": false
+    },
+    "709": {
+      "signature": "dabro|даваи запоем",
+      "checkedAt": "2026-11-22T08:49:37.560Z",
+      "found": false
+    },
+    "710": {
+      "signature": "dabro|даваи навсегда",
+      "checkedAt": "2026-11-22T08:49:17.809Z",
+      "found": false
+    },
+    "711": {
+      "signature": "dabro|дальше больше",
+      "checkedAt": "2026-11-22T08:49:17.630Z",
+      "found": false
+    },
+    "712": {
+      "signature": "dabro|два крыла",
+      "checkedAt": "2026-11-22T08:48:57.875Z",
+      "found": false
+    },
+    "713": {
+      "signature": "dabro|мне не страшно",
+      "checkedAt": "2026-11-22T08:48:56.369Z",
+      "found": false
+    },
+    "714": {
+      "signature": "dabro|море привет",
+      "checkedAt": "2026-11-22T08:48:50.231Z",
+      "found": false
+    },
+    "715": {
+      "signature": "dabro|на крыше",
+      "checkedAt": "2026-11-22T08:48:45.590Z",
+      "found": false
+    },
+    "716": {
+      "signature": "dabro|на часах ноль ноль",
+      "checkedAt": "2026-11-22T08:48:42.605Z",
+      "found": false
+    },
+    "717": {
+      "signature": "dabro|надо повторить",
+      "checkedAt": "2026-11-22T08:48:39.585Z",
+      "found": false
+    },
+    "718": {
+      "signature": "dabro|она не такая",
+      "checkedAt": "2026-11-22T08:48:36.581Z",
+      "found": false
+    },
+    "719": {
+      "signature": "dabro|полюбил тебя",
+      "checkedAt": "2026-11-22T08:48:33.591Z",
+      "found": false
+    },
+    "720": {
+      "signature": "dabro|поцелуи",
+      "checkedAt": "2026-11-22T08:48:32.628Z",
       "found": false
     },
     "721": {
@@ -2178,6 +2321,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedVideos": 20
+    "verifiedVideos": 22
   }
 }
