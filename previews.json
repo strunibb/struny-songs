@@ -1,7 +1,16 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-22T08:51:22.450Z",
+  "updatedAt": "2026-11-22T17:27:37.128Z",
   "tracks": {
+    "672": {
+      "artist": "Arctic Monkeys",
+      "title": "Do I Wanna Know?",
+      "videoId": "bpOSxM0rNPM",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/8c43596e-286e-4a4d-a11c-818fcc120866",
+      "verifiedAt": "2026-11-22T17:27:03.836Z"
+    },
     "681": {
       "artist": "Billie Eilish",
       "title": "Bad Guy",
@@ -9,6 +18,15 @@
       "start": 20,
       "source": "official-artist-youtube",
       "verifiedAt": "2026-11-17"
+    },
+    "682": {
+      "artist": "Billie Eilish",
+      "title": "Bellyache",
+      "videoId": "gBRi6aZJGj4",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/9718dc74-785b-463b-bdf8-863f6e289155",
+      "verifiedAt": "2026-11-22T17:26:07.126Z"
     },
     "686": {
       "artist": "Billie Eilish",
@@ -206,6 +224,131 @@
     "347": {
       "signature": "король и шут|лесник",
       "checkedAt": "2026-11-17T08:59:19.279Z",
+      "found": false
+    },
+    "669": {
+      "signature": "anna asti|по барам",
+      "checkedAt": "2026-11-22T17:27:36.859Z",
+      "found": false
+    },
+    "670": {
+      "signature": "anna asti|повело",
+      "checkedAt": "2026-11-22T17:27:17.299Z",
+      "found": false
+    },
+    "671": {
+      "signature": "anna asti|царица",
+      "checkedAt": "2026-11-22T17:27:09.856Z",
+      "found": false
+    },
+    "672": {
+      "signature": "arctic monkeys|do i wanna know",
+      "checkedAt": "2026-11-22T17:27:03.836Z",
+      "found": true
+    },
+    "673": {
+      "signature": "armich|eva",
+      "checkedAt": "2026-11-22T17:26:55.902Z",
+      "found": false
+    },
+    "674": {
+      "signature": "artik|грустныи дэнс",
+      "checkedAt": "2026-11-22T17:26:51.311Z",
+      "found": false
+    },
+    "675": {
+      "signature": "bearwolf|валькирия",
+      "checkedAt": "2026-11-22T17:26:49.811Z",
+      "found": false
+    },
+    "676": {
+      "signature": "bearwolf|один в поле воин",
+      "checkedAt": "2026-11-22T17:26:44.003Z",
+      "found": false
+    },
+    "677": {
+      "signature": "bearwolf|godzilla",
+      "checkedAt": "2026-11-22T17:26:37.927Z",
+      "found": false
+    },
+    "678": {
+      "signature": "beautiful boys|нежная любовь",
+      "checkedAt": "2026-11-22T17:26:31.510Z",
+      "found": false
+    },
+    "679": {
+      "signature": "beautiful boys|ты выбираешь чудеса",
+      "checkedAt": "2026-11-22T17:26:26.910Z",
+      "found": false
+    },
+    "680": {
+      "signature": "beyonce|halo",
+      "checkedAt": "2026-11-22T17:26:26.788Z",
+      "found": false
+    },
+    "682": {
+      "signature": "billie eilish|bellyache",
+      "checkedAt": "2026-11-22T17:26:07.126Z",
+      "found": true
+    },
+    "683": {
+      "signature": "billie eilish|birds of a feather",
+      "checkedAt": "2026-11-22T17:26:00.900Z",
+      "found": false
+    },
+    "684": {
+      "signature": "billie eilish|chihiro",
+      "checkedAt": "2026-11-22T17:25:42.606Z",
+      "found": false
+    },
+    "685": {
+      "signature": "billie eilish|everything i wanted",
+      "checkedAt": "2026-11-22T17:25:22.976Z",
+      "found": false
+    },
+    "687": {
+      "signature": "billie eilish|lunch",
+      "checkedAt": "2026-11-22T17:25:16.719Z",
+      "found": false
+    },
+    "688": {
+      "signature": "billie eilish|my strange addiction",
+      "checkedAt": "2026-11-22T17:24:57.050Z",
+      "found": false
+    },
+    "689": {
+      "signature": "billie eilish|nda",
+      "checkedAt": "2026-11-22T17:24:50.830Z",
+      "found": false
+    },
+    "690": {
+      "signature": "billie eilish|ocean eyes",
+      "checkedAt": "2026-11-22T17:24:32.534Z",
+      "found": false
+    },
+    "691": {
+      "signature": "billie eilish|therefore i am",
+      "checkedAt": "2026-11-22T17:24:12.979Z",
+      "found": false
+    },
+    "692": {
+      "signature": "billie eilish|wildflower",
+      "checkedAt": "2026-11-22T17:24:06.646Z",
+      "found": false
+    },
+    "693": {
+      "signature": "black sabbath|iron man",
+      "checkedAt": "2026-11-22T17:23:46.982Z",
+      "found": false
+    },
+    "694": {
+      "signature": "bon jovi|wanted dead or alive",
+      "checkedAt": "2026-11-22T17:23:39.418Z",
+      "found": false
+    },
+    "695": {
+      "signature": "brad breeck|gravity falls main title theme",
+      "checkedAt": "2026-11-22T17:23:28.695Z",
       "found": false
     },
     "696": {
@@ -2321,6 +2464,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedVideos": 22
+    "verifiedVideos": 24
   }
 }
