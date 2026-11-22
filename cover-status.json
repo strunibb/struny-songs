@@ -5591,12 +5591,10 @@
       "found": true
     }
   },
-  "updatedAt": "2026-11-22T11:41:34.431Z",
+  "updatedAt": "2026-11-22T11:48:14.477Z",
   "summary": {
     "total": 1124,
     "covers": 867,
-    "withoutVerifiedCover": 257,
-    "scannedThisRun": 0,
-    "foundThisRun": 0
+    "withoutVerifiedCover": 257
   }
 }
