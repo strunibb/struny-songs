@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-21T21:47:41.557Z",
+  "updatedAt": "2026-11-22T01:39:26.124Z",
   "dates": {
     "312": {
       "date": "1989",
@@ -26,12 +26,204 @@
       "title": "Лесник",
       "confidence": "musicbrainz-exact"
     },
+    "383": {
+      "date": "1995",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/550f1352-7a80-451a-bf59-3beff6917048",
+      "artist": "Леонид Агутин",
+      "title": "На сиреневой луне",
+      "confidence": "musicbrainz-exact"
+    },
+    "385": {
+      "date": "1999-12-09",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/79f7da4a-d8a6-4016-8679-6307b708dc78",
+      "artist": "Леприконсы",
+      "title": "Хали-гали, паратрупер",
+      "confidence": "musicbrainz-exact"
+    },
+    "386": {
+      "date": "2018-03-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/f35e0b85-df29-42aa-a4e1-f208beb1ffeb",
+      "artist": "ЛСП",
+      "title": "Бэйби",
+      "confidence": "musicbrainz-exact"
+    },
+    "388": {
+      "date": "2017-04-28",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/46868b8d-6f88-4b2b-b226-26c714136a0f",
+      "artist": "ЛСП",
+      "title": "Монетка",
+      "confidence": "musicbrainz-exact"
+    },
+    "389": {
+      "date": "2020-09-18",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/be244fe6-5e66-4480-9076-d36046c6d9c2",
+      "artist": "ЛСП",
+      "title": "Парный дурак",
+      "confidence": "musicbrainz-exact"
+    },
+    "390": {
+      "date": "2017",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/9b625ded-6a88-4c07-b936-823150be0ba4",
+      "artist": "ЛСП",
+      "title": "Тело",
+      "confidence": "musicbrainz-exact"
+    },
+    "391": {
+      "date": "2025-11-28",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/507c470b-4ad6-494d-8ead-056a10cf070d",
+      "artist": "ЛСП",
+      "title": "Шиншиллы",
+      "confidence": "musicbrainz-exact"
+    },
+    "397": {
+      "date": "1996-01-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/bac5253f-d335-4fd5-8bcd-b18d680ef091",
+      "artist": "Любэ",
+      "title": "Комбат",
+      "confidence": "musicbrainz-exact"
+    },
+    "398": {
+      "date": "1993",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/7e1d783d-68ea-4e11-9de9-9c7f0bfab05b",
+      "artist": "Любэ",
+      "title": "Конь",
+      "confidence": "musicbrainz-exact"
+    },
+    "399": {
+      "date": "2005",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/31e87ff3-d8fa-49a1-a77c-b59cd5e8d097",
+      "artist": "Любэ",
+      "title": "От Волги до Енисея",
+      "confidence": "musicbrainz-exact"
+    },
+    "400": {
+      "date": "2000",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/7f3e18f7-635c-4eb1-837e-bcd63e46bb63",
+      "artist": "Любэ",
+      "title": "Позови меня тихо по имени",
+      "confidence": "musicbrainz-exact"
+    },
+    "401": {
+      "date": "2000",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/fd349375-2094-48ae-9fad-1162373806c8",
+      "artist": "Любэ",
+      "title": "Солдат",
+      "confidence": "musicbrainz-exact"
+    },
+    "402": {
+      "date": "1997",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/afb00419-61cd-4975-8ed4-9fc2aa4d9ff0",
+      "artist": "Любэ",
+      "title": "Там за туманами",
+      "confidence": "musicbrainz-exact"
+    },
+    "403": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/78620f93-285b-444b-a3b0-9255bd59e23a",
+      "artist": "Любэ",
+      "title": "Ты неси меня, река",
+      "confidence": "musicbrainz-exact"
+    },
+    "405": {
+      "date": "2021-10-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c71d54b5-06c5-46a3-aed2-55f91b681e86",
+      "artist": "Люся Чеботина",
+      "title": "Солнце Монако",
+      "confidence": "musicbrainz-exact"
+    },
+    "406": {
+      "date": "1995-06",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/d93a4976-69bd-4316-9c02-c8ca32c0ed59",
+      "artist": "Ляпис Трубецкой",
+      "title": "Ау",
+      "confidence": "musicbrainz-exact"
+    },
+    "407": {
+      "date": "2019-08-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/73146d83-5340-4194-94e8-0c89ba1fc51c",
+      "artist": "Макс Корж",
+      "title": "2 типа людей",
+      "confidence": "musicbrainz-exact"
+    },
+    "408": {
+      "date": "2012-01-15",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/76926f2a-e8b2-48b9-bed3-48fb6b61df98",
+      "artist": "Макс Корж",
+      "title": "В темноте",
+      "confidence": "musicbrainz-exact"
+    },
+    "409": {
+      "date": "2017-10-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a7d8744f-e97e-4015-8cac-ce4f4f26e81a",
+      "artist": "Макс Корж",
+      "title": "Горы по колено",
+      "confidence": "musicbrainz-exact"
+    },
+    "410": {
+      "date": "2013-10-21",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/46a59500-7261-48fd-8ac0-6d5f333c04e3",
+      "artist": "Макс Корж",
+      "title": "Жить в кайф",
+      "confidence": "musicbrainz-exact"
+    },
+    "412": {
+      "date": "2017-10-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/0b1e893a-c2bf-430e-be66-a754d0f0d3c8",
+      "artist": "Макс Корж",
+      "title": "Малиновый закат",
+      "confidence": "musicbrainz-exact"
+    },
+    "413": {
+      "date": "2013-10-21",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/38506525-731c-444d-813f-45990bacdb6a",
+      "artist": "Макс Корж",
+      "title": "Мотылёк",
+      "confidence": "musicbrainz-exact"
+    },
+    "415": {
+      "date": "2012-01-15",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/7542434b-1b1f-4e23-b1ca-1520622b30dd",
+      "artist": "Макс Корж",
+      "title": "Небо поможет нам",
+      "confidence": "musicbrainz-exact"
+    },
     "416": {
       "date": "2017-10-27",
       "precision": "day",
       "source": "https://musicbrainz.org/recording/06fb1a42-145b-4678-85cd-4fe40c49d200",
       "artist": "Макс Корж",
       "title": "Пьяный дождь",
+      "confidence": "musicbrainz-exact"
+    },
+    "417": {
+      "date": "2017-06-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9666b53d-5cc7-4690-aad0-14cd992c9db2",
+      "artist": "Макс Корж",
+      "title": "Слово пацана",
       "confidence": "musicbrainz-exact"
     },
     "418": {
@@ -72,6 +264,14 @@
       "source": "https://musicbrainz.org/recording/e9626f54-9643-42e9-8fb7-ff777e193a06",
       "artist": "Мальчишник",
       "title": "Последний раз",
+      "confidence": "musicbrainz-exact"
+    },
+    "423": {
+      "date": "2017-04-07",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a323804b-8ad5-4785-9b27-df481b577dae",
+      "artist": "Мари Краймбрери",
+      "title": "Давай навсегда",
       "confidence": "musicbrainz-exact"
     },
     "424": {
@@ -160,6 +360,14 @@
       "source": "https://musicbrainz.org/recording/28b2336d-2e78-42eb-be02-989a44d00cf0",
       "artist": "Михаил Круг",
       "title": "Владимирский централ",
+      "confidence": "musicbrainz-exact"
+    },
+    "451": {
+      "date": "2003",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/d9aeabd9-fb50-4513-983c-c316c99f511f",
+      "artist": "Михаил Круг",
+      "title": "Исповедь",
       "confidence": "musicbrainz-exact"
     },
     "452": {
@@ -3731,9 +3939,174 @@
       "checkedAt": "2026-11-17T17:55:33.187Z",
       "found": true
     },
+    "383": {
+      "signature": "леонид агутин|на сиреневои луне",
+      "checkedAt": "2026-11-22T01:39:25.695Z",
+      "found": true
+    },
+    "384": {
+      "signature": "леонид агутин|хоп хэи лала лэи",
+      "checkedAt": "2026-11-22T01:39:17.103Z",
+      "found": false
+    },
+    "385": {
+      "signature": "леприконсы|хали гали паратрупер",
+      "checkedAt": "2026-11-22T01:39:15.753Z",
+      "found": true
+    },
+    "386": {
+      "signature": "лсп|бэиби",
+      "checkedAt": "2026-11-22T01:39:07.070Z",
+      "found": true
+    },
+    "387": {
+      "signature": "лсп|кино feat gone fludd",
+      "checkedAt": "2026-11-22T01:39:05.871Z",
+      "found": false
+    },
+    "388": {
+      "signature": "лсп|монетка",
+      "checkedAt": "2026-11-22T01:38:43.162Z",
+      "found": true
+    },
+    "389": {
+      "signature": "лсп|парныи дурак",
+      "checkedAt": "2026-11-22T01:38:41.460Z",
+      "found": true
+    },
+    "390": {
+      "signature": "лсп|тело",
+      "checkedAt": "2026-11-22T01:38:41.296Z",
+      "found": true
+    },
+    "391": {
+      "signature": "лсп|шиншиллы",
+      "checkedAt": "2026-11-22T01:38:35.636Z",
+      "found": true
+    },
+    "392": {
+      "signature": "лсп feat dose|солнце золотое",
+      "checkedAt": "2026-11-22T01:38:27.050Z",
+      "found": false
+    },
+    "393": {
+      "signature": "любэ|а зори здесь тихие",
+      "checkedAt": "2026-11-22T01:38:25.602Z",
+      "found": false
+    },
+    "394": {
+      "signature": "любэ|а река течет",
+      "checkedAt": "2026-11-22T01:38:17.320Z",
+      "found": false
+    },
+    "396": {
+      "signature": "любэ|есть только миг",
+      "checkedAt": "2026-11-22T01:37:32.995Z",
+      "found": false
+    },
+    "397": {
+      "signature": "любэ|комбат",
+      "checkedAt": "2026-11-22T01:37:31.602Z",
+      "found": true
+    },
+    "398": {
+      "signature": "любэ|конь",
+      "checkedAt": "2026-11-22T01:37:22.921Z",
+      "found": true
+    },
+    "399": {
+      "signature": "любэ|от волги до енисея",
+      "checkedAt": "2026-11-22T01:37:21.796Z",
+      "found": true
+    },
+    "400": {
+      "signature": "любэ|позови меня тихо по имени",
+      "checkedAt": "2026-11-22T01:37:12.868Z",
+      "found": true
+    },
+    "401": {
+      "signature": "любэ|солдат",
+      "checkedAt": "2026-11-22T01:37:11.410Z",
+      "found": true
+    },
+    "402": {
+      "signature": "любэ|там за туманами",
+      "checkedAt": "2026-11-22T01:37:02.843Z",
+      "found": true
+    },
+    "403": {
+      "signature": "любэ|ты неси меня река",
+      "checkedAt": "2026-11-22T01:37:01.402Z",
+      "found": true
+    },
+    "404": {
+      "signature": "люся чеботина|плакал голливуд",
+      "checkedAt": "2026-11-22T01:36:52.803Z",
+      "found": false
+    },
+    "405": {
+      "signature": "люся чеботина|солнце монако",
+      "checkedAt": "2026-11-22T01:36:51.349Z",
+      "found": true
+    },
+    "406": {
+      "signature": "ляпис трубецкои|ау",
+      "checkedAt": "2026-11-22T01:36:42.825Z",
+      "found": true
+    },
+    "407": {
+      "signature": "макс корж|2 типа людеи",
+      "checkedAt": "2026-11-22T01:36:41.320Z",
+      "found": true
+    },
+    "408": {
+      "signature": "макс корж|в темноте",
+      "checkedAt": "2026-11-22T01:36:32.755Z",
+      "found": true
+    },
+    "409": {
+      "signature": "макс корж|горы по колено",
+      "checkedAt": "2026-11-22T01:36:31.290Z",
+      "found": true
+    },
+    "410": {
+      "signature": "макс корж|жить в каиф",
+      "checkedAt": "2026-11-22T01:36:22.704Z",
+      "found": true
+    },
+    "411": {
+      "signature": "макс корж|летаи со мнои в темноте",
+      "checkedAt": "2026-11-22T01:36:21.248Z",
+      "found": false
+    },
+    "412": {
+      "signature": "макс корж|малиновыи закат",
+      "checkedAt": "2026-11-22T01:36:12.667Z",
+      "found": true
+    },
+    "413": {
+      "signature": "макс корж|мотылек",
+      "checkedAt": "2026-11-22T01:36:12.021Z",
+      "found": true
+    },
+    "414": {
+      "signature": "макс корж|не говори другу",
+      "checkedAt": "2026-11-22T01:36:02.636Z",
+      "found": false
+    },
+    "415": {
+      "signature": "макс корж|небо поможет нам",
+      "checkedAt": "2026-11-22T01:36:01.194Z",
+      "found": true
+    },
     "416": {
       "signature": "макс корж|пьяныи дождь",
       "checkedAt": "2026-11-21T21:47:41.209Z",
+      "found": true
+    },
+    "417": {
+      "signature": "макс корж|слово пацана",
+      "checkedAt": "2026-11-22T01:35:52.603Z",
       "found": true
     },
     "418": {
@@ -3761,6 +4134,11 @@
       "checkedAt": "2026-11-21T21:46:29.346Z",
       "found": true
     },
+    "423": {
+      "signature": "мари краимбрери|даваи навсегда",
+      "checkedAt": "2026-11-22T01:35:51.157Z",
+      "found": true
+    },
     "424": {
       "signature": "мари краимбрери|нравится жить",
       "checkedAt": "2026-11-21T21:45:37.395Z",
@@ -3786,6 +4164,11 @@
       "checkedAt": "2026-11-21T21:45:17.248Z",
       "found": true
     },
+    "429": {
+      "signature": "мартин|болью",
+      "checkedAt": "2026-11-22T01:35:42.813Z",
+      "found": false
+    },
     "430": {
       "signature": "мартин|жду тебя",
       "checkedAt": "2026-11-21T21:44:25.393Z",
@@ -3801,6 +4184,11 @@
       "checkedAt": "2026-11-21T21:44:01.147Z",
       "found": false
     },
+    "433": {
+      "signature": "мартин|ты случилась",
+      "checkedAt": "2026-11-22T01:35:41.204Z",
+      "found": false
+    },
     "434": {
       "signature": "мартин|целыи мир",
       "checkedAt": "2026-11-21T21:43:09.279Z",
@@ -3814,6 +4202,11 @@
     "436": {
       "signature": "марьяна локель|облака в 4к",
       "checkedAt": "2026-11-21T21:42:45.029Z",
+      "found": false
+    },
+    "437": {
+      "signature": "марьяна локель|ромашки",
+      "checkedAt": "2026-11-22T01:35:32.535Z",
       "found": false
     },
     "438": {
@@ -3840,6 +4233,11 @@
       "signature": "мельница|королевна",
       "checkedAt": "2026-11-21T21:41:32.978Z",
       "found": true
+    },
+    "443": {
+      "signature": "милана филимонова|не конфетка",
+      "checkedAt": "2026-11-22T01:35:31.087Z",
+      "found": false
     },
     "444": {
       "signature": "милана филимонова|хамелеон",
@@ -3874,6 +4272,11 @@
     "450": {
       "signature": "михаил круг|владимирскии централ",
       "checkedAt": "2026-11-21T21:40:10.928Z",
+      "found": true
+    },
+    "451": {
+      "signature": "михаил круг|исповедь",
+      "checkedAt": "2026-11-22T01:35:22.671Z",
       "found": true
     },
     "452": {
@@ -7229,6 +7632,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 464
+    "verifiedDates": 490
   }
 }
