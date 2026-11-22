@@ -1,7 +1,16 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-22T17:27:37.128Z",
+  "updatedAt": "2026-11-22T22:50:46.723Z",
   "tracks": {
+    "661": {
+      "artist": "Adele",
+      "title": "Hello",
+      "videoId": "YQHsXMglC9A",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/8bae4113-6d3d-40d5-990e-c9da090bfdc4",
+      "verifiedAt": "2026-11-22T22:47:44.452Z"
+    },
     "672": {
       "artist": "Arctic Monkeys",
       "title": "Do I Wanna Know?",
@@ -224,6 +233,131 @@
     "347": {
       "signature": "король и шут|лесник",
       "checkedAt": "2026-11-17T08:59:19.279Z",
+      "found": false
+    },
+    "644": {
+      "signature": "чаиф|бутылка кефира полбатона",
+      "checkedAt": "2026-11-22T22:50:46.360Z",
+      "found": false
+    },
+    "645": {
+      "signature": "чаиф|никто не услышит ои ио",
+      "checkedAt": "2026-11-22T22:50:26.778Z",
+      "found": false
+    },
+    "646": {
+      "signature": "чиж|18 берез",
+      "checkedAt": "2026-11-22T22:50:19.652Z",
+      "found": false
+    },
+    "647": {
+      "signature": "чиж|менуэт",
+      "checkedAt": "2026-11-22T22:50:14.253Z",
+      "found": false
+    },
+    "648": {
+      "signature": "чиж co|на поле танки грохотали",
+      "checkedAt": "2026-11-22T22:49:54.677Z",
+      "found": false
+    },
+    "649": {
+      "signature": "чиж co|фантом",
+      "checkedAt": "2026-11-22T22:49:48.239Z",
+      "found": false
+    },
+    "650": {
+      "signature": "шура|не верь слезам",
+      "checkedAt": "2026-11-22T22:49:28.516Z",
+      "found": false
+    },
+    "651": {
+      "signature": "шура|твори добро",
+      "checkedAt": "2026-11-22T22:49:27.276Z",
+      "found": false
+    },
+    "652": {
+      "signature": "элджеи feduk|розовое вино",
+      "checkedAt": "2026-11-22T22:49:22.219Z",
+      "found": false
+    },
+    "653": {
+      "signature": "эльдар джарахов|это проидет feat pizza",
+      "checkedAt": "2026-11-22T22:49:02.491Z",
+      "found": false
+    },
+    "654": {
+      "signature": "эндшпиль|10",
+      "checkedAt": "2026-11-22T22:49:00.986Z",
+      "found": false
+    },
+    "655": {
+      "signature": "юлии ким|губы окаянные",
+      "checkedAt": "2026-11-22T22:48:56.199Z",
+      "found": false
+    },
+    "656": {
+      "signature": "юта|жили были",
+      "checkedAt": "2026-11-22T22:48:36.513Z",
+      "found": false
+    },
+    "657": {
+      "signature": "я про рок|ангел хранитель",
+      "checkedAt": "2026-11-22T22:48:29.089Z",
+      "found": false
+    },
+    "658": {
+      "signature": "я про рок|рожон",
+      "checkedAt": "2026-11-22T22:48:22.729Z",
+      "found": false
+    },
+    "659": {
+      "signature": "ac dc|back in black",
+      "checkedAt": "2026-11-22T22:48:17.922Z",
+      "found": false
+    },
+    "660": {
+      "signature": "ac dc|highway to hell",
+      "checkedAt": "2026-11-22T22:47:58.192Z",
+      "found": false
+    },
+    "661": {
+      "signature": "adele|hello",
+      "checkedAt": "2026-11-22T22:47:44.452Z",
+      "found": true
+    },
+    "662": {
+      "signature": "adele|someone like you",
+      "checkedAt": "2026-11-22T22:47:36.806Z",
+      "found": false
+    },
+    "663": {
+      "signature": "akmal|из за тебя",
+      "checkedAt": "2026-11-22T22:47:26.050Z",
+      "found": false
+    },
+    "664": {
+      "signature": "alex g|mary",
+      "checkedAt": "2026-11-22T22:47:25.888Z",
+      "found": false
+    },
+    "665": {
+      "signature": "alex g|pretend",
+      "checkedAt": "2026-11-22T22:47:06.336Z",
+      "found": false
+    },
+    "666": {
+      "signature": "alex g|sarah",
+      "checkedAt": "2026-11-22T22:46:59.870Z",
+      "found": false
+    },
+    "667": {
+      "signature": "almary|до скорых встреч",
+      "checkedAt": "2026-11-22T22:46:40.251Z",
+      "found": false
+    },
+    "668": {
+      "signature": "animal jazz|три полоски",
+      "checkedAt": "2026-11-22T22:46:33.874Z",
       "found": false
     },
     "669": {
@@ -2464,6 +2598,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedVideos": 24
+    "verifiedVideos": 25
   }
 }
