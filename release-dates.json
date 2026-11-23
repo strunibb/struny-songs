@@ -1,7 +1,159 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-22T22:38:08.168Z",
+  "updatedAt": "2026-11-23T03:12:55.425Z",
   "dates": {
+    "235": {
+      "date": "2015-06-15",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/1ceec66e-163c-4425-af78-d5474f6ed428",
+      "artist": "Егор Крид",
+      "title": "Невеста",
+      "confidence": "musicbrainz-exact"
+    },
+    "236": {
+      "date": "2015-06-15",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/23fd26b6-5065-4e67-aac5-95f7a603c223",
+      "artist": "Егор Крид",
+      "title": "Папина дочка",
+      "confidence": "musicbrainz-exact"
+    },
+    "237": {
+      "date": "2014",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/ccb2a351-ba2c-4250-ab3c-4c5997799d2a",
+      "artist": "Егор Крид",
+      "title": "Самая-самая",
+      "confidence": "musicbrainz-exact"
+    },
+    "238": {
+      "date": "2009",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/e4c77a1c-c6c6-4ec6-ac0a-a7616bbff2e0",
+      "artist": "Елена Ваенга",
+      "title": "Тайга",
+      "confidence": "musicbrainz-exact"
+    },
+    "239": {
+      "date": "2009",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/136ea7a6-3b08-49bf-b6a6-c62680ecdfb1",
+      "artist": "Жанна Фриске",
+      "title": "А на море белый песок",
+      "confidence": "musicbrainz-exact"
+    },
+    "240": {
+      "date": "2005",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/0ee21690-0010-4a75-89db-c93726a1d010",
+      "artist": "Жанна Фриске",
+      "title": "Где-то летом",
+      "confidence": "musicbrainz-exact"
+    },
+    "242": {
+      "date": "2009",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/dacac4c7-6cb2-432e-b78d-4bef90090fa5",
+      "artist": "Жанна Фриске",
+      "title": "Портофино",
+      "confidence": "musicbrainz-exact"
+    },
+    "245": {
+      "date": "2022-10-10",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c2ad49a2-d432-4081-b07f-bf9dd40aee40",
+      "artist": "Женя Трофимов",
+      "title": "Номер",
+      "confidence": "musicbrainz-exact"
+    },
+    "252": {
+      "date": "2022-10-10",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/280b7912-7dcb-4dd6-abc7-4e5746115289",
+      "artist": "Женя Трофимов",
+      "title": "Самолёты",
+      "confidence": "musicbrainz-exact"
+    },
+    "253": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/677f1b66-c5ba-4ee0-9633-4bffc3d1ae7a",
+      "artist": "Жуки",
+      "title": "Батарейка",
+      "confidence": "musicbrainz-exact"
+    },
+    "254": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/393a4035-613d-41d0-93f2-a37498181734",
+      "artist": "Жуки",
+      "title": "Влечение",
+      "confidence": "musicbrainz-exact"
+    },
+    "255": {
+      "date": "2000",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/5b8f370f-5673-4b23-9141-324bfef51f64",
+      "artist": "Жуки",
+      "title": "Танкист",
+      "confidence": "musicbrainz-exact"
+    },
+    "256": {
+      "date": "2021-07-09",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/45eeb48c-4b3b-4f65-acc7-cb7ef704f8dd",
+      "artist": "Забей, Лерочка",
+      "title": "Каждый, кто делал тебе больно",
+      "confidence": "musicbrainz-exact"
+    },
+    "260": {
+      "date": "2007",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/f26890a4-ddd6-4c38-b141-043b42294b8b",
+      "artist": "Звери",
+      "title": "Брюнетки и блондинки",
+      "confidence": "musicbrainz-exact"
+    },
+    "261": {
+      "date": "2004",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/0e6acaf3-345c-45ed-b97e-883aafdabddf",
+      "artist": "Звери",
+      "title": "Всё, что касается",
+      "confidence": "musicbrainz-exact"
+    },
+    "262": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/9a9489d2-1bfb-4f01-9c87-de8284d1ae9d",
+      "artist": "Звери",
+      "title": "Для тебя",
+      "confidence": "musicbrainz-exact"
+    },
+    "263": {
+      "date": "2006",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/0655804d-88c4-4d79-9d1d-14acb0a81ae9",
+      "artist": "Звери",
+      "title": "До скорой встречи",
+      "confidence": "musicbrainz-exact"
+    },
+    "264": {
+      "date": "2004",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/fd60e918-981c-41ea-9d52-a2877163c53b",
+      "artist": "Звери",
+      "title": "Напитки покрепче",
+      "confidence": "musicbrainz-exact"
+    },
+    "265": {
+      "date": "2003",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/97bdc068-fec1-448b-b167-f6ce8fdc48f1",
+      "artist": "Звери",
+      "title": "Просто такая сильная любовь",
+      "confidence": "musicbrainz-exact"
+    },
     "266": {
       "date": "2004",
       "precision": "year",
@@ -18,12 +170,36 @@
       "title": "Танцуй",
       "confidence": "musicbrainz-exact"
     },
+    "268": {
+      "date": "1984",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/78067067-5ae3-48c9-ac67-f389dd08c480",
+      "artist": "Земляне",
+      "title": "Трава у дома",
+      "confidence": "musicbrainz-exact"
+    },
+    "269": {
+      "date": "1999-05-06",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/f61f9167-91d2-4152-8b32-c44fdee87d3a",
+      "artist": "Земфира",
+      "title": "Ариведерчи",
+      "confidence": "musicbrainz-exact"
+    },
     "270": {
       "date": "2006-10-16",
       "precision": "day",
       "source": "https://musicbrainz.org/recording/10f9016e-16c6-445c-a6dc-f4e4755cfe9d",
       "artist": "Земфира",
       "title": "Бесконечность",
+      "confidence": "musicbrainz-exact"
+    },
+    "271": {
+      "date": "2007-10-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a17c95a8-8d8f-4069-b932-ef3b588c9766",
+      "artist": "Земфира",
+      "title": "В метро",
       "confidence": "musicbrainz-exact"
     },
     "272": {
@@ -50,12 +226,28 @@
       "title": "Ромашки",
       "confidence": "musicbrainz-exact"
     },
+    "275": {
+      "date": "2008",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/543e2b9b-b47c-4ee6-9961-71ecba89db43",
+      "artist": "Земфира",
+      "title": "Хочешь",
+      "confidence": "musicbrainz-exact"
+    },
     "276": {
       "date": "1999",
       "precision": "year",
       "source": "https://musicbrainz.org/recording/12d52529-89f5-4026-afbf-d3dc8583a613",
       "artist": "Иванушки International",
       "title": "Небо",
+      "confidence": "musicbrainz-exact"
+    },
+    "277": {
+      "date": "1986",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/ea11cb5c-ca20-4250-94d3-34aa4ad1a635",
+      "artist": "Игорь Скляр",
+      "title": "Комарово",
       "confidence": "musicbrainz-exact"
     },
     "293": {
@@ -232,6 +424,14 @@
       "source": "https://musicbrainz.org/recording/8c8f6f2a-7cf7-49c0-ae44-c0badc57fbf3",
       "artist": "Кино",
       "title": "Малыш",
+      "confidence": "musicbrainz-exact"
+    },
+    "319": {
+      "date": "1989",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/6345fd47-9c70-4393-b4fa-4b6dddf96eb9",
+      "artist": "Кино",
+      "title": "Мама, мы все тяжело больны",
       "confidence": "musicbrainz-exact"
     },
     "320": {
@@ -4572,6 +4772,156 @@
     }
   },
   "attempts": {
+    "235": {
+      "signature": "егор крид|невеста",
+      "checkedAt": "2026-11-23T03:12:11.344Z",
+      "found": true
+    },
+    "236": {
+      "signature": "егор крид|папина дочка",
+      "checkedAt": "2026-11-23T03:12:02.797Z",
+      "found": true
+    },
+    "237": {
+      "signature": "егор крид|самая самая",
+      "checkedAt": "2026-11-23T03:12:01.359Z",
+      "found": true
+    },
+    "238": {
+      "signature": "елена ваенга|таига",
+      "checkedAt": "2026-11-23T03:11:52.785Z",
+      "found": true
+    },
+    "239": {
+      "signature": "жанна фриске|а на море белыи песок",
+      "checkedAt": "2026-11-23T03:11:51.472Z",
+      "found": true
+    },
+    "240": {
+      "signature": "жанна фриске|где то летом",
+      "checkedAt": "2026-11-23T03:11:43.039Z",
+      "found": true
+    },
+    "242": {
+      "signature": "жанна фриске|портофино",
+      "checkedAt": "2026-11-23T03:10:58.933Z",
+      "found": true
+    },
+    "243": {
+      "signature": "женя трофимов|корабли",
+      "checkedAt": "2026-11-23T03:10:57.364Z",
+      "found": false
+    },
+    "244": {
+      "signature": "женя трофимов|море",
+      "checkedAt": "2026-11-23T03:10:48.817Z",
+      "found": false
+    },
+    "245": {
+      "signature": "женя трофимов|номер",
+      "checkedAt": "2026-11-23T03:10:47.360Z",
+      "found": true
+    },
+    "246": {
+      "signature": "женя трофимов|ночь",
+      "checkedAt": "2026-11-23T03:10:38.807Z",
+      "found": false
+    },
+    "247": {
+      "signature": "женя трофимов|осень",
+      "checkedAt": "2026-11-23T03:10:37.352Z",
+      "found": false
+    },
+    "248": {
+      "signature": "женя трофимов|первая любовь feat комната культуры",
+      "checkedAt": "2026-11-23T03:10:28.806Z",
+      "found": false
+    },
+    "249": {
+      "signature": "женя трофимов|поезда",
+      "checkedAt": "2026-11-23T03:10:27.358Z",
+      "found": false
+    },
+    "250": {
+      "signature": "женя трофимов|привет",
+      "checkedAt": "2026-11-23T03:10:18.808Z",
+      "found": false
+    },
+    "251": {
+      "signature": "женя трофимов|пусть она поет",
+      "checkedAt": "2026-11-23T03:10:17.364Z",
+      "found": false
+    },
+    "252": {
+      "signature": "женя трофимов|самолеты",
+      "checkedAt": "2026-11-23T03:10:08.801Z",
+      "found": true
+    },
+    "253": {
+      "signature": "жуки|батареика",
+      "checkedAt": "2026-11-23T03:10:07.355Z",
+      "found": true
+    },
+    "254": {
+      "signature": "жуки|влечение",
+      "checkedAt": "2026-11-23T03:09:58.813Z",
+      "found": true
+    },
+    "255": {
+      "signature": "жуки|танкист",
+      "checkedAt": "2026-11-23T03:09:57.371Z",
+      "found": true
+    },
+    "256": {
+      "signature": "забеи лерочка|каждыи кто делал тебе больно",
+      "checkedAt": "2026-11-23T03:09:48.804Z",
+      "found": true
+    },
+    "257": {
+      "signature": "забеи лерочка|ничего нет tiny bunny ost",
+      "checkedAt": "2026-11-23T03:09:47.426Z",
+      "found": false
+    },
+    "258": {
+      "signature": "забеи лерочка|ты днище тупои еще и нищии",
+      "checkedAt": "2026-11-23T03:09:38.789Z",
+      "found": false
+    },
+    "259": {
+      "signature": "заточка|острые края",
+      "checkedAt": "2026-11-23T03:09:37.358Z",
+      "found": false
+    },
+    "260": {
+      "signature": "звери|брюнетки и блондинки",
+      "checkedAt": "2026-11-23T03:09:28.712Z",
+      "found": true
+    },
+    "261": {
+      "signature": "звери|все что касается",
+      "checkedAt": "2026-11-23T03:09:27.318Z",
+      "found": true
+    },
+    "262": {
+      "signature": "звери|для тебя",
+      "checkedAt": "2026-11-23T03:09:18.705Z",
+      "found": true
+    },
+    "263": {
+      "signature": "звери|до скорои встречи",
+      "checkedAt": "2026-11-23T03:09:17.265Z",
+      "found": true
+    },
+    "264": {
+      "signature": "звери|напитки покрепче",
+      "checkedAt": "2026-11-23T03:09:08.700Z",
+      "found": true
+    },
+    "265": {
+      "signature": "звери|просто такая сильная любовь",
+      "checkedAt": "2026-11-23T03:09:07.319Z",
+      "found": true
+    },
     "266": {
       "signature": "звери|раионы кварталы",
       "checkedAt": "2026-11-22T22:38:07.902Z",
@@ -4582,9 +4932,24 @@
       "checkedAt": "2026-11-22T22:38:06.862Z",
       "found": true
     },
+    "268": {
+      "signature": "земляне|трава у дома",
+      "checkedAt": "2026-11-23T03:08:58.749Z",
+      "found": true
+    },
+    "269": {
+      "signature": "земфира|ариведерчи",
+      "checkedAt": "2026-11-23T03:08:57.371Z",
+      "found": true
+    },
     "270": {
       "signature": "земфира|бесконечность",
       "checkedAt": "2026-11-22T22:36:39.928Z",
+      "found": true
+    },
+    "271": {
+      "signature": "земфира|в метро",
+      "checkedAt": "2026-11-23T03:08:48.692Z",
       "found": true
     },
     "272": {
@@ -4602,9 +4967,19 @@
       "checkedAt": "2026-11-22T22:35:31.839Z",
       "found": true
     },
+    "275": {
+      "signature": "земфира|хочешь",
+      "checkedAt": "2026-11-23T03:08:47.246Z",
+      "found": true
+    },
     "276": {
       "signature": "иванушки international|небо",
       "checkedAt": "2026-11-22T22:34:48.013Z",
+      "found": true
+    },
+    "277": {
+      "signature": "игорь скляр|комарово",
+      "checkedAt": "2026-11-23T03:08:38.690Z",
       "found": true
     },
     "278": {
@@ -4637,9 +5012,19 @@
       "checkedAt": "2026-11-22T22:33:07.074Z",
       "found": false
     },
+    "284": {
+      "signature": "исполнитель не указан|бременские музыканты",
+      "checkedAt": "2026-11-23T03:08:37.319Z",
+      "found": false
+    },
     "285": {
       "signature": "исполнитель не указан|ведьмаку заплатите",
       "checkedAt": "2026-11-22T22:32:01.662Z",
+      "found": false
+    },
+    "286": {
+      "signature": "исполнитель не указан|ивана купала",
+      "checkedAt": "2026-11-23T03:08:28.682Z",
       "found": false
     },
     "287": {
@@ -4800,6 +5185,11 @@
     "318": {
       "signature": "кино|малыш",
       "checkedAt": "2026-11-22T17:14:34.260Z",
+      "found": true
+    },
+    "319": {
+      "signature": "кино|мама мы все тяжело больны",
+      "checkedAt": "2026-11-23T03:08:28.477Z",
       "found": true
     },
     "320": {
@@ -8815,6 +9205,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 571
+    "verifiedDates": 596
   }
 }
