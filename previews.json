@@ -1,7 +1,16 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-22T22:50:46.723Z",
+  "updatedAt": "2026-11-23T04:02:06.482Z",
   "tracks": {
+    "628": {
+      "artist": "Три дня дождя",
+      "title": "Отпускай",
+      "videoId": "IeYxMTVL74Y",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/c6580eb0-041e-4dd2-b35f-f63a8ccd4946",
+      "verifiedAt": "2026-11-23T04:01:00.327Z"
+    },
     "661": {
       "artist": "Adele",
       "title": "Hello",
@@ -233,6 +242,131 @@
     "347": {
       "signature": "король и шут|лесник",
       "checkedAt": "2026-11-17T08:59:19.279Z",
+      "found": false
+    },
+    "619": {
+      "signature": "тима белорусских|незабудка",
+      "checkedAt": "2026-11-23T04:02:06.128Z",
+      "found": false
+    },
+    "620": {
+      "signature": "тима ищет свет|волна",
+      "checkedAt": "2026-11-23T04:01:55.206Z",
+      "found": false
+    },
+    "621": {
+      "signature": "тима ищет свет|новыи день",
+      "checkedAt": "2026-11-23T04:01:35.466Z",
+      "found": false
+    },
+    "622": {
+      "signature": "тима ищет свет|потанцуи со мнои",
+      "checkedAt": "2026-11-23T04:01:35.310Z",
+      "found": false
+    },
+    "623": {
+      "signature": "тимур муцураев|милые зеленые глаза",
+      "checkedAt": "2026-11-23T04:01:15.570Z",
+      "found": false
+    },
+    "624": {
+      "signature": "тимур муцураев|твоя нежная походка",
+      "checkedAt": "2026-11-23T04:01:14.105Z",
+      "found": false
+    },
+    "625": {
+      "signature": "три дня дождя|контракт feat slem",
+      "checkedAt": "2026-11-23T04:01:09.439Z",
+      "found": false
+    },
+    "626": {
+      "signature": "три дня дождя|космос",
+      "checkedAt": "2026-11-23T04:01:07.965Z",
+      "found": false
+    },
+    "627": {
+      "signature": "три дня дождя|осень и алкоголь",
+      "checkedAt": "2026-11-23T04:01:06.432Z",
+      "found": false
+    },
+    "628": {
+      "signature": "три дня дождя|отпускаи",
+      "checkedAt": "2026-11-23T04:01:00.327Z",
+      "found": true
+    },
+    "629": {
+      "signature": "три дня дождя|перезаряжаи",
+      "checkedAt": "2026-11-23T04:00:54.323Z",
+      "found": false
+    },
+    "630": {
+      "signature": "три дня дождя|хорошии мальчик",
+      "checkedAt": "2026-11-23T04:00:49.390Z",
+      "found": false
+    },
+    "631": {
+      "signature": "тринадцать карат|в моеи голове",
+      "checkedAt": "2026-11-23T04:00:29.653Z",
+      "found": false
+    },
+    "632": {
+      "signature": "тринадцать карат|из за тебя",
+      "checkedAt": "2026-11-23T04:00:29.494Z",
+      "found": false
+    },
+    "633": {
+      "signature": "фабрика|не родись красивои",
+      "checkedAt": "2026-11-23T04:00:09.764Z",
+      "found": false
+    },
+    "634": {
+      "signature": "фабрика|я тебя зацелую",
+      "checkedAt": "2026-11-23T04:00:03.467Z",
+      "found": false
+    },
+    "635": {
+      "signature": "фактор 2|воина",
+      "checkedAt": "2026-11-23T03:59:43.730Z",
+      "found": false
+    },
+    "636": {
+      "signature": "фактор 2|красавица",
+      "checkedAt": "2026-11-23T03:59:42.235Z",
+      "found": false
+    },
+    "637": {
+      "signature": "фактор 2|марихуана 3000",
+      "checkedAt": "2026-11-23T03:59:36.110Z",
+      "found": false
+    },
+    "638": {
+      "signature": "фактор 2|одинокая звезда",
+      "checkedAt": "2026-11-23T03:59:31.473Z",
+      "found": false
+    },
+    "639": {
+      "signature": "фактор 2|шалава",
+      "checkedAt": "2026-11-23T03:59:29.977Z",
+      "found": false
+    },
+    "640": {
+      "signature": "фогель|мальчик",
+      "checkedAt": "2026-11-23T03:59:28.468Z",
+      "found": false
+    },
+    "641": {
+      "signature": "фогель|ты останешься",
+      "checkedAt": "2026-11-23T03:59:17.706Z",
+      "found": false
+    },
+    "642": {
+      "signature": "хабиб|ягода малинка",
+      "checkedAt": "2026-11-23T03:59:16.199Z",
+      "found": false
+    },
+    "643": {
+      "signature": "чаиф|аргентина ямаика 5 0",
+      "checkedAt": "2026-11-23T03:59:10.069Z",
       "found": false
     },
     "644": {
@@ -2598,6 +2732,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedVideos": 25
+    "verifiedVideos": 26
   }
 }
