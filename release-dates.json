@@ -1,7 +1,223 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-23T03:12:55.425Z",
+  "updatedAt": "2026-11-23T12:38:32.819Z",
   "dates": {
+    "196": {
+      "date": "2017-04-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/2da19b19-39cf-4a19-b812-b83c2c28dc05",
+      "artist": "Дайте танк (!)",
+      "title": "Спам",
+      "confidence": "musicbrainz-exact"
+    },
+    "197": {
+      "date": "2025-03-07",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/8541e923-e32f-4bf7-a547-d93f781a7c78",
+      "artist": "Дайте танк (!)",
+      "title": "Сюрприз",
+      "confidence": "musicbrainz-exact"
+    },
+    "198": {
+      "date": "2016-04-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/7485e787-3a25-45b4-91ac-5b46086e5d64",
+      "artist": "Дайте танк (!)",
+      "title": "Утро",
+      "confidence": "musicbrainz-exact"
+    },
+    "200": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/427e49ee-f340-447c-83ab-62a75af86022",
+      "artist": "ДДТ",
+      "title": "Просвистела",
+      "confidence": "musicbrainz-exact"
+    },
+    "201": {
+      "date": "2009",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/e6253420-6a4f-4a2a-821b-4559fcb89091",
+      "artist": "Денис Майданов",
+      "title": "Вечная любовь",
+      "confidence": "musicbrainz-exact"
+    },
+    "204": {
+      "date": "2024-03-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/f129b041-1728-4546-a363-eeee4865ccdf",
+      "artist": "Джизус",
+      "title": "Век эвтаназии",
+      "confidence": "musicbrainz-exact"
+    },
+    "205": {
+      "date": "2020-11-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/10df75ae-d2e4-4799-8c4a-f2cb3da4ff45",
+      "artist": "Джизус",
+      "title": "Ветер моих перемен",
+      "confidence": "musicbrainz-exact"
+    },
+    "206": {
+      "date": "2020-11-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c38f6225-881f-4e66-8e6c-0baa0cd5bf47",
+      "artist": "Джизус",
+      "title": "Во имя любви",
+      "confidence": "musicbrainz-exact"
+    },
+    "207": {
+      "date": "2017",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/01ab042b-b5e6-42ff-b2d5-582329deb663",
+      "artist": "Джизус",
+      "title": "Девочка-мечта",
+      "confidence": "musicbrainz-exact"
+    },
+    "208": {
+      "date": "2025-02-14",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/60afd3c2-f917-416c-b915-affc4bbf251d",
+      "artist": "Джизус",
+      "title": "Луна",
+      "confidence": "musicbrainz-exact"
+    },
+    "209": {
+      "date": "2020-11-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/402aa3c8-4f49-4687-a1a1-b1dd7e1d616b",
+      "artist": "Джизус",
+      "title": "Наши сердца",
+      "confidence": "musicbrainz-exact"
+    },
+    "211": {
+      "date": "2019-12-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3c6d9ba6-9782-4168-a9d1-d5f3e961c488",
+      "artist": "Джизус",
+      "title": "Ты ничего не поняла",
+      "confidence": "musicbrainz-exact"
+    },
+    "212": {
+      "date": "2020-11-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/efcfdeba-bccc-424c-a095-ea3ed314741c",
+      "artist": "Джизус",
+      "title": "Человек, который изменил всё",
+      "confidence": "musicbrainz-exact"
+    },
+    "213": {
+      "date": "2024-03-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9bde403a-1879-4e90-93c6-6bfc071dc53e",
+      "artist": "Джизус",
+      "title": "Что мы с тобой наделали",
+      "confidence": "musicbrainz-exact"
+    },
+    "214": {
+      "date": "2025-02-14",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/652ec236-1d31-4355-8700-495befd049ed",
+      "artist": "Джизус",
+      "title": "Элисс",
+      "confidence": "musicbrainz-exact"
+    },
+    "216": {
+      "date": "2020-11-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/75db6d59-ab1f-43ac-8863-b7fa2006d206",
+      "artist": "Джизус",
+      "title": "Я умираю для тебя",
+      "confidence": "musicbrainz-exact"
+    },
+    "217": {
+      "date": "2000",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/ab5dee2b-d8a7-4ed6-99f1-f72e73c6b382",
+      "artist": "Диана Гурцкая",
+      "title": "Ты здесь",
+      "confidence": "musicbrainz-exact"
+    },
+    "218": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/05b5e029-67b5-4367-b032-56ee0c31104d",
+      "artist": "Диана Гурцкая",
+      "title": "Ты знаешь, мама",
+      "confidence": "musicbrainz-exact"
+    },
+    "219": {
+      "date": "1996",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/7289dbd8-a06b-4dca-a424-015311c600eb",
+      "artist": "Дискотека Авария",
+      "title": "Малинки",
+      "confidence": "musicbrainz-exact"
+    },
+    "220": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/3f614c10-dd4d-4839-82fb-c0c858b4598f",
+      "artist": "Дискотека Авария",
+      "title": "Новогодняя",
+      "confidence": "musicbrainz-exact"
+    },
+    "222": {
+      "date": "2019-10-31",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b68411f8-2769-49eb-849e-e7c33e0adea5",
+      "artist": "Дора",
+      "title": "Дорадура",
+      "confidence": "musicbrainz-exact"
+    },
+    "223": {
+      "date": "2025-01-31",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/2b91d471-efbb-4bfd-af7e-201d30b55e31",
+      "artist": "Дора",
+      "title": "Ёк",
+      "confidence": "musicbrainz-exact"
+    },
+    "225": {
+      "date": "2020-11-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c4d92055-f9b5-4cd8-a308-4a6ead11d7cb",
+      "artist": "Дора",
+      "title": "Осень пьяная",
+      "confidence": "musicbrainz-exact"
+    },
+    "227": {
+      "date": "2022-06-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c8af7d7e-dc17-4048-861b-2b4911694dbe",
+      "artist": "Дора",
+      "title": "La bohème",
+      "confidence": "musicbrainz-exact"
+    },
+    "229": {
+      "date": "2015-12-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/8089c833-e0bd-49f8-8eca-477b6106b821",
+      "artist": "Егор Крид",
+      "title": "Будильник",
+      "confidence": "musicbrainz-exact"
+    },
+    "230": {
+      "date": "2020-04-10",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/4670c650-e1f8-4d9c-8be4-97226cb7715b",
+      "artist": "Егор Крид",
+      "title": "Девочка с картинки",
+      "confidence": "musicbrainz-exact"
+    },
+    "234": {
+      "date": "2014-02-11",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9d924a75-3363-400c-880a-7d85171a7df8",
+      "artist": "Егор Крид",
+      "title": "Надо ли",
+      "confidence": "musicbrainz-exact"
+    },
     "235": {
       "date": "2015-06-15",
       "precision": "day",
@@ -48,6 +264,14 @@
       "source": "https://musicbrainz.org/recording/0ee21690-0010-4a75-89db-c93726a1d010",
       "artist": "Жанна Фриске",
       "title": "Где-то летом",
+      "confidence": "musicbrainz-exact"
+    },
+    "241": {
+      "date": "2004",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/1dd96f3a-008a-452e-9a5f-2e4ceab421f3",
+      "artist": "Жанна Фриске",
+      "title": "Ла-ла-ла",
       "confidence": "musicbrainz-exact"
     },
     "242": {
@@ -4772,6 +4996,191 @@
     }
   },
   "attempts": {
+    "196": {
+      "signature": "даите танк|спам",
+      "checkedAt": "2026-11-23T12:38:32.390Z",
+      "found": true
+    },
+    "197": {
+      "signature": "даите танк|сюрприз",
+      "checkedAt": "2026-11-23T12:38:09.254Z",
+      "found": true
+    },
+    "198": {
+      "signature": "даите танк|утро",
+      "checkedAt": "2026-11-23T12:38:08.179Z",
+      "found": true
+    },
+    "200": {
+      "signature": "ддт|просвистела",
+      "checkedAt": "2026-11-23T12:37:23.506Z",
+      "found": true
+    },
+    "201": {
+      "signature": "денис маиданов|вечная любовь",
+      "checkedAt": "2026-11-23T12:37:22.164Z",
+      "found": true
+    },
+    "202": {
+      "signature": "джарахов|наладится",
+      "checkedAt": "2026-11-23T12:37:13.410Z",
+      "found": false
+    },
+    "203": {
+      "signature": "джиган юлия савичева|отпусти",
+      "checkedAt": "2026-11-23T12:37:12.006Z",
+      "found": false
+    },
+    "204": {
+      "signature": "джизус|век эвтаназии",
+      "checkedAt": "2026-11-23T12:37:03.421Z",
+      "found": true
+    },
+    "205": {
+      "signature": "джизус|ветер моих перемен",
+      "checkedAt": "2026-11-23T12:37:01.980Z",
+      "found": true
+    },
+    "206": {
+      "signature": "джизус|во имя любви",
+      "checkedAt": "2026-11-23T12:37:00.446Z",
+      "found": true
+    },
+    "207": {
+      "signature": "джизус|девочка мечта",
+      "checkedAt": "2026-11-23T12:36:59.000Z",
+      "found": true
+    },
+    "208": {
+      "signature": "джизус|луна",
+      "checkedAt": "2026-11-23T12:36:57.619Z",
+      "found": true
+    },
+    "209": {
+      "signature": "джизус|наши сердца",
+      "checkedAt": "2026-11-23T12:36:56.535Z",
+      "found": true
+    },
+    "210": {
+      "signature": "джизус|открои глаза",
+      "checkedAt": "2026-11-23T12:36:33.296Z",
+      "found": false
+    },
+    "211": {
+      "signature": "джизус|ты ничего не поняла",
+      "checkedAt": "2026-11-23T12:36:31.925Z",
+      "found": true
+    },
+    "212": {
+      "signature": "джизус|человек которыи изменил все",
+      "checkedAt": "2026-11-23T12:36:23.279Z",
+      "found": true
+    },
+    "213": {
+      "signature": "джизус|что мы с тобои наделали",
+      "checkedAt": "2026-11-23T12:36:21.788Z",
+      "found": true
+    },
+    "214": {
+      "signature": "джизус|элисс",
+      "checkedAt": "2026-11-23T12:36:13.167Z",
+      "found": true
+    },
+    "216": {
+      "signature": "джизус|я умираю для тебя",
+      "checkedAt": "2026-11-23T12:35:21.323Z",
+      "found": true
+    },
+    "217": {
+      "signature": "диана гурцкая|ты здесь",
+      "checkedAt": "2026-11-23T12:35:20.346Z",
+      "found": true
+    },
+    "218": {
+      "signature": "диана гурцкая|ты знаешь мама",
+      "checkedAt": "2026-11-23T12:34:57.086Z",
+      "found": true
+    },
+    "219": {
+      "signature": "дискотека авария|малинки",
+      "checkedAt": "2026-11-23T12:34:55.640Z",
+      "found": true
+    },
+    "220": {
+      "signature": "дискотека авария|новогодняя",
+      "checkedAt": "2026-11-23T12:34:47.028Z",
+      "found": true
+    },
+    "221": {
+      "signature": "дора|вторилась",
+      "checkedAt": "2026-11-23T12:34:45.549Z",
+      "found": false
+    },
+    "222": {
+      "signature": "дора|дорадура",
+      "checkedAt": "2026-11-23T12:34:36.936Z",
+      "found": true
+    },
+    "223": {
+      "signature": "дора|ек",
+      "checkedAt": "2026-11-23T12:34:35.507Z",
+      "found": true
+    },
+    "224": {
+      "signature": "дора|лоллилав",
+      "checkedAt": "2026-11-23T12:34:34.028Z",
+      "found": false
+    },
+    "225": {
+      "signature": "дора|осень пьяная",
+      "checkedAt": "2026-11-23T12:34:25.406Z",
+      "found": true
+    },
+    "226": {
+      "signature": "дора|поздно feat feduk",
+      "checkedAt": "2026-11-23T12:34:24.414Z",
+      "found": false
+    },
+    "227": {
+      "signature": "дора|la boheme",
+      "checkedAt": "2026-11-23T12:34:01.171Z",
+      "found": true
+    },
+    "228": {
+      "signature": "евгении белоусов|девчонка девчонка",
+      "checkedAt": "2026-11-23T12:34:00.053Z",
+      "found": false
+    },
+    "229": {
+      "signature": "егор крид|будильник",
+      "checkedAt": "2026-11-23T12:33:36.895Z",
+      "found": true
+    },
+    "230": {
+      "signature": "егор крид|девочка с картинки",
+      "checkedAt": "2026-11-23T12:33:35.450Z",
+      "found": true
+    },
+    "231": {
+      "signature": "егор крид|дым feat jony",
+      "checkedAt": "2026-11-23T12:33:33.995Z",
+      "found": false
+    },
+    "232": {
+      "signature": "егор крид|если ты меня не любишь feat molly",
+      "checkedAt": "2026-11-23T12:33:25.380Z",
+      "found": false
+    },
+    "233": {
+      "signature": "егор крид|завтра feat баста",
+      "checkedAt": "2026-11-23T12:33:24.177Z",
+      "found": false
+    },
+    "234": {
+      "signature": "егор крид|надо ли",
+      "checkedAt": "2026-11-23T12:33:15.317Z",
+      "found": true
+    },
     "235": {
       "signature": "егор крид|невеста",
       "checkedAt": "2026-11-23T03:12:11.344Z",
@@ -4800,6 +5209,11 @@
     "240": {
       "signature": "жанна фриске|где то летом",
       "checkedAt": "2026-11-23T03:11:43.039Z",
+      "found": true
+    },
+    "241": {
+      "signature": "жанна фриске|ла ла ла",
+      "checkedAt": "2026-11-23T12:33:14.229Z",
       "found": true
     },
     "242": {
@@ -9205,6 +9619,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 596
+    "verifiedDates": 624
   }
 }
