@@ -1,7 +1,199 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T00:26:51.338Z",
+  "updatedAt": "2026-11-24T10:29:14.863Z",
   "dates": {
+    "118": {
+      "date": "2005",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/9473060e-67ae-4921-901b-e547e0bfc2e9",
+      "artist": "Братья Грим",
+      "title": "Ресницы",
+      "confidence": "musicbrainz-exact"
+    },
+    "122": {
+      "date": "2006-06-22",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/e18ce28c-605b-4b26-9a46-90e9b12e48db",
+      "artist": "Бумбокс",
+      "title": "Вахтёрам",
+      "confidence": "musicbrainz-exact"
+    },
+    "123": {
+      "date": "2010-06-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5e8b624a-195b-4b6e-a076-690cd705cb0a",
+      "artist": "Бумбокс",
+      "title": "Летний дождь",
+      "confidence": "musicbrainz-exact"
+    },
+    "127": {
+      "date": "2011",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/20c4334c-31fb-4bbb-b91b-188a7587b478",
+      "artist": "Бьянка",
+      "title": "А чё чё",
+      "confidence": "musicbrainz-exact"
+    },
+    "128": {
+      "date": "2006",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/12781df9-4b8c-425a-9591-cae75681309e",
+      "artist": "Бьянка",
+      "title": "Были танцы",
+      "confidence": "musicbrainz-exact"
+    },
+    "129": {
+      "date": "2022-09-09",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9477d82e-65b3-44dd-a56e-e8576e513ee0",
+      "artist": "Бьянка",
+      "title": "Девочка твоя",
+      "confidence": "musicbrainz-exact"
+    },
+    "130": {
+      "date": "2016-10-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a918b44f-de46-45a9-b3e0-4cb2f1d11337",
+      "artist": "Валентин Стрыкало",
+      "title": "92",
+      "confidence": "musicbrainz-exact"
+    },
+    "131": {
+      "date": "2016-10-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3306185c-4d46-418b-8613-fb37b28ec43d",
+      "artist": "Валентин Стрыкало",
+      "title": "Бесполезно",
+      "confidence": "musicbrainz-exact"
+    },
+    "132": {
+      "date": "2012-02-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/cc5fb8c6-efca-42aa-96b7-1beefd57ab42",
+      "artist": "Валентин Стрыкало",
+      "title": "Всё решено",
+      "confidence": "musicbrainz-exact"
+    },
+    "134": {
+      "date": "2012-02-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/f7a67e03-ab88-49eb-bfba-7ac17145363a",
+      "artist": "Валентин Стрыкало",
+      "title": "Дешёвые драмы",
+      "confidence": "musicbrainz-exact"
+    },
+    "135": {
+      "date": "2013-10-20",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/7e0ad4ce-be6d-4fba-bc2d-6429d34f476a",
+      "artist": "Валентин Стрыкало",
+      "title": "Знаешь, Таня",
+      "confidence": "musicbrainz-exact"
+    },
+    "136": {
+      "date": "2011",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/38ac292c-f4da-45f6-855e-48ca84aec7b3",
+      "artist": "Валентин Стрыкало",
+      "title": "Кайен",
+      "confidence": "musicbrainz-exact"
+    },
+    "137": {
+      "date": "2013",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/41874189-eb0d-4727-8b40-d84a5f3be443",
+      "artist": "Валентин Стрыкало",
+      "title": "Кладбище самолётов",
+      "confidence": "musicbrainz-exact"
+    },
+    "138": {
+      "date": "2013-10-20",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/e5eb85ff-525a-4c05-ad53-763f02cda4e2",
+      "artist": "Валентин Стрыкало",
+      "title": "Космос нас ждёт",
+      "confidence": "musicbrainz-exact"
+    },
+    "139": {
+      "date": "2011",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/40bc2242-62f4-4091-aa3b-7d89d5351800",
+      "artist": "Валентин Стрыкало",
+      "title": "Наше лето",
+      "confidence": "musicbrainz-exact"
+    },
+    "141": {
+      "date": "2013-10-20",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/786d57eb-62b4-4cc5-b095-d1b3e32c6d4b",
+      "artist": "Валентин Стрыкало",
+      "title": "Офисный стиляга",
+      "confidence": "musicbrainz-exact"
+    },
+    "142": {
+      "date": "2012-02-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/923bd451-026a-40fa-bffb-75d6e2bba720",
+      "artist": "Валентин Стрыкало",
+      "title": "Песня для девочек",
+      "confidence": "musicbrainz-exact"
+    },
+    "143": {
+      "date": "2012",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/15c5253c-0d8a-40fc-b861-9a133b451d09",
+      "artist": "Валентин Стрыкало",
+      "title": "Рустем",
+      "confidence": "musicbrainz-exact"
+    },
+    "146": {
+      "date": "2013-10-20",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/6c0b7023-89ba-4eb9-bd3f-4a3d86d2e2ca",
+      "artist": "Валентин Стрыкало",
+      "title": "Ты не такая",
+      "confidence": "musicbrainz-exact"
+    },
+    "147": {
+      "date": "2013-10-20",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9b553d61-d4f8-4a57-8bf1-82a3b721d0e3",
+      "artist": "Валентин Стрыкало",
+      "title": "Улица Сталеваров",
+      "confidence": "musicbrainz-exact"
+    },
+    "148": {
+      "date": "2012-02-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/41a8fce0-12a6-4a7c-8c79-66db5e968d74",
+      "artist": "Валентин Стрыкало",
+      "title": "Фанк",
+      "confidence": "musicbrainz-exact"
+    },
+    "149": {
+      "date": "2000",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/f341b3da-830c-4ec5-8268-0f9963a632be",
+      "artist": "Валентина Толкунова",
+      "title": "Кабы не было зимы",
+      "confidence": "musicbrainz-exact"
+    },
+    "152": {
+      "date": "2021-01-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/47fa4450-6163-4ae7-8516-ca9505e49b84",
+      "artist": "Ваня Дмитриенко",
+      "title": "Венера-Юпитер",
+      "confidence": "musicbrainz-exact"
+    },
+    "155": {
+      "date": "2022-02-04",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/035b5fcc-bba4-404c-ada4-bb0adfaaeecd",
+      "artist": "Ваня Дмитриенко",
+      "title": "Лего",
+      "confidence": "musicbrainz-exact"
+    },
     "160": {
       "date": "2021-03-03",
       "precision": "day",
@@ -5212,6 +5404,206 @@
     }
   },
   "attempts": {
+    "118": {
+      "signature": "братья грим|ресницы",
+      "checkedAt": "2026-11-24T10:29:14.377Z",
+      "found": true
+    },
+    "119": {
+      "signature": "бредишь|мокрыми",
+      "checkedAt": "2026-11-24T10:29:12.916Z",
+      "found": false
+    },
+    "120": {
+      "signature": "бредишь|на руках",
+      "checkedAt": "2026-11-24T10:29:04.326Z",
+      "found": false
+    },
+    "121": {
+      "signature": "бременские музыканты|ничего на свете лучше нету",
+      "checkedAt": "2026-11-24T10:29:02.863Z",
+      "found": false
+    },
+    "122": {
+      "signature": "бумбокс|вахтерам",
+      "checkedAt": "2026-11-24T10:28:54.266Z",
+      "found": true
+    },
+    "123": {
+      "signature": "бумбокс|летнии дождь",
+      "checkedAt": "2026-11-24T10:28:52.814Z",
+      "found": true
+    },
+    "124": {
+      "signature": "бумбокс|пепел",
+      "checkedAt": "2026-11-24T10:28:44.207Z",
+      "found": false
+    },
+    "125": {
+      "signature": "бумбокс|та что",
+      "checkedAt": "2026-11-24T10:28:42.751Z",
+      "found": false
+    },
+    "126": {
+      "signature": "бумбокс|хоттабыч джин на восьмом этаже",
+      "checkedAt": "2026-11-24T10:28:34.160Z",
+      "found": false
+    },
+    "127": {
+      "signature": "бьянка|а че че",
+      "checkedAt": "2026-11-24T10:28:32.718Z",
+      "found": true
+    },
+    "128": {
+      "signature": "бьянка|были танцы",
+      "checkedAt": "2026-11-24T10:28:24.103Z",
+      "found": true
+    },
+    "129": {
+      "signature": "бьянка|девочка твоя",
+      "checkedAt": "2026-11-24T10:28:15.494Z",
+      "found": true
+    },
+    "130": {
+      "signature": "валентин стрыкало|92",
+      "checkedAt": "2026-11-24T10:28:14.041Z",
+      "found": true
+    },
+    "131": {
+      "signature": "валентин стрыкало|бесполезно",
+      "checkedAt": "2026-11-24T10:28:12.597Z",
+      "found": true
+    },
+    "132": {
+      "signature": "валентин стрыкало|все решено",
+      "checkedAt": "2026-11-24T10:28:12.402Z",
+      "found": true
+    },
+    "133": {
+      "signature": "валентин стрыкало|гори",
+      "checkedAt": "2026-11-24T10:28:02.206Z",
+      "found": false
+    },
+    "134": {
+      "signature": "валентин стрыкало|дешевые драмы",
+      "checkedAt": "2026-11-24T10:28:00.757Z",
+      "found": true
+    },
+    "135": {
+      "signature": "валентин стрыкало|знаешь таня",
+      "checkedAt": "2026-11-24T10:27:53.404Z",
+      "found": true
+    },
+    "136": {
+      "signature": "валентин стрыкало|каиен",
+      "checkedAt": "2026-11-24T10:27:51.338Z",
+      "found": true
+    },
+    "137": {
+      "signature": "валентин стрыкало|кладбище самолетов",
+      "checkedAt": "2026-11-24T10:27:49.252Z",
+      "found": true
+    },
+    "138": {
+      "signature": "валентин стрыкало|космос нас ждет",
+      "checkedAt": "2026-11-24T10:27:48.796Z",
+      "found": true
+    },
+    "139": {
+      "signature": "валентин стрыкало|наше лето",
+      "checkedAt": "2026-11-24T10:27:47.487Z",
+      "found": true
+    },
+    "140": {
+      "signature": "валентин стрыкало|он постоянно что то ест",
+      "checkedAt": "2026-11-24T10:27:45.190Z",
+      "found": false
+    },
+    "141": {
+      "signature": "валентин стрыкало|офисныи стиляга",
+      "checkedAt": "2026-11-24T10:27:22.121Z",
+      "found": true
+    },
+    "142": {
+      "signature": "валентин стрыкало|песня для девочек",
+      "checkedAt": "2026-11-24T10:27:20.674Z",
+      "found": true
+    },
+    "143": {
+      "signature": "валентин стрыкало|рустем",
+      "checkedAt": "2026-11-24T10:27:19.216Z",
+      "found": true
+    },
+    "144": {
+      "signature": "валентин стрыкало|с первомаем",
+      "checkedAt": "2026-11-24T10:27:17.769Z",
+      "found": false
+    },
+    "145": {
+      "signature": "валентин стрыкало|сережка",
+      "checkedAt": "2026-11-24T10:27:16.310Z",
+      "found": false
+    },
+    "146": {
+      "signature": "валентин стрыкало|ты не такая",
+      "checkedAt": "2026-11-24T10:27:15.216Z",
+      "found": true
+    },
+    "147": {
+      "signature": "валентин стрыкало|улица сталеваров",
+      "checkedAt": "2026-11-24T10:26:52.104Z",
+      "found": true
+    },
+    "148": {
+      "signature": "валентин стрыкало|фанк",
+      "checkedAt": "2026-11-24T10:26:50.648Z",
+      "found": true
+    },
+    "149": {
+      "signature": "валентина толкунова|кабы не было зимы",
+      "checkedAt": "2026-11-24T10:26:49.221Z",
+      "found": true
+    },
+    "150": {
+      "signature": "ваня дмитриенко|36 6",
+      "checkedAt": "2026-11-24T10:26:47.738Z",
+      "found": false
+    },
+    "151": {
+      "signature": "ваня дмитриенко|васильки",
+      "checkedAt": "2026-11-24T10:26:46.291Z",
+      "found": false
+    },
+    "152": {
+      "signature": "ваня дмитриенко|венера юпитер",
+      "checkedAt": "2026-11-24T10:26:44.857Z",
+      "found": true
+    },
+    "153": {
+      "signature": "ваня дмитриенко|вишневыи",
+      "checkedAt": "2026-11-24T10:26:43.430Z",
+      "found": false
+    },
+    "154": {
+      "signature": "ваня дмитриенко|дыши",
+      "checkedAt": "2026-11-24T10:26:41.944Z",
+      "found": false
+    },
+    "155": {
+      "signature": "ваня дмитриенко|лего",
+      "checkedAt": "2026-11-24T10:26:40.535Z",
+      "found": true
+    },
+    "156": {
+      "signature": "ваня дмитриенко|настоящая",
+      "checkedAt": "2026-11-24T10:26:39.044Z",
+      "found": false
+    },
+    "157": {
+      "signature": "ваня дмитриенко|прятки",
+      "checkedAt": "2026-11-24T10:26:38.216Z",
+      "found": false
+    },
     "158": {
       "signature": "ваня дмитриенко|ртуть",
       "checkedAt": "2026-11-24T00:26:50.896Z",
@@ -10035,6 +10427,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 651
+    "verifiedDates": 675
   }
 }
