@@ -1,7 +1,207 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-23T12:38:32.819Z",
+  "updatedAt": "2026-11-24T00:26:51.338Z",
   "dates": {
+    "160": {
+      "date": "2021-03-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/cf8ac447-1200-4940-a86c-290603659714",
+      "artist": "Ваня Дмитриенко",
+      "title": "Стерва",
+      "confidence": "musicbrainz-exact"
+    },
+    "165": {
+      "date": "2000",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/154ded98-46f4-4e3f-8e1f-7f3220c5e814",
+      "artist": "ВИА Гра",
+      "title": "Попытка №5",
+      "confidence": "musicbrainz-exact"
+    },
+    "167": {
+      "date": "2011",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/8e3e8f34-ab8b-4ce9-88cd-eee7da42389f",
+      "artist": "Виктор Салтыков",
+      "title": "Белая ночь",
+      "confidence": "musicbrainz-exact"
+    },
+    "168": {
+      "date": "1994",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/a1d32daa-046d-41f7-8236-b445aea64820",
+      "artist": "Виктор Цой",
+      "title": "Каждую ночь",
+      "confidence": "musicbrainz-exact"
+    },
+    "169": {
+      "date": "2009",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/573241dd-eecf-4168-9e38-5ea5ca8ebc00",
+      "artist": "Винтаж",
+      "title": "Ева",
+      "confidence": "musicbrainz-exact"
+    },
+    "170": {
+      "date": "2013",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/2c9991cd-ccf5-4953-a9f5-dfffbb3256c9",
+      "artist": "Винтаж",
+      "title": "Знак Водолея",
+      "confidence": "musicbrainz-exact"
+    },
+    "171": {
+      "date": "2014",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/407a16a4-4518-474b-b7db-b42b01b4c455",
+      "artist": "Винтаж",
+      "title": "Когда рядом ты",
+      "confidence": "musicbrainz-exact"
+    },
+    "172": {
+      "date": "2010",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/1dad669f-a907-42ec-85eb-cb38d6de0da9",
+      "artist": "Винтаж",
+      "title": "Роман",
+      "confidence": "musicbrainz-exact"
+    },
+    "174": {
+      "date": "1968",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/5419349c-4423-4b97-9077-66e1387ba1c8",
+      "artist": "Владимир Высоцкий",
+      "title": "Песня о друге",
+      "confidence": "musicbrainz-exact"
+    },
+    "175": {
+      "date": "2022-04-28",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/48b805e5-c6bb-48c1-a75a-f0078c4eb14c",
+      "artist": "Владимир Клявин",
+      "title": "Планы",
+      "confidence": "musicbrainz-exact"
+    },
+    "179": {
+      "date": "2006",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4978e889-dcdb-4606-9d09-85fe572e5ca1",
+      "artist": "Город 312",
+      "title": "Фонари",
+      "confidence": "musicbrainz-exact"
+    },
+    "180": {
+      "date": "2011",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/fa8b3a86-c0b9-46cd-b8f6-946392d684b6",
+      "artist": "Градусы",
+      "title": "Голая",
+      "confidence": "musicbrainz-exact"
+    },
+    "181": {
+      "date": "2009",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/0d438472-0540-4af4-815f-8f49edad1897",
+      "artist": "Градусы",
+      "title": "Режиссёр",
+      "confidence": "musicbrainz-exact"
+    },
+    "182": {
+      "date": "1988",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/a9967578-b33c-4299-90ad-94ff06ca9c30",
+      "artist": "Гражданская Оборона",
+      "title": "Всё идёт по плану",
+      "confidence": "musicbrainz-exact"
+    },
+    "183": {
+      "date": "2005",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/3613ffcb-ec4c-43db-a7bd-35b22608976c",
+      "artist": "Гражданская Оборона",
+      "title": "Любо",
+      "confidence": "musicbrainz-exact"
+    },
+    "184": {
+      "date": "1997",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/2b9a02ef-d0eb-497d-9791-07d3c24e6f82",
+      "artist": "Гражданская Оборона",
+      "title": "Мёртвые",
+      "confidence": "musicbrainz-exact"
+    },
+    "185": {
+      "date": "1996",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/d83093b2-0046-496a-8d5a-2a9efce56d23",
+      "artist": "Гражданская Оборона",
+      "title": "Отряд не заметил потери бойца",
+      "confidence": "musicbrainz-exact"
+    },
+    "186": {
+      "date": "2019-06-21",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/bc2ad501-f6d3-4033-bb5e-016a2bcde392",
+      "artist": "Гречка",
+      "title": "Здесь были",
+      "confidence": "musicbrainz-exact"
+    },
+    "188": {
+      "date": "2018-11-09",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a7e4d54e-621e-4958-9997-f773ee60737b",
+      "artist": "Гречка",
+      "title": "Твои руки",
+      "confidence": "musicbrainz-exact"
+    },
+    "190": {
+      "date": "2017-04-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a35ab757-1cc7-48ab-a8f2-3d44ad13287b",
+      "artist": "Дайте танк (!)",
+      "title": "Бесы",
+      "confidence": "musicbrainz-exact"
+    },
+    "191": {
+      "date": "2018-11-08",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/e21fe15e-40e6-4da3-bd83-290ff37509eb",
+      "artist": "Дайте танк (!)",
+      "title": "Вы",
+      "confidence": "musicbrainz-exact"
+    },
+    "192": {
+      "date": "2017-04-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/b95d11e3-745f-4ec0-a00f-0642952192c6",
+      "artist": "Дайте танк (!)",
+      "title": "Друг",
+      "confidence": "musicbrainz-exact"
+    },
+    "193": {
+      "date": "2017-04-24",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/789003d6-54c6-44a3-b5a4-f7c4c49f385e",
+      "artist": "Дайте танк (!)",
+      "title": "Курьер",
+      "confidence": "musicbrainz-exact"
+    },
+    "194": {
+      "date": "2020",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/16994c23-9690-4fd5-aff4-43302cc69f23",
+      "artist": "Дайте танк (!)",
+      "title": "Люди",
+      "confidence": "musicbrainz-exact"
+    },
+    "195": {
+      "date": "2013-01-07",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/98863da6-edf7-48ca-86bc-1c72b436acab",
+      "artist": "Дайте танк (!)",
+      "title": "Маленький",
+      "confidence": "musicbrainz-exact"
+    },
     "196": {
       "date": "2017-04-24",
       "precision": "day",
@@ -24,6 +224,14 @@
       "source": "https://musicbrainz.org/recording/7485e787-3a25-45b4-91ac-5b46086e5d64",
       "artist": "Дайте танк (!)",
       "title": "Утро",
+      "confidence": "musicbrainz-exact"
+    },
+    "199": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/9523c1f3-e893-443b-97f6-8245dade6db6",
+      "artist": "ДДТ",
+      "title": "Осенняя",
       "confidence": "musicbrainz-exact"
     },
     "200": {
@@ -120,6 +328,14 @@
       "source": "https://musicbrainz.org/recording/652ec236-1d31-4355-8700-495befd049ed",
       "artist": "Джизус",
       "title": "Элисс",
+      "confidence": "musicbrainz-exact"
+    },
+    "215": {
+      "date": "2019-12-13",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c8eb7f71-ae5d-4133-b44e-2b64a558e264",
+      "artist": "Джизус",
+      "title": "Я познал себя",
       "confidence": "musicbrainz-exact"
     },
     "216": {
@@ -4996,6 +5212,196 @@
     }
   },
   "attempts": {
+    "158": {
+      "signature": "ваня дмитриенко|ртуть",
+      "checkedAt": "2026-11-24T00:26:50.896Z",
+      "found": false
+    },
+    "159": {
+      "signature": "ваня дмитриенко|силуэт",
+      "checkedAt": "2026-11-24T00:26:49.592Z",
+      "found": false
+    },
+    "160": {
+      "signature": "ваня дмитриенко|стерва",
+      "checkedAt": "2026-11-24T00:26:40.873Z",
+      "found": true
+    },
+    "161": {
+      "signature": "ваня дмитриенко|цветаева",
+      "checkedAt": "2026-11-24T00:26:39.473Z",
+      "found": false
+    },
+    "162": {
+      "signature": "ваня дмитриенко|шелк",
+      "checkedAt": "2026-11-24T00:26:30.817Z",
+      "found": false
+    },
+    "163": {
+      "signature": "ваня дмитриенко yanix|инеи",
+      "checkedAt": "2026-11-24T00:26:29.377Z",
+      "found": false
+    },
+    "164": {
+      "signature": "вася демчук|sorry",
+      "checkedAt": "2026-11-24T00:26:20.772Z",
+      "found": false
+    },
+    "165": {
+      "signature": "виа гра|попытка o5",
+      "checkedAt": "2026-11-24T00:26:19.339Z",
+      "found": true
+    },
+    "166": {
+      "signature": "виктор петлюра|зачем ты это сделала",
+      "checkedAt": "2026-11-24T00:26:10.743Z",
+      "found": false
+    },
+    "167": {
+      "signature": "виктор салтыков|белая ночь",
+      "checkedAt": "2026-11-24T00:26:09.410Z",
+      "found": true
+    },
+    "168": {
+      "signature": "виктор цои|каждую ночь",
+      "checkedAt": "2026-11-24T00:26:00.990Z",
+      "found": true
+    },
+    "169": {
+      "signature": "винтаж|ева",
+      "checkedAt": "2026-11-24T00:25:38.103Z",
+      "found": true
+    },
+    "170": {
+      "signature": "винтаж|знак водолея",
+      "checkedAt": "2026-11-24T00:25:36.859Z",
+      "found": true
+    },
+    "171": {
+      "signature": "винтаж|когда рядом ты",
+      "checkedAt": "2026-11-24T00:25:14.102Z",
+      "found": true
+    },
+    "172": {
+      "signature": "винтаж|роман",
+      "checkedAt": "2026-11-24T00:24:51.139Z",
+      "found": true
+    },
+    "173": {
+      "signature": "влади|сочные мечты feat уля wow band",
+      "checkedAt": "2026-11-24T00:24:49.576Z",
+      "found": false
+    },
+    "174": {
+      "signature": "владимир высоцкии|песня о друге",
+      "checkedAt": "2026-11-24T00:24:41.005Z",
+      "found": true
+    },
+    "175": {
+      "signature": "владимир клявин|планы",
+      "checkedAt": "2026-11-24T00:24:39.532Z",
+      "found": true
+    },
+    "176": {
+      "signature": "гио пика|птицы",
+      "checkedAt": "2026-11-24T00:24:30.941Z",
+      "found": false
+    },
+    "177": {
+      "signature": "гио пика|фонтанчик с черным дельфином",
+      "checkedAt": "2026-11-24T00:24:29.494Z",
+      "found": false
+    },
+    "178": {
+      "signature": "глеб самоилоff the matrixx|два корабля",
+      "checkedAt": "2026-11-24T00:24:20.894Z",
+      "found": false
+    },
+    "179": {
+      "signature": "город 312|фонари",
+      "checkedAt": "2026-11-24T00:24:19.459Z",
+      "found": true
+    },
+    "180": {
+      "signature": "градусы|голая",
+      "checkedAt": "2026-11-24T00:24:10.856Z",
+      "found": true
+    },
+    "181": {
+      "signature": "градусы|режиссер",
+      "checkedAt": "2026-11-24T00:24:09.412Z",
+      "found": true
+    },
+    "182": {
+      "signature": "гражданская оборона|все идет по плану",
+      "checkedAt": "2026-11-24T00:24:00.836Z",
+      "found": true
+    },
+    "183": {
+      "signature": "гражданская оборона|любо",
+      "checkedAt": "2026-11-24T00:23:59.358Z",
+      "found": true
+    },
+    "184": {
+      "signature": "гражданская оборона|мертвые",
+      "checkedAt": "2026-11-24T00:23:50.777Z",
+      "found": true
+    },
+    "185": {
+      "signature": "гражданская оборона|отряд не заметил потери боица",
+      "checkedAt": "2026-11-24T00:23:49.330Z",
+      "found": true
+    },
+    "186": {
+      "signature": "гречка|здесь были",
+      "checkedAt": "2026-11-24T00:23:40.732Z",
+      "found": true
+    },
+    "187": {
+      "signature": "гречка|люби меня",
+      "checkedAt": "2026-11-24T00:23:39.272Z",
+      "found": false
+    },
+    "188": {
+      "signature": "гречка|твои руки",
+      "checkedAt": "2026-11-24T00:23:30.682Z",
+      "found": true
+    },
+    "189": {
+      "signature": "гречка|я до сих пор вспоминаю",
+      "checkedAt": "2026-11-24T00:23:29.224Z",
+      "found": false
+    },
+    "190": {
+      "signature": "даите танк|бесы",
+      "checkedAt": "2026-11-24T00:23:20.635Z",
+      "found": true
+    },
+    "191": {
+      "signature": "даите танк|вы",
+      "checkedAt": "2026-11-24T00:23:19.193Z",
+      "found": true
+    },
+    "192": {
+      "signature": "даите танк|друг",
+      "checkedAt": "2026-11-24T00:23:10.596Z",
+      "found": true
+    },
+    "193": {
+      "signature": "даите танк|курьер",
+      "checkedAt": "2026-11-24T00:23:09.145Z",
+      "found": true
+    },
+    "194": {
+      "signature": "даите танк|люди",
+      "checkedAt": "2026-11-24T00:23:00.564Z",
+      "found": true
+    },
+    "195": {
+      "signature": "даите танк|маленькии",
+      "checkedAt": "2026-11-24T00:22:52.003Z",
+      "found": true
+    },
     "196": {
       "signature": "даите танк|спам",
       "checkedAt": "2026-11-23T12:38:32.390Z",
@@ -5009,6 +5415,11 @@
     "198": {
       "signature": "даите танк|утро",
       "checkedAt": "2026-11-23T12:38:08.179Z",
+      "found": true
+    },
+    "199": {
+      "signature": "ддт|осенняя",
+      "checkedAt": "2026-11-24T00:22:50.530Z",
       "found": true
     },
     "200": {
@@ -5084,6 +5495,11 @@
     "214": {
       "signature": "джизус|элисс",
       "checkedAt": "2026-11-23T12:36:13.167Z",
+      "found": true
+    },
+    "215": {
+      "signature": "джизус|я познал себя",
+      "checkedAt": "2026-11-24T00:22:49.283Z",
       "found": true
     },
     "216": {
@@ -9619,6 +10035,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 624
+    "verifiedDates": 651
   }
 }
