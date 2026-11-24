@@ -1,7 +1,16 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T02:37:13.555Z",
+  "updatedAt": "2026-11-24T12:58:27.414Z",
   "tracks": {
+    "563": {
+      "artist": "Сектор Газа",
+      "title": "Лирика",
+      "videoId": "etekDE13UKY",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/1e2c0cee-03c3-4da3-a46f-2b86b93c6623",
+      "verifiedAt": "2026-11-24T12:55:49.068Z"
+    },
     "628": {
       "artist": "Три дня дождя",
       "title": "Отпускай",
@@ -242,6 +251,131 @@
     "347": {
       "signature": "король и шут|лесник",
       "checkedAt": "2026-11-17T08:59:19.279Z",
+      "found": false
+    },
+    "544": {
+      "signature": "руки вверх|маленькие девочки",
+      "checkedAt": "2026-11-24T12:58:26.959Z",
+      "found": false
+    },
+    "545": {
+      "signature": "руки вверх|он тебя целует",
+      "checkedAt": "2026-11-24T12:58:07.296Z",
+      "found": false
+    },
+    "546": {
+      "signature": "руки вверх|прости",
+      "checkedAt": "2026-11-24T12:57:56.643Z",
+      "found": false
+    },
+    "547": {
+      "signature": "руки вверх|студент",
+      "checkedAt": "2026-11-24T12:57:51.801Z",
+      "found": false
+    },
+    "548": {
+      "signature": "руки вверх|чужие губы",
+      "checkedAt": "2026-11-24T12:57:47.747Z",
+      "found": false
+    },
+    "549": {
+      "signature": "свидание|08 12 1980",
+      "checkedAt": "2026-11-24T12:57:40.933Z",
+      "found": false
+    },
+    "550": {
+      "signature": "свидание|красива",
+      "checkedAt": "2026-11-24T12:57:21.127Z",
+      "found": false
+    },
+    "551": {
+      "signature": "свидание|меняться телами",
+      "checkedAt": "2026-11-24T12:57:14.950Z",
+      "found": false
+    },
+    "552": {
+      "signature": "свидание|о любви",
+      "checkedAt": "2026-11-24T12:57:08.907Z",
+      "found": false
+    },
+    "553": {
+      "signature": "свидание|помнишь",
+      "checkedAt": "2026-11-24T12:57:05.930Z",
+      "found": false
+    },
+    "554": {
+      "signature": "свидание|родинки",
+      "checkedAt": "2026-11-24T12:57:00.901Z",
+      "found": false
+    },
+    "555": {
+      "signature": "свидание|случаиная любовь",
+      "checkedAt": "2026-11-24T12:56:41.081Z",
+      "found": false
+    },
+    "556": {
+      "signature": "сдп ии группа|сыпь гармоника",
+      "checkedAt": "2026-11-24T12:56:34.916Z",
+      "found": false
+    },
+    "557": {
+      "signature": "сектор газа|30 лет",
+      "checkedAt": "2026-11-24T12:56:34.716Z",
+      "found": false
+    },
+    "558": {
+      "signature": "сектор газа|бомж",
+      "checkedAt": "2026-11-24T12:56:14.886Z",
+      "found": false
+    },
+    "559": {
+      "signature": "сектор газа|вальпургиева ночь",
+      "checkedAt": "2026-11-24T12:56:07.250Z",
+      "found": false
+    },
+    "560": {
+      "signature": "сектор газа|демобилизация",
+      "checkedAt": "2026-11-24T12:55:59.551Z",
+      "found": false
+    },
+    "561": {
+      "signature": "сектор газа|казачья",
+      "checkedAt": "2026-11-24T12:55:56.548Z",
+      "found": false
+    },
+    "562": {
+      "signature": "сектор газа|колхозныи панк",
+      "checkedAt": "2026-11-24T12:55:53.681Z",
+      "found": false
+    },
+    "563": {
+      "signature": "сектор газа|лирика",
+      "checkedAt": "2026-11-24T12:55:49.069Z",
+      "found": true
+    },
+    "564": {
+      "signature": "сектор газа|ночь перед рождеством",
+      "checkedAt": "2026-11-24T12:55:44.609Z",
+      "found": false
+    },
+    "565": {
+      "signature": "сектор газа|свидание",
+      "checkedAt": "2026-11-24T12:55:41.611Z",
+      "found": false
+    },
+    "566": {
+      "signature": "сектор газа|твои звонок",
+      "checkedAt": "2026-11-24T12:55:38.544Z",
+      "found": false
+    },
+    "567": {
+      "signature": "сектор газа|туман",
+      "checkedAt": "2026-11-24T12:55:35.560Z",
+      "found": false
+    },
+    "568": {
+      "signature": "сектор газа|частушки",
+      "checkedAt": "2026-11-24T12:55:29.389Z",
       "found": false
     },
     "569": {
@@ -2982,6 +3116,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedVideos": 26
+    "verifiedVideos": 27
   }
 }
