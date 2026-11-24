@@ -1,7 +1,207 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T10:29:14.863Z",
+  "updatedAt": "2026-11-24T21:00:48.524Z",
   "dates": {
+    "79": {
+      "date": "1997",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/3d518709-779d-4aa7-835f-c0077dac4b66",
+      "artist": "Ария",
+      "title": "Улица Роз",
+      "confidence": "musicbrainz-exact"
+    },
+    "80": {
+      "date": "1997",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/7e6263b0-f1d0-4855-a9de-bd80010b0ff8",
+      "artist": "Ария",
+      "title": "Штиль",
+      "confidence": "musicbrainz-exact"
+    },
+    "86": {
+      "date": "2009",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/6cefa792-1169-4afc-979c-4dbe5675bf36",
+      "artist": "Баста",
+      "title": "Моя игра",
+      "confidence": "musicbrainz-exact"
+    },
+    "87": {
+      "date": "2019-10-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/021d1a85-51c5-4f2d-b4c7-0c36b80267a0",
+      "artist": "Баста",
+      "title": "На заре",
+      "confidence": "musicbrainz-exact"
+    },
+    "88": {
+      "date": "2019-12-30",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/4a6412bd-6bc2-44c1-88a7-08674d9df050",
+      "artist": "Баста",
+      "title": "Сансара",
+      "confidence": "musicbrainz-exact"
+    },
+    "91": {
+      "date": "2010-04-20",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9080bd2e-4291-432b-b507-017a7f40f4e4",
+      "artist": "Баста",
+      "title": "Урбан",
+      "confidence": "musicbrainz-exact"
+    },
+    "94": {
+      "date": "1998",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/03e0edcf-c66e-4cd1-a40b-49dd41e3ea73",
+      "artist": "Белый Орёл",
+      "title": "Как упоительны в России вечера",
+      "confidence": "musicbrainz-exact"
+    },
+    "95": {
+      "date": "2000-02-02",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/cd92c535-5ba7-4160-be91-b21c14cd0023",
+      "artist": "Би-2",
+      "title": "Варвара",
+      "confidence": "musicbrainz-exact"
+    },
+    "96": {
+      "date": "2012",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/5cdd8b6c-479a-4e39-90af-cb638f316569",
+      "artist": "Би-2",
+      "title": "Её глаза",
+      "confidence": "musicbrainz-exact"
+    },
+    "97": {
+      "date": "2014-09-16",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/86882fe8-f01f-4856-8408-f9d059bc57c2",
+      "artist": "Би-2",
+      "title": "Компромисс",
+      "confidence": "musicbrainz-exact"
+    },
+    "98": {
+      "date": "2001-12-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c49650c9-bb57-4657-9061-f963f79d37ff",
+      "artist": "Би-2",
+      "title": "Мой рок-н-ролл",
+      "confidence": "musicbrainz-exact"
+    },
+    "100": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/c3cf38b5-96c2-44d7-8025-db30a36c04c8",
+      "artist": "Би-2",
+      "title": "Полковнику никто не пишет",
+      "confidence": "musicbrainz-exact"
+    },
+    "101": {
+      "date": "2000-02-02",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c9b15bbe-2196-457a-9c73-60a5f3493b62",
+      "artist": "Би-2",
+      "title": "Серебро",
+      "confidence": "musicbrainz-exact"
+    },
+    "103": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4ab53b6f-cf43-4ee9-9a4e-00860ad1168b",
+      "artist": "Блестящие",
+      "title": "А я всё летала",
+      "confidence": "musicbrainz-exact"
+    },
+    "105": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/955b6af0-1d69-4919-8c37-a045bacc7084",
+      "artist": "Блестящие",
+      "title": "За четыре моря",
+      "confidence": "musicbrainz-exact"
+    },
+    "106": {
+      "date": "1994",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/f6460a99-59ff-49fa-9441-429fc71959ae",
+      "artist": "Божья Коровка",
+      "title": "Гранитный камушек",
+      "confidence": "musicbrainz-exact"
+    },
+    "108": {
+      "date": "2025-10-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/e70ac727-7560-44d0-a876-1c6dc53c491d",
+      "artist": "Бонд с кнопкой",
+      "title": "Любовь",
+      "confidence": "musicbrainz-exact"
+    },
+    "109": {
+      "date": "2025-10-17",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/bfd06255-9712-4893-8384-7f1746c6b4ae",
+      "artist": "Бонд с кнопкой",
+      "title": "Свои",
+      "confidence": "musicbrainz-exact"
+    },
+    "110": {
+      "date": "2025-10-17",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/04811928-1a21-4701-b081-7df778e759c7",
+      "artist": "Бонд с кнопкой",
+      "title": "Сидр",
+      "confidence": "musicbrainz-exact"
+    },
+    "112": {
+      "date": "1995",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/0fb4b07c-74f6-4a5e-8937-78f72a56e927",
+      "artist": "Браво",
+      "title": "Ветер знает",
+      "confidence": "musicbrainz-exact"
+    },
+    "113": {
+      "date": "1993",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/45a4952f-17ad-4e1e-aa7e-af67bd9367c0",
+      "artist": "Браво",
+      "title": "Дорога в облака",
+      "confidence": "musicbrainz-exact"
+    },
+    "114": {
+      "date": "1994",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/2a01b691-31bd-450f-80c1-c8e7a6b88f64",
+      "artist": "Браво",
+      "title": "Любите, девушки",
+      "confidence": "musicbrainz-exact"
+    },
+    "115": {
+      "date": "1987",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/697ee52f-f090-440d-98d6-9a12e9161967",
+      "artist": "Браво",
+      "title": "Старый отель",
+      "confidence": "musicbrainz-exact"
+    },
+    "116": {
+      "date": "1995",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/c4c6f703-95d1-4450-8f45-cad9a8148148",
+      "artist": "Браво",
+      "title": "Этот город",
+      "confidence": "musicbrainz-exact"
+    },
+    "117": {
+      "date": "2005-06-06",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/59cd7d76-7dd4-41a8-89d5-b9af23708856",
+      "artist": "Братья Грим",
+      "title": "Кустурица",
+      "confidence": "musicbrainz-exact"
+    },
     "118": {
       "date": "2005",
       "precision": "year",
@@ -5404,6 +5604,181 @@
     }
   },
   "attempts": {
+    "79": {
+      "signature": "ария|улица роз",
+      "checkedAt": "2026-11-24T21:00:04.090Z",
+      "found": true
+    },
+    "80": {
+      "signature": "ария|штиль",
+      "checkedAt": "2026-11-24T21:00:02.909Z",
+      "found": true
+    },
+    "82": {
+      "signature": "ахра|карие глаза",
+      "checkedAt": "2026-11-24T20:59:18.735Z",
+      "found": false
+    },
+    "84": {
+      "signature": "баста|где ты теперь и с кем feat hammali navai",
+      "checkedAt": "2026-11-24T20:58:34.311Z",
+      "found": false
+    },
+    "85": {
+      "signature": "баста|моя вселенная feat tati",
+      "checkedAt": "2026-11-24T20:58:33.134Z",
+      "found": false
+    },
+    "86": {
+      "signature": "баста|моя игра",
+      "checkedAt": "2026-11-24T20:58:10.140Z",
+      "found": true
+    },
+    "87": {
+      "signature": "баста|на заре",
+      "checkedAt": "2026-11-24T20:58:09.185Z",
+      "found": true
+    },
+    "88": {
+      "signature": "баста|сансара",
+      "checkedAt": "2026-11-24T20:57:45.946Z",
+      "found": true
+    },
+    "89": {
+      "signature": "баста|темная ночь",
+      "checkedAt": "2026-11-24T20:57:44.499Z",
+      "found": false
+    },
+    "90": {
+      "signature": "баста|ты была права",
+      "checkedAt": "2026-11-24T20:57:43.049Z",
+      "found": false
+    },
+    "91": {
+      "signature": "баста|урбан",
+      "checkedAt": "2026-11-24T20:57:34.459Z",
+      "found": true
+    },
+    "92": {
+      "signature": "баста|я наиду тебя через века",
+      "checkedAt": "2026-11-24T20:57:26.194Z",
+      "found": false
+    },
+    "94": {
+      "signature": "белыи орел|как упоительны в россии вечера",
+      "checkedAt": "2026-11-24T20:56:20.137Z",
+      "found": true
+    },
+    "95": {
+      "signature": "би 2|варвара",
+      "checkedAt": "2026-11-24T20:56:18.702Z",
+      "found": true
+    },
+    "96": {
+      "signature": "би 2|ее глаза",
+      "checkedAt": "2026-11-24T20:56:10.122Z",
+      "found": true
+    },
+    "97": {
+      "signature": "би 2|компромисс",
+      "checkedAt": "2026-11-24T20:56:08.677Z",
+      "found": true
+    },
+    "98": {
+      "signature": "би 2|мои рок н ролл",
+      "checkedAt": "2026-11-24T20:56:00.125Z",
+      "found": true
+    },
+    "99": {
+      "signature": "би 2|мы не ангелы парень",
+      "checkedAt": "2026-11-24T20:55:58.818Z",
+      "found": false
+    },
+    "100": {
+      "signature": "би 2|полковнику никто не пишет",
+      "checkedAt": "2026-11-24T20:55:50.058Z",
+      "found": true
+    },
+    "101": {
+      "signature": "би 2|серебро",
+      "checkedAt": "2026-11-24T20:55:48.584Z",
+      "found": true
+    },
+    "102": {
+      "signature": "блатные песни|мурка",
+      "checkedAt": "2026-11-24T20:55:39.961Z",
+      "found": false
+    },
+    "103": {
+      "signature": "блестящие|а я все летала",
+      "checkedAt": "2026-11-24T20:55:38.529Z",
+      "found": true
+    },
+    "104": {
+      "signature": "блестящие|восточные сказки",
+      "checkedAt": "2026-11-24T20:55:29.955Z",
+      "found": false
+    },
+    "105": {
+      "signature": "блестящие|за четыре моря",
+      "checkedAt": "2026-11-24T20:55:28.504Z",
+      "found": true
+    },
+    "106": {
+      "signature": "божья коровка|гранитныи камушек",
+      "checkedAt": "2026-11-24T20:55:20.174Z",
+      "found": true
+    },
+    "108": {
+      "signature": "бонд с кнопкои|любовь",
+      "checkedAt": "2026-11-24T20:54:14.174Z",
+      "found": true
+    },
+    "109": {
+      "signature": "бонд с кнопкои|свои",
+      "checkedAt": "2026-11-24T20:54:13.098Z",
+      "found": true
+    },
+    "110": {
+      "signature": "бонд с кнопкои|сидр",
+      "checkedAt": "2026-11-24T20:53:50.043Z",
+      "found": true
+    },
+    "111": {
+      "signature": "бортпроводник|даваи сбежим",
+      "checkedAt": "2026-11-24T20:53:49.062Z",
+      "found": false
+    },
+    "112": {
+      "signature": "браво|ветер знает",
+      "checkedAt": "2026-11-24T20:53:25.819Z",
+      "found": true
+    },
+    "113": {
+      "signature": "браво|дорога в облака",
+      "checkedAt": "2026-11-24T20:53:24.639Z",
+      "found": true
+    },
+    "114": {
+      "signature": "браво|любите девушки",
+      "checkedAt": "2026-11-24T20:53:15.761Z",
+      "found": true
+    },
+    "115": {
+      "signature": "браво|старыи отель",
+      "checkedAt": "2026-11-24T20:53:14.526Z",
+      "found": true
+    },
+    "116": {
+      "signature": "браво|этот город",
+      "checkedAt": "2026-11-24T20:53:05.720Z",
+      "found": true
+    },
+    "117": {
+      "signature": "братья грим|кустурица",
+      "checkedAt": "2026-11-24T20:53:04.324Z",
+      "found": true
+    },
     "118": {
       "signature": "братья грим|ресницы",
       "checkedAt": "2026-11-24T10:29:14.377Z",
@@ -10427,6 +10802,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 675
+    "verifiedDates": 700
   }
 }
