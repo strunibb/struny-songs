@@ -1,7 +1,255 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T21:00:48.524Z",
+  "updatedAt": "2026-11-25T04:14:29.941Z",
   "dates": {
+    "43": {
+      "date": "2020-08-07",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5d1431d4-0716-4064-92e6-f8c988ce3434",
+      "artist": "Алёна Швец",
+      "title": "Скейтер",
+      "confidence": "musicbrainz-exact"
+    },
+    "44": {
+      "date": "2025",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/d701e3b8-0bd8-41c8-87c4-e231bc7f1af7",
+      "artist": "Алёна Швец",
+      "title": "Скорпион",
+      "confidence": "musicbrainz-exact"
+    },
+    "45": {
+      "date": "2018-11-30",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/417a15f6-6984-40a2-ae28-cd2e6fc881c8",
+      "artist": "Алёна Швец",
+      "title": "Соперница",
+      "confidence": "musicbrainz-exact"
+    },
+    "46": {
+      "date": "2025",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/7eb5d896-2df0-4c2d-a985-86e115b4ae51",
+      "artist": "Алёна Швец",
+      "title": "Твой бриллиантовый смех",
+      "confidence": "musicbrainz-exact"
+    },
+    "47": {
+      "date": "2018-11-30",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/92c39358-8d55-49c7-8f68-25b55fff1497",
+      "artist": "Алёна Швец",
+      "title": "Твоя школьница",
+      "confidence": "musicbrainz-exact"
+    },
+    "48": {
+      "date": "2021-07-23",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/62a3233a-2893-41b3-b75d-a3a5a49572bd",
+      "artist": "Алёна Швец",
+      "title": "Удалю",
+      "confidence": "musicbrainz-exact"
+    },
+    "49": {
+      "date": "2025",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/d4b42813-b0b5-4dcc-987d-1275439a1ab3",
+      "artist": "Алёна Швец",
+      "title": "Чёрная кошка",
+      "confidence": "musicbrainz-exact"
+    },
+    "50": {
+      "date": "2018-09-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/d11e48b9-ed61-406c-8d51-f5b4815a3c47",
+      "artist": "Алёна Швец",
+      "title": "Читай книги, ругайся матом",
+      "confidence": "musicbrainz-exact"
+    },
+    "51": {
+      "date": "2024-03-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/23323b68-96a0-4dbf-93d6-9d046e40f7f1",
+      "artist": "Алёна Швец",
+      "title": "Шампанское",
+      "confidence": "musicbrainz-exact"
+    },
+    "53": {
+      "date": "2003",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/b1146d56-eecd-4e04-9d88-1417885e5ad0",
+      "artist": "Алиса",
+      "title": "Небо славян",
+      "confidence": "musicbrainz-exact"
+    },
+    "54": {
+      "date": "1984",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/040556f3-98f1-4bb3-893b-f58125d14569",
+      "artist": "Алла Пугачёва",
+      "title": "Айсберг",
+      "confidence": "musicbrainz-exact"
+    },
+    "55": {
+      "date": "1977-05",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/4ac6ae80-a9b5-4bb7-9f11-205addb2a131",
+      "artist": "Алла Пугачёва",
+      "title": "Куда уходит детство",
+      "confidence": "musicbrainz-exact"
+    },
+    "58": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/a93f9fd1-9b6c-4bc4-bed3-97a806be7044",
+      "artist": "Алсу",
+      "title": "Весна",
+      "confidence": "musicbrainz-exact"
+    },
+    "59": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/2226810f-4a07-4548-86d6-9a45076b598b",
+      "artist": "Алсу",
+      "title": "Всё равно",
+      "confidence": "musicbrainz-exact"
+    },
+    "60": {
+      "date": "1999",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/2019036a-cf74-43fe-a22f-1742e432dff1",
+      "artist": "Алсу",
+      "title": "Иногда",
+      "confidence": "musicbrainz-exact"
+    },
+    "63": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4587b987-8c44-4363-af2c-b1ea2af1f0ca",
+      "artist": "Андрей Губин",
+      "title": "Девушки как звёзды",
+      "confidence": "musicbrainz-exact"
+    },
+    "64": {
+      "date": "1997",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/578d5400-c284-429f-b502-c16ccd20c48f",
+      "artist": "Андрей Губин",
+      "title": "Зима-холода",
+      "confidence": "musicbrainz-exact"
+    },
+    "65": {
+      "date": "1995",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/14b589f4-363e-4772-9770-714d499cb470",
+      "artist": "Андрей Губин",
+      "title": "Ночь",
+      "confidence": "musicbrainz-exact"
+    },
+    "66": {
+      "date": "1998",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/cce7823b-099a-417d-b6f7-96b476194cbd",
+      "artist": "Андрей Губин",
+      "title": "Птица",
+      "confidence": "musicbrainz-exact"
+    },
+    "67": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4e0558b1-3bd3-430f-9980-e6d377edd192",
+      "artist": "Андрей Губин",
+      "title": "Танцы",
+      "confidence": "musicbrainz-exact"
+    },
+    "68": {
+      "date": "2021-12-14",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/1b7cb88e-2743-4a58-91ca-ff82e84f1674",
+      "artist": "Антон Токарев",
+      "title": "Седьмой лепесток",
+      "confidence": "musicbrainz-exact"
+    },
+    "69": {
+      "date": "1997",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/43dcb7ad-d72c-4bbf-9cd5-5e16404bdc2a",
+      "artist": "Ария",
+      "title": "Беспечный ангел",
+      "confidence": "musicbrainz-exact"
+    },
+    "70": {
+      "date": "1996",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/cf8f3a71-1b0a-4c9e-bbcc-e91d4ca82160",
+      "artist": "Ария",
+      "title": "Возьми моё сердце",
+      "confidence": "musicbrainz-exact"
+    },
+    "71": {
+      "date": "1986",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/e092576f-71f5-4c3f-b12c-aed72f26fd2f",
+      "artist": "Ария",
+      "title": "Встань, страх преодолей",
+      "confidence": "musicbrainz-exact"
+    },
+    "72": {
+      "date": "1999-04",
+      "precision": "month",
+      "source": "https://musicbrainz.org/recording/3840381b-523f-4253-adc1-dd12c96db81c",
+      "artist": "Ария",
+      "title": "Герой асфальта",
+      "confidence": "musicbrainz-exact"
+    },
+    "73": {
+      "date": "1998-05-02",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9c69e759-7e7d-4da1-b4f5-848617f7b7d7",
+      "artist": "Ария",
+      "title": "Грязь",
+      "confidence": "musicbrainz-exact"
+    },
+    "74": {
+      "date": "1998-05-02",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3e6b45b3-c8da-4f2a-a945-b15ba63c82f6",
+      "artist": "Ария",
+      "title": "Закат",
+      "confidence": "musicbrainz-exact"
+    },
+    "75": {
+      "date": "1998-05-02",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/061f87bf-634f-4e74-9ee6-9aa3ef320f2b",
+      "artist": "Ария",
+      "title": "Замкнутый круг",
+      "confidence": "musicbrainz-exact"
+    },
+    "76": {
+      "date": "2002",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/22818156-c9b3-483e-be3e-4948eca5ef8d",
+      "artist": "Ария",
+      "title": "Осколок льда",
+      "confidence": "musicbrainz-exact"
+    },
+    "77": {
+      "date": "1997",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/573f8c19-3cd4-48c6-808d-09ecb03fb65f",
+      "artist": "Ария",
+      "title": "Потерянный рай",
+      "confidence": "musicbrainz-exact"
+    },
+    "78": {
+      "date": "2003-05-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/d9e5be7b-35d9-4a11-851d-1cc09a760f24",
+      "artist": "Ария",
+      "title": "Там высоко",
+      "confidence": "musicbrainz-exact"
+    },
     "79": {
       "date": "1997",
       "precision": "year",
@@ -16,6 +264,14 @@
       "source": "https://musicbrainz.org/recording/7e6263b0-f1d0-4855-a9de-bd80010b0ff8",
       "artist": "Ария",
       "title": "Штиль",
+      "confidence": "musicbrainz-exact"
+    },
+    "83": {
+      "date": "2016",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/ba3fd7ee-0f99-4dcc-9a5c-4e72069c037c",
+      "artist": "Баста",
+      "title": "Выпускной",
       "confidence": "musicbrainz-exact"
     },
     "86": {
@@ -128,6 +384,14 @@
       "source": "https://musicbrainz.org/recording/f6460a99-59ff-49fa-9441-429fc71959ae",
       "artist": "Божья Коровка",
       "title": "Гранитный камушек",
+      "confidence": "musicbrainz-exact"
+    },
+    "107": {
+      "date": "2025-02-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/ed4a5f0e-fe82-4845-a26d-73709f19dee9",
+      "artist": "Бонд с кнопкой",
+      "title": "Кухни",
       "confidence": "musicbrainz-exact"
     },
     "108": {
@@ -5604,6 +5868,186 @@
     }
   },
   "attempts": {
+    "43": {
+      "signature": "алена швец|скеитер",
+      "checkedAt": "2026-11-25T04:14:29.586Z",
+      "found": true
+    },
+    "44": {
+      "signature": "алена швец|скорпион",
+      "checkedAt": "2026-11-25T04:14:27.982Z",
+      "found": true
+    },
+    "45": {
+      "signature": "алена швец|соперница",
+      "checkedAt": "2026-11-25T04:14:19.586Z",
+      "found": true
+    },
+    "46": {
+      "signature": "алена швец|твои бриллиантовыи смех",
+      "checkedAt": "2026-11-25T04:14:17.961Z",
+      "found": true
+    },
+    "47": {
+      "signature": "алена швец|твоя школьница",
+      "checkedAt": "2026-11-25T04:14:09.454Z",
+      "found": true
+    },
+    "48": {
+      "signature": "алена швец|удалю",
+      "checkedAt": "2026-11-25T04:14:08.097Z",
+      "found": true
+    },
+    "49": {
+      "signature": "алена швец|черная кошка",
+      "checkedAt": "2026-11-25T04:13:59.396Z",
+      "found": true
+    },
+    "50": {
+      "signature": "алена швец|читаи книги ругаися матом",
+      "checkedAt": "2026-11-25T04:13:57.880Z",
+      "found": true
+    },
+    "51": {
+      "signature": "алена швец|шампанское",
+      "checkedAt": "2026-11-25T04:13:49.297Z",
+      "found": true
+    },
+    "52": {
+      "signature": "алена швец саша мусор|солнышко",
+      "checkedAt": "2026-11-25T04:13:47.848Z",
+      "found": false
+    },
+    "53": {
+      "signature": "алиса|небо славян",
+      "checkedAt": "2026-11-25T04:13:39.280Z",
+      "found": true
+    },
+    "54": {
+      "signature": "алла пугачева|аисберг",
+      "checkedAt": "2026-11-25T04:13:37.816Z",
+      "found": true
+    },
+    "55": {
+      "signature": "алла пугачева|куда уходит детство",
+      "checkedAt": "2026-11-25T04:13:29.315Z",
+      "found": true
+    },
+    "56": {
+      "signature": "алла пугачева|осторожно листопад",
+      "checkedAt": "2026-11-25T04:13:27.827Z",
+      "found": false
+    },
+    "57": {
+      "signature": "алла пугачева|первыи поцелуи",
+      "checkedAt": "2026-11-25T04:13:19.195Z",
+      "found": false
+    },
+    "58": {
+      "signature": "алсу|весна",
+      "checkedAt": "2026-11-25T04:13:17.812Z",
+      "found": true
+    },
+    "59": {
+      "signature": "алсу|все равно",
+      "checkedAt": "2026-11-25T04:13:09.171Z",
+      "found": true
+    },
+    "60": {
+      "signature": "алсу|иногда",
+      "checkedAt": "2026-11-25T04:13:07.990Z",
+      "found": true
+    },
+    "61": {
+      "signature": "амега|лететь",
+      "checkedAt": "2026-11-25T04:12:59.133Z",
+      "found": false
+    },
+    "62": {
+      "signature": "андреи алексин|малолетние шалавы",
+      "checkedAt": "2026-11-25T04:12:57.683Z",
+      "found": false
+    },
+    "63": {
+      "signature": "андреи губин|девушки как звезды",
+      "checkedAt": "2026-11-25T04:12:49.150Z",
+      "found": true
+    },
+    "64": {
+      "signature": "андреи губин|зима холода",
+      "checkedAt": "2026-11-25T04:12:47.789Z",
+      "found": true
+    },
+    "65": {
+      "signature": "андреи губин|ночь",
+      "checkedAt": "2026-11-25T04:12:39.211Z",
+      "found": true
+    },
+    "66": {
+      "signature": "андреи губин|птица",
+      "checkedAt": "2026-11-25T04:12:37.878Z",
+      "found": true
+    },
+    "67": {
+      "signature": "андреи губин|танцы",
+      "checkedAt": "2026-11-25T04:12:36.480Z",
+      "found": true
+    },
+    "68": {
+      "signature": "антон токарев|седьмои лепесток",
+      "checkedAt": "2026-11-25T04:12:13.555Z",
+      "found": true
+    },
+    "69": {
+      "signature": "ария|беспечныи ангел",
+      "checkedAt": "2026-11-25T04:12:12.273Z",
+      "found": true
+    },
+    "70": {
+      "signature": "ария|возьми мое сердце",
+      "checkedAt": "2026-11-25T04:11:49.324Z",
+      "found": true
+    },
+    "71": {
+      "signature": "ария|встань страх преодолеи",
+      "checkedAt": "2026-11-25T04:11:47.934Z",
+      "found": true
+    },
+    "72": {
+      "signature": "ария|герои асфальта",
+      "checkedAt": "2026-11-25T04:11:39.314Z",
+      "found": true
+    },
+    "73": {
+      "signature": "ария|грязь",
+      "checkedAt": "2026-11-25T04:11:38.173Z",
+      "found": true
+    },
+    "74": {
+      "signature": "ария|закат",
+      "checkedAt": "2026-11-25T04:11:29.307Z",
+      "found": true
+    },
+    "75": {
+      "signature": "ария|замкнутыи круг",
+      "checkedAt": "2026-11-25T04:11:27.832Z",
+      "found": true
+    },
+    "76": {
+      "signature": "ария|осколок льда",
+      "checkedAt": "2026-11-25T04:11:19.241Z",
+      "found": true
+    },
+    "77": {
+      "signature": "ария|потерянныи раи",
+      "checkedAt": "2026-11-25T04:11:17.881Z",
+      "found": true
+    },
+    "78": {
+      "signature": "ария|там высоко",
+      "checkedAt": "2026-11-25T04:11:09.201Z",
+      "found": true
+    },
     "79": {
       "signature": "ария|улица роз",
       "checkedAt": "2026-11-24T21:00:04.090Z",
@@ -5614,10 +6058,20 @@
       "checkedAt": "2026-11-24T21:00:02.909Z",
       "found": true
     },
+    "81": {
+      "signature": "ария|я свободен",
+      "checkedAt": "2026-11-25T04:11:07.737Z",
+      "found": false
+    },
     "82": {
       "signature": "ахра|карие глаза",
       "checkedAt": "2026-11-24T20:59:18.735Z",
       "found": false
+    },
+    "83": {
+      "signature": "баста|выпускнои",
+      "checkedAt": "2026-11-25T04:10:59.173Z",
+      "found": true
     },
     "84": {
       "signature": "баста|где ты теперь и с кем feat hammali navai",
@@ -5662,6 +6116,11 @@
     "92": {
       "signature": "баста|я наиду тебя через века",
       "checkedAt": "2026-11-24T20:57:26.194Z",
+      "found": false
+    },
+    "93": {
+      "signature": "баста бумбокс|здесь даже солнца не видно",
+      "checkedAt": "2026-11-25T04:10:57.786Z",
       "found": false
     },
     "94": {
@@ -5727,6 +6186,11 @@
     "106": {
       "signature": "божья коровка|гранитныи камушек",
       "checkedAt": "2026-11-24T20:55:20.174Z",
+      "found": true
+    },
+    "107": {
+      "signature": "бонд с кнопкои|кухни",
+      "checkedAt": "2026-11-25T04:10:49.871Z",
       "found": true
     },
     "108": {
@@ -10802,6 +11266,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 700
+    "verifiedDates": 733
   }
 }
