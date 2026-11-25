@@ -1,7 +1,247 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-25T04:14:29.941Z",
+  "updatedAt": "2026-11-25T14:24:56.804Z",
   "dates": {
+    "3": {
+      "date": "2009",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/24dfc795-e098-4fc5-8451-7b05e61da7e4",
+      "artist": "25/17",
+      "title": "Я никогда не видел моря",
+      "confidence": "musicbrainz-exact"
+    },
+    "4": {
+      "date": "2003",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/c5d64560-e7fc-4e43-9879-dcc0fb52c344",
+      "artist": "5’nizza",
+      "title": "Весна",
+      "confidence": "musicbrainz-exact"
+    },
+    "8": {
+      "date": "2003",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/6c8b8281-89c4-4a3b-9b20-e33d15c283de",
+      "artist": "5’nizza",
+      "title": "Ты кидал",
+      "confidence": "musicbrainz-exact"
+    },
+    "10": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/947ac0f6-9d9c-43a2-9c05-cefaf3e970c8",
+      "artist": "7Б",
+      "title": "Молодые ветра",
+      "confidence": "musicbrainz-exact"
+    },
+    "11": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/2b2e38d9-28cb-4a74-b108-801066b023e0",
+      "artist": "7Б",
+      "title": "Неизвестный солдат",
+      "confidence": "musicbrainz-exact"
+    },
+    "12": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4445832d-ea91-4299-b11d-0b6b8bf7545a",
+      "artist": "7Б",
+      "title": "Осень",
+      "confidence": "musicbrainz-exact"
+    },
+    "13": {
+      "date": "2001",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/eefb840a-0d9e-4e0c-8f19-98c3a5c08c31",
+      "artist": "7Б",
+      "title": "Последний герой",
+      "confidence": "musicbrainz-exact"
+    },
+    "14": {
+      "date": "1993",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/a12ed1e2-bf83-4639-85fa-cdc4d01f49d4",
+      "artist": "Агата Кристи",
+      "title": "Как на войне",
+      "confidence": "musicbrainz-exact"
+    },
+    "15": {
+      "date": "1995",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/4642d8eb-fc22-42fe-94a0-3c9a921b646f",
+      "artist": "Агата Кристи",
+      "title": "Сказочная тайга",
+      "confidence": "musicbrainz-exact"
+    },
+    "17": {
+      "date": "1982",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/e0c38831-17ec-4c5a-b965-6d9f127d58d9",
+      "artist": "Аквариум",
+      "title": "25 к 10",
+      "confidence": "musicbrainz-exact"
+    },
+    "18": {
+      "date": "2008-11-10",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a8efaa98-cc6c-4274-91bf-5f00bc5aee20",
+      "artist": "Аквариум",
+      "title": "Город золотой",
+      "confidence": "musicbrainz-exact"
+    },
+    "20": {
+      "date": "1990",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/d86463c3-998b-4eeb-af7e-102658a5065b",
+      "artist": "Аквариум",
+      "title": "Поезд в огне",
+      "confidence": "musicbrainz-exact"
+    },
+    "21": {
+      "date": "1986-06-27",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/9d52564d-b44a-4003-8caa-1548732b6e1f",
+      "artist": "Аквариум",
+      "title": "Рок-н-ролл мёртв",
+      "confidence": "musicbrainz-exact"
+    },
+    "22": {
+      "date": "2009",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/cd209742-a31a-454f-829e-bf3474c36d6a",
+      "artist": "Аквариум",
+      "title": "Стаканы",
+      "confidence": "musicbrainz-exact"
+    },
+    "24": {
+      "date": "1996-05-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/563a93db-5b19-4414-881a-9ca1df3eb4bd",
+      "artist": "Александр Розенбаум",
+      "title": "Ау",
+      "confidence": "musicbrainz-exact"
+    },
+    "25": {
+      "date": "1984",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/bad458c9-0f97-4b89-9bd6-e3aec94602ed",
+      "artist": "Александр Розенбаум",
+      "title": "Есаул",
+      "confidence": "musicbrainz-exact"
+    },
+    "26": {
+      "date": "2025",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/aaa1e5e7-f5b2-4dcb-9258-6d68f2745af1",
+      "artist": "Алёна Швец",
+      "title": "Аллергия",
+      "confidence": "musicbrainz-exact"
+    },
+    "27": {
+      "date": "2025",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/8c28f7a8-61e0-4871-bebf-2244715c404e",
+      "artist": "Алёна Швец",
+      "title": "Бабочка",
+      "confidence": "musicbrainz-exact"
+    },
+    "28": {
+      "date": "2020-08-07",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/7bf4405c-acc2-4fd4-985a-348fe738f2f6",
+      "artist": "Алёна Швец",
+      "title": "В кабинете у директора",
+      "confidence": "musicbrainz-exact"
+    },
+    "29": {
+      "date": "2019-09-06",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/5e1c43a7-2c2f-41b2-9629-705947b928ed",
+      "artist": "Алёна Швец",
+      "title": "Ведьм у нас сжигают",
+      "confidence": "musicbrainz-exact"
+    },
+    "30": {
+      "date": "2025",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/5caa7e25-a520-44c4-b84b-29efb06adff2",
+      "artist": "Алёна Швец",
+      "title": "Весеннее обострение",
+      "confidence": "musicbrainz-exact"
+    },
+    "31": {
+      "date": "2020-03-18",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3abe82e2-02fb-4ec7-8d17-88d2410e6b11",
+      "artist": "Алёна Швец",
+      "title": "Вино и сигареты",
+      "confidence": "musicbrainz-exact"
+    },
+    "32": {
+      "date": "2021-07-23",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/70682be8-2f82-4769-898e-325da65d3cad",
+      "artist": "Алёна Швец",
+      "title": "Вредина",
+      "confidence": "musicbrainz-exact"
+    },
+    "35": {
+      "date": "2024-11-29",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/8c0cb8a9-a922-473c-b0d9-91bcb2e4c713",
+      "artist": "Алёна Швец",
+      "title": "Капучино",
+      "confidence": "musicbrainz-exact"
+    },
+    "36": {
+      "date": "2018-11-30",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/de297a2e-45b1-42b0-bc90-473853e1e872",
+      "artist": "Алёна Швец",
+      "title": "Кудрявые",
+      "confidence": "musicbrainz-exact"
+    },
+    "37": {
+      "date": "2020-08-07",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/c00e0c3a-468e-4ef1-a63e-b0be402da520",
+      "artist": "Алёна Швец",
+      "title": "Мемы",
+      "confidence": "musicbrainz-exact"
+    },
+    "38": {
+      "date": "2018-09-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/3b07158b-a60b-4388-8e91-4e979b1a6369",
+      "artist": "Алёна Швец",
+      "title": "Мою первую любовь звали ненависть",
+      "confidence": "musicbrainz-exact"
+    },
+    "39": {
+      "date": "2018-11-30",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/be019277-76eb-43f8-979c-098f26d1a66b",
+      "artist": "Алёна Швец",
+      "title": "Нелюбовь",
+      "confidence": "musicbrainz-exact"
+    },
+    "41": {
+      "date": "2019-03-01",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/aec79e23-602e-4988-8fc5-fd9d8c6ef2a7",
+      "artist": "Алёна Швец",
+      "title": "Портвейн",
+      "confidence": "musicbrainz-exact"
+    },
+    "42": {
+      "date": "2023-11-03",
+      "precision": "day",
+      "source": "https://musicbrainz.org/recording/a6c4c51e-8f00-4e68-a56f-f4446cf195ca",
+      "artist": "Алёна Швец",
+      "title": "Розами",
+      "confidence": "musicbrainz-exact"
+    },
     "43": {
       "date": "2020-08-07",
       "precision": "day",
@@ -5868,6 +6108,196 @@
     }
   },
   "attempts": {
+    "3": {
+      "signature": "25 17|я никогда не видел моря",
+      "checkedAt": "2026-11-25T14:24:56.429Z",
+      "found": true
+    },
+    "4": {
+      "signature": "5 nizza|весна",
+      "checkedAt": "2026-11-25T14:24:47.795Z",
+      "found": true
+    },
+    "5": {
+      "signature": "5 nizza|зима",
+      "checkedAt": "2026-11-25T14:24:46.566Z",
+      "found": false
+    },
+    "6": {
+      "signature": "5 nizza|моя ямаика",
+      "checkedAt": "2026-11-25T14:24:37.772Z",
+      "found": false
+    },
+    "7": {
+      "signature": "5 nizza|стрела",
+      "checkedAt": "2026-11-25T14:24:36.271Z",
+      "found": false
+    },
+    "8": {
+      "signature": "5 nizza|ты кидал",
+      "checkedAt": "2026-11-25T14:24:27.656Z",
+      "found": true
+    },
+    "10": {
+      "signature": "7б|молодые ветра",
+      "checkedAt": "2026-11-25T14:23:35.865Z",
+      "found": true
+    },
+    "11": {
+      "signature": "7б|неизвестныи солдат",
+      "checkedAt": "2026-11-25T14:23:34.838Z",
+      "found": true
+    },
+    "12": {
+      "signature": "7б|осень",
+      "checkedAt": "2026-11-25T14:23:11.748Z",
+      "found": true
+    },
+    "13": {
+      "signature": "7б|последнии герои",
+      "checkedAt": "2026-11-25T14:23:10.112Z",
+      "found": true
+    },
+    "14": {
+      "signature": "агата кристи|как на воине",
+      "checkedAt": "2026-11-25T14:23:01.562Z",
+      "found": true
+    },
+    "15": {
+      "signature": "агата кристи|сказочная таига",
+      "checkedAt": "2026-11-25T14:23:00.311Z",
+      "found": true
+    },
+    "16": {
+      "signature": "аквариум|2 12 85 06",
+      "checkedAt": "2026-11-25T14:22:51.412Z",
+      "found": false
+    },
+    "17": {
+      "signature": "аквариум|25 к 10",
+      "checkedAt": "2026-11-25T14:22:50.084Z",
+      "found": true
+    },
+    "18": {
+      "signature": "аквариум|город золотои",
+      "checkedAt": "2026-11-25T14:22:41.352Z",
+      "found": true
+    },
+    "19": {
+      "signature": "аквариум|мертвые",
+      "checkedAt": "2026-11-25T14:22:39.943Z",
+      "found": false
+    },
+    "20": {
+      "signature": "аквариум|поезд в огне",
+      "checkedAt": "2026-11-25T14:22:31.285Z",
+      "found": true
+    },
+    "21": {
+      "signature": "аквариум|рок н ролл мертв",
+      "checkedAt": "2026-11-25T14:22:29.840Z",
+      "found": true
+    },
+    "22": {
+      "signature": "аквариум|стаканы",
+      "checkedAt": "2026-11-25T14:22:28.713Z",
+      "found": true
+    },
+    "23": {
+      "signature": "александр бородин|улетаи на крыльях ветра",
+      "checkedAt": "2026-11-25T14:22:05.589Z",
+      "found": false
+    },
+    "24": {
+      "signature": "александр розенбаум|ау",
+      "checkedAt": "2026-11-25T14:22:04.696Z",
+      "found": true
+    },
+    "25": {
+      "signature": "александр розенбаум|есаул",
+      "checkedAt": "2026-11-25T14:21:41.342Z",
+      "found": true
+    },
+    "26": {
+      "signature": "алена швец|аллергия",
+      "checkedAt": "2026-11-25T14:21:39.882Z",
+      "found": true
+    },
+    "27": {
+      "signature": "алена швец|бабочка",
+      "checkedAt": "2026-11-25T14:21:31.269Z",
+      "found": true
+    },
+    "28": {
+      "signature": "алена швец|в кабинете у директора",
+      "checkedAt": "2026-11-25T14:21:30.092Z",
+      "found": true
+    },
+    "29": {
+      "signature": "алена швец|ведьм у нас сжигают",
+      "checkedAt": "2026-11-25T14:21:21.293Z",
+      "found": true
+    },
+    "30": {
+      "signature": "алена швец|весеннее обострение",
+      "checkedAt": "2026-11-25T14:21:19.741Z",
+      "found": true
+    },
+    "31": {
+      "signature": "алена швец|вино и сигареты",
+      "checkedAt": "2026-11-25T14:21:18.994Z",
+      "found": true
+    },
+    "32": {
+      "signature": "алена швец|вредина",
+      "checkedAt": "2026-11-25T14:20:55.498Z",
+      "found": true
+    },
+    "34": {
+      "signature": "алена швец|иголки в белом платье",
+      "checkedAt": "2026-11-25T14:20:03.668Z",
+      "found": false
+    },
+    "35": {
+      "signature": "алена швец|капучино",
+      "checkedAt": "2026-11-25T14:20:02.795Z",
+      "found": true
+    },
+    "36": {
+      "signature": "алена швец|кудрявые",
+      "checkedAt": "2026-11-25T14:19:39.413Z",
+      "found": true
+    },
+    "37": {
+      "signature": "алена швец|мемы",
+      "checkedAt": "2026-11-25T14:19:37.970Z",
+      "found": true
+    },
+    "38": {
+      "signature": "алена швец|мою первую любовь звали ненависть",
+      "checkedAt": "2026-11-25T14:19:29.342Z",
+      "found": true
+    },
+    "39": {
+      "signature": "алена швец|нелюбовь",
+      "checkedAt": "2026-11-25T14:19:27.906Z",
+      "found": true
+    },
+    "40": {
+      "signature": "алена швец|пластырь с животными",
+      "checkedAt": "2026-11-25T14:19:19.263Z",
+      "found": false
+    },
+    "41": {
+      "signature": "алена швец|портвеин",
+      "checkedAt": "2026-11-25T14:19:17.919Z",
+      "found": true
+    },
+    "42": {
+      "signature": "алена швец|розами",
+      "checkedAt": "2026-11-25T14:19:09.301Z",
+      "found": true
+    },
     "43": {
       "signature": "алена швец|скеитер",
       "checkedAt": "2026-11-25T04:14:29.586Z",
@@ -11266,6 +11696,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 733
+    "verifiedDates": 763
   }
 }
