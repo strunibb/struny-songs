@@ -1,7 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-25T14:24:56.804Z",
+  "updatedAt": "2026-11-25T23:19:57.437Z",
   "dates": {
+    "1": {
+      "date": "2010",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/43ce7dd3-4aa4-4f4f-a859-073f0fef1e2f",
+      "artist": "25/17",
+      "title": "Жду чуда",
+      "confidence": "musicbrainz-exact"
+    },
+    "2": {
+      "date": "2009",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/7b5c934b-8acc-4dc6-bf77-089362c40fe3",
+      "artist": "25/17",
+      "title": "Никто не сможет меня остановить",
+      "confidence": "musicbrainz-exact"
+    },
     "3": {
       "date": "2009",
       "precision": "year",
@@ -184,6 +200,14 @@
       "source": "https://musicbrainz.org/recording/70682be8-2f82-4769-898e-325da65d3cad",
       "artist": "Алёна Швец",
       "title": "Вредина",
+      "confidence": "musicbrainz-exact"
+    },
+    "33": {
+      "date": "2025",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/c8db860f-37ad-4820-8c20-eec26c656d74",
+      "artist": "Алёна Швец",
+      "title": "Диафильмы",
       "confidence": "musicbrainz-exact"
     },
     "35": {
@@ -4650,6 +4674,14 @@
       "title": "Zitti e buoni",
       "confidence": "musicbrainz-exact"
     },
+    "849": {
+      "date": "1992",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/34fed7c0-9429-435b-9224-70a931566a74",
+      "artist": "Metallica",
+      "title": "Nothing Else Matters",
+      "confidence": "musicbrainz-exact"
+    },
     "850": {
       "date": "1988",
       "precision": "year",
@@ -4744,6 +4776,14 @@
       "source": "https://musicbrainz.org/recording/24b87bc8-e953-4bf5-9a02-2cffe626a996",
       "artist": "Nirvana",
       "title": "All Apologies",
+      "confidence": "musicbrainz-exact"
+    },
+    "870": {
+      "date": "1994",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/7e6cc083-63bd-4f08-b8f7-303de1826667",
+      "artist": "Nirvana",
+      "title": "Come As You Are",
       "confidence": "musicbrainz-exact"
     },
     "871": {
@@ -5088,6 +5128,14 @@
       "source": "https://musicbrainz.org/recording/68f62ad4-c485-4609-8278-edcf6124237c",
       "artist": "Ssshhhiiittt!",
       "title": "Тебя нет",
+      "confidence": "musicbrainz-exact"
+    },
+    "923": {
+      "date": "1993",
+      "precision": "year",
+      "source": "https://musicbrainz.org/recording/968f33af-b2a3-489c-a652-a8f2ae995c0a",
+      "artist": "Sting",
+      "title": "Shape of My Heart",
       "confidence": "musicbrainz-exact"
     },
     "924": {
@@ -6108,6 +6156,16 @@
     }
   },
   "attempts": {
+    "1": {
+      "signature": "25 17|жду чуда",
+      "checkedAt": "2026-11-25T23:19:52.722Z",
+      "found": true
+    },
+    "2": {
+      "signature": "25 17|никто не сможет меня остановить",
+      "checkedAt": "2026-11-25T23:19:30.831Z",
+      "found": true
+    },
     "3": {
       "signature": "25 17|я никогда не видел моря",
       "checkedAt": "2026-11-25T14:24:56.429Z",
@@ -6137,6 +6195,11 @@
       "signature": "5 nizza|ты кидал",
       "checkedAt": "2026-11-25T14:24:27.656Z",
       "found": true
+    },
+    "9": {
+      "signature": "5 nizza|я солдат",
+      "checkedAt": "2026-11-25T23:19:29.370Z",
+      "found": false
     },
     "10": {
       "signature": "7б|молодые ветра",
@@ -6251,6 +6314,11 @@
     "32": {
       "signature": "алена швец|вредина",
       "checkedAt": "2026-11-25T14:20:55.498Z",
+      "found": true
+    },
+    "33": {
+      "signature": "алена швец|диафильмы",
+      "checkedAt": "2026-11-25T23:19:28.344Z",
       "found": true
     },
     "34": {
@@ -10328,6 +10396,11 @@
       "checkedAt": "2026-11-18T17:38:06.971Z",
       "found": false
     },
+    "849": {
+      "signature": "metallica|nothing else matters",
+      "checkedAt": "2026-11-25T23:19:55.299Z",
+      "found": true
+    },
     "850": {
       "signature": "michael jackson|beat it",
       "checkedAt": "2026-11-18T17:38:05.595Z",
@@ -10426,6 +10499,11 @@
     "869": {
       "signature": "nirvana|all apologies",
       "checkedAt": "2026-11-18T17:36:40.639Z",
+      "found": true
+    },
+    "870": {
+      "signature": "nirvana|come as you are",
+      "checkedAt": "2026-11-25T23:19:53.858Z",
       "found": true
     },
     "871": {
@@ -10686,6 +10764,11 @@
     "922": {
       "signature": "ssshhhiiittt|тебя нет",
       "checkedAt": "2026-11-18T08:32:07.051Z",
+      "found": true
+    },
+    "923": {
+      "signature": "sting|shape of my heart",
+      "checkedAt": "2026-11-25T23:19:56.942Z",
       "found": true
     },
     "924": {
@@ -11696,6 +11779,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedDates": 763
+    "verifiedDates": 769
   }
 }
