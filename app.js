@@ -1,4 +1,4 @@
-const SECTIONS = ["Все", "Начинающий", "Продвинутый"];
+const SECTIONS = ["Все", "Популярные", "Начинающий", "Продвинутый"];
 const PAGE_SIZE = 48;
 const STORAGE_KEY = "struny-github-pages-cart-v1";
 const icons = { "Аккорды": "♬", "Бой": "↯", "Перебор": "≋", "Рифф": "ϟ", "Соло": "◇", "Фингерстайл": "✦", "Табулатура": "▦", "Интересный бой": "↯", "Электрогитара": "⚡" };
@@ -84,13 +84,13 @@ function filteredSongs() {
     const searchableText = normalize(`${song.artist} ${song.title}`);
     const matchesText = !query || query.split(" ").every((word) => searchableText.includes(word));
     const matchesSection = state.section === "Все"
-      || song.sections.includes(state.section);
+      || (state.section === "Популярные" ? song.isPopular === true : song.sections.includes(state.section));
     return matchesText && matchesSection && releasePeriodMatches(song, state.releasePeriod);
   });
   return result.sort((a, b) => {
     if (state.sort === "fresh") return compareFreshness(a,b);
     if (state.sort === "release") return releaseOrderValue(b)-releaseOrderValue(a) || a.title.localeCompare(b.title,"ru");
-    if (state.sort === "popular") return b.popularity - a.popularity || a.artist.localeCompare(b.artist, "ru");
+    if (state.sort === "popular") return Number(b.isPopular === true) - Number(a.isPopular === true) || a.title.localeCompare(b.title, "ru") || a.artist.localeCompare(b.artist, "ru");
     if (state.sort === "easy") return a.difficulty - b.difficulty || a.artist.localeCompare(b.artist, "ru");
     if (state.sort === "hard") return b.difficulty - a.difficulty || a.artist.localeCompare(b.artist, "ru");
     if (state.sort === "new") return new Date(b.createdAt) - new Date(a.createdAt) || b.id - a.id;
@@ -179,13 +179,13 @@ function renderCatalog() {
   els.grid.replaceChildren(...visible.map(createCard));
   els.count.textContent = songs.length;
   syncFilters();
-  els.title.textContent = state.query || state.section !== "Все" ? "Результаты поиска" : "Вся библиотека";
+  els.title.textContent = state.section === "Популярные" ? "Популярные песни" : state.query || state.section !== "Все" ? "Результаты поиска" : "Вся библиотека";
   els.empty.hidden = songs.length !== 0;
   if (!songs.length) {
-    els.empty.querySelector("h2").textContent = state.releasePeriod !== "all" ? "За этот период пока ничего не найдено" : "Песня не найдена";
+    els.empty.querySelector("h2").textContent = state.releasePeriod !== "all" ? "За этот период пока ничего не найдено" : state.section === "Популярные" && !state.query ? "Пока нет популярных песен" : "Песня не найдена";
     els.empty.querySelector("p").textContent = state.releasePeriod !== "all"
       ? "Показываем только песни с подтверждённой датой релиза. Попробуйте другой период."
-      : "Напишите Никите — возможно, именно она станет следующим разбором.";
+      : state.section === "Популярные" && !state.query ? "Посмотрите другие песни в полной библиотеке." : "Напишите Никите — возможно, именно она станет следующим разбором.";
   }
   els.grid.hidden = songs.length === 0;
   const remaining = songs.length - visible.length;
@@ -359,7 +359,7 @@ document.addEventListener("keydown", (event) => {
 els.search.value = state.query;
 els.search.parentElement.classList.toggle("has-value", Boolean(state.query));
 Promise.all([
-  fetch("./songs.json").then((response) => { if (!response.ok) throw new Error("Не удалось загрузить каталог"); return response.json(); }),
+  fetch("./songs.json", { cache: "no-cache" }).then((response) => { if (!response.ok) throw new Error("Не удалось загрузить каталог"); return response.json(); }),
   fetch("./covers.json").then((response) => response.ok ? response.json() : { covers: {} }).catch(() => ({ covers: {} })),
   fetch("./release-dates.json",{cache:"no-store"}).then((response) => response.ok ? response.json() : { dates: {} }).catch(() => ({ dates: {} }))
 ])

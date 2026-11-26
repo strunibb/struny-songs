@@ -31,7 +31,7 @@ function filtered() {
   const q=normalize(state.query);
   return state.songs.filter(song =>
     (!q || normalize(song.artist+" "+song.title).includes(q)) &&
-    (state.filter==="all" || state.filter==="free" && song.pdfPrice===0 || state.filter==="new" && !!song.isNew)
+    (state.filter==="all" || state.filter==="free" && song.pdfPrice===0 || state.filter==="new" && !!song.isNew || state.filter==="popular" && song.isPopular===true)
   ).sort((a,b)=>a.title.localeCompare(b.title,"ru")||a.artist.localeCompare(b.artist,"ru"));
 }
 function artNode(song) {
@@ -61,15 +61,21 @@ function render() {
     tr.append(element("td",null,price(song.pdfPrice)),element("td",null,price(song.videoPrice)));
     const status=element("td");
     status.append(element("span","tag "+(song.isNew?"new":"neutral"),song.isNew?"NEW":"В каталоге"));
+    if(song.isPopular===true)status.append(element("span","tag","★ Популярная"));
     tr.append(status);
     const actions=element("td","td-actions");
+    const popular=element("button","row-edit",song.isPopular===true?"★":"☆");popular.type="button";
+    popular.title=song.isPopular===true?"Убрать из популярных":"Добавить в популярные";
+    popular.setAttribute("aria-label",popular.title+": "+song.artist+" — "+song.title);
+    popular.setAttribute("aria-pressed",String(song.isPopular===true));
+    popular.addEventListener("click",()=>submitIssue({version:1,operation:"popular",id:song.id,isPopular:song.isPopular!==true},song.artist+" — "+song.title));
     const edit=element("button","row-edit","✎");edit.type="button";
     edit.setAttribute("aria-label","Редактировать "+song.artist+" — "+song.title);
     edit.addEventListener("click",()=>openEditor(song));
     const remove=element("button","row-delete","×");remove.type="button";
     remove.setAttribute("aria-label","Удалить "+song.artist+" — "+song.title);
     remove.addEventListener("click",()=>removeSong(song));
-    actions.append(edit,remove);tr.append(actions);
+    actions.append(popular,edit,remove);tr.append(actions);
     fragment.append(tr);
   }
   if(!songs.length) {
@@ -143,6 +149,7 @@ function openEditor(song) {
   $("isFree").checked=editing ? !!(song.isFree || (song.pdfPrice===0 && song.videoPrice===0)) : false;
   syncPrices();
   $("isNew").checked=editing?!!song.isNew:true;
+  $("isPopular").checked=song?.isPopular===true;
   for(const checkbox of document.querySelectorAll('input[name="feature"]')) {
     checkbox.checked=!!song?.features?.includes(checkbox.value);
   }
@@ -184,7 +191,7 @@ function makePayload(operation,song) {
     previewDisabled:$("previewDisabled").checked,
     videoAvailable:$("videoAvailable").checked,
     level:$("level").value,pdfPrice:Number($("pdfPrice").value),videoPrice:Number($("videoPrice").value),
-    difficulty:Number($("difficulty").value),barre:$("barre").checked,isNew:$("isNew").checked,
+    difficulty:Number($("difficulty").value),barre:$("barre").checked,isNew:$("isNew").checked,isPopular:$("isPopular").checked,
     features:[...document.querySelectorAll('input[name="feature"]:checked')].map(x=>x.value),
     coverUrl
   };
@@ -192,7 +199,7 @@ function makePayload(operation,song) {
 function submitIssue(payload,displayName) {
   if(!payload)return;
   const body="STRUNY_CMS_V1\n"+JSON.stringify(payload);
-  const op=payload.operation==="add"?"Добавить":payload.operation==="edit"?"Изменить":"Удалить";
+  const op=payload.operation==="popular"?(payload.isPopular?"В популярные":"Убрать из популярных"):payload.operation==="add"?"Добавить":payload.operation==="edit"?"Изменить":"Удалить";
   const title="[Struny CMS] "+op+": "+displayName;
   const link=ISSUE_URL+"?title="+encodeURIComponent(title)+"&body="+encodeURIComponent(body);
   if(link.length>10000){notify("Слишком длинный запрос. Сократи описание.");return;}
