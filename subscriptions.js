@@ -38,28 +38,30 @@
       tab.tabIndex = selected ? 0 : -1;
     });
     panel.setAttribute("aria-labelledby", "subscription-count-" + count);
-    panel.innerHTML = levels.flatMap((level) => formats.map((format) => {
-      const video = format === "video";
-      const price = subscriptionPrices[count][level][format];
-      const retail = singlePrices[level][format] * count;
-      const discount = Math.round((retail - price) * 100 / retail);
-      const title = video ? "С видеоразборами" : "Самостоятельная игра";
-      const description = video ? "Полный формат обучения: видеообъяснение и PDF к каждой песне." : "Аккорды, схемы, табулатуры и подсказки в удобном PDF.";
-      return `<article class="subscription-card${video ? " sub-video" : ""}">
-        <div class="sub-card-top"><span class="sub-level">${level}</span><span class="sub-type">${video ? "PDF + ВИДЕО" : "ТОЛЬКО PDF"}</span></div>
-        <h3 class="sub-card-title">${title}</h3>
-        <p class="sub-card-description">${description}</p>
-        <div class="sub-price"><strong>${rub(price)}</strong><small>/ месяц</small></div>
-        <div class="sub-discount"><span>Отдельно <s>${rub(retail)}</s></span><b>Выгода ${discount}%</b></div>
-        <ul class="sub-features">
-          <li>${count} ${count === 4 ? "песни" : "песен"} из раздела «${level}»</li>
-          <li>PDF можно скачать и сохранить</li>
-          <li>${video ? "Видео доступны онлайн при активной подписке" : "PDF без видеоразборов"}</li>
-          <li>Новый выбор песен каждый оплаченный месяц</li>
-        </ul>
-        <a class="sub-cta" target="_blank" rel="noopener noreferrer" href="${requestLink(level, format, price)}">Выбрать тариф <span aria-hidden="true">↗</span></a>
+    panel.innerHTML = levels.map((level, index) => {
+      const plans = formats.map((format) => {
+        const video = format === "video";
+        const price = subscriptionPrices[count][level][format];
+        const retail = singlePrices[level][format] * count;
+        const discount = Math.round((retail - price) * 100 / retail);
+        const title = video ? "PDF + видео" : "Только PDF";
+        const description = video ? "Видеоразборы онлайн без скачивания, пока подписка действует." : "Для самостоятельной игры.";
+        return `<div class="sub-plan${video ? " sub-video" : ""}">
+          <h4 class="sub-card-title">${title}</h4>
+          <p class="sub-card-description">${description}</p>
+          <div class="sub-price"><strong>${rub(price)}</strong><small>/ месяц</small></div>
+          <div class="sub-discount"><span>Отдельно <s>${rub(retail)}</s></span><b>Выгода ${discount}%</b></div>
+          <a class="sub-cta" target="_blank" rel="noopener noreferrer" href="${requestLink(level, format, price)}" aria-label="Выбрать тариф: ${level}, ${title}, ${count} песен в месяц">Выбрать <span aria-hidden="true">↗</span></a>
+        </div>`;
+      }).join("");
+      return `<article class="subscription-group" aria-labelledby="sub-level-${index}">
+        <header class="sub-group-heading">
+          <h3 id="sub-level-${index}">${level}</h3>
+          <span>${count} ${count === 4 ? "песни" : "песен"} в месяц из своего раздела</span>
+        </header>
+        <div class="sub-plans">${plans}</div>
       </article>`;
-    })).join("");
+    }).join("");
   }
 
   tabs.querySelectorAll("[data-count]").forEach((tab, index, allTabs) => {

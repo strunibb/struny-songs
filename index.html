@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./styles.css?v=school-20261114">
   <link rel="stylesheet" href="./catalog-redesign.css?v=previews-20261117-1">
   <link rel="stylesheet" href="./preview-inline.css?v=inline-20261117-2">
-  <link rel="stylesheet" href="./subscriptions.css?v=pricing-20261120-2">
+  <link rel="stylesheet" href="./subscriptions.css?v=grouped-20261126-1">
   <style>.cover-credit{display:inline-block;margin-top:8px;color:#7534a6;font-size:11px;font-weight:700;text-decoration:underline;text-underline-offset:3px}.song-cover.has-image img{background:#eee}</style>
 </head>
 <body>
@@ -45,9 +45,13 @@
             <span class="sub-number">8</span><span class="sub-switch-label"><strong>песен в месяц</strong><small>2 песни в неделю</small></span>
           </button>
         </div>
+        <ul class="subscription-common" aria-label="Условия всех подписок">
+          <li>PDF: аккорды, схемы и табулатуры</li>
+          <li>Скачанные PDF остаются навсегда</li>
+          <li>Новый выбор песен каждый оплаченный месяц</li>
+        </ul>
         <div class="subscription-cards" id="subscription-cards" role="tabpanel" aria-labelledby="subscription-count-4" aria-live="polite"></div>
         <div class="subscription-footer">
-          <p>PDF можно скачать и сохранить навсегда. Видео смотрят на сайте без скачивания, пока подписка действует. Выбрать можно только готовые материалы своего раздела.</p>
           <a href="#catalog">Или купить разбор отдельно ↓</a>
         </div>
       </div>
@@ -136,6 +140,6 @@
   <script src="./release.js?v=releases-20261116-3" defer></script>
   <script src="./albums.js?v=previews-20261117-1" defer></script>
   <script src="./app.js?v=popular-20261126-1" defer></script>
-  <script src="./subscriptions.js?v=pricing-20261120-2" defer></script>
+  <script src="./subscriptions.js?v=grouped-20261126-1" defer></script>
 </body>
 </html>
