@@ -40,9 +40,14 @@ function payload(body) {
   assert(typeof body==="string" && body.length<=12000 && body.startsWith(MARKER),"Нет корректной метки CRM");
   const p=JSON.parse(body.slice(MARKER.length));
   assert(p && typeof p==="object" && !Array.isArray(p) && p.version===1,"Некорректные данные");
-  assert(["add","edit","delete"].includes(p.operation),"Неизвестная операция");
+  assert(["add","edit","delete","popular"].includes(p.operation),"Неизвестная операция");
   if(p.operation!=="add") p.id=int(p.id,"ID",1,100000000);
   if(p.operation==="delete") return p;
+  if(p.operation==="popular") {
+    assert(typeof p.isPopular==="boolean","Неверная отметка популярности");
+    return p;
+  }
+  assert(p.isPopular===undefined || typeof p.isPopular==="boolean","Неверная отметка популярности");
   p.artist=str(p.artist,"Исполнитель",125,true);
   p.title=str(p.title,"Название",160,true);
   p.description=str(p.description??"","Описание",600);
@@ -111,6 +116,11 @@ if(p.operation==="delete") {
   const at=db.songs.findIndex(s=>s.id===p.id);
   assert(at>=0,"Песня с ID "+p.id+" не найдена");
   id=p.id;previous=db.songs[at];db.songs.splice(at,1);
+} else if(p.operation==="popular") {
+  const at=db.songs.findIndex(s=>s.id===p.id);
+  assert(at>=0,"Песня с ID "+p.id+" не найдена");
+  id=p.id;previous=db.songs[at];
+  db.songs[at]={...previous,isPopular:p.isPopular};
 } else {
   const at=p.operation==="edit"?db.songs.findIndex(s=>s.id===p.id):-1;
   if(p.operation==="edit")assert(at>=0,"Песня с ID "+p.id+" не найдена");
@@ -131,7 +141,7 @@ if(p.operation==="delete") {
     features:p.features,keyName:p.keyName||"Оригинал",
     barre:p.barre,difficulty:p.difficulty,
     coverStyle:previous?.coverStyle||COVER_STYLES[id%COVER_STYLES.length],
-    isNew:p.isNew,isPopular:previous?.isPopular||false,
+    isNew:p.isNew,isPopular:p.isPopular ?? previous?.isPopular ?? false,
     popularity:previous?.popularity||0,
     createdAt:previous?.createdAt||now,
     price:p.pdfPrice,pdfPrice:p.pdfPrice,videoPrice:p.videoPrice
