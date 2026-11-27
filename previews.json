@@ -1,7 +1,25 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-27T02:27:58.513Z",
+  "updatedAt": "2026-11-27T11:27:45.084Z",
   "tracks": {
+    "388": {
+      "artist": "ЛСП",
+      "title": "Монетка",
+      "videoId": "unrs1wnz0r4",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/46868b8d-6f88-4b2b-b226-26c714136a0f",
+      "verifiedAt": "2026-11-27T11:27:12.393Z"
+    },
+    "390": {
+      "artist": "ЛСП",
+      "title": "Тело",
+      "videoId": "p1uh40IvF4c",
+      "start": 0,
+      "source": "musicbrainz-recording-free-stream",
+      "recording": "https://musicbrainz.org/recording/c8da5222-a1ae-4a14-8776-3f966cb2a1ab",
+      "verifiedAt": "2026-11-27T11:26:46.300Z"
+    },
     "422": {
       "artist": "Мальчишник",
       "title": "Последний раз",
@@ -485,14 +503,124 @@
       "checkedAt": "2026-11-26T19:17:47.986Z",
       "found": false
     },
+    "385": {
+      "signature": "леприконсы|хали гали паратрупер",
+      "checkedAt": "2026-11-27T11:27:44.622Z",
+      "found": false
+    },
+    "386": {
+      "signature": "лсп|бэиби",
+      "checkedAt": "2026-11-27T11:27:36.981Z",
+      "found": false
+    },
+    "387": {
+      "signature": "лсп|кино feat gone fludd",
+      "checkedAt": "2026-11-27T11:27:32.142Z",
+      "found": false
+    },
+    "388": {
+      "signature": "лсп|монетка",
+      "checkedAt": "2026-11-27T11:27:12.393Z",
+      "found": true
+    },
+    "389": {
+      "signature": "лсп|парныи дурак",
+      "checkedAt": "2026-11-27T11:27:06.008Z",
+      "found": false
+    },
+    "390": {
+      "signature": "лсп|тело",
+      "checkedAt": "2026-11-27T11:26:46.300Z",
+      "found": true
+    },
+    "391": {
+      "signature": "лсп|шиншиллы",
+      "checkedAt": "2026-11-27T11:26:39.896Z",
+      "found": false
+    },
+    "392": {
+      "signature": "лсп feat dose|солнце золотое",
+      "checkedAt": "2026-11-27T11:26:20.056Z",
+      "found": false
+    },
+    "393": {
+      "signature": "любэ|а зори здесь тихие",
+      "checkedAt": "2026-11-27T11:26:19.871Z",
+      "found": false
+    },
+    "394": {
+      "signature": "любэ|а река течет",
+      "checkedAt": "2026-11-27T11:26:00.113Z",
+      "found": false
+    },
+    "395": {
+      "signature": "любэ|березы",
+      "checkedAt": "2026-11-27T11:25:59.923Z",
+      "found": false
+    },
+    "396": {
+      "signature": "любэ|есть только миг",
+      "checkedAt": "2026-11-27T11:25:40.170Z",
+      "found": false
+    },
+    "397": {
+      "signature": "любэ|комбат",
+      "checkedAt": "2026-11-27T11:25:34.055Z",
+      "found": false
+    },
     "398": {
       "signature": "любэ|конь",
       "checkedAt": "2026-11-26T19:17:28.168Z",
       "found": false
     },
+    "399": {
+      "signature": "любэ|от волги до енисея",
+      "checkedAt": "2026-11-27T11:25:20.198Z",
+      "found": false
+    },
+    "400": {
+      "signature": "любэ|позови меня тихо по имени",
+      "checkedAt": "2026-11-27T11:25:12.556Z",
+      "found": false
+    },
+    "401": {
+      "signature": "любэ|солдат",
+      "checkedAt": "2026-11-27T11:25:04.919Z",
+      "found": false
+    },
+    "402": {
+      "signature": "любэ|там за туманами",
+      "checkedAt": "2026-11-27T11:24:54.178Z",
+      "found": false
+    },
     "403": {
       "signature": "любэ|ты неси меня река",
       "checkedAt": "2026-11-26T19:17:20.497Z",
+      "found": false
+    },
+    "404": {
+      "signature": "люся чеботина|плакал голливуд",
+      "checkedAt": "2026-11-27T11:24:46.535Z",
+      "found": false
+    },
+    "405": {
+      "signature": "люся чеботина|солнце монако",
+      "checkedAt": "2026-11-27T11:24:45.052Z",
+      "found": false
+    },
+    "406": {
+      "signature": "ляпис трубецкои|ау",
+      "checkedAt": "2026-11-27T11:24:40.140Z",
+      "found": false
+    },
+    "407": {
+      "signature": "макс корж|2 типа людеи",
+      "checkedAt": "2026-11-27T11:24:20.358Z",
+      "found": false
+    },
+    "408": {
+      "signature": "макс корж|в темноте",
+      "checkedAt": "2026-11-27T11:24:17.340Z",
       "found": false
     },
     "409": {
@@ -505,9 +633,24 @@
       "checkedAt": "2026-11-26T19:17:07.955Z",
       "found": false
     },
+    "411": {
+      "signature": "макс корж|летаи со мнои в темноте",
+      "checkedAt": "2026-11-27T11:24:14.379Z",
+      "found": false
+    },
+    "412": {
+      "signature": "макс корж|малиновыи закат",
+      "checkedAt": "2026-11-27T11:24:13.286Z",
+      "found": false
+    },
     "413": {
       "signature": "макс корж|мотылек",
       "checkedAt": "2026-11-26T19:16:48.133Z",
+      "found": false
+    },
+    "414": {
+      "signature": "макс корж|не говори другу",
+      "checkedAt": "2026-11-27T11:24:04.131Z",
       "found": false
     },
     "415": {
@@ -4018,6 +4161,6 @@
   },
   "summary": {
     "catalogSize": 1124,
-    "verifiedVideos": 30
+    "verifiedVideos": 32
   }
 }
