@@ -73,3 +73,6 @@
 }
 @media(max-width:350px) { .sub-plan { padding:12px 9px; } .sub-price strong { font-size:24px; } .sub-card-title { font-size:14px; } }
 @media(prefers-reduced-motion:reduce) { .subscription-switch button { transition:none; } }
+
+/* Compact subscription hierarchy without repeated explanatory copy. */
+.subscription-header h1{margin:0}.sub-group-heading h3{margin:0}.sub-card-title{margin-bottom:18px}.sub-discount{flex:1;align-content:start}.subscription-common{font-size:14px}.subscription-common li{line-height:1.5}.subscription-switch .sub-switch-label strong{line-height:1.2}@media(max-width:660px){.subscription-common{font-size:13px}.sub-card-title{margin-bottom:12px}}

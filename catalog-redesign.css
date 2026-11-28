@@ -312,3 +312,6 @@
   .album-track-actions{flex-wrap:wrap}
 }
 @media(prefers-reduced-motion:reduce){.song-card .preview-button{transition:none}}
+
+/* Keep the catalog heading and search visually connected. */
+.hero h1{margin-bottom:24px}.hero .search-wrap{margin-top:0}.modal-buy h3{margin-bottom:14px}.request-card h2{margin-bottom:0}.about-grid h2{margin-bottom:12px}@media(max-width:560px){.hero h1{margin-bottom:18px}}

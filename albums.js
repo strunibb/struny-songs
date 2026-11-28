@@ -113,9 +113,7 @@ function renderAlbumModal() {
   const copy=document.createElement("div");
   const kicker=document.createElement("p");kicker.className="eyebrow";kicker.textContent="АЛЬБОМ · "+album.artist;
   const title=document.createElement("h2");title.id="modal-title";title.textContent=album.title;
-  const subtitle=document.createElement("p");subtitle.className="album-subtitle";
-  subtitle.textContent=album.songs.length+" песни доступны как отдельные разборы. Можно выбрать несколько или весь альбом.";
-  copy.append(kicker,title,subtitle);top.append(copy);root.append(top);
+  copy.append(kicker,title);top.append(copy);root.append(top);
 
   const group=document.createElement("div");group.className="album-track-group";
   const heading=document.createElement("h3");heading.textContent="Песни альбома";group.append(heading);
@@ -145,7 +143,7 @@ function renderAlbumModal() {
   root.append(group);
   const controls=document.createElement("div");controls.className="album-bundle";
   const label=document.createElement("h3");label.textContent="Весь альбом";
-  const desc=document.createElement("p");desc.textContent="Цена равна сумме песен. Бесплатные треки входят бесплатно, минимальный платный заказ 100 ₽.";
+  const desc=document.createElement("p");desc.textContent="Минимальный платный заказ — 100 ₽.";
   controls.append(label,desc);
   const buttons=document.createElement("div");buttons.className="album-bundle-buttons";
   for(const format of ["pdf","video"]) {

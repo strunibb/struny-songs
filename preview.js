@@ -271,10 +271,7 @@ function previewApple(active,song,url) {
   frame.setAttribute("allow","autoplay *; encrypted-media *");
   frame.setAttribute("loading","eager");
   frame.setAttribute("referrerpolicy","strict-origin-when-cross-origin");
-  const note = document.createElement("p");
-  note.className = "song-preview-footnote";
-  note.textContent = "Нажмите ▶ в плеере. Обычно доступен 30-секундный фрагмент без подписки.";
-  active.panel.replaceChildren(previewPanelHeading(song,"APPLE MUSIC"),frame,note);
+  active.panel.replaceChildren(previewPanelHeading(song,"APPLE MUSIC"),frame);
 }
 
 function previewYoutube(active,song,record) {
@@ -287,16 +284,13 @@ function previewYoutube(active,song,record) {
   frame.allowFullscreen = true;
   frame.setAttribute("loading","eager");
   frame.setAttribute("referrerpolicy","strict-origin-when-cross-origin");
-  const note = document.createElement("p");
-  note.className = "song-preview-footnote";
-  note.textContent = "Воспроизведение на этой странице · фрагмент до 30 секунд.";
-  active.panel.replaceChildren(previewPanelHeading(song,"YOUTUBE"),frame,note);
+  active.panel.replaceChildren(previewPanelHeading(song,"YOUTUBE"),frame);
 }
 
 function previewUnavailable(active) {
   const note = document.createElement("p");
   note.className = "preview-inline-unavailable";
-  note.textContent = "Пока нет подтверждённой оригинальной записи для встроенного прослушивания. Вы остаётесь в каталоге.";
+  note.textContent = "Фрагмент недоступен.";
   active.panel.replaceChildren(note);
 }
 

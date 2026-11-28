@@ -183,9 +183,6 @@ function renderCatalog() {
   els.empty.hidden = songs.length !== 0;
   if (!songs.length) {
     els.empty.querySelector("h2").textContent = state.releasePeriod !== "all" ? "За этот период пока ничего не найдено" : state.section === "Популярные" && !state.query ? "Пока нет популярных песен" : "Песня не найдена";
-    els.empty.querySelector("p").textContent = state.releasePeriod !== "all"
-      ? "Показываем только песни с подтверждённой датой релиза. Попробуйте другой период."
-      : state.section === "Популярные" && !state.query ? "Посмотрите другие песни в полной библиотеке." : "Напишите Никите — возможно, именно она станет следующим разбором.";
   }
   els.grid.hidden = songs.length === 0;
   const remaining = songs.length - visible.length;
@@ -222,20 +219,18 @@ function cartMessage() {
 }
 function renderCart() {
   if (!state.cart.length) {
-    els.cartContent.innerHTML = '<div class="cart-empty"><span>♪</span><h3>Пока пусто</h3><p>Выберите PDF или вариант с видео у одной или нескольких песен.</p><button class="button button-outline" id="empty-close" type="button">Вернуться к песням</button></div>';
+    els.cartContent.innerHTML = '<div class="cart-empty"><span>♪</span><h3>Пока пусто</h3><button class="button button-outline" id="empty-close" type="button">Вернуться к песням</button></div>';
     els.cartContent.querySelector("#empty-close").addEventListener("click", closeCart);
     return;
   }
   const total = state.cart.reduce((sum,item) => sum + item.price,0);
-  const controls = '<a class="button button-primary" id="telegram-order" href="https://t.me/nikguitar?text='+encodeURIComponent(cartMessage())+'" target="_blank" rel="noopener noreferrer">Отправить заявку Никите</a>';
-  const hint = "Заявка откроется в Telegram. После согласования оплаты вы получите выбранные материалы.";
+  const controls = '<a class="button button-primary" id="telegram-order" href="https://t.me/nikguitar?text='+encodeURIComponent(cartMessage())+'" target="_blank" rel="noopener noreferrer">Заказать в Telegram</a>';
   els.cartContent.innerHTML =
     '<div class="cart-list">'+state.cart.map((item,index)=>
       '<div class="cart-row"><b>'+String(index+1).padStart(2,"0")+'</b><span><strong>'+escapeHtml(item.title)+'</strong><small>'+escapeHtml(item.artist)+'</small><em>'+escapeHtml(formatLabel(item.format))+' · '+money(item.price)+'</em></span><button type="button" data-remove="'+item.id+'" aria-label="Убрать '+escapeHtml(item.title)+'">×</button></div>'
     ).join("")+'</div>'+
     '<div class="cart-total"><span>Итого</span><strong>'+money(total)+'</strong></div>'+
-    '<div class="cart-actions"><button class="cart-clear" id="cart-clear" type="button">Очистить</button>'+controls+'</div>'+
-    '<p class="cart-note">'+hint+'</p>';
+    '<div class="cart-actions"><button class="cart-clear" id="cart-clear" type="button">Очистить</button>'+controls+'</div>';
   els.cartContent.querySelectorAll("[data-remove]").forEach(button=>button.addEventListener("click",()=>{
     state.cart=state.cart.filter(item=>item.id!==Number(button.dataset.remove));
     saveCart();renderCart();renderCatalog();renderModal();
@@ -277,7 +272,6 @@ function renderModal() {
           ${releaseTag ? '<span class="song-release-tag">'+escapeHtml(releaseTag)+'</span>' : ''}
           <p class="modal-artist">${escapeHtml(song.artist)}</p>
           <h2 id="modal-title">${escapeHtml(song.title)}</h2>
-          <p class="modal-description">${escapeHtml(song.description)}</p>
           ${coverUrl && song.coverSource ? `<a class="cover-credit" href="${escapeHtml(song.coverSource)}" target="_blank" rel="noopener noreferrer">Источник обложки ↗</a>` : ""}
         </div>
       </div>
@@ -293,7 +287,6 @@ function renderModal() {
         </div>
         <div class="modal-buy">
           <h3>Выберите формат</h3>
-          <p>Добавим выбранный материал в корзину</p>
           <div class="purchase-options">
             <button type="button" data-modal-format="pdf" class="${selected === "pdf" ? "added" : ""}"><span>PDF-разбор</span><strong>${money(song.pdfPrice)}</strong></button>
             <button type="button" data-modal-format="video" class="${selected === "video" ? "added" : ""}" ${song.videoAvailable === false ? 'disabled title="Видеоразбор не подтверждён"' : ""}><span>${song.videoAvailable === false ? "Видео уточняется" : "PDF + видеоразбор"}</span><strong>${song.videoAvailable === false ? "Недоступно" : money(song.videoPrice)}</strong></button>

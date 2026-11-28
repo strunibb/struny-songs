@@ -45,10 +45,8 @@
         const retail = singlePrices[level][format] * count;
         const discount = Math.round((retail - price) * 100 / retail);
         const title = video ? "PDF + видео" : "Только PDF";
-        const description = video ? "Видеоразборы онлайн без скачивания, пока подписка действует." : "Для самостоятельной игры.";
         return `<div class="sub-plan${video ? " sub-video" : ""}">
           <h4 class="sub-card-title">${title}</h4>
-          <p class="sub-card-description">${description}</p>
           <div class="sub-price"><strong>${rub(price)}</strong><small>/ месяц</small></div>
           <div class="sub-discount"><span>Отдельно <s>${rub(retail)}</s></span><b>Выгода ${discount}%</b></div>
           <a class="sub-cta" target="_blank" rel="noopener noreferrer" href="${requestLink(level, format, price)}" aria-label="Выбрать тариф: ${level}, ${title}, ${count} песен в месяц">Выбрать <span aria-hidden="true">↗</span></a>
@@ -57,7 +55,6 @@
       return `<article class="subscription-group" aria-labelledby="sub-level-${index}">
         <header class="sub-group-heading">
           <h3 id="sub-level-${index}">${level}</h3>
-          <span>${count} ${count === 4 ? "песни" : "песен"} в месяц из своего раздела</span>
         </header>
         <div class="sub-plans">${plans}</div>
       </article>`;

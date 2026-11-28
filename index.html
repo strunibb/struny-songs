@@ -8,9 +8,9 @@
   <title>Струны будущего — разборы песен на гитаре</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css?v=school-20261114">
-  <link rel="stylesheet" href="./catalog-redesign.css?v=previews-20261117-1">
-  <link rel="stylesheet" href="./preview-inline.css?v=inline-20261117-2">
-  <link rel="stylesheet" href="./subscriptions.css?v=grouped-20261126-1">
+  <link rel="stylesheet" href="./catalog-redesign.css?v=clean-20261128-1">
+  <link rel="stylesheet" href="./preview-inline.css?v=clean-20261128-1">
+  <link rel="stylesheet" href="./subscriptions.css?v=clean-20261128-1">
   <style>.cover-credit{display:inline-block;margin-top:8px;color:#7534a6;font-size:11px;font-weight:700;text-decoration:underline;text-underline-offset:3px}.song-cover.has-image img{background:#eee}</style>
 </head>
 <body>
@@ -33,22 +33,20 @@
     <section class="subscription-section" id="subscriptions" aria-labelledby="subscription-title">
       <div class="shell">
         <div class="subscription-header">
-          <p class="eyebrow"><i></i> Играйте новые песни каждый месяц</p>
-          <h1 id="subscription-title">Любимые песни. <em>Выгоднее с подпиской.</em></h1>
-          <p>Выберите 4 или 8 песен в месяц. Для начинающих и продвинутых есть PDF-разборы и комплекты с видео.</p>
+          <h1 id="subscription-title">Подписка <em>на разборы</em></h1>
         </div>
         <div class="subscription-switch" id="subscription-switch" role="tablist" aria-label="Количество песен по подписке">
           <button id="subscription-count-4" type="button" role="tab" data-count="4" aria-controls="subscription-cards" aria-selected="true">
-            <span class="sub-number">4</span><span class="sub-switch-label"><strong>песни в месяц</strong><small>1 песня в неделю</small></span>
+            <span class="sub-number">4</span><span class="sub-switch-label"><strong>песни в месяц</strong></span>
           </button>
           <button id="subscription-count-8" type="button" role="tab" data-count="8" aria-controls="subscription-cards" aria-selected="false">
-            <span class="sub-number">8</span><span class="sub-switch-label"><strong>песен в месяц</strong><small>2 песни в неделю</small></span>
+            <span class="sub-number">8</span><span class="sub-switch-label"><strong>песен в месяц</strong></span>
           </button>
         </div>
         <ul class="subscription-common" aria-label="Условия всех подписок">
-          <li>PDF: аккорды, схемы и табулатуры</li>
-          <li>Скачанные PDF остаются навсегда</li>
-          <li>Новый выбор песен каждый оплаченный месяц</li>
+          <li>PDF — скачивание навсегда</li>
+          <li>Видео — онлайн на срок подписки</li>
+          <li>Новые песни на выбор каждый месяц</li>
         </ul>
         <div class="subscription-cards" id="subscription-cards" role="tabpanel" aria-labelledby="subscription-count-4" aria-live="polite"></div>
         <div class="subscription-footer">
@@ -62,16 +60,13 @@
       <span class="palm palm-right" aria-hidden="true">🌴</span>
       <span class="sun" aria-hidden="true"></span>
       <div class="shell hero-inner">
-        <p class="eyebrow"><i></i> Библиотека гитарных разборов</p>
-        <h1>Разборы любимых <em>песен на гитаре</em></h1>
-        <p class="hero-lead">Найдите песню, выберите PDF или вариант с видео и отправьте заявку Никите.</p>
+        <h1>Разборы <em>песен на гитаре</em></h1>
         <div class="search-wrap">
           <span aria-hidden="true">⌕</span>
           <input id="search" type="search" autocomplete="off" placeholder="Найти песню или исполнителя" aria-label="Найти песню или исполнителя">
           <button id="search-clear" type="button" aria-label="Очистить поиск">×</button>
         </div>
         <div class="tabs" id="tabs" aria-label="Фильтр по разделу"></div>
-        <p class="pricing-caption">Выберите песню и формат: PDF для скачивания или комплект с видеоразбором.</p>
       </div>
     </section>
 
@@ -79,39 +74,32 @@
       <div class="shell">
         <div class="catalog-head">
           <div><h2 id="result-title">Вся библиотека</h2></div>
-          <div class="catalog-tools"><p><b id="result-count">0</b> <span id="result-unit">песен</span></p><label class="release-filter-label" for="release-period">Когда вышла песня</label><select id="release-period" aria-label="Фильтр по дате выхода песни"><option value="all">Все релизы</option><option value="week">За 7 дней</option><option value="month">За 30 дней</option><option value="year">С начала года</option><option value="published">Новые разборы</option></select><select id="sort" aria-label="Сортировка"><option value="title">По названию</option><option value="artist">По исполнителю</option><option value="fresh">Сначала актуальные</option><option value="release">По дате релиза</option><option value="new">По дате разбора</option><option value="popular">Сначала популярные</option><option value="easy">Сначала проще</option><option value="hard">Сначала сложнее</option></select></div>
+          <div class="catalog-tools"><p><b id="result-count">0</b> <span id="result-unit">песен</span></p><label class="release-filter-label" for="release-period">Дата релиза</label><select id="release-period" aria-label="Фильтр по дате выхода песни"><option value="all">Все релизы</option><option value="week">За 7 дней</option><option value="month">За 30 дней</option><option value="year">С начала года</option><option value="published">Новые разборы</option></select><select id="sort" aria-label="Сортировка"><option value="title">По названию</option><option value="artist">По исполнителю</option><option value="fresh">Сначала актуальные</option><option value="release">По дате релиза</option><option value="new">По дате разбора</option><option value="popular">Сначала популярные</option><option value="easy">Сначала проще</option><option value="hard">Сначала сложнее</option></select></div>
         </div>
         <p id="cart-feedback" class="sr-only" role="status" aria-live="polite"></p>
         <div class="song-grid" id="song-grid" aria-busy="true"><p>Загружаем песни…</p></div>
         <div class="load-more-wrap"><button class="button button-outline" id="load-more" type="button">Показать ещё <span></span></button></div>
-        <div class="empty-state" id="empty-state" hidden><span>♫</span><h2>Песня не найдена</h2><p>Напишите Никите — возможно, именно она станет следующим разбором.</p><a class="button button-primary" href="https://t.me/nikguitar" target="_blank" rel="noreferrer">Предложить песню</a></div>
-      </div>
-    </section>
-
-    <section class="value-section">
-      <div class="shell value-grid">
-        <div><p class="eyebrow"><i></i> Всё в одном месте</p><h2>Полный путь <em>до песни.</em></h2><p>Выберите подходящий уровень и формат. Стоимость указана у каждой песни, выбранные материалы сохраняются в корзине.</p></div>
-        <div class="value-cards"><article><span>▤</span><strong>Понятный PDF</strong><p>Аккорды, табулатуры, структура и текстовые подсказки.</p></article><article><span>▶</span><strong>Подробное видео</strong><p>Постановка рук, техника и сборка песни по шагам.</p></article><article><span>✓</span><strong>Удобная заявка</strong><p>Соберите несколько песен и отправьте список в Telegram.</p></article></div>
+        <div class="empty-state" id="empty-state" hidden><span>♫</span><h2>Песня не найдена</h2><a class="button button-primary" href="https://t.me/nikguitar" target="_blank" rel="noreferrer">Предложить песню</a></div>
       </div>
     </section>
 
     <section class="about-section" id="about">
       <div class="shell about-grid">
         <div class="portrait"><img src="./assets/nikita-beach.jpeg" alt="Никита играет на гитаре на берегу моря"></div>
-        <div><p class="eyebrow"><i></i> Автор разборов</p><h2>Привет, я Никита</h2><p>Преподаватель гитары и создатель школы «Струны будущего». В разборах оставляю только то, что действительно помогает быстрее прийти к уверенной игре любимой песни.</p><a class="button button-outline" href="https://strunibb.github.io/struny-school/">Обучение в школе ↗</a></div>
+        <div><h2>Привет, я Никита</h2><p>Преподаватель гитары, основатель школы «Струны будущего».</p><a class="button button-outline" href="https://strunibb.github.io/struny-school/">Обучение в школе ↗</a></div>
       </div>
     </section>
 
     <section class="request-section">
-      <div class="shell request-card"><div><p class="eyebrow"><i></i> Ваша песня может быть следующей</p><h2>Не нашли нужный разбор?</h2><p>Напишите название и исполнителя. Никита подскажет, есть ли готовый материал, и обсудит ваш запрос.</p></div><a class="button button-primary" href="https://t.me/nikguitar" target="_blank" rel="noreferrer">Написать Никите ↗</a></div>
+      <div class="shell request-card"><div><h2>Не нашли нужный разбор?</h2></div><a class="button button-primary" href="https://t.me/nikguitar" target="_blank" rel="noreferrer">Написать Никите ↗</a></div>
     </section>
   </main>
 
-  <footer><div class="shell footer-inner"><div class="brand"><span>♪</span><strong>Струны</strong><em>будущего</em></div><p>Понятные разборы любимых песен на гитаре.</p><a href="https://strunibb.github.io/struny-school/">Музыкальная школа ↗</a><small>© 2026 «Струны будущего»</small></div></footer>
+  <footer><div class="shell footer-inner"><div class="brand"><span>♪</span><strong>Струны</strong><em>будущего</em></div><a href="https://strunibb.github.io/struny-school/">Музыкальная школа ↗</a><small>© 2026 «Струны будущего»</small></div></footer>
 
   <div class="backdrop" id="cart-backdrop" hidden>
     <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
-      <div class="drawer-head"><div><small>Заявка в Telegram</small><h2 id="cart-title">Корзина</h2></div><button id="cart-close" type="button" aria-label="Закрыть корзину">×</button></div>
+      <div class="drawer-head"><div><h2 id="cart-title">Корзина</h2></div><button id="cart-close" type="button" aria-label="Закрыть корзину">×</button></div>
       <div id="cart-content"></div>
     </aside>
   </div>
@@ -136,10 +124,10 @@
     </article>
   </template>
 
-  <script src="./preview.js?v=inline-20261117-2" defer></script>
+  <script src="./preview.js?v=clean-20261128-1" defer></script>
   <script src="./release.js?v=releases-20261116-3" defer></script>
-  <script src="./albums.js?v=previews-20261117-1" defer></script>
-  <script src="./app.js?v=popular-20261126-1" defer></script>
-  <script src="./subscriptions.js?v=grouped-20261126-1" defer></script>
+  <script src="./albums.js?v=clean-20261128-1" defer></script>
+  <script src="./app.js?v=clean-20261128-1" defer></script>
+  <script src="./subscriptions.js?v=clean-20261128-1" defer></script>
 </body>
 </html>
